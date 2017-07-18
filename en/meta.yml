@@ -1,17 +1,27 @@
-title: memory
+---
 hero_image: images/banner.png
-description: memory description
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
-theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
-duration: 1 # possible values: 1, 2 or 3
+theme: red
+duration: 1
 listed: false
 ingredient: false
 copyedit: false
 curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
-interests: "games, robots, jokes/pranks, space, photography, music/sound, physical computing"
-technologies: "html/css, scratch, electronics, physical computing, python"
-site_areas:
+title: Memory
+description: Create a memory game, where you have to memorise and repeat a sequence
+  of random colours!
+original_url: https://codeclubprojects.org/en-GB/scratch/memory
+interests: ''
+technologies: scratch
+site_areas: codeclub, scratch
 steps:
-  - title: Introduction
-  - title: What you will need
-  - title: Step title
+- title: Introduction
+- title: Random colours
+- title: 'Challenge: Adding sound'
+- title: Repeating the sequence
+- title: 'Challenge: Creating 4 buttons'
+- title: Multiple levels
+- title: High score
+- title: 'Challenge: Making more blocks'
+- title: 'Challenge: Another costume'
+- title: 'Challenge: Difficulty level'
+
