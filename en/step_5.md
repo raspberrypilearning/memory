@@ -20,17 +20,16 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 --- hints ---
 --- hint ---
 Can you use the numbers that correspond to each colour to play the correct drum beat?
-
-	+ 1 = red
-	+ 2 = blue
-	+ 3 = green
-	+ 4 = yellow
++ 1 = red
++ 2 = blue
++ 3 = green
++ 4 = yellow
 --- /hint ---
 --- hint ---
 You will need to add the `play drum`{:class="blocksound"} block to happen when the sprite is clicked.
 --- /hint ---
 --- hint ---
-Here is the code you will need:
+Here is the code you will need for the red drum which has drum beat 1:
 
 ![Play drum](images/hint-play-drum.png)
 --- /hint ---
@@ -80,19 +79,19 @@ You could also display some flashing lights as a reward once the list is empty, 
 
 + Add this code to the end of your character's `when flag clicked`{:class="blockevents"} script:
 
-	```blocks
-		wait until < (length of [sequence v]) = [0]>
-		broadcast [won v] and wait
-	```
+```blocks
+	wait until < (length of [sequence v]) = [0]>
+	broadcast [won v] and wait
+```
 
-+ Click on your stage, and add this code to play __any__ sound and make the backdrop change colour once the player has won.
++ Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like to play.
 
-	```blocks
-		when I receive [won v]
-		play sound [drum machine v]
-		repeat (50)
-			change [color v] effect by (25)
-			wait (0.1) secs
-		end
-		clear graphic effects
-	```
+```blocks
+	when I receive [won v]
+	play sound [drum machine v]
+	repeat (50)
+		change [color v] effect by (25)
+		wait (0.1) secs
+	end
+	clear graphic effects
+```
