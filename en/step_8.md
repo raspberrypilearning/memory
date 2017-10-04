@@ -1,5 +1,5 @@
 --- challenge ---
-## Challenge: Making more blocks
+## Challenge: making more blocks
 Do you notice any other code that is the same for all 4 buttons?
 
 ![screenshot](images/colour-more-blocks.png)

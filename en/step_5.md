@@ -15,7 +15,7 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 
 + Add similar code to the blue, green and yellow drums to make them broadcast messages in their own colour
 
-+ When your character receives the message "red", the code should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
++ When your character sprite receives the message "red", the code should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
 
 ```blocks
 	when I receive [red v]
@@ -27,7 +27,7 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 	end
 ```
 
-+ Add a block to the character sprite so that a drum beat also plays when the correct colour is received.
++ Add to the code you just wrote so that a drum beat also plays when the correct colour is received.
 
 --- hints ---
 --- hint ---
@@ -41,7 +41,7 @@ Can you use the numbers that correspond to each colour to play the correct drum 
 You will need to add the `play drum`{:class="blocksound"} block to play the 1st sound in the sequence list before you delete it.
 --- /hint ---
 --- hint ---
-Here is the code you will need for the red drum which has drum beat 1:
+Here is the code you will need to add before `delete 1 of sequence`{:class="blockdata"}:
 
 ![Play drum](images/hint-play-drum.png)
 --- /hint ---
@@ -63,7 +63,7 @@ Here is how your code should look for the blue broadcast. Can you work out what 
 ```blocks
 	when I receive [blue v]
 	if <(item (1 v) of [sequence v])=[2]> then
-        play drum (item (last v) of [sequence v]) for (0.25) beats
+        play drum (item (1 v) of [sequence v]) for (0.25) beats
 		delete (1 v) of [sequence v]
 	else
 		say [Game over!] for (1) secs
