@@ -1,29 +1,35 @@
 ## Multiple levels
 
-So far, the player only has to remember five colours. Let's make the game get harder so that as the player's score increases, the length of the sequence they have to remember increases.
+So far, the player only has to remember a sequence of five colours. Let's improve the game so that as the player's score increases, the length of the sequence they have to remember increases.
 
 + Create a new variable called `score`{:class="blockdata"}.
 
-	![screenshot](images/colour-score.png)
+[[[generic-scratch-add-variable]]]
 
-+ This `score`{:class="blockdata"} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when flag clicked`{:class="blockevents"} code:
+The `score`{:class="blockdata"} will be used to decide on the length of the sequence the player has to memorise. Let's start with a score (and a sequence length) of 3.
 
-	```blocks
-		set [score v] to [3]
-	```
++ Add a block at the start of your character's `when flag clicked`{:class="blockevents"} code to set the `score`{:class="blockdata"} to 3.
 
-+ Instead of always creating a sequence of 5 colours, you now want the `score`{:class="blockdata"} to determine the sequence length. Change your character's `repeat`{:class="blockcontrol"} loop (for creating the sequence) to:
+Instead of always creating a sequence of 5 colours, you now want the `score`{:class="blockdata"} to determine the sequence length.
 
-	```blocks
-		repeat (score)
-		end
-	```
++ Change the character's `repeat`{:class="blockcontrol"} loop (for creating the sequence) to repeat `score`{:class="blockdata"} times:
 
-+ If the sequence is guessed correctly, you should add 1 to the score, to increase the length of the sequence.
+```blocks
+	repeat (score)
+	end
+```
 
-	```blocks
-		change [score v] by (1)
-	```
++ If the sequence is guessed correctly, you should add 1 to the score, to increase the length of the sequence. Add this block to the character's code _at the point you know the sequence was guessed correctly_.
+
+```blocks
+	change [score v] by (1)
+```
+
+--- hints ---
+--- hint ---
+You know the sequence was guessed correctly at the point you broadcast the "won" message.
+--- /hint ---
+--- /hints ---
 
 + Finally, you need to add a `forever`{:class="blockcontrol"} loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character's code should look:
 
