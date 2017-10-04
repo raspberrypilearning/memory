@@ -31,7 +31,7 @@ You know the sequence was guessed correctly at the point you broadcast the "won"
 --- /hint ---
 --- /hints ---
 
-+ Finally, you need to add a `forever`{:class="blockcontrol"} loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character's code should look:
++ Finally, you need to add a `forever`{:class="blockcontrol"} loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character's code might look:
 
 	```blocks
 		when flag clicked
