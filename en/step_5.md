@@ -2,8 +2,6 @@
 
 Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 
-
-
 + Add 4 sprites to your project, that will become buttons. Edit your 4 sprites, so that there's 1 for each of the 4 colours.
 
 	![screenshot](images/colour-drums.png)
@@ -45,4 +43,3 @@ Let's add 4 buttons, for the player to repeat the sequence they've remembered.
 		end
 		clear graphic effects
 	```
-

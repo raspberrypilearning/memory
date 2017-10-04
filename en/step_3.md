@@ -21,7 +21,7 @@ First, let's create a character who will display a random sequence of colours fo
 
 Let's create a random sequence of colours.
 
-+ Create a list called `sequence`{:class="blockdata"}. This is where you will store the random sequence. Only the character sprite needs to see the list, so you can select 'For this sprite only'.
++ Create a list called `sequence`{:class="blockdata"}. Only the character sprite needs to see the list, so you can select 'For this sprite only'.
 
 [[[generic-scratch-make-list]]]
 
@@ -29,7 +29,7 @@ You should now see your empty list in the top-left of your stage, as well as lot
 
 ![screenshot](images/colour-list-blocks.png)
 
-+ Add this code to your character, to add a random number to your list (and show the correct costume) 5 times:
++ Add this code to your character, to add a random number to the list then show the corresponding costume, 5 times:
 
 ```blocks
 	when flag clicked
