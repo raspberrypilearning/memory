@@ -13,16 +13,22 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 	broadcast [red v]
 ```
 
+A broadcast is a bit like making an announcement over a loudspeaker - you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
+
 + Add similar code to the blue, green and yellow drums to make them broadcast messages in their own colour
 
 --- hints ---
 --- hint ---
-Here is an easy way to copy the code from one sprite to another. Then, just change the broadcast message to match the colour of the sprite.
+Here is an easy way to copy the code from one sprite to another. Change the broadcast message in each sprite to match the colour of the sprite.
 ![Duplicate the code](images/broadcast-duplicate.gif)
 --- /hint ---
 --- /hints ---
 
-+ When your character sprite receives the message "red", the code should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
+Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages by writing some code for the character to do when it hears each message.
+
+ + When your character sprite receives the message "red", the code should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence).
+
+ If it is, remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
 
 ```blocks
 	when I receive [red v]
@@ -54,18 +60,19 @@ Here is the code you will need to add before `delete 1 of sequence`{:class="bloc
 --- /hint ---
 --- /hints ---
 
-+ Add some more code to your character sprite to make it respond correctly when the blue, green or yellow button is pressed.
++ Duplicate the code you used to make your character sprite respond to the message "red". This time, change the message to "blue".
+
+When the sprite responds to the message "blue", which code will stay the same, and which will change? Remember that each colour has a corresponding number.
+
++ Change your code so that the character responds correctly to the "blue" message.
 
 --- hints ---
 --- hint ---
-Which of the code above will stay the same, and which code will change for each colour? Remember that each colour has a corresponding number.
---- /hint ---
---- hint ---
-Keep these blocks, but you will need to change them in some way for each colour message:
+Keep these blocks, but you will need to change them in some way:
 ![Change these blocks](images/hint-change-blocks.png)
 --- /hint ---
 --- hint ---
-Here is how your code should look for the blue broadcast. Can you work out what to change for the green and yellow?
+Here is how your code should look for the blue broadcast.
 
 ```blocks
 	when I receive [blue v]
@@ -80,6 +87,8 @@ Here is how your code should look for the blue broadcast. Can you work out what 
 
 --- /hint ---
 --- /hints ---
+
++ Duplicate the code again twice more for the green and yellow buttons, and change the necessary parts so that the character responds correctly.
 
 + Remember to test the code you've added! Can you memorise a sequence of 5 colours? Is the sequence different each time?
 
