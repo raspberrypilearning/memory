@@ -29,16 +29,36 @@ You should now see your empty list in the top-left of your stage, as well as lot
 
 ![screenshot](images/colour-list-blocks.png)
 
-+ Add this code to your character, to add a random number to the list then show the corresponding costume, 5 times:
++ Remember we gave each colour a number? We can choose a random colour by choosing a random number and adding it to the list. Add this code:
 
 ```blocks
-	when flag clicked
-	delete (all v) of [sequence v]
-	repeat (5)
-		add (pick random (1) to (4)) to [sequence v]
-		switch costume to (item (last v) of [sequence v]
-		wait (1) secs
-	end
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
-Notice that you have also emptied the list to begin with.
++ Test your code by clicking the green flag. Check that each time, a random number between 1 and 4 is added to the list.
+
++ Can you add this block to your program to generate 5 random colours at once?
+
+```blocks
+repeat (5)
+
+end
+```
+
++ You might notice that your list is getting a bit full up by now. Let's add a block to clear the list at the start before we generate any numbers.
+
+```blocks
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+	add (pick random (1) to (4)) to [sequence v]
+end
+```
+
++ Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks on the line after you pick the random number: 
+
+```blocks
+switch costume to (item (last v) of [sequence v]
+wait (1) secs
+```
