@@ -14,6 +14,21 @@ Here are the blocks you will need
 
 ![Hint drum blocks](images/hint-drumblocks.png)
 --- /hint ---
+
+--- hint ---
+Here is how your finished code should look:
+```blocks
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+	add (pick random (1) to (4)) to [sequence v]
+    play drum (item (last v) of [sequence v]) for (0.25) beats
+    switch costume to (item (last v) of [sequence v])
+    wait (1) secs
+end
+```
+--- /hint ---
+
 --- /hints ---
 
 --- /challenge ---

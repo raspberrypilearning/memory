@@ -46,7 +46,7 @@ repeat (5)
 end
 ```
 
-+ You might notice that your list is getting a bit full up by now. Let's add a block to clear the list at the start before we generate any numbers.
++ You might notice that your list is getting a bit full up by now. Let's add a block to delete the whole list at the start before we generate any numbers.
 
 ```blocks
 when flag clicked
@@ -56,9 +56,9 @@ repeat (5)
 end
 ```
 
-+ Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks on the line after you pick the random number: 
++ Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks to your code immediately after you add the random number to your list:
 
 ```blocks
-switch costume to (item (last v) of [sequence v]
+switch costume to (item (last v) of [sequence v])
 wait (1) secs
 ```
