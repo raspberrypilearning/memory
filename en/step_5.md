@@ -51,12 +51,16 @@ Can you use the numbers that correspond to each colour to play the correct drum 
 + 4 = yellow
 --- /hint ---
 --- hint ---
-You will need to add the `play drum`{:class="blocksound"} block to play the 1st sound in the sequence list before you delete it.
---- /hint ---
---- hint ---
-Here is the code you will need to add before `delete 1 of sequence`{:class="blockdata"}:
+You will need to add the `play drum`{:class="blocksound"} block to play the 1st sound in the sequence list before `delete 1 of sequence`{:class="blockdata"}:
 
 ![Play drum](images/hint-play-drum.png)
+--- /hint ---
+--- hint ---
+Here is the code you will need to add:
+
+```blocks
+play drum (item (1 v) of [sequence v]) for (0.25) beats
+```
 --- /hint ---
 --- /hints ---
 
