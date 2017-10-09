@@ -18,7 +18,7 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 --- hints ---
 --- hint ---
 Here is an easy way to copy the code from one sprite to another. Then, just change the broadcast message to match the colour of the sprite.
-![Duplicate the code](images/broadcast-duplicate.png)
+![Duplicate the code](images/broadcast-duplicate.gif)
 --- /hint ---
 --- /hints ---
 
