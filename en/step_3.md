@@ -1,4 +1,4 @@
-## Random colours
+## Create a colour sequence
 
 First, let's create a character who will display a random sequence of colours for the player to memorise.
 
@@ -21,7 +21,7 @@ First, let's create a character who will display a random sequence of colours fo
 
 Let's create a random sequence of colours.
 
-+ Create a list called `sequence`{:class="blockdata"}. Only the character sprite needs to see the list, so you can select 'For this sprite only'.
++ Create a list called `sequence`{:class="blockdata"}. We will use this list to store the sequence of colours the player has to remember. Only the character sprite needs to see the list, so you can select 'For this sprite only'.
 
 [[[generic-scratch-make-list]]]
 

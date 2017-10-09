@@ -4,7 +4,7 @@ In this project, you will create a memory game where you have to memorise and re
 
 ### What you will make
 
-Click on the green flag to start. Watch the sequence shown by the dancer and listen to the accompanying drum beats, then repeat them back to her. If you get the order wrong, it's game over!
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat them back to her. If you get the order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>

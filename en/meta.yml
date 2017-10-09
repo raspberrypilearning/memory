@@ -15,7 +15,7 @@ site_areas: codeclub, scratch
 steps:
 - title: Introduction
 - title: What you will need
-- title: Random colours
+- title: Create a colour sequence
 - title: 'Challenge: adding sound'
 - title: Repeating the sequence
 - title: Multiple levels
