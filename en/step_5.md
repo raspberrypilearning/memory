@@ -2,7 +2,7 @@
 
 Let's add four buttons for the player to press to repeat the sequence they've remembered.
 
-+ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours.
++ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes - red, blue, green, yellow.
 
 ![screenshot](images/colour-drums.png)
 
@@ -14,6 +14,13 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 ```
 
 + Add similar code to the blue, green and yellow drums to make them broadcast messages in their own colour
+
+--- hints ---
+--- hint ---
+Here is an easy way to copy the code from one sprite to another. Then, just change the broadcast message to match the colour of the sprite.
+![Duplicate the code](images/broadcast-duplicate.png)
+--- /hint ---
+--- /hints ---
 
 + When your character sprite receives the message "red", the code should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
 
