@@ -2,7 +2,7 @@
 
 Let's add four buttons for the player to press to repeat the sequence they've remembered.
 
-+ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes - red, blue, green, yellow.
++ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
 
 ![screenshot](images/colour-drums.png)
 
@@ -13,9 +13,9 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 	broadcast [red v]
 ```
 
-A broadcast is a bit like making an announcement over a loudspeaker - you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
+A broadcast is a bit like making an announcement over a loudspeaker — you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
 
-+ Add similar code to the blue, green and yellow drums to make them broadcast messages in their own colour
++ Add similar code to the blue, green, and yellow drums to make them broadcast messages about their own colour.
 
 --- hints ---
 --- hint ---
@@ -24,11 +24,11 @@ Here is an easy way to copy the code from one sprite to another. Change the broa
 --- /hint ---
 --- /hints ---
 
-Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages by writing some code for the character to do when it hears each message.
+Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages. We do this by writing some code for the character to do when they hear each message.
 
- + When your character sprite receives the message "red", the code should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence).
+ + When your character sprite receives the message `red`, the code should check whether the number `1` is at the start of the list (which means that `red` is the next colour in the sequence).
 
- If it is, remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
+ If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
 
 ```blocks
 	when I receive [red v]
@@ -51,7 +51,7 @@ Can you use the numbers that correspond to each colour to play the correct drum 
 + 4 = yellow
 --- /hint ---
 --- hint ---
-You will need to add the `play drum`{:class="blocksound"} block to play the 1st sound in the sequence list before `delete 1 of sequence`{:class="blockdata"}:
+You will need to add the `play drum`{:class="blocksound"} block to play the first sound in the sequence list before `delete 1 of sequence`{:class="blockdata"}:
 
 ![Play drum](images/hint-play-drum.png)
 --- /hint ---
@@ -64,11 +64,11 @@ play drum (item (1 v) of [sequence v]) for (0.25) beats
 --- /hint ---
 --- /hints ---
 
-+ Duplicate the code you used to make your character sprite respond to the message "red". This time, change the message to "blue".
++ Duplicate the code you used to make your character sprite respond to the message `red`. This time, change the message to `blue`.
 
-When the sprite responds to the message "blue", which code will stay the same, and which will change? Remember that each colour has a corresponding number.
+When the sprite responds to the message `blue`, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
 
-+ Change your code so that the character responds correctly to the "blue" message.
++ Change your code so that the character responds correctly to the `blue` message.
 
 --- hints ---
 --- hint ---
@@ -92,11 +92,11 @@ Here is how your code should look for the blue broadcast.
 --- /hint ---
 --- /hints ---
 
-+ Duplicate the code again twice more for the green and yellow buttons, and change the necessary parts so that the character responds correctly.
++ Duplicate the code again twice for the green and yellow buttons, and change the necessary parts so that the character responds correctly.
 
-+ Remember to test the code you've added! Can you memorise a sequence of 5 colours? Is the sequence different each time?
++ Remember to test the code you've added! Can you memorise a sequence of five colours? Is the sequence different each time?
 
-You could also display some flashing lights as a reward once the list is empty, as it means the entire sequence has been guessed correctly.
+You could also display some flashing lights as a reward once the list is empty, as that means the entire sequence was memorised correctly.
 
 + Add this code to the end of your character's `when flag clicked`{:class="blockevents"} script:
 
@@ -105,7 +105,7 @@ You could also display some flashing lights as a reward once the list is empty, 
 	broadcast [won v] and wait
 ```
 
-+ Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like to play.
++ Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like.
 
 ```blocks
 	when I receive [won v]
