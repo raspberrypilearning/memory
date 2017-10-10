@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, you will create a memory game where you have to memorise and repeat a sequence of random colours!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
 ### What you will make
 
