@@ -8,7 +8,7 @@ Beth am arbed y sgôr uchel, fel dy fod di'n gallu chwarae yn erbyn dy ffrindiau
 
 If ever the game ends (by pressing the wrong button), you need to check whether the player's score is higher than the current high score. If it is, you need to save the score as the high score, and store the name of the player. Here's how your red button should look:
 
-	```blocks
+```blocks
 		pan fyddaf yn derbyn [coch v]
 		  os <(eitem (1 v) o [dilyniant v]) = [1]> wedyn
    			dileu (1 v) o [dilyniant v]
@@ -21,7 +21,7 @@ If ever the game ends (by pressing the wrong button), you need to check whether 
    		  end
    		  stopiwch [y cyfan v]
 		end
-	```
+```
 + Bydd angen i ti ychwanegu'r côd newydd yma i'r 3 botwm arall hefyd! Wyt ti wedi sylw bod y côd 'Gêm drosodd' ym mhob un o'r 4 botwm yn union yr un peth?
 
 	![screenshot](images/colour-same.png)
