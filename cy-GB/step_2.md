@@ -19,7 +19,7 @@ Yn gyntaf, fe wnawn ni greu cymeriad sydd yn gallu newid ei gwisg yn ôl dilynia
 
 	![screenshot](images/colour-costume.png)
 
-+ I greu dilyniant ar hap, mae angen i ti greu __rhestr__. Mae rhestr yn newidyn sydd yn storio llawer o ddata __mewn trefn__. Gwna restr newydd o'r enw 'dilyniant' {.blockdata}. Gan mai dim ond dy gymeriad sydd angen gweld y rhestr, gallwn hefyd glicio 'Ar gyfer y ciplun yma yn unig'.
++ I greu dilyniant ar hap, mae angen i ti greu __rhestr__. Mae rhestr yn newidyn sydd yn storio llawer o ddata __mewn trefn__. Gwna restr newydd o'r enw `dilyniant`{:class="blockdata"}. Gan mai dim ond dy gymeriad sydd angen gweld y rhestr, gallwn hefyd glicio 'Ar gyfer y ciplun yma yn unig'.
 
 	![screenshot](images/colour-list.png)
 
