@@ -2,7 +2,7 @@
 
 Beth am arbed y sgôr uchel, fel dy fod di'n gallu chwarae yn erbyn dy ffrindiau.
 
-+ Ychwanega 2 newidyn newydd i dy brosiect, o'r enw 'sgôr uchel' {.blockdata} ac 'enw' {.blockdata}.
++ Ychwanega 2 newidyn newydd i dy brosiect, o'r enw `sgôr uchel`{:class="blockdata"} ac `enw`{:class="blockdata"}.
 
 + Os yw'r gêm byth yn gorffen (trwy wasg'r botwm anghywir), bydd angen i ti weld os yw sgôr y chwareuwr yn uwch na'r sgôr uchel presennol.  Os yw e, bydd angen i ti arbed y sôr fel y sgôr uchel, a'i storio dan enw'r chwareuwr.  Dyma sut ddylai dy fotwm coch edrych:
 
@@ -29,18 +29,18 @@ If ever the game ends (by pressing the wrong button), you need to check whether 
 
 + Os wyt ti byth eisiau newid rhan o'r côd yma, fel ychwanegu sain neu newid y neges 'Gêm drosodd!', bydd angen i ti ei newid 4 gwaith! Gall hwnna fod yn boen, ac yn wastraff amser.
 
-	Yn hytrach, mae modd i ti ddiffinio dy flociau dy hunan, a'u ail-defnyddio ar gyfer dy brosiect! I wneud hyn, clicia 'mwy o flociau' {.blockmoreblocks}, ac yna 'Creu bloc'. Galwa'r bloc yma yn 'Gêm drosodd'.
+	Yn hytrach, mae modd i ti ddiffinio dy flociau dy hunan, a'u ail-defnyddio ar gyfer dy brosiect! I wneud hyn, clicia `mwy o flociau`{:class="blockmoreblocks"}, ac yna 'Creu bloc'. Galwa'r bloc yma yn 'Gêm drosodd'.
 
 	![screenshot](images/colour-more.png)
 
-+ Ychwanega'r côd yma o'r bloc 'fel arall' {.blockcontrol} yn y botwm coch i'r bloc newydd sydd yn ymddangos:
++ Ychwanega'r côd yma o'r bloc `fel arall`{:class="blockcontrol"} yn y botwm coch i'r bloc newydd sydd yn ymddangos:
 
 	![screenshot](images/colour-make-block.png)
 
-+ Rwyt ti nawr wedi creu _gweithred_ newydd o'r enw 'Gêm drosodd' {.blockmoreblocks}, ac mae modd i ti ei ddefnyddio lle bynnag wyt ti eisiau. Llusga'r bloc 'Gêm drosodd' {.blockmoreblocks} i'r 4 o sgriptiau ar gyfer y botymau.
++ Rwyt ti nawr wedi creu _gweithred_ newydd o'r enw `Gêm drosodd`{:class="blockmoreblocks"}, ac mae modd i ti ei ddefnyddio lle bynnag wyt ti eisiau. Llusga'r bloc `Gêm drosodd`{:class="blockmoreblocks"} i'r 4 o sgriptiau ar gyfer y botymau.
 
 	![screenshot](images/colour-use-block.png)
 
-+ Nawr ychwanega sain pan mae botwm anghywir yn cael ei gwasg.  Rwyt ti ond angen ychwanegu'r côd _unwaith_ yn y bloc 'Gêm drosodd' {.blockmoreblocks} ti wedi ei greu, a dim 4 gwaith arwahan! 
++ Nawr ychwanega sain pan mae botwm anghywir yn cael ei gwasg.  Rwyt ti ond angen ychwanegu'r côd _unwaith_ yn y bloc `Gêm drosodd`{:class="blockmoreblocks"} ti wedi ei greu, a dim 4 gwaith arwahan! 
 
 	![screenshot](images/colour-cough.png)
