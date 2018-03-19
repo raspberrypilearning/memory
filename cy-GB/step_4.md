@@ -25,7 +25,7 @@ Fe wnawn ni ychwanegu 4 botwm i'r chwareuwr ail-adrodd y dilyniant mae nhw wedi 
 		end
 	```
 
-+ Mae modd i ti hefyd ddarlledu goleuadau yn fflachio unwaith bod y rhestr yn wag, sydd yn golygu fod y dilyniant cyfan wedi cael ei ddyfalu'n gywir. Ychwanega'r côd yma i ddiwedd sgript un o dy gymeriadau 'pan fo baner wedi ei glicio' {.blockevents}:
++ Mae modd i ti hefyd ddarlledu goleuadau yn fflachio unwaith bod y rhestr yn wag, sydd yn golygu fod y dilyniant cyfan wedi cael ei ddyfalu'n gywir. Ychwanega'r côd yma i ddiwedd sgript un o dy gymeriadau `pan fo baner wedi ei glicio`{:class="blockevents"}:
 
 	```blocks
 		aros hyd at <(hyd [dilyniant v]) = [0]>
