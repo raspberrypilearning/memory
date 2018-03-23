@@ -16,7 +16,7 @@ Fe wnawn ni ychwanegu 4 botwm i'r chwareuwr ail-adrodd y dilyniant mae nhw wedi 
 + Pan mae dy gymeriad yn derbyn y neges yma, fe ddylai wirio os mai rhif 1 sydd ar ddechrau'r rhestr (sydd yn golygu mai coch yw'r lliw nesaf yn y dilyniant).  Os mai dyma'r ateb, fe alli di gael gwared o'r rhif o'r rhestr, gan fod yr ateb yn gywir. Neu mae'r gêm drosodd!
 
 	```blocks
-		pan fyddaf yn derbyn [red v]
+		pan dderbyniaf [red v]
 			os <(eitem (1 v) o [dilyniant v]) = [1]> wedyn
   			dileu (1 v) o [dilyniant v]
 		fel arall
@@ -36,7 +36,7 @@ Fe wnawn ni ychwanegu 4 botwm i'r chwareuwr ail-adrodd y dilyniant mae nhw wedi 
 + Clicia ar dy lwyfan, ac ychwanega'r côd yma i chwarae __unrhyw__ sŵn a gwneud i'r cefndir newid lliw unwaith mae'r chwareuwr wedi ennill.
 
 	```blocks
-		pan fyddaf yn derbyn [ennill v]
+		pan dderbyniaf [ennill v]
 			chwarae sain [drum machine v]
 			ailwna (50)
    		newid effaith [lliw v] gan (25)
