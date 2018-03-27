@@ -4,7 +4,7 @@ En este proyecto, ¡vas a crear un juego de memoria en el que tendrás que memor
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="colour-final.png">
+  <img src="images/colour-final.png">
 </div>
 
 ## Recursos
