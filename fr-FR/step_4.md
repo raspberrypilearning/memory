@@ -25,7 +25,7 @@ Ajoutons 4 boutons pour que le joueur puisse répéter la séquence mémorisée.
     fin
 	```
 
-+ Vous pouvez aussi faire clignoter des lumières lorsque la liste sera vide, ce qui signifie que vous avez bien deviné la séquence entière. Ajoutez ce code à la fin du texte `quand ⚑ cliqué` {.blockevents} de votre personnage :
++ Vous pouvez aussi faire clignoter des lumières lorsque la liste sera vide, ce qui signifie que vous avez bien deviné la séquence entière. Ajoutez ce code à la fin du texte `quand ⚑ cliqué`{:class="blockevents"} de votre personnage :
 
 	```blocks
     attendre jusqu’à <(longueur de [séquence v]) = [0]>
