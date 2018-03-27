@@ -15,34 +15,34 @@ Lass uns vier Tasten hinzufügen, damit man die gemerkte Reihenfolge der Farben 
 
 + Wenn dein Charakter diese Nachricht empfängt, sollte er prüfen, ob die Nummer 1 am Anfang der Liste steht (was bedeutet, dass Rot die nächste Farbe in der Reihenfolge ist). Wenn ja, kann die Nummer aus der Liste entfernt werden, da sie richtig erraten worden ist. Ansonsten ist das Spiel vorbei!
 
-	```blocks
-Wenn ich [rot v] empfange
-falls <(Element (1 v) von [Sequenz v]) = [1]> dann
+```blocks
+  Wenn ich [rot v] empfange
+  falls <(Element (1 v) von [Sequenz v]) = [1]> dann
    lösche (1 v) aus [Sequenz v]
-sonst
+  sonst
    sage [Game over!] für (1) Sek.
    stoppe [alles v]
-Ende
-	```
+  Ende
+```
 
 + Du kannst auch ein paar blinkende Lichter anzeigen, sobald die Liste leer ist, da es bedeutet, dass die komplette Reihenfolge der Farben richtig erraten worden ist. Fügen diesen Code an das Ende des `wenn Fahne geklickt` {.blockevents}-Skripts Deines Charakters hinzu:
 
-	```blocks
-warte bis <(Länge von [Sequenz v]) = [0]>
-sende [gewonnen v] an alle und warte
-	```
+```blocks
+  warte bis <(Länge von [Sequenz v]) = [0]>
+  sende [gewonnen v] an alle und warte
+```
 
 + Klicke auf die Bühne und füge diesen Code hinzu, um die Farbe des Hintergrundes wechseln zu lassen, sobald der Spieler gewonnen hat.
 
-	```blocks
-Wenn ich [gewonnen v] empfange
-spiele Klang [cheer v]
-wiederhole (50) mal
+```blocks
+  Wenn ich [gewonnen v] empfange
+  spiele Klang [cheer v]
+  wiederhole (50) mal
    ändere [Farbe v]-Effekt um (25)
    warte (0.1) Sek.
-Ende
-schalte Grafikeffekte aus
-	```
+  Ende
+  schalte Grafikeffekte aus
+```
 
 ## Herausforderung: Vier Tasten erstellen 
 Wiederhole die oben beschriebenen Schritte für Deine blauen, grünen und gelben Tasten. Welcher Code bleibt gleich, und welcher Code verändert sich für jede der Tasten?
