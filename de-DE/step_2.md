@@ -19,7 +19,7 @@ Lass uns zunächst einen Charakter erstellen, der eine zufällige Reihenfolge an
 
 	![screenshot](images/colour-costume.png)
 
-+ Um eine zufällige Reihenfolge zu erstellen, benötigst Du eine __Liste__. Eine Liste ist lediglich eine Variable, die viele Daten __in Reihenfolge__ speichert. Erstelle unter 'Daten'  eine neue Liste namens `Sequenz` {.blockdata}. Da nur Dein Charakter die Liste sehen muss, können wir auf 'Nur für diese Figur' klicken.
++ Um eine zufällige Reihenfolge zu erstellen, benötigst Du eine __Liste__. Eine Liste ist lediglich eine Variable, die viele Daten __in Reihenfolge__ speichert. Erstelle unter 'Daten'  eine neue Liste namens `Sequenz`{:class="blockdata"}. Da nur Dein Charakter die Liste sehen muss, können wir auf 'Nur für diese Figur' klicken.
 
 	![screenshot](images/colour-list.png)
 
