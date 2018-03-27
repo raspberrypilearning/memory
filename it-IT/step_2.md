@@ -19,7 +19,7 @@ Per prima cosa, creiamo un personaggio che può cambiare in una sequenza di colo
 
 	![screenshot](images/colour-costume.png)
 
-+ Per creare una sequenza a caso, dovrai creare una __lista__. Una lista è solo una variabile che immagazzina tanti dati __in ordine__. Crea una nuova lista chiamata `sequenza` {.blockdata}. Dato che solo il tuo personaggio ha bisogno di vedere la lista, possiamo anche cliccare 'Solo per questo sprite'.
++ Per creare una sequenza a caso, dovrai creare una __lista__. Una lista è solo una variabile che immagazzina tanti dati __in ordine__. Crea una nuova lista chiamata `sequenza`{:class="blockdata"}. Dato che solo il tuo personaggio ha bisogno di vedere la lista, possiamo anche cliccare 'Solo per questo sprite'.
 
 	![screenshot](images/colour-list.png)
 
