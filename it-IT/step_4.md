@@ -25,7 +25,7 @@ Aggiungiamo 4 tasti che il giocatore può usare per ripetere la sequenza che ric
 		end
 	```
 
-+ Puoi anche visualizzare delle luci lampeggianti una volta che la lista è vuota, perché significa che l'intera sequenza è stata indovinata correttamente. Aggiungi questo codice alla fine del testo `quando si clicca sulla bandiera verde` {.blockevents}.
++ Puoi anche visualizzare delle luci lampeggianti una volta che la lista è vuota, perché significa che l'intera sequenza è stata indovinata correttamente. Aggiungi questo codice alla fine del testo `quando si clicca sulla bandiera verde`{:class="blockevents"}.
 
 	```blocks
 		attendi fino a quando <(length of [sequenza v] :: list) = [0]>
