@@ -1,9 +1,5 @@
 ## Einführung
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
-
-### What you will make
-
 In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
 
 <div class="scratch-preview">
