@@ -19,7 +19,7 @@ Para empezar, vamos a crear un personaje que pueda cambiar a una secuencia de co
 
 	![screenshot](images/colour-costume.png)
 
-+ Para crear una secuencia aleatoria, tendrás que crear una __lista__. Una lista es simplemente una variable que almacena una gran cantidad de datos __en orden__. Crea una nueva lista llamada `secuencia` {.blockdata}. Como tu personaje es el único que necesita ver esta lista, también podemos seleccionar 'Sólo para este objeto'.
++ Para crear una secuencia aleatoria, tendrás que crear una __lista__. Una lista es simplemente una variable que almacena una gran cantidad de datos __en orden__. Crea una nueva lista llamada `secuencia`{:class="blockdata"}. Como tu personaje es el único que necesita ver esta lista, también podemos seleccionar 'Sólo para este objeto'.
 
 	![screenshot](images/colour-list.png)
 
