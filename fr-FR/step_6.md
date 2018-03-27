@@ -13,9 +13,9 @@ Ajoutons la possibilité d'enregistrer le meilleur pointage afin de pouvoir joue
     sinon
        dire [Partie terminée!] pendant (1) secondes
        si <(pointage) > (meilleur pointage)> alors
-          [meilleur pointage v] prend la valeur (pointage)
-          demander [Meilleur pointage! Quel est ton nom?] et attendre
-          [meilleur joueur v] prend la valeur (réponse)
+          mettre [meilleur pointage v] à (pointage)
+          demander [Meilleur pointage! Quel est ton nom?] et attendre
+          mettre [meilleur joueur v] à (réponse)
        fin
        stop [tout v]
     fin
