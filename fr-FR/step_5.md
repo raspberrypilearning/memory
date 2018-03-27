@@ -29,7 +29,7 @@ Jusqu'à maintenant, le joueur n'a qu'à se souvenir de 5 couleurs. Nous allons 
 
 	```blocks
     quand le drapeau vert pressé
-    [pointage v] prend la valeur [3]
+    mettre [pointage v] à [3]
     répéter indéfiniment
        supprimer l'élément (tout v) de la liste [séquence v]
        répéter (pointage) fois
