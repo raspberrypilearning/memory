@@ -25,7 +25,7 @@ Vamos a añadir 4 botones para que el jugador pueda repetir la secuencia a recor
 		fin
 	```
 
-+ También podrías hacer que parpadeen luces cuando se haya vaciado la lista, ya que esto significa que el jugador ha acertado la secuencia entera. Añade este código al final del programa `al presionar bandera verde` {.blockevents} de tu personaje:
++ También podrías hacer que parpadeen luces cuando se haya vaciado la lista, ya que esto significa que el jugador ha acertado la secuencia entera. Añade este código al final del programa `al presionar bandera verde`{:class="blockevents"} de tu personaje:
 
 	```blocks
 		esperar hasta que <(longitud de [secuencia v]) = [0]>
