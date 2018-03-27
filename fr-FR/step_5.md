@@ -2,17 +2,17 @@
 
 Jusqu'à maintenant, le joueur n'a qu'à se souvenir de 5 couleurs. Nous allons donc améliorer notre jeu en rendant la séquence plus longue.
 
-+ Créez une nouvelle variable nommée `pointage` {.blockdata}.
++ Créez une nouvelle variable nommée `pointage`{:class="blockdata"}.
 
 	![capture d'écran](images/colour-score.png)
 
-+ Ce `pointage` {.blockdata} sera utilisé pour déterminer la longueur de la séquence que le joueur doit mémoriser. Pour commencer, le pointage (et la taille de la séquence) sera de 3. Ajoutez ce bloc de code au début du code `quand ⚑ cliqué` {.blockevents} de votre personnage :
++ Ce `pointage`{:class="blockdata"} sera utilisé pour déterminer la longueur de la séquence que le joueur doit mémoriser. Pour commencer, le pointage (et la taille de la séquence) sera de 3. Ajoutez ce bloc de code au début du code `quand ⚑ cliqué`{:class="blockevents"} de votre personnage :
 
 	```blocks
 		[pointage v] prend la valeur [3]
 	```
 
-+ Au lieu de toujours créer une séquence de 5 couleurs, vous voulez avoir un `pointage` qui {.blockdata} détermine la longueur de la séquence. Changez la boucle `répéter` {.blockcontrol} de votre personnage (pour créer la séquence) en :
++ Au lieu de toujours créer une séquence de 5 couleurs, vous voulez avoir un `pointage`{:class="blockdata"} qui détermine la longueur de la séquence. Changez la boucle `répéter`{:class="blockcontrol"} de votre personnage (pour créer la séquence) en :
 
 	```blocks
     répéter (pointage) fois
@@ -25,7 +25,7 @@ Jusqu'à maintenant, le joueur n'a qu'à se souvenir de 5 couleurs. Nous allons 
 		ajouter à [pointage v] (1)
 	```
 
-+ Enfin, vous aurez besoin d'ajouter une boucle `répéter indéfiniment` {.blockcontrol} autour du code qui génère la séquence afin de créer une nouvelle séquence pour chaque niveau. Le code de votre lutin devrait apparaître comme suit :
++ Enfin, vous aurez besoin d'ajouter une boucle `répéter indéfiniment`{:class="blockcontrol"} autour du code qui génère la séquence afin de créer une nouvelle séquence pour chaque niveau. Le code de votre lutin devrait apparaître comme suit :
 
 	```blocks
     quand le drapeau vert pressé
@@ -43,4 +43,4 @@ Jusqu'à maintenant, le joueur n'a qu'à se souvenir de 5 couleurs. Nous allons 
     fin
 	```
 
-+ Demandez à vos amis de tester votre jeu. Pensez à cacher la liste `séquence` {.blockdata} avant de lancer le jeu!
++ Demandez à vos amis de tester votre jeu. Pensez à cacher la liste `séquence`{:class="blockdata"} avant de lancer le jeu!
