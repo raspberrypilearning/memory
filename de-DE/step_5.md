@@ -2,17 +2,17 @@
 
 Bisher muss sich der Spieler nur 5 Farben merken. Lass uns Dein Spiel verbessern, so dass die Länge der Farbenfolge erhöht wird.
 
-+ Erstelle eine neue Variable namens `Punktzahl` {.blockdata}.
++ Erstelle eine neue Variable namens `Punktzahl`{:class="blockdata"}.
 
 	![screenshot](images/colour-score.png)
 
-+ Diese `Punktzahl` {.blockdata} wird dafür verwendet, um über die Länge Sequenz zu entscheiden, die sich der Spieler merken muss. Um mit der Punktzahl (und der Länge der Sequenz) zu beginnen, setze diese auf 3. Füge diesen Code an das Ende des `wenn Fahne geklickt` {.blockevents}-Skripts Deines Charakters hinzu:
++ Diese `Punktzahl`{:class="blockdata"} wird dafür verwendet, um über die Länge Sequenz zu entscheiden, die sich der Spieler merken muss. Um mit der Punktzahl (und der Länge der Sequenz) zu beginnen, setze diese auf 3. Füge diesen Code an das Ende des `wenn Fahne geklickt`{:class="blockevents"}-Skripts Deines Charakters hinzu:
 
 	```blocks
 setze [Punktzahl v] auf [3]
 	```
 
-+ Anstatt immer eine Folge von 5 Farben zu haben, möchtest Du, dass nun die `Punktzahl` {.blockdata}, die Sequenzlänge bestimmt. Ändere die `wiederholen` {.blockcontrol}-Schleife deines Charakters (für die Erstellung der Sequenz) zu:
++ Anstatt immer eine Folge von 5 Farben zu haben, möchtest Du, dass nun die `Punktzahl`{:class="blockdata"}, die Sequenzlänge bestimmt. Ändere die `wiederholen`{:class="blockcontrol"}-Schleife deines Charakters (für die Erstellung der Sequenz) zu:
 
 	```blocks
 wiederhole (Punktzahl) mal
@@ -25,7 +25,7 @@ Ende
 ändere [Punktzahl v] um (1)
 	```
 
-+ Schließlich musst Du eine `auf ewig` {.blockcontrol}-Schleife dem Code hinzufügen, so dass eine neue Sequenz für jede Spiel-Stufe erstellt wird. So sollte der Code Deines Charakters aussehen:
++ Schließlich musst Du eine `auf ewig`{:class="blockcontrol"}-Schleife dem Code hinzufügen, so dass eine neue Sequenz für jede Spiel-Stufe erstellt wird. So sollte der Code Deines Charakters aussehen:
 
 	```blocks
 Wenn die grüne Flagge angeklickt
@@ -43,4 +43,4 @@ wiederhole fortlaufend
 Ende
 	```
 
-+ Lass Deine Familie oder Freunde das Spiel testen. Denke daran die `Sequenz` {.blockdata}-Liste auszublenden, bevor sie das Spiel starten!
++ Lass Deine Familie oder Freunde das Spiel testen. Denke daran die `Sequenz`{:class="blockdata"}-Liste auszublenden, bevor sie das Spiel starten!
