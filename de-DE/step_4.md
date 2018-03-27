@@ -25,7 +25,7 @@ Lass uns vier Tasten hinzufügen, damit man die gemerkte Reihenfolge der Farben 
   Ende
 ```
 
-+ Du kannst auch ein paar blinkende Lichter anzeigen, sobald die Liste leer ist, da es bedeutet, dass die komplette Reihenfolge der Farben richtig erraten worden ist. Fügen diesen Code an das Ende des `wenn Fahne geklickt` {.blockevents}-Skripts Deines Charakters hinzu:
++ Du kannst auch ein paar blinkende Lichter anzeigen, sobald die Liste leer ist, da es bedeutet, dass die komplette Reihenfolge der Farben richtig erraten worden ist. Fügen diesen Code an das Ende des `wenn Fahne geklickt`{:class="blockevents"}-Skripts Deines Charakters hinzu:
 
 ```blocks
   warte bis <(Länge von [Sequenz v]) = [0]>
