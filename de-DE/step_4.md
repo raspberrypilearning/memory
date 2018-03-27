@@ -8,10 +8,10 @@ Lass uns vier Tasten hinzufügen, damit man die gemerkte Reihenfolge der Farben 
 
 + Wenn die rote Taste angeklickt  wird, musst Du Deinem Charakter mitteilen, dass die rote Taste gedrückt wurde. Füge diesen Code Deiner roten Trommel hinzu:
 
-	```blocks
-Wenn ich angeklickt werde
-sende [rot v] an alle
-	```
+```blocks
+   Wenn ich angeklickt werde
+   sende [rot v] an alle
+```
 
 + Wenn dein Charakter diese Nachricht empfängt, sollte er prüfen, ob die Nummer 1 am Anfang der Liste steht (was bedeutet, dass Rot die nächste Farbe in der Reihenfolge ist). Wenn ja, kann die Nummer aus der Liste entfernt werden, da sie richtig erraten worden ist. Ansonsten ist das Spiel vorbei!
 
