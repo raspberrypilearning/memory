@@ -16,7 +16,7 @@ Invece di creare sempre una sequenza di 5 colori, ora vuoi che il `punteggio`{:c
 
 	```blocks
 		ripeti (punteggio) volte
-		end
+		 end
 	```
 
 + Se si indovina la sequenza correttamente, dovrai aggiungere 1 al punteggio per aumentare la lunghezza della sequenza.
