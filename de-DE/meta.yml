@@ -1,0 +1,23 @@
+hero_image: images/memory.png
+theme: violet
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: creator, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+title: Gedächtnis
+description: In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
+original_url: https://codeclubprojects.org/en-GB/scratch/memory
+interests: ''
+technologies: scratch
+site_areas: codeclub, scratch
+steps:
+- title: Einführung
+- title: Zufällige Farben
+- title: 'Herausforderung: Geräusche hinzufügen'
+- title: Reihenfolge wiederholen
+- title: Mehrere Ebenen
+- title: Höchstpunktestand
+- title: 'Herausforderung: Erstelle mehr Blöcke'
+- title: 'Herausforderung: Ein weiteres Kostüm'
+- title: 'Herausforderung: Schwierigkeitsgrad'
