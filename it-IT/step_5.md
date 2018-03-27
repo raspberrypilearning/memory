@@ -14,10 +14,10 @@ Fino ad ora, il giocatore deve ricordare solo 5 colori. Miglioriamo il tuo gioco
 
 Invece di creare sempre una sequenza di 5 colori, ora vuoi che il `punteggio`{:class="blockdata"} determini la lunghezza della sequenza. Cambia il loop `ripeti`{:class="blockcontrol"} del tuo personaggio (per creare la sequenza) a:
 
-	```blocks
-    ripeti (punteggio) volte
-    end
-	```
+```blocks
+  ripeti (punteggio) volte
+  end
+```
 
 + Se si indovina la sequenza correttamente, dovrai aggiungere 1 al punteggio per aumentare la lunghezza della sequenza.
 
