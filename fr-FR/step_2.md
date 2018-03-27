@@ -34,7 +34,7 @@ Créons un personnage qui peut se transformer dans une séquence aléatoire de c
     supprimer l'élément (tout v) de la liste [séquence v]
     répéter (5) fois
        ajouter (nombre aléatoire entre (1) et (4)) à [séquence v]
-       basculer sur costume (élément (last v) de [séquence v])
+       basculer sur le costume (élément (last v) de [séquence v] :: list)
        attendre (1) secondes
     fin
 	```
