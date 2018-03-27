@@ -2,7 +2,7 @@
 
 Ajoutons la possibilité d'enregistrer le meilleur pointage afin de pouvoir jouer contre vos amis.
 
-+ Ajoutez 2 nouvelles variables à votre projet nommées `meilleur pointage` {.blockdata} et `meilleur joueur` {.blockdata}.
++ Ajoutez 2 nouvelles variables à votre projet nommées `meilleur pointage`{:class="blockdata"} et `meilleur joueur`{:class="blockdata"}.
 
 + Si jamais le jeu s'arrête (en appuyant sur le mauvais bouton), vous aurez besoin de vérifier si le pointage du joueur est plus grand que le meilleur pointage actuel. Si c'est le cas, vous devez enregistrer le pointage comme le nouveau meilleur pointage et enregistrer le nom du joueur. Voici à quoi devrait correspondre votre bouton rouge :
 
@@ -27,18 +27,18 @@ Ajoutons la possibilité d'enregistrer le meilleur pointage afin de pouvoir joue
 
 + Si jamais vous changez une partie du code, comme pour ajouter un son ou changer le message 'Partie terminée!', vous allez devoir le changer 4 fois! Ça devient embêtant et vous perdez beaucoup de temps.
 
-	À la place, vous pouvez définir vos propres blocs afin de les réutiliser dans votre projet! Pour faire cela, cliquez `Ajouter blocs` {.blockmoreblocks} et puis sur 'Créer un bloc'. Nommez ce nouveau bloc 'Partie terminée'.
+	À la place, vous pouvez définir vos propres blocs afin de les réutiliser dans votre projet! Pour faire cela, cliquez `Ajouter blocs`{:class="blockmoreblocks"} et puis sur 'Créer un bloc'. Nommez ce nouveau bloc 'Partie terminée'.
 
 	![capture d'écran](images/colour-more.png)
 
-+ Ajoutez le code du bloc `sinon` {.blockcontrol} du bouton rouge au nouveau bloc que vous voyez :
++ Ajoutez le code du bloc `sinon`{:class="blockcontrol"} du bouton rouge au nouveau bloc que vous voyez :
 
 	![capture d'écran](images/colour-make-block.png)
 
-+ Vous avez maintenant créé une nouvelle _fonction_ appelée `Partie terminée` {.blockmoreblocks} que vous pouvez utiliser où vous voulez. Glissez votre nouveau bloc `Partie terminée` {.blockmoreblocks} vers les 4 scripts pour les boutons.
++ Vous avez maintenant créé une nouvelle _fonction_ appelée `Partie terminée`{:class="blockmoreblocks"} que vous pouvez utiliser où vous voulez. Glissez votre nouveau bloc `Partie terminée`{:class="blockmoreblocks"} vers les 4 scripts pour les boutons.
 
 	![capture d'écran](images/colour-use-block.png)
 
-+ Ensuite, ajoutez un son lorsque vous cliquez sur le mauvais bouton. Vous avez juste à ajouter ce code _une fois_ dans le bloc `Partie terminée` {.blockmoreblocks} que vous venez de créer, et non à 4 occasions différentes!
++ Ensuite, ajoutez un son lorsque vous cliquez sur le mauvais bouton. Vous avez juste à ajouter ce code _une fois_ dans le bloc `Partie terminée`{:class="blockmoreblocks"} que vous venez de créer, et non à 4 occasions différentes!
 
 	![capture d'écran](images/colour-cough.png)
