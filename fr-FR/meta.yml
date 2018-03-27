@@ -1,0 +1,23 @@
+hero_image: images/memory.png
+theme: violet
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: creator, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+title: Mémoire
+description: Crées un jeu de mémoire où tu devras mémoriser et répéter une séquence aléatoire de couleurs!
+original_url: https://codeclubprojects.org/en-GB/scratch/memory
+interests: ''
+technologies: scratch
+site_areas: codeclub, scratch
+steps:
+- title: Introduction
+- title: Des couleurs aléatoires
+- title: 'Défi : Ajouter du son'
+- title: Répéter la séquence
+- title: De multiples niveaux
+- title: Meilleur pointage
+- title: "Défi : Créer d'autres blocs"
+- title: "Défi : Un autre costume"
+- title: 'Défi : Niveau de difficulté'
