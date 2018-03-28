@@ -37,4 +37,4 @@ Mae'r prosiect yma yn trin elfennau sydd yn rhan o'r adran ganlynol o [Faes Llaf
 + "Gwisg arall" - gwella defnydd y gêm;
 + "Lefelau'r gêm" - golygu'r data wedi ei storio yn y rhestr. 
 
---- collapse ---
+--- /collapse ---
