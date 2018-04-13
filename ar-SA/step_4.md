@@ -18,14 +18,14 @@
 --- hint ---
 يجب أن تكون التعليمات البرمجية النهائية كما يلي:
 ```blocks
-عند نقر العلم
-احذف (الكل v) من [التسلسل v]
-كرِّر (5) مرة
-	أضف (اختر عشوائيًا من (1) إلى (4)) إلى [التسلسل v]
-    دق الطبلة (العنصر (الأخير v) من [التسلسل v]) لمدة (0.25) وحدة إيقاع
-    غيّر المظهر إلى (العنصر (last v) من [sequence v])
-    انتظر (1) ثانية
-أوقف المقطع البرمجي
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+	add (pick random (1) to (4)) to [sequence v]
+    play drum (item (last v) of [sequence v]) for (0.25) beats
+    switch costume to (item (last v) of [sequence v])
+    wait (1) secs
+end
 ```
 --- /hint ---
 
