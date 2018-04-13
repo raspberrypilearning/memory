@@ -29,19 +29,20 @@
 يجب أن تكون التعليمات البرمجية عندما يتم الضغط على الزر الأحمر كما يلي:
 
 ```blocks
-	عندما أستقبل [red v]
-	إذا <(العنصر (1 v) من [التسلسل v])=[1]> إذًا
-		احذف (1 v) من [التسلسل v]
-	وإلا
-		فقل [انتهت اللعبة!] لمدة (1) ثانية
-		إذا <(النتيجة) > (أعلى نتيجة) >
-			فعيِّن [أعلى نتيجة v] إلى (النتيجة)
-			اسأل [أعلى نتيجة! ما اسمك؟] وانتظر
-			عيِّن [الاسم v] إلى (الإجابة)
-		أوقف المقطع البرمجي
-		أوقف [الكل v]
-	أوقف المقطع البرمجي
+	when I receive [red v]
+	if <(item (1 v) of [sequence v])=[1]> then
+		delete (1 v) of [sequence v]
+	else
+		say [Game over!] for (1) secs
+		if < (score) > (high score) > then
+			set [high score v] to (score)
+			ask [High score! What is your name?] and wait
+			set [name v] to (answer)
+		end
+		stop [all v]
+	end
 ```
+
 --- /hint ---
 --- /hints ---
 
