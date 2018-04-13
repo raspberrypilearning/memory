@@ -1,0 +1,25 @@
+hero_image: images/memory.png
+theme: violet
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: creator, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+title: मेमोरी
+description: मेमोरी गेम बनाएँ, जिसमें आप बेतरतीब रंगों के बेतरतीब अनुक्रम
+  को याद रखते और दोहराते हैं
+original_url: https://codeclubprojects.org/en-GB/scratch/memory
+interests: ''
+technologies: scratch
+site_areas: codeclub, scratch
+steps:
+- title: भूमिका
+- title: आपको किसकी ज़रूरत होगी
+- title: रंगों का अनुक्रम बनाएँ
+- title: 'चुनौती: ध्वनि जोड़ना'
+- title: अनुक्रम दोहराना
+- title: अनेक स्तर
+- title: उच्च स्कोर
+- title: 'चुनौती: और ब्लॉक बनाना'
+- title: 'चुनौती: अन्य पोशाक'
+- title: 'चुनौती: कठिनाई स्तर'
