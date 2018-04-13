@@ -29,18 +29,18 @@
 按下红色按钮时，你的代码应如下所示：
 
 ```blocks
-	当接收到 [红色 v]
-	如果 <([序列 v] 的第 (1 v) 项)=[1]> 那么
-		删除 [序列 v] 的第 (1 v) 项
-	否则
-		说 [游戏结束！] (1) 秒
-		如果 < (分数) > (高分) > 那么
-			将 [高分 v] 设定为 (分数)
-			询问 [高分！你叫什么名字？] 并等待
-			将 [名称 v] 设定为 (回答)
-		end
-		停止 [全部 v]
-	end
+	当收到消息 [red v]
+  如果 <(item (1 v) of [sequence v] :: list) = [1]> 那么 
+   删除第 (1 v) 项 \( [sequence v] \)
+
+   说出 [Game over!] (1) 秒
+   如果 <(score) > (high score)> 那么 
+    变量 [high score v] 设为 (score)
+    询问 [High score! What is your name?] 并等待
+    变量 [name v] 设为 (询问的答案)
+   end
+   停止 [全部 v]
+ end
 ```
 --- /hint ---
 --- /hints ---
