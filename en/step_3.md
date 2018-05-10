@@ -19,6 +19,8 @@ First, let's create a character who will display a random sequence of colours to
 
 	![screenshot](images/colour-costume.png)
 
+	You can use the *color a shape* tool to fill parts of the costume a different colour. 
+
 Let's create a random sequence of colours.
 
 + Create a list called `sequence`{:class="blockdata"}. We will use this list to store the sequence of colours the player has to remember. Only the character sprite needs to see the list, so you can select **For this sprite only**.
