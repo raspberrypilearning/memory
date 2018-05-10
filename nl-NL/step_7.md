@@ -14,7 +14,7 @@ Als het spel stopt omdat de speler de reeks verkeerd heeft, moet je controleren 
 
 ![Hint for high score](images/hint-high-score.png)
 
---- /hint --- --- hint \--- Zo zou de code eruit moeten zien voor als op de rode knop is gedrukt:
+--- /hint --- --- hint --- Zo zou de code eruit moeten zien voor als op de rode knop is gedrukt:
 
 ```blocks
     wanneer ik signaal [rood v] ontvang
@@ -28,11 +28,7 @@ als <(item (1 v) of [reeks v] :: list) = [1]> dan
     maak [naam v] (antwoord)
   end
   stop [alle v]
-end Vraag [Topscore! Wat is je naam?] en wacht
-            wijzig [naam v] naar (antwoord)
-        end
-        stop [alles v]
-    end
+end
 ```
 
 --- /hint --- --- /hints ---
@@ -47,7 +43,7 @@ In plaats daarvan kunt je je eigen blokken maken en die steeds opnieuw in het pr
 
 ![screenshot](images/colour-more.png)
 
-+ Voeg de code van het` anders`{:class="blockcontrol"} -blok toe dat is verbonden met de rode knop van het blok dat je hebt gemaakt:
++ Voeg de code van het `anders`{:class="blockcontrol"} -blok toe dat is verbonden met de rode knop van het blok dat je hebt gemaakt:
 
 ![screenshot](images/colour-make-block.png)
 
