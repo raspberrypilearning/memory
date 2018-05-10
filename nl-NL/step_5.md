@@ -44,7 +44,7 @@ end
 + 3 = groen
 + 4 = geel --- /hint --- --- hint --- Je hebt een `speel slagwerk`{:class="blocksound"} blok nodig om het eerste geluid in de reeks af te spelen vóór `verwijder item 1 van reeks`{:class="blockdata"}:
 
-![Play drum](images/hint-play-drum.png) --- / hint --- --- hint --- Dit is de code die je moet toevoegen:
+![Play drum](images/hint-play-drum.png) --- /hint --- --- hint --- Dit is de code die je moet toevoegen:
 
 ```blocks
 speel slagwerk (item (1 v) van [reeks v] :: list) (0.25) tellen
@@ -79,7 +79,7 @@ end
 
 Je kunt ook als beloning een aantal lampjes laten knipperen zodra de lijst leeg is, want dat betekent dat de hele reeks correct is onthouden.
 
-+ Voeg deze code toe aan het eind van het blok van het personage met ` wanneer groene vlag wordt aangeklikt`{:class="blockevents"}:
++ Voeg deze code toe aan het eind van het blok van het personage met `wanneer groene vlag wordt aangeklikt`{:class="blockevents"}:
 
 ```blocks
     wacht tot <(length of [reeks v] :: list) = [0]>
