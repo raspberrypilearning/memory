@@ -41,8 +41,7 @@ voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
 + Kun je dit blok toevoegen aan je programma om in één keer vijf willekeurige kleuren te genereren?
 
 ```blocks
-repeat (5)
-
+herhaal (5) keer
 end
 ```
 
