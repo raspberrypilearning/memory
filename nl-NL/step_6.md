@@ -8,7 +8,7 @@ Tot nu toe hoeft de speler maar een reeks van vijf kleuren te onthouden. Laten w
 
 De `score`{:class="blockdata"} zal worden gebruikt om te bepalen wat de lengte van de reeks moet worden die de speler moet gaan onthouden. We beginnen met een score (en lengte van de reeks) `3`.
 
-+ Voeg een blok toe aan het begin van de code van het personage met `wanneer op de groene vlag is geklikt `{: class = "blockevents"} om de `score `{: class = "blockdata"} op ` 3 `te zetten.
++ Voeg een blok toe aan het begin van de code van het personage met `wanneer op de groene vlag is geklikt`{:class="blockevents"} om de `score`{:class="blockdata"} op `3` te zetten.
 
 In plaats van de vaste reeks van 5 kleuren willen we nu dat `score`{:class="blockdata"} bepaalt hoe lang de reeks moet worden.
 
@@ -19,7 +19,7 @@ In plaats van de vaste reeks van 5 kleuren willen we nu dat `score`{:class="bloc
 end
 ```
 
-+ Als de reeks goed is geraden zou `1` bij de score moeten worden opgeteld om de lengte van de volgende reeks te verhogen. Voeg dit blok toe aan de code van het personage ** op de plaats waarvan je weet dat de reeks goed geraden is **.
++ Als de reeks goed is geraden zou `1` bij de score moeten worden opgeteld om de lengte van de volgende reeks te verhogen. Voeg dit blok toe aan de code van het personage **op de plaats waarvan je weet dat de reeks goed geraden is**.
 
 ```blocks
     verander [score v] met (1)
