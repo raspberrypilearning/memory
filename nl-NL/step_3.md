@@ -18,6 +18,8 @@ Laten we een personage maken die een willekeurige reeks kleuren laat zien om te 
     Geef je personage vier verschillend gekleurde uiterlijken, een voor elk van de vier kleuren hierboven. Zorg ervoor dat de gekleurde uiterlijken in dezelfde volgorde staan ​​als in bovenstaande lijst.
     
     ![screenshot](images/colour-costume.png)
+    
+    You can use the *color a shape* tool to fill parts of the costume a different colour.
 
 We gaan nu een willekeurige reeks kleuren maken.
 
