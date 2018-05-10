@@ -18,6 +18,8 @@ First, let's create a character who will display a random sequence of colours to
     Give your character four different coloured costumes, one for each of the four colours above. Make sure that your coloured costumes are in the same order as the list above.
     
     ![screenshot](images/colour-costume.png)
+    
+    You can use the *color a shape* tool to fill parts of the costume a different colour.
 
 Let's create a random sequence of colours.
 
