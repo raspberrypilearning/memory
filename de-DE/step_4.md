@@ -2,7 +2,7 @@
 
 ## Herausforderung: Geräusche hinzufügen
 
-Teste Dein Projekt einige Male. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume?
+Teste Dein Projekt einige Male. Du stellst möglicherweise fest, dass manchmal die gleiche Zahl zweimal (oder mehrmals) nacheinander ausgewählt wird, was es schwieriger macht sich die Reihenfolge zu merken. Can you make a drum sound play each time the character changes costume?
 
 Can you make a different drum sound play depending on which number was chosen? This will be *very* similar to your code to change the character's costume.
 
