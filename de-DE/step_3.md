@@ -45,17 +45,13 @@ wenn das Flag angeklickt wurde, addiere (wähle Zufall (1) bis (4)) zu [Sequenz 
 wiederhole (5) Ende
 ```
 
-+ You might notice that your list is getting a bit full by now. Let's add a block to delete the whole list at the start before we generate any numbers.
++ Du wirst feststellen, dass deine Liste inzwischen ein wenig gefüllt ist. Lässt uns einen Block hinzufügen, um die gesamte Liste am Anfang zu löschen, bevor wir irgendwelche Zahlen erzeugen.
 
 ```blocks
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+Wenn das Flag angeklickt wurde lösche (alle v) von [Sequenz v] wiederhole (5) füge hinzu (wähle Zufall (1) bis (4)) zum [Sequenz v] Ende
 ```
 
-+ Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks to your code immediately after you add the random number to your list:
++ Schließlich, jedes Mal, wenn wir eine Nummer wählen, wechseln wir das Kostüm des Tänzers zu dem letzten Gegenstand, der der Liste hinzugefügt wurde. Das ist die Nummer, die wir gewählt haben. Füge diese Blöcke an deinem Code sofort, nachdem du die Zufallszahl zu deine Liste hinzufügen:
 
 ```blocks
 switch costume to (item (last v) of [sequence v])
