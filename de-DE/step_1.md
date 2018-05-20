@@ -1,10 +1,10 @@
-## Introduction
+## Einführung
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
 
-### What you will make
+### Was du machen wirst
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat them back to her. If you get the order wrong, it's game over!
+Klicke zum Starten auf die grüne Flagge. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat them back to her. If you get the order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
