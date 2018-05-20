@@ -6,7 +6,7 @@ Lass uns zunächst einen Charakter erstellen, der eine zufällige Reihenfolge an
 
 + Füge eine neue Figur, sowie den passeden Bühnenhintergrund hinzu. Dein Charakter muss keine Person sein, aber er muss verschiedene Farben annehmen können.
 
-![screenshot](images/colour-sprite.png)
+![Screenshot](images/colour-sprite.png)
 
 + Du wirst im Spiel unterschiedliche Zahlen für die jeweiligen Farben benutzen:
     
@@ -17,7 +17,7 @@ Lass uns zunächst einen Charakter erstellen, der eine zufällige Reihenfolge an
     
     Gib Deinem Charakter vier unterschiedlich farbige Kostüme in den obigen Farben. Stelle sicher, dass die Farben der Kostüme richtig geordnet sind.
     
-    ![screenshot](images/colour-costume.png)
+    ![Screenshot](images/colour-costume.png)
     
     Du kannst mit der * -Farbe eine Form einfärben * Werkzeug, um Teile des Kostüms eine andere Farbe zu füllen.
 
@@ -29,7 +29,7 @@ Lässt uns eine zufällige Abfolge von Farben erstellen.
 
 Du solltest nun sowohl Deine leere Liste in der oberen linken Ecke Deiner Bühne sehen, als auch eine Menge neuer Bausteine für die Verwendung der Liste.
 
-![screenshot](images/colour-list-blocks.png)
+![Screenshot](images/colour-list-blocks.png)
 
 + Denkst du daran, dass wir jeder Farbe eine Nummer gegeben haben? Wir können eine zufällige Farbe wählen, indem wir eine Zufallszahl wählen und sie der Liste hinzufügen. Füge diesen Code hinzu:
 
@@ -54,6 +54,5 @@ Wenn das Flag angeklickt wurde lösche (alle v) von [Sequenz v] wiederhole (5) f
 + Schließlich, jedes Mal, wenn wir eine Nummer wählen, wechseln wir das Kostüm des Tänzers zu dem letzten Gegenstand, der der Liste hinzugefügt wurde. Das ist die Nummer, die wir gewählt haben. Füge diese Blöcke an deinem Code sofort, nachdem du die Zufallszahl zu deine Liste hinzufügen:
 
 ```blocks
-switch costume to (item (last v) of [sequence v])
-wait (1) secs
+Kostüm zu wechseln (Artikel (letzte V) [Sequenz v]) Sekunden warten (1)
 ```
