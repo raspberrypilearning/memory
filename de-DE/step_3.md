@@ -27,15 +27,14 @@ Lässt uns eine zufällige Abfolge von Farben erstellen.
 
 [[[generic-scratch-make-list]]]
 
-You should now see your empty list in the top left of your stage, as well as lots of new blocks for using lists.
+Du solltest nun sowohl Deine leere Liste in der oberen linken Ecke Deiner Bühne sehen, als auch eine Menge neuer Bausteine für die Verwendung der Liste.
 
 ![screenshot](images/colour-list-blocks.png)
 
-+ Remember we gave each colour a number? We can choose a random colour by choosing a random number and adding it to the list. Add this code:
++ Denkst du daran, dass wir jeder Farbe eine Nummer gegeben haben? Wir können eine zufällige Farbe wählen, indem wir eine Zufallszahl wählen und sie der Liste hinzufügen. Füge diesen Code hinzu:
 
 ```blocks
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+wenn das Flag angeklickt wurde, addiere (wähle Zufall (1) bis (4)) zu [Sequenz v]
 ```
 
 + Test your code by clicking the green flag. Check that, each time you click it, a random number between 1 and 4 is added to the list.
