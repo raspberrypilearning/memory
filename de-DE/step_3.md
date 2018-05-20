@@ -1,29 +1,29 @@
-## Create a colour sequence
+## Zufällige Farben
 
-First, let's create a character who will display a random sequence of colours to memorise.
+Lass uns zunächst einen Charakter erstellen, der eine zufällige Reihenfolge an unterscheidlichen Farben annehmen kann, die sich der Spieler merken muss.
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor [here](http://jumpto.cc/scratch-new).
++ Starte ein neues Scratch-Projekt und lösche die Katzenfigur, so dass Dein Projekt leer ist. Du findest das Scratch-Bearbeitungsprogramm online auf jumpto.cc/scratch-new.
 
-+ Choose a character sprite and a backdrop. Your character doesn't have to be a person, but they need to be able to show different colours.
++ Füge eine neue Figur, sowie den passeden Bühnenhintergrund hinzu. Dein Charakter muss keine Person sein, aber er muss verschiedene Farben annehmen können.
 
 ![screenshot](images/colour-sprite.png)
 
-+ In your game, you'll use a different number to represent each colour:
++ Du wirst im Spiel unterschiedliche Zahlen für die jeweiligen Farben benutzen:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = rot
+    + 2 = blau
+    + 3 = grün
+    + 4 = gelb
     
-    Give your character four different coloured costumes, one for each of the four colours above. Make sure that your coloured costumes are in the same order as the list above.
+    Gib Deinem Charakter vier unterschiedlich farbige Kostüme in den obigen Farben. Stelle sicher, dass die Farben der Kostüme richtig geordnet sind.
     
     ![screenshot](images/colour-costume.png)
     
-    You can use the *color a shape* tool to fill parts of the costume a different colour.
+    Du kannst mit der * -Farbe eine Form einfärben * Werkzeug, um Teile des Kostüms eine andere Farbe zu füllen.
 
-Let's create a random sequence of colours.
+Lässt uns eine zufällige Abfolge von Farben erstellen.
 
-+ Create a list called `sequence`{:class="blockdata"}. We will use this list to store the sequence of colours the player has to remember. Only the character sprite needs to see the list, so you can select **For this sprite only**.
++ Erstelle eine neue Liste namens `Sequenz`{:class="blockdata"}. We will use this list to store the sequence of colours the player has to remember. Only the character sprite needs to see the list, so you can select **For this sprite only**.
 
 [[[generic-scratch-make-list]]]
 
