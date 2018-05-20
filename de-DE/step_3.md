@@ -23,7 +23,7 @@ Lass uns zunächst einen Charakter erstellen, der eine zufällige Reihenfolge an
 
 Lässt uns eine zufällige Abfolge von Farben erstellen.
 
-+ Erstelle eine neue Liste namens `Sequenz`{:class="blockdata"}. We will use this list to store the sequence of colours the player has to remember. Only the character sprite needs to see the list, so you can select **For this sprite only**.
++ Erstelle eine neue Liste namens `Sequenz`{:class="blockdata"}. Wir verwenden diese Liste, um die Reihenfolge der Farben zu speichern, an die sich der Spieler erinnern soll. Nur diese Figur muss die Liste sehen, also kannst du auf **Nur für diese Figur** klicken.
 
 [[[generic-scratch-make-list]]]
 
