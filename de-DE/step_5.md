@@ -2,7 +2,7 @@
 
 Lass uns vier Tasten hinzufügen, damit man die gemerkte Reihenfolge der Farben abspielen kann.
 
-+ Füge Deinem Projekt vier Figuren hinzu, die die Tasten darstellen werden. Bearbeite Deine Figuren so, dass jeweils eine Taste eine der vier Farben repräsentiert. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
++ Füge Deinem Projekt vier Figuren hinzu, die die Tasten darstellen werden. Bearbeite Deine Figuren so, dass jeweils eine Taste eine der vier Farben repräsentiert. Legen Sie die Figuren in der gleichen Reihenfolge wie die Kostüme aus - rot, blau, grün, gelb.
 
 ![screenshot](images/colour-drums.png)
 
