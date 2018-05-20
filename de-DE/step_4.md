@@ -2,29 +2,22 @@
 
 ## Herausforderung: Geräusche hinzufügen
 
-Teste Dein Projekt einige Male. Du stellst möglicherweise fest, dass manchmal die gleiche Zahl zweimal (oder mehrmals) nacheinander ausgewählt wird, was es schwieriger macht sich die Reihenfolge zu merken. Can you make a drum sound play each time the character changes costume?
+Teste Dein Projekt einige Male. Du stellst möglicherweise fest, dass manchmal die gleiche Zahl zweimal (oder mehrmals) nacheinander ausgewählt wird, was es schwieriger macht sich die Reihenfolge zu merken. Kannst Du jedes Mal, wenn das Kostüm wechselt ein Trommel-Geräusch spielen?
 
-Can you make a different drum sound play depending on which number was chosen? This will be *very* similar to your code to change the character's costume.
+Kannst Du jeweils ein anderes Trommel-Geräusch machen, abhängig von der Zufallszahl, die ausgewählt wird? Dies wird *sehr* ähnlich zu dem Code sein, der für das Verändern des Kostüms des Charakters verantwortlich ist.
 
-\--- hints \--- \--- hint \--- You can complete this challenge by adding just two blocks to your character's current code! \--- /hint \--- \--- hint \--- Here are the blocks you will need:
+\--- hints \--- \--- hint \--- Du kannst diese Herausforderung erfüllen, indem du dem aktuellen Code deines Charakters nur zwei Blöcke hinzufügst! \--- hint\--- \--- hint \---Hier sind die Blöcke, die du benötigst:
 
-![Hint drum blocks](images/hint-drumblocks.png) \--- /hint \---
+![Hinweis Trommelblöcke](images/hint-drumblocks.png) \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \---So sollte dein fertiger Code aussehen:
 
 ```blocks
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (last v) of [sequence v]) for (0.25) beats
-    switch costume to (item (last v) of [sequence v])
-    wait (1) secs
-end
+Wenn das Flag angeklickt wurde, lösche (alle v) von [Sequenz v] wiederhole (5) füge (Zufallsauswahl (1) bis (4)) zu [Sequenz v] Spieltrommel (Gegenstand (letztes v) von [Sequenz v]) für ( 0.25) schlägt das Kostüm auf (Gegenstand (letztes v) von [Folge v]) warte (1) Sekunden Ende
 ```
 
 \--- /hint \---
 
-\--- /hints \---
+\---/hints\---
 
 \--- /challenge \---
