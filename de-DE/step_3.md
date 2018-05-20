@@ -37,14 +37,12 @@ Du solltest nun sowohl Deine leere Liste in der oberen linken Ecke Deiner Bühne
 wenn das Flag angeklickt wurde, addiere (wähle Zufall (1) bis (4)) zu [Sequenz v]
 ```
 
-+ Test your code by clicking the green flag. Check that, each time you click it, a random number between 1 and 4 is added to the list.
++ Teste deinen Code, indem due auf die grüne Flagge klickst. Stelle sicher, dass jedes Mal, wenn du darauf klickst, eine zufällige Zahl zwischen 1 und 4 zur Liste hinzugefügt wird.
 
-+ Can you add this block to your program to generate five random colours at once?
++ Kannst du diesen Code hinzufügen, um der Liste 5 Mal nacheinander eine zufällige Nummer zu vergeben?
 
 ```blocks
-repeat (5)
-
-end
+wiederhole (5) Ende
 ```
 
 + You might notice that your list is getting a bit full by now. Let's add a block to delete the whole list at the start before we generate any numbers.
