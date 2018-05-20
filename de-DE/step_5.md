@@ -1,8 +1,8 @@
-## Repeating the sequence
+## Reihenfolge wiederholen
 
-Let's add four buttons for the player to press to repeat the sequence they've remembered.
+Lass uns vier Tasten hinzufügen, damit man die gemerkte Reihenfolge der Farben abspielen kann.
 
-+ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
++ Füge Deinem Projekt vier Figuren hinzu, die die Tasten darstellen werden. Bearbeite Deine Figuren so, dass jeweils eine Taste eine der vier Farben repräsentiert. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
 
 ![screenshot](images/colour-drums.png)
 
