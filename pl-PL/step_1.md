@@ -1,4 +1,4 @@
-Poniższe tłumaczenie jest starszą wersją projektu Pamięć. Nie zawiera ono najnowszych treści i funkcji. Potrzebujemy Twojej pomocy, aby wprowadzić zmiany!
+Poniższe tłumaczenie jest starszą wersją projektu Test na pamięć. Nie zawiera ono najnowszych treści i funkcji. Potrzebujemy Twojej pomocy, aby wprowadzić zmiany!
 
 Jeśli możesz nam pomóc w aktualizacji i ulepszaniu naszych projektów, [powiadom nas tutaj](http://rpf.io/translators).
 
