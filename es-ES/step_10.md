@@ -1,6 +1,6 @@
 \--- challenge \---
 
-## Challenge: difficulty level
+## Desafío: nivel de dificultad
 
 Can you allow your player to choose between 'easy mode' (using just the red and blue drums) and 'normal mode' (which uses all four drums)?
 
