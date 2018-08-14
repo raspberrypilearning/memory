@@ -1,48 +1,48 @@
-## Multiple levels
+## Múltiplos níveis
 
-So far, the player only has to remember a sequence of five colours. Let's improve the game by adding a score, and adding code so that as the player's score increases, the length of the sequence they have to remember becomes longer.
+Até agora, o jogador só precisava lembrar de uma sequência de cinco cores. Vamos melhorar o jogo, implementando um placar, e adicionando código para que enquanto aumenta a pontuação, a quantidade de cores que o jogador precisa lembrar vai aumentando também.
 
-+ Create a new variable called `score`{:class="blockdata"}.
++ Crie uma nova variável chamada `placar`{:class="blockdata"}.
 
 [[[generic-scratch-add-variable]]]
 
-The `score`{:class="blockdata"} will be used to decide on the length of the sequence the player has to memorise. Let's start with a score (and a sequence length) of `3`.
+O `placar`{:class="blockdata"} será usado para determinar o tamanho da sequência que o jogador deve memorizar. Vamos começar com um placar (e tamanho da sequência) de `3`.
 
-+ Add a block at the start of your character's `when flag clicked`{:class="blockevents"} code to set the `score`{:class="blockdata"} to `3`.
++ Adicione este código no início do bloco de código `quando clicar em bandeira verde`{:class="blockevents"} do seu personagem, este código vai definir o `placar`{:class="blockdata"} inicial do jogo em `3`.
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="blockdata"} to determine the sequence length.
+Em vez de sempre criar uma sequência de cinco cores, agora você terá o `placar`{:class="blockdata"} para determinar o tamanho da sequência.
 
-+ Change the character's `repeat`{:class="blockcontrol"} loop (for creating the sequence) to repeat `score`{:class="blockdata"} times:
-
-```blocks
-    repeat (score)
-    end
-```
-
-+ If the sequence is guessed correctly, you should add `1` to the score to increase the length of the next sequence. Add this block to the character's code **at the point you know the sequence was guessed correctly**.
++ Alterar o bloco de repetição `repita (5) vezes`{:class="blockcontrol"} usado na personagem bailarina que cria a atual sequência, pelo bloco `repita (placar) vezes`{:class="blockdata"}:
 
 ```blocks
-    change [score v] by (1)
+    repita (placar) vezes
+   fim
 ```
 
-\--- hints \--- \--- hint \--- You know the sequence was guessed correctly at the point you broadcast the `win` message. \--- /hint \--- \--- /hints \---
++ Se a sequência for lembrada corretamente, você deve adicionar `1` para o placar para aumentar o comprimento da próxima seqüência. Adicione este bloco ao código do personagem **quando a sequência for lembrada corretamente**.
 
-+ Finally, you need to add a `forever`{:class="blockcontrol"} loop around the code which generates the sequence, so that a new sequence is created for each level. This is how your character's code might look:
+```blocks
+    adicione a [placar v] (1)
+```
+
+\--- hints \--- \--- hint \--- Se a sequência foi lembrada corretamente, você deve transmitir a mensagem de vitória `VITÓRIA!!!`. \--- /hint \--- \--- /hints \---
+
++ Finalmente, você precisa adicionar o bloco `sempre`{:class="blockcontrol"} englobando todo o código que gera a sequência, para que uma nova sequência seja criada para cada nível. É assim que o código do seu personagem deve ficar:
     
     ```blocks
-    when flag clicked
-    set [score v] to [3]
-    forever
-        delete (all v) of [sequence v]
-        repeat (score)
-            add (pick random (1) to (4)) to [sequence v]
-            switch costume to (item (last v) of [sequence v]
-            wait (1) secs
-        end
-        wait until < (length of [sequence v]) = [0]>
-        broadcast [won v] and wait
-        change [score v] by (1)
-    end
-```
+        quando clicar em bandeira verde
+       mude [placar v] para [3]
+       sempre
+          apague (todos v) de [sequencia v]
+          repita (placar) vezes
+             insira (número aleatório entre (1) e (4)) a [sequencia v]
+             mude para a fantasia (item (último v) de [sequencia v])
+             espere (1) seg
+          fim
+          espere até <(tamanho de [sequencia v]:: list)=[0]>
+          envie [VITÓRIA!!! v] a todos e espere
+          adicione a [placar v] (1)
+       fim
+    ```
 
-+ Get your friends to test out your game. Remember to hide the `sequence`{:class="blockdata"} list before they play it!
++ Chame seus amigos para testar seu jogo. Lembre-se de esconder a lista `sequencia`{:class="blockdata"} antes de jogar!
