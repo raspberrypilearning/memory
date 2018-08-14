@@ -1,56 +1,57 @@
-## High score
+## Рекорд
 
-Let's save the high score, so that you can play against your friends.
+Збережемо рекорд, щоб ви могли грати проти своїх друзів.
 
-+ Add two new variables called `high score`{:class="blockdata"} and `name`{:class="blockdata"} to your project.
++ Додайте дві нові змінні, які називаються `рекорд`{:class="blockdata"} та `ім'я`{:class="blockdata"} до вашого проекту.
 
-When the game ends because the player got the sequence wrong, you need to check whether their score is higher than the current high score. If it is, you need to save the score as the high score, and store the name of the player.
+Коли гра закінчується через те, що гравець назвав послідовність неправильно, потрібно перевірити, чи є їх результат більшим за поточну цифру. Якщо так, то вам потрібно зберегти рахунок як найкращий результат і зберегти ім'я гравця.
 
-+ Add code to your character sprite to store the high score. Also ask the player their name and record it in the `name`{:class="blockdata"} variable.
++ Додайте код до свого персонажа-спрайта, щоб зберегти рекорд. Також запитайте гравців їхмі імена та запишіть їх в список `ім'я`{:class="blockdata"}.
 
 [[[generic-scratch-high-score]]]
 
-\--- hints \--- \--- hint \--- Your new code needs to follow this logic: After the `Game over` message `If` the `score` is `greater than` the `high score` `Set` the `high score` to the `score` `Ask` the player's name `Set` the `name` to the `answer` \--- /hint \--- \--- hint \--- You will need the following blocks:
+\--- hints \--- \--- hint \--- Ваш новий код повинен дотримуватися цієї логіки: після повідомлення ` кінець гри ` `
+ `Якщо` `рахунок` `більший за `рекорд` `Встановити` `рахунок` як новий`рекорд` `Запитати` ім'я гравця `Встановити` `ім'я` на `відповідь` \--- /hint \--- \--- hint \--- Вам знадобляться наступні блоки:
 
-![Hint for high score](images/hint-high-score.png)
+![Підказка для рекорду](images/hint-high-score.png)
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- /hint \--- \--- hint \--- Ось як виглядає ваш код, коли натиснуто на червону кнопку:
 
 ```blocks
-    when I receive [red v]
-    if <(item (1 v) of [sequence v])=[1]> then
-        delete (1 v) of [sequence v]
-    else
-        say [Game over!] for (1) secs
-        if < (score) > (high score) > then
-            set [high score v] to (score)
-            ask [High score! What is your name?] and wait
-            set [name v] to (answer)
-        end
-        stop [all v]
-    end
+    коли я отримаю [червоний v]
+якщо <(item (1 v) of [послідовність v]:: list) = [1]> то 
+  вилучити (1 v) з [послідовність v]
+
+  говорити [Кінець гри!] (1) сек
+  якщо <(рахунок) > (рекорд)> то 
+    надати [рекорд v] значення (рахунок)
+    запитати [Рекорд! Як вас звати?] і чекати
+    надати [ім'я v] значення (відповідь)
+  end
+  зупинити [все v]
+end
 ```
 
 \--- /hint \--- \--- /hints \---
 
-+ You'll need to add this new code to the character sprite for the other three colours too! Have you noticed that the 'Game over' code for each of the four colours is exactly the same?
++ Вам потрібно буде додати цей новий код до образу спрайта для трьох інших кольорів теж! Ви помітили, що код "Кінець гри" для кожного з чотирьох кольорів точно такий самий?
 
-![screenshot](images/colour-same.png)
+![знімок екрану](images/colour-same.png)
 
-If you ever needed to change any of this code, for example to add a sound or change the 'Game over' message, you'd have to change it four times. That could get annoying, and waste a lot of time.
+Якщо вам коли-небудь потрібно буде змінити будь-який з цих кодів, наприклад, щоб додати звук або змінити повідомлення "Кінець гри!", вам потрібно буде змінити його чотири рази. Це займає багато часу та може дратувати.
 
-Instead, you can define your own blocks, and reuse them in your project. To do this, click `More blocks`{:class="blockmoreblocks"}, and then **Make a block**. Call this new block 'Game over'.
+Замість цього ви можете визначити власні блоки та повторно використовувати їх у вашому проекті. Для цього натисніть `Ваші блоки`{:class="blockmoreblocks"}, а потім **Створити блок**. Назвіть цей новий блок "Кінець гри!".
 
-![screenshot](images/colour-more.png)
+![знімок екрану](images/colour-more.png)
 
-+ Add the code from the `else`{:class="blockcontrol"} block connected to the red button to the block you've created:
++ Додайте код з блоку `Інше`{:class="blockcontrol"}, що підключений до червоної кнопки створеного вами блоку:
 
-![screenshot](images/colour-make-block.png)
+![знімок екрану](images/colour-make-block.png)
 
-+ You've now made a new *function* called `Game over`{:class="blockmoreblocks"}, which you can use anywhere you like. Drag your new `Game over`{:class="blockmoreblocks"} block onto the four scripts for the buttons.
++ Тепер ви створили нову *функцію*, яка називається `Кінець гри`{:class="blockmoreblocks"}, яку можна використовувати де завгодно. Перетягніть новий блок `Кінець гри`{:class="blockmoreblocks"} на чотири скрипти для кнопок.
 
-![screenshot](images/colour-use-block.png)
+![знімок екрану](images/colour-use-block.png)
 
-+ Now add a sound for when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="blockmoreblocks"} block that you made, and not four separate times!
++ Тепер додавайте звук, коли натискається неправильна кнопка. Вам потрібно додати цей код лише один раз в блоці `Кінець гри`{:class="blockmoreblocks"}, який ви зробили, а не чотири окремі рази!
 
-![screenshot](images/colour-cough.png)
+![знімок екрану](images/colour-cough.png)
