@@ -30,19 +30,19 @@ end
 + Tenslotte moet er nog een `herhaal`{:class="blockcontrol"} -lus om de code worden gezet die de reeks maakt, zodat er voor elk level een nieuwe reeks wordt gemaakt. Zo zou de code van het personage eruit kunnen zien:
     
     ```blocks
-    wanneer groene vlag wordt aangeklikt
-maak [score v] [3]
-herhaal 
-  verwijder item (alle v) van [reeks v]
-  herhaal (score) keer 
-    voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
-    verander uiterlijk naar (item (laatste v) van [reeks v] :: list)
-    wacht (1) sec.
-  end
-  wacht tot <(length of [reeks v] :: list) = [0]>
-  zend signaal [gewonnen v] en wacht
-  verander [score v] met (1)
-end
-```
+        wanneer groene vlag wordt aangeklikt
+    maak [score v] [3]
+    herhaal 
+      verwijder item (alle v) van [reeks v]
+      herhaal (score) keer 
+        voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
+        verander uiterlijk naar (item (laatste v) van [reeks v] :: list)
+        wacht (1) sec.
+      end
+      wacht tot <(length of [reeks v] :: list) = [0]>
+      zend signaal [gewonnen v] en wacht
+      verander [score v] met (1)
+    end
+    ```
 
 + Laat je vrienden je spel testen. Vergeet niet om de `reeks `{: class = "blockdata"}-lijst te verbergen voordat ze gaan spelen!
