@@ -1,10 +1,10 @@
-## Create a colour sequence
+## Creează o secvenţă de culori
 
-First, let's create a character who will display a random sequence of colours to memorise.
+În primul rând, haide să creăm un personaj care poate să afișeze la întâmplare o secvență de culori pentru ca un jucător să o memoreze.
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor [here](http://jumpto.cc/scratch-new).
++ Începe un nou proiect Scratch și șterge sprite-ul pisică. Poți găsi editorul de Scratch online [aici](http://jumpto.cc/scratch-new).
 
-+ Choose a character sprite and a backdrop. Your character doesn't have to be a person, but they need to be able to show different colours.
++ Alege un personaj și un fundal. Personajul tău nu trebuie să fie o persoană, dar trebuie să poată afișa culori diferite.
 
 ![screenshot](images/colour-sprite.png)
 
