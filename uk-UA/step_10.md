@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: difficulty level
+## Завдання: складний рівень
 
-Can you allow your player to choose between 'easy mode' (using just the red and blue drums) and 'normal mode' (which uses all four drums)?
+Чи можете ви дозволити вашому гравцеві обирати між «легким режимом» (в якому задіяні тільки червоні та сині барабани) та «звичайним режимом» (який використовує всі чотири барабани)?
 
-You could even add a 'hard' mode, which makes use of a fifth drum!
+Ви навіть можете додати "складний" режим, в якому буде п'ятий барабан!
 
 \--- /challenge \---
