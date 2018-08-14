@@ -1,24 +1,24 @@
-## Introduction
+## Introducere
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+În acest proiect vei crea un joc de memorie unde va trebui să memorezi și să repeți o secvență aleatorie de culori!
 
-### What you will make
+### Ce ai de făcut
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat them back to her. If you get the order wrong, it's game over!
+Fă click pe steagul verde pentru a începe. Urmărește secvența de culori afișată pe rochia balerinei și ascultă sunetul tobelor, apoi repetă-i-le. În cazul în care ordinea e greșită, jocul s-a terminat!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
   <img src="images/colour-final.png">
 </div>
 
-### What you will learn
+### Ce vei învăța
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
+Acest proiect acoperă elemente din următoarele componente ale curriculumului [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder){:target="_blank"}
++ [Combină construcțiile de programare pentru a rezolva o problemă.](https://www.raspberrypi.org/curriculum/programming/builder){:target="_blank"}
 
-### Additional information for educators
+### Informații suplimentare pentru educatori
 
-If you need to print this project, please use the [printer friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Dacă doriți să tipăriți acest proiect, vă rugăm să folosiți [versiunea imprimabilă](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
-Use the link in the footer to access the GitHub repo for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
+Utilizați link-ul din subsolul paginii pentru a accesa depozitul GitHub pentru acest proiect, care conține toate resursele (inclusiv un exemplu de proiect finalizat) în directorul "en/resources".
