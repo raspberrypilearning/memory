@@ -30,19 +30,19 @@ Instead of always creating a sequence of five colours, you now want the `score`{
 + Finally, you need to add a `forever`{:class="blockcontrol"} loop around the code which generates the sequence, so that a new sequence is created for each level. This is how your character's code might look:
     
     ```blocks
-    when flag clicked
-    set [score v] to [3]
-    forever
-        delete (all v) of [sequence v]
-        repeat (score)
-            add (pick random (1) to (4)) to [sequence v]
-            switch costume to (item (last v) of [sequence v]
-            wait (1) secs
+        when flag clicked
+        set [score v] to [3]
+        forever
+            delete (all v) of [sequence v]
+            repeat (score)
+                add (pick random (1) to (4)) to [sequence v]
+                switch costume to (item (last v) of [sequence v]
+                wait (1) secs
+            end
+            wait until < (length of [sequence v]) = [0]>
+            broadcast [won v] and wait
+            change [score v] by (1)
         end
-        wait until < (length of [sequence v]) = [0]>
-        broadcast [won v] and wait
-        change [score v] by (1)
-    end
-```
+    ```
 
 + Get your friends to test out your game. Remember to hide the `sequence`{:class="blockdata"} list before they play it!
