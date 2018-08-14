@@ -1,24 +1,24 @@
-## Introduction
+## Introdução
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+Neste projeto, você criará um jogo de memória no qual você terá que memorizar e repetir uma sequência aleatória de cores!
 
-### What you will make
+### O que você vai fazer
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat them back to her. If you get the order wrong, it's game over!
+Clique na bandeira verde para começar. Observe a sequência de cores mostrada pelo vestido da bailarina e ouça as batidas de tambor que as acompanham e repita-as de volta para ela. Se você errar a ordem, o jogo acaba!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
   <img src="images/colour-final.png">
 </div>
 
-### What you will learn
+### O que você vai aprender
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
+Este projeto abrange elementos das seguintes vertentes do [Currículo de Criação Digital Raspberry Pi](http://rpf.io/curriculum){:target="_blank"}:
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder){:target="_blank"}
++ [Use construções básicas de programação para solucionar um problema.](https://www.raspberrypi.org/curriculum/programming/builder){:target="_blank"}
 
-### Additional information for educators
+### Informação adicional para educadores
 
-If you need to print this project, please use the [printer friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Se você precisar imprimir este projeto, por favor, use a [versão para impressão](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
-Use the link in the footer to access the GitHub repo for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
+Use o link no rodapé para acessar o projeto no repositório do GitHub. Tal repositório contém todos os recursos (incluindo um exemplo de projeto concluído) na pasta 'en/resources'.
