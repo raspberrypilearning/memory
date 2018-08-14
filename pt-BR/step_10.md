@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: difficulty level
+## Desafio: Nível de dificuldade
 
-Can you allow your player to choose between 'easy mode' (using just the red and blue drums) and 'normal mode' (which uses all four drums)?
+Você pode permitir que o seu jogador escolha entre 'modo fácil' (usando apenas os tambores vermelho e azul) e 'modo normal' (que usa todos os quatro tambores)?
 
-You could even add a 'hard' mode, which makes use of a fifth drum!
+Você pode até adicionar um modo 'difícil', que faz uso de um quinto tambor!
 
 \--- /challenge \---
