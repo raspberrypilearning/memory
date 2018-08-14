@@ -1,48 +1,48 @@
-## Multiple levels
+## Багаторівнева гра
 
-So far, the player only has to remember a sequence of five colours. Let's improve the game by adding a score, and adding code so that as the player's score increases, the length of the sequence they have to remember becomes longer.
+До цих пір гравець мав лише запам'ятати послідовність з п'яти кольорів. Покращимо гру, додавши рахунок і код, який зробить так, що при збільшенні рахунку гравця довжина послідовності, яку він повинен запам'ятати, буде збільшуватися.
 
-+ Create a new variable called `score`{:class="blockdata"}.
++ Створіть список, який називається `рахунок`{:class="blockdata"}.
 
 [[[generic-scratch-add-variable]]]
 
-The `score`{:class="blockdata"} will be used to decide on the length of the sequence the player has to memorise. Let's start with a score (and a sequence length) of `3`.
+`Рахунок`{:class="blockdata"} буде використовуватися для визначення довжини послідовності, яку гравець повинен запам'ятати. Почнемо з рахунку (і довжини послідовності) `3`.
 
-+ Add a block at the start of your character's `when flag clicked`{:class="blockevents"} code to set the `score`{:class="blockdata"} to `3`.
++ Додайте блок до початку коду вашого персонажа `коли прапорець натиснуто`{:class="blockevents"}, щоб встановити `рахунок`{:class="blockdata"} до `3`.
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="blockdata"} to determine the sequence length.
+Замість того, щоб завжди створювати послідовність з п'яти кольорів, тепер ви можете встановити `рахунок`{:class="blockdata"}, щоб визначити довжину послідовності.
 
-+ Change the character's `repeat`{:class="blockcontrol"} loop (for creating the sequence) to repeat `score`{:class="blockdata"} times:
-
-```blocks
-    repeat (score)
-    end
-```
-
-+ If the sequence is guessed correctly, you should add `1` to the score to increase the length of the next sequence. Add this block to the character's code **at the point you know the sequence was guessed correctly**.
++ Змініть цикл персонажа `повторити`{:class="blockcontrol"} (для створення послідовності) на повторення циклу `рахунок`{:class="blockdata"} разів:
 
 ```blocks
-    change [score v] by (1)
+    повторити (рахунок)
+end
 ```
 
-\--- hints \--- \--- hint \--- You know the sequence was guessed correctly at the point you broadcast the `win` message. \--- /hint \--- \--- /hints \---
++ Якщо послідовність правильно визначена, слід додати `1`, щоб збільшити довжину наступної послідовності. Додайте цей блок до коду персонажа **у точці, в якій ви знаєте, що послідовність була вгадана правильно**.
 
-+ Finally, you need to add a `forever`{:class="blockcontrol"} loop around the code which generates the sequence, so that a new sequence is created for each level. This is how your character's code might look:
+```blocks
+    змінити [рахунок v] на (1)
+```
+
+\--- hints \--- \--- hint \--- Ви дізнаєтесь, що послідовність була вгадана правильно у точці, в якій транслюється повідомлення `перемога`. \--- /hint \--- \--- /hints \---
+
++ Нарешті, потрібно додати цикл ` постійно` {: class = "blockcontrol"} навколо коду, який генерує послідовність, так що створюється нова послідовність для кожного рівня. Ось так може виглядати код вашого персонажа:
     
     ```blocks
-    when flag clicked
-    set [score v] to [3]
-    forever
-        delete (all v) of [sequence v]
-        repeat (score)
-            add (pick random (1) to (4)) to [sequence v]
-            switch costume to (item (last v) of [sequence v]
-            wait (1) secs
-        end
-        wait until < (length of [sequence v]) = [0]>
-        broadcast [won v] and wait
-        change [score v] by (1)
+        коли натиснуто ⚑
+    надати [рахунок v] значення [3]
+    завжди 
+      вилучити (все v) з [послідовність v]
+      повторити (рахунок) 
+        додати (випадкове від (1) до (4)) до [послідовність v]
+        змінити образ на (елемент (останні v) з [послідовність v]:: list)
+        чекати (1) секунд
+      end
+      чекати поки <(довжина [послідовністі v]:: list) = [0]>
+      оповістити [перемога v] і чекати
+      змінити [рахунок v] на (1)
     end
-```
+    ```
 
-+ Get your friends to test out your game. Remember to hide the `sequence`{:class="blockdata"} list before they play it!
++ Запросіть друзів перевірити свою гру. Не забудьте приховати список `послідовність`{:class="blockdata"}, перш ніж почати гру!
