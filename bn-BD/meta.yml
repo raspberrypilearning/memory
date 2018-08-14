@@ -1,0 +1,39 @@
+---
+hero_image: images/memory.png
+theme: violet
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
+title: Memory
+description: Create a memory game in which you memorise and repeat a random sequence of random colours
+original_url: https://codeclubprojects.org/en-GB/scratch/memory
+interests: games
+technologies: scratch
+site_areas: projects
+hardware: ''
+software: scratch
+version: 4.0.1
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Introduction
+  - 
+    title: What you will need
+  - 
+    title: Create a colour sequence
+  - 
+    title: 'Challenge: adding sound'
+  - 
+    title: Repeating the sequence
+  - 
+    title: Multiple levels
+  - 
+    title: High score
+  - 
+    title: 'Challenge: making more blocks'
+  - 
+    title: 'Challenge: another costume'
+  - 
+    title: 'Challenge: difficulty level'
