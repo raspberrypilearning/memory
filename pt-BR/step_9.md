@@ -1,10 +1,10 @@
 \--- challenge \---
 
-## Challenge: another costume
+## Desafio: Criar outra fantasia
 
-Have you noticed that your game starts with your character showing one of the four colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
+Você notou que seu jogo começa com seu personagem mostrando uma das quatro cores, e que ele sempre exibe a última cor na sequência enquanto o jogador está repetindo a sequência?
 
-Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
+Você pode adicionar um outro traje branco ao seu personagem, para ser exibido no início do jogo, e quando o jogador estiver tentando memorizar a sequência?
 
 ![screenshot](images/colour-white.png)
 
