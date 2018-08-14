@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: making more blocks
+## Desafio: Criar mais blocos
 
-Do you notice any other code that is the same for all four buttons?
+Você notou algum outro código que é o mesmo para todos os quatro tambores?
 
 ![screenshot](images/colour-more-blocks.png)
 
-Can you make another custom block for each button to use?
+Você pode criar algum outro bloco personalizado para cada tambor?
 
 \--- /challenge \---
