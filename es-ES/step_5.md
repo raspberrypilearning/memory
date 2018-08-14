@@ -1,99 +1,99 @@
-## Repeating the sequence
+## Repitiendo la secuencia
 
-Let's add four buttons for the player to press to repeat the sequence they've remembered.
+Agreguemos cuatro botones para que el jugador presione para repetir la secuencia que recuerden.
 
-+ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
++ Agrega cuatro nuevos sprites a tu proyecto para representar los cuatro botones. Edita los disfraces para que haya un sprite para cada uno de los cuatro colores. Coloque los sprites en el mismo orden que los disfraces: rojo, azul, verde, amarillo.
 
 ![screenshot](images/colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
++ Cuando se hace clic en el tambor rojo, tendrás que transmitir un mensaje a tu personaje, haciéndoles saber que se ha hecho clic en el botón rojo. Agregue este código a su tambor rojo:
 
 ```blocks
-    when this sprite clicked
-    broadcast [red v]
+    al hacer clic en este objeto
+enviar [red v]
 ```
 
-A broadcast is a bit like making an announcement over a loudspeaker — you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
+Un aviso es un poco como hacer un anuncio por un altavoz: es posible que hayas escuchado algo similar cuando estás de compras en el supermercado. Todos los sprites pueden escuchar el mensaje, pero sólo el sprite cuyo trabajo es responder va a hacer algo.
 
-+ Add similar code to the blue, green, and yellow drums to make them broadcast messages about their own colour.
++ Agrega un código similar a los tambores azul, verde y amarillo para que emitan mensajes sobre su propio color.
 
-\--- hints \--- \--- hint \--- Here is an easy way to copy the code from one sprite to another. Change the broadcast message in each sprite to match the colour of the sprite. ![Duplicate the code](images/broadcast-duplicate.gif) \--- /hint \--- \--- /hints \---
+\--- hints \--- \--- hint \--- Aquí encontrarás una manera fácil para copiar el código de un sprite a otro. Cambia el mensaje del aviso en cada sprite para que coincida con el color del sprite. ![Duplicate the code](images/broadcast-duplicate.gif) \--- /hint \--- \--- /hints \---
 
-Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages. We do this by writing some code for the character to do when they hear each message.
+¿Recuerde que dijimos que el aviso era un poco como hacer un anuncio sobre un altavoz? Solo el sprite cuyo trabajo es responder hará algo, así que hagamos que el trabajo del sprite del personaje sea el responder a los mensajes. Hacemos esto escribiendo un código para que el personaje haga algo cuando escuchen cada mensaje.
 
-+ When your character sprite receives the message `red`, the code should check whether the number `1` is at the start of the list (which means that `red` is the next colour in the sequence).
++ Cuando el sprite de tu personaje recibe el mensaje ` rojo `, el código debería verificar si el número ` 1 ` está al comienzo de la lista (lo que significa que ` rojo ` es el siguiente color en la secuencia).
     
-    If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
+    Si es así, el código debería eliminar el número de la lista, ya que el color fue adivinado correctamente. De lo contrario, se acabó el juego, y tenemos que ` detener todo ` {: class = "blockcontrol"} para detener el juego.
 
 ```blocks
-    when I receive [red v]
-    if <(item (1 v) of [sequence v])=[1]> then
-        delete (1 v) of [sequence v]
-    else
-        say [Game over!] for (1) secs
-        stop [all v]
-    end
+    al recibir [red v]
+si <(item (1 v) of [sequence v] :: list) = [1]> entonces 
+  borrar (1 v) de [sequence v]
+
+  decir [Game over!] por (1) segundos
+  detener [todos v]
+end
 ```
 
-+ Add to the code you just wrote so that a drum beat also plays when the correct colour is received.
++ Agrega al código que acabas de escribir para que también se reproduzca un ritmo del tambor cuando se reciba el color correcto.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- ¿Puedes usar los números que corresponden a cada color para tocar el ritmo de tambor correcto?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- You will need to add the `play drum`{:class="blocksound"} block to play the first sound in the sequence list before `delete 1 of sequence`{:class="blockdata"}:
++ 1 = rojo
++ 2 = azul
++ 3 = verde
++ 4 = amarillo \--- hints \--- \--- hint \--- Necesitarás agregar el bloquea ` tambor de reproducción ` {: class = "blocksound"} para reproducir el primer sonido en la lista de secuencias antes de ` eliminar 1 de secuencia ` {: class = "blockdata"}:
 
-![Play drum](images/hint-play-drum.png) \--- /hint \--- \--- hint \--- Here is the code you will need to add:
-
-```blocks
-play drum (item (1 v) of [sequence v]) for (0.25) beats
-```
-
-\--- /hint \--- \--- /hints \---
-
-+ Duplicate the code you used to make your character sprite respond to the message `red`. This time, change the message to `blue`.
-
-When the sprite responds to the message `blue`, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
-
-+ Change your code so that the character responds correctly to the `blue` message.
-
-\--- hints \--- \--- hint \--- Keep these blocks, but you will need to change them in some way: ![Change these blocks](images/hint-change-blocks.png) \--- /hint \--- \--- hint \--- Here is how your code should look for the blue broadcast.
+![Tocar tambor](images/hint-play-drum.png) \--- /hint \--- \--- hint \--- Aquí está el código que necesitarás:
 
 ```blocks
-    when I receive [blue v]
-    if <(item (1 v) of [sequence v])=[2]> then
-        play drum (item (1 v) of [sequence v]) for (0.25) beats
-        delete (1 v) of [sequence v]
-    else
-        say [Game over!] for (1) secs
-        stop [all v]
-    end
+tocar tambor (elemento (1 v) de [sequence v] :: list) durante (0.25) pulsos
 ```
 
 \--- /hint \--- \--- /hints \---
 
-+ Duplicate the code again twice for the green and yellow buttons, and change the necessary parts so that the character responds correctly.
++ Duplica el código que usaste para hacer que tu personaje sprite responda al mensaje ` rojo `. Esta vez, cambiando el mensaje a ` azul `.
 
-+ Remember to test the code you've added! Can you memorise a sequence of five colours? Is the sequence different each time?
+Cuando el sprite responde al mensaje ` azul `, qué parte del código debería permanecer igual, y qué parte debería cambiar? Recuerda que cada color tiene un número asociado.
 
-You could also display some flashing lights as a reward once the list is empty, as that means the entire sequence was memorised correctly.
++ Cambia tu código para que el personaje responda correctamente al mensaje `azul`.
 
-+ Add this code to the end of your character's `when flag clicked`{:class="blockevents"} script:
+\--- hints \--- \--- hint \--- Mantenga estos bloques, pero tendrás que cambiarlos de alguna manera: <0 />\--- / pista \--- \--- pista \--- Aquí está cómo tu código debería ser para la emisión azul.
 
 ```blocks
-    wait until < (length of [sequence v]) = [0]>
-    broadcast [won v] and wait
+    al recibir [blue v]
+si <(item (1 v) of [sequence v] :: list) = [2]> entonces 
+  tocar tambor (elemento (1 v) de [sequence v] :: list) durante (0.25) pulsos
+  borrar (1 v) de [sequence v]
+
+  decir [Game over!] por (1) segundos
+  detener [todos v]
+end
 ```
 
-+ Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like.
+\--- /hint \--- \--- /hints \---
+
++ Vuelve a duplicar el código dos veces para los botones verde y amarillo, y cambia las partes necesarias para que el personaje responda correctamente.
+
++ ¡Recuerda probar el código que has agregado! ¿Puedes memorizar una secuencia de cinco colores? ¿Es la secuencia diferente cada vez?
+
+También puedes mostrar algunas luces intermitentes como recompensa una vez que la lista esté vacía, ya que eso significa que la secuencia completa se memorizó correctamente.
+
++ Agrega este código al final de tu personaje `cuando haga clic en la bandera` {: class = "blockevents"} secuencia de comandos:
 
 ```blocks
-    when I receive [won v]
-    play sound [drum machine v]
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) secs
-    end
-    clear graphic effects
+    esperar hasta que <(length of [sequence v] :: list) = [0]>
+enviar [won v] y esperar
+```
+
++ Cambia al escenario y agregua este código para reproducir un sonido y hacer que el fondo cambie de color una vez que el jugador haya ganado. Puedes elegir cualquier sonido que desees.
+
+```blocks
+    al recibir [won v]
+tocar sonido [drum machine v]
+repetir (50) 
+  cambiar efecto [color v] por (25)
+  esperar (0.1) segundos
+end
+quitar efectos gráficos
 ```
