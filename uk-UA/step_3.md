@@ -1,66 +1,65 @@
-## Create a colour sequence
+## Створіть послідовність кольорів
 
-First, let's create a character who will display a random sequence of colours to memorise.
+Спочатку створімо персонажа, який буде відображати випадкову послідовність кольорів для запам'ятовування.
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor [here](http://jumpto.cc/scratch-new).
++ Створіть новий проект "Скретч" та видаліть спрайт кота, щоб ваш проект був порожній. Ви можете знайти онлайн-редактор Scratch [тут](http://jumpto.cc/scratch-new).
 
-+ Choose a character sprite and a backdrop. Your character doesn't have to be a person, but they need to be able to show different colours.
++ Виберіть спрайт та фоновий малюнок. Ваш спрайт не повинен бути людиною, але він повинен мати можливість відображати різні кольори.
 
-![screenshot](images/colour-sprite.png)
+![знімок екрану](images/colour-sprite.png)
 
-+ In your game, you'll use a different number to represent each colour:
++ У своїй грі використовуйте певний номер, який буде представляти кожен колір:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = червоний
+    + 2 = синій
+    + 3 = зелений
+    + 4 = жовтий
     
-    Give your character four different coloured costumes, one for each of the four colours above. Make sure that your coloured costumes are in the same order as the list above.
+    Надайте своєму персонажу чотири різних кольорових костюми, по одному для кожного з чотирьох кольорів. Переконайтеся, що ваші кольорові костюми знаходяться в тому ж порядку, що й вище.
     
-    ![screenshot](images/colour-costume.png)
+    ![знімок екрану](images/colour-costume.png)
     
-    You can use the *color a shape* tool to fill parts of the costume a different colour.
+    Ви можете використати інструмент *зафарбувати форму* для заповнення частини костюма іншим кольором.
 
-Let's create a random sequence of colours.
+Давайте створимо випадкову послідовність кольорів.
 
-+ Create a list called `sequence`{:class="blockdata"}. We will use this list to store the sequence of colours the player has to remember. Only the character sprite needs to see the list, so you can select **For this sprite only**.
++ Створіть список, який називається `послідовність`{:class="blockdata"}. Ми будемо використовувати цей список для зберігання послідовності кольорів, які повинен запам'ятати гравець. Цей список потрібен лише для спрайт-персонажа, тож ви можете вибрати **лише для цього спрайта**.
 
 [[[generic-scratch-make-list]]]
 
-You should now see your empty list in the top left of your stage, as well as lots of new blocks for using lists.
+Тепер ви маєте побачити порожній список в лівому верхньому куті вашої сцени, а також багато нових блоків для використання списків.
 
-![screenshot](images/colour-list-blocks.png)
+![знімок екрану](images/colour-list-blocks.png)
 
-+ Remember we gave each colour a number? We can choose a random colour by choosing a random number and adding it to the list. Add this code:
++ Пам'ятаєте, ми надали кожному кольору номер? Ми можемо вибрати випадковий колір, вибравши випадкове число і додавши його до списку. Додайте цей код:
 
 ```blocks
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+коли натиснуто ⚑
+додати (випадкове від (1) до (4)) до [послідовність v]
 ```
 
-+ Test your code by clicking the green flag. Check that, each time you click it, a random number between 1 and 4 is added to the list.
++ Перевірте свій код, натиснувши зелений прапорець. Переконайтеся, що при кожному натисканні на нього, випадковий номер від 1 до 4 додається до списку.
 
-+ Can you add this block to your program to generate five random colours at once?
++ Чи можете ви додати цей блок до вашої програми, щоб згенерувати п'ять випадкових кольорів одночасно?
 
 ```blocks
-repeat (5)
-
+повторити (5)
 end
 ```
 
-+ You might notice that your list is getting a bit full by now. Let's add a block to delete the whole list at the start before we generate any numbers.
++ Ви можете помітити, що ваш список зараз трохи заповнений. Додамо блок, щоб видалити весь список спочатку, перш ніж генерувати будь-які числа.
 
 ```blocks
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
+коли натиснуто ⚑
+вилучити (все v) з [послідовність v]
+повторити (5) 
+  додати (випадкове від (1) до (4)) до [послідовність v]
 end
 ```
 
-+ Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks to your code immediately after you add the random number to your list:
++ Наостанок, кожен раз, коли ми вибираємо номер, змінюйте костюм танцівниці на останній елемент, який був доданий до списку, що являє собою номер, який ми вибрали. Додайте ці блоки до свого коду відразу після додавання випадкового числа до вашого списку:
 
 ```blocks
-switch costume to (item (last v) of [sequence v])
-wait (1) secs
+змінити образ на (елемент (останні v) з [послідовність v]:: list)
+чекати (1) секунд
 ```
