@@ -30,7 +30,7 @@ Em vez de sempre criar uma sequência de cinco cores, agora você terá o `placa
 + Finalmente, você precisa adicionar o bloco `sempre`{:class="blockcontrol"} englobando todo o código que gera a sequência, para que uma nova sequência seja criada para cada nível. É assim que o código do seu personagem deve ficar:
     
     ```blocks
-        quando clicar em bandeira verde
+        quando clicar em ⚑
        mude [placar v] para [3]
        sempre
           apague (todos v) de [sequencia v]

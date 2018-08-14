@@ -42,11 +42,11 @@ Ao invés disso, você pode definir seus próprios blocos e reutilizá-los em se
 
 ![screenshot](images/colour-more.png)
 
-+ No código do tambor vermelho, substitua o bloco `se então`{:class="blockcontrol"} pelo bloco <0>se então senão</0>{:class="blockcontrol"}:
++ No código do tambor vermelho, substitua o bloco `se então`{:class="blockcontrol"} pelo bloco `se então senão`{:class="blockcontrol"}:
 
 ![screenshot](images/colour-make-block.png)
 
-+ Você acabou de criar uma nova função chamada *Fim do jogo*{:class="blockmoreblocks"}, e agora pode usar em qualquer lugar que quiser. Arraste seu novo bloco `Fim do jogo`{:class="blockmoreblocks"} para os quatro scripts dos tambores.
++ Você acabou de criar uma nova *função* chamada `Fim do jogo`{:class="blockmoreblocks"}, e agora pode usar em qualquer lugar que quiser. Arraste seu novo bloco `Fim do jogo`{:class="blockmoreblocks"} para os quatro scripts dos tambores.
 
 ![screenshot](images/colour-use-block.png)
 

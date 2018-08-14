@@ -13,7 +13,7 @@ Você pode tocar um som de bateria diferente dependendo do número escolhido? Is
 --- hint --- Aqui está como o seu código deve ficar:
 
 ```blocks
-quando clicar em bandeira verde
+quando clicar em ⚑
 apague (todos v) de [sequencia v]
 repita (5) vezes
    insira (número aleatório entre (1) e (4)) a [sequencia v]

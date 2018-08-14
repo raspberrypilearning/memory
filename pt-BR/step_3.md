@@ -34,7 +34,7 @@ Agora você pode ver a sua lista vazia no canto superior esquerdo do seu palco, 
 + Lembra que demos a cada cor um número? Podemos escolher uma cor aleatória escolhendo um número aleatório e adicionando-o à lista. Adicione este código:
 
 ```blocks
-quando clicar em bandeira verde
+quando clicar em ⚑
 insira (número aleatório entre (1) e (4)) a [sequencia v]
 ```
 
@@ -51,7 +51,7 @@ end
 + Você pode notar que a sua lista está ficando cheia. Vamos adicionar um bloco para limpar a lista logo no início, antes de gerarmos qualquer número.
 
 ```blocks
-quando clicar em bandeira verde
+quando clicar em ⚑
 apague (todos v) de [sequencia v]
 repita (5) vezes
    insira (número aleatório entre (1) e (4)) a [sequencia v]

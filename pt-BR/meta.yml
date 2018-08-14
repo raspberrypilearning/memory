@@ -18,11 +18,11 @@ version: 4.0.1
 last_tested: 2017-01-01
 steps:
   - title: Introdução
-  - title: O que você precisará
+  - title: O que você vai precisar
   - title: Crie uma sequência de cores
   - title: 'Desafio: Adicionando som'
   - title: Repetindo a sequência
-  - title: Vários níveis
+  - title: Múltiplos níveis
   - title: Recorde
   - title: 'Desafio: Criar mais blocos'
   - title: 'Desafio: Criar outra fantasia'
