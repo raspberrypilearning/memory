@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: another costume
+## Завдання: інший костюм
 
-Have you noticed that your game starts with your character showing one of the four colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
+Ви помітили, що ваша гра починається, коли персонаж показує один з чотирьох кольорів, і що він завжди показує останній колір у послідовності, коли гравець повторює послідовність?
 
-Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
+Чи можете ви додати інший простий білий костюм до свого персонажа, який відображається на початку гри, а також коли гравець намагається скопіювати послідовність?
 
-![screenshot](images/colour-white.png)
+![знімок екрану](images/colour-white.png)
 
 \--- /challenge \---
