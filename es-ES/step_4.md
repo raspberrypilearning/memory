@@ -1,25 +1,25 @@
-\--- challenge \---
+\--- desafío \---
 
-## Challenge: adding sound
+## Desafío: añadir sonido
 
-Test your project a few times. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume?
+Prueba tu proyecto unas cuantas veces. Puede que observes que a veces el mismo número se elige dos veces consecutivas (o más), lo que hace que la secuencia sea más difícil de memorizar. ¿Puedes hacer un sonido de batería cada vez que el personaje cambia de disfraz?
 
-Can you make a different drum sound play depending on which number was chosen? This will be *very* similar to your code to change the character's costume.
+¿Puedes hacer un sonido de batería diferente dependiendo de qué número fue elegido? Esto será * muy * similar a tu código para cambiar el disfraz del personaje.
 
-\--- hints \--- \--- hint \--- You can complete this challenge by adding just two blocks to your character's current code! \--- /hint \--- \--- hint \--- Here are the blocks you will need:
+\--- hints \---\--- hint \---¡Puedes completar este challenge agregando solo dos bloques al código actual de tu personaje! \--- / hint \--- \--- hint \--- Aquí están los bloques que necesitarás:
 
-![Hint drum blocks](images/hint-drumblocks.png) \--- /hint \---
+![Sugerencia bloques de batería](images/hint-drumblocks.png) \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Así es como debería verse el código al final:
 
 ```blocks
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (last v) of [sequence v]) for (0.25) beats
-    switch costume to (item (last v) of [sequence v])
-    wait (1) secs
+al presionar bandera verde
+borrar (todos v) de [sequence v]
+repetir (5) 
+  añade (número al azar entre (1) y (4)) a [sequence v]
+  tocar tambor (elemento (last v) de [sequence v] :: list) durante (0.25) pulsos
+  cambiar disfraz a (elemento (last v) de [sequence v] :: list)
+  esperar (1) segundos
 end
 ```
 
