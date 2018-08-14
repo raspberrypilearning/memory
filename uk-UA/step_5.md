@@ -1,99 +1,99 @@
-## Repeating the sequence
+## Повторення послідовності
 
-Let's add four buttons for the player to press to repeat the sequence they've remembered.
+Додамо чотири кнопки для гравця, які потрібно натиснути, щоб повторити послідовність, яку вони запам'ятали.
 
-+ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
++ Додайте чотири нових спрайти до вашого проекту, щоб відобразити чотири кнопки. Відредагуйте костюми таким чином, щоб кожен спрайт відповідав одному з чотирьох кольорів. Розмістіть спрайти у тому ж порядку, що й костюми танцівниці: червоний, синій, зелений, жовтий.
 
-![screenshot](images/colour-drums.png)
+![знімок екрану](images/colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
++ Коли натискатимуть на червоний барабан, вам потрібно буде транслювати повідомлення своєму персонажу, повідомляючи про те, що натиснута червона кнопка. Додайте цей код до червоного барабана:
 
 ```blocks
-    when this sprite clicked
-    broadcast [red v]
+    коли спрайт натиснуто
+оповістити [червоний v]
 ```
 
-A broadcast is a bit like making an announcement over a loudspeaker — you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
+коли я отримаю [синій v] якщо <(item (1 v) of \[послідовність v] :: list) = [2]> то програти на барабані (елемент (1 v) з [послідовність v] :: list) (0.25) ударів вилучити (1 v) з [послідовність v] говорити [Кінець гри!\] (1) сек зупинити [все v] end Всі спрайти можуть чути це повідомлення, але тільки той спрайт, завдання якого відповісти на це повідомлення, буде щось робити.
 
-+ Add similar code to the blue, green, and yellow drums to make them broadcast messages about their own colour.
++ Додайте такий ж код до синього, зеленого та жовтого барабанів, щоб вони транслювали повідомлення про власний колір.
 
-\--- hints \--- \--- hint \--- Here is an easy way to copy the code from one sprite to another. Change the broadcast message in each sprite to match the colour of the sprite. ![Duplicate the code](images/broadcast-duplicate.gif) \--- /hint \--- \--- /hints \---
+\--- hints \--- \--- hint \--- Ось простий спосіб скопіювати код з одного спрайту на інший. Змініть транслююче повідомлення в кожному спрайті, щоб це повідомлення відповідало кольору спрайта. ![Duplicate the code](images/broadcast-duplicate.gif) \--- /hint \--- \--- /hints \---
 
-Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages. We do this by writing some code for the character to do when they hear each message.
+Пам'ятаєте, ми сказали, що трансляція трохи схожа на оголошення по гучномовцю? Тільки той спрайт, який має відповідати, зробить щось. Тому давайте залишимо процес відповіді на повідомлення спрайту-персонажеві. Ми зробимо це, написавши код для кожного з персонажів, які виконуватимуть якісь дії, коли кожнен почує своє повідомлення.
 
-+ When your character sprite receives the message `red`, the code should check whether the number `1` is at the start of the list (which means that `red` is the next colour in the sequence).
++ Коли ваш спрайт-персонаж отримує повідомлення `червоний`, код повинен перевірити, чи є число `1` на початку списку (що означає, що `червоний` є наступним кольором в послідовності).
     
-    If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
+    Якщо це так, код повинен видалити номер зі списку, оскільки колір відгадали правильно. В іншому випадку гра закінчена, і ми повинні `зупинити все`{:class="blockcontrol"}, щоб зупинити гру.
 
 ```blocks
-    when I receive [red v]
-    if <(item (1 v) of [sequence v])=[1]> then
-        delete (1 v) of [sequence v]
-    else
-        say [Game over!] for (1) secs
-        stop [all v]
-    end
+    коли я отримаю [червоний v]
+якщо <(item (1 v) of [послідовність v]:: list) = [1]> то 
+  вилучити (1 v) з [послідовність v]
+
+  говорити [Кінець гри!] (1) сек
+  зупинити [все v]
+end
 ```
 
-+ Add to the code you just wrote so that a drum beat also plays when the correct colour is received.
++ Додайте код до коду, який ви щойно написали, який би відтворював удар барабану і тоді, коли отримано правильний колір.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- Чи можете ви використовувати цифри, які відповідають кожному кольору, для відтворення правильного ударного барабану?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- You will need to add the `play drum`{:class="blocksound"} block to play the first sound in the sequence list before `delete 1 of sequence`{:class="blockdata"}:
++ 1 = червоний
++ 2 = синій
++ 3 = зелений
++ 4 = жовтий \--- /hint \--- \--- hint \--- Вам побтрібно буде додати блок `барабанна гра`{:class="blocksound"}, щоб відтворити перший звук у списку послідовностей перед `видаленням 1 послідовності`{:class="blockdata"}:
 
-![Play drum](images/hint-play-drum.png) \--- /hint \--- \--- hint \--- Here is the code you will need to add:
-
-```blocks
-play drum (item (1 v) of [sequence v]) for (0.25) beats
-```
-
-\--- /hint \--- \--- /hints \---
-
-+ Duplicate the code you used to make your character sprite respond to the message `red`. This time, change the message to `blue`.
-
-When the sprite responds to the message `blue`, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
-
-+ Change your code so that the character responds correctly to the `blue` message.
-
-\--- hints \--- \--- hint \--- Keep these blocks, but you will need to change them in some way: ![Change these blocks](images/hint-change-blocks.png) \--- /hint \--- \--- hint \--- Here is how your code should look for the blue broadcast.
+![Грати на барабані](images/hint-play-drum.png) \--- /hint \--- \--- hint \--- Ось код, який вам потрібно буде додати:
 
 ```blocks
-    when I receive [blue v]
-    if <(item (1 v) of [sequence v])=[2]> then
-        play drum (item (1 v) of [sequence v]) for (0.25) beats
-        delete (1 v) of [sequence v]
-    else
-        say [Game over!] for (1) secs
-        stop [all v]
-    end
+програти на барабані (елемент (1 v) з [послідовність v]:: list) (0.25) ударів
 ```
 
 \--- /hint \--- \--- /hints \---
 
-+ Duplicate the code again twice for the green and yellow buttons, and change the necessary parts so that the character responds correctly.
++ Скопіюйте код, який ви використовували для створення відповіді на `червоне` повідомлення вашого спрайта-персонажа. На цей раз змініть повідомлення на `синє`.
 
-+ Remember to test the code you've added! Can you memorise a sequence of five colours? Is the sequence different each time?
+Коли спрайт відповідає на ` синє ` повідомлення, який біт коду повинен залишатися незмінним, і який біт повинен змінюватися? Пам'ятайте, що кожен колір має відповідний номер.
 
-You could also display some flashing lights as a reward once the list is empty, as that means the entire sequence was memorised correctly.
++ Змініть свій код таким чином, щоб персонаж правильно відповідав на ` синє ` повідомлення.
 
-+ Add this code to the end of your character's `when flag clicked`{:class="blockevents"} script:
+\--- hints \--- \--- hint \--- Залиште ці блоки, але вам доведеться трохи змінити їх: ![Change these blocks](images/hint-change-blocks.png) \--- /hint \--- \--- hint \--- Ось так ваш код повинен шукати блакитну трансляцію.
 
 ```blocks
-    wait until < (length of [sequence v]) = [0]>
-    broadcast [won v] and wait
+    коли я отримаю [синій v]
+якщо <(item (1 v) of [послідовність v]:: list) = [2]> то 
+  програти на барабані (елемент (1 v) з [послідовність v]:: list) (0.25) ударів
+  вилучити (1 v) з [послідовність v]
+
+  говорити [Кінець гри!] (1) сек
+  зупинити [все v]
+end
 ```
 
-+ Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like.
+чекати поки <(length of [послідовність v] :: list) = [0]> оповістити [перемога v] і чекати
+
++ Двічі скопіюйте код для зелених та жовтих кнопок та змініть необхідні частини так, щоб персонаж реагував правильно.
+
++ Не забудьте перевірити доданий код! Чи можете ви запам'ятати послідовність з п'яти кольорів? Чи послідовності є різними кожного разу?
+
+Ви також можете встановити миготливі вогні як нагороду, коли список стане порожнім, оскільки це означає, що вся послідовність була запам'ятована правильно.
+
++ Додайте цей код до кінця скрипту вашого персонажа `коли прапорець натиснуто` {: class = "blockevents"}:
 
 ```blocks
-    when I receive [won v]
-    play sound [drum machine v]
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) secs
-    end
-    clear graphic effects
+    чекати поки <(length of [послідовність v]:: list) = [0]>
+оповістити [перемога v] і чекати
+```
+
++ Перейдіть на сцену та додайте цей код, щоб відтворити звук та змінити колір тла після того, як гравець виграв. Ви можете вибрати будь-який звук, який вам подобається.
+
+```blocks
+    коли я отримаю [перемога v]
+грати звук [барабана машина v]
+повторити (50) 
+  змінити ефект [колір v] на (25)
+  чекати (0.1) секунд
+end
+очистити графічні ефекти
 ```
