@@ -1,11 +1,11 @@
 \--- challenge \---
 
-## Challenge: making more blocks
+## Завдання: зробіть більше блоків
 
-Do you notice any other code that is the same for all four buttons?
+Ви помітили будь-який інший код, який однаковий для всіх чотирьох кнопок?
 
-![screenshot](images/colour-more-blocks.png)
+![знімок екрану](images/colour-more-blocks.png)
 
-Can you make another custom block for each button to use?
+Чи можете ви створити інший спеціальний блок для кожної кнопки?
 
 \--- /challenge \---
