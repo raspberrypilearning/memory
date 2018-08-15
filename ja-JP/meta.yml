@@ -1,0 +1,39 @@
+---
+hero_image: images / memory.png
+theme: バイオレット
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1、design-0、programming-1、phys-comp-0、製造-0、コミュニティ-0
+title: メモリ
+description: あなたがランダムな色のランダムなシーケンスを暗記して繰り返すメモリゲームを作成する
+original_url: https://codeclubprojects.org/en-GB/scratch/memory
+interests: ゲーム
+technologies: スクラッチ
+site_areas: プロジェクト
+hardware: ''
+software: スクラッチ
+version: 4.0.1
+last_tested: 2017-01-01
+steps:
+  - 
+    title: 前書き
+  - 
+    title: あなたが必要とするもの
+  - 
+    title: カラーシーケンスを作成する
+  - 
+    title: '課題：サウンドを追加する'
+  - 
+    title: シーケンスを繰り返す
+  - 
+    title: 複数のレベル
+  - 
+    title: 高得点
+  - 
+    title: '課題：ブロックを増やす'
+  - 
+    title: '挑戦：別の衣装'
+  - 
+    title: '課題：難易度'
