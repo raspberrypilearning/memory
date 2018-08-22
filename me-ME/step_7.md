@@ -4,13 +4,13 @@ Sačuvajmo najbolji rezultat, tako da možeš da igraš protiv svojih prijatelja
 
 + Dodaj dvije nove promjenljive (variables) u svoj projekat i nazovi ih `najbolji rezultat` {:class="blockdata"} i `ime`{:class="blockdata"}.
 
-Kada se igra završi zato što igrač nije tačno pogodio niz, treba da provjeriš da li je igračev rezultat veći od trenutnog najboljeg rezultata. Ako jeste, treba da sačuvaš igračev rezultat kao najbolji i da sačuvaš ime igrača.
+Kada se igra završi zato što igrač nije tačno pogodio niz, treba da provjeriš da li je igračev rezultat veći od trenutnog najboljeg rezultata. Ako jeste, treba da sačuvaš igračev rezultat kao najbolji i da upišeš ime igrača.
 
-+ Dodaj kôd liku karaktera da sačuva najbolji rezultat. Takođe, pitaj igrača za ime i upiši ga u promjenljivoj `ime`{:class="blockdata"}.
++ Dodaj kôd liku karaktera da sačuva najbolji rezultat. Takođe, pitaj igrača za ime i upiši ga u promjenljivu `ime`{:class="blockdata"}.
 
 [[[generic-scratch-high-score]]]
 
-\--- hints \--- \--- hint \--- Tvoj novi kôd treba da prati ovu logiku: Nakon poruke `Kraj igre` `Ako je` (if) `rezultat` `veći od ` `najboljeg rezultata` `Postavi` (set) `najbolji rezultat` na `rezultat` `Pitaj` (ask) igrača kako se zove `Postavi` (set) `ime` na `odgovor` (answer) \--- /hint \--- \--- hint \--- Biće ti potrebni sljedeći blokovi:
+\--- hints \--- \--- hint \--- Tvoj novi kôd treba da prati ovu logiku: Nakon poruke `Kraj igre` `Ako je` (if) `rezultat` `veći od ` `najboljeg rezultata` `Postavi` (set) da `najbolji rezultat` bude `rezultat` `Pitaj` (ask) igrača kako se zove `Postavi` (set) da `ime` bude `odgovor` (answer) \--- /hint \--- \--- hint \--- Biće ti potrebni sljedeći blokovi:
 
 ![Savjet za najbolji rezultat](images/hint-high-score.png)
 
@@ -37,13 +37,13 @@ Kada se igra završi zato što igrač nije tačno pogodio niz, treba da provjeri
 
 ![screenshot](images/colour-same.png)
 
-Ako nekad bude potrebno da napraviš izmjene u ovom kôdu, na primjer da dodaš zvuk ili da izmijeniš poruku ‘Kraj igre’, moraćeš to uraditi četiri puta. To je dosadno i oduzima previše vremena.
+Ako nekad bude potrebno da napraviš izmjene u ovom kôdu, na primjer da dodaš zvuk ili da izmijeniš poruku 'Kraj igre', moraćeš to uraditi četiri puta. To je dosadno i oduzima previše vremena.
 
 Umjesto toga, možeš da definišeš sopstvene blokove i da ih koristiš više puta u svom projektu. Da to uradiš, klikni na `More blocks`{:class="blockmoreblocks"} (Više blokova), a zatim na **Make a block** (Napravi blok). Ovom novom bloku daj naziv 'Kraj igre'.
 
 ![screenshot](images/colour-more.png)
 
-+ U blok koji si kreirao/kreirala dodaj kôd iz bloka `else`{:class="blockcontrol"} (inače) crvenog dugmeta:
++ Bloku koji si kreirao/kreirala dodaj kôd iz bloka `else`{:class="blockcontrol"} (inače) povezanog sa crvenim dugmetom:
 
 ![screenshot](images/colour-make-block.png)
 
