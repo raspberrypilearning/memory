@@ -23,7 +23,7 @@ Kreirajmo prvo karaktera koji će prikazivati slučajan niz boja koji treba da b
 
 Kreirajmo slučajan niz boja.
 
-+ Kreiraj listu pod nazivom `niz`{:class="blockdata"}. Ovu listu koristićemo da u nju smjestimo niz boja koji igrač treba da zapamti. Samo lik karaktera treba da vidi listu, tako da možeš da izabereš **For this sprite only** (Samo za ovaj lik).
++ Kreiraj listu (list) pod nazivom `niz`{:class="blockdata"}. Ovu listu koristićemo da u nju smjestimo niz boja koji igrač treba da zapamti. Samo lik karaktera treba da vidi listu, tako da možeš da izabereš **For this sprite only** (Samo za ovaj lik).
 
 [[[generic-scratch-make-list]]]
 
@@ -58,7 +58,7 @@ repeat (5)
 end
 ```
 
-+ Na kraju, svaki put kada izaberemo broj, promijenimo kostim balerine u poslednji elemenat dodat u listu, a to je broj koji smo upravo izabrali. Dodaj ove blokove svom kôdu, odmah nakon što dodaš slučajan broj u svoju listu:
++ Na kraju, svaki put kada izaberemo broj, promijenimo kostim balerine u poslednji elemenat dodat u listu, a to je broj koji smo upravo izabrali. Dodaj ove blokove svom kôdu, odmah posle bloka kojim se dodaje slučajan broj u listu:
 
 ```blocks
 switch costume to (item (last v) of [niz v])
