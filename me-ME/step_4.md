@@ -2,11 +2,11 @@
 
 ## Izazov: dodavanje zvuka
 
-Isprobaj svoj projekat nekoliko puta. Možda ćeš primijetiti da je ponekad isti broj izabran dva (ili više) puta zaredom, zbog čega je teže zapamtiti niz. Možeš li da napraviš da se čuje zvuk bubnja svaki put kada karakter promijeni kostim?
+Isprobaj svoj projekat nekoliko puta. Možeš primijetiti da je ponekad isti broj izabran dva (ili više) puta zaredom, zbog čega je teže zapamtiti niz. Da li možeš da napraviš da se čuje zvuk bubnja svaki put kada karakter promijeni kostim?
 
-Možeš li da napraviš da se čuje različit zvuk bubnja zavisno od toga koji je slučajan broj izabran? Ovaj kôd će biti *veoma* sličan tvom kôdu za promjenu kostima karaktera.
+Možeš li da napraviš da se čuje različit zvuk bubnja zavisno od toga koji je broj izabran? Ovaj kôd će biti *veoma* sličan tvom kôdu za promjenu kostima karaktera.
 
-\--- hints \--- \--- hint \--- Ovaj izazov možeš da završiš tako što ćeš dodati samo dva bloka postojećem kôdu svog karaktera! \--- /hint \--- \--- hint \--- Ovo su blokovi koji će ti biti potrebni:
+\--- hints \--- \--- hint \--- Ovaj izazov možeš da riješiš tako što ćeš dodati samo dva bloka postojećem kôdu svog karaktera! \--- /hint \--- \--- hint \--- Ovo su blokovi koji će ti biti potrebni:
 
 ![Savjet za blokove bubnja](images/hint-drumblocks.png) \--- /hint \---
 
