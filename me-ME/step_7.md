@@ -2,7 +2,7 @@
 
 Sačuvajmo najbolji rezultat, tako da možeš da igraš protiv svojih prijatelja.
 
-+ Dodaj dvije nove promjenljive (variables) u svoj projekat i nazovi ih `najbolji rezultat` {:class="blockdata"} i `ime`{:class="blockdata"}.
++ Dodaj dvije nove promjenljive (variables) u svoj projekat i nazovi ih `najbolji rezultat`{:class="blockdata"} i `ime`{:class="blockdata"}.
 
 Kada se igra završi zato što igrač nije tačno pogodio niz, treba da provjeriš da li je igračev rezultat veći od trenutnog najboljeg rezultata. Ako jeste, treba da sačuvaš igračev rezultat kao najbolji i da upišeš ime igrača.
 
