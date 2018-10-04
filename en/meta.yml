@@ -8,7 +8,7 @@ last_tested: 2018-10-04
 steps: 
 - title: Introduction
 - title: Create a colour sequence
-- title: 'Challenge: adding sound'
+- title: Adding sound
 - title: Repeating the sequence
 - title: Multiple levels
 - title: High score

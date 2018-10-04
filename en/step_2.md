@@ -29,7 +29,7 @@ Give your character four different coloured costumes, one for each of the four c
 
 You can use the *color a shape* tool to fill parts of the costume a different colour.
 
-![color-a-shape](images/color-a-shape.pnng)
+![color-a-shape](images/color-a-shape.png)
 
 Let's create a random sequence of colours.
 

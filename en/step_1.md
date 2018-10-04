@@ -24,8 +24,6 @@ title: What you will learn
 
 --- /collapse ---
 
---- /collapse ---
-
 --- collapse ---
 ---
 title: What you will need

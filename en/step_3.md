@@ -1,18 +1,20 @@
---- challenge ---
-## Challenge: adding sound
+## Adding sound
 
-Test your project a few times. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume?
-
-Can you make a different drum sound play depending on which number was chosen? This will be _very_ similar to your code to change the character's costume.
+--- task
+Test your project a few times. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume? How about a different drum sound play depending on which number was chosen? This will be _very_ similar to your code to change the character's costume.
+--- /task ---
 
 --- hints ---
 --- hint ---
-You can complete this challenge by adding just two blocks to your character's current code!
+You can complete this challenge by adding just two blocks to your character's current code! You'll need a `play drum for (0.25) beats`{:class="blocksound"} and a `item (last) of sequence`{:class="blockdata"}
 --- /hint ---
 --- hint ---
 Here are the blocks you will need:
+```blocks
+play drum (10 v) for (0.25) beats
 
-![Hint drum blocks](images/hint-drumblocks.png)
+item (last v) of [sequence v]
+```
 --- /hint ---
 
 --- hint ---
@@ -31,4 +33,3 @@ end
 
 --- /hints ---
 
---- /challenge ---
