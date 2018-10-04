@@ -2,16 +2,22 @@
 
 Let's add four buttons for the player to press to repeat the sequence they've remembered.
 
+--- task ---
 + Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
 
 ![screenshot](images/colour-drums.png)
+--- /task ---
 
+--- task ---
 + When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
+
+![red-drum](red_drum.svg)
 
 ```blocks
 	when this sprite clicked
 	broadcast [red v]
 ```
+--- /task ---
 
 A broadcast is a bit like making an announcement over a loudspeaker — you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
 
