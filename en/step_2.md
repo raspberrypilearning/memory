@@ -71,6 +71,7 @@ repeat (5)
 end
 ```
 --- /hint --- --- /hints ---
+--- /task ---
 
 --- task ---
 + Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks to your code immediately after you add the random number to your list:
