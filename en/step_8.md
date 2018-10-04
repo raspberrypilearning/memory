@@ -1,9 +1,9 @@
 --- challenge ---
-## Challenge: making more blocks
-Do you notice any other code that is the same for all four buttons?
+## Challenge: another costume
+Have you noticed that your game starts with your character showing one of the four colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
 
-![screenshot](images/colour-more-blocks.png)
+Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
 
-Can you make another custom block for each button to use?
+![screenshot](images/colour-white.png)
 
 --- /challenge ---
