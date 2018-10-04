@@ -2,7 +2,7 @@
 
 --- task
 Test your project a few times. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume? How about a different drum sound play depending on which number was chosen? This will be _very_ similar to your code to change the character's costume.
---- /task ---
+
 
 --- hints ---
 --- hint ---
@@ -33,3 +33,4 @@ end
 
 --- /hints ---
 
+--- /task ---
