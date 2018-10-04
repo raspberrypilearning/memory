@@ -18,14 +18,18 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 --- /print-only ---
 
 --- collapse ---
-### What you will learn
+---
+title: What you will learn
+---
 
-- 
+--- /collapse ---
+
 --- /collapse ---
 
 --- collapse ---
-## What you will need
-
+---
+title: What you will need
+---
 ### Hardware
 
 A computer capable of running Scratch 2.0
@@ -36,8 +40,9 @@ Scratch 2.0 (either [online](https://scratch.mit.edu/projects/editor/){:target="
 --- /collapse ---
 
 --- collapse ---
-### Additional information for educators
-
+---
+title: Additional information for educators
+---
 If you need to print this project, please use the [printer friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 Use the link in the footer to access the GitHub repo for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
