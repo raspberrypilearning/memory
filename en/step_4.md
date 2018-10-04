@@ -11,7 +11,7 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 --- task ---
 + When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
 
-![red-drum](red_drum.svg)
+![red-drum](images/red_drum.svg)
 
 ```blocks
 	when this sprite clicked
@@ -21,6 +21,7 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 
 A broadcast is a bit like making an announcement over a loudspeaker — you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
 
+--- task ---
 + Add similar code to the blue, green, and yellow drums to make them broadcast messages about their own colour.
 
 --- hints ---
@@ -30,21 +31,27 @@ Here is an easy way to copy the code from one sprite to another. Change the broa
 --- /hint ---
 --- /hints ---
 
+--- /task ---
+
 Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages. We do this by writing some code for the character to do when they hear each message.
 
+--- task ---
  + When your character sprite receives the message `red`, the code should check whether the number `1` is at the start of the list (which means that `red` is the next colour in the sequence).
 
  If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
 
+![ballerina](images/ballerina.svg)
+
 ```blocks
-	when I receive [red v]
-	if <(item (1 v) of [sequence v])=[1]> then
-		delete (1 v) of [sequence v]
-	else
-		say [Game over!] for (1) secs
-		stop [all v]
-	end
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) secs
+stop [all v]
+end
 ```
+--- /task ---
 
 + Add to the code you just wrote so that a drum beat also plays when the correct colour is received.
 
