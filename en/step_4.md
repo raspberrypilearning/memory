@@ -3,13 +3,13 @@
 Let's add four buttons for the player to press to repeat the sequence they've remembered.
 
 --- task ---
-+ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
+Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
 
 ![screenshot](images/colour-drums.png)
 --- /task ---
 
 --- task ---
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
+When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
 
 ![red-drum](images/red_drum.svg)
 
@@ -22,7 +22,7 @@ Let's add four buttons for the player to press to repeat the sequence they've re
 A broadcast is a bit like making an announcement over a loudspeaker — you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
 
 --- task ---
-+ Add similar code to the blue, green, and yellow drums to make them broadcast messages about their own colour.
+Add similar code to the blue, green, and yellow drums to make them broadcast messages about their own colour.
 
 --- hints ---
 --- hint ---
@@ -42,9 +42,9 @@ You can duplicate whole scripts onto other sprites, by dragging the scripts from
 Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages. We do this by writing some code for the character to do when they hear each message.
 
 --- task ---
- + When your character sprite receives the message `red`, the code should check whether the number `1` is at the start of the list (which means that `red` is the next colour in the sequence).
+When your character sprite receives the message `red`, the code should check whether the number `1` is at the start of the list (which means that `red` is the next colour in the sequence).
 
- If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
+If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
 
 ![ballerina](images/ballerina.svg)
 
@@ -60,7 +60,7 @@ end
 --- /task ---
 
 --- task ---
-+ Add to the code you just wrote so that a drum beat also plays when the correct colour is received.
+Add to the code you just wrote so that a drum beat also plays when the correct colour is received.
 
 --- hints ---
 --- hint ---
@@ -91,7 +91,7 @@ play drum (item (1 v) of [sequence v]) for (0.25) beats
 When the sprite responds to the message `blue`, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
 
 --- task ---
-+ Change your code so that the character responds correctly to the `blue` message.
+Change your code so that the character responds correctly to the `blue` message.
 
 --- hints ---
 --- hint ---
@@ -128,7 +128,7 @@ end
 --- /task ---
 
 --- task ---
-+ Duplicate the code again twice for the green and yellow buttons, and change the necessary parts so that the character responds correctly.
+Duplicate the code again twice for the green and yellow buttons, and change the necessary parts so that the character responds correctly.
 --- /task ---
 
 Remember to test the code you've added! Can you memorise a sequence of five colours? Is the sequence different each time?
@@ -136,7 +136,7 @@ Remember to test the code you've added! Can you memorise a sequence of five colo
 You could also display some flashing lights as a reward once the list is empty, as that means the entire sequence was memorised correctly.
 
 --- task ---
-+ Add this code to the end of your character's `when flag clicked`{:class="blockevents"} script:
+Add this code to the end of your character's `when flag clicked`{:class="blockevents"} script:
 
 ![ballerina](images/ballerina.svg)
 
@@ -147,7 +147,7 @@ You could also display some flashing lights as a reward once the list is empty, 
 --- /task ---
 
 --- task ---
-+ Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like.
+Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like.
 
 ![ballerina](images/ballerina.svg)
 
