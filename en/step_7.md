@@ -10,7 +10,7 @@ if <(item (1 v) of [sequence v])=[1]> then
 	delete (1 v) of [sequence v]
 else
 	Game Over :: custom
-endp
+end
 
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[1]> then
