@@ -42,7 +42,7 @@ You can duplicate whole scripts onto other sprites, by dragging the scripts from
 Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages. We do this by writing some code for the character to do when they hear each message.
 
 --- task ---
-When your character sprite receives the message `red`, the code should check whether the number `1` is at the start of the list (which means that `red` is the next colour in the sequence).
+When your character sprite receives the message `red`{:class="blockevents"}, the code should check whether the number `1` is at the start of the list (which means that `red`{:class="blockevents"} is the next colour in the sequence).
 
 If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
 
@@ -71,9 +71,8 @@ Can you use the numbers that correspond to each colour to play the correct drum 
 + 4 = yellow
 --- /hint ---
 --- hint ---
-You will need to add the `play drum`{:class="blocksound"} block to play the first sound in the sequence list before `delete 1 of sequence`{:class="blockdata"}:
+You will need to add the `play drum`{:class="blocksound"} block to play the first sound in the sequence list before the `delete 1 of sequence`{:class="blockdata"} block:
 
-![Play drum](images/hint-play-drum.png)
 --- /hint ---
 --- hint ---
 Here is the code you will need to add:
@@ -86,12 +85,12 @@ play drum (item (1 v) of [sequence v]) for (0.25) beats
 --- /task ---
 
 --- task ---
-+ Duplicate the code you used to make your character sprite respond to the message `red`. This time, change the message to `blue`.
++ Duplicate the code you used to make your character sprite respond to the message `red`{:class="blockevents"}. This time, change the message to `blue`{:class="blockevents"}.
 --- /task ---
-When the sprite responds to the message `blue`, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+When the sprite responds to the message `blue`{:class="blockevents"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
 
 --- task ---
-Change your code so that the character responds correctly to the `blue` message.
+Change your code so that the character responds correctly to the `blue`{:class="blockevents"} message.
 
 --- hints ---
 --- hint ---
@@ -103,7 +102,7 @@ Keep these blocks, but you will need to change them in some way:
 ```blocks
 <(item (1 v) of [sequence v]) = [1]>
 
-when I recieve [red v]
+when I receive [red v]
 ```
 
 --- /hint ---

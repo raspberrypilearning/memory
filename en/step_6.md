@@ -17,7 +17,7 @@ Add code to your character sprite to store the high score. Also ask the player t
 --- hints ---
 --- hint ---
 Your new code needs to follow this logic:
-After the `Game over` message
+After the `Game over`{:class="blocklooks"} message
 `If`{:class="blockcontrol"} the `score`{:class="blockdata"} is `greater than`{:class="blockoperators"} the `high score`{:class="blockdata"}
 `Set`{:class="blockdata"} the `high score`{:class="blockdata"} to the `score`{:class="blockdata"}
 `Ask`{:class="blocksensing"} the player's name
@@ -92,7 +92,7 @@ If you ever needed to change any of this code, for example to add a sound or cha
 Instead, you can define your own blocks, and reuse them in your project.
 
 --- task ---
-Click `More blocks`{:class="blockmoreblocks"}, and then **Make a block**. Call this new block 'Game over'.
+Click `More blocks`{:class="blockmoreblocks"}, and then **Make a block**. Call this new block 'Game over'{:class="blockmoreblocks"}.
 
 ![ballerina](images/ballerina.svg)
 
