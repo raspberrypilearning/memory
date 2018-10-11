@@ -2,7 +2,6 @@
 
 Let's save the high score, so that you can play against your friends.
 
-
 --- task ---
 Add two new variables called `high score`{:class="blockdata"} and `name`{:class="blockdata"} to your project.
 --- /task ---
