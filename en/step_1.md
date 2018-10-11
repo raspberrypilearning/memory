@@ -21,6 +21,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 ---
 title: What you will learn
 ---
+1) 
 
 --- /collapse ---
 
