@@ -64,7 +64,7 @@ add (pick random (1) to (4)) to [sequence v]
 You can use a `delete all of sequence`{:class="blockdata"} to first delete all the items from the list and then a  `repeat`{:class="blockcontrol"} so that 5 numbers are added to the list.
 --- /hint --- --- hint ---
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 when flag clicked
@@ -79,7 +79,7 @@ end
 --- task ---
 + Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks to your code immediately after you add the random number to your list:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 switch costume to (item (last v) of [sequence v])

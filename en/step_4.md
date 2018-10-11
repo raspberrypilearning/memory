@@ -11,7 +11,7 @@ Add four new sprites to your project to represent the four buttons. Edit the cos
 --- task ---
 When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
 
-![red-drum](images/red_drum.svg)
+![red-drum](images/red_drum.png)
 
 ```blocks
 	when this sprite clicked
@@ -46,7 +46,7 @@ When your character sprite receives the message `red`{:class="blockevents"}, the
 
 If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 when I receive [red v]
@@ -97,7 +97,7 @@ Change your code so that the character responds correctly to the `blue`{:class="
 
 Keep these blocks, but you will need to change them in some way:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 <(item (1 v) of [sequence v]) = [1]>
@@ -109,7 +109,7 @@ when I receive [red v]
 --- hint ---
 Here is how your code should look for the blue broadcast.
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 when I receive [blue v]
@@ -137,7 +137,7 @@ You could also display some flashing lights as a reward once the list is empty, 
 --- task ---
 Add this code to the end of your character's `when flag clicked`{:class="blockevents"} script:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 	wait until < (length of [sequence v]) = [0]>
@@ -148,7 +148,7 @@ Add this code to the end of your character's `when flag clicked`{:class="blockev
 --- task ---
 Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like.
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 	when I receive [won v]

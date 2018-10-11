@@ -26,7 +26,7 @@ After the `Game over`{:class="blocklooks"} message
 --- hint ---
 You will need the following blocks:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 if < > then
@@ -52,7 +52,7 @@ set [name v] to [ ]
 --- hint ---
 Here's how your code for when the red button is pressed should look:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 when I receive [red v]
@@ -75,7 +75,7 @@ end
 
 You'll need to add this new code to the character sprite for the other three colours too! Have you noticed that the 'Game over' code for each of the four colours is exactly the same?
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 say [Game over!] for (1) secs
@@ -94,7 +94,7 @@ Instead, you can define your own blocks, and reuse them in your project.
 --- task ---
 Click `More blocks`{:class="blockmoreblocks"}, and then **Make a block**. Call this new block 'Game over'{:class="blockmoreblocks"}.
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 define Game over
@@ -110,7 +110,7 @@ stop [all v]
 --- task ---
 Add the code from the `else`{:class="blockcontrol"} block connected to the red button to the block you've created:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 define Game over
@@ -139,7 +139,7 @@ You've now made a new _function_ called `Game over`{:class="blockmoreblocks"}, w
 --- task ---
 Now add a sound for when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="blockmoreblocks"} block that you made, and not four separate times!
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 define Game over

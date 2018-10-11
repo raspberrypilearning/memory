@@ -43,7 +43,7 @@ You know the sequence was guessed correctly at the point you broadcast the `win`
 --- task ---
 Finally, you need to add a `forever`{:class="blockcontrol"} loop around the code which generates the sequence, so that a new sequence is created for each level. This is how your character's code might look:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 when flag clicked

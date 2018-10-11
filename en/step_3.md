@@ -23,7 +23,7 @@ item (last v) of [sequence v]
 --- hint ---
 Here is how your finished code should look:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 when flag clicked
