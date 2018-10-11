@@ -92,14 +92,14 @@ Keep these blocks, but you will need to change them in some way:
 Here is how your code should look for the blue broadcast.
 
 ```blocks
-	when I receive [blue v]
-	if <(item (1 v) of [sequence v])=[2]> then
-        play drum (item (1 v) of [sequence v]) for (0.25) beats
-		delete (1 v) of [sequence v]
-	else
-		say [Game over!] for (1) secs
-		stop [all v]
-	end
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[2]> then
+	play drum (item (1 v) of [sequence v]) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	say [Game over!] for (1) secs
+	stop [all v]
+end
 ```
 
 --- /hint ---
