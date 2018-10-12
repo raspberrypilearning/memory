@@ -22,6 +22,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 title: What you will learn
 ---
 - How to add sound to your Scratch Project
+- Create and use lists to store data
 - How to create and call custom blocks for repeating code
 
 --- /collapse ---
