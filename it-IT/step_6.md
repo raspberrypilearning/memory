@@ -1,48 +1,48 @@
-## Multiple levels
+## Livelli multipli
 
-So far, the player only has to remember a sequence of five colours. Let's improve the game by adding a score, and adding code so that as the player's score increases, the length of the sequence they have to remember becomes longer.
+Finora, il giocatore deve solo ricordare una sequenza di cinque colori. Miglioriamo il gioco aggiungendo un punteggio e del codice in modo che la lunghezza della sequenza da ricordare aumenta insieme al punteggio.
 
-+ Create a new variable called `score`{:class="blockdata"}.
++ Crea una nuova variabile chiamata `punteggio`{:class="blockdata"}.
 
 [[[generic-scratch-add-variable]]]
 
-The `score`{:class="blockdata"} will be used to decide on the length of the sequence the player has to memorise. Let's start with a score (and a sequence length) of `3`.
+Il `punteggio`{:class="blockdata"} sarà usato per determinare la lunghezza della sequenza che il giocatore deve memorizzare. Iniziamo con un punteggio (e una lunghezza della sequenza) di `3`.
 
-+ Add a block at the start of your character's `when flag clicked`{:class="blockevents"} code to set the `score`{:class="blockdata"} to `3`.
++ Aggiungiamo un blocco all'inizio del codice del tuo personaggio che inizia con `quando si clicca sulla bandiera verde`{:class="blockevents"} per impostare il `punteggio`{:class="blockdata"} a `3`.
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="blockdata"} to determine the sequence length.
+Invece di creare sempre una sequenza di cinque colori, ora dovrai impostare la lunghezza della sequenza in base al `punteggio`{:class="blockdata"}.
 
-+ Change the character's `repeat`{:class="blockcontrol"} loop (for creating the sequence) to repeat `score`{:class="blockdata"} times:
++ Cambia il loop `ripeti`{:class="blockcontrol"} del personaggio (che crea la sequenza) per farlo ripetere `punteggio`{:class="blockdata"} volte:
 
 ```blocks
-    repeat (score)
+    ripeti (punteggio) volte
     end
 ```
 
-+ If the sequence is guessed correctly, you should add `1` to the score to increase the length of the next sequence. Add this block to the character's code **at the point you know the sequence was guessed correctly**.
++ Se la sequenza è stata indovinata, dovrai aggiungere `1` al punteggio per aumentare la lunghezza della sequenza successiva. Aggiungi questo blocco al codice del personaggio **nel punto in cui la sequenza viene indovinata**.
 
 ```blocks
-    change [score v] by (1)
+    cambia [punteggio v] di (1)
 ```
 
-\--- hints \--- \--- hint \--- You know the sequence was guessed correctly at the point you broadcast the `win` message. \--- /hint \--- \--- /hints \---
+\--- hints \--- \--- hint \--- Saprai che la sequenza è stata indovinata correttamente nel punto in cui trasmetti il messaggio `vinto`. \--- /hint \--- \--- /hints \---
 
-+ Finally, you need to add a `forever`{:class="blockcontrol"} loop around the code which generates the sequence, so that a new sequence is created for each level. This is how your character's code might look:
++ Infine, dovrai aggiungere un loop `per sempre`{:class="blockcontrol"} attorno al codice che genera la sequenza, così da creare una sequenza per ogni livello. Il codice del tuo personaggio dovrebbe assomigliare a questo:
     
     ```blocks
-        when flag clicked
-        set [score v] to [3]
-        forever
-            delete (all v) of [sequence v]
-            repeat (score)
-                add (pick random (1) to (4)) to [sequence v]
-                switch costume to (item (last v) of [sequence v]
-                wait (1) secs
+        quando si clicca sulla bandiera verde
+        porta [punteggio v] a [3]
+        per sempre 
+            cancella (tutto v) da [sequenza v]
+            ripeti (punteggio) volte 
+                aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
+                passa al costume (elemento (last v) di [sequenza v])
+                attendi (1) secondi
             end
-            wait until < (length of [sequence v]) = [0]>
-            broadcast [won v] and wait
-            change [score v] by (1)
+            attendi fino a quando <(length of [sequenza v]) = [0]>
+            invia a tutti [vinto v] e attendi
+            cambia [punteggio v] di (1)
         end
     ```
 
-+ Get your friends to test out your game. Remember to hide the `sequence`{:class="blockdata"} list before they play it!
++ Fai testare il gioco ai tuoi amici. Ricordati di nascondere la lista `sequenza`{:class="blockdata} prima di farli giocare!
