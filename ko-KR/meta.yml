@@ -1,0 +1,39 @@
+---
+hero_image: images / memory.png
+theme: 보라색
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, 디자인 -0, 프로그래밍 -1, 물리-컴퓨터-0, 제조 -0, 커뮤니티 -0
+title: 메모리
+description: 무작위로 연속 나오는 색을 기억하여 이를 반복하는 메모리 게임을 만듭니다.
+original_url: https://codeclubprojects.org/en-GB/scratch/memory
+interests: 계략
+technologies: 스크래치
+site_areas: 프로젝트
+hardware: ''
+software: 스크래치
+version: 4.0.1
+last_tested: 2017-01-01
+steps:
+  - 
+    title: 소개
+  - 
+    title: 필요한 것
+  - 
+    title: 색상 순서 만들기
+  - 
+    title: '과제 : 소리 추가'
+  - 
+    title: 순서 반복
+  - 
+    title: 여러 단계
+  - 
+    title: 높은 점수
+  - 
+    title: '과제 : 더 많은 블록 만들기'
+  - 
+    title: '도전: 다른 모양'
+  - 
+    title: '도전: 게임 수준'
