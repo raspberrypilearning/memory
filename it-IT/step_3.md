@@ -1,66 +1,66 @@
-## Create a colour sequence
+## Crea una sequenza di colori
 
-First, let's create a character who will display a random sequence of colours to memorise.
+Innanzitutto, creiamo un personaggio che mostrerà una sequenza casuale di colori da memorizzare.
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor [here](http://jumpto.cc/scratch-new).
++ Apri un nuovo progetto Scratch ed elimina lo sprite del gatto, in modo che il tuo progetto sia vuoto. Puoi trovare l'editor di Scratch online [qui](http://jumpto.cc/scratch-new).
 
-+ Choose a character sprite and a backdrop. Your character doesn't have to be a person, but they need to be able to show different colours.
++ Scegli lo sprite di un personaggio ed uno sfondo. Il tuo personaggio non deve essere per forza una persona, ma dovrà essere in grado di mostrare colori diversi.
 
 ![screenshot](images/colour-sprite.png)
 
-+ In your game, you'll use a different number to represent each colour:
++ Nel tuo gioco, userai un numero diverso per rappresentare ogni colore:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = rosso
+    + 2 = blu
+    + 3 = verde
+    + 4 = giallo
     
-    Give your character four different coloured costumes, one for each of the four colours above. Make sure that your coloured costumes are in the same order as the list above.
+    Attribuisci quattro costumi colorati diversi al tuo personaggio, uno per ciascuno dei quattro colori citati prima. Assicurati che i tuoi costumi colorati siano nello stesso ordine della lista definita prima.
     
     ![screenshot](images/colour-costume.png)
     
-    You can use the *color a shape* tool to fill parts of the costume a different colour.
+    Puoi usare lo strumento *Colora una forma* per tingere parti del costume con un colore diverso.
 
-Let's create a random sequence of colours.
+Creiamo una sequenza casuale di colori.
 
-+ Create a list called `sequence`{:class="blockdata"}. We will use this list to store the sequence of colours the player has to remember. Only the character sprite needs to see the list, so you can select **For this sprite only**.
++ Crea una lista chiamata `sequenza`{:class="blockdata"}. Useremo questa lista per memorizzare la sequenza di colori che il giocatore deve ricordare. Solo lo sprite del personaggio deve vedere la lista, quindi puoi selezionare **Solo per questo sprite**.
 
 [[[generic-scratch-make-list]]]
 
-You should now see your empty list in the top left of your stage, as well as lots of new blocks for using lists.
+Ora dovresti vedere la tua lista vuota in alto a sinistra nel tuo stage, oltre a molti nuovi blocchi per usare le liste.
 
 ![screenshot](images/colour-list-blocks.png)
 
-+ Remember we gave each colour a number? We can choose a random colour by choosing a random number and adding it to the list. Add this code:
++ Ti ricordi che abbiamo dato ad ogni colore un numero? Possiamo scegliere casualmente un colore selezionando un numero casuale e aggiungendolo alla lista. Aggiungi questo codice:
 
 ```blocks
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+quando si clicca sulla bandiera verde
+aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
 ```
 
-+ Test your code by clicking the green flag. Check that, each time you click it, a random number between 1 and 4 is added to the list.
++ Testa il tuo codice cliccando sulla bandiera verde. Assicurati che, ad ogni click, venga aggiunto un numero casuale compreso tra 1 e 4 alla lista.
 
-+ Can you add this block to your program to generate five random colours at once?
++ Riesci ad aggiungere questo blocco al tuo programma per generare cinque numeri casuali in una sola volta?
 
 ```blocks
-repeat (5)
+ripeti (5) volte
 
 end
 ```
 
-+ You might notice that your list is getting a bit full by now. Let's add a block to delete the whole list at the start before we generate any numbers.
++ Potresti notare che la tua lista si è riempita un po' troppo. Aggiungiamo un blocco per eliminare l'intera lista all'inizio prima di generare qualsiasi numero.
 
 ```blocks
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
+quando si clicca sulla bandiera verde
+cancella (tutto v) da [sequenza v]
+ripeti (5) volte 
+  aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
 end
 ```
 
-+ Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks to your code immediately after you add the random number to your list:
++ Infine, per ogni numero, cambiamo il costume della ballerina con l'ultimo elemento che è stato aggiunto alla lista, che sarà il numero che è stato appena generato. Aggiungi questi blocchi al tuo codice subito dopo aver aggiunto il numero casuale alla tua lista:
 
 ```blocks
-switch costume to (item (last v) of [sequence v])
-wait (1) secs
+passa al costume (elemento (last v) di [sequenza v])
+attendi (1) secondi
 ```
