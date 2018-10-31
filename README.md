@@ -1,14 +1,9 @@
-# memory
+# Memory
 
-![memory](en/images/banner.png)
+In this resource, you are going to make a "Simon Says" style game using drums and sound effects.
 
-Find the project online at [projects.raspberrypi.org/en/projects/memory](https://projects.raspberrypi.org/en/projects/memory)
+This repository contains the content for the Project Name Raspberry Pi project. This project can be viewed at:
 
-## Resources
-For solutions and project materials, see [en/resources](https://github.com/raspberrypilearning/boat-race/tree/master/en/resources)
+https://projects.raspberrypi.org/en/projects/memory
 
-## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Licence
- See [LICENSE.md](LICENSE.md)
+See [LICENCE.md](LICENCE.md) for the project licence, and [CONTRIBUTING.md](CONTRIBUTING.md) for guidance on how to contribute.

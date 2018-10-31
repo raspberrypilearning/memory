@@ -11,7 +11,7 @@ You can complete this challenge by adding just two blocks to your character's cu
 --- hint ---
 Here are the blocks you will need:
 
-![ballerina](images/ballerina.svg)
+![ballerina](images/ballerina.png)
 
 ```blocks
 play drum (10 v) for (0.25) beats

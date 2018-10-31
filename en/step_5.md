@@ -19,6 +19,7 @@ Instead of always creating a sequence of five colours, you now want the `score`{
 --- task ---
 Change the character's `repeat`{:class="blockcontrol"} loop (for creating the sequence) to repeat `score`{:class="blockdata"} times:
 
+![sprite](images/ballerina.png)
 ```blocks
 repeat (score)
 end
@@ -28,6 +29,7 @@ end
 --- task ---
 If the sequence is guessed correctly, you should add `1` to the score to increase the length of the next sequence. Add this block to the character's code __at the point you know the sequence was guessed correctly__.
 
+![sprite](images/ballerina.png)
 ```blocks
 change [score v] by (1)
 ```

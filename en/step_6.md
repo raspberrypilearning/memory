@@ -1,4 +1,4 @@
-## High score
+# High score
 
 Let's save the high score, so that you can play against your friends.
 
@@ -132,7 +132,17 @@ end
 --- /task ---
 
 --- task ---
-You've now made a new _function_ called `Game over`{:class="blockmoreblocks"}, which you can use anywhere you like. Drag your new `Game over`{:class="blockmoreblocks"} block onto the four scripts for the buttons.
+You've now made a new _function_ called `Game over`{:class="blockmoreblocks"}, which you can use anywhere you like. Drag your new `Game over`{:class="blockmoreblocks"} block onto the `else`{:class="blockcontrol"} section of the scripts for the buttons.
+
+```blocks
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (item (1 v) of [sequence v]) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	Game over
+end
+```
 --- /task ---
 
 --- task ---
