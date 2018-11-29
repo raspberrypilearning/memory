@@ -5,7 +5,7 @@ In this project, you will create a memory game in which you have to memorise and
 ### What you will make
 
 --- no-print ---
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat them back to her. If you get the order wrong, it's game over!
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
     
 <div class="scratch-preview">
@@ -22,9 +22,9 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 ---
 title: What you will learn
 ---
-- How to add sound to your Scratch Project
-- Create and use lists to store data
-- How to create and call custom blocks for repeating code
+- How to add sound to your Scratch project
+- How to create and use lists to store data
+- How to create and use custom blocks for repeating code
 
 --- /collapse ---
 
@@ -34,7 +34,7 @@ title: What you will need
 ---
 ### Hardware
 
-A computer capable of running Scratch 2.0
++ A computer capable of running Scratch 2.0
 
 ### Software
 
@@ -52,6 +52,6 @@ If you need to print this project, please use the [printer-friendly version](htt
 
 --- /no-print ---
 
-The completed project can be downloaded at [rpf.io/p/memory-get](http://rpf.io/p/memory-get)
+You can [download the completed project here](http://rpf.io/p/memory-get).
 
 --- /collapse ---
