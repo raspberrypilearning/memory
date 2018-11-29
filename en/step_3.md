@@ -1,15 +1,17 @@
-## Adding sound
+## Add sound
 
 --- task ---
-Test your project a few times. You may notice that sometimes the same number is chosen twice (or more) in a row, making the sequence harder to memorise. Can you make a drum sound play each time the character changes costume? How about a different drum sound play depending on which number was chosen? This will be _very_ similar to your code to change the character's costume.
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
+Can you make a drum sound play each time the character changes costume? How about a different drum sound depending on which colour is chosen? The code you need to do this is __very__ similar to the code to change the character's costume.
 
 --- hints ---
 --- hint ---
-You can complete this challenge by adding just two blocks to your character's current code! You'll need a `play drum for (0.25) beats`{:class="blocksound"} and a `item (last) of sequence`{:class="blockdata"}
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="blocksound"} block and a `item (last) of sequence`{:class="blockdata"} block.
 --- /hint ---
 --- hint ---
-Here are the blocks you will need:
+
+Here are the blocks you need:
 
 ![ballerina](images/ballerina.png)
 
