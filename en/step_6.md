@@ -120,6 +120,7 @@ stop [all v]
 ```
 --- /task ---
 
+--- task ---
 Now remove the code that's in the `else`{:class="blockcontrol"} block connected to the `red`{:class="blockevents"} broadcast, and add in the `Game over`{:class="blockmoreblocks"} block instead:
 
 ![ballerina](images/ballerina.png)
