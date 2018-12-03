@@ -7,7 +7,7 @@ Can you make a drum sound play each time the character changes costume? How abou
 
 --- hints ---
 --- hint ---
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="blocksound"} block and a `item (last) of sequence`{:class="blockdata"} block.
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (last) of sequence`{:class="block3variables"} block.
 --- /hint ---
 --- hint ---
 
@@ -15,7 +15,7 @@ Here are the blocks you need:
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 play drum (10 v) for (0.25) beats
 
 item (last v) of [sequence v]
@@ -27,7 +27,7 @@ Here is how your finished code should look:
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 when flag clicked
 delete (all v) of [sequence v]
 repeat (5)

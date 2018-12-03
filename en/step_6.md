@@ -3,25 +3,25 @@
 Now save the high score so that you can play against your friends.
 
 --- task ---
-Add two new variables called `high score`{:class="blockdata"} and `name`{:class="blockdata"} to your project.
+Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
 --- /task ---
 
 When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
 
 --- task ---
-Add code to your character sprite to store the `high score`{:class="blockdata"}. Also ask for the player's name, and store it in the `name`{:class="blockdata"} variable.
+Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
-[[[generic-scratch-high-score]]]
+[[[generic-scratch3-high-score]]]
 
 --- hints ---
 --- hint ---
 Your new code needs to follow this pattern:
 
-After the `Game over`{:class="blocklooks"} message
-`If`{:class="blockcontrol"} the `score`{:class="blockdata"} is `greater than`{:class="blockoperators"} the `high score`{:class="blockdata"}
-`Set`{:class="blockdata"} the `high score`{:class="blockdata"} to the `score`{:class="blockdata"}
-`Ask`{:class="blocksensing"} for the player's name
-`Set`{:class="blockdata"} the `name`{:class="blockdata"} to the `answer`{:class="blocksensing"}
+After the `Game over`{:class="block3looks"} message
+`If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"}
+`Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"}
+`Ask`{:class="block3sensing"} for the player's name
+`Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
 --- /hint ---
 --- hint ---
 
@@ -29,7 +29,7 @@ You need the following blocks:
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 if < > then
 end
 
@@ -55,7 +55,7 @@ Here's how your code for when the red button is pressed should look:
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
 	play drum (item (1 v) of [sequence v]) for (0.25) beats
@@ -84,7 +84,7 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 say [Game over!] for (1) secs
 if < (score) > (high score) > then
 	set [high score v] to (score)
@@ -99,16 +99,16 @@ If you need to change any of the 'Game over' code, for example to add a sound or
 Instead, you can define your own code block, and use it anywhere in your project.
 
 --- task ---
-Click on `More blocks`{:class="blockmoreblocks"}, and then on **Make a block**. Call this new block `Game over`{:class="blockmoreblocks"}.
+Click on `More blocks`{:class="block3myblocks"}, and then on **Make a block**. Call this new block `Game over`{:class="block3myblocks"}.
 
 --- /task ---
 
 --- task ---
-Add the code from the `else`{:class="blockcontrol"} block connected to the `red`{:class="blockevents"} broadcast to the `Game over`{:class="blockmoreblocks"} block so that it looks like this:
+Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 define Game over
 say [Game over!] for (1) secs
 if < (score) > (high score) > then
@@ -121,11 +121,11 @@ stop [all v]
 --- /task ---
 
 --- task ---
-Now remove the code that's in the `else`{:class="blockcontrol"} block connected to the `red`{:class="blockevents"} broadcast, and add in the `Game over`{:class="blockmoreblocks"} block instead:
+Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
 	play drum (item (1 v) of [sequence v]) for (0.25) beats
@@ -140,14 +140,14 @@ end
 Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
 --- /task ---
 
-Your new `Game over`{:class="blockmoreblocks"} block is a __function__, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="blockmoreblocks"} block in.
+Your new `Game over`{:class="block3myblocks"} block is a __function__, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
 
 --- task ---
-Also replace the code in the `else`{:class="blockcontrol"} block connected to the `broadcasts`{:class="blockevents"} for the other colours with your new `Game over`{:class="blockmoreblocks"} block. Here is what the code for the `blue`{:class="blockevents"} message should look like
+Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[1]> then
 	play drum (item (1 v) of [sequence v]) for (0.25) beats
@@ -159,11 +159,11 @@ end
 --- /task ---
 
 --- task ---
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="blockmoreblocks"} block that you made, and not four separate times!
+Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 define Game over
 play sound [cough-female v]
 say [Game over!] for (1) secs

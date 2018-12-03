@@ -35,9 +35,9 @@ If you want, you can use the **color a shape** tool to fill parts of the costume
 Next, add a list for storing the random sequence of colours that the player has to remember.
 
 --- task ---
-Create a list called `sequence`{:class="blockdata"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
 
-[[[generic-scratch-make-list]]]
+[[[generic-scratch3-make-list]]]
 
 --- /task ---
 
@@ -48,10 +48,10 @@ You should now see lots of new code blocks for using lists. The empty list shoul
 Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
 
 --- task ---
-Add this code to the character sprite to choose a random number and add it to `sequence`{:class="blockdata"}:
+Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
-```blocks
+```blocks3
 when flag clicked
 add (pick random (1) to (4)) to [sequence v]
 ```
@@ -67,7 +67,7 @@ Can you add code to your program to generate five random numbers at once?
 --- hints ---
 --- hint ---
 Add 
-a `delete all of sequence`{:class="blockdata"} to first delete all the items on the list, and then add a  `repeat`{:class="blockcontrol"} block that adds five random numbers to the list.
+a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a  `repeat`{:class="block3control"} block that adds five random numbers to the list.
 --- /hint ---
 --- hint ---
 
@@ -75,7 +75,7 @@ This is what your code should look like:
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 when flag clicked
 delete (all v) of [sequence v]
 repeat (5)
@@ -86,11 +86,11 @@ end
 --- /task ---
 
 --- task ---
-Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="blockdata"}:
+Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
-```blocks
+```blocks3
 switch costume to (item (last v) of [sequence v])
 wait (1) secs
 ```

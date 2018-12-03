@@ -3,7 +3,7 @@
 ### Make more blocks
 Do you see any other code that is the same for all four buttons?
 
-```blocks
+```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
 	play drum (item (1 v) of [sequence v]) for (0.25) beats
