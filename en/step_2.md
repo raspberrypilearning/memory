@@ -4,9 +4,13 @@ First create a character that can display a random sequence of colours.
 
 --- task ---
 Open a new Scratch project.
-**Online**: open a new online Scratch project at rpf.io/scratchon.
+
+**Online**: open a new online Scratch project at [rpf.io/scratchon](https://rpf.io/scratchon).
+
 **Offline**: open a new project in the offline editor.
-If you need to download and install the Scratch offline editor, you can find it at rpf.io/scratchoff.
+
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+
 --- /task ---
 
 --- task ---
@@ -43,7 +47,7 @@ Create a list called `sequence`{:class="block3variables"}. Only the character sp
 
 You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
-![screenshot](images/colour-list-blocks.png)
+![screenshot](images/colour-list-blocks-annotated.png)
 
 Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
 
@@ -91,7 +95,7 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (last v) of [sequence v])
+switch costume to (item (length of [sequence v]) of [sequence v])
 wait (1) secs
 ```
 --- /task ---

@@ -74,11 +74,7 @@ end
 --- /hints ---
 --- /task ---
 
---- task ---
-
 You need to add this new code to the character sprite for the other three colours too!
-
---- /task ---
 
 Can you see that the 'Game over' code for each of the four colours is exactly the same?
 
@@ -99,7 +95,7 @@ If you need to change any of the 'Game over' code, for example to add a sound or
 Instead, you can define your own code block, and use it anywhere in your project.
 
 --- task ---
-Click on `More blocks`{:class="block3myblocks"}, and then on **Make a block**. Call this new block `Game over`{:class="block3myblocks"}.
+Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
 --- /task ---
 
@@ -165,7 +161,7 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 
 ```blocks3
 define Game over
-play sound [cough-female v]
+start sound [Cough1 v]
 say [Game over!] for (1) secs
 if < (score) > (high score) > then
 	play sound [trumpet1 v]

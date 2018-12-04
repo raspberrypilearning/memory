@@ -24,19 +24,15 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
 --- task ---
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
---- no-print ---
-Here is an easy way to copy code from one sprite to another. Change the `broadcast`{:class="block3events"} message of each sprite to match the colour of the sprite.
-![Duplicate the code](images/broadcast-duplicate.gif)
---- /no-print ---
 
---- print-only ---
-You can duplicate a whole code script from one sprite to another by dragging the script from the Scripts area to the sprite in the Sprites Panel.
---- /print-only ---
+Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+
 --- /task ---
 
 Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+
 --- task ---
+
 When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
 
 If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
@@ -73,7 +69,15 @@ Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play 
 Here is the code you will need to add:
 
 ```blocks3
-play drum (item (1 v) of [sequence v]) for (0.25) beats
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
++ play drum (item (1 v) of [sequence v]) for (0.25) beats
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) secs
+stop [all v]
+end
+
 ```
 --- /hint ---
 --- /hints ---
@@ -99,6 +103,8 @@ Keep these blocks, but you need to change them in some way:
 <(item (1 v) of [sequence v]) = [1]>
 
 when I receive [red v]
+
+play drum (item (1 v) of [sequence v]) for (0.25) beats
 ```
 
 --- /hint ---
@@ -110,7 +116,7 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 ```blocks3
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[2]> then
-	play drum (item (1 v) of [sequence v]) for (0.25) beats
+	play drum (item (2 v) of [sequence v]) for (0.25) beats
 	delete (1 v) of [sequence v]
 else
 	say [Game over!] for (1) secs
@@ -155,7 +161,7 @@ Add this code to play a sound and make the backdrop change colour when the playe
 
 ```blocks3
 	when I receive [won v]
-	play sound [drum machine v]
+	start sound [drum machine v]
 	repeat (50)
 		change [color v] effect by (25)
 		wait (0.1) secs
