@@ -18,7 +18,7 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 --- task ---
 
-The code you need to do play the drum is __very__ similar to the code to change the character's costume.
+The code you need to play the drum is __very__ similar to the code to change the character's costume.
 
 --- hints ---
 --- hint ---
