@@ -6,7 +6,7 @@ Test your project a few times. Do you notice that sometimes the same number is c
 
 --- /task ---
 
-Can you make a drum sound play each time the character changes costume? How about a different drum sound depending on which colour is chosen? 
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour? 
 
 --- task ---
 
@@ -18,7 +18,7 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 --- task ---
 
-The code you need to play the drum is __very__ similar to the code to change the character's costume.
+The code that plays the drum is __very__ similar to the code that changes the character's costume.
 
 --- hints ---
 --- hint ---
