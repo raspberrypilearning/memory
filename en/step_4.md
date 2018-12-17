@@ -71,7 +71,7 @@ Here is the code you will need to add:
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-+ play drum (item (1 v) of [sequence v]) for (0.25) beats
++ play drum (\(1\) Snare Drum v) for (0.25) beats
 delete (1 v) of [sequence v]
 else
 say [Game over!] for (1) secs
@@ -104,7 +104,7 @@ Keep these blocks, but you need to change them in some way:
 
 when I receive [red v]
 
-play drum (item (1 v) of [sequence v]) for (0.25) beats
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 --- /hint ---
@@ -116,7 +116,7 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 ```blocks3
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[2]> then
-	play drum (item (2 v) of [sequence v]) for (0.25) beats
+	play drum (\(2\) Bass Drum v) for (0.25) beats
 	delete (1 v) of [sequence v]
 else
 	say [Game over!] for (1) secs

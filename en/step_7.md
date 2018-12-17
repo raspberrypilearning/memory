@@ -6,7 +6,7 @@ Do you see any other code that is the same for all four buttons?
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-	play drum (item (1 v) of [sequence v]) for (0.25) beats
+	play drum (\(1\) Snare Drum v) for (0.25) beats
 	delete (1 v) of [sequence v]
 else
 	Game Over :: custom
@@ -14,7 +14,7 @@ end
 
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[1]> then
-	play drum (item (1 v) of [sequence v]) for (0.25) beats
+	play drum (\(2\) Bass Drum v) for (0.25) beats
 	delete (1 v) of [sequence v]
 else
 	Game over :: custom
