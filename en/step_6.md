@@ -63,7 +63,7 @@ if <(item (1 v) of [sequence v])=[1]> then
 else
 	say [Game over!] for (1) secs
 	if < (score) > (high score) > then
-		set [high score v] to (score)
+		set [high score v] to (score :: variables)
 		ask [High score! What is your name?] and wait
 		set [name v] to (answer)
 	end
@@ -82,8 +82,8 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 
 ```blocks3
 say [Game over!] for (1) secs
-if < (score) > (high score) > then
-	set [high score v] to (score)
+if < (score :: variables) > (high score) > then
+	set [high score v] to (score :: variables)
 	ask [High score! What is your name?] and wait
 	set [name v] to (answer)
 end
@@ -107,8 +107,8 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 ```blocks3
 define Game over
 say [Game over!] for (1) secs
-if < (score) > (high score) > then
-	set [high score v] to (score)
+if < (score :: variables) > (high score) > then
+	set [high score v] to (score :: variables)
 	ask [High score! What is your name?] and wait
 	set [name v] to (answer)
 end
@@ -127,7 +127,7 @@ if <(item (1 v) of [sequence v])=[1]> then
 	play drum (\(1\) Snare Drum v) for (0.25) beats
 	delete (1 v) of [sequence v]
 else
-	Game over
+	Game over :: custom
 end
 ```
 --- /task ---
@@ -149,7 +149,7 @@ if <(item (1 v) of [sequence v])=[1]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
 	delete (1 v) of [sequence v]
 else
-	Game over
+	Game over :: custom
 end
 ```
 --- /task ---

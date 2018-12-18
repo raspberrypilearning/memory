@@ -17,7 +17,7 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 
 ```blocks3
 	when this sprite clicked
-	broadcast [red v]
+	broadcast (red v)
 ```
 --- /task ---
 
@@ -161,7 +161,7 @@ Add this code to play a sound and make the backdrop change colour when the playe
 
 ```blocks3
 	when I receive [won v]
-	start sound [drum machine v]
+	start sound (drum machine v)
 	repeat (50)
 		change [color v] effect by (25)
 		wait (0.1) secs
