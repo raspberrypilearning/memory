@@ -61,7 +61,7 @@ if <(item (1 v) of [sequence v])=[1]> then
 	play drum (item (1 v) of [sequence v]) for (0.25) beats
 	delete (1 v) of [sequence v]
 else
-	say [Game over!] for (1) secs
+	say [Game over!] for (1) seconds
 	if < (score) > (high score) > then
 		set [high score v] to (score :: variables)
 		ask [High score! What is your name?] and wait
@@ -81,7 +81,7 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-say [Game over!] for (1) secs
+say [Game over!] for (1) seconds
 if < (score :: variables) > (high score) > then
 	set [high score v] to (score :: variables)
 	ask [High score! What is your name?] and wait
@@ -106,7 +106,7 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 
 ```blocks3
 define Game over
-say [Game over!] for (1) secs
+say [Game over!] for (1) seconds
 if < (score :: variables) > (high score) > then
 	set [high score v] to (score :: variables)
 	ask [High score! What is your name?] and wait
@@ -162,7 +162,7 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 ```blocks3
 define Game over
 start sound [Cough1 v]
-say [Game over!] for (1) secs
+say [Game over!] for (1) seconds
 if < (score) > (high score) > then
 	play sound [trumpet1 v]
 	set [high score v] to (score)

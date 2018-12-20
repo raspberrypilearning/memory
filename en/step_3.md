@@ -49,7 +49,7 @@ repeat (5)
 	add (pick random (1) to (4)) to [sequence v]
     play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
     switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) secs
+    wait (1) seconds
 end
 ```
 --- /hint ---

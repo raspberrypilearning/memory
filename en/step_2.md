@@ -96,6 +96,6 @@ Each time a number gets added to the list, the character should change its costu
 
 ```blocks3
 switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) secs
+wait (1) seconds
 ```
 --- /task ---

@@ -44,7 +44,7 @@ when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
 delete (1 v) of [sequence v]
 else
-say [Game over!] for (1) secs
+say [Game over!] for (1) seconds
 stop [all v]
 end
 ```
@@ -74,7 +74,7 @@ if <(item (1 v) of [sequence v])=[1]> then
 + play drum (\(1\) Snare Drum v) for (0.25) beats
 delete (1 v) of [sequence v]
 else
-say [Game over!] for (1) secs
+say [Game over!] for (1) seconds
 stop [all v]
 end
 
@@ -119,7 +119,7 @@ if <(item (1 v) of [sequence v])=[2]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
 	delete (1 v) of [sequence v]
 else
-	say [Game over!] for (1) secs
+	say [Game over!] for (1) seconds
 	stop [all v]
 end
 ```
@@ -164,7 +164,7 @@ Add this code to play a sound and make the backdrop change colour when the playe
 	start sound (drum machine v)
 	repeat (50)
 		change [color v] effect by (25)
-		wait (0.1) secs
+		wait (0.1) seconds
 	end
 	clear graphic effects
 ```
