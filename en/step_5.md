@@ -20,14 +20,14 @@ Instead of always creating a sequence of five colours, you now want the `score`{
 Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
 ![sprite](images/ballerina.png)
-![blocks_1545305592_525298](images/blocks_1545305592_525298.png)
+![blocks_1545306914_5059805](images/blocks_1545306914_5059805.png)
 --- /task ---
 
 --- task ---
 If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code __at the point you know the sequence is correct__:
 
 ![sprite](images/ballerina.png)
-![blocks_1545305593_6453986](images/blocks_1545305593_6453986.png)
+![blocks_1545306915_6027205](images/blocks_1545306915_6027205.png)
 
 --- hints ---
 --- hint ---
@@ -42,7 +42,7 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305594_8127136](images/blocks_1545305594_8127136.png)
+![blocks_1545306916_702095](images/blocks_1545306916_702095.png)
 --- /task ---
 
 --- task ---

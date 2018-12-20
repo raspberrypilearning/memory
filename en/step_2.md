@@ -55,7 +55,7 @@ Each colour has a different number, so you can choose a random colour by randoml
 Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
-![blocks_1545305577_505503](images/blocks_1545305577_505503.png)
+![blocks_1545306900_307141](images/blocks_1545306900_307141.png)
 --- /task ---
 
 --- task ---
@@ -76,7 +76,7 @@ This is what your code should look like:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305579_9786892](images/blocks_1545305579_9786892.png)
+![blocks_1545306902_1955757](images/blocks_1545306902_1955757.png)
 --- /hint --- --- /hints ---
 --- /task ---
 
@@ -85,5 +85,5 @@ Each time a number gets added to the list, the character should change its costu
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305581_1630013](images/blocks_1545305581_1630013.png)
+![blocks_1545306903_300535](images/blocks_1545306903_300535.png)
 --- /task ---

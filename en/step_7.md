@@ -3,7 +3,7 @@
 ### Make more blocks
 Do you see any other code that is the same for all four buttons?
 
-![blocks_1545305604_3277183](images/blocks_1545305604_3277183.png)
+![blocks_1545306925_813555](images/blocks_1545306925_813555.png)
 
 Can you make another custom block that all buttons can use?
 

@@ -30,7 +30,7 @@ Here are the blocks you need:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305582_2901971](images/blocks_1545305582_2901971.png)
+![blocks_1545306904_389723](images/blocks_1545306904_389723.png)
 --- /hint ---
 
 --- hint ---
@@ -38,7 +38,7 @@ Here is how your finished code should look:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305583_4102201](images/blocks_1545305583_4102201.png)
+![blocks_1545306905_484342](images/blocks_1545306905_484342.png)
 --- /hint ---
 
 --- /hints ---

@@ -29,14 +29,14 @@ You need the following blocks:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305596_0501943](images/blocks_1545305596_0501943.png)
+![blocks_1545306917_8757622](images/blocks_1545306917_8757622.png)
 --- /hint ---
 --- hint ---
 Here's how your code for when the red button is pressed should look:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305597_2147145](images/blocks_1545305597_2147145.png)
+![blocks_1545306919_0175269](images/blocks_1545306919_0175269.png)
 --- /hint ---
 --- /hints ---
 --- /task ---
@@ -47,7 +47,7 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305598_4358034](images/blocks_1545305598_4358034.png)
+![blocks_1545306920_1657844](images/blocks_1545306920_1657844.png)
 
 If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
@@ -63,7 +63,7 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305599_670905](images/blocks_1545305599_670905.png)
+![blocks_1545306921_3138576](images/blocks_1545306921_3138576.png)
 --- /task ---
 
 --- task ---
@@ -71,7 +71,7 @@ Now remove the code that's in the `else`{:class="block3control"} block connected
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305600_813903](images/blocks_1545305600_813903.png)
+![blocks_1545306922_4493077](images/blocks_1545306922_4493077.png)
 --- /task ---
 
 --- task ---
@@ -85,7 +85,7 @@ Also replace the code in the `else`{:class="block3control"} block connected to t
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305601_9384758](images/blocks_1545305601_9384758.png)
+![blocks_1545306923_5727518](images/blocks_1545306923_5727518.png)
 --- /task ---
 
 --- task ---
@@ -93,5 +93,5 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305603_0673637](images/blocks_1545305603_0673637.png)
+![blocks_1545306924_6780515](images/blocks_1545306924_6780515.png)
 --- /task ---

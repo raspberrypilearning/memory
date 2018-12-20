@@ -15,7 +15,7 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 
 ![red-drum](images/red_drum.png)
 
-![blocks_1545305584_6293092](images/blocks_1545305584_6293092.png)
+![blocks_1545306906_6768909](images/blocks_1545306906_6768909.png)
 --- /task ---
 
 A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
@@ -36,7 +36,7 @@ If `1` is at the start of the list, the code should remove the number from the l
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305585_7690473](images/blocks_1545305585_7690473.png)
+![blocks_1545306907_799774](images/blocks_1545306907_799774.png)
 --- /task ---
 
 --- task ---
@@ -57,7 +57,7 @@ Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play 
 --- hint ---
 Here is the code you will need to add:
 
-![blocks_1545305586_9223192](images/blocks_1545305586_9223192.png)
+![blocks_1545306908_8937438](images/blocks_1545306908_8937438.png)
 --- /hint ---
 --- /hints ---
 --- /task ---
@@ -78,7 +78,7 @@ Keep these blocks, but you need to change them in some way:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305588_0311756](images/blocks_1545305588_0311756.png)
+![blocks_1545306910_0893688](images/blocks_1545306910_0893688.png)
 
 --- /hint ---
 --- hint ---
@@ -86,7 +86,7 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305589_2001147](images/blocks_1545305589_2001147.png)
+![blocks_1545306911_1989691](images/blocks_1545306911_1989691.png)
 
 --- /hint ---
 --- /hints ---
@@ -105,7 +105,7 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545305590_3415203](images/blocks_1545305590_3415203.png)
+![blocks_1545306912_3397074](images/blocks_1545306912_3397074.png)
 --- /task ---
 
 --- task ---
@@ -120,5 +120,5 @@ Add this code to play a sound and make the backdrop change colour when the playe
 
 ![ballerina](images/stage.png)
 
-![blocks_1545305591_4174883](images/blocks_1545305591_4174883.png)
+![blocks_1545306913_4261286](images/blocks_1545306913_4261286.png)
 --- /task ---
