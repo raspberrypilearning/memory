@@ -15,10 +15,7 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 
 ![red-drum](images/red_drum.png)
 
-```blocks3
-	when this sprite clicked
-	broadcast (red v)
-```
+![blocks_1545305584_6293092](images/blocks_1545305584_6293092.png)
 --- /task ---
 
 A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
@@ -39,15 +36,7 @@ If `1` is at the start of the list, the code should remove the number from the l
 
 ![ballerina](images/ballerina.png)
 
-```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
-```
+![blocks_1545305585_7690473](images/blocks_1545305585_7690473.png)
 --- /task ---
 
 --- task ---
@@ -68,17 +57,7 @@ Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play 
 --- hint ---
 Here is the code you will need to add:
 
-```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
-
-```
+![blocks_1545305586_9223192](images/blocks_1545305586_9223192.png)
 --- /hint ---
 --- /hints ---
 --- /task ---
@@ -99,13 +78,7 @@ Keep these blocks, but you need to change them in some way:
 
 ![ballerina](images/ballerina.png)
 
-```blocks3
-<(item (1 v) of [sequence v]) = [1]>
-
-when I receive [red v]
-
-play drum (\(1\) Snare Drum v) for (0.25) beats
-```
+![blocks_1545305588_0311756](images/blocks_1545305588_0311756.png)
 
 --- /hint ---
 --- hint ---
@@ -113,16 +86,7 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 
 ![ballerina](images/ballerina.png)
 
-```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
-else
-	say [Game over!] for (1) seconds
-	stop [all v]
-end
-```
+![blocks_1545305589_2001147](images/blocks_1545305589_2001147.png)
 
 --- /hint ---
 --- /hints ---
@@ -141,10 +105,7 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 
 ![ballerina](images/ballerina.png)
 
-```blocks3
-	wait until < (length of [sequence v]) = [0]>
-	broadcast [won v] and wait
-```
+![blocks_1545305590_3415203](images/blocks_1545305590_3415203.png)
 --- /task ---
 
 --- task ---
@@ -159,13 +120,5 @@ Add this code to play a sound and make the backdrop change colour when the playe
 
 ![ballerina](images/stage.png)
 
-```blocks3
-	when I receive [won v]
-	start sound (drum machine v)
-	repeat (50)
-		change [color v] effect by (25)
-		wait (0.1) seconds
-	end
-	clear graphic effects
-```
+![blocks_1545305591_4174883](images/blocks_1545305591_4174883.png)
 --- /task ---
