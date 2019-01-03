@@ -1,24 +1,57 @@
+\--- no-print \---
+
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+
+\--- /no-print \---
+
 ## 前書き
 
-このプロジェクトでは、ランダムな色のシーケンスを暗記して繰り返すメモリゲームを作成します。
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
 ### あなたが作るもの
 
-開始するには緑色の旗をクリックしてください。 ダンサーのドレスで示された色のシーケンスを見て、付属のドラムビートを聞いてから、彼女に戻してください。 あなたが注文を間違えた場合、それはゲームオーバーです！
+\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="images/colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/258514878/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
 </div>
 
-### あなたが学ぶもの
+\--- /no-print \---
 
-このプロジェクトでは、 [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){：target = "_ blank"}の次の要素から構成されています。
+\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
 
-+ [プログラミング構造を組み合わせて問題を解決する。](https://www.raspberrypi.org/curriculum/programming/builder){：target = "_ blank"}
+## \--- collapse \---
 
-### 教育者のための追加情報
+## title: What you will learn
 
-あなたはこのプロジェクトを印刷する必要がある場合は、使用してください [プリンターに優しいバージョンを](https://projects.raspberrypi.org/en/projects/memory/print){：ターゲット=「_ブランク」}。
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
-フッターのリンクを使用して、このプロジェクトのGitHubリポジトリにアクセスします。このプロジェクトには、 'en / resources'フォルダ内のすべてのリソース（完成プロジェクトの例を含む）が含まれています。
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: What you will need
+
+### Hardware
+
++ A computer capable of running Scratch 3
+
+### Software
+
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+
+## \--- collapse \---
+
+## title: Additional information for educators
+
+\--- no-print \---
+
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+
+\--- /no-print \---
+
+You can [download the completed project here](http://rpf.io/p/en/memory-get).
+
+\--- /collapse \---
