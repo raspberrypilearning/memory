@@ -1,99 +1,33 @@
-## Repeating the sequence
+## Multiple levels
 
-Let's add four buttons for the player to press to repeat the sequence they've remembered.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
-+ Add four new sprites to your project to represent the four buttons. Edit the costumes so that there is one sprite in each of the four colours. Lay out the sprites in the same order as the costumes — red, blue, green, yellow.
+\--- task \--- Create a new variable called `score`{:class="block3variables"}.
 
-![screenshot](images/colour-drums.png)
+[[[generic-scratch3-add-variable]]] \--- /task \---
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-```blocks
-    when this sprite clicked
-    broadcast [red v]
-```
+\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
 
-A broadcast is a bit like making an announcement over a loudspeaker — you might have heard this when you are shopping in the supermarket. All of the sprites can hear the message, but only the sprite whose job it is to respond will do something.
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
 
-+ Add similar code to the blue, green, and yellow drums to make them broadcast messages about their own colour.
+\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-\--- hints \--- \--- hint \--- Here is an easy way to copy the code from one sprite to another. Change the broadcast message in each sprite to match the colour of the sprite. ![Duplicate the code](images/broadcast-duplicate.gif) \--- /hint \--- \--- /hints \---
+![sprite](images/ballerina.png) ![blocks_1545306914_5059805](images/blocks_1545306914_5059805.png) \--- /task \---
 
-Remember we said that the broadcast was a bit like making an announcement over a loudspeaker? Only the sprite whose job it is to respond will do something, so let's make it the character sprite's job to respond to the messages. We do this by writing some code for the character to do when they hear each message.
+\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-+ When your character sprite receives the message `red`, the code should check whether the number `1` is at the start of the list (which means that `red` is the next colour in the sequence).
-    
-    If it is, the code should remove the number from the list, as the colour was guessed correctly. Otherwise it's game over, and we need to `stop all`{:class="blockcontrol"} to stop the game.
+![sprite](images/ballerina.png) ![blocks_1545306915_6027205](images/blocks_1545306915_6027205.png)
 
-```blocks
-    when I receive [red v]
-    if <(item (1 v) of [sequence v])=[1]> then
-        delete (1 v) of [sequence v]
-    else
-        say [Game over!] for (1) secs
-        stop [all v]
-    end
-```
+\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
-+ Add to the code you just wrote so that a drum beat also plays when the correct colour is received.
+\--- /task \---
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- You will need to add the `play drum`{:class="blocksound"} block to play the first sound in the sequence list before `delete 1 of sequence`{:class="blockdata"}:
+![ballerina](images/ballerina.png)
 
-![Play drum](images/hint-play-drum.png) \--- /hint \--- \--- hint \--- Here is the code you will need to add:
+![blocks_1545306916_702095](images/blocks_1545306916_702095.png) \--- /task \---
 
-```blocks
-play drum (item (1 v) of [sequence v]) for (0.25) beats
-```
-
-\--- /hint \--- \--- /hints \---
-
-+ Duplicate the code you used to make your character sprite respond to the message `red`. This time, change the message to `blue`.
-
-When the sprite responds to the message `blue`, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
-
-+ Change your code so that the character responds correctly to the `blue` message.
-
-\--- hints \--- \--- hint \--- Keep these blocks, but you will need to change them in some way: ![Change these blocks](images/hint-change-blocks.png) \--- /hint \--- \--- hint \--- Here is how your code should look for the blue broadcast.
-
-```blocks
-    when I receive [blue v]
-    if <(item (1 v) of [sequence v])=[2]> then
-        play drum (item (1 v) of [sequence v]) for (0.25) beats
-        delete (1 v) of [sequence v]
-    else
-        say [Game over!] for (1) secs
-        stop [all v]
-    end
-```
-
-\--- /hint \--- \--- /hints \---
-
-+ Duplicate the code again twice for the green and yellow buttons, and change the necessary parts so that the character responds correctly.
-
-+ Remember to test the code you've added! Can you memorise a sequence of five colours? Is the sequence different each time?
-
-You could also display some flashing lights as a reward once the list is empty, as that means the entire sequence was memorised correctly.
-
-+ Add this code to the end of your character's `when flag clicked`{:class="blockevents"} script:
-
-```blocks
-    wait until < (length of [sequence v]) = [0]>
-    broadcast [won v] and wait
-```
-
-+ Switch to the stage, and add this code to play a sound and make the backdrop change colour once the player has won. You can choose any sound you like.
-
-```blocks
-    when I receive [won v]
-    play sound [drum machine v]
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) secs
-    end
-    clear graphic effects
-```
+\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
