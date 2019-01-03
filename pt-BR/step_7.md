@@ -1,55 +1,23 @@
-## Recorde
+## Challenge: improve your game
 
-Vamos salvar o recorde (a pontuação mais alta), para que você possa desafiar seus amigos.
+### Make more blocks
 
-+ Adicione duas novas variáveis ​​chamadas `recorde`{:class="blockdata"} e `nome`{:class="blockdata"} ao seu projeto.
+Do you see any other code that is the same for all four buttons?
 
-Quando o jogo terminar porque o jogador errou a sequência, você precisa verificar se a pontuação do placar é maior do que a mostrada no recorde atual. E se for, você precisa salvar a pontuação como o novo recorde e armazenar o nome do jogador.
+![blocks_1545306925_813555](images/blocks_1545306925_813555.png)
 
-+ Adicione o código ao personagem bailarina para salvar o recorde. Também peça ao jogador seu nome e salve-o na variável `nome`{:class="blockdata"}.
+Can you make another custom block that all buttons can use?
 
-[[[generic-scratch-high-score]]]
+### Another costume
 
-\--- hints \--- \--- hint \--- Seu novo código precisa seguir a seguinte lógica: Depois da mensagem `Fim do jogo` `se` o `placar` for `maior que` o `recorde` `mude` o valor do `recorde` para o valor do `placar` `pergunte` o nome do jogador `mude` o `nome` para o dado na `resposta` \--- /hint \--- \--- hint \--- Você precisará dos seguintes blocos:
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-![Hint for high score](images/hint-high-score.png)
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-\--- /hint \--- \--- hint \--- Veja como o seu código deve ficar para quando o tambor vermelho for pressionado:
+![screenshot](images/colour-white.png)
 
-```blocks
-    quando receber [vermelho v]
-    se <(item (1 v) de [sequencia v]:: list)=[1]> então
-        apague (1 v) de [sequencia v]
-    senão
-        diga [Fim do jogo] por (1) segundos
-        se <(placar) > (recorde)> então
-        pergunte [Novo recorde! Qual é o seu nome?] e espere a resposta
-            mude [nome v] para (resposta)
-        fim
-        pare [todos v]
-     fim
-```
+### Difficulty level
 
-\--- /hint \--- \--- /hints \---
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-+ Você precisará adicionar este novo código aos tambores das outras três cores também! Você já reparou que o código 'Fim do jogo' para cada uma das quatro cores é exatamente o mesmo?
-
-![screenshot](images/colour-same.png)
-
-As vezes que você for alterar este código, por exemplo, para adicionar um som ou alterar a mensagem "Fim de jogo", terá que alterá-lo quatro vezes. Isso além de chato ainda faz perder muito tempo.
-
-Ao invés disso, você pode definir seus próprios blocos e reutilizá-los em seu projeto. Para fazer isso, clique em `Mais Blocos`{:class="blockmoreblocks"}, e em seguida **Criar um bloco**. Chame esse novo bloco de 'Fim do jogo'.
-
-![screenshot](images/colour-more.png)
-
-+ No código do tambor vermelho, substitua o bloco `se então`{:class="blockcontrol"} pelo bloco <0>se então senão</0>{:class="blockcontrol"}:
-
-![screenshot](images/colour-make-block.png)
-
-+ Você acabou de criar uma nova função chamada *Fim do jogo*{:class="blockmoreblocks"}, e agora pode usar em qualquer lugar que quiser. Arraste seu novo bloco `Fim do jogo`{:class="blockmoreblocks"} para os quatro scripts dos tambores.
-
-![screenshot](images/colour-use-block.png)
-
-+ Agora adicione um som para quando o tambor errado for pressionado. Você só precisa adicionar este código uma vez no bloco `Fim do jogo`{:class="blockmoreblocks"} que você fez, e não quatro vezes!
-
-![screenshot](images/colour-cough.png)
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
