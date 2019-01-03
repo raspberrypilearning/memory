@@ -1,59 +1,23 @@
-## أعلى درجة
+## Challenge: improve your game
 
-لنقم بحفظ أعلى درجة، بحيث يمكنك اللعب ضد أصدقائك.
+### Make more blocks
 
-+ قم بإضافة متغيرين إلى مشروعك أحدهما بعنوان `أعلى درجة`{:class="blockdata"}والآخر بعنوان `الاسم`{:class="blockdata"}.
+Do you see any other code that is the same for all four buttons?
 
-عند انتهاء اللعبة بسبب أن اللاعب أخطأ بالتسلسل،فإنك تحتاج إلى التحقق مما إذا كانت درجته أعلى من أعلى درجة حالية. إذا كان الأمر كذلك، تحتاج لحفظ الدرجة التي حصل عليها كأعلى درجة، وحفظ اسم اللاعب.
+![blocks_1545306925_813555](images/blocks_1545306925_813555.png)
 
-+ أضف الكود إلى شخصية الكائن الخاص بك لحفظ أعلى درجة. أطلب أيضا من اللاعب اسمه وقم بتسجيله في متغير `الاسم`{:class="blockdata"}.
+Can you make another custom block that all buttons can use?
 
-[[[generic-scratch-high-score]]]
+### Another costume
 
-\--- hints \--- \--- hint \--- الكود الجديد الخاص بك يحتاج لاتباع المنطق التالي: بعد رسالة `انتهاء اللعبة` `إذا<code> كانت <code>الدرجة``أعلى من``أعلى درجة``اجعل``الدرجة` هي `أعلى درجة`و`إطلب` اسم اللاعب `اجعل` `الاسم` إلى <0>الإجابة</code> \--- hint/ \--- \--- hint \--- ستحتاج إلى المجموعات التالية:
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-![--- hint ---لـ درجة عالية](images/hint-high-score.png)
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-\--- hint/ \--- \--- hint \--- هنا كيفية ظهور الكود الخاص بك عند النقر على الزر الأحمر:
+![screenshot](images/colour-white.png)
 
-```blocks
-    عندما تستقبل [red v]
-إذا <(item (1 v) of [sequence v] :: list) = [1]> 
-  احذف (1 v) من [sequence v]
+### Difficulty level
 
-  قل [Game over!] لمدة (1) ثانية
-  إذا <(score) > (high score)> 
-    اجعل [high score v] مساوياً (score)
-    ask [High score!]
-  end
-end ما اسمك؟\] and wait
-اجعل [name v] مساوياً (الإجابة)
-end
-أوقف [الكل v]
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-end
-```
-
-\--- hint/ \--- \--- hints/ \---
-
-+ أيضا ستحتاج إلى إضافة الكود الجديد إلى شخصية الكائن للألوان الثلاثة الأخرى! هل لاحظت أن كود ’انتهت اللعبة’ لكل لون من الألوان الأربعة هو نفسه تماما؟
-
-![لقطة الشاشة](images/colour-same.png)
-
-إذا احتجت في أي وقت إلى تغيير أي كود، على سبيل المثال تريد إضافة صوت أو تغيير رسالة ’انتهت اللعبة’ فسيتعين عليك تغييرها أربع مرات. يمكن أن يصبح ذلك مزعج، وفيه مضيعة للوقت.
-
-بدلاً من ذلك، يمكنك تعريف مجموعاتك الخاصة، وإعادة استخدامها في مشروعك. للقيام بذلك `المزيد من المجموعات`{:class="blockmoreblocks"}، ثم **إنشاء مجموعة**. قم بتسمية هذه المجموعة الجديدة ’ انتهت اللعبة’.
-
-![لقطة الشاشة](images/colour-more.png)
-
-+ أضف الكود من المجموعة `آخر`{:class="blockcontrol"} المرتبطة بالزر الأحمر إلى المجموعة التي قمت بإنشائها:
-
-![لقطة الشاشة](images/colour-make-block.png)
-
-+ قمت الآن بعمل *وظيفة* جديدة تسمى `انتهت اللعبة`{:class="blockmoreblocks"}، والتي يمكنك استخدامها في أي مكان تريد. اسحب مجموعتك الجديدة `انتهت اللعبة`{:class="blockmoreblocks"} إلى أزرار النصوص البرمجية الأربعة.
-
-![لقطة الشاشة](images/colour-use-block.png)
-
-+ الآن قم بإضافة صوت لـ عند النقر على الزر الخاطئ. ما عليك سوى إضافة الكود مرة واحدة فقط في مجموعة `انتهت اللعبة`{:class="blockmoreblocks"} التي قمت بإنشاءها، وليس أربع مرات منفصلة!
-
-![لقطة الشاشة](images/colour-cough.png)
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
