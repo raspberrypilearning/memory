@@ -1,11 +1,5 @@
-\--- challenge \---
+## What next?
 
-## Izazov: pravljenje više blokova
+Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball), where you will make a game in which you have to avoid balls while moving from platform to platform.
 
-Da li primjećuješ neki drugi kôd koji je isti za sva četiri dugmeta?
-
-![screenshot](images/colour-more-blocks.png)
-
-Možeš li da napraviš neki drugi sopstveni blok koji ćeš koristiti za svako dugme?
-
-\--- /challenge \---
+Or if you want to try another music-themed Scatch project, you can try the [Binary hero](https://projects.raspberrypi.org/en/projects/binary-hero) project.
