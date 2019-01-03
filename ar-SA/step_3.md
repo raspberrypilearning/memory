@@ -1,65 +1,39 @@
-## إنشاء تسلسل لوني
+## Add sound
 
-أولاً ، دعنا ننشئ شخصية ستعرض تسلسلًا عشوائيًا من الألوان لحفظها.
+\--- task \---
 
-+ ابدأ مشروع Scratch الجديد ، واحذف كائن القطة الموجود بحيث يكون مشروعك فارغًا. يمكنك العثور على محرر Scratch عبر الإنترنت [هنا](http://jumpto.cc/scratch-new).
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-+ اختر كائن للشخصية وخلفية. ليس من الضروري أن تكون الشخصية لإنسان، ولكن يجب أن تكون قادرة على إظهار ألوان مختلفة.
+\--- /task \---
 
-![لقطة الشاشة](images/colour-sprite.png)
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
-+ في لعبتك، ستستخدم رقمًا مختلفًا لتمثيل كل لون:
-    
-    + 1 = أحمر
-    + 2 = أزرق
-    + 3 = أخضر
-    + 4 = أصفر
-    
-    امنح شخصيتك أربعة أزياء ملونة مختلفة، واحدة لكل من الألوان الأربعة المذكورة أعلاه. تأكد من أن الأزياء الخاصة بك الملونة هي بنفس الترتيب كما في القائمة أعلاه.
-    
-    ![لقطة الشاشة](images/colour-costume.png)
-    
-    يمكنك استخدام أداة *لوّن الشكل* لملء أجزاء الزي المختلف اللون.
+\--- task \---
 
-لنقم بإنشاء تسلسل ألوان عشوائي.
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
-+ قم بإنشاء قائمة بمسمى `sequence `{:class="blockdata"}. سنستخدم هذه القائمة لتخزين تسلسل الألوان الذي يجب على اللاعب تذكره. فقط كائن الشخصية الذي اخترته يحتاج لرؤية القائمة، لذا يمكنك اختيار **فقط لهذا الكائن**.
+[[[generic-scratch3-add-music-extension]]]
 
-[[[generic-scratch-make-list]]]
+\--- /task \---
 
-ستشاهد الآن القائمة الفارغة في الجزء العلوي الأيسر في المرحلة الخاصة بك، كذلك إلى العديد من المجموعات الجديدة لاستخدام القوائم.
+\--- task \---
 
-![لقطة الشاشة](images/colour-list-blocks.png)
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
-+ تذكر أننا أعطينا رقم لكل لون؟ يمكننا اختيار لون عشوائي عن طريق اختيار رقم عشوائي وإضافته إلى القائمة. أضف هذا الكود:
+\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
 
-```blocks
-عند نقر ⚑
-أضف (اختر عدداً عشوائياً بين (1) و (4)) إلى [sequence v]
-```
+Here are the blocks you need:
 
-+ اختبر الكود من خلال النقر على العلم الأخضر. تأكد من أنه في كل مره تقوم بالنقر عليه، يتم إضافة رقم عشوائي بين 1 و 4 إلى القائمة.
+![ballerina](images/ballerina.png)
 
-+ هل يمكنك إضافة هذه المجموعة إلى برنامجك، لإنشاء خمسة ألوان عشوائية في وقت واحد؟
+![blocks_1545306904_389723](images/blocks_1545306904_389723.png) \--- /hint \---
 
-```blocks
-كرِّر (5) مرة
-end
-```
+\--- hint \--- Here is how your finished code should look:
 
-+ قد تلاحظ أن قائمتك أصبحت ممتلئة قليلاً الآن. دعونا نضيف مجموعة لحذف القائمة بأكملها في البداية قبل أن نولّد أي أرقام.
+![ballerina](images/ballerina.png)
 
-```blocks
-عند نقر ⚑
-احذف (الكل v) من [sequence v]
-كرِّر (5) مرة 
-  أضف (اختر عدداً عشوائياً بين (1) و (4)) إلى [sequence v]
-end
-```
+![blocks_1545306905_484342](images/blocks_1545306905_484342.png) \--- /hint \---
 
-+ وأخيرًا، في كل مرة نختار رقمًا، لنغير زي الراقصة إلى آخر عنصر تمت إضافته إلى القائمة، وهو الرقم الذي اخترناه للتو. أضف هذه المجموعة إلى الكود الخاص بك مباشرة بعد إضافة رقم عشوائي إلى قائمتك:
+\--- /hints \---
 
-```blocks
-غيّر المظهر إلى (العنصر (last v) من [sequence v] :: list)
-انتظر (1) ثانية
-```
+\--- /task \---
