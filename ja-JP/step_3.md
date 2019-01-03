@@ -1,66 +1,39 @@
-## カラーシーケンスを作成する
+## Add sound
 
-まず、文字列をランダムに表示して記憶させるキャラクターを作成しましょう。
+\--- task \---
 
-+ 新しいScratchプロジェクトを開始し、catスプライトを削除してプロジェクトが空になるようにします。あなたは、オンラインスクラッチエディタを見つけることができます [ここ](http://jumpto.cc/scratch-new)。
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-+ 文字のスプライトと背景を選択します。あなたのキャラクターは人である必要はありませんが、異なる色を表示できる必要があります。
+\--- /task \---
 
-![スクリーンショット](images/colour-sprite.png)
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
-+ ゲームでは、それぞれの色を表すために異なる番号を使います：
-    
-    + 1 =赤
-    + 2 =青
-    + 3 =緑
-    + 4 =イエロー
-    
-    あなたのキャラクターに4色の衣装を与えてください。あなたの色のついた衣装が上記のリストと同じ順序であることを確認してください。
-    
-    ![スクリーンショット](images/colour-costume.png)
-    
-    *色を使用して形状* ツールを使用して、衣装の一部を別の色で塗りつぶすことができます。
+\--- task \---
 
-ランダムな色のシーケンスを作成しましょう。
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
-+ `sequence`{：class = "blockdata"}というリストを作成します。 このリストを使用して、プレーヤーが覚えておかなければならない色のシーケンスを保存します。 文字スプライトのみがリストを参照する必要があるため、 **を選択することができます**このスプライトに対しては、**選択できます。</li> </ul> 
-    
-    [[[generic-scratch-make-list]]]
-    
-    ステージの左上に空のリストが表示され、リストを使用するための新しいブロックが多数表示されるはずです。
-    
-    ![スクリーンショット](images/colour-list-blocks.png)
-    
-    + 我々は各色に数字を付けたのを覚えていますかランダムな色を選択してリストに追加することで、ランダムな色を選択できます。このコードを追加：
-    
-    ```blocks
-    
-    をクリックしたときに[sequence v]にadd（random（1）〜（4）を選択）
-    ```
-    
-    + 緑色の旗をクリックしてコードをテストします。クリックするたびに、1〜4の乱数がリストに追加されていることを確認します。
-    
-    + 一度に5つのランダムな色を生成するためにこのブロックをプログラムに追加できますか？
-    
-    ```blocks
-    repeat（5）
-    
-    end
-    ```
-    
-    + あなたはあなたのリストが少しいっぱいになっていることに気付くかもしれません。数字を生成する前に、最初にリスト全体を削除するブロックを追加してみましょう。
-    
-    ```blocks
-    フラグがクリックされたときに
-    （全V）の[系列v]の削除
-    リピート（5）
-        追加（ピックランダム（1）〜（4））に[配列V]
-    端を
-    ```
-    
-    + 最後に、数字を選ぶたびに、ダンサーの衣装をリストに追加された最後のアイテムに変更しましょう。これは今選んだ番号になります。 乱数をリ​​ストに追加した直後に、次のブロックをコードに追加します。
-    
-    ```blocks
-    （シーケンスvの項目（最後のv））
-    ウェイト（1秒）
-    ```
+[[[generic-scratch3-add-music-extension]]]
+
+\--- /task \---
+
+\--- task \---
+
+The code that plays the drum is **very** similar to the code that changes the character's costume.
+
+\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306904_389723](images/blocks_1545306904_389723.png) \--- /hint \---
+
+\--- hint \--- Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306905_484342](images/blocks_1545306905_484342.png) \--- /hint \---
+
+\--- /hints \---
+
+\--- /task \---
