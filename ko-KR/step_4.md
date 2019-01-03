@@ -1,30 +1,95 @@
-\--- 도전 \---
+## Repeat the sequence
 
-## 과제 : 소리 추가
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
-프로젝트를 몇 번 테스트하십시오. 때로는 한 줄에 같은 번호가 연속적으로 두 번 (또는 그 이상) 선택되어 연속을 기억하기가 더 어려울 수도 있습니다. 캐릭터가 모양을 바꿀 때마다 드럼 소리를 낼 수 있습니까?
+\--- task \--- Add four new sprites to your project to represent the four buttons.
 
-선택한 번호에 따라 다른 드럼 소리를 낼 수 있습니까? 이 것은 캐릭터의 모양을 변화시키는 코드와 *매우*유사할 것입니다.
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
-\--- 귀뜸말 \--- \--- 귀뜸말 \--- 캐릭터의 현재 코드에 단지 두 블록을 추가함으로써 이 도전을 완성시킬 수 있습니다! \--- / 귀뜸말 \--- \--- 귀뜸말 \--- 다음은 필요한 블록입니다.
+![screenshot](images/colour-drums.png) \--- /task \---
 
-![귀뜸말 드럼 블록](images/hint-drumblocks.png) \--- /귀뜸말 \---
+\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
 
-\--- 귀뜸말 \--- 완성된 코드는 다음과 같은 모습입니다.
+![red-drum](images/red_drum.png)
 
-```blocks
-깃발이 클릭될 때
-[연속V] 의 (모든 V)  삭제
-반복 (5)
-    [연속 V] 에 (랜덤 (1) ~ (4)) 를 골라 추가  
-    0.25 비트동안 [연속V] 의 (마지막 V) 항목 드럼 연주(
-    [연속V] 의 (마지막 V) 항목에 대한 모양 바꾸기
-    (1) 초 기다리기
-끝
-```
+![blocks_1545306906_6768909](images/blocks_1545306906_6768909.png) \--- /task \---
 
-\--- / 귀뜸말 \---
+A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
-\--- / 귀뜸말 \---
+\--- task \---
 
-\--- /도전 \---
+Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+
+\--- /task \---
+
+Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+
+\--- task \---
+
+When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+
+If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306907_799774](images/blocks_1545306907_799774.png) \--- /task \---
+
+\--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+
+\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+
++ 1 = red
++ 2 = blue
++ 3 = green
++ 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
+
+\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+
+![blocks_1545306908_8937438](images/blocks_1545306908_8937438.png) \--- /hint \--- \--- /hints \--- \--- /task \---
+
+\--- task \--- Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}. \--- /task \---
+
+When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+
+\--- task \--- Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+
+\--- hints \--- \--- hint \---
+
+Keep these blocks, but you need to change them in some way:
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306910_0893688](images/blocks_1545306910_0893688.png)
+
+\--- /hint \--- \--- hint \--- Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306911_1989691](images/blocks_1545306911_1989691.png)
+
+\--- /hint \--- \--- /hints \--- \--- /task \---
+
+\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+
+Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+
+\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306912_3397074](images/blocks_1545306912_3397074.png) \--- /task \---
+
+\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+
+[[[generic-scratch3-sound-from-library]]]
+
+\--- /task \---
+
+\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+
+![ballerina](images/stage.png)
+
+![blocks_1545306913_4261286](images/blocks_1545306913_4261286.png) \--- /task \---
