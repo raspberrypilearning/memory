@@ -1,39 +1,26 @@
 ---
 hero_image: images / memory.png
-theme: βιολέτα
-duration: 2
 listed: true
-ingredient: false
 copyedit: false
-curriculum: 1, σχεδιασμός-0, προγραμματισμός-1, phys-comp-0, κατασκευή-0, κοινότητα-0
 title: Μνήμη
-description: Δημιουργήστε ένα παιχνίδι μνήμης στο οποίο μπορείτε να απομνημονεύσετε και να επαναλάβετε μια τυχαία σειρά τυχαίων χρωμάτων
-original_url: https://codeclubprojects.org/en-GB/scratch/memory
-interests: Παιχνίδια
-technologies: γρατσουνιά
-site_areas: έργα
-hardware: ''
-software: γρατσουνιά
-version: 4.0.1
-last_tested: 2017-01-01
+description: Create a game in which you memorise and repeat random colour sequences
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - 
     title: Εισαγωγή
   - 
-    title: Τι θα χρειαστείτε
+    title: Create a colour sequence
   - 
-    title: Δημιουργήστε μια ακολουθία χρωμάτων
+    title: Add sound
   - 
-    title: 'Πρόκληση: προσθήκη ήχου'
+    title: Repeat the sequence
   - 
-    title: Επαναλάβετε την ακολουθία
+    title: Multiple levels
   - 
-    title: Πολλαπλά επίπεδα
+    title: High score
   - 
-    title: Υψηλή βαθμολογία
+    title: "Challenge: improve your game"
   - 
-    title: 'Πρόκληση: Κάνοντας περισσότερα μπλοκ'
-  - 
-    title: 'Πρόκληση: μια άλλη φορεσιά'
-  - 
-    title: 'Πρόκληση: επίπεδο δυσκολίας'
+    title: What next?
+
