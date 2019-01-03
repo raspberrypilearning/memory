@@ -1,56 +1,23 @@
-## Record
+## Challenge: improve your game
 
-Salviamo il punteggio più alto, così puoi giocare contro i tuoi amici.
+### Make more blocks
 
-+ Aggiungiamo due nuove variabili chiamate `record`{:class="blockdata} e `nome`{:class="blockdata"} al tuo progetto.
+Do you see any other code that is the same for all four buttons?
 
-Quando il gioco finisce per una sequenza sbagliata dal giocatore, dovrai controllare se il suo punteggio è più alto del record attuale. Se è così, dovrai salvare il punteggio come record e il nome del giocatore.
+![blocks_1545306925_813555](images/blocks_1545306925_813555.png)
 
-+ Aggiungi del codice allo sprite del tuo personaggio per salvare il record. Inoltre, chiedi al giocatore il suo nome e salvalo nella variabile `nome`{:class="blockdata"}.
+Can you make another custom block that all buttons can use?
 
-[[[generic-scratch-high-score]]]
+### Another costume
 
-\--- hints \--- \--- hint \--- Il tuo nuovo codice deve seguire questa logica: Dopo il messaggio `Game over` `Se` il `punteggio` è `maggiore` del `record` `Porta` la variabile `record` a `punteggio` `Chiedi` il nome del giocatore `Porta` la variabile `nome` a `risposta` \--- /hint \--- \--- hint \--- Avrai bisogno dei seguenti blocchi:
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-![Hint for high score](images/hint-high-score.png)
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-\--- /hint \--- \--- hint \--- Ecco come dovrebbe essere il codice per quando viene premuto il pulsante rosso:
+![screenshot](images/colour-white.png)
 
-```blocks
-    quando ricevo [rosso v]
-    se <(item (1 v) of [sequenza v]) = [1]> allora 
-        cancella (1 v) da [sequenza v]
-    altrimenti
-        dire [Game over!] per (1) secondi
-        se <(punteggio) > (record)> allora 
-            porta [record v] a (punteggio)
-            ask [Record! Qual è il tuo nome?] e attendi
-            porta [nome v] a (risposta)
-        end
-        ferma [tutto v]
-    end
-```
+### Difficulty level
 
-\--- /hint \--- \--- /hints \---
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-+ Dovrai aggiungere questo codice allo sprite del personaggio anche per gli altri tre colori! Hai notato che il codice per il 'Game over' è esattamente lo stesso per tutti i colori?
-
-![screenshot](images/colour-same.png)
-
-Se dovessi avere bisogno di cambiare questo codice, per esempio, aggiungendo un suono o cambiando il messaggio di 'Game over', dovresti cambiarlo quattro volte. Sarebbe fastidioso e uno spreco di tempo.
-
-Per evitarlo, puoi dichiarare i tuoi blocchi e usarli nel tuo progetto. Per farlo, clicca `Altri blocchi`{:class="blockmoreblocks"}, e poi **Crea un Blocco**. Chiama questo nuovo blocco 'Game over'.
-
-![screenshot](images/colour-more.png)
-
-+ Aggiungi il codice dall'`else`{:class="blockcontrol"} del codice connesso al pulsante rosso al blocco che hai creato:
-
-![screenshot](images/colour-make-block.png)
-
-+ Ora hai creato una nuova *funzione* chiamata `Game over`{:class="blockmoreblocks"}, che puoi usare ovunque tu voglia. Trascina il tuo nuovo blocco `Game over`{:class="blockmoreblocks"} nei quattro codici dei pulsanti.
-
-![screenshot](images/colour-use-block.png)
-
-+ Ora aggiungi un suono per quando viene premuto un pulsante sbagliato. Hai bisogono di aggiungere questo codice solo nel blocco `Game over`{:class="blockmoreblocks"} che hai creato, e non quattro volte!
-
-![screenshot](images/colour-cough.png)
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
