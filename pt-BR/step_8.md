@@ -1,11 +1,5 @@
-\--- challenge \---
+## What next?
 
-## Desafio: Criar mais blocos
+Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball), where you will make a game in which you have to avoid balls while moving from platform to platform.
 
-Você notou algum outro código que é o mesmo para todos os quatro tambores?
-
-![screenshot](images/colour-more-blocks.png)
-
-Você pode criar algum outro bloco personalizado para cada tambor?
-
-\--- /challenge \---
+Or if you want to try another music-themed Scatch project, you can try the [Binary hero](https://projects.raspberrypi.org/en/projects/binary-hero) project.
