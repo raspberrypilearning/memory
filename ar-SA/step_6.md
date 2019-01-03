@@ -1,48 +1,69 @@
-## مستويات متعددة
+# High score
 
-حتى الآن، على اللاعب أن يتذكر فقط تسلسل من خمسة ألوان. لنقم بتحسين اللعبة بإضافة نتيجة، وإضافة كود بحيث طول التسلسل الذي يجب أن يتذكره يصبح أطول، كلما زادت نتيجة اللاعب.
+Now save the high score so that you can play against your friends.
 
-+ قم بإضافة متغير جديد بمسمى `درجة`{:class="blockdata"}.
+\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
 
-[[[generic-scratch-add-variable]]]
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
 
-`درجة`{:class="blockdata"} سيتم استخدامه لتحديد طول التسلسل الذي يتعين على اللاعب تذكره. لنبدأ بدرجة (وطول التسلسل) `3`.
+\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
-+ قم بإضافة المجموعة في بداية كود الشخصية `عند النقر على العلم`{:class="blockevents"} لتعيين `درجة`{:class="blockdata"} إلى `3`.
+[[[generic-scratch3-high-score]]]
 
-بدلا من إنشاء تسلسل من خمسة ألوان، أنت الآن تريد `درجة`{:class="blockdata"} لتحديد طول التسلسل.
+\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
 
-+ قم بتغيير حلقة الشخصية `تكرار`{:class="blockcontrol"} (لإنشاء التسلسل) لتكرار مرات `درجة`{:class="blockdata"}:
+After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
-```blocks
-    كرِّر (score) مرة
-end
-```
+You need the following blocks:
 
-+ إذا تم تخمين التسلسل بشكل صحيح، يجب عليك إضافة `1` إلى الدرجة لزيادة الطول في التسلسل التالي. قم بإضافة مجموعة إلى كود الشخصية **عند النقطة التي تعلم أن تخمين التسلسل تم بشكل صحيح**.
+![ballerina](images/ballerina.png)
 
-```blocks
-    غيِّر [score v] بمقدار (1)
-```
+![blocks_1545306917_8757622](images/blocks_1545306917_8757622.png) \--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
 
-\--- hints \--- \--- hint \--- أنت تعلم أن التسلسل تم تخمينه بشكل صحيح عندما تقوم ببث رسالة `فوز` \--- hint/ \--- \--- hints/ \---
+![ballerina](images/ballerina.png)
 
-+ أخيراً، يجب عليك إضافة حلقة `إلى الأبد`{:class="blockcontrol"} حول الكود الذي يولد التسلسل، حتى يتم إنشاء تسلسل جديد لكل مستوى. هذه هي الشاكلة التي سوف يظهر بها كود الشخصية:
-    
-    ```blocks
-        عند نقر ⚑
-    اجعل [score v] مساوياً [3]
-    كرر باستمرار 
-      احذف (الكل v) من [sequence v]
-      كرِّر (score) مرة 
-        أضف (اختر عدداً عشوائياً بين (1) و (4)) إلى [sequence v]
-        غيّر المظهر إلى (العنصر (last v) من [sequence v] :: list)
-        انتظر (1) ثانية
-      end
-      انتظر حتى <(length of [sequence v] :: list) = [0]>
-      بث [won v] وانتظر
-      غيِّر [score v] بمقدار (1)
-    end
-    ```
+![blocks_1545306919_0175269](images/blocks_1545306919_0175269.png) \--- /hint \--- \--- /hints \--- \--- /task \---
 
-+ اطلب من أصدقائك اختبار لعبتك. تذكر إخفاء قائمة `تسلسل`{:class="blockdata"} قبل قيامهم باللعب!
+You need to add this new code to the character sprite for the other three colours too!
+
+Can you see that the 'Game over' code for each of the four colours is exactly the same?
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306920_1657844](images/blocks_1545306920_1657844.png)
+
+If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+
+Instead, you can define your own code block, and use it anywhere in your project.
+
+\--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+
+\--- /task \---
+
+\--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306921_3138576](images/blocks_1545306921_3138576.png) \--- /task \---
+
+\--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306922_4493077](images/blocks_1545306922_4493077.png) \--- /task \---
+
+\--- task \--- Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence. \--- /task \---
+
+Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+
+\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306923_5727518](images/blocks_1545306923_5727518.png) \--- /task \---
+
+\--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306924_6780515](images/blocks_1545306924_6780515.png) \--- /task \---
