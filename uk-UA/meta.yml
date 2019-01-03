@@ -1,39 +1,26 @@
 ---
 hero_image: images/memory.png
-theme: violet
-duration: 2
 listed: true
-ingredient: false
 copyedit: false
-curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: Пам'ять
-description: Створіть гру, що тренує пам'ять, в якій потрібно запам'ятовувати і повторювати випадкову послідовність кольорів
-original_url: https://codeclubprojects.org/en-GB/scratch/memory
-interests: games
-technologies: scratch
-site_areas: projects
-hardware: ''
-software: scratch
-version: 4.0.1
-last_tested: 2017-01-01
+description: Create a game in which you memorise and repeat random colour sequences
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - 
     title: Вступ
   - 
-    title: Те, що вам знадобиться
+    title: Create a colour sequence
   - 
-    title: Створіть послідовність кольорів
+    title: Add sound
   - 
-    title: 'Завдання: додавання звуку'
+    title: Repeat the sequence
   - 
-    title: Повторення послідовності
+    title: Multiple levels
   - 
-    title: Багаторівнева гра
+    title: High score
   - 
-    title: Рекорд
+    title: "Challenge: improve your game"
   - 
-    title: 'Завдання: зробіть більше блоків'
-  - 
-    title: 'Завдання: інший образ'
-  - 
-    title: 'Завдання: складний рівень'
+    title: What next?
+
