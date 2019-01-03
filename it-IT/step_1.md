@@ -1,24 +1,57 @@
+\--- no-print \---
+
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+
+\--- /no-print \---
+
 ## Introduzione
 
-In questo progetto, creerai un gioco di memoria nel quale dovrai memorizzare e ripetere una sequenza casuale di colori!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
 ### Che cosa farai
 
-Clicca sulla bandiera verde per cominciare. Osserva la sequenza di colori eseguita dal vestito della ballerina e ascolta i ritmi di tamburo che la accompagnano, per poi ripeterla. Se sbagli l'ordine, il gioco finisce!
+\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="images/colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/258514878/?autostart=false" frameborder="0" allowfullscreen mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
 </div>
 
-### Che cosa imparerai
+\--- /no-print \---
 
-Questo progetto include elementi tratti dalle seguenti sezioni del [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
+\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
 
-+ [Combina i costrutti di un linguaggio di programmazione per risolvere un problema.](https://www.raspberrypi.org/curriculum/programming/builder){:target="_blank"}
+## \--- collapse \---
 
-### Ulteriori informazioni per gli educatori
+## title: What you will learn
 
-Se hai bisogno di stampare questo progetto, clicca sulla [Versione stampabile](https://projects.raspberrypi.org/en/projects/memory/print){:target = "_ blank"}.
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
-Usa il link a piè di pagina per accedere alla repository di GitHub relativa a questo progetto, che contiene tutte le risorse (incluso un esempio di progetto completo) nella cartella 'en/resources'.
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: What you will need
+
+### Hardware
+
++ A computer capable of running Scratch 3
+
+### Software
+
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+
+## \--- collapse \---
+
+## title: Additional information for educators
+
+\--- no-print \---
+
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+
+\--- /no-print \---
+
+You can [download the completed project here](http://rpf.io/p/en/memory-get).
+
+\--- /collapse \---
