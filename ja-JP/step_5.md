@@ -1,97 +1,33 @@
-## シーケンスを繰り返す
+## Multiple levels
 
-プレイヤーが押した4つのボタンを追加して、覚えていたシーケンスを繰り返してみましょう。
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
-+ 4つの新しいスプライトをプロジェクトに追加して、4つのボタンを表します。 衣装を編集して、4色のそれぞれにスプライトが1つあるようにします。 赤、青、緑、黄色の衣装と同じ順序でスプライトをレイアウトします。
+\--- task \--- Create a new variable called `score`{:class="block3variables"}.
 
-![スクリーンショット](images/colour-drums.png)
+[[[generic-scratch3-add-variable]]] \--- /task \---
 
-+ 赤いドラムがクリックされたら、キャラクターにメッセージをブロードキャストして、赤いボタンがクリックされたことを知らせる必要があります。あなたの赤いドラムにこのコードを追加してください：
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-```blocks
-    このスプライトが
-    放送をクリックしたとき[赤いv]
-```
+\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
 
-放送は、ラウドスピーカーでアナウンスをするようなものです。スーパーマーケットで買い物をしているときに聞いたことがあります。 すべてのスプライトはメッセージを聞くことができますが、応答するジョブのスプライトだけが何かをします。
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
 
-+ 青色、緑色、黄色のドラムに同様のコードを追加して、自分の色に関するメッセージをブロードキャストします。
+\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-\---ヒント\--- \---ヒント\--- \--- つのスプライトから別のスプライトにコードをコピーする簡単な方法です。 各スプライトのブロードキャストメッセージをスプライトの色に合わせて変更します。 ![Duplicate the code](images/broadcast-duplicate.gif) \--- /ヒント\--- \--- /ヒント\---
+![sprite](images/ballerina.png) ![blocks_1545306914_5059805](images/blocks_1545306914_5059805.png) \--- /task \---
 
-放送はラウドスピーカーで発表するようなものだと言ったことを覚えていますか？ そのジョブが応答するスプライトだけが何かをするので、メッセージに応答するキャラクタースプライトの仕事にしましょう。 キャラクターが各メッセージを聞いたときに行うべきいくつかのコードを書くことでこれを行います。
+\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-+ キャラクタースプライトがメッセージ受信したときに `赤`、コード番号かどうかをチェックする必要が `1` （ことを意味するリストの先頭にある `赤` シーケンス内の次の色です）。
-    
-    そうであれば、色は正しく推測されたので、コードはリストから数値を削除する必要があります。それ以外の場合は、ゲームオーバーだし、我々はする必要が `ストップすべて`：ゲームを停止するには、{クラス=「blockcontrol」}。
+![sprite](images/ballerina.png) ![blocks_1545306915_6027205](images/blocks_1545306915_6027205.png)
 
-```blocks
-    私は[赤V]受信したときに
-    場合 <（項目は（1 V）[シーケンスV]で）=[1]> その後、
-        の削除（1 V）[シーケンスV]
-    他
-        [ゲームオーバーを！]と言うために（1）秒
-        ストップ[all v]
-    end
-```
+\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
-+ あなたが書いたコードに加えて、正しい色を受け取ったときにドラムビートも再生されるようにします。
+\--- /task \---
 
-\---ヒント\--- \---ヒント\--- 正しいドラムビートを演奏するために各色に対応する数字を使用できますか？
+\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
 
-+ 1 =赤
-+ 2 =青
-+ 3 =緑
-+ 4 =黄色 \--- /ヒント\--- \---ヒント\--- `演奏ドラム`{：class = "blocksound"}ブロックを追加して、前のシーケンスリストの最初の音を再生する必要があります `シーケンス`削除1 {：class = "blockdata"}：
+![ballerina](images/ballerina.png)
 
-![プレイドラム](images/hint-play-drum.png) \--- / hint \--- \--- hint \--- 以下は、追加が必要なコードです：
+![blocks_1545306916_702095](images/blocks_1545306916_702095.png) \--- /task \---
 
-```blocks
-（0.25）ビートのためのドラムをプレイする（シーケンスvの項目（1v））
-```
-
-\--- /ヒント\--- \--- /ヒント\---
-
-+ キャラクタースプライトをメッセージに反応させるために使用したコードを複製する `赤`。今回は、メッセージを `青色に変更します`。
-
-スプライトが `blue`のメッセージに応答すると、どのビットが同じままで、どのビットが変わるべきですか？各色には対応する番号があることに注意してください。
-
-+ キャラクターが `青の` メッセージに正しく反応するようにコードを変更してください。
-
-\---ヒント\--- \---ヒント\--- \--- これらのブロックは保持しますが、何らかの方法でそれらを変更する必要があります： ![Change these blocks](images/hint-change-blocks.png) \--- /ヒント\--- \---ヒント\--- コードが青い放送を探す方法は次のとおりです。
-
-```blocks
-    私は[ブルーV]を受信したときに
-    場合に <（アイテム（1 V）[配列V]の）=[2]> 、次いで
-        （0.25）は、ビートのためにプレイドラム（項目（1 V）[配列V]の）
-        削除（1 v）of [sequence v]
-    else
-        ゲームオーバー！（1秒）
-        stop [all v]
-    end
-```
-
-\--- /ヒント\--- \--- /ヒント\---
-
-+ 緑色と黄色のボタンのコードをもう一度2回複製し、文字が正しく反応するように必要な部分を変更します。
-
-+ 追加したコードをテストすることを忘れないでください！あなたは5色のシーケンスを暗記することはできますか？シーケンスは毎回異なるのですか？
-
-リストが空になったら報酬としていくつかの点滅を表示することもできます。これは、シーケンス全体が正しく記憶されたことを意味します。
-
-+ フラグが</code>{{class = "blockevents"}}スクリプトをクリックすると、キャラクターの `最後にこのコードを追加します：</li>
-</ul>
-
-<pre><code class="blocks">    < （長さ[シーケンスv]）= [0]>
-    ブロードキャスト[ウォンv]と待ち
-`</pre> 
-    + ステージに切り替えて、このコードを追加してサウンドを再生し、プレーヤーが勝ち次第、色を変えるようにします。好きな音を選ぶことができます。
-    ```blocks
-        私は受け取ったときに
-        再生音[ドラムマシンv]
-        リピート（50）
-            変更[色v]効果（25）
-            待機（0.1）秒
-        終了
-        クリアグラフィックエフェクト
-    ```
+\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
