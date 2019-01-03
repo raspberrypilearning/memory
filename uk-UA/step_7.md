@@ -1,57 +1,23 @@
-## Рекорд
+## Challenge: improve your game
 
-Збережемо рекорд, щоб ви могли грати проти своїх друзів.
+### Make more blocks
 
-+ Додайте дві нові змінні, які називаються `рекорд`{:class="blockdata"} та `ім'я`{:class="blockdata"} до вашого проекту.
+Do you see any other code that is the same for all four buttons?
 
-Коли гра закінчується через те, що гравець назвав послідовність неправильно, потрібно перевірити, чи є їх результат більшим за поточну цифру. Якщо так, то вам потрібно зберегти рахунок як найкращий результат і зберегти ім'я гравця.
+![blocks_1545306925_813555](images/blocks_1545306925_813555.png)
 
-+ Додайте код до свого персонажа-спрайта, щоб зберегти рекорд. Також запитайте гравців їхмі імена та запишіть їх в список `ім'я`{:class="blockdata"}.
+Can you make another custom block that all buttons can use?
 
-[[[generic-scratch-high-score]]]
+### Another costume
 
-\--- hints \--- \--- hint \--- Ваш новий код повинен дотримуватися цієї логіки: після повідомлення ` кінець гри ` `
- `Якщо` `рахунок` `більший за `рекорд` `Встановити` `рахунок` як новий`рекорд` `Запитати` ім'я гравця `Встановити` `ім'я` на `відповідь` \--- /hint \--- \--- hint \--- Вам знадобляться наступні блоки:
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-![Підказка для рекорду](images/hint-high-score.png)
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-\--- /hint \--- \--- hint \--- Ось як виглядає ваш код, коли натиснуто на червону кнопку:
+![screenshot](images/colour-white.png)
 
-```blocks
-    коли я отримаю [червоний v]
-якщо <(item (1 v) of [послідовність v]:: list) = [1]> то 
-  вилучити (1 v) з [послідовність v]
+### Difficulty level
 
-  говорити [Кінець гри!] (1) сек
-  якщо <(рахунок) > (рекорд)> то 
-    надати [рекорд v] значення (рахунок)
-    запитати [Рекорд! Як вас звати?] і чекати
-    надати [ім'я v] значення (відповідь)
-  end
-  зупинити [все v]
-end
-```
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-\--- /hint \--- \--- /hints \---
-
-+ Вам потрібно буде додати цей новий код до образу спрайта для трьох інших кольорів теж! Ви помітили, що код "Кінець гри" для кожного з чотирьох кольорів точно такий самий?
-
-![знімок екрану](images/colour-same.png)
-
-Якщо вам коли-небудь потрібно буде змінити будь-який з цих кодів, наприклад, щоб додати звук або змінити повідомлення "Кінець гри!", вам потрібно буде змінити його чотири рази. Це займає багато часу та може дратувати.
-
-Замість цього ви можете визначити власні блоки та повторно використовувати їх у вашому проекті. Для цього натисніть `Ваші блоки`{:class="blockmoreblocks"}, а потім **Створити блок**. Назвіть цей новий блок "Кінець гри!".
-
-![знімок екрану](images/colour-more.png)
-
-+ Додайте код з блоку `Інше`{:class="blockcontrol"}, що підключений до червоної кнопки створеного вами блоку:
-
-![знімок екрану](images/colour-make-block.png)
-
-+ Тепер ви створили нову *функцію*, яка називається `Кінець гри`{:class="blockmoreblocks"}, яку можна використовувати де завгодно. Перетягніть новий блок `Кінець гри`{:class="blockmoreblocks"} на чотири скрипти для кнопок.
-
-![знімок екрану](images/colour-use-block.png)
-
-+ Тепер додавайте звук, коли натискається неправильна кнопка. Вам потрібно додати цей код лише один раз в блоці `Кінець гри`{:class="blockmoreblocks"}, який ви зробили, а не чотири окремі рази!
-
-![знімок екрану](images/colour-cough.png)
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
