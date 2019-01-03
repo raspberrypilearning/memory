@@ -1,66 +1,39 @@
-## Create a colour sequence
+## Add sound
 
-First, let's create a character who will display a random sequence of colours to memorise.
+\--- task \---
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor [here](http://jumpto.cc/scratch-new).
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-+ Choose a character sprite and a backdrop. Your character doesn't have to be a person, but they need to be able to show different colours.
+\--- /task \---
 
-![screenshot](images/colour-sprite.png)
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
-+ In your game, you'll use a different number to represent each colour:
-    
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
-    
-    Give your character four different coloured costumes, one for each of the four colours above. Make sure that your coloured costumes are in the same order as the list above.
-    
-    ![screenshot](images/colour-costume.png)
-    
-    You can use the *color a shape* tool to fill parts of the costume a different colour.
+\--- task \---
 
-Let's create a random sequence of colours.
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
-+ Create a list called `sequence`{:class="blockdata"}. We will use this list to store the sequence of colours the player has to remember. Only the character sprite needs to see the list, so you can select **For this sprite only**.
+[[[generic-scratch3-add-music-extension]]]
 
-[[[generic-scratch-make-list]]]
+\--- /task \---
 
-You should now see your empty list in the top left of your stage, as well as lots of new blocks for using lists.
+\--- task \---
 
-![screenshot](images/colour-list-blocks.png)
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
-+ Remember we gave each colour a number? We can choose a random colour by choosing a random number and adding it to the list. Add this code:
+\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
 
-```blocks
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
-```
+Here are the blocks you need:
 
-+ Test your code by clicking the green flag. Check that, each time you click it, a random number between 1 and 4 is added to the list.
+![ballerina](images/ballerina.png)
 
-+ Can you add this block to your program to generate five random colours at once?
+![blocks_1545306904_389723](images/blocks_1545306904_389723.png) \--- /hint \---
 
-```blocks
-repeat (5)
+\--- hint \--- Here is how your finished code should look:
 
-end
-```
+![ballerina](images/ballerina.png)
 
-+ You might notice that your list is getting a bit full by now. Let's add a block to delete the whole list at the start before we generate any numbers.
+![blocks_1545306905_484342](images/blocks_1545306905_484342.png) \--- /hint \---
 
-```blocks
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
-```
+\--- /hints \---
 
-+ Finally, each time we choose a number, let's change the dancer's costume to the last item that was added to the list, which will be the number we just chose. Add these blocks to your code immediately after you add the random number to your list:
-
-```blocks
-switch costume to (item (last v) of [sequence v])
-wait (1) secs
-```
+\--- /task \---
