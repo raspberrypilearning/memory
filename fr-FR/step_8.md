@@ -1,11 +1,5 @@
-\--- challenge \---
+## What next?
 
-## Challenge: making more blocks
+Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball), where you will make a game in which you have to avoid balls while moving from platform to platform.
 
-Do you notice any other code that is the same for all four buttons?
-
-![screenshot](images/colour-more-blocks.png)
-
-Can you make another custom block for each button to use?
-
-\--- /challenge \---
+Or if you want to try another music-themed Scatch project, you can try the [Binary hero](https://projects.raspberrypi.org/en/projects/binary-hero) project.
