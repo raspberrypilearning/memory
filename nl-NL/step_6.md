@@ -1,48 +1,69 @@
-## Meerdere levels
+# High score
 
-Tot nu toe hoeft de speler maar een reeks van vijf kleuren te onthouden. Laten we het spel verbeteren door een score toe te voegen en code toe te voegen zodat de lengte van de reeks die ze moeten onthouden langer wordt naarmate de score van de speler toeneemt.
+Now save the high score so that you can play against your friends.
 
-+ Maak een nieuwe variabele met de naam `score`{:class="blockdata"}.
+\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
 
-[[[generic-scratch-add-variable]]]
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
 
-De `score`{:class="blockdata"} zal worden gebruikt om te bepalen wat de lengte van de reeks moet worden die de speler moet gaan onthouden. We beginnen met een score (en lengte van de reeks) `3`.
+\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
-+ Voeg een blok toe aan het begin van de code van het personage met `wanneer op de groene vlag is geklikt `{: class = "blockevents"} om de `score `{: class = "blockdata"} op ` 3 `te zetten.
+[[[generic-scratch3-high-score]]]
 
-In plaats van de vaste reeks van 5 kleuren willen we nu dat `score`{:class="blockdata"} bepaalt hoe lang de reeks moet worden.
+\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
 
-+ Verander de `herhaal`{:class="blockcontrol"}-lus van het personage (om de reeks te maken) om `score`{:class="blockdata"} keer te herhalen:
+After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
-```blocks
-    herhaal (score) keer
-end
-```
+You need the following blocks:
 
-+ Als de reeks goed is geraden zou `1` bij de score moeten worden opgeteld om de lengte van de volgende reeks te verhogen. Voeg dit blok toe aan de code van het personage ** op de plaats waarvan je weet dat de reeks goed geraden is **.
+![ballerina](images/ballerina.png)
 
-```blocks
-    verander [score v] met (1)
-```
+![blocks_1545306917_8757622](images/blocks_1545306917_8757622.png) \--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
 
-\--- hints \--- \--- hint \--- Je weet dat de reeks goed geraden is op de plaats waar het signaal `gewonnen` wordt gezonden. \--- /hint \--- \--- /hints \---
+![ballerina](images/ballerina.png)
 
-+ Tenslotte moet er nog een `herhaal`{:class="blockcontrol"} -lus om de code worden gezet die de reeks maakt, zodat er voor elk level een nieuwe reeks wordt gemaakt. Zo zou de code van het personage eruit kunnen zien:
-    
-    ```blocks
-        wanneer groene vlag wordt aangeklikt
-    maak [score v] [3]
-    herhaal 
-      verwijder item (alle v) van [reeks v]
-      herhaal (score) keer 
-        voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
-        verander uiterlijk naar (item (laatste v) van [reeks v] :: list)
-        wacht (1) sec.
-      end
-      wacht tot <(length of [reeks v] :: list) = [0]>
-      zend signaal [gewonnen v] en wacht
-      verander [score v] met (1)
-    end
-    ```
+![blocks_1545306919_0175269](images/blocks_1545306919_0175269.png) \--- /hint \--- \--- /hints \--- \--- /task \---
 
-+ Laat je vrienden je spel testen. Vergeet niet om de `reeks `{: class = "blockdata"}-lijst te verbergen voordat ze gaan spelen!
+You need to add this new code to the character sprite for the other three colours too!
+
+Can you see that the 'Game over' code for each of the four colours is exactly the same?
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306920_1657844](images/blocks_1545306920_1657844.png)
+
+If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+
+Instead, you can define your own code block, and use it anywhere in your project.
+
+\--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+
+\--- /task \---
+
+\--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306921_3138576](images/blocks_1545306921_3138576.png) \--- /task \---
+
+\--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306922_4493077](images/blocks_1545306922_4493077.png) \--- /task \---
+
+\--- task \--- Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence. \--- /task \---
+
+Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+
+\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306923_5727518](images/blocks_1545306923_5727518.png) \--- /task \---
+
+\--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+
+![ballerina](images/ballerina.png)
+
+![blocks_1545306924_6780515](images/blocks_1545306924_6780515.png) \--- /task \---
