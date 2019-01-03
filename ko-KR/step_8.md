@@ -1,11 +1,5 @@
-\--- 도전 \---
+## What next?
 
-## 과제 : 더 많은 블록 만들기
+Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball), where you will make a game in which you have to avoid balls while moving from platform to platform.
 
-네 개의 버튼 모두에 대해 다른 코드를 발견 했습니까?
-
-![스크린 샷](images/colour-more-blocks.png)
-
-사용할 각 단추에 대해 다른 사용자 정의 블록을 만들 수 있습니까?
-
-\--- /도전 \---
+Or if you want to try another music-themed Scatch project, you can try the [Binary hero](https://projects.raspberrypi.org/en/projects/binary-hero) project.
