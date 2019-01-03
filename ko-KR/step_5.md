@@ -1,97 +1,33 @@
-## 순서를 반복
+## Multiple levels
 
-플레이어가 기억하고있는 순서를 되풀이하기 위해 누를 수있는 4 개의 버튼을 추가합시다.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
-+ 4 개의 버튼을 표시하기 위해서 프로젝트에 새로운 스프라이트 4 개를 추가하세요. 네 가지 색상 각각에 대하여 하나의 스프라이트가 있도록 모양을 수정하십시오. 빨강, 파랑, 녹색, 노란색 모양과 같은 순서로 스프라이트를 배치하십시오.
+\--- task \--- Create a new variable called `score`{:class="block3variables"}.
 
-![스크린 샷](images/colour-drums.png)
+[[[generic-scratch3-add-variable]]] \--- /task \---
 
-+ 빨간색 드럼을 클릭하면 캐릭터에게 방송하기를 하여 빨간색 버튼이 클릭되었음을 알게 하도록 합니다. 빨간색 드럼에 다음 코드를 추가하십시오.
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-```blocks
-    이 스프라이트가
-    방송하기 [빨간색 v]
-```
+\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
 
-방송은 확성기를 통해 전달하는 것과 약간 비슷합니다. 여러분은 슈퍼마켓에서 쇼핑할 때 들었을 것입니다. 모든 스프라이트는 메시지를 들을 수는 있지만 단지 응답해야하는 스프라이트만이 뭔가를 할 것입니다.
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
 
-+ 자신의 색깔에 대해서 메시지를 방송할 수 있도록 파란색, 녹색, 노란색 드럼에 같은 코드를 추가하십시오.
+\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-\--- 귀뜸말 \--- \--- 귀뜸말 \--- 다음은 한 스프라이트에서 다른 스프라이트로 코드를 복사하는 쉬운 방법입니다. 각 스프라이트에서 방송 메시지를 수정하여 스프라이트의 색상과 일치시킵니다. ![Duplicate the code](images/broadcast-duplicate.gif) \--- / 귀뜸말 \--- \--- / 귀뜸말\---
+![sprite](images/ballerina.png) ![blocks_1545306914_5059805](images/blocks_1545306914_5059805.png) \--- /task \---
 
-방송이 스피커를 통해 전달되는 것과 같다고 말했던 것을 기억하십니까? 단지 응답해야 하는 스프라이트만이 뭔가를 할 것입니다. 그러므로 메시지에 응답하도록 스프라이트가 해야 할 일을 만들어 보겠습니다. 방송을 받았을 때 캐릭터가 수행 할 코드를 작성하여 이 것을 합니다.
+\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-+ 스프라이트가 방송 `빨강`을 받으면 , 코드는 숫자`(1)`이 리스트의 처음에 있는지의 여부를 확인합니다. (이 것은 `빨강`이 순서에서 다음 색이라는 것을 의미합니다. )
-    
-    그럴 경우, 코드는 색상이 정확하게 추측되었으므로 리스트에서 그 숫자를 제거할 것입니다. 그렇지 않으면 게임은 끝나고, 게임을 중지하기 위해서 `모두 정지`{클래스 = "blockcontrol"}할 필요가 있습니다.
+![sprite](images/ballerina.png) ![blocks_1545306915_6027205](images/blocks_1545306915_6027205.png)
 
-```blocks
-    [빨강 V]  방송을 받았을 때
-    만일 <(항목 (1 V)=  [순서 V] 의) [1]>  그러면
-         [순서 V] 의 (1 V) 삭제
-    그렇지 않으면 
-         (1) 초 동안  [게임 종료!] 라고 말하기
-         [모든  v] 중기
-    끝
-```
+\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
-+ 방금 쓴 코드에 추가하여 올바른 색을 받으면 드럼 비트도 재생합니다.
+\--- /task \---
 
-\--- 귀뜸말 \--- \--- 귀뜸말 \--- 드럼을 바르게 연주하기 위해서 각 색깔에 해당하는 숫자를 사용할 수 있나요?
+\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
 
-+ 1 = 빨강
-+ 2 = 파랑
-+ 3 = 녹색
-+ 4 = 노랑 \--- /귀뜸말 \--- \--- 귀뜸말 \--- `순서1의 삭제`{: class = "block"} 이전에 순서리스트에서 첫 번째 소리를 재생하려면 `드럼 연주`{: class = "blocksound"} 블록을 추가해야 합니다:
+![ballerina](images/ballerina.png)
 
-![놀이 드럼](images/hint-play-drum.png) \--- / 귀뜸말 \--- \--- 귀뜸말 \--- 다음은 추가해야 할 코드입니다.
+![blocks_1545306916_702095](images/blocks_1545306916_702095.png) \--- /task \---
 
-```blocks
-(0.25) 박자에 대한 ([순서 v] 의 항목 (1 v) 드럼을 연주하세요.
-```
-
-\--- / 귀뜸말 \--- \--- / 귀뜸말 \---
-
-+ 스프라이트가 방송하기`빨강` 에 응답하도록 하는 코드를 복사하세요. 이번에는 메시지를 `파랑`으로 변경하세요.
-
-스프라이트가 메시지 `파란색`응답 할 때 어떤 비트의 코드가 동일하게 유지되어야하고 어떤 비트가 변경되어야합니까? 각 색상에는 해당 번호가 있음을 기억하십시오.
-
-+ 문자가 `파란색` 메시지에 올바르게 응답하도록 코드를 변경하십시오.
-
-\--- 힌트 \--- \--- 힌트 \--- 이 블록을 유지하지만 어떤 방식 으로든 변경해야합니다 : ![Change these blocks](images/hint-change-blocks.png) \--- / 힌트 \--- \--- 힌트 \--- 다음은 코드에서 파란색 방송을 찾는 방법입니다.
-
-```blocks
-    I는 [블루 V] 나타나면
-    경우 <(항목 (1 V) [서열 V]의) =[2]> 다음,
-        (0.25) 심박동 재생 드럼 (항목 (1 V) [서열 V]로)
-        삭제 (1 v) of [sequence v]
-    else
-        [게임 오버!] for (1) 초
-        stop [all v]
-    end
-```
-
-\--- / 힌트 \--- \--- / 힌트 \---
-
-+ 녹색과 노란색 단추에 대해 코드를 두 번 다시 복제하고 문자가 올바르게 응답 할 수 있도록 필요한 부분을 변경하십시오.
-
-+ 추가 한 코드를 테스트하는 것을 잊지 마십시오! 5 가지 색상의 순서를 암기 할 수 있습니까? 시퀀스가 매번 다른가요?
-
-목록이 비어 있으면 보상으로 표시 될 수 있습니다. 이는 전체 시퀀스가 ​​올바르게 기억된다는 의미입니다.
-
-+ 깃발이</code>{{class = "blockevents"} 스크립트를 클릭하면 캐릭터 `의 끝에이 코드를 추가하십시오.</li>
-</ul>
-
-<pre><code class="blocks">    < (시퀀스 v의 길이) = [0]>
-    브로드 캐스트 [승 v] 및 대기
-`</pre> 
-    + 무대로 전환 한 다음이 코드를 추가하여 사운드를 재생하고 플레이어가 우승하면 배경색을 변경합니다. 원하는 사운드를 선택할 수 있습니다.
-    ```blocks
-        I받을 때 원 V]
-        소리 재생 [드럼 머신 V]
-        반복 (50)
-            변화량 색상 V] (25)에 의한 효과
-            대기 (0.1) 초
-        단
-        분명 그래픽 효과
-    ```
+\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
