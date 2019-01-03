@@ -1,66 +1,39 @@
-## Crie uma sequência de cores
+## Add sound
 
-Primeiro, vamos criar um personagem que mostrará uma sequência aleatória de cores para memorizar.
+\--- task \---
 
-+ Inicie um novo projeto do Scratch e exclua o ator gato para que seu projeto fique vazio. Você pode usar o Scratch online [aqui](http://jumpto.cc/scratch-new).
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-+ Escolha um ator como seu personagem e um pano de fundo para o seu palco. O seu personagem não precisa ser uma pessoa, mas ele precisa ser capaz de mostrar cores diferentes.
+\--- /task \---
 
-![screenshot](images/colour-sprite.png)
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
-+ Em seu jogo, você usará um número diferente para representar cada cor:
-    
-    + 1 = vermelho
-    + 2 = azul
-    + 3 = verde
-    + 4 = amarelo
-    
-    Dê ao seu personagem quatro fantasias de cores diferentes, um para cada uma das quatro cores acima. Certifique-se de que a cor dos trajes estão na mesma ordem que a da lista acima.
-    
-    ![screenshot](images/colour-costume.png)
-    
-    Você pode usar a ferramenta *Colorir uma forma* para preencher partes do traje com a cor desejada.
+\--- task \---
 
-Vamos criar uma sequência aleatória de cores.
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
-+ Crie uma lista chamada `sequência`{:class="blockdata"}. Usaremos essa lista para armazenar a sequência de cores que o jogador precisa lembrar. Apenas o ator precisa ver a lista, então você pode selecionar **Para este ator apenas**.
+[[[generic-scratch3-add-music-extension]]]
 
-[[[generic-scratch-make-list]]]
+\--- /task \---
 
-Agora você pode ver a sua lista vazia no canto superior esquerdo do seu palco, bem como muitos novos blocos que podem ser usados para esta ou em outras listas.
+\--- task \---
 
-![screenshot](images/colour-list-blocks.png)
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
-+ Lembra que demos a cada cor um número? Podemos escolher uma cor aleatória escolhendo um número aleatório e adicionando-o à lista. Adicione este código:
+\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
 
-```blocks
-quando clicar em bandeira verde
-insira (número aleatório entre (1) e (4)) a [sequencia v]
-```
+Here are the blocks you need:
 
-+ Teste seu código clicando na bandeira verde. Verifique se, cada vez que você clica nela, um número aleatório entre 1 e 4 aparece na lista.
+![ballerina](images/ballerina.png)
 
-+ Você pode adicionar este bloco ao seu programa para gerar cinco cores aleatórias de uma vez só?
+![blocks_1545306904_389723](images/blocks_1545306904_389723.png) \--- /hint \---
 
-```blocks
-repita (5) vezes
+\--- hint \--- Here is how your finished code should look:
 
-end
-```
+![ballerina](images/ballerina.png)
 
-+ Você pode notar que a sua lista está ficando cheia. Vamos adicionar um bloco para limpar a lista logo no início, antes de gerarmos qualquer número.
+![blocks_1545306905_484342](images/blocks_1545306905_484342.png) \--- /hint \---
 
-```blocks
-quando clicar em bandeira verde
-apague (todos v) de [sequencia v]
-repita (5) vezes
-   insira (número aleatório entre (1) e (4)) a [sequencia v]
-end
-```
+\--- /hints \---
 
-+ Finalmente, cada vez que escolhemos um número, vamos mudar a cor da fantasia da bailarina para o último número que foi colocado na lista, que deve ser o número que acabamos de escolher. Adicione esses blocos ao seu código embaixo do bloco que adiciona o número aleatório à sua lista:
-
-```blocks
-mude para a fantasia (item (último v) de [sequencia v])
-espere (1) seg
-```
+\--- /task \---
