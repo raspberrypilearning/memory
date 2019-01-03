@@ -1,58 +1,39 @@
-## Zufällige Farben
+## Add sound
 
-Lass uns zunächst einen Charakter erstellen, der eine zufällige Reihenfolge an unterscheidlichen Farben annehmen kann, die sich der Spieler merken muss.
+\--- task \---
 
-+ Starte ein neues Scratch-Projekt und lösche die Katzenfigur, so dass Dein Projekt leer ist. Du findest das Scratch-Bearbeitungsprogramm online auf jumpto.cc/scratch-new.
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-+ Füge eine neue Figur, sowie den passeden Bühnenhintergrund hinzu. Dein Charakter muss keine Person sein, aber er muss verschiedene Farben annehmen können.
+\--- /task \---
 
-![Screenshot](images/colour-sprite.png)
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
-+ Du wirst im Spiel unterschiedliche Zahlen für die jeweiligen Farben benutzen:
-    
-    + 1 = rot
-    + 2 = blau
-    + 3 = grün
-    + 4 = gelb
-    
-    Gib Deinem Charakter vier unterschiedlich farbige Kostüme in den obigen Farben. Stelle sicher, dass die Farben der Kostüme richtig geordnet sind.
-    
-    ![Screenshot](images/colour-costume.png)
-    
-    Du kannst mit der * -Farbe eine Form einfärben * Werkzeug, um Teile des Kostüms eine andere Farbe zu füllen.
+\--- task \---
 
-Lässt uns eine zufällige Abfolge von Farben erstellen.
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
-+ Erstelle eine neue Liste namens `Sequenz`{:class="blockdata"}. Wir verwenden diese Liste, um die Reihenfolge der Farben zu speichern, an die sich der Spieler erinnern soll. Nur diese Figur muss die Liste sehen, also kannst du auf **Nur für diese Figur** klicken.
+[[[generic-scratch3-add-music-extension]]]
 
-[[[generic-scratch-make-list]]]
+\--- /task \---
 
-Du solltest nun sowohl Deine leere Liste in der oberen linken Ecke Deiner Bühne sehen, als auch eine Menge neuer Bausteine für die Verwendung der Liste.
+\--- task \---
 
-![Screenshot](images/colour-list-blocks.png)
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
-+ Denkst du daran, dass wir jeder Farbe eine Nummer gegeben haben? Wir können eine zufällige Farbe wählen, indem wir eine Zufallszahl wählen und sie der Liste hinzufügen. Füge diesen Code hinzu:
+\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
 
-```blocks
-wenn das Flag angeklickt wurde, addiere (wähle Zufall (1) bis (4)) zu [Sequenz v]
-```
+Here are the blocks you need:
 
-+ Teste deinen Code, indem due auf die grüne Flagge klickst. Stelle sicher, dass jedes Mal, wenn du darauf klickst, eine zufällige Zahl zwischen 1 und 4 zur Liste hinzugefügt wird.
+![ballerina](images/ballerina.png)
 
-+ Kannst du diesen Code hinzufügen, um der Liste 5 Mal nacheinander eine zufällige Nummer zu vergeben?
+![blocks_1545306904_389723](images/blocks_1545306904_389723.png) \--- /hint \---
 
-```blocks
-wiederhole (5) Ende
-```
+\--- hint \--- Here is how your finished code should look:
 
-+ Du wirst feststellen, dass deine Liste inzwischen ein wenig gefüllt ist. Lässt uns einen Block hinzufügen, um die gesamte Liste am Anfang zu löschen, bevor wir irgendwelche Zahlen erzeugen.
+![ballerina](images/ballerina.png)
 
-```blocks
-Wenn das Flag angeklickt wurde lösche (alle v) von [Sequenz v] wiederhole (5) füge hinzu (wähle Zufall (1) bis (4)) zum [Sequenz v] Ende
-```
+![blocks_1545306905_484342](images/blocks_1545306905_484342.png) \--- /hint \---
 
-+ Schließlich, jedes Mal, wenn wir eine Nummer wählen, wechseln wir das Kostüm des Tänzers zu dem letzten Gegenstand, der der Liste hinzugefügt wurde. Das ist die Nummer, die wir gewählt haben. Füge diese Blöcke an deinem Code sofort, nachdem du die Zufallszahl zu deine Liste hinzufügen:
+\--- /hints \---
 
-```blocks
-Kostüm zu wechseln (Artikel (letzte V) [Sequenz v]) Sekunden warten (1)
-```
+\--- /task \---
