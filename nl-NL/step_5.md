@@ -1,99 +1,33 @@
-## Herhaal de reeks
+## Multiple levels
 
-We gaan vier drukknoppen toevoegen zodat de speler de onthouden reeks kan herhalen.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
-+ Voeg vier nieuwe sprites toe aan je project voor de vier knoppen. Bewerk het uiterlijk van elke sprite in een van de vier kleuren. Zet de sprites in dezelfde volgorde als de uiterlijken - rood, blauw, groen en geel.
+\--- task \--- Create a new variable called `score`{:class="block3variables"}.
 
-![screenshot](images/colour-drums.png)
+[[[generic-scratch3-add-variable]]] \--- /task \---
 
-+ Als op de rode trommel is geklikt moet er een signaal naar het personage worden gestuurd, zodat die weet dat op de rode knop is geklikt. Voeg deze code toe aan de rode trommel:
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-```blocks
-    wanneer op deze sprite wordt geklikt
-    zend signaal [rood v]
-```
+\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
 
-Een signaal zenden is alsof je een aankondiging hoort uit een luidspreker - zoals je misschien wel eens in de supermarkt hebt gehoord. Alle sprites kunnen de aankondiging horen, maar alleen de sprite die iets moet doen reageert erop.
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
 
-+ Geef de blauwe, groene en gele trommels vergelijkbare code zodat ze een signaal kunnen zenden over hun eigen kleur.
+\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-\--- hints \--- \--- hint \--- Hier is een makkelijke manier om code van de ene sprite naar de andere te kopiëren. Verander het signaal in elke sprite om die te laten overeenkomen met zijn kleur. ![Duplicate the code](images/broadcast-duplicate.gif) \--- /hint \--- \--- /hints \---
+![sprite](images/ballerina.png) ![blocks_1545306914_5059805](images/blocks_1545306914_5059805.png) \--- /task \---
 
-Weet je nog dat een signaal zenden een beetje lijkt op een aankondiging via een luidspreker? Alleen de sprite die moet antwoorden gaat iets doen, dus gaan we nu de sprite van het personage laten reageren op de signalen. Dat doen we door code te schrijven voor het personage zodat die weet wat er bij elk signaal moet gebeuren.
+\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-+ Als het personage een signaal `rood` krijgt moet het programma controleren of het getal `1` aan het begin van de lijst staat (wat betekent dat `rood` de volgende kleur in de reeks is).
-    
-    Als dat zo is moet het getal worden verwijderd omdat de kleur goed is. Zo niet, dan is het spel afgelopen en moet het blok `stop alle`{:class="blockcontrol"} het programma stoppen.
+![sprite](images/ballerina.png) ![blocks_1545306915_6027205](images/blocks_1545306915_6027205.png)
 
-```blocks
-    wanneer ik signaal [rood v] ontvang
-als <(item (1 v) of [reeks v] :: list) = [1]> dan 
-  verwijder item (1 v) van [reeks v]
+\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
-  zeg [Game over!] (1) sec.
-  stop [alle v]
-end
-```
+\--- /task \---
 
-+ Aan de code die je zojuist hebt geschreven kun je toevoegen dat er ook een trommelgeluid te horen is als de goede kleur is ontvangen.
+\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
 
-\--- hints \--- \--- hint \--- Kun je de getallen gebruiken die overeenkomen met elke kleur om de juiste trommelgeluiden af te spelen?
+![ballerina](images/ballerina.png)
 
-+ 1 = rood
-+ 2 = blauw
-+ 3 = groen
-+ 4 = geel \--- /hint \--- \--- hint \--- Je hebt een `speel slagwerk`{:class="blocksound"} blok nodig om het eerste geluid in de reeks af te spelen vóór `verwijder item 1 van reeks`{:class="blockdata"}:
+![blocks_1545306916_702095](images/blocks_1545306916_702095.png) \--- /task \---
 
-![Play drum](images/hint-play-drum.png) \--- / hint \--- \--- hint \--- Dit is de code die je moet toevoegen:
-
-```blocks
-speel slagwerk (item (1 v) van [reeks v] :: list) (0.25) tellen
-```
-
-\--- /hint \--- \--- /hints \---
-
-+ Maak een kopie van de code die je hebt gemaakt om het personage te laten reageren op `rood`. Deze keer wijzig je het signaal naar `blauw`.
-
-Welke stukje code kan hetzelfde blijven als de sprite reageert op het signaal `blauw` en welke code zou moeten veranderen? Bedenk dat elke kleur een overeenkomend getal heeft.
-
-+ Wijzig de code zodat het personage correct reageert op het signaal `blauw`.
-
-\--- hints \--- \--- hint \--- Bewaar deze blokken, maar verander ze wat: ![Change these blocks](images/hint-change-blocks.png) \--- /hint \--- \--- hint \--- Zo zou je code eruit moeten zien voor het blauwe signaal.
-
-```blocks
-    wanneer ik signaal [blauw v] ontvang
-als <(item (1 v) of [reeks v] :: list) = [2]> dan 
-  speel slagwerk (item (1 v) van [reeks v] :: list) (0.25) tellen
-  verwijder item (1 v) van [reeks v]
-
-  zeg [Game over!] (1) sec.
-  stop [alle v]
-end
-```
-
-\--- /hint \--- \--- /hints \---
-
-+ Kopieer de code nog twee keer voor de groene en gele knoppen en verander sommige onderdelen zodat het personage correct reageert.
-
-+ Vergeet niet de toegevoegde code te testen! Kun je een reeks van 5 kleuren onthouden? Is de reeks steeds anders?
-
-Je kunt ook als beloning een aantal lampjes laten knipperen zodra de lijst leeg is, want dat betekent dat de hele reeks correct is onthouden.
-
-+ Voeg deze code toe aan het eind van het blok van het personage met ` wanneer groene vlag wordt aangeklikt`{:class="blockevents"}:
-
-```blocks
-    wacht tot <(length of [reeks v] :: list) = [0]>
-zend signaal [gewonnen v] en wacht
-```
-
-+ Ga naar het speelveld en voeg deze code toe om een geluid af te spelen en de achtergrond van kleur te laten veranderen als de speler heeft gewonnen. Je mag elk geluid kiezen.
-
-```blocks
-    wanneer ik signaal [gewonnen v] ontvang
-start geluid [drum machine v]
-herhaal (50) keer 
-  verander [kleur v] -effect met (25)
-  wacht (0.1) sec.
-end
-zet alle effecten uit
-```
+\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
