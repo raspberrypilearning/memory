@@ -1,99 +1,33 @@
-## تكرار التسلسل
+## Multiple levels
 
-لنقم بإضافة أربعة أزرار لينقر عليها اللاعب لتكرار التسلسل الذي يتذكره.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
-+ أضف أربعة كائنات إلى مشروعك لتمثيل الأزرار الأربعة. قم بتحرير الأزياء بحيث يكون هناك كائن واحد في كل لون من الألوان الأربعة. قم بوضع الكائنات بنفس ترتيب الأزياء - أحمر، أزرق، أخضر، أصفر.
+\--- task \--- Create a new variable called `score`{:class="block3variables"}.
 
-![لقطة الشاشة](images/colour-drums.png)
+[[[generic-scratch3-add-variable]]] \--- /task \---
 
-+ عند النقر على الطبل الأحمر، ستحتاج إلى بث رسالة إلى شخصيتك، لإحاطتهم علم بأنه تم الضغط على الزر الأحمر. قم بإضافة هذا الكود إلى الطبل الأحمر:
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-```blocks
-    عند نقر هذا الكائن
-بث [red v]
-```
+\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
 
-البث يشبه إلى حد ما الإعلان عبر مكبر الصوت - ربما سمعت هذا عند التسوق في السوبر ماركت. جميع الكائنات يمكنها سماع الرسالة، ولكن فقط الكائن الذي تكون مهمته الاستجابة سيفعل شيئاً.
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
 
-+ قم بإضافة كود مشابه إلى الطبل الأزرق، والأخضر والأصفر لجعلها تبث رسالة عن لونها الخاص.
+\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-\--- hints \--- \--- hint \--- هنا طريقة سهلة لنسخ الكود من كائن إلى آخر. قم بتغيير رسالة البث في كل كائن لتتطابق مع لون الكائن. ![Duplicate the code](images/broadcast-duplicate.gif) \--- hint/ \--- \--- hints/ \---
+![sprite](images/ballerina.png) ![blocks_1545306914_5059805](images/blocks_1545306914_5059805.png) \--- /task \---
 
-تذكر قولنا بأن البث يشبه إلى حد ما القيام بإعلان عبر مكبر الصوت؟ فقط الكائن الذي يكون مهمته الاستجابة سيقوم بعمل شيئ ما، لذا دعنا نعمل على أن تكون وظيفة الكائن الاستجابة للرسائل. نقوم بعمل ذلك من خلال كتابة كود للشخصية لتقوم بالعمل عندما تسمع كل رسالة.
+\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-+ عندما يتلقى كائن الشخصية الرسالة `أحمر`، يجب أن يتحقق الكود ما إذا كان الرقم`1` في بداية القائمة ( مما يعني أن `أحمر` هو اللون التالي في التسلسل).
-    
-    إذا كان الأمر كذلك، يجب أن يزيل الكود الرقم من القائمة، حيث تم التخمين الصحيح للون. بخلاف ذلك تنتهي اللعبة، ونحتاج `إيقاف كل شيء`{:class="blockcontrol"} لإيقاف اللعبة.
+![sprite](images/ballerina.png) ![blocks_1545306915_6027205](images/blocks_1545306915_6027205.png)
 
-```blocks
-    عندما أستقبل [red v]
-إذا <(item (1 v) of [sequence v] :: list) = [1]> 
-  احذف (1 v) من [sequence v]
+\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
-  قل [Game over!] لمدة (1) ثانية
-  أوقف [الكل v]
-end
-```
+\--- /task \---
 
-+ أضف الكود الذي كتبته للتو حتى يتم عزف ضربات الطبل عند تلقي اللون الصحيح.
+\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
 
-\--- hints \--- \--- hint \--- هل بإمكانك استخدام الأرقام التي تتوافق مع كل لون لعزف نغمة الطبلة الصحيحة؟
+![ballerina](images/ballerina.png)
 
-+ 1 = أحمر
-+ 2 = أزرق
-+ 3 = أخضر
-+ 4 = أصفر \--- hint/ \--- \--- hint \--- تحتاج لإضافة مجموعة `عزف الطبل`{:class="blocksound"} لعزف أول صوت في قائمة التسلسل قبل `حذف 1 من التسلسل`{:class="blockdata"}:
+![blocks_1545306916_702095](images/blocks_1545306916_702095.png) \--- /task \---
 
-![عزف الطبل](images/hint-play-drum.png) \--- hint/ \--- \--- hint \--- هنا الكود الذي تحتاج لإضافته:
-
-```blocks
-دق الطبل (العنصر (1 v) من [sequence v] :: list) لمدة (0.25) وحدة إيقاع
-```
-
-\--- hint/ \--- \--- hints/ \---
-
-+ قم بتكرار الكود الذي استخدمته لجعل شخصية الكائن تستجيب للرسالة `أحمر`. هذه المرة غير الرسالة إلى `أزرق`.
-
-عندما يستجيب الكائن إلى الرسالة `أزرق`، أي جزء من الكود يجب أن يبقى كما هو، وأي جزء يجب أن يتغير؟ تذكر أن كل لون له رقم مقابل.
-
-+ غير الكود حتى تستجيب الشخصية بشكل صحيح للرسالة `أزرق`.
-
-\--- hints \--- \--- hint \--- احتفظ بهذه المجموعات، ولكن ستحتاج لتغييرها بشكل ما: ![Change these blocks](images/hint-change-blocks.png) \--- hint/ \--- \--- hint \--- هنا كيف سيكون الكود أثناء البث الأزرق.
-
-```blocks
-    عندما أستقبل [blue v]
-إذا <(item (1 v) of [sequence v] :: list) = [2]> 
-  دق الطبل (العنصر (1 v) من [sequence v] :: list) لمدة (0.25) وحدة إيقاع
-  احذف (1 v) من [sequence v]
-
-  قل [Game over!] لمدة (1) ثانية
-  أوقف [الكل v]
-end
-```
-
-\--- hint/ \--- \--- hints/ \---
-
-+ قم بتكرار الكود مرتين للزر الأخضر والزر الأصفر، وغير الأجزاء الضرورية حتى تستجيب الشخصية بشكل صحيح.
-
-+ تذكر لتقوم باختبار الكود لقد قمت بإضافة! هل يمكنك تذكر تسلسل من خمسة ألوان؟ هل التسلسل يختلف في كل مرة؟
-
-يمكنك أيضا عرض بعض الأضواء الوامضة كمكافأة بمجرد أن تصبح القائمة فارغة، وذلك يعني أنه تم تذكر التسلسل كاملًا بشكل صحيح.
-
-+ قم بإضافة الكود في نهاية كائن شخصيتك `عند النقر على العلم`{:class="blockevents"}:
-
-```blocks
-    انتظر حتى <(length of [sequence v] :: list) = [0]>
-بث [won v] وانتظر
-```
-
-+ قم بالانتقال إلى الجزء الرئيسي، وأضف هذا الكود لعزف الصوت وجعل لون الخلفية يتغير بمجرد أن يفوز اللاعب. يمكنك اختيار أي صوت تفضله.
-
-```blocks
-    عندما أستقبل [won v]
-شغل الصوت [drum machine v]
-كرِّر (50) مرة 
-  غيِّر تأثير [اللون v] بمقدار (25)
-  انتظر (0.1) ثانية
-end
-أزل التأثيرات الرسومية
-```
+\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
