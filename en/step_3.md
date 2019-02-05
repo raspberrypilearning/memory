@@ -30,7 +30,11 @@ Here are the blocks you need:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306904_389723](images/blocks_1545306904_389723.png)
+```blocks3
+play drum (\(1\) Snare Drum v) for (0.25) beats
+
+(item (length of [sequence v]) of [sequence v])
+```
 --- /hint ---
 
 --- hint ---
@@ -38,7 +42,16 @@ Here is how your finished code should look:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306905_484342](images/blocks_1545306905_484342.png)
+```blocks3
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+	add (pick random (1) to (4)) to [sequence v]
+    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
+    switch costume to (item (length of [sequence v]) of [sequence v])
+    wait (1) seconds
+end
+```
 --- /hint ---
 
 --- /hints ---

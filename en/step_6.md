@@ -29,14 +29,47 @@ You need the following blocks:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306917_8757622](images/blocks_1545306917_8757622.png)
+```blocks3
+if < > then
+end
+
+(score)
+
+(score)
+
+[ ] > [ ]
+
+answer
+
+(high score)
+
+ask [What's your name?] and wait
+
+set [high score v] to [ ] 
+
+set [name v] to [ ] 
+```
 --- /hint ---
 --- hint ---
 Here's how your code for when the red button is pressed should look:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306919_0175269](images/blocks_1545306919_0175269.png)
+```blocks3
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (item (1 v) of [sequence v]) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	say [Game over!] for (1) seconds
+	if < (score :: variables) > (high score) > then
+		set [high score v] to (score :: variables)
+		ask [High score! What is your name?] and wait
+		set [name v] to (answer)
+	end
+	stop [all v]
+end
+```
 --- /hint ---
 --- /hints ---
 --- /task ---
@@ -47,7 +80,15 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306920_1657844](images/blocks_1545306920_1657844.png)
+```blocks3
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+	set [high score v] to (score :: variables)
+	ask [High score! What is your name?] and wait
+	set [name v] to (answer)
+end
+stop [all v]
+```
 
 If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
@@ -63,7 +104,16 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306921_3138576](images/blocks_1545306921_3138576.png)
+```blocks3
+define Game over
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+	set [high score v] to (score :: variables)
+	ask [High score! What is your name?] and wait
+	set [name v] to (answer)
+end
+stop [all v]
+```
 --- /task ---
 
 --- task ---
@@ -71,7 +121,15 @@ Now remove the code that's in the `else`{:class="block3control"} block connected
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306922_4493077](images/blocks_1545306922_4493077.png)
+```blocks3
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (\(1\) Snare Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	Game over :: custom
+end
+```
 --- /task ---
 
 --- task ---
@@ -85,7 +143,15 @@ Also replace the code in the `else`{:class="block3control"} block connected to t
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306923_5727518](images/blocks_1545306923_5727518.png)
+```blocks3
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (\(2\) Bass Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	Game over :: custom
+end
+```
 --- /task ---
 
 --- task ---
@@ -93,5 +159,16 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306924_6780515](images/blocks_1545306924_6780515.png)
+```blocks3
+define Game over
+start sound [Cough1 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+	play sound (trumpet1 v)
+	set [high score v] to (score)
+	ask [High score! What is your name?] and wait
+	set [name v] to (answer)
+end
+stop [all v]
+```
 --- /task ---
