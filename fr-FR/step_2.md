@@ -47,7 +47,14 @@ Each colour has a different number, so you can choose a random colour by randoml
 
 \--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
 
-![ballerina](images/ballerina.png) ![blocks_1545306900_307141](images/blocks_1545306900_307141.png) \--- /task \---
+![ballerina](images/ballerina.png)
+
+```blocks3
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
+```
+
+\--- /task \---
 
 \--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
 
@@ -59,10 +66,23 @@ This is what your code should look like:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306902_1955757](images/blocks_1545306902_1955757.png) \--- /hint \--- \--- /hints \--- \--- /task \---
+```blocks3
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
+```
+
+\--- /hint \--- \--- /hints \--- \--- /task \---
 
 \--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306903_300535](images/blocks_1545306903_300535.png) \--- /task \---
+```blocks3
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
+```
+
+\--- /task \---
