@@ -14,11 +14,22 @@ Instead of always creating a sequence of five colours, you now want the `score`{
 
 \--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-![sprite](images/ballerina.png) ![blocks_1545306914_5059805](images/blocks_1545306914_5059805.png) \--- /task \---
+![sprite](images/ballerina.png)
+
+```blocks3
+repeat (score :: variables)
+end
+```
+
+\--- /task \---
 
 \--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-![sprite](images/ballerina.png) ![blocks_1545306915_6027205](images/blocks_1545306915_6027205.png)
+![sprite](images/ballerina.png)
+
+```blocks3
+change [score v] by (1)
+```
 
 \--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
@@ -28,6 +39,22 @@ Instead of always creating a sequence of five colours, you now want the `score`{
 
 ![ballerina](images/ballerina.png)
 
-![blocks_1545306916_702095](images/blocks_1545306916_702095.png) \--- /task \---
+```blocks3
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
+end
+```
+
+\--- /task \---
 
 \--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
