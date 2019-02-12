@@ -3,9 +3,9 @@ hero_image: images/memory.png
 listed: true
 copyedit: false
 title: Test na pamięć
-description: Create a game in which you memorise and repeat random colour sequences
-version: 4.1.0
-last_tested: 2018-10-04
+description: Naucz się, jak stworzyć własną grę pamięciową.
+version: 4.0.1
+last_tested: 2017-01-01
 steps:
   - 
     title: Test na pamięć
