@@ -3,24 +3,24 @@ hero_image: images/memory.png
 listed: true
 copyedit: false
 title: Geheugenspel
-description: Create a game in which you memorise and repeat random colour sequences
-version: 4.1.0
-last_tested: 2018-10-04
+description: Maak een geheugenspel waarin je een reeks willekeurige kleuren onthoudt en herhaalt
+version: 4
+last_tested: 2017-01-01
 steps:
   - 
     title: Inleiding
   - 
-    title: Create a colour sequence
+    title: Wat je nodig hebt
   - 
-    title: Add sound
+    title: Maak een kleurenreeks
   - 
-    title: Repeat the sequence
+    title: 'Uitdaging: een geluid toevoegen'
   - 
-    title: Multiple levels
+    title: Herhaal de reeks
   - 
-    title: High score
+    title: Meerdere levels
   - 
-    title: "Challenge: improve your game"
+    title: "Topscore"
   - 
-    title: What next?
+    title: 'Uitdaging: meer blokken maken'
 
