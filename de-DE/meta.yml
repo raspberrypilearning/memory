@@ -3,24 +3,24 @@ hero_image: images/memory.png
 listed: true
 copyedit: false
 title: Gedächtnis
-description: Create a game in which you memorise and repeat random colour sequences
-version: 4.1.0
-last_tested: 2018-10-04
+description: In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
+version: 4
+last_tested: 2017-01-01
 steps:
   - 
     title: Einführung
   - 
-    title: Create a colour sequence
+    title: Zufällige Farben
   - 
-    title: Add sound
+    title: 'Herausforderung: Geräusche hinzufügen'
   - 
-    title: Repeat the sequence
+    title: Reihenfolge wiederholen
   - 
-    title: Multiple levels
+    title: Mehrere Ebenen
   - 
-    title: High score
+    title: Höchstpunktestand
   - 
-    title: "Challenge: improve your game"
+    title: "Herausforderung: Erstelle mehr Blöcke"
   - 
-    title: What next?
+    title: 'Herausforderung: Ein weiteres Kostüm'
 
