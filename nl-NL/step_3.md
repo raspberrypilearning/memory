@@ -1,14 +1,14 @@
-## Add sound
+## Maak een kleurenreeks
 
 \--- task \---
 
 Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-\--- /task \---
+\---/task\---
 
 Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
-\--- task \---
+\--- task \----
 
 Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
@@ -16,7 +16,7 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- /task \---
 
-\--- task \---
+\--- task \----
 
 The code that plays the drum is **very** similar to the code that changes the character's costume.
 
@@ -34,7 +34,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Zo zou het voltooide programma eruit moeten zien:
 
 ![ballerina](images/ballerina.png)
 
