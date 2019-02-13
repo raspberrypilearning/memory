@@ -6,7 +6,7 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 ## المقدمة
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+في هذا المشروع، ستقوم بإنشاء لعبة تذكر. حيث سيتطلب منك تذكر وتكرار تسلسل عشوائي للألوان!
 
 ### ما الذي ستصنعه
 
@@ -22,7 +22,7 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: ما الذي ستتعلمه
 
 + How to add sound to your Scratch project
 + How to create and use lists to store data
@@ -32,13 +32,13 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: ما الذي ستحتاجه
 
-### Hardware
+### الأجهزة
 
-+ A computer capable of running Scratch 3
++ جهاز كمبيوتر يدعم تشغيل برنامج Scratch 3
 
-### Software
+### البرامج
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
 
@@ -48,7 +48,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+إذا كنت بحاجة إلى طباعة هذا المشروع، فالرجاء استخدام [نسخة متوافقة مع الطابعة](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
