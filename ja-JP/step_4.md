@@ -1,153 +1,155 @@
-## Repeat the sequence
+## シーケンスを繰り返す
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+これで、プレーヤーがカラーシーケンスを繰り返すために押す必要のある4つのボタンを追加します。
 
-\--- task \--- Add four new sprites to your project to represent the four buttons.
+\--- task \--- 4つのボタンを表すために、プロジェクトに4つの新しいスプライトを追加します。
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ 4色それぞれに1つのスプライトがあるように、新しいスプライトの衣装を編集します。
++ 衣装と同じ順番でスプライトをステージ上に置きます。
 
-![screenshot](images/colour-drums.png) \--- /task \---
+![スクリーンショット](images/colour-drums.png) - - /仕事 - -
 
-\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+\--- task \--- 赤いスプライトにコードを追加して、スプライトがクリックされたときに `{`：：class = "block3events"}という文字が文字スプライトに '赤い'メッセージをブロードキャストするようにします。
 
-![red-drum](images/red_drum.png)
+![レッドドラム](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    このスプライトが
+    ブロードキャストをクリックしたとき（赤v）
 ```
 
-\--- /task \---
+- - /仕事 - -
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+`ブロードキャスト`{：class = "block3events"}は、スピーカーでアナウンスされたメッセージのようなもので、たとえば学校やスーパーマーケットで聞くことができます。 すべてのスプライトは `ブロードキャスト`{：class = "block3events"}を聞くことができますが、応答するのが仕事であるスプライトだけが何かをします。
 
-\--- task \---
+- - 仕事 - -
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+青、緑、黄色のスプライトに同様のコードを追加して、それぞれの色について `ブロードキャスト`{：class = "block3events"}メッセージにします。
 
-\--- /task \---
+- - /仕事 - -
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+あなたは `ブロードキャスト`{：class = "block3events"}が拡声器メッセージのようであることを覚えていますか？ `ブロードキャスト`{：class = "block3events"}メッセージに応答するのがキャラクタースプライトの仕事になるようにコードを追加します。
 
-\--- task \---
+- - 仕事 - -
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+キャラクタースプライトがメッセージを受信したときに `赤`：{クラス=「block3eventsを」}、コードが数かどうかをチェックする必要が `1` の開始時である `列`を意味する（リスト：{クラス=「block3variables」}その `赤`{：class = "block3events"}はシーケンスの次の色です）。
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+`1` がリストの先頭にある場合、プレーヤーは正しい色を覚えているので、コードはリストから番号を削除する必要があります。 さもなければそれはゲームオーバーであり、そしてコードはゲームを終了するために ``すべて停止する必要があります。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
+私は[赤V]受信したときに
+場合 <（項目は（1 V）[シーケンスV]で）=[1]> その後、
+の削除（1 V）[シーケンスV]
+他
+[ゲームオーバーを！]と言うために（1）秒
+停止[すべてv]
+終了
+```
+
+- - /仕事 - -
+
+\--- task \--- 文字スプライトが正しい `ブロードキャスト`{：class = "block3events"}を受信したときにドラムビートも再生するように、作成したコードに追加します。
+
+\---ヒント\--- \---ヒント\--- 各ドラムに対応する数字を使って正しいドラムビートを演奏できますか。
+
++ 1 =赤
++ 2 =青
++ 3 =緑
++ 4 =黄色 \--- /ヒント\--- \--- \---ヒント 以上 `配列の1削除`追加、ブロック：{クラス= "block3variables"} `プレイドラム`「=クラス：{ block3sound "} `シーケンス`{：class =" block3variables "}リストの最初のサウンドを再生するためのブロック。
+
+\--- / hint \--- \--- hint \--- これが追加が必要なコードです。
+
+```blocks3
+<（[sequence v]のitem（1 v））=[1]> とき、[red v]
+を受け取ったとき
+
++（0.25）のために
+
+ +ドラム（\（1 \）Snare Drum v）を演奏する
+delete（1 v） [sequence v]
+
+（1）秒間[Game over！]と言う
 stop [all v]
 end
-```
-
-\--- /task \---
-
-\--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
-
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
-
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
-
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
-
-```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
 
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / hint \--- \--- / hints \--- \--- / task \---
 
-\--- task \--- Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}. \--- /task \---
+\--- task \--- キャラクタスプライトがメッセージ `red`{：class = "block3events"}に応答するようにするために使用したコードを複製します。 重複コードを変更して、メッセージ `blue`{：class = "block3events"}を送信するようにします。 - - /仕事 - -
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+スプライトがメッセージ `blue`{：class = "block3events"}に応答するとき、どのコードのビットが同じままで、どのビットが変わるべきか？ 各色には対応する番号があります。
 
-\--- task \--- Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+\--- task \--- 文字が `blue`{：class = "block3events"}メッセージに正しく反応するように、文字スプライトのコードを変更してください。
 
-\--- hints \--- \--- hint \---
+\---ヒント\--- \---ヒント\---
 
-Keep these blocks, but you need to change them in some way:
+これらのブロックを保管してください。しかし、何らかの方法でそれらを変更する必要があります。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<（[シーケンスv]の項目（1 v））= [1]>
 
-when I receive [red v]
+[0.25]ビートの場合、[赤v]
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+演奏ドラム（\（1 \）スネアドラムv）
 ```
 
-\--- /hint \--- \--- hint \--- Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+\--- / hint \--- \--- hint \--- があなたのコードが `blue`{：class = "block3events"}ブロードキャストを探す方法です。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
+私は[ブルーV]を受信したときに
+場合 <（[配列V]の項目（1 V））=[2]> 、次いで
+    （0.25）のためのプレイドラム（\（2 \）バスドラムV）ビート
+    （1 V）を削除します[sequence v]
+それ以外の
+    は[1]秒間[Game over！]と言う
     stop [all v]
 end
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / hint \--- \--- / hints \--- \--- / task \---
 
-\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+\--- task \--- コードを2回複製し（緑色と黄色のボタン用）、必要な部分を変更して、文字が新しい `ブロードキャストに正しく応答するようにします`{：class = "block3events"}。 - - /仕事 - -
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+コードをテストするのを忘れないでください。あなたは5色のシーケンスを記憶することができますか？シーケンスは毎回異なりますか？
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+プレーヤーがカラーシーケンス全体を正しく繰り返すと、 `シーケンス`{：class = "block3variables"}のリストが空になり、プレーヤーが勝利します。 必要に応じて、 `sequence`{：class = "block3variables"}リストが空になったら、報酬としていくつかの点滅ライトを表示することもできます。
 
-\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+\--- task \--- flagがクリックされたとき、このコードをあなたのキャラクターの `最後に追加します`{：class = "block3events"}スクリプト：
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
+    < （[sequence v]の長さ）= [0]>
+    broadcast（vに勝ちました）まで待ってから待つ
 ```
 
-\--- /task \---
+- - /仕事 - -
 
-\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+\--- task \--- ステージに切り替えて、 `ドラムマシン` サウンドまたは他の好きなサウンドをインポートします。
 
 [[[generic-scratch3-sound-from-library]]]
 
-\--- /task \---
+- - /仕事 - -
 
-\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+\--- task \--- このコードを追加すると、サウンドが再生され、プレーヤーの勝利時に背景の色が変わります。
 
-![ballerina](images/stage.png)
+![バレリーナ](images/stage.png)
 
 ```blocks3
-    when I receive [won v]
-    start sound (drum machine v)
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
+    [win v]を受け取ったとき
+    音が鳴る（ドラムマシンv）
+    繰り返し（50）
+        [color v]効果を（25）
+        wait（0.1）秒
     end
-    clear graphic effects
+    クリアグラフィック効果
 ```
 
-\--- /task \---
+- - /仕事 - -
