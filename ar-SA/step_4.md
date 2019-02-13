@@ -1,4 +1,4 @@
-## Repeat the sequence
+## التحدي: إضافة صوت
 
 Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
@@ -7,7 +7,7 @@ Now you're going to add four buttons the player has to press to repeat the colou
 + Edit the new sprites' costumes so that there is one sprite in each of the four colours
 + Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
-![screenshot](images/colour-drums.png) \--- /task \---
+![لقطة الشاشة](images/colour-drums.png) \---/task--
 
 \--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
 
@@ -26,7 +26,7 @@ A `broadcast`{:class="block3events"} is like a message announced over a loudspea
 
 Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
 
-\--- /task \---
+\---/task\---
 
 Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
 
@@ -52,14 +52,14 @@ end
 
 \--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- هل بإمكانك استخدام الأرقام التي تتوافق مع كل لون لعزف نغمة الطبلة الصحيحة؟
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
++ 1 = أحمر
++ 2 = أزرق
++ 3 = أخضر
 + 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- hint/ \--- \--- hint \--- هنا الكود الذي تحتاج لإضافته:
 
 ```blocks3
 when I receive [red v]
