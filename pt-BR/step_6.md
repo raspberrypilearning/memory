@@ -1,4 +1,4 @@
-## High score
+## Recorde
 
 Now save the high score so that you can play against your friends.
 
@@ -39,7 +39,7 @@ set [high score v] to [ ]
 set [name v] to [ ] 
 ```
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- /hint \--- \--- hint \--- Veja como o seu código deve ficar para quando o tambor vermelho for pressionado:
 
 ![ballerina](images/ballerina.png)
 
