@@ -1,158 +1,158 @@
-## High score
+## Υψηλή βαθμολογία
 
-Now save the high score so that you can play against your friends.
+Τώρα σώστε το υψηλό σκορ ώστε να μπορείτε να παίξετε εναντίον των φίλων σας.
 
-\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
+\--- task \--- Προσθέστε δύο νέες μεταβλητές που ονομάζονται `υψηλό σκορ`{: class = "block3variables"} και `όνομα`{: class = "block3variables"} στο έργο σας. \--- / task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+Όταν το παιχνίδι τελειώσει επειδή ο παίκτης παίρνει λάθος την ακολουθία, το παιχνίδι πρέπει να ελέγξει αν το σκορ είναι υψηλότερο από το τρέχον υψηλό σκορ. Αν είναι, το παιχνίδι πρέπει να σώσει το σκορ ως το υψηλό σκορ και επίσης να αποθηκεύσει το όνομα του παίκτη.
 
-\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- task \--- Προσθέστε τον κώδικα στον χαρακτήρα σας για να αποθηκεύσετε το `υψηλό σκορ`{: class = "block3variables"}. Ζητήστε επίσης το όνομα του παίκτη και αποθηκεύστε το στη μεταβλητή `name`{: class = "block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
+\--- Συμβουλές \--- \--- υπαινιγμός \--- νέος σας κώδικας πρέπει να ακολουθήσει αυτό το μοτίβο:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+Μετά τις `Game over`{: class = "block3looks"} μήνυμα `Αν`{: class = "block3control"} οι `βαθμολογία`{: class = "block3variables"} είναι `μεγαλύτερη από`{: class = "block3operators "} η `υψηλή βαθμολογία`{: class =" block3variables "} `Set`{: class =" block3variables "} οι `υψηλή βαθμολογία`{: class =" block3variables "} στο `στείλει`{: class =" block3variables "} `Ζητήστε από`{: class =" block3sensing "} για το όνομα του παίκτη `Σετ`{: class =" block3variables "} το `όνομα`{: class =" block3variables "} στο `απάντηση`{: class = "block3sensing") \--- / υπαινιγμός \--- \--- υπαινιγμός \---
 
-You need the following blocks:
+Χρειάζεστε τα παρακάτω μπλοκ:
 
-![ballerina](images/ballerina.png)
+![μπαλλαρίνα](images/ballerina.png)
 
 ```blocks3
-if < > then
-end
+αν < > στη συνέχεια
+άκρο
 
-(score)
+(βαθμολογία)
 
-(score)
+(βαθμολογία)
 
-[ ] > [ ]
+[] > []
 
-answer
+απάντηση
 
-(high score)
+(υψηλή βαθμολογία)
 
-ask [What's your name?] and wait
+ζητήσει [Πώς σε λένε;] και περιμένετε
 
-set [high score v] to [ ] 
+σύνολο [υψηλή βαθμολογία v] στη θέση [] 
 
-set [name v] to [ ] 
+σύνολο [ όνομα v] έως [] 
 ```
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- / υπαινιγμός \--- \--- υπαινιγμός \--- Ακολουθεί ο τρόπος με τον οποίο θα πρέπει να εμφανίζεται ο κωδικός σας για το πάτημα του κόκκινου κουμπιού:
 
-![ballerina](images/ballerina.png)
+![μπαλλαρίνα](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
+όταν λάβω [κόκκινο v]
+αν <(στοιχείο (1 v) του [αλληλουχίας v]) =[1]> , στη συνέχεια,
+    τύμπανο ενέργεια (στοιχείο (1 v) του [αλληλουχίας v]) για το (0,25) κτυπά
+    διαγραφή (1 v) της [ακολουθίας v]
+άλλο
+    λένε [Game over!] για (1) δευτερόλεπτα
+    εάν < (βαθμολογία :: μεταβλητές) > (υψηλή βαθμολογία) > τότε
+        σύνολο [υψηλή βαθμολογία v] με (βαθμολογία :: μεταβλητές )
+        ρωτήστε [Υψηλή βαθμολογία! Ποιο είναι το όνομά σας;] και περιμένετε
+        ορίσετε [όνομα v] σε (απάντηση)
+    τέλος
+    τελεία [όλα]
+τέλος
+```
+
+\--- / υπαινιγμός \--- \--- / υπαινιγμοί \--- \--- / task \---
+
+Πρέπει να προσθέσετε αυτόν τον νέο κώδικα στο χαρακτήρα sprite και για τα άλλα τρία χρώματα!
+
+Μπορείτε να δείτε ότι ο κωδικός 'Παιχνίδι πάνω' για κάθε ένα από τα τέσσερα χρώματα είναι ακριβώς ο ίδιος;
+
+![μπαλλαρίνα](images/ballerina.png)
+
+```blocks3
+(1) δευτερόλεπτα
+εάν < (βαθμολογία :: μεταβλητές) > (υψηλή βαθμολογία) > τότε
+    σετ [υψηλή βαθμολογία v] σε (βαθμολογία :: μεταβλητές)
+    ζητήστε [Υψηλή βαθμολογία! Ποιο είναι το όνομά σας;] και περιμένετε
+    ορίσετε [όνομα v] ως (απάντηση)
+τέλος
+στάση [όλα]
+```
+
+Εάν πρέπει να αλλάξετε οποιονδήποτε από τους κωδικούς 'Παιχνίδι πάνω', για παράδειγμα για να προσθέσετε ήχο ή να αλλάξετε το μήνυμα 'Παιχνίδι πάνω', πρέπει να το αλλάξετε τέσσερις φορές. Αυτό είναι ενοχλητικό και σπαταλά πολύ χρόνο.
+
+Αντ 'αυτού, μπορείτε να ορίσετε το δικό σας μπλοκ κώδικα και να το χρησιμοποιήσετε οπουδήποτε στο έργο σας.
+
+\--- task \--- Κάντε κλικ στο `Τα μπλοκ μου`{: class = "block3myblocks"}, και έπειτα στο **Κάντε ένα μπλοκ**. Καλέστε αυτό το νέο μπλοκ `Παιχνίδι πάνω από`{: class = "block3myblocks"}.
+
+\--- / task \---
+
+\--- καθήκον \--- Προσθέστε τον κώδικα από το `άλλο`{: class = "block3control"} μπλοκ συνδέονται με τα `κόκκινα`{: class = "block3events"} εκπέμπονται προς το `Game over`{: class = "block3myblocks"} μπλοκάρει έτσι ώστε να μοιάζει με αυτό:
+
+![μπαλλαρίνα](images/ballerina.png)
+
+```blocks3
+καθορίσει Game over
+πω [Game over!] για (1) δευτερόλεπτα
+περίπτωση < (βαθμολογία :: μεταβλητές) > (υψηλή βαθμολογία) > , στη συνέχεια
+    σετ [υψηλή βαθμολογία v] με (βαθμολογία :: μεταβλητές)
+    ζητήσει [Υψηλή βαθμολογία ! Ποιο είναι το όνομά σας;] και περιμένετε
+    ορίσετε [όνομα v] ως (απάντηση)
+τέλος
+στάση [όλα]
+```
+
+\--- / task \---
+
+\--- καθήκον \--- Τώρα αφαιρέστε τον κώδικα που είναι στο `άλλο`{: class = "block3control"} μπλοκ συνδέονται με τα `κόκκινα`{: class = "block3events"} εκπομπή, και προσθέστε στο `Game over`{: class = "block3myblocks"}} αντί για:
+
+![μπαλλαρίνα](images/ballerina.png)
+
+```blocks3
+όταν λάβω [κόκκινο v]
+αν <(στοιχείο (1 v) του [αλληλουχίας v]) =[1]> , στη συνέχεια,
+    τύμπανο ενέργεια (\ (1 \) Ταμπούρο v) για (0.25) κτυπά
+    διαγραφή (1 v) της [ακολουθία v]
 else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
+    Παιχνίδι πέρα από: custom
 end
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+\--- task \--- Δοκιμάστε το νέο μπλοκ παίζοντας το παιχνίδι και κάνοντας κλικ στο κόκκινο κουμπί σε λάθος σημείο της ακολουθίας χρωμάτων. \--- / task \---
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+Το νέο σας `Game over`{: class = "block3myblocks"} μπλοκ είναι ένα **λειτουργία**, ένα μικρό script που μπορείτε να χρησιμοποιήσετε οπουδήποτε θέλετε στον κώδικά σας με την προσθήκη του `Game over`{: class = "block3myblocks"} μπλοκ σε.
 
-![ballerina](images/ballerina.png)
+\--- έργο \--- αντικαταστήσει επίσης τον κωδικό στο `άλλο`{: class = "block3control"} μπλοκ που συνδέονται με τις `εκπομπές`{: class = "block3events"} για τα άλλα χρώματα με το νέο σας `Game over`{: class = "block3myblocks"} μπλοκ. Εδώ θα πρέπει να μοιάσει ο κώδικας για το μήνυμα `μπλε`{: class = "block3events"}
 
-```blocks3
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
-```
-
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
-
-Instead, you can define your own code block, and use it anywhere in your project.
-
-\--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
-
-\--- /task \---
-
-\--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
-
-![ballerina](images/ballerina.png)
+![μπαλλαρίνα](images/ballerina.png)
 
 ```blocks3
-define Game over
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
-```
-
-\--- /task \---
-
-\--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
-
-![ballerina](images/ballerina.png)
-
-```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
+όταν λάβω [blue v]
+αν <(στοιχείο (1 v) του [αλληλουχίας v]) =[1]> , στη συνέχεια,
+    τύμπανο ενέργεια (\ (2 \) Bass Drum v) για (0.25) κτυπά
+    διαγραφή (1 v) της [ακολουθία v]
 else
-    Game over :: custom
+    Παιχνίδι πέρα από: custom
 end
 ```
 
-\--- /task \---
+\--- / task \---
 
-\--- task \--- Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence. \--- /task \---
+\--- task \--- Προσθέστε τώρα έναν ήχο που παίζει όταν πιέσετε το λάθος κουμπί. Χρειάζεται μόνο να προσθέσετε αυτόν τον κωδικό μία φορά στο μπλοκ `Παιχνιδιού πάνω από`{block = block3myblocks}} που κάνατε και όχι τέσσερις ξεχωριστές φορές!
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
-
-\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
-
-![ballerina](images/ballerina.png)
+![μπαλλαρίνα](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+καθορίσει Game over
+ήχο εκκίνησης [Cough1 v]
+λένε [Game over!] για (1) δευτερόλεπτα
+εάν < (βαθμολογία :: μεταβλητές) > (υψηλή βαθμολογία) > στη συνέχεια
+    αναπαραγωγής ήχου (trumpet1 v)
+    σύνολο [υψηλή βαθμολογία v] to (score)
+    ask [Υψηλή βαθμολογία! Ποιο είναι το όνομά σας;] και περιμένετε
+    ορίσετε [όνομα v] ως (απάντηση)
+τέλος
+στάση [όλα]
 ```
 
-\--- /task \---
-
-\--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
-
-![ballerina](images/ballerina.png)
-
-```blocks3
-define Game over
-start sound [Cough1 v]
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
-```
-
-\--- /task \---
+\--- / task \---
