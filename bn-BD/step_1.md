@@ -1,57 +1,57 @@
-\--- no-print \---
+\----প্রিন্ট করা লাগবেনা --
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+এই **স্ক্র্যাচ 3** প্রকল্পের সংস্করণ। প্রকল্প</a>এরস্ক্র্যাচ ২ সংস্করণ রয়েছে।</p> 
 
-\--- /no-print \---
+\----প্রিন্ট করা লাগবেনা --
 
-## Introduction
+## পরিচিতি
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+এই প্রকল্পে, আপনি একটি মেমরি খেলা তৈরি করবেন যা আপনাকে একটি র্যান্ডম ক্রম স্মরণ এবং পুনরাবৃত্তি করতে হবে!
 
-### What you will make
+### যা তৈরি করতে হবে
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- কোন মুদ্রণ \--- সবুজ পতাকা শুরু করতে ক্লিক করুন। নর্তকী পোশাক দ্বারা দেখানো রং ক্রম দেখুন এবং সহগামী ড্রাম beats শুনতে, তারপর তার রং ফিরে পুনরাবৃত্তি। যদি আপনি রঙের ক্রম ভুল পান, এটি খেলা শেষ!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" /> 
 </div>
 
-\--- /no-print \---
+\----প্রিন্ট করা লাগবেনা --
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
-
-## \--- collapse \---
-
-## title: What you will learn
-
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
-
-\--- /collapse \---
+\--- শুধুমাত্র মুদ্রণ \--- ![screenshot of finished game](images/screenshot.png) \--- / মুদ্রণ শুধুমাত্র \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## যা শিখতে পারবেন
 
-### Hardware
++ কিভাবে আপনার স্ক্র্যাচ প্রকল্পে শব্দ যোগ করুন
++ কিভাবে তথ্য সংরক্ষণ এবং তালিকা ব্যবহার করতে
++ কিভাবে কোড পুনরাবৃত্তি জন্য কাস্টম ব্লক তৈরি এবং ব্যবহার করতে
 
-+ A computer capable of running Scratch 3
-
-### Software
-
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+-- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## যা যা প্রয়োজন
 
-\--- no-print \---
+### হার্ডওয়্যার
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
++ একটি কম্পিউটার যেথানে স্ক্র্যাচ ২.০ (Scratch 3) চালানো যাবে
 
-\--- /no-print \---
+### সফটওয়্যার
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+স্ক্র্যাচ 3 (হয় [অনলাইন](https://rpf.io/scratchon){: টার্গেট = "_ blank"} অথবা [অফলাইন](https://rpf.io/scratchoff){: টার্গেট = "_ blank"}) \--- / পতন \---
 
-\--- /collapse \---
+## \--- collapse \---
+
+## শিরোনাম: শিক্ষাবিদদের জন্য অতিরিক্ত তথ্য
+
+\----প্রিন্ট করা লাগবেনা --
+
+আপনি যদি এই প্রজেক্টটি প্রিন্ট করতে চান তবে [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print) ব্যবহার করুন {: target = "_ blank"}।
+
+\----প্রিন্ট করা লাগবেনা --
+
+আপনি [এখানে সম্পন্ন প্রকল্পটি ডাউনলোড করতে পারেন](http://rpf.io/p/en/memory-get)।
+
+-- /collapse \---
