@@ -6,7 +6,7 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 ## Вступ
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+У цьому проекті ви створите гру, що тренує пам'ять, в якій потрібно запам'ятовувати і повторювати випадкову послідовність кольорів!
 
 ### Що ви будете робити
 
@@ -34,11 +34,11 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## title: What you will need
 
-### Hardware
+### Обладнання
 
-+ A computer capable of running Scratch 3
++ Комп'ютер, що підтримує Scratch 3
 
-### Software
+### Програмне забезпечення
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
 
@@ -48,7 +48,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Якщо вам потрібно роздрукувати цей проект, будь ласка скористайтеся [ версією для друку ](https://projects.raspberrypi.org/en/projects/memory/print) {: target = "_ blank"}.
 
 \--- /no-print \---
 
