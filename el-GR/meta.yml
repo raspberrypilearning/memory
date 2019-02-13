@@ -3,24 +3,24 @@ hero_image: images / memory.png
 listed: true
 copyedit: false
 title: Μνήμη
-description: Create a game in which you memorise and repeat random colour sequences
+description: Δημιουργήστε ένα παιχνίδι στο οποίο μπορείτε να απομνημονεύσετε και να επαναλάβετε τυχαίες ακολουθίες χρωμάτων
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
     title: Εισαγωγή
   - 
-    title: Create a colour sequence
+    title: Δημιουργήστε μια σειρά χρωμάτων
   - 
-    title: Add sound
+    title: Προσθήκη ήχου
   - 
-    title: Repeat the sequence
+    title: Επαναλάβετε την ακολουθία
   - 
-    title: Multiple levels
+    title: Πολλαπλά επίπεδα
   - 
-    title: High score
+    title: Υψηλή βαθμολογία
   - 
-    title: "Challenge: improve your game"
+    title: "Πρόκληση: βελτιώστε το παιχνίδι σας"
   - 
-    title: What next?
+    title: Ποιο είναι το επόμενο?
 
