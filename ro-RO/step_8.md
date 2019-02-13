@@ -1,5 +1,5 @@
-## What next?
+## Ce urmează?
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball), where you will make a game in which you have to avoid balls while moving from platform to platform.
+Incearca urmatorul proiect, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball), unde vei face un joc in care trebuie sa eviti bilele in timp ce te misci de la platforma la platforma.
 
-Or if you want to try another music-themed Scatch project, you can try the [Binary hero](https://projects.raspberrypi.org/en/projects/binary-hero) project.
+Sau dacă doriți să încercați un alt proiect Scatch cu tematică muzicală, puteți încerca proiectul [Binary ero](https://projects.raspberrypi.org/en/projects/binary-hero).
