@@ -4,23 +4,23 @@ listed: true
 copyedit: false
 title: Igra pamćenja
 description: Kreiraj igru pamćenja u kojoj treba da zapamtiš i ponoviš slučajan niz boja
-version: 4.0.1
-last_tested: 2017-01-01
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - 
     title: Uvod
   - 
-    title: Šta će ti biti potrebno
+    title: Napravi niz boja
   - 
     title: Napravi niz boja
   - 
     title: 'Izazov: dodavanje zvuka'
   - 
-    title: Ponavljanje niza
-  - 
     title: Više nivoa
   - 
-    title: "Najbolji rezultat"
+    title: Najbolji rezultat
   - 
-    title: 'Izazov: pravljenje više blokova'
+    title: "Izazov: poboljšaj svoju igru"
+  - 
+    title: 'Izazov: više olovaka'
 
