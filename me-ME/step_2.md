@@ -1,4 +1,4 @@
-## Create a colour sequence
+## Napravi niz boja
 
 First create a character that can display a random sequence of colours.
 
@@ -18,10 +18,10 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 + Your game should use a different number to represent each colour:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = crvena
+    + 2 = plava
+    + 3 = zelena
+    + 4 = žuta
 
 \--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
 
@@ -51,7 +51,7 @@ Each colour has a different number, so you can choose a random colour by randoml
 
 ```blocks3
 when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+add (pick random (1) to (4)) to [niz v]
 ```
 
 \--- /task \---
@@ -68,9 +68,9 @@ This is what your code should look like:
 
 ```blocks3
 when flag clicked
-delete (all v) of [sequence v]
+delete (all v) of [niz v]
 repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
+    add (pick random (1) to (4)) to [niz v]
 end
 ```
 
