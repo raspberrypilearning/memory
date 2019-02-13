@@ -1,56 +1,57 @@
-## Add sound
+## 音を追加
 
-\--- task \---
+- - 仕事 - -
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+プロジェクトを数回テストします。あなたは時々同じ数が連続して2回（またはそれ以上）選ばれることに気付いますか？
 
-\--- /task \---
+- - /仕事 - -
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+キャラクタースプライトがコスチュームを変えるたびにドラムサウンドを鳴らすことができますか？そして、色ごとに異なるドラムサウンドはどうでしょうか。
 
-\--- task \---
+- - 仕事 - -
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+プロジェクトにMusicエクステンションを追加し、 `play drum`{：class = "block3extensions"}ブロックを使えるようにします。
 
 [[[generic-scratch3-add-music-extension]]]
 
-\--- /task \---
+- - /仕事 - -
 
-\--- task \---
+- - 仕事 - -
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+ドラムを果たしているコードがある **非常に** 文字の衣装を変更するコードに似ています。
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\---ヒント\--- \---ヒント\--- 2つのブロックを追加するだけです：（0.25）ビートのための `プレイドラム`{：class = "block3sound"}ブロックと `アイテム（長さシーケンス`）シーケンス</code> {：class = "block3variables"}ブロック。 \--- /ヒント\--- \---ヒント\---
 
-Here are the blocks you need:
+必要なブロックは次のとおりです。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+（0.25）ビート
 
-(item (length of [sequence v]) of [sequence v])
+ドラム（\（1 \）スネアドラムv）（[シーケンスv]の項目（[シーケンスv]の長さ））を演奏する
 ```
 
-\--- /hint \---
+\--- /ヒント\---
 
-\--- hint \--- Here is how your finished code should look:
+\---ヒント\--- 完成したコードは次のようになります。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
+フラグがクリックされたとき
+[シーケンスv]を
+削除（全v） 
+繰り返し（5）
+    [シーケンスv]にランダムにピック（1）〜（4）を選ぶ
+    ドラムを弾く（アイテム（[シーケンスv]の長さ）） （[シーケンスv]の）（0.25）
+    衣装を[シーケンスv]の（item（[シーケンスv]の長さ））に切り替えます
+    wait（1）秒
 end
 ```
 
-\--- /hint \---
+\--- /ヒント\---
 
-\--- /hints \---
+- - /ヒント - -
 
-\--- /task \---
+- - /仕事 - -
