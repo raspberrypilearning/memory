@@ -1,4 +1,4 @@
-## Challenge: improve your game
+## Sfida: migliora il tuo gioco
 
 ### Make more blocks
 
@@ -30,7 +30,7 @@ Can you see that your game starts with your character showing one of the four co
 
 Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-![screenshot](images/colour-white.png)
+![schermata](images/colour-white.png)
 
 ### Difficulty level
 
