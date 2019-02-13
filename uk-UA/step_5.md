@@ -1,6 +1,6 @@
-## Multiple levels
+## Багаторівнева гра
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+До цих пір гравець мав лише запам'ятати послідовність з п'яти кольорів. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \--- Create a new variable called `score`{:class="block3variables"}.
 
@@ -14,7 +14,7 @@ Instead of always creating a sequence of five colours, you now want the `score`{
 
 \--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-![sprite](images/ballerina.png)
+![спрайт](images/ballerina.png)
 
 ```blocks3
 repeat (score :: variables)
@@ -25,17 +25,17 @@ end
 
 \--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-![sprite](images/ballerina.png)
+![спрайт](images/ballerina.png)
 
 ```blocks3
-change [score v] by (1)
+змінити [рахунок v] на (1)
 ```
 
 \--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
 \--- /task \---
 
-\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. Ось так може виглядати код вашого персонажа:
 
 ![ballerina](images/ballerina.png)
 
