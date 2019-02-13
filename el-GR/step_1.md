@@ -1,57 +1,57 @@
-\--- no-print \---
+\--- χωρίς εκτύπωση \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Αυτή είναι η έκδοση **Scratch 3** του έργου. Υπάρχει επίσης μια έκδοση [Scratch 2 του έργου](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
-\--- /no-print \---
+\--- / χωρίς εκτύπωση \---
 
 ## Εισαγωγή
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+Σε αυτό το έργο, θα δημιουργήσετε ένα παιχνίδι μνήμης στο οποίο θα πρέπει να απομνημονεύσετε και να επαναλάβετε μια τυχαία σειρά χρωμάτων!
 
 ### Τι θα κάνετε
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- no-print \--- Κάντε κλικ στην πράσινη σημαία για να ξεκινήσετε. Παρακολουθήστε την ακολουθία των χρωμάτων που εμφανίζεται στο φόρεμα του χορευτή και ακούστε τα συνοδευτικά τυμπανικά κτυπήματα και στη συνέχεια επαναλάβετε τα χρώματα πίσω σε αυτήν. Εάν παίρνετε τη σειρά των χρωμάτων λανθασμένη, το παιχνίδι είναι πάνω!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
 </div>
 
-\--- /no-print \---
+\--- / χωρίς εκτύπωση \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- μόνο για εκτύπωση \--- ![screenshot of finished game](images/screenshot.png) \--- / μόνο για εκτύπωση \---
 
-## \--- collapse \---
+## \--- κατάρρευση \---
 
-## title: What you will learn
+## τίτλος: Τι θα μάθετε
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Πώς να προσθέσετε ήχο στο έργο Scratch
++ Πώς να δημιουργήσετε και να χρησιμοποιήσετε λίστες για την αποθήκευση δεδομένων
++ Πώς να δημιουργήσετε και να χρησιμοποιήσετε προσαρμοσμένα μπλοκ για την επανάληψη κώδικα
 
-\--- /collapse \---
+\--- /κατάρρευση \---
 
-## \--- collapse \---
+## \--- κατάρρευση \---
 
-## title: What you will need
+## τίτλος: Τι θα χρειαστείτε
 
-### Hardware
+### Σκεύη, εξαρτήματα
 
-+ A computer capable of running Scratch 3
++ Ένας υπολογιστής που μπορεί να τρέξει το Scratch 3
 
-### Software
+### Λογισμικό
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (είτε [απευθείας σύνδεση](https://rpf.io/scratchon){: target = "_ κενό"} ή [εκτός σύνδεσης](https://rpf.io/scratchoff){: target = "_ κενό")) \--- /
 
-## \--- collapse \---
+## \--- κατάρρευση \---
 
-## title: Additional information for educators
+## τίτλος: Πρόσθετες πληροφορίες για εκπαιδευτικούς
 
-\--- no-print \---
+\--- χωρίς εκτύπωση \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Αν χρειαστεί να εκτυπώσετε αυτό το έργο, χρησιμοποιήστε την έκδοση [φιλική προς τον εκτυπωτή](https://projects.raspberrypi.org/en/projects/memory/print){: target = "_ blank"}.
 
-\--- /no-print \---
+\--- / χωρίς εκτύπωση \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+Μπορείτε να [κατεβάσετε το ολοκληρωμένο έργο εδώ](http://rpf.io/p/en/memory-get).
 
-\--- /collapse \---
+\--- /κατάρρευση \---
