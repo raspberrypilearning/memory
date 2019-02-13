@@ -1,39 +1,39 @@
-## Challenge: improve your game
+## Πρόκληση: βελτιώστε το παιχνίδι σας
 
-### Make more blocks
+### Κάντε περισσότερα μπλοκ
 
-Do you see any other code that is the same for all four buttons?
+Βλέπετε κάποιο άλλο κωδικό που είναι ο ίδιος και για τα τέσσερα κουμπιά;
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
-end
+όταν λάβω [κόκκινο v]
+αν <(στοιχείο (1 v) του [αλληλουχίας v]) =[1]> , στη συνέχεια,
+    τύμπανο ενέργεια (\ (1 \) Ταμπούρο v) για (0.25) κτυπά
+    διαγραφή (1 v) του [ακολουθία v]
+άλλο
+    Παιχνίδι Πάνω: έθιμο
+τέλος
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
+όταν λαμβάνω [μπλε v]
+αν <(στοιχείο (1 v) της [ακολουθία v]) =[1]> τότε
+    τύμπανο παιχνιδιού (\ ) Bass Drum v) για (0.25) χτυπήματα
+    διαγραφή (1 v) από [ακολουθία v]
+άλλο
+    Παιχνίδι πέρα από: custom
 end
 ```
 
-Can you make another custom block that all buttons can use?
+Μπορείτε να δημιουργήσετε ένα άλλο προσαρμοσμένο μπλοκ που μπορούν να χρησιμοποιήσουν όλα τα κουμπιά;
 
-### Another costume
+### Μια άλλη φορεσιά
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+Μπορείτε να δείτε ότι το παιχνίδι σας ξεκινά με το χαρακτήρα σας που δείχνει ένα από τα τέσσερα χρώματα και ότι ο χαρακτήρας εμφανίζει πάντα το τελευταίο χρώμα στην ακολουθία ενώ η συσκευή αναπαραγωγής επαναλαμβάνει την ακολουθία χρωμάτων;
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+Μπορείτε να προσθέσετε ένα άλλο απλό λευκό κοστούμι στο χαρακτήρα σας, και να προσθέσετε τον κωδικό έτσι ώστε ο χαρακτήρας να εμφανίζει αυτό το κοστούμι στην αρχή του παιχνιδιού και ενώ ο παίκτης επαναλαμβάνει την ακολουθία;
 
 ![screenshot](images/colour-white.png)
 
-### Difficulty level
+### Επίπεδο δυσκολίας
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+Μπορείτε να επιτρέψετε στη συσκευή αναπαραγωγής να επιλέξει μεταξύ της αναπαραγωγής του παιχνιδιού σε «εύκολη λειτουργία» (χρησιμοποιώντας μόνο τα κόκκινα και μπλε χρώματα) και την «κανονική λειτουργία» (η οποία χρησιμοποιεί και τα τέσσερα χρώματα);
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+Αν θέλετε, μπορείτε ακόμη να προσθέσετε μια «σκληρή» λειτουργία, η οποία χρησιμοποιεί ένα πέμπτο τύμπανο!
