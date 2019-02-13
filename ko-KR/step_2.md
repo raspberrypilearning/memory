@@ -1,88 +1,88 @@
-## Create a colour sequence
+## 색상 순서 만들기
 
-First create a character that can display a random sequence of colours.
+먼저 임의의 색상 순서를 표시 할 수있는 문자를 만듭니다.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- 새 Scratch 프로젝트를 엽니 다.
 
-**Online**: open a new online Scratch project at [rpf.io/scratchon](https://rpf.io/scratchon).
+**온라인**: 새로운 온라인 스크래치 프로젝트를 [rpf.io/scratchon에서 엽니 다.](https://rpf.io/scratchon).
 
-**Offline**: open a new project in the offline editor.
+**오프라인**: 오프라인 편집기에서 새 프로젝트를 엽니 다.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Scratch 오프라인 편집기를 다운로드하여 설치해야하는 경우 [rpf.io/scratchoff](https://rpf.io/scratchoff)에서 찾을 수 있습니다.
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- 문자 스프라이트와 배경을 선택하십시오. 발레리나를 사용할 수는 있지만 캐릭터가 사람 일 필요는 없으며 다른 색상 만 표시 할 수 있어야합니다.
 
-![screenshot](images/colour-sprite.png) \--- /task \---
+![스크린샷](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ 게임에서 각 색상을 나타내는 데 다른 숫자를 사용해야합니다.
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = 적색
+    + 2 = 파랑
+    + 3 = 녹색
+    + 4 = 노란색
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- 당신의 성격에 색깔이 다른 네 가지의 의상, 위의 네 가지 색깔 각각에 대한 의상 하나를줍니다. 색깔있는 의상이 위 목록과 같은 순서인지 확인하십시오.
 
-![screenshot](images/colour-costume.png) \--- /task \---
+![스크린샷](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+원하는 경우 **색을 사용하여 모양** 도구를 사용하여 복장 부분을 다른 색으로 채울 수 있습니다.
 
-![color-a-shape](images/color-a-shape.png)
+![색깔 - 모양](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+다음으로, 플레이어가 기억해야하는 무작위 순서의 색을 저장하는 목록을 추가하십시오.
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- `sequence`{: class = "block3variables"}라는 목록을 만듭니다. 문자 스프라이트 만이 목록을 볼 필요가 있으므로 **을 선택할 수 있습니다.이 스프라이트의 경우 목록을 만들 때** 선택하십시오.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+이제 목록을 사용하기위한 새로운 코드 블록이 많이 표시됩니다. 빈 목록은 스테이지의 왼쪽 상단에 표시되어야합니다.
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![스크린샷](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+각 색상마다 다른 숫자가 있으므로 번호를 임의로 선택하여 목록에 추가하여 임의의 색상을 선택할 수 있습니다.
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- 이 코드를 문자 스프라이트에 추가하여 임의의 숫자를 선택하고 `추가하십시오. sequence`{: class = "block3variables"} :
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+깃발을 클릭할 때
+랜덤 수 (1) ~ (4) 을 골라서 연속 V에 추가하세요.
 ```
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- 코드를 테스트하십시오. 이 플래그를 클릭 할 때마다 1에서 4 사이의 임의의 숫자가 목록에 추가되는지 확인하십시오. \--- / 작업 \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- 한 번에 5 개의 난수를 생성하는 코드를 프로그램에 추가 할 수 있습니까?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- 힌트 \--- \--- 힌트 \--- 추가합니다. `모든 시퀀스를 삭제합니다.`{: class = "block3variables"} 먼저 목록의 모든 항목을 삭제 한 다음 `반복을 추가합니다.`{: class = "block3control"} 5 개의 난수를 목록에 추가합니다. \--- / 힌트 \--- \--- 힌트 \---
 
-This is what your code should look like:
+이 코드는 다음과 같습니다.
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+깃발이  클릭 될 때
+[연속  V] 의 모든 V  삭제
+반복 (5)
+    추가 ((1) ~ (4) 랜덤을 골라  [연속 V] 에 추가하십시오.
+끝
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / 힌트 \--- \--- / 힌트 \--- \--- / task \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- 숫자가 목록에 추가 될 때마다, 캐릭터는 복장의 색이 숫자와 일치하도록 복장을 변경해야합니다. 이 블록을 임의의 숫자가 `추가 된 바로 아래 코드에 삽입하십시오. sequence`{: class = "block3variables"} :
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+[시퀀스 v]의 (항목 (시퀀스 v)의 길이)로 복장을 바꾼다
+대기 (1) 초
 ```
 
 \--- /task \---
