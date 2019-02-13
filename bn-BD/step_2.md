@@ -1,88 +1,88 @@
-## Create a colour sequence
+## একটি রঙ ক্রম তৈরি করুন
 
-First create a character that can display a random sequence of colours.
+প্রথম অক্ষরের একটি র্যান্ডম ক্রম প্রদর্শন করতে পারেন যে একটি অক্ষর তৈরি করুন।
 
-\--- task \--- Open a new Scratch project.
+\--- টাস্ক \--- একটি নতুন স্ক্র্যাচ প্রকল্প খুলুন।
 
-**Online**: open a new online Scratch project at [rpf.io/scratchon](https://rpf.io/scratchon).
+**অনলাইন**: [rpf.io/scratchon](https://rpf.io/scratchon)এ একটি নতুন অনলাইন স্ক্র্যাচ প্রকল্প খুলুন।
 
-**Offline**: open a new project in the offline editor.
+**অফলাইন**: অফলাইন সম্পাদকে একটি নতুন প্রকল্প খুলুন।
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+ডাউনলোড করুন এবং স্ক্র্যাচ অফলাইন সম্পাদক ইনস্টল করার প্রয়োজন হয়, তাহলে আপনি এটি জানতে পারেন [rpf.io/scratchoff](https://rpf.io/scratchoff)।
 
-\--- /task \---
+\--- /কাজ \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- টাস্ক \--- একটি অক্ষর sprite এবং একটি ব্যাকড্রপ চয়ন করুন। আপনি ব্যালেরিনা ব্যবহার করতে পারেন, কিন্তু আপনার চরিত্রটি একজন ব্যক্তি হতে হবে না, তাদের কেবল বিভিন্ন রঙ দেখাতে সক্ষম হতে হবে।
 
-![screenshot](images/colour-sprite.png) \--- /task \---
+![screenshot](images/colour-sprite.png) \--- /কাজ \---
 
-+ Your game should use a different number to represent each colour:
++ আপনার খেলা প্রতিটি রং প্রতিনিধিত্ব করতে একটি ভিন্ন সংখ্যা ব্যবহার করা উচিত:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = লাল
+    + 2 = নীল
+    + 3 = সবুজ
+    + 4 = হলুদ
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- টাস্ক \--- আপনার চার চরিত্রকে বিভিন্ন রঙের দিন, উপরে বর্ণিত চারটি রংয়ের জন্য একটি পরিচ্ছদ দিন। উপরে তালিকা হিসাবে আপনার রঙ্গিন পোশাক একই ক্রম হয় তা নিশ্চিত করুন।
 
-![screenshot](images/colour-costume.png) \--- /task \---
+![screenshot](images/colour-costume.png) \--- /কাজ \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+যদি আপনি চান, আপনি একটি ভিন্ন রং দিয়ে পোশাকের অংশগুলি পূরণ করতে **রঙটি একটি আকৃতি** সরঞ্জাম ব্যবহার করতে পারেন।
 
-![color-a-shape](images/color-a-shape.png)
+![রঙ-এ-আকৃতি](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+পরবর্তীতে, প্লেয়ারের মনে রাখা র্যান্ডম ক্রমগুলি সংরক্ষণ করার জন্য একটি তালিকা যুক্ত করুন।
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- টাস্ক \--- `ক্রম`নামে একটি তালিকা তৈরি করুন: {ক্লাস = "ব্লক 3variables"}। শুধু চরিত্র পরী এই তালিকা দেখতে, তাই আপনি নির্বাচন করতে পারেন প্রয়োজন **এই পরী জন্য শুধুমাত্র** যখন আপনি তালিকা তৈরি করুন।
 
 [[[generic-scratch3-make-list]]]
 
-\--- /task \---
+\--- /কাজ \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+তালিকাগুলি ব্যবহারের জন্য আপনাকে এখন অনেক নতুন কোড ব্লক দেখতে হবে। খালি তালিকা পর্যায়ে উপরের বাম হাতের কোণে দৃশ্যমান হওয়া উচিত।
 
 ![screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+প্রতিটি রঙের একটি ভিন্ন সংখ্যা রয়েছে, তাই আপনি এলোমেলোভাবে একটি নম্বর নির্বাচন করে এবং তালিকায় যুক্ত করে একটি র্যান্ডম রঙ নির্বাচন করতে পারেন।
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- টাস্ক \--- এই কোডটিকে অক্ষর স্প্রাইটে একটি র্যান্ডম নম্বর চয়ন করতে এবং এটি `ক্রম`{: class = "block3variables"}:
 
-![ballerina](images/ballerina.png)
-
-```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
-```
-
-\--- /task \---
-
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
-
-\--- task \--- Can you add code to your program to generate five random numbers at once?
-
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
-
-This is what your code should look like:
-
-![ballerina](images/ballerina.png)
+![নর্তকী](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+যখন পতাকা ক্লিক
+যোগ (র্যান্ডম (1) থেকে (4)) [sequence v] বাছাই করুন
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /কাজ \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- টাস্ক \--- আপনার কোড পরীক্ষা করুন। যেকোনো সময় আপনি পতাকাটি ক্লিক করলে, 1 এবং 4 এর মধ্যে একটি র্যান্ডম সংখ্যা তালিকায় যুক্ত হবে। \--- / টাস্ক \---
 
-![ballerina](images/ballerina.png)
+\--- টাস্ক \--- আপনি একবারে পাঁচটি এলোমেলো সংখ্যা তৈরি করতে আপনার প্রোগ্রামে কোড যুক্ত করতে পারেন?
+
+\--- ইঙ্গিত \--- \--- ইঙ্গিত \--- যোগ একটি `ক্রম`মুছে ফেলুন </code> {: class = "block3variables"} প্রথমে তালিকার সমস্ত আইটেম মুছতে, এবং তারপরে `পুনরাবৃত্তি`যোগ করুন {: class = "block3control"} ব্লকটি তালিকায় পাঁচটি র্যান্ডম সংখ্যার যোগ করে। \--- / ইঙ্গিত \--- \--- ইঙ্গিত \---
+
+আপনার কোডটি কেমন হওয়া উচিত:
+
+![নর্তকী](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+যখন পতাকাটি
+ক্রমিক (সমস্ত বনাম) [ক্রম বনাম]
+পুনরাবৃত্তি (5)
+    যোগ ক্লিক করুন (র্যান্ডম (1) থেকে (4)) [ক্রমানুসারে]
+প্রান্তে ক্লিক করুন
 ```
 
-\--- /task \---
+\--- / ইঙ্গিত \--- \--- / ইঙ্গিত \--- \--- / টাস্ক \---
+
+\--- টাস্ক \--- প্রতিটি সময় তালিকায় যোগ করা হলে, চরিত্রটি তার পরিচ্ছদ পরিবর্তন করতে হবে যাতে পরিচ্ছদ রঙটি নম্বরটিকে মেলে। যেখানে একটি র্যান্ডম সংখ্যা যোগ করা হয় অবিলম্বে নিচে আপনার কোডে এই ব্লক রাখুন `ক্রম`{: শ্রেণি = "block3variables"}:
+
+![নর্তকী](images/ballerina.png)
+
+```blocks3
+পরিচয়ে স্যুইচ করুন (আইটেম ([ক্রমানুসারে v] এর দৈর্ঘ্য] [ক্রম বনাম])
+অপেক্ষা করুন (1) সেকেন্ড
+```
+
+\--- /কাজ \---
