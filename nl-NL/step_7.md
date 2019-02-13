@@ -1,4 +1,4 @@
-## Challenge: improve your game
+## Challenge: verbeter je spel
 
 ### Make more blocks
 
