@@ -1,4 +1,4 @@
-## Repeat the sequence
+## Ripetere la sequenza
 
 Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
@@ -52,14 +52,14 @@ end
 
 \--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- Riesci a usare i numeri che corrispondono ad ogni colore per riprodurre il suono di tamburo corretto?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
++ 1 = rosso
++ 2 = blu
++ 3 = verde
 + 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- /hint \--- \--- hint \--- Ecco il codice che dovrai aggiungere:
 
 ```blocks3
 when I receive [red v]
