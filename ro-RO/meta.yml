@@ -4,23 +4,23 @@ listed: true
 copyedit: false
 title: Memorie
 description: În acest proiect vei crea un joc de memorie unde va trebui să memorezi și să repeți o secvență aleatorie de culori!
-version: 4.0.1
-last_tested: 2017-01-01
+version: 4.2.1
+last_tested: 2018-10-04
 steps:
   - 
     title: Memory
   - 
-    title: Create a colour sequence
+    title: Creează o secvenţă de culori
   - 
-    title: Add sound
+    title: Adăugați un sunet
   - 
-    title: Repeat the sequence
+    title: Repetați secvența
   - 
-    title: Multiple levels
+    title: Nivele multiple
   - 
-    title: High score
+    title: Cel mai mare scor
   - 
-    title: "Challenge: improve your game"
+    title: "Provocare: îmbunătățiți jocul"
   - 
-    title: What next?
+    title: Ce urmează?
 
