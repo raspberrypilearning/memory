@@ -1,153 +1,153 @@
-## Repeat the sequence
+## Repetați secvența
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+Acum veți adăuga patru butoane pe care playerul trebuie să le apese pentru a repeta secvența de culori.
 
-\--- task \--- Add four new sprites to your project to represent the four buttons.
+\--- task \--- Adăugați patru sprites noi în proiect pentru a reprezenta cele patru butoane.
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ Editați costumele noi sprites, astfel încât să existe un sprite în fiecare dintre cele patru culori
++ Puneți spritele în aceeași ordine pe scenă ca și costumele: roșu, albastru, verde, galben
 
-![screenshot](images/colour-drums.png) \--- /task \---
+![captură de ecran](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+\--- task \--- Adăugați codul la sprite roșu, astfel încât, atunci când clicul este sprite, acesta `transmite`{: class = "block3events"} un mesaj "roșu" către caracterul sprite:
 
-![red-drum](images/red_drum.png)
+![roșu-tambur](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    când acest sprite a dat clic pe
+    difuzat (roșu v)
 ```
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+A `difuzat`{: class = "block3events"} este ca un mesaj anunțat pe un difuzor, pe care îl puteți auzi, de exemplu, în școli sau supermarketuri. Toți spritele pot auzi emisiunea `{`= class = "block3events"}, dar numai sprite-ul a cărui sarcină este să răspundă va face ceva.
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+Adăugați un cod similar cu spritele albastre, verzi și galbene, pentru a le face `difuzeze mesajele despre culoarea proprie`{: class = "block3events"}.
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+Vă amintiți că difuzarea `{`= class = "block3events"} este ca un mesaj difuzor? Veți adăuga un cod pentru a face ca sarcina sprite să răspundă la mesajele `{`= 'block3events'} de difuzare.
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+Când sprite personaj primește mesajul `roșu`{: class = „block3events“}, codul trebuie să verifice dacă numărul `1` este la începutul `secvenței`{: class = „block3variables“} listă (ceea ce înseamnă că `roșu`{: class = "block3events"} este următoarea culoare din secvență).
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+Dacă numărul `1` se află la începutul listei, codul trebuie să elimine numărul din listă, deoarece playerul și-a amintit culoarea corectă. În caz contrar , este de peste joc, iar codul trebuie să `oprire toate`{: class = „block3control“} pentru a termina jocul.
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
+atunci când primesc [v red]
+dacă <(punctul (1 v) din [secvența v]) =[1]> , apoi
+șterge (1 v) din [secvența v]
+altceva
+spun [Joc de peste!] pentru (1) secunde
+stop [toate v]
+
 ```
 
 \--- /task \---
 
-\--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+\--- task \--- Adăugați la codul pe care tocmai l-ați scris astfel încât un batere de tambur să joace, de asemenea, atunci când personajul sprite primește `difuzare corectă`{: class = "block3events"}.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- Sugestii \--- \--- Indicație \--- Puteți folosi numerele care corespund fiecărei culori pentru a reda baterea corectă a tobei?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 1 = roșu
++ 2 = albastru
++ 3 = verde
++ 4 = galben \--- / indiciu \--- \--- sugestie \--- Mai mult de `ștergeți 1 din blocul secvență`{: class = "block3variables"}, adăugați tamburul `redare`{: class = " block3sound "} bloc pentru a juca primul sunet din `secvența`{: class =" block3variables "} listă.
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- / hint \--- \--- indiciu \--- Aici este codul de care va trebui să adăugați:
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
+atunci când primesc [v red]
+dacă <(punctul (1 v) din [secvență v]) =[1]> , apoi
 
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
++ joacă tambur (\ (1 \) Snare Drum v) pentru (0,25) bate
+șterge (1 v ) din [secventa v]
+altceva
+spune [Joc peste!] pentru (1) secunde
+stop [toate v]
+
 
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / indiciu \--- \--- / sugestii \--- \--- / sarcina \---
 
-\--- task \--- Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}. \--- /task \---
+\--- task \--- Duplicați codul pe care l-ați folosit pentru a vă face sprite de caractere să răspundă la mesajul `roșu`{: class = "block3events"}. Modificați codul duplicat astfel încât acesta să trimită mesajul `albastru`{: class = "block3events"}. \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+Când sprite răspunde la mesajul `albastru`{: class = "block3events"}, care bit de cod ar trebui să rămână același și care bit ar trebui să se schimbe? Rețineți că fiecare culoare are un număr corespunzător.
 
-\--- task \--- Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+\--- task \--- Modificați codul sprite al caracterelor astfel încât caracterul să răspundă corect la mesajul `albastru`{: class = "block3events"}.
 
-\--- hints \--- \--- hint \---
+\--- Sugestii \--- \--- Indicație \---
 
-Keep these blocks, but you need to change them in some way:
+Păstrați aceste blocuri, dar trebuie să le schimbați într-un fel:
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<(punctul (1 v) din [secvență v]) = [1]>
 
-when I receive [red v]
+atunci când primesc [v red]
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+redare tambur (\ (1 \) Snare Drum v) pentru (0,25) bătăi
 ```
 
-\--- /hint \--- \--- hint \--- Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+\--- / hint \--- \--- sugestie \--- Aici este modul în care codul dvs. ar trebui să caute `albastru`{: class = "block3events"} difuzare.
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    stop [all v]
-end
+atunci când primesc [v blue]
+dacă <(punctul (1 v) din [secvență v]) =[2]> , apoi
+    tambur joc (\ (2 \) Bass Drum v) pentru (0,25) bate
+    șterge (1 v) din [secventa v]
+altceva
+    spune [Joc peste!] pentru (1) secunde
+    stop [toate v]
+
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / indiciu \--- \--- / sugestii \--- \--- / sarcina \---
 
-\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+\--- task \--- Duplicați din nou codul de două ori (pentru butoanele verde și galben) și schimbați părțile necesare astfel încât caracterul să răspundă corect la noile `emisiuni`{: class = "block3events"}. \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+Nu uitați să testați codul! Puteți memora o secvență de cinci culori? Este secvența diferită de fiecare dată?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+Când player -ul repetă în mod corect secvența de culoare întreg, `secvența`{: class = „block3variables“} lista emtpy și jucătorul câștigă. Dacă doriți, puteți afișa , de asemenea , unele lumini intermitente ca o recompensă dată pe `secvența`{: class = „block3variables“} lista este goală.
 
-\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+\--- task \--- Adăugați acest cod la sfârșitul caracterului dvs. `când faceți clic pe pictograma`{: class = "block3events"} script:
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
+    așteptați până când < (lungimea secvenței v]) = [0]>
+    difuzat (câștigat v) și așteptați
 ```
 
 \--- /task \---
 
-\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+\--- sarcină \--- Comutarea la scenă, și importați `tambur mașină` sunet sau alt sunet vă place.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+\--- task \--- Adăugați acest cod pentru a reda un sunet și pentru a schimba culoarea fundalului atunci când jucătorul câștigă.
 
-![ballerina](images/stage.png)
+![balerină](images/stage.png)
 
 ```blocks3
-    when I receive [won v]
-    start sound (drum machine v)
+    când am primit [castigat v]
+    sunet de pornire (mașină cu tambur v)
     repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
+        schimbare [culoare v] efect de (25)
+        wait (0,1) secunde
     end
-    clear graphic effects
+    efecte grafice clare
 ```
 
 \--- /task \---
