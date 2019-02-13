@@ -1,4 +1,4 @@
-## Add sound
+## Sfida: Aggiungi un suono
 
 \--- task \---
 
@@ -34,7 +34,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Ecco come dovrebbe essere il codice completo:
 
 ![ballerina](images/ballerina.png)
 
