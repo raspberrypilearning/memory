@@ -1,158 +1,160 @@
-## High score
+## উচ্চ স্কোর
 
-Now save the high score so that you can play against your friends.
+এখন উচ্চ স্কোর সংরক্ষণ করুন যাতে আপনি আপনার বন্ধুদের বিরুদ্ধে খেলতে পারেন।
 
-\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
+\--- টাস্ক \--- আপনার প্রোজেক্টে `উচ্চ স্কোর`{শ্রেণী = "ব্লক 3variables"} এবং `নাম`{: class = "block3variables"} নামক দুটি নতুন ভেরিয়েবল যুক্ত করুন। \--- / টাস্ক \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+যখন খেলাটি শেষ হয় তখন প্লেয়ারটি ক্রমানুসারে ভুল হয়ে গেলে, খেলাটি বর্তমান উচ্চ স্কোরের চেয়ে স্কোর বেশি কিনা তা পরীক্ষা করা উচিত। যদি এটি হয়, তবে স্কোরটিকে উচ্চ স্কোর হিসাবে স্কোরটি সংরক্ষণ করা উচিত এবং প্লেয়ারের নামও সংরক্ষণ করা উচিত।
 
-\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- টাস্ক \--- আপনার চরিত্রের কোডটি যোগ করুন `উচ্চ স্কোর`{{class = "block3variables"}। এছাড়াও প্লেয়ারের নামটির জন্য জিজ্ঞাসা করুন এবং এটি `নাম্বার`: class = "block3variables"} পরিবর্তন করুন।
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
+\--- ইঙ্গিত \--- \--- ইঙ্গিত \--- আপনার নতুন কোড এই প্যাটার্ন অনুসরণ করতে হবে:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+পরে `খেলা উপর`{: শ্রেণি = "block3looks"} বার্তা `যদি`{: শ্রেণি = "block3control"} `স্কোর`{: শ্রেণি = "block3variables"} হয় `তার চেয়ে অনেক বেশী`বর্গ = "block3operators: { "} `উচ্চ স্কোর`{: শ্রেণী =" ব্লক 3variables "} `সেট`{: শ্রেণী =" block3variables "} `উচ্চ স্কোর`{: শ্রেণী =" block3variables "} `স্কোর`{{শ্রেণী =" ব্লক 3variables "} ``প্লেয়ার এর নাম জন্য </code> : {ক্লাস =" block3sensing "} জিজ্ঞাসা `সেট`{: শ্রেণী =" block3variables "} `নাম`{: শ্রেণী =" block3variables "} `উত্তর`{: ক্লাস = "ব্লক 3 সেন্সিং"} \--- / ইঙ্গিত \--- \--- ইঙ্গিত \---
 
-You need the following blocks:
+আপনি নিম্নলিখিত ব্লক প্রয়োজন:
 
-![ballerina](images/ballerina.png)
-
-```blocks3
-if < > then
-end
-
-(score)
-
-(score)
-
-[ ] > [ ]
-
-answer
-
-(high score)
-
-ask [What's your name?] and wait
-
-set [high score v] to [ ] 
-
-set [name v] to [ ] 
-```
-
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
-
-![ballerina](images/ballerina.png)
+![নর্তকী](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
-end
+যদি < > তারপর
+শেষ
+
+(স্কোর)
+
+(স্কোর)
+
+[] > []
+
+উত্তর
+
+(উচ্চ স্কোর)
+
+জিজ্ঞাসা করুন [আপনার নাম কি?] এবং
+
+সেট [উচ্চ স্কোর v] থেকে [ 
+
+] সেট করুন [ নাম ভি] থেকে [] 
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / ইঙ্গিত \--- \--- ইঙ্গিত \--- লাল কোডটি চাপলে আপনার কোডটি কেমন হওয়া উচিত তা এখানে:
 
-You need to add this new code to the character sprite for the other three colours too!
-
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
-
-![ballerina](images/ballerina.png)
+![নর্তকী](images/ballerina.png)
 
 ```blocks3
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+যখন আমি [লাল v]
+পাই তাহলে [ <] (ক্রম বনাম] এর < (আইটেম (1 ভি)) =[1]> তারপর
+    ড্রাম (আইটেম (1 ক্রম) এর ড্রাম (আইটেমটি 1 ভি)) (0.25)
+    মুছে ফেলবে (1 v) [ক্রমিক v]
+আর
+    বলুন [খেলা শেষ!] (1) সেকেন্ডের জন্য
+    যদি < (স্কোর :: ভেরিয়েবল) > (উচ্চ স্কোর) > তারপর
+        সেট [উচ্চ স্কোর v] থেকে (স্কোর :: ভেরিয়েবল )
+        জিজ্ঞাসা [উচ্চ স্কোর! আপনার নাম কি?] এবং
+        সেট [নাম ভি] থেকে অপেক্ষা করুন (উত্তর)
+    শেষ
+    স্টপ [সব ভী]
+শেষ
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+\--- / ইঙ্গিত \--- \--- / ইঙ্গিত \--- \--- / টাস্ক \---
 
-Instead, you can define your own code block, and use it anywhere in your project.
+আপনি এই তিনটি কোড অক্ষর sprite এছাড়াও অন্যান্য তিনটি রং জন্য যোগ করতে হবে!
 
-\--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+আপনি চারটি রং প্রতিটি জন্য 'খেলা উপর' কোড ঠিক একই দেখতে পারেন?
 
-\--- /task \---
-
-\--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
-
-![ballerina](images/ballerina.png)
+![নর্তকী](images/ballerina.png)
 
 ```blocks3
-define Game over
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+বলুন [খেলা শেষ!] জন্য (1) সেকেন্ড
+যদি < (স্কোর :: ভেরিয়েবল) > (উচ্চ স্কোর) > তারপর
+    সেট [উচ্চ স্কোর v] থেকে (স্কোর :: ভেরিয়েবল)
+    জিজ্ঞাসা করুন [উচ্চ স্কোর! আপনার নাম কি?] এবং
+    সেট [নাম ভি] থেকে অপেক্ষা করুন (উত্তর)
+শেষ
+স্টপ [সব ভী]
 ```
 
-\--- /task \---
+আপনাকে 'গেমস' কোডটি পরিবর্তন করতে হবে, উদাহরণস্বরূপ একটি শব্দ যুক্ত করতে বা 'গেমস' বার্তা পরিবর্তন করতে হলে আপনাকে এটি চারবার পরিবর্তন করতে হবে। যে বিরক্তিকর এবং সময় অনেক অপচয় হয়।
 
-\--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+পরিবর্তে, আপনি নিজের কোড ব্লকটি সংজ্ঞায়িত করতে পারেন এবং আপনার প্রকল্পের যেকোন জায়গায় এটি ব্যবহার করতে পারেন।
 
-![ballerina](images/ballerina.png)
+\--- কাজের \--- ক্লিক করুন `আমার ব্লক`{: শ্রেণি = "block3myblocks"}, এবং তারপর **একটি ব্লক করুন**। এই নতুন ব্লকটি</code>টিতে `খেলা কল করুন {: শ্রেণী = "ব্লক 3myblocks"}।</p>
+
+<p>--- /কাজ ---</p>
+
+<p>--- কাজের ---
+থেকে কোড যোগ করুন <code>আর`{: শ্রেণি = "block3control"} সংযুক্ত ব্লক `লাল`: {বর্গ = "block3events"} সম্প্রচার `ওভার খেলা`{: শ্রেণী = "block3myblocks"} ব্লক করুন যাতে এটি এমন দেখতে পারে:
+
+![নর্তকী](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+খেলা
+বলুন [খেলা শেষ!] জন্য (1) সেকেন্ড
+যদি < (স্কোর :: ভেরিয়েবল) > (উচ্চ স্কোর) > তারপর
+    সেট [উচ্চ স্কোর v] থেকে (স্কোর :: ভেরিয়েবল)
+    জিজ্ঞাসা করুন [উচ্চ স্কোর ! আপনার নাম কি?] এবং
+    সেট [নাম ভি] থেকে অপেক্ষা করুন (উত্তর)
+শেষ
+স্টপ [সব ভী]
 ```
 
-\--- /task \---
+\--- /কাজ \---
 
-\--- task \--- Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence. \--- /task \---
+\--- কাজের \--- এখন কোডে যে অপসারণ `আর`{: শ্রেণি = "block3control"} সংযুক্ত ব্লক `লাল`{: শ্রেণি = "block3events"} সম্প্রচারের, এবং যোগ `খেলা উপর`{: শ্রেণী = "ব্লক 3myblocks"} পরিবর্তে ব্লক:
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
-
-\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
-
-![ballerina](images/ballerina.png)
+![নর্তকী](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+যখন আমি [লাল v]
+পাই তখন যদি <(আইটেমটি 1 বনাম) [ক্রম বনাম] =[1]> তারপর
+    ড্রাম (\ (1 \) স্ন্যারে ড্রাম v) (0.25)
+    মুছে ফেলবে (1 ভি) এর [ক্রম বনাম]
+আর
+    গেমস :: কাস্টম
+এন্ড
 ```
 
-\--- /task \---
+\--- /কাজ \---
 
-\--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+\--- টাস্ক \--- খেলাটি খেলতে এবং রঙের ক্রমের ভুল বিন্দুতে লাল বোতামটি ক্লিক করে আপনার নতুন ব্লকটি পরীক্ষা করুন। \--- / টাস্ক \---
 
-![ballerina](images/ballerina.png)
+আপনার নতুন `গেম ওভার`: {বর্গ = "block3myblocks"} ব্লক একটি হল **ফাংশন**, একটু স্ক্রিপ্ট যে আপনার যোগ করে যে কোন জায়গায় ব্যবহার করতে পারেন আপনার কোডে পছন্দ `গেম ওভার`{: শ্রেণি = "block3myblocks"} ব্লক হবে।
+
+\--- কাজের \--- এছাড়াও কোড প্রতিস্থাপন `আর`{: শ্রেণি = "block3control"} সংযুক্ত ব্লক `সম্প্রচার`: আপনার নতুন সঙ্গে অন্যান্য রং জন্য {বর্গ = "block3events"} `ওভার খেলা`{: ক্লাস = "ব্লক 3myblocks"} ব্লক। এখানে `নীল`{: class = "block3events"} বার্তাটির কোডটি কেমন হওয়া উচিত তা এখানে
+
+![নর্তকী](images/ballerina.png)
 
 ```blocks3
-define Game over
-start sound [Cough1 v]
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+যখন আমি [নীল v]
+পাই তখন [sequence v] এর <(item (1 v)) =[1]> তারপর
+    ড্রাম (\ (2 \) বাস ড্রাম v) (0.25)
+    মুছে ফেলবে (1 v) এর [ক্রম বনাম]
+আর
+    গেমস :: কাস্টম
+এন্ড
 ```
 
-\--- /task \---
+\--- /কাজ \---
+
+\--- টাস্ক \--- এখন একটি বাজে শব্দ যোগ করুন যা ভুল বাটন চাপলে চলবে। আপনি শুধুমাত্র একবার এই কোড যোগ করতে হবে `গেম ওভার`{: শ্রেণি = "block3myblocks"} ব্লক যা আপনি তৈরি করেছেন, এবং পৃথক বার না চার!
+
+![নর্তকী](images/ballerina.png)
+
+```blocks3
+খেলা
+শুরুর শব্দটি সংজ্ঞায়িত করুন [কাফ
+ভি] 
+ বলুন [খেলা শেষ!] জন্য (1) সেকেন্ড
+ < (স্কোর :: ভেরিয়েবল) > (উচ্চ স্কোর) > তারপর
+    বাজানো শব্দ (trumpet1 v)
+    সেট [উচ্চ স্কোর v] থেকে (স্কোর)
+    জিজ্ঞাসা [উচ্চ স্কোর! আপনার নাম কি?] এবং
+    সেট [নাম ভি] থেকে অপেক্ষা করুন (উত্তর)
+শেষ
+স্টপ [সব ভী]
+```
+
+\--- /কাজ \---
