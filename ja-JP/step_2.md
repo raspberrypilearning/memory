@@ -1,88 +1,88 @@
-## Create a colour sequence
+## カラーシーケンスを作成する
 
-First create a character that can display a random sequence of colours.
+まずランダムな色のシーケンスを表示できる文字を作成します。
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- 新しいScratchプロジェクトを開きます。
 
-**Online**: open a new online Scratch project at [rpf.io/scratchon](https://rpf.io/scratchon).
+**オンライン**： [rpf.io/scratchon](https://rpf.io/scratchon)で新しいオンラインスクラッチプロジェクトを開く。
 
-**Offline**: open a new project in the offline editor.
+**オフライン**：オフラインエディタで新しいプロジェクトを開きます。
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Scratchオフラインエディタをダウンロードしてインストールする必要がある場合は、 [rpf.io / scratchoff](https://rpf.io/scratchoff)で見つけることができます。
 
-\--- /task \---
+- - /仕事 - -
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- キャラクタースプライトと背景を選択します。あなたはバレリーナを使うことができました、しかし、あなたのキャラクターは人である必要はなく、彼らは異なる色を見せることができる必要があります。
 
-![screenshot](images/colour-sprite.png) \--- /task \---
+![スクリーンショット](images/colour-sprite.png) - - /仕事 - -
 
-+ Your game should use a different number to represent each colour:
++ あなたのゲームはそれぞれの色を表現するために異なる数を使うべきです：
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 =赤
+    + 2 =青
+    + 3 =緑
+    + 4 =黄色
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- あなたのキャラクターに、色の異なる4つのコスチュームを、上に挙げた4色それぞれに1つずつ渡します。 あなたの色のついたコスチュームが上のリストと同じ順序であることを確認してください。
 
-![screenshot](images/colour-costume.png) \--- /task \---
+![スクリーンショット](images/colour-costume.png) - - /仕事 - -
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+あなたが望むならば、あなたは異なる色で衣装の部分を塗りつぶすために **色の形** ツールを使うことができます。
 
-![color-a-shape](images/color-a-shape.png)
+![色の形](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+次に、プレイヤーが覚えておく必要がある色のランダムなシーケンスを格納するためのリストを追加します。
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- `sequence`{：class = "block3variables"}という名前のリストを作成します。 このリストを見る必要があるのはキャラクタースプライトだけなので、 **を選択できます。リストを作成するときは、このスプライトには** のみを選択してください。
 
 [[[generic-scratch3-make-list]]]
 
-\--- /task \---
+- - /仕事 - -
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+リストを使うためのたくさんの新しいコードブロックが見えるはずです。空のリストがステージの左上隅に表示されます。
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![スクリーンショット](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+色ごとに番号が異なるため、番号をランダムに選択してリストに追加することで、ランダムな色を選択できます。
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- このコードを文字スプライトに追加して乱数を選択し、それを `シーケンスに追加します`{：class = "block3variables"}：
 
-![ballerina](images/ballerina.png)
-
-```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
-```
-
-\--- /task \---
-
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
-
-\--- task \--- Can you add code to your program to generate five random numbers at once?
-
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
-
-This is what your code should look like:
-
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+flagがクリックされたとき
+追加する（ランダムに選択する（1）から（4））[シーケンスv]
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+- - /仕事 - -
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- コードをテストしてください。フラグをクリックするたびに、1から4の間の乱数がリストに追加されることを確認します。 \--- / task \---
 
-![ballerina](images/ballerina.png)
+\--- task \--- プログラムにコードを追加して一度に5つの乱数を生成できますか？
+
+\---ヒント\--- \--- \---ヒント 追加 `配列のすべての削除`{：クラス=「block3variables」}最初に、リスト上のすべての項目を削除し、そしてする追加 `リピート`リストに5つの乱数を追加する{：class = "block3control"}ブロック。 \--- /ヒント\--- \---ヒント\---
+
+これはあなたのコードがどのように見えるべきかです：
+
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+フラグがクリックされたとき
+[シーケンスv]を削除（all v）
+繰り返し（5）
+    [シーケンスv]に
+追加する
 ```
 
-\--- /task \---
+\--- / hint \--- \--- / / hints \--- \--- / task \---
+
+\--- task \--- 数字がリストに追加されるたびに、キャラクターは衣装の色が数字と一致するように衣装を変更する必要があります。 乱数が `シーケンス`追加される場所のすぐ下のコードにこれらのブロックを配置します。{：class = "block3variables"}：
+
+![バレリーナ](images/ballerina.png)
+
+```blocks3
+（[配列V]の項目（[配列V]の長さ））に切り替え衣装
+ウェイト（1）秒
+```
+
+- - /仕事 - -
