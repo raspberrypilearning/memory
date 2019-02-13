@@ -1,6 +1,6 @@
-## Multiple levels
+## Livelli multipli
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+Finora, il giocatore deve solo ricordare una sequenza di cinque colori. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \--- Create a new variable called `score`{:class="block3variables"}.
 
@@ -28,14 +28,14 @@ end
 ![sprite](images/ballerina.png)
 
 ```blocks3
-change [score v] by (1)
+cambia [punteggio v] di (1)
 ```
 
 \--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
 \--- /task \---
 
-\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. Il codice del tuo personaggio dovrebbe assomigliare a questo:
 
 ![ballerina](images/ballerina.png)
 
