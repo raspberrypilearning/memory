@@ -1,4 +1,4 @@
-## Create a colour sequence
+## Створіть послідовність кольорів
 
 First create a character that can display a random sequence of colours.
 
@@ -14,18 +14,18 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 \--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
 
-![screenshot](images/colour-sprite.png) \--- /task \---
+![скріншот](images/colour-sprite.png) \--- /task \---
 
 + Your game should use a different number to represent each colour:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = червоний
+    + 2 = синій
+    + 3 = зелений
+    + 4 = жовтий
 
 \--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
 
-![screenshot](images/colour-costume.png) \--- /task \---
+![скріншот](images/colour-costume.png) \--- /task \---
 
 If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
 
@@ -41,7 +41,7 @@ Next, add a list for storing the random sequence of colours that the player has 
 
 You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![скріншот](images/colour-list-blocks-annotated.png)
 
 Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
 
@@ -50,8 +50,8 @@ Each colour has a different number, so you can choose a random colour by randoml
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+коли натиснуто ⚑
+додати (випадкове від (1) до (4)) до [послідовність v]
 ```
 
 \--- /task \---
@@ -67,10 +67,10 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
+коли натиснуто ⚑
+вилучити (все v) з [послідовність v]
+повторити (5) 
+  додати (випадкове від (1) до (4)) до [послідовність v]
 end
 ```
 
