@@ -7,7 +7,7 @@ Now you're going to add four buttons the player has to press to repeat the colou
 + Edit the new sprites' costumes so that there is one sprite in each of the four colours
 + Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
-![screenshot](images/colour-drums.png) \--- /task \---
+![знімок екрану](images/colour-drums.png) \--- /task \---
 
 \--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
 
@@ -52,14 +52,14 @@ end
 
 \--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- Чи можете ви використовувати цифри, які відповідають кожному кольору, для відтворення правильного ударного барабану?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
++ 1 = червоний
++ 2 = синій
++ 3 = зелений
 + 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- /hint \--- \--- hint \--- Ось код, який вам потрібно буде додати:
 
 ```blocks3
 when I receive [red v]
