@@ -1,56 +1,56 @@
-## Add sound
+## Adăugați un sunet
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Testați-vă proiectul de câteva ori. Observi că uneori același număr este ales de două ori (sau mai mult) într-un rând, ceea ce face ca secvența să fie mai greu de memorat?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Poți să faci o piesă de sunet cu tambur de fiecare dată când personajul sprite schimbă costumul? Și ce zici de un sunet diferit pentru fiecare culoare?
 
-\--- task \---
+\--- proba\---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Adăugați extensia Muzică în proiectul dvs. pentru a putea utiliza blocul `jocul tambur`{: class = "block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
 \--- /task \---
 
-\--- task \---
+\--- proba\---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Codul care joacă tamburul este **foarte** similar cu codul care schimbă costumul personajului.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- sugestii \--- \--- indiciu \--- Doar trebuie sa adaugati doua blocuri: un tambur de `jucari pentru (0.25) batai`{: class = "block3sound"} bloc si un element `(lungimea secvență) din blocul secvenței`{: class = "block3variables"}. \--- / indiciu \--- \--- indiciu \---
 
-Here are the blocks you need:
+Iată blocurile de care aveți nevoie:
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+juca tambur (\ (1 \) Snare Drum v) pentru (0.25) bate
 
-(item (length of [sequence v]) of [sequence v])
+(element (lungime de secventa v)) [secventa v]
 ```
 
-\--- /hint \---
+\--- / indiciu \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Aici este modul în care ar trebui să arate codul dvs. finit:
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
+când pavilion apasat
+șterge (toate v) [secvență v]
 repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
+    add (alege aleator (1) la (4)) la [secvența v]
+    tambur de redare (element (lungimea [secvență v]) din [secvență v]) pentru (0.25) bate
+    costum comutator la (element (lungimea [secvență v]) din [secvență v])
+    wait (1) secunde
 end
 ```
 
-\--- /hint \---
+\--- / indiciu \---
 
-\--- /hints \---
+\--- / sugestii \---
 
 \--- /task \---
