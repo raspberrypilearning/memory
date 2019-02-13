@@ -1,60 +1,60 @@
-## Multiple levels
+## 複数レベル
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+これまでのところ、プレーヤーは5色のシーケンスを覚えているだけです。 スコアを追加し、プレーヤーがポイントを獲得したときにゲームが次のレベルに移動し、記憶するカラーシーケンスが長くなるようにコードを追加して、ゲームを向上させます。
 
-\--- task \--- Create a new variable called `score`{:class="block3variables"}.
+\--- task \--- `score`{：class = "block3variables"}という名前の新しい変数を作成します。
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+[[[generic-scratch3-add-variable]]] \--- / task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+`スコア`{：class = "block3variables"}に基づいて、ゲームはカラーシーケンスの長さを決定します。 `3`スコア（およびシーケンスの長さ）から始めます。
 
-\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
+\--- task \--- flagが</code>{：class = "block3events"}のコードをクリックしたときにあなたのキャラクターの `先頭にブロックを追加して <code>score`{：class = "block3variables"}を `3` - - /仕事 - -
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+常に5色のシーケンスを作成するのではなく、シーケンスの長さを決めるのに `スコア`{：class = "block3variables"}が必要です。
 
-\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+\--- task \--- 文字の `repeat`{：class = "block3control"}ループ（カラーシーケンスを作成するための）を `score`{：class = "block3variables"}回繰り返すように変更します。
 
-![sprite](images/ballerina.png)
+![スプライト](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables)
+繰り返し（スコア::変数）
 end
 ```
 
-\--- /task \---
+- - /仕事 - -
 
-\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+\--- task \--- プレーヤーが正しい順序を繰り返した場合、 `1` から `score`{：class = "block3variables"}を追加する必要があります。これを行うと、次の順序の長さが長くなります。 シーケンスが正しいことがわかったところで、次のブロックをキャラクタのコード **追加します**。
 
-![sprite](images/ballerina.png)
-
-```blocks3
-change [score v] by (1)
-```
-
-\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
-
-\--- /task \---
-
-\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
-
-![ballerina](images/ballerina.png)
+![スプライト](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of [sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
-end
+[score v]を（1）で変更
 ```
 
-\--- /task \---
+\---ヒント\--- \---ヒント\--- あなたは、ゲーム ``{：class = "block3events"}の 'win'メッセージをブロードキャストした時点でシーケンスが正しいことを知っています。 \--- / hint \--- \--- / hints \---
 
-\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
+- - /仕事 - -
+
+\--- task \--- 最後に、シーケンスを生成するコードの周りに永久に `永久`{：class = "block3control"}ループを追加して、ゲームがレベルごとに新しいカラーシーケンスを作成するようにします。 これはあなたのキャラクターのコードがどのように見えるかです：
+
+![バレリーナ](images/ballerina.png)
+
+```blocks3
+フラグがクリックされたときに
+に設定[スコアV]を [3]
+永久
+    （全V）の[配列V]削除
+    反復（スコア）
+        アド（ピックランダム（1）〜（4））に[配列V]
+        スイッチ衣装to [シーケンスv]の（項目[シーケンスv]の長さ）
+        待機（1）秒
+    終了
+ < （[シーケンスvの長さ]）= [0]>
+    ブロードキャスト（vに勝ち）および待機
+    変更[ （1）
+endによるv]のスコア付け
+```
+
+- - /仕事 - -
+
+\--- task \--- 友達にゲームを試してもらいましょう。再生する前に、 `sequence`{：class = "block3variables"}リストを隠してください。 \--- /タスク\---
