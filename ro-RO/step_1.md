@@ -1,16 +1,16 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [versiune Scratch 2 a proiectului](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
 ## Introducere
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+În acest proiect vei crea un joc de memorie unde va trebui să memorezi și să repeți o secvență aleatorie de culori!
 
-### Ce ai de făcut
+### Ce veți face
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- no-print \--- Faceți clic pe steagul verde pentru a începe. Urmăriți secvența de culori afișate de rochia dansatorului și ascultați bataia de însoțire a tobei, apoi repetați culorile înapoi la ea. Dacă obțineți ordinea culorilor greșite, jocul este terminat!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
@@ -18,40 +18,40 @@ In this project, you will create a memory game in which you have to memorise and
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- numai printare \--- ![screenshot of finished game](images/screenshot.png) \--- / numai prin print
 
 ## \--- collapse \---
 
-## title: What you will learn
+## titlu: Ce veți învăța
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Cum să adăugați un sunet la proiectul Scratch
++ Cum se creează și se utilizează liste pentru stocarea datelor
++ Cum se creează și se utilizează blocuri personalizate pentru repetarea codului
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## titlu: Ce veți avea nevoie
 
-### Hardware
+### Dispozitive
 
-+ A computer capable of running Scratch 3
++ Un computer capabil de a rula Scratch 3
 
-### Software
+### Programe
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (fie [online](https://rpf.io/scratchon){: target = "_ blank"} sau [offline](https://rpf.io/scratchoff){: target = "_ blank"}) \--- /
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## titlu: Informații suplimentare pentru educatori
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Dacă doriți să printați acest proiect, folosiți[printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+Puteți [descarca proiectul finalizat aici](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
