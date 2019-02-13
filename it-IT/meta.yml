@@ -4,13 +4,13 @@ listed: true
 copyedit: false
 title: Memoria
 description: Crea un gioco di memoria, dove devi memorizzare e ripetere una sequenza di colori a caso!
-version: 4
-last_tested: 2017-01-01
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - 
     title: Introduzione
   - 
-    title: Colori a caso
+    title: Crea una sequenza di colori
   - 
     title: 'Sfida: Aggiungi un suono'
   - 
@@ -20,7 +20,7 @@ steps:
   - 
     title: Punteggio alto
   - 
-    title: "Sfida: Crea altri blocchi"
+    title: "Sfida: migliora il tuo gioco"
   - 
-    title: 'Sfida: Un altro costume'
+    title: 'Sfida: Più matite'
 
