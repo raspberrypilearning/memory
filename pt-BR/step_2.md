@@ -1,4 +1,4 @@
-## Create a colour sequence
+## Crie uma sequência de cores
 
 First create a character that can display a random sequence of colours.
 
@@ -18,10 +18,10 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 + Your game should use a different number to represent each colour:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = vermelho
+    + 2 = azul
+    + 3 = verde
+    + 4 = amarelo
 
 \--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
 
@@ -50,8 +50,8 @@ Each colour has a different number, so you can choose a random colour by randoml
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+quando clicar em bandeira verde
+insira (número aleatório entre (1) e (4)) a [sequencia v]
 ```
 
 \--- /task \---
@@ -67,10 +67,10 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
+quando clicar em bandeira verde
+apague (todos v) de [sequencia v]
+repita (5) vezes
+   insira (número aleatório entre (1) e (4)) a [sequencia v]
 end
 ```
 
