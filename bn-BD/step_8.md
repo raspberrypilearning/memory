@@ -1,5 +1,5 @@
-## What next?
+## তারপর কি?
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball), where you will make a game in which you have to avoid balls while moving from platform to platform.
+পরবর্তী প্রকল্পটি দেখুন, [ডোজবল](https://projects.raspberrypi.org/en/projects/dodgeball), যেখানে আপনি এমন একটি খেলা তৈরি করবেন যেখানে আপনি প্ল্যাটফর্ম থেকে প্ল্যাটফর্মে যাওয়ার সময় বলগুলি এড়াতে হবে।
 
-Or if you want to try another music-themed Scatch project, you can try the [Binary hero](https://projects.raspberrypi.org/en/projects/binary-hero) project.
+অথবা যদি আপনি অন্য সঙ্গীত-থিমযুক্ত স্ক্যাচ প্রকল্পটি চেষ্টা করতে চান তবে আপনি [বাইনারি হিরো](https://projects.raspberrypi.org/en/projects/binary-hero) প্রজেক্টটি চেষ্টা করতে পারেন।
