@@ -6,7 +6,7 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 ## Uvod
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+U ovom projektu kreiraćeš igru pamćenja u kojoj treba da zapamtiš i ponoviš slučajan niz boja!
 
 ### Šta ćeš napraviti
 
@@ -22,7 +22,7 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Šta ćeš naučiti
 
 + How to add sound to your Scratch project
 + How to create and use lists to store data
@@ -32,13 +32,13 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Šta će ti biti potrebno
 
-### Hardware
+### Hardver
 
-+ A computer capable of running Scratch 3
++ Računar koji može da pokrene Scratch 3
 
-### Software
+### Softver
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
 
@@ -48,7 +48,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Ukoliko je potrebno da odštampate ovaj projekat, koristite [verziju za štampu](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
