@@ -1,4 +1,4 @@
-## Add sound
+## Napravi niz boja
 
 \--- task \---
 
@@ -34,7 +34,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Ovako bi trebalo da izgleda završen kôd:
 
 ![ballerina](images/ballerina.png)
 
