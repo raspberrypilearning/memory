@@ -1,10 +1,10 @@
-## Add sound
+## إنشاء تسلسل من الألوان
 
 \--- task \---
 
 Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-\--- /task \---
+\---/task--
 
 Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
@@ -32,9 +32,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 (item (length of [sequence v]) of [sequence v])
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- سيكون الكود النهائي كالتالي:
 
 ![ballerina](images/ballerina.png)
 
@@ -49,8 +49,8 @@ repeat (5)
 end
 ```
 
-\--- /hint \---
+\--- hint/ \---
 
-\--- /hints \---
+\--- hints/ \---
 
 \--- /task \---
