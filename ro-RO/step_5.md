@@ -1,60 +1,60 @@
-## Multiple levels
+## Nivele multiple
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+Până în prezent, jucătorul trebuie doar să-și amintească o secvență de cinci culori. Îmbunătățiți-vă jocul prin adăugarea unui scor și adăugând un cod, astfel încât, în timp ce jucătorul să înscrie puncte, jocul trece la nivelul următor și secvența de culori pe care trebuie să o memoreze devine mai lungă.
 
-\--- task \--- Create a new variable called `score`{:class="block3variables"}.
+\--- task \--- Creați o nouă variabilă numită `scor`{: class = "block3variables"}.
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+[[[generic-scratch3-add-variable]]] \--- / sarcina \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+Bazat pe `scor`{: class = „block3variables“}, jocul va decide cu privire la lungimea secvenței de culori. Începeți cu un scor (și o lungime de secvență) de `3`.
 
-\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
+\--- task \--- Adăugați un bloc la începutul caracterului dvs. `atunci când ați făcut clic pe codul`{: class = "block3events"} pentru a seta `scor`{: class = "block3variables"} la `3`. \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+În loc să creați întotdeauna o secvență de cinci culori, doriți acum `scor`{: class = "block3variables"} pentru a determina lungimea secvenței.
 
-\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+\--- task \--- Modificați bucla (pentru crearea secvenței de culoare) a caracterelor `repeat`{: class = "block3control"} pentru a repeta `scoruri`{: class = "block3variables"} ori:
 
-![sprite](images/ballerina.png)
+![personaj](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables)
-end
+repetare (scor :: variabile)
+sfârșit
 ```
 
 \--- /task \---
 
-\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+\--- task \--- Dacă jucătorul repetă secvența corectă, ar trebui să adăugați `1` la `scor`{: class = "block3variables"}, și astfel crește lungimea secvenței următoare. Adăugați următorul bloc la codul caracterului **în punctul în care știți că secvența este corectă**:
 
-![sprite](images/ballerina.png)
+![personaj](images/ballerina.png)
 
 ```blocks3
-change [score v] by (1)
+schimba [scorul v] de către (1)
 ```
 
-\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
+\--- sugestii \--- \--- indiciu \--- Știți că secvența este corectă în momentul în care jocul `transmite`{: class = "block3events"} mesajul "victorie". \--- / indiciu \--- \--- / sugestii \---
 
 \--- /task \---
 
-\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+\--- task \--- În cele din urmă, adăugați o buclă `pentru totdeauna`{: class = "block3control"} în jurul codului care generează secvența, astfel încât jocul să creeze o nouă secvență de culoare pentru fiecare nivel. Acesta este modul în care ar putea arăta codul personajului dvs.
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of [sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
-end
+când flag apasat
+set [scor v] până la [3]
+pentru totdeauna
+    șterge (toate v) din [secvență v]
+    repeat (scor)
+        add (alege aleator (1) la (4)) la [secvență v]
+        costum comutator la (elementul (lungimea secvenței v)) a secvenței v
+        așteptați 1 secunde
+    sfârșitul
+    așteptați până la < (lungimea secvenței v) = [0]>
+    difuzați (câștigați v) și așteptați
+    schimbați [ scor v] de (1)
+sfarsit
 ```
 
 \--- /task \---
 
-\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
+\--- task \--- Obțineți-vă prietenii să vă testeze jocul. Nu uitați să ascundeți lista de `secvență`{: class = "block3variables"} înainte de ao reda! \--- / sarcina \---
