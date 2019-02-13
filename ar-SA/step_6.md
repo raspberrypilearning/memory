@@ -1,4 +1,4 @@
-## High score
+## أعلى درجة
 
 Now save the high score so that you can play against your friends.
 
@@ -39,7 +39,7 @@ set [high score v] to [ ]
 set [name v] to [ ] 
 ```
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- hint/ \--- \--- hint \--- هنا كيفية ظهور الكود الخاص بك عند النقر على الزر الأحمر:
 
 ![ballerina](images/ballerina.png)
 
