@@ -1,4 +1,4 @@
-## High score
+## Najbolji rezultat
 
 Now save the high score so that you can play against your friends.
 
@@ -39,7 +39,7 @@ set [high score v] to [ ]
 set [name v] to [ ] 
 ```
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- /hint \--- \--- hint \--- Ovako treba da izgleda tvoj kôd kada je pritisnuto crveno dugme:
 
 ![ballerina](images/ballerina.png)
 
