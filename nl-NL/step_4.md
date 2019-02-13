@@ -1,4 +1,4 @@
-## Repeat the sequence
+## Uitdaging: een geluid toevoegen
 
 Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
@@ -7,7 +7,7 @@ Now you're going to add four buttons the player has to press to repeat the colou
 + Edit the new sprites' costumes so that there is one sprite in each of the four colours
 + Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
-![screenshot](images/colour-drums.png) \--- /task \---
+![screenshot](images/colour-drums.png) \---/task\---
 
 \--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
 
@@ -22,7 +22,7 @@ Now you're going to add four buttons the player has to press to repeat the colou
 
 A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
-\--- task \---
+\--- task \----
 
 Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
 
@@ -30,7 +30,7 @@ Add similar code to the blue, green, and yellow sprites to make them `broadcast`
 
 Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
 
-\--- task \---
+\--- task \----
 
 When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
 
@@ -52,14 +52,14 @@ end
 
 \--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- Kun je de getallen gebruiken die overeenkomen met elke kleur om de juiste trommelgeluiden af te spelen?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
++ 1 = rood
++ 2 = blauw
++ 3 = groen
 + 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- / hint \--- \--- hint \--- Dit is de code die je moet toevoegen:
 
 ```blocks3
 when I receive [red v]
