@@ -1,88 +1,88 @@
-## Create a colour sequence
+## Creează o secvenţă de culori
 
-First create a character that can display a random sequence of colours.
+Mai întâi creați un caracter care poate afișa o secvență aleatoare de culori.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- Deschide un nou proiect Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratchon](https://rpf.io/scratchon).
+**Online**: deschideți un nou proiect Scratch online la [rpf.io/scratchon](https://rpf.io/scratchon).
 
-**Offline**: open a new project in the offline editor.
+**Offline**: deschideți un nou proiect în editorul offline.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Dacă trebuie să descărcați și să instalați editorul Scratch offline, îl puteți găsi la [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- Alege un sprite de caractere și un fundal. Ai putea folosi balerina, dar personajul tău nu trebuie să fie o persoană, trebuie doar să poată arăta culori diferite.
 
-![screenshot](images/colour-sprite.png) \--- /task \---
+![captură de ecran](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ Jocul dvs. ar trebui să utilizeze un număr diferit pentru a reprezenta fiecare culoare:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = roșu
+    + 2 = albastru
+    + 3 = verde
+    + 4 = galben
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- Dă personajul tău patru costume care au culori diferite, câte un costum pentru fiecare dintre cele patru culori prezentate mai sus. Asigurați-vă că costumele dvs. colorate sunt în aceeași ordine ca și lista de mai sus.
 
-![screenshot](images/colour-costume.png) \--- /task \---
+![captură de ecran](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Dacă doriți, puteți utiliza instrumentul de culoare **forma** pentru a umple părțile costumului cu o altă culoare.
 
-![color-a-shape](images/color-a-shape.png)
+![culoare-o formă](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Apoi, adăugați o listă pentru stocarea secvenței aleatoare a culorilor pe care playerul trebuie să o rețină.
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- Creați o listă numită `secvență`{: class = "block3variables"}. Numai caracterul sprite trebuie să vadă această listă, astfel încât să puteți selecta **Pentru această sprite numai** când creați lista.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Ar trebui să vedeți acum o mulțime de blocuri de cod noi pentru utilizarea listelor. Lista golităii ar trebui să fie vizibilă în colțul din stânga sus al scenei.
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![captură de ecran](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Fiecare culoare are un număr diferit, astfel încât să puteți alege o culoare aleatoră prin alegerea aleatorie a unui număr și adăugarea acestuia în listă.
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- Adăugați acest cod la caracterul sprite pentru a alege un număr aleator și a adăuga la `secvență`{: class = "block3variables"}:
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+atunci când faceți clic pe pavilion
+adăugați (alegeți aleatoriu (1) la (4)) la [secvența v]
 ```
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- Testați-vă codul. Verificați că, de fiecare dată când faceți clic pe pavilion, un număr aleator între 1 și 4 se adaugă la listă. \--- / sarcina \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- Puteți adăuga codul programului dvs. pentru a genera cinci numere aleatorii dintr-o dată?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- indicii \--- \--- indiciu \--- Adăugați o `șterge toate secvenței`{: class = „block3variables“} pentru a șterge mai întâi toate elementele de pe listă, și apoi se adaugă o `repetare`{block: block3control}} care adaugă cinci numere aleatorii în listă. \--- / indiciu \--- \--- indiciu \---
 
-This is what your code should look like:
+Acesta ar trebui să arate codul dvs.:
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
+când pavilion apasat
+șterge (toate v) [secvență v]
 repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+    add (alege aleator (1) la (4)) la [secvență v]
+capăt
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / indiciu \--- \--- / sugestii \--- \--- / sarcina \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- De fiecare dată când un număr se adaugă la listă, personajul trebuie să-și schimbe costumul, astfel încât culoarea costumului să se potrivească cu numărul. Pune aceste blocuri în codul imediat mai jos în cazul în care se adaugă un număr aleatoriu la `secvență de`{: class = „block3variables“}:
 
-![ballerina](images/ballerina.png)
+![balerină](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+comutați costumul la (elementul (lungimea secvenței v) a secvenței v)
+așteptați (1) secunde
 ```
 
 \--- /task \---
