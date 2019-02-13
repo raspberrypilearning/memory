@@ -1,4 +1,4 @@
-## Add sound
+## Crie uma sequência de cores
 
 \--- task \---
 
@@ -34,7 +34,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Aqui está como o seu código deve ficar:
 
 ![ballerina](images/ballerina.png)
 
