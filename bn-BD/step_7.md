@@ -1,39 +1,39 @@
-## Challenge: improve your game
+## চ্যালেঞ্জ: আপনার খেলা উন্নত
 
-### Make more blocks
+### আরো ব্লক করুন
 
-Do you see any other code that is the same for all four buttons?
+আপনি কি চারটি বোতামের জন্য একই কোড দেখতে পান?
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
-end
+যখন আমি [লাল v]
+পাই তখন যদি <(আইটেমটি 1 বনাম) [ক্রম বনাম] =[1]> তারপর
+    ড্রাম (\ (1 \) স্ন্যারে ড্রাম v) (0.25)
+    মুছে ফেলবে (1 ভি) [ধারাবাহিক বনাম]
+আর
+    খেলা শেষ :: কাস্টম
+এন্ড
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+যখন আমি [নীল ভী]
+যদি <(আইটেমটি (1 বনাম) [ক্রম বনাম]) =[1]> তারপর
+    ড্রাম (\ (2 \ ) বাশ ড্রাম v) জন্য (0.25)
+    বিট (1 বনাম) [ক্রম V]]
+
+    খেলা শেষ :: কাস্টম
+শেষ
 ```
 
-Can you make another custom block that all buttons can use?
+আপনি অন্য বোতাম ব্যবহার করতে পারেন যে অন্য কাস্টম ব্লক করতে পারেন?
 
-### Another costume
+### অন্য পোশাক
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+আপনি কি দেখতে পাচ্ছেন যে আপনার চরিত্রটি চার অক্ষরের মধ্যে একটি দেখিয়ে আপনার চরিত্রের সাথে শুরু করে এবং প্লেয়ার রঙ ক্রমটি পুনরাবৃত্তি করার সময় চরিত্র ক্রমানুসারে সর্বদা শেষ রঙ প্রদর্শন করে?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+আপনি কি আপনার চরিত্রটিতে অন্য একটি সাধারণ সাদা পোশাক পরিধান করতে পারেন এবং কোড যোগ করতে পারেন যাতে অক্ষরটি খেলাটির শুরুতে এই পোশাকটি প্রদর্শন করে এবং প্লেয়ার ক্রমটি পুনরাবৃত্তি করছে?
 
 ![screenshot](images/colour-white.png)
 
-### Difficulty level
+### কাঠিন্য মাত্রা
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+'সহজ মোডে' (শুধুমাত্র লাল এবং নীল রঙের সাহায্যে) এবং 'স্বাভাবিক মোড' (যা চারটি রং ব্যবহার করে) এ খেলাটি খেলতে আপনার প্লেয়ারকে চয়ন করতে পারবেন?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+যদি আপনি চান, আপনি এমনকি একটি 'হার্ড' মোড যোগ করতে পারেন, যা একটি পঞ্চম ড্রাম ব্যবহার করে!
