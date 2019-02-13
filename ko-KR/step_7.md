@@ -1,39 +1,39 @@
-## Challenge: improve your game
+## 과제 : 게임 개선
 
-### Make more blocks
+### 더 많은 블록 만들기
 
-Do you see any other code that is the same for all four buttons?
+4 개의 버튼 모두에 대해 다른 코드가 보이십니까?
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
-end
+I는 [적색 V] 나타나면
+경우 <(항목 (1 V) [서열 V]의) =[1]> 다음
+    재생 드럼 (\ (1 \)은 스네어 드럼 V) (0.25)에 대한 박동
+    삭제 (1 V) 여기서 시퀀스 V]
+그 밖의
+    위에 :: 지정 게임
+단
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+I가 [블루 V]를 수신
+의 경우 <(아이템 (1 V) 여기서 시퀀스 V) =[1]> 다음
+    플레이 드럼 (\ (2 \ )베이스 드럼 v) (0.25) 박자
+    삭제 (1 v) [시퀀스 v]
+기타
+    게임 오버 : 커스텀
+종료
 ```
 
-Can you make another custom block that all buttons can use?
+모든 버튼에서 사용할 수있는 다른 맞춤 블록을 만들 수 있습니까?
 
-### Another costume
+### 다른 의상
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+캐릭터가 네 가지 색상 중 하나를 나타내는 것으로 게임이 시작되고 플레이어가 색상 순서를 반복하는 동안 캐릭터가 항상 시퀀스의 마지막 색상을 표시한다는 것을 알 수 있습니까?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+캐릭터에 또 다른 평범한 의상을 입히고, 캐릭터가 게임 시작과 플레이어가 시퀀스를 반복하면서이 의상을 표시하도록 코드를 추가 할 수 있습니까?
 
 ![screenshot](images/colour-white.png)
 
-### Difficulty level
+### 난이도
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+플레이어가 게임을 '쉬운 모드'(적색과 파란색 만 사용)와 '일반 모드'(4 가지 색상 모두 사용) 중에서 선택하도록 허용 할 수 있습니까?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+원하는 경우 다섯 번째 드럼을 사용하는 '하드'모드를 추가 할 수도 있습니다!
