@@ -34,7 +34,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Ось як має виглядати ваш готовий код:
 
 ![ballerina](images/ballerina.png)
 
