@@ -1,158 +1,159 @@
-## High score
+## 높은 점수
 
-Now save the high score so that you can play against your friends.
+이제 높은 점수를 저장하여 친구들과 놀 수 있습니다.
 
-\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
+\--- task \--- `높은 점수`{: class = "block3variables"}와 `이름`{: class = "block3variables"}라는 두 개의 새로운 변수를 프로젝트에 추가하십시오. \--- / task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+플레이어가 시퀀스가 잘못되어 게임이 끝나면 게임은 현재 높은 점수보다 높은 점수인지 확인해야합니다. 그렇다면 게임은 점수를 높은 점수로 저장해야하며 플레이어의 이름도 저장해야합니다.
 
-\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- task \--- `높은 점수`{{class = "block3variables"}를 저장하기 위해 캐릭터 스프라이트에 코드를 추가하십시오. 또한 플레이어의 이름을 물어보고 `name`{: class = "block3variables"} 변수에 저장하십시오.
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
+\--- 힌트 \--- \--- 힌트 \--- 새로운 코드는이 패턴을 따라야합니다 :
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+애프터 `게임 위에`{CLASS = "block3looks"} 메시지 `의 경우`{CLASS = "block3control"}를 `점`{CLASS = "block3variables"}를 `이상`클래스 = "block3operators { "}는 `고득점`{CLASS ="block3variables "} `세트`{CLASS ="block3variables "}을 `고득점`{CLASS ="block3variables의 "로} `골`{CLASS =" block3variables "} `질문`{: 클래스 ="block3sensing "플레이어의 이름} `세트`{: 클래스 ="block3variables "}는 `명`{: 클래스 ="받는 block3variables "} `답`{: class = "block3sensing"} \--- / 힌트 \--- \--- 힌트 \---
 
-You need the following blocks:
+다음 블록이 필요합니다.
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
-if < > then
-end
+< > 점
+점
 
-(score)
+점
 
-(score)
+점
 
-[ ] > [ ]
+점 > 점
 
-answer
+점
 
-(high score)
+점
 
-ask [What's your name?] and wait
+점
 
-set [high score v] to [ ] 
+점 [높은 점수 v] ~ [ 
 
-set [name v] to [ ] 
+점] 이름 v]를 [] 
 ```
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- / 힌트 \--- \--- 힌트 \--- 다음은 빨간 버튼을 눌렀을 때의 코드입니다 :
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
+I는 [적색 V] 나타나면
+경우 <(항목 (1 V) [서열 V]의) =[1]> 다음,
+    (0.25) 심박동 재생 드럼 (항목 (1 V) [서열 V]로)
+    삭제 (1 V) [서열 V]의
+다른
+    말 [위에 게임!] (1) 초
+    의 경우 < (점수 : 변수) > (고득점) > 다음,
+        (점수 : 변수 집합 [고득점 V] )
+        [높은 점수! 당신의 이름은 무엇입니까?]
+        기다림 [이름 v]를 (답)
+    끝
+    멈춤 [모두 끝]
+끝
+```
+
+\--- / 힌트 \--- \--- / 힌트 \--- \--- / 작업 \---
+
+다른 세 가지 색상에 대해서도이 새로운 코드를 문자 스프라이트에 추가해야합니다!
+
+네 가지 색상 각각에 대한 '게임 오버'코드가 정확히 동일하다는 것을 알 수 있습니까?
+
+![발레리나](images/ballerina.png)
+
+```blocks3
+[게임 오버!] (1 초) 동안
+ < (점수 :: 변수) > (높은 점수) > 다음
+    세트 [높은 점수 v] (점수 :: 변수)
+    [높은 점수! 당신의 이름은 무엇입니까?] 그리고 기다림
+    [이름 v]를 (답)
+
+종료 [모두 v]
+```
+
+예를 들어 사운드를 추가하거나 'Game Over'메시지를 변경하는 것과 같은 'Game Over'코드를 변경해야하는 경우 4 번 변경해야합니다. 그것은 짜증나고 많은 시간을 낭비합니다.
+
+대신 자신 만의 코드 블록을 정의하여 프로젝트의 어느 곳에서나 사용할 수 있습니다.
+
+\--- 작업 \--- 을 클릭 `내 블록`{: 클래스 = "block3myblocks"}, 다음에 **블록 확인**. 이 새로운 블록을 호출하십시오 `Game over`{: class = "block3myblocks"}.
+
+\--- /task \---
+
+\--- task \--- `게임 오버`{{class = "block3events"} 브로드 캐스트 된 `빨간색`{: class = "block3control"} 블록에 연결된 `else`{: class = "block3control"} 블록의 코드를 추가합니다. "block3myblocks"} 블록으로 다음과 같이 보입니다 :
+
+![발레리나](images/ballerina.png)
+
+```blocks3
+이상 게임을 정의
+말 [이상 게임!] (1) 초
+경우 < (점수 : 변수) > (높은 점수) > 다음
+    (점수 : 변수)에 세트 [높은 점수 V]가
+    질문 [높은 점수 ! 당신의 이름은 무엇입니까?] 그리고 기다림
+    [이름 v]를 (답)
+
+종료 [모두 v]
+```
+
+\--- /task \---
+
+\--- task \--- 이제 `빨간색`{: class = "block3events"} 브로드 캐스트에 연결된 `else`{: class = "block3control"} 블록에있는 코드를 제거하고 `Game Over`{: class = "block3myblocks"} 대신 블록 :
+
+![발레리나](images/ballerina.png)
+
+```blocks3
+I는 [적색 V] 나타나면
+경우 <(항목 (1 V) [서열 V]의) =[1]> 다음
+    재생 드럼 (\ (1 \)은 스네어 드럼 V) (0.25)에 대한 박동
+    삭제 (1 V) [시퀀스 v]
 else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
-end
-```
-
-\--- /hint \--- \--- /hints \--- \--- /task \---
-
-You need to add this new code to the character sprite for the other three colours too!
-
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
-
-![ballerina](images/ballerina.png)
-
-```blocks3
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
-```
-
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
-
-Instead, you can define your own code block, and use it anywhere in your project.
-
-\--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
-
-\--- /task \---
-
-\--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
-
-![ballerina](images/ballerina.png)
-
-```blocks3
-define Game over
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+    게임 오버 : : 사용자 정의
+끝
 ```
 
 \--- /task \---
 
-\--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+\--- task \--- 게임을하고 색상 순서의 잘못된 지점에서 빨간 버튼을 클릭하여 새 블록을 테스트하십시오. \--- / 작업 \---
 
-![ballerina](images/ballerina.png)
+새로운 `Game over`{: class = "block3myblocks"} 블록은 **함수**.</code>{{class = "block3myblocks"}} 블록을 통해 `Game을 추가하여 코드에서 원하는 곳이면 어디든 사용할 수있는 작은 스크립트입니다. 에서.</p>
+
+<p>--- task ---
+ <code>브로드 캐스트`{{class = "block3events"}에 연결된 `else`{: class = "block3control"} 블록의 코드를 새 `Game Over로 다른 색상으로 대체하십시오`{: class = "block3myblocks"} 블록. 다음은 `파란색`{: class = "block3events"} 메시지의 코드입니다.
+
+![발레리나](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
+I는 [블루 V] 나타나면
+경우 <(항목 (1 V) [서열 V]의) =[1]> 다음
+    재생 드럼 (\ (2 \)은베이스 드럼 V) (0.25)에 대한 박동
+    삭제 (1 V) [시퀀스 v]
 else
-    Game over :: custom
-end
+    게임 오버 : : 사용자 정의
+끝
 ```
 
 \--- /task \---
 
-\--- task \--- Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence. \--- /task \---
+\--- task \--- 잘못된 버튼을 누르면 소리가납니다. 당신은 단지 한 번이 코드를 추가 할 필요가 `이상 게임`{: 클래스 = "block3myblocks"} 블록 당신이 만든, 그리고 네 개의 개별 번!
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
-
-\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
-
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
-```
+게임 오버를 정의
+시작 음 [Cough1의 V]
+(1) 초 [위에 게임!] 말
+의 경우 < (점수 : 변수) > (고득점) > 다음
+    소리 재생 (trumpet1의 V)
+    세트 [고득점 v] ~ (score)
+    [높은 점수! 당신의 이름은 무엇입니까?] 그리고 기다림
+    [이름 v]를 (답)
 
-\--- /task \---
-
-\--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
-
-![ballerina](images/ballerina.png)
-
-```blocks3
-define Game over
-start sound [Cough1 v]
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+종료 [모두 v]
 ```
 
 \--- /task \---
