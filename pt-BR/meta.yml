@@ -4,23 +4,23 @@ listed: true
 copyedit: false
 title: Jogo da memória
 description: Crie um jogo de memória no qual você memoriza e repete uma sequência aleatória de cores
-version: 4.0.1
-last_tested: 2017-01-01
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - 
     title: Introdução
   - 
-    title: O que você vai precisar
+    title: Crie uma sequência de cores
   - 
     title: Crie uma sequência de cores
   - 
     title: 'Desafio: Adicionando som'
   - 
-    title: Repetindo a sequência
-  - 
     title: Múltiplos níveis
   - 
-    title: "Recorde"
+    title: Recorde
   - 
-    title: 'Desafio: Criar mais blocos'
+    title: "Desafio: melhore seu jogo"
+  - 
+    title: E agora?
 
