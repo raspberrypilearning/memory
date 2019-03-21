@@ -16,7 +16,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
     
 <div class="scratch-preview">
 <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no"></iframe>
-<img src="images/colour-final.png">
+<img src="images/screenshot.png">
 </div>
 --- /no-print ---
 
