@@ -5,7 +5,7 @@ First create a character that can display a random sequence of colours.
 --- task ---
 Open a new Scratch project.
 
-**Online**: open a new online Scratch project at [rpf.io/scratchon](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
 
 **Offline**: open a new project in the offline editor.
 
