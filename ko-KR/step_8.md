@@ -1,5 +1,20 @@
 ## 더 나아가기
 
-다음 프로젝트 인 [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball)사용해보십시오. 플랫폼에서 플랫폼으로 이동하면서 공을 피하는 게임을 만들 것입니다.
+Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
 
-또는 다른 음악 테마의 Scatch 프로젝트를 시도하려는 경우 [Binary hero](https://projects.raspberrypi.org/en/projects/binary-hero) 프로젝트를 시도 할 수 있습니다.
+\--- no-print \---
+
+Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+
+<div class="scratch-preview">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0" scrolling="no"></iframe>
+  <img src="images/dodge-final.png">
+</div>
+
+\--- /no-print \---
+
+\--- print-only \---
+
+![dodgeball game being played](images/dodgeball-showcase.png)
+
+\--- /print-only \---
