@@ -4,7 +4,7 @@
 
 \--- /no-print \---
 
-## 소개
+## 들어가며
 
 이 프로젝트에서는 무작위로 연속 나오는 색상 순서를 기억하고 반복하는 메모리 게임을 만듭니다!
 
@@ -13,7 +13,7 @@
 \--- no-print \--- 시작하려면 녹색 플래그를 클릭하십시오. 댄서의 드레스에 표시된 색상 순서를보고 동반하는 드럼 비트를 듣고 다시 색상을 반복하십시오. 색상 순서가 잘못되면 게임이 끝납니다!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
 \--- /no-print \---
@@ -30,7 +30,7 @@
 
 \--- /collapse \---
 
-## \--- 중간생략 \---
+## \--- collapse \---
 
 ## title: 준비물
 
@@ -42,7 +42,7 @@
 
 스크래치 3 ( [온라인](https://rpf.io/scratchon){: target = "_ blank"} 또는 오프라인 [](https://rpf.io/scratchoff){: target = "_ blank"}) \--- / collapse \---
 
-## \--- 중간생략 \---
+## \--- collapse \---
 
 ## title : 교사를위한 추가 정보
 
