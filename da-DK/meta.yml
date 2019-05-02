@@ -1,0 +1,26 @@
+---
+hero_image: images/memory.png
+listed: true
+copyedit: false
+title: Hukommelsesspil
+description: I dette projekt skal vi lave et hukommelsesspil, hvor du skal huske og gentage en rækkefølge af tilfældige farver!
+version: 4.0.1
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Hukommelsesspil
+  - 
+    title: Create a colour sequence
+  - 
+    title: Add sound
+  - 
+    title: Repeat the sequence
+  - 
+    title: Multiple levels
+  - 
+    title: High score
+  - 
+    title: "Challenge: improve your game"
+  - 
+    title: What next?
+
