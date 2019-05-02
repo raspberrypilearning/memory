@@ -1,39 +1,39 @@
-## Challenge: verbeter je spel
+## Uitdaging: verbeter je spel
 
-### Make more blocks
+### Maak meer blokken
 
-Do you see any other code that is the same for all four buttons?
+Zie je nog meer code die voor alle knoppen hetzelfde is?
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
+wanneer ik signaal [rood v] ontvang
+als <((1 v) van [reeks v]) =[1]> dan
+    speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
+    verwijder (1 v) van [reeks v]
+anders
     Game Over :: custom
-end
+einde
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
+wanneer ik signaal [blauw v] ontvang
+if <((1 v) van [reeks v]) =[1]> then
+    speel drum (\(2\) Basdrum v) gedurende (0,25) maten
+    verwijder (1 v) van [reeks v]
+anders
     Game over :: custom
-end
+einde
 ```
 
-Can you make another custom block that all buttons can use?
+Kun je een ander aangepast blok maken dat alle knoppen kunnen gebruiken?
 
-### Another costume
+### Nog een kostuum
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+Zie je dat je spel begint met je personage met een van de vier kleuren en dat het personage altijd de laatste kleur in de reeks weergeeft terwijl de speler de volgorde van de kleuren herhaalt?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+Kun je nog een gewoon wit kostuum aan je personage toevoegen en code toevoegen zodat het personage dit kostuum aan het begin van het spel laat zien en terwijl de speler de reeks herhaalt?
 
 ![screenshot](images/colour-white.png)
 
-### Difficulty level
+### Moeilijkheidsgraad
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+Kun je je speler laten kiezen tussen 'eenvoudige modus' (alleen de rode en blauwe trommels gebruiken) en 'normale modus' (die alle vier de trommels gebruikt)?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+Je zou zelfs een 'moeilijke' modus kunnen toevoegen, die gebruik maakt van een vijfde trommel!
