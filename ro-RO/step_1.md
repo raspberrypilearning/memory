@@ -13,7 +13,7 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 \--- no-print \--- Faceți clic pe steagul verde pentru a începe. Urmăriți secvența de culori afișate de rochia dansatorului și ascultați bataia de însoțire a tobei, apoi repetați culorile înapoi la ea. Dacă obțineți ordinea culorilor greșite, jocul este terminat!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
 \--- /no-print \---
