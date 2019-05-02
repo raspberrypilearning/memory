@@ -1,16 +1,16 @@
-## Maak een kleurenreeks
+## Geluid toevoegen
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Test je project een paar keer. Merk je dat soms hetzelfde nummer twee keer (of meer) achter elkaar wordt gekozen, waardoor de volgorde moeilijker te onthouden is?
 
 \---/task\---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Kun je een drumgeluid laten spelen telkens als de personagesprite van kostuum verandert? En wat dacht je van een ander drumgeluid voor elke kleur?
 
 \--- task \----
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Voeg de Muziek-extensie toe aan je project zodat je het `drum afspelen`{:class="block3extensions"} blok kunt gebruiken.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,34 +18,34 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \----
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+De code die de drum speelt is **erg** vergelijkbaar met de code die het kostuum van het personage verandert.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Je hoeft slechts twee blokken toe te voegen: een `speel drum voor (0.25) beats`{:class="block3sound"} blok en een `item (lengte van reeks) van reeks`{:class="block3variabees"} blok. \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Dit zijn de blokken die je nodig hebt:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
 
-(item (length of [sequence v]) of [sequence v])
+(item (lengte van [reeks v]) van [reeks v])
 ```
 
 \--- /hint \---
 
 \--- hint \--- Zo zou het voltooide programma eruit moeten zien:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
+wanneer groene vlag wordt aangeklikt
+verwijder (alle v) van [reeks v]
+herhaal  (5) 
+  voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
+  speel drum (item (laatste v) van [reeks v]) gedurende (0.25) maten
+  verander uiterlijk naar (item (laatste v) van [reeks v])
+  wacht (1) sec.
 end
 ```
 
