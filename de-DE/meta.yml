@@ -4,23 +4,23 @@ listed: true
 copyedit: false
 title: Gedächtnis
 description: In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
-version: 4
-last_tested: 2017-01-01
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - 
-    title: Einführung
+    title: Einleitung
   - 
-    title: Zufällige Farben
+    title: 'Herausforderung: Geräusche hinzufügen'
   - 
     title: 'Herausforderung: Geräusche hinzufügen'
   - 
     title: Reihenfolge wiederholen
   - 
-    title: Mehrere Ebenen
+    title: Mehrfachstimmen
   - 
-    title: Höchstpunktestand
+    title: Hohe Punktzahl
   - 
     title: "Herausforderung: Erstelle mehr Blöcke"
   - 
-    title: 'Herausforderung: Ein weiteres Kostüm'
+    title: 'Zusatzaufgabe: mehr Stifte'
 
