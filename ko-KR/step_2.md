@@ -4,7 +4,7 @@
 
 \--- task \--- 새 Scratch 프로젝트를 엽니 다.
 
-**온라인**: 새로운 온라인 스크래치 프로젝트를 [rpf.io/scratchon에서 엽니 다.](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
 
 **오프라인**: 오프라인 편집기에서 새 프로젝트를 엽니 다.
 
@@ -19,7 +19,7 @@ Scratch 오프라인 편집기를 다운로드하여 설치해야하는 경우 [
 + 게임에서 각 색상을 나타내는 데 다른 숫자를 사용해야합니다.
     
     + 1 = 적색
-    + 2 = 파랑
+    + 2 = 청색
     + 3 = 녹색
     + 4 = 노란색
 
