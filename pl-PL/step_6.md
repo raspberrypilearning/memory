@@ -1,6 +1,6 @@
-## High score
+## Tabela wyników
 
-Now save the high score so that you can play against your friends.
+Teraz zapisz nalepszy wynik, aby móc grać przeciwko znajomym.
 
 \--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
 
@@ -14,9 +14,9 @@ When the game ends because the player gets the sequence wrong, the game should c
 
 After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
-You need the following blocks:
+Potrzebujesz następujących bloków:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 if < > then
@@ -41,7 +41,7 @@ set [name v] to [ ]
 
 \--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -52,11 +52,11 @@ else
     say [Game over!] for (1) seconds
     if < (score :: variables) > (high score) > then
         set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
-end
+        ask [High score! Jak masz na imię?] I czekać
+        ustawić [imię v] na (odpowiedź)
+    koniec
+    zatrzymać [wszystkie v]
+koniec
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
@@ -65,7 +65,7 @@ You need to add this new code to the character sprite for the other three colour
 
 Can you see that the 'Game over' code for each of the four colours is exactly the same?
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 say [Game over!] for (1) seconds
@@ -79,7 +79,7 @@ stop [all v]
 
 If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
-Instead, you can define your own code block, and use it anywhere in your project.
+Zamiast tego możesz zdefiniować własny blok kodu i używać go w dowolnym miejscu projektu.
 
 \--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
@@ -87,7 +87,7 @@ Instead, you can define your own code block, and use it anywhere in your project
 
 \--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 define Game over
@@ -104,7 +104,7 @@ stop [all v]
 
 \--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -122,9 +122,9 @@ end
 
 Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
 
-\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Oto jak powinien wyglądać kod `niebieski`{:class="block3events"}
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
@@ -140,7 +140,7 @@ end
 
 \--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 define Game over
