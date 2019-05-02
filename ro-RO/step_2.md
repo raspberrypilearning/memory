@@ -4,7 +4,7 @@ Mai întâi creați un caracter care poate afișa o secvență aleatoare de culo
 
 \--- task \--- Deschide un nou proiect Scratch.
 
-**Online**: deschideți un nou proiect Scratch online la [rpf.io/scratchon](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
 
 **Offline**: deschideți un nou proiect în editorul offline.
 
