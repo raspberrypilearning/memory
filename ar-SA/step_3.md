@@ -2,15 +2,15 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+اختبر مشروعك عدة مرات، هل لاحظت بأنه في بعض الأحيان يتم اختيار نفس الرقم مرتين (أو أكثر) على التوالي، مما يترتب عليه صعوبة حفظ التسلسل؟
 
 \---/task--
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+هل يمكنك إضافة صوت طبل بحيث يشتغل في كل مرة تقوم بها الشخصية بتغيير مظهرها؟ و ماذا عن صوت طبل مختلف لكل لون؟
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+أضف ملحق الموسيقى إلى مشروعك حتى تتمكن من استخدام كتلة `دقّ الطبل`{:class="block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,34 +18,34 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+التعليمات البرمجية التي تشغل الطبل **مشابهه جداً**للتعليمات البرمجية التي تقوم بتغيير مظهر الشخصية.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- تحتاج فقط لإضافة كتلتين:`دقّ الطبل لمدة (0.25) وحدة ايقاع`{:class="block3sound"} block و كتلة `العنصر (طول تسلسل) من تسلسل`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+إليك الكتل التي تحتاجها:
 
-![ballerina](images/ballerina.png)
+![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+دقَّ الطبل ((1) Snare Drum v) لمدة (0.25) وحدة إيقاع :: music
 
-(item (length of [sequence v]) of [sequence v])
+(العنصر (طول [تسلسل v] :: list) من [تسلسل v] :: list)
 ```
 
 \--- hint/ \---
 
 \--- hint \--- سيكون الكود النهائي كالتالي:
 
-![ballerina](images/ballerina.png)
+![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
+عند نقر ⚑ :: events
+احذف (الكل v) من [تسلسل v] :: list
+كرِّر (5) مرة 
+  أضف (اختر عددًا عشوائيًا بين (1) و (4) :: operators) إلى [تسلسل v] :: list
+  دقَّ الطبل (العنصر (طول [تسلسل v] :: list) من [تسلسل v] :: list) لمدة (0.25) وحدة إيقاع :: music
+  غيّر المظهر إلى (العنصر (طول [تسلسل v] :: list) من [تسلسل v] :: list) :: looks
+  انتظر (1) ثانية :: control :: control
 end
 ```
 
