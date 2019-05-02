@@ -1,0 +1,26 @@
+---
+hero_image: images/memory.png
+listed: true
+copyedit: false
+title: मेमोरी
+description: मेमोरी गेम बनाएँ, जिसमें आप बेतरतीब रंगों के बेतरतीब अनुक्रम को याद रखते और दोहराते हैं
+version: 4.1.0
+last_tested: 2018-10-04
+steps:
+  - 
+    title: भूमिका
+  - 
+    title: आपको किसकी ज़रूरत होगी
+  - 
+    title: रंगों का अनुक्रम बनाएँ
+  - 
+    title: 'चुनौती: ध्वनि जोड़ना'
+  - 
+    title: अनुक्रम दोहराना
+  - 
+    title: अनेक स्तर
+  - 
+    title: "उच्च स्कोर"
+  - 
+    title: 'चुनौती: और ब्लॉक बनाना'
+
