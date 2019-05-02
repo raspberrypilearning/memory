@@ -1,0 +1,26 @@
+---
+hero_image: images/memory.png
+listed: true
+copyedit: false
+title: Cofio
+description: Creu gêm gofio, lle mae'n rhaid i ti gofio ac ailadrodd dilyniant o liwiau ar hap!
+version: 4
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Cyflwyniad
+  - 
+    title: Lliwiau ar hap
+  - 
+    title: 'Her: Ychwanegu sain'
+  - 
+    title: Ailadrodd y dilyniant
+  - 
+    title: Lefelau gwahanol
+  - 
+    title: Sgôr Uchel
+  - 
+    title: "Her: Creu mwy o flociau"
+  - 
+    title: 'Her: Gwisg arall'
+
