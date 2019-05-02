@@ -1,60 +1,60 @@
-## Multiple levels
+## Múltiples niveles
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+Hasta ahora, el jugador solo tiene que recordar una secuencia de cinco colores. Mejora tu juego añadiendo una puntuación, y agregando código para que a medida que el jugador consigue puntos, el juego se mueve al siguiente nivel y la secuencia de color para recordar se vuelve más larga.
 
-\--- task \--- Create a new variable called `score`{:class="block3variables"}.
+\--- Crea una nueva variable llamada ` puntuación ` {: class = "blockdata"}.
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+Basado en la `puntuaci'on`{:class="block3variables"}, el juego decidirá sobre la longitud de la secuencia de color. Empieza con una puntuación (y una longitud de secuencia) de `3`.
 
-\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
+\--- tarea \--- Agrega un bloque al comienzo de tu personaje` cuando se hace clic en la bandera ` {: class = "block3events"} programa para establecer la puntuación ` ` {: class = "block3variables"} a ` 3 `. \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+En lugar de crear siempre una secuencia de cinco colores, ahora quiere la puntuación ` ` {: class = "block3variables"} para determinar la longitud de la secuencia.
 
-\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
-
-![sprite](images/ballerina.png)
-
-```blocks3
-repeat (score :: variables)
-end
-```
-
-\--- /task \---
-
-\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+\--- tarea \--- Cambia el bucle `repetir`{:class="block3control"} para crear la secuencia de color) para repetir `score`{:class="block3variables"} veces:
 
 ![sprite](images/ballerina.png)
 
 ```blocks3
-change [score v] by (1)
+repetir (puntuación :: variables)
+final
 ```
-
-\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
 
 \--- /task \---
 
-\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+\--- tarea \--- Si el jugador repite la secuencia correcta, debes agregar ` 1 ` a ` puntuación ` {: class = "block3variables"}, y al hacerlo aumenta la duraci'on de la siguiente secuencia. Agregue el siguiente bloque al código del personaje ** en el punto en que sabe que la secuencia es correcta **:
 
-![ballerina](images/ballerina.png)
+![sprite](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of [sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
-end
+cambiar [puntuación v] por (1)
+```
+
+\--- pistas \--- \--- pista \--- Sabes que la secuencia es correcta en el momento en que el juego `emite`{:class="block3events"} el mensaje 'ganador'. \--- /hint \--- \--- /hints \---
+
+\--- /task \---
+
+\--- tarea \--- Finalmente, agrega un ` siempre ` {: class = "block3control"} da vueltas al código que genera la secuencia, de modo que el juego cree una nueva secuencia de colores para cada nivel. Así es como se ve el código de tu personaje:
+
+![bailarina](images/ballerina.png)
+
+```blocks3
+cuando se hace clic en la bandera
+establece [puntuación v] en [3]
+para siempre
+    elimina (toda v) de [secuencia v]
+    repite (puntúa)
+        agrega (elige al azar (1) a (4)) a [secuencia v]
+        cambiar traje a (elemento (longitud de [secuencia v]) de [secuencia v]
+        espere (1) segundos
+    finalice
+    espere hasta < (longitud de [secuencia v]) = [0]>
+    transmisión (ganada v) y espere
+    cambios [ puntuación v] por (1)
+final
 ```
 
 \--- /task \---
 
-\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
+\--- tarea \--- Consigue que tus amigos prueben tu juego. Recuerda ocultar la secuencia ` ` {: class = "block3variables"} lista antes de que lo jueguen! \--- / tarea \---
