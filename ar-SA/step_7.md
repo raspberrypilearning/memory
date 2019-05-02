@@ -1,39 +1,39 @@
 ## التحدي: تحسين لعبتك
 
-### Make more blocks
+### اصنع مزيدا من الكتل البرمجية
 
-Do you see any other code that is the same for all four buttons?
+هل لاحظت أي تعليمات برمجية آخرى متشابه لجميع الأزرار الأربعة؟
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
+عندما تستقبل [أحمر v] :: events
+إذا <(العنصر (1 v) of [تسلسل v]) = [1] :: operators> 
+  دقَّ الطبل ((1) Snare Drum v) لمدة (0.25) وحدة إيقاع :: music
+  احذف (1 v) من [تسلسل v] :: list
+
+  انتهاء اللعبة :: custom :: control
 end
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
+عندما تستقبل [أزرق v] :: events
+إذا <(العنصر (1 v) of [تسلسل v]) = [1] :: operators> 
+  دقَّ الطبل ((2) Bass Drum v) لمدة (0.25) وحدة إيقاع :: music
+  احذف (1 v) من [تسلسل v] :: list
+
+  انتهاء اللعبة :: custom :: control
 end
 ```
 
-Can you make another custom block that all buttons can use?
+هل يمكنك إنشاء لبنة أخرى يمكن استخدامها مع جميع الأزرار الأربعة؟
 
-### Another costume
+### زي آخر لكائن الشخصية الرئيسية
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+هل يمكنك أن ترى ما هو لون زي الشخصية الرئيسية "راقصة البالية" عندما تبدأ اللعبة في كل مرة؟ هل لاحظت أن زي راقصة البالية يكون دائماً بآخر لون في تسلسل الألوان الذي قام اللاعب بتكراره؟
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+هل يمكنك إضافة زي جديد بلون أبيض سادة لشخصية راقصة البالية، هل يمكنك إضافة تعليمات برمجية بحيث تظهر شخصية راقصة البالية في بداية اللعبة و ايضاً أثناء ما يقوم اللاعب بتكرار التسلسل و هي ترتدي هذا الزي الأبيض؟
 
 ![لقطة الشاشة](images/colour-white.png)
 
-### Difficulty level
+### مستوى الصعوبة
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+هل يمكنك السماح لللاعب باختيار مستوى صعوبة اللعب بين ’الوضع السهل’ (باستخدام اللونين الأحمر و الأزرق فقط) أو ’ الوضع العادي’ (الذي يستخدم جميع الألوان الأربعة)؟
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+و إذا كنت ترغب بشيء إضافي، فيمكنك ايضاً اضافة مستوى صعوبة متقدم 'الوضع الصعب' و الذي يستخدم خمس طبول بدلاً من أربعة!
