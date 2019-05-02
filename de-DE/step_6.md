@@ -1,4 +1,4 @@
-## High score
+## Hohe Punktzahl
 
 Now save the high score so that you can play against your friends.
 
