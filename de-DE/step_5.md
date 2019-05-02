@@ -1,4 +1,4 @@
-## Multiple levels
+## Mehrfachstimmen
 
 So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
@@ -14,7 +14,7 @@ Instead of always creating a sequence of five colours, you now want the `score`{
 
 \--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-![sprite](images/ballerina.png)
+![Figur](images/ballerina.png)
 
 ```blocks3
 repeat (score :: variables)
@@ -25,7 +25,7 @@ end
 
 \--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-![sprite](images/ballerina.png)
+![Figur](images/ballerina.png)
 
 ```blocks3
 change [score v] by (1)
