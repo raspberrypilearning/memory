@@ -14,18 +14,18 @@ Instead of always creating a sequence of five colours, you now want the `score`{
 
 \--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
-![sprite](images/ballerina.png)
+![duszek](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables)
-end
+powtórz (wynik :: zmienne)
+koniec
 ```
 
 \--- /task \---
 
 \--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
-![sprite](images/ballerina.png)
+![duszek](images/ballerina.png)
 
 ```blocks3
 change [score v] by (1)
@@ -35,9 +35,9 @@ change [score v] by (1)
 
 \--- /task \---
 
-\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. Tak może wyglądać kod twojej postaci:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when flag clicked
