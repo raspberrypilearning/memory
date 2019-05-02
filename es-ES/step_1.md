@@ -1,19 +1,19 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Este es el ** Scratch 3 ** Versión del proyecto. También hay una versión [ Scratch 2 del proyecto. ](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
 ## Introducción
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+En este proyecto, crearás un juego de memoria en el que tendrás que memorizar y repetir una secuencia aleatoria de colores.
 
-### Lo que crearás
+### Lo que harás
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- no-print \--- Haz clic en la bandera verde para comenzar. Observa la secuencia de colores que muestra en el vestido de la bailarina y escucha al tambor que lo acompaña, luego repite la secuencia de colores. ¡Si el orden de los colores es incorrecto, el juego termina!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
 \--- /no-print \---
@@ -22,21 +22,21 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Lo que vas a aprender
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Cómo añadir sonido a tu projecto Scratch
++ Cómo crear y usar listas para almacenar datos
++ Cómo crear y usar bloques personalizados para repetir código
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Lo que vas a necesitar
 
 ### Hardware
 
-+ A computer capable of running Scratch 3
++ Una computadora capaz de hacer correr Scratch 3
 
 ### Software
 
@@ -44,14 +44,14 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: Información adicional para educadores
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+Puedes [ descargar el proyecto completo aquí ](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
