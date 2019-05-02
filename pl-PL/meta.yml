@@ -4,23 +4,23 @@ listed: true
 copyedit: false
 title: Test na pamięć
 description: Naucz się, jak stworzyć własną grę pamięciową.
-version: 4.0.1
-last_tested: 2017-01-01
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - 
-    title: Test na pamięć
+    title: Wprowadzenie
   - 
-    title: Create a colour sequence
+    title: Utwórz sekwencję kolorów
   - 
-    title: Add sound
+    title: Dodaj dźwięk
   - 
-    title: Repeat the sequence
+    title: Powtórz sekwencję
   - 
     title: Multiple levels
   - 
-    title: High score
+    title: Tabela wyników
   - 
-    title: "Challenge: improve your game"
+    title: "Wyzwanie: udoskonal swoją grę"
   - 
-    title: What next?
+    title: Co następne?
 
