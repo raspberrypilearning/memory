@@ -1,4 +1,4 @@
-## Add sound
+## Herausforderung: Geräusche hinzufügen
 
 \--- task \---
 
@@ -34,7 +34,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \---So sollte dein fertiger Code aussehen:
 
 ![ballerina](images/ballerina.png)
 
@@ -51,6 +51,6 @@ end
 
 \--- /hint \---
 
-\--- /hints \---
+\---/hints\---
 
 \--- /task \---
