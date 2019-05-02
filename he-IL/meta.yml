@@ -1,0 +1,26 @@
+---
+hero_image: images/memory.png
+listed: true
+copyedit: false
+title: זיכרון
+description: בפרויקט זה תצרו משחק זכרון, בו עליכם לחזור על רצף אקראי של צבעים.
+version: 4.0.1
+last_tested: 2017-01-01
+steps:
+  - 
+    title: זיכרון
+  - 
+    title: Create a colour sequence
+  - 
+    title: Add sound
+  - 
+    title: Repeat the sequence
+  - 
+    title: Multiple levels
+  - 
+    title: High score
+  - 
+    title: "Challenge: improve your game"
+  - 
+    title: What next?
+
