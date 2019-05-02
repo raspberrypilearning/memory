@@ -1,0 +1,26 @@
+---
+hero_image: images/memory.png
+listed: true
+copyedit: false
+title: Paměť
+description: Tentokrát vytvoříme počítačovou hru!
+version: 4.0.1
+last_tested: 2017-01-01
+steps:
+  - 
+    title: Paměť
+  - 
+    title: Create a colour sequence
+  - 
+    title: Add sound
+  - 
+    title: Repeat the sequence
+  - 
+    title: Multiple levels
+  - 
+    title: High score
+  - 
+    title: "Challenge: improve your game"
+  - 
+    title: What next?
+
