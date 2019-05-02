@@ -13,7 +13,7 @@
 \--- কোন মুদ্রণ \--- সবুজ পতাকা শুরু করতে ক্লিক করুন। নর্তকী পোশাক দ্বারা দেখানো রং ক্রম দেখুন এবং সহগামী ড্রাম beats শুনতে, তারপর তার রং ফিরে পুনরাবৃত্তি। যদি আপনি রঙের ক্রম ভুল পান, এটি খেলা শেষ!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" /> 
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" /> 
 </div>
 
 \----প্রিন্ট করা লাগবেনা --
