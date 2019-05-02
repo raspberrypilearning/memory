@@ -1,5 +1,20 @@
 ## তারপর কি?
 
-পরবর্তী প্রকল্পটি দেখুন, [ডোজবল](https://projects.raspberrypi.org/en/projects/dodgeball), যেখানে আপনি এমন একটি খেলা তৈরি করবেন যেখানে আপনি প্ল্যাটফর্ম থেকে প্ল্যাটফর্মে যাওয়ার সময় বলগুলি এড়াতে হবে।
+Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
 
-অথবা যদি আপনি অন্য সঙ্গীত-থিমযুক্ত স্ক্যাচ প্রকল্পটি চেষ্টা করতে চান তবে আপনি [বাইনারি হিরো](https://projects.raspberrypi.org/en/projects/binary-hero) প্রজেক্টটি চেষ্টা করতে পারেন।
+\--- no-print \---
+
+Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+
+<div class="scratch-preview">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0" scrolling="no"></iframe>
+  <img src="images/dodge-final.png">
+</div>
+
+\--- /no-print \---
+
+\--- print-only \---
+
+![dodgeball game being played](images/dodgeball-showcase.png)
+
+\--- /print-only \---
