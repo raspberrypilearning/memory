@@ -32,7 +32,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 (item (length of [sequence v]) of [sequence v])
 ```
 
-\--- /hint \---
+\--- /pomoć \---
 
 \--- hint \--- Here is how your finished code should look:
 
@@ -49,8 +49,8 @@ repeat (5)
 end
 ```
 
-\--- /hint \---
+\--- /pomoć \---
 
-\--- /hints \---
+\--- /pomoć \---
 
 \--- /task \---
