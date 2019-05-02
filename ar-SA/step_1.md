@@ -1,6 +1,6 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+هذا هو إصدار ** Scratch 3 ** من المشروع. هناك أيضًا [ إصدار Scratch 2 للمشروع ](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
@@ -10,10 +10,10 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 ### ما الذي ستصنعه
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- no-print \--- انقر على العلم الأخضر للبدء. شاهد تسلسل الألوان الذي يظهر به ثوب الراقصة واستمع إلى دقات الطبلة المصاحبة ، ثم قم بتكرار الألوان مرة آخرى رداً عليها. إذا ادخلت ترتيب الألوان بشكل خاطئ، فإنها نهاية اللعبة!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/colour-final.png" />
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
 \--- /no-print \---
@@ -24,9 +24,9 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 ## title: ما الذي ستتعلمه
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ كيفية إضافة الصوت إلى مشروع Scratch الخاص بك
++ كيفية إنشاء و استخدام القوائم لتخزين البيانات
++ كيفية إنشاء و استخدام اللبنات لتكرار التعليمات البرمجية
 
 \--- /collapse \---
 
@@ -44,7 +44,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: معلومات إضافية للمعلمين
 
 \--- no-print \---
 
@@ -52,6 +52,6 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+يمكنك [تنزيل المشروع المكتمل من هنا](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
