@@ -4,7 +4,7 @@
 
 \--- টাস্ক \--- একটি নতুন স্ক্র্যাচ প্রকল্প খুলুন।
 
-**অনলাইন**: [rpf.io/scratchon](https://rpf.io/scratchon)এ একটি নতুন অনলাইন স্ক্র্যাচ প্রকল্প খুলুন।
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
 
 **অফলাইন**: অফলাইন সম্পাদকে একটি নতুন প্রকল্প খুলুন।
 
