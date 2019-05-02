@@ -1,53 +1,53 @@
 ## Maak een kleurenreeks
 
-First create a character that can display a random sequence of colours.
+Maak eerst een personage dat een willekeurige reeks kleuren kan weergeven.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- Open een nieuw Scratch project.
 
-**Online**: open a new online Scratch project at [rpf.io/scratchon](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
 
-**Offline**: open a new project in the offline editor.
+**Offline:** open een nieuw project in de offline editor.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Als je de Scratch offline editor wilt downloaden en installeren dan kan je die vinden op [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- Kies een personage-sprite en een achtergrond. Je zou de ballerina kunnen gebruiken, maar je personage hoeft geen persoon te zijn, ze moeten alleen in staat zijn om verschillende kleuren te laten zien.
 
 ![screenshot](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ Je game moet verschillende getallen gebruiken om elke kleur weer te geven:
     
     + 1 = rood
     + 2 = blauw
     + 3 = groen
     + 4 = geel
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- Geef je personage vier kostuums met verschillende kleuren, een kostuum voor elk van de vier kleuren hierboven. Zorg ervoor dat je gekleurde kostuums in dezelfde volgorde staan als de bovenstaande lijst.
 
 ![screenshot](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Als je wilt, kun je het **vulling** gereedschap gebruiken om delen van het kostuum met een andere kleur te vullen.
 
-![color-a-shape](images/color-a-shape.png)
+![een vorm kleuren](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Voeg vervolgens een lijst toe voor het opslaan van de willekeurige reeks kleuren die de speler moet onthouden.
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- Maak een lijst met de naam `reeks`{:class="block3variables"}. Alleen de sprite van de personage gebruikt deze lijst, dus kun je **Alleen voor deze sprite** selecteren.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Je zou nu veel nieuwe codeblokken moeten zien voor het gebruik van lijsten. De lege lijst moet zichtbaar zijn in de linkerbovenhoek van het werkgebied.
 
 ![screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Elke kleur heeft een ander nummer, dus je kunt een willekeurige kleur kiezen door willekeurig een getal te kiezen en het toe te voegen aan de lijst.
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- Voeg deze code toe aan de personage-sprite om een willekeurig getal te kiezen en toe te voegen aan de `reeks`{:class="block3variables"}:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 wanneer groene vlag wordt aangeklikt
@@ -56,33 +56,33 @@ voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- Test je code. Controleer of elke keer dat je op de vlag klikt, een willekeurig getal tussen 1 en 4 aan de lijst wordt toegevoegd. \--- / task \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- Kun je code aan je programma toevoegen om in één keer vijf willekeurige getallen te genereren?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Voeg een `verwijder alle van reeks`{:class="block3variables"} toe om eerst alle items uit de lijst te verwijderen en vervolgens een `herhaal`{:class="block3control"} blok dat vijf willekeurige nummers toevoegt aan de lijst. \--- /hint \--- \--- hint \---
 
-This is what your code should look like:
+Dit is hoe je code eruit zou moeten zien:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 wanneer groene vlag wordt aangeklikt
-verwijder item (alle v) van [reeks v]
-herhaal (5) keer 
+verwijder (alle v) van [reeks v]
+herhaal (5) 
   voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
 end
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- Elke keer dat een getal wordt toegevoegd aan de lijst, moet het karakter zijn kostuum wijzigen zodat de kleur van het kostuum overeenkomt met het nummer. Plaats deze blokken in je code direct onder waar een willekeurig nummer aan `reeks` wordt toegevoegd{:class="block3variables"}:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+verander uiterlijk naar (item (lengte van [reeks v]) van [reeks v])
+wacht (1) sec.
 ```
 
 \--- /task \---
