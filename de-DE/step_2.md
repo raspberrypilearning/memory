@@ -1,10 +1,10 @@
-## Create a colour sequence
+## Zufällige Farben
 
 First create a character that can display a random sequence of colours.
 
 \--- task \--- Open a new Scratch project.
 
-**Online**: open a new online Scratch project at [rpf.io/scratchon](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
 
 **Offline**: open a new project in the offline editor.
 
@@ -14,18 +14,18 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 \--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
 
-![screenshot](images/colour-sprite.png) \--- /task \---
+![Screenshot](images/colour-sprite.png) \--- /task \---
 
 + Your game should use a different number to represent each colour:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = rot
+    + 2 = blau
+    + 3 = grün
+    + 4 = gelb
 
 \--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
 
-![screenshot](images/colour-costume.png) \--- /task \---
+![Screenshot](images/colour-costume.png) \--- /task \---
 
 If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
 
@@ -41,7 +41,7 @@ Next, add a list for storing the random sequence of colours that the player has 
 
 You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![Screenshot](images/colour-list-blocks-annotated.png)
 
 Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
 
@@ -50,8 +50,7 @@ Each colour has a different number, so you can choose a random colour by randoml
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+wenn das Flag angeklickt wurde, addiere (wähle Zufall (1) bis (4)) zu [Sequenz v]
 ```
 
 \--- /task \---
@@ -67,11 +66,7 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+Wenn das Flag angeklickt wurde lösche (alle v) von [Sequenz v] wiederhole (5) füge hinzu (wähle Zufall (1) bis (4)) zum [Sequenz v] Ende
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
