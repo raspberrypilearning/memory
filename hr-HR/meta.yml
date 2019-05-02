@@ -4,11 +4,11 @@ listed: true
 copyedit: false
 title: Igra pamćenja
 description: U ovom projektu kreirat ćeš igru pamćenja u kojoj ćeš trebati upamtiti i ponoviti niz slučajnih boja.
-version: 4.0.1
-last_tested: 2017-01-01
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - 
-    title: Igra pamćenja
+    title: Sretan rođendan
   - 
     title: Create a colour sequence
   - 
