@@ -1,17 +1,17 @@
-## Repeat the sequence
+## Ailadrodd y dilyniant
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+Rwy ti nawr am ychwanegu pedwar botwm i'r chwareuwr wasgu i ail-adrodd dilyniant y lliwiau.
 
-\--- task \--- Add four new sprites to your project to represent the four buttons.
+\--- task \--- Ychwanegu pedwar corlun newydd i dy brosiect i gynrychioli'r pedwar botwm.
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ Golyga gwisgoedd y corluniau newydd fel bod un corlun ym mhob un o'r pedwar lliw
++ Rho'r corluniau yn yr un drefn ar y llwyfan â'r gwisgoedd: coch, glas, gwyrdd, melyn
 
-![screenshot](images/colour-drums.png) \--- /task \---
+![sgrinlun](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+\--- task \--- Ychwanega gôd i dy gorlun coch fel ei fod yn `darlledu`{:class="block3events"} y neges "coch" pan mae'n cael ei glicio:
 
-![red-drum](images/red_drum.png)
+![drwm coch](images/red_drum.png)
 
 ```blocks3
     when this sprite clicked
@@ -20,21 +20,21 @@ Now you're going to add four buttons the player has to press to repeat the colou
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+Mae `darllediad`{:class="block3events"} fel neges sy'n cael ei ddarlledu ar uchelseinydd. Mae modd i'r holl gorluniau glywed y `darllediad`{:class="block3events"}, ond dim ond y corlun sydd angen ymateb fydd yn gwneud rhywbeth.
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+Ychwanega gôd tebyg i'r corluniau glas, gwyrdd a melyn i wneud iddynt `ddarlledu`{:class="block3events"} neges am eu lliw eu hunain.
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+Wyt ti'n cofio bod y `darllediad`{:class="block3events"} fel neges uchelseinydd? Byddi di'n ychwanegu côd i wneud hi'n rhan o swydd y corlun i ymateb i'r `darllediad`{:class="block3events"}.
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+Pan fydd dy gymeriad yn derbyn neges `coch`{:class="block3events"}, fe ddylai'r côd wirio os yw'r rhif `1` ar ddechrau'r `dilyniant`{:class="block3variables"} (sy'n golygu mai `coch`{:class="block3events"} yw'r lliw nesaf yn y dilyniant).
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+Os mai `1` sydd ar gychwyn y rhestr, fe ddylai'r côd dynnu'r rhif o'r rhestr, gan fod y chwareuwr wedi cofio'r lliw yn gywir. Fel arall mae'r gêm ar ben, ac mae angen i'r côd `stopio y cyfan`{:class="block3control"} i orffen y gêm.
 
 ![ballerina](images/ballerina.png)
 
@@ -50,16 +50,16 @@ end
 
 \--- /task \---
 
-\--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+\--- task \--- Ychwanega'r côd rwyt ti newydd ei ysgrifennu fel bod y drwm hefyd yn chwarae pan fo'r cymeriad yn derbyn y `darllediad`{:class="block3events"} cywir.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- Alli di gofio'r rhifau sy'n cyfateb â phob lliw i chwarae'r curiad drwm cywir?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 1 = coch
++ 2 = glas
++ 3 = gwyrdd
++ 4 = melyn \--- /hint \--- \--- hint \--- Uwchben bloc `dileu 1 yn y dilyniant`{:class="block3variables"} ychwanega bloc `chwarae drwm`{:class="block3sound"} i chwarae'r sain cyntaf yn rhestr y `dilyniant`{:class="block3variables"}.
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- /hint \--- \--- hint \--- Dyma'r blociau côd rwyt ti eu hangen:
 
 ```blocks3
 when I receive [red v]
@@ -76,15 +76,15 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}. \--- /task \---
+\--- task \--- Dyblyga'r côd wnes di ei ddefnyddio i wneud i dy gymeriad ymateb i'r neges `coch`{:class="block3events"}. Newida'r côd wedi dyblygu fel ei fod yn anfon neges `glas`{:class="block3events"}. \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+Pan fo'r corlun yn ymateb i'r neges `glas`{:class="block3events"}, pa ran o'r côd ddylai aros yr un peth a pha ran ddylai newid? Cofia fod gan bob lliw rif cyfatebol.
 
-\--- task \--- Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+\--- task \--- Newida gôd y corlun fel fod pob cymeriad yn ymateb yn gywir i'r neges `glas`{:class="block3events"}.
 
 \--- hints \--- \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+Cadwa'r blociau yma, ond bydd angen eu newid mewn ryw ffordd:
 
 ![ballerina](images/ballerina.png)
 
@@ -96,7 +96,7 @@ when I receive [red v]
 play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
-\--- /hint \--- \--- hint \--- Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+\--- /hint \--- \--- hint \--- Dyma sut ddylai dy gôd edrych ar gyfer y darllediad `glas`{:class="block3events"}.
 
 ![ballerina](images/ballerina.png)
 
@@ -113,13 +113,13 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+\--- task \--- Dyblyga'r côd yma ddwywaith arall (ar gyfer y botymau gwyrdd a melyn), a newid y rhannau angenrheidiol fel fod y cymeriad yn ymateb yn gywir i'r `darllediad`{:class="block3events"} . \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+Cofia brofi'r cod! Alli di gofio dilyniant o bum lliw? A yw'r dilyniant yn wahanol bob tro?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+Pan fydd y chwaraewr yn ailadrodd y dilyniant lliw cyfan yn gywir, bydd rhestr y `dilyniant`{:class="block3variables"} yn wag a'r chwaraewr yn ennill. Os hoffet ti, fe alli di hefyd arddangos goleuadau yn fflachio fel gwobr unwaith mae'r rhestr `dilyniant`{:class="block3variables"} yn wag.
 
-\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+\--- task \--- Ychwanega'r côd yma i ddiwedd sgript dy gymeriad `pan fo'r faner wedi ei chlicio`{:class="block3events"}:
 
 ![ballerina](images/ballerina.png)
 
@@ -130,13 +130,13 @@ When the player repeats the whole colour sequence correctly, the `sequence`{:cla
 
 \--- /task \---
 
-\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+\--- task \--- Newida i'r Llwyfan, a mewnforio sain y `peiriant drwm` neu unrhyw sain arall.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+\--- task \--- Ychwanega'r côd yma i chwarae sain a gwneud i'r cefndir newid lliw pan mae'r chwareuwr yn ennill.
 
 ![ballerina](images/stage.png)
 
