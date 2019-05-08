@@ -1,16 +1,16 @@
-## Add sound
+## Ychwanegu sain
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Profa dy brosiect. Wyt ti'n sylwi weithiau fod yr un rhif yn cael ei ddewis ddwywaith (neu fwy) ar ôl ei gilydd, sy’n gwneud y dilyniant yn anoddach i gofio?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Wyt ti’n gallu gwneud sŵn drwm i chwarae bob tro mae’n cymeriad yn newid gwisg? Beth am sain drwm gwahanol ar gyfer pob lliw?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Ychwanega estyniad Sain i dy brosiect fel dy fod yn gallu defnyddio bloc `chwarae drwm`{:class="block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,11 +18,11 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Mae'r côd sy'n chwarae'r drwm yn debyg **iawn** i'r côd sy'n newid gwisg y cymeriad.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Mae dim ond angen i ti ychwanegu dau floc: bloc `chwarae drwm am (0.25) beats`{:class="block3sound"} a bloc `eitem dilyniant (hyd y dilyniant)`{:class="block3variables"}. \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Dyma'r blociau côd rwyt ti eu hangen:
 
 ![ballerina](images/ballerina.png)
 
@@ -34,7 +34,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Dyma sut ddylai dy gôd gorffenedig edrych:
 
 ![ballerina](images/ballerina.png)
 
