@@ -1,8 +1,8 @@
-## Challenge: improve your game
+## Her: gwella dy gêm
 
-### Make more blocks
+### Creu mwy o flociau
 
-Do you see any other code that is the same for all four buttons?
+Wyt ti’n sylwi ar unrhyw gôd arall sydd yr un peth ar gyfer y 4 botwm?
 
 ```blocks3
 when I receive [red v]
@@ -22,18 +22,18 @@ else
 end
 ```
 
-Can you make another custom block that all buttons can use?
+Wyt ti’n gallu creu bloc arall sydd yn cael ei ddefnyddio gan bob botwm?
 
-### Another costume
+### Gwisg arall
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+Wyt ti wedi sylwi fod dy gêm yn cychwyn gyda dy gymeriad yn dangos un o 4 lliw, a’i fod bob tro yn dangos y lliw olaf yn y dilyniant tra bod y chwareuwr yn ailadrodd y dilyniant?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+Wyt ti’n gallu ychwanegu gwisg wen plaen i dy gymeriad, sydd yn ymddangos ar ddechrau’r gêm, a pan mae dy chwareuwr yn ceisio copio’r dilyniant?
 
-![screenshot](images/colour-white.png)
+![sgrinlun](images/colour-white.png)
 
-### Difficulty level
+### Lefel anhawster
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+Wyt ti’n gallu gadael i dy chwareuwr i ddewis rhwng ‘gêm hawdd’ (yn defnyddio y lliwiau coch a glas yn unig) a ‘gêm normal’ (sydd yn defnyddio’r 4 lliw)?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+Fe alli di hyd yn oed ychwanegu ‘gêm anodd’, sydd yn defnyddio 5ed drwm!
