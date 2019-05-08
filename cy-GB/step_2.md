@@ -1,51 +1,51 @@
-## Create a colour sequence
+## Creu dilyniant o liwiau
 
-First create a character that can display a random sequence of colours.
+Yn gyntaf, fe wnawn ni greu cymeriad sydd yn gallu newid ei gwisg yn ôl dilyniant o liwiau ar hap.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- Agor prosiect Scratch newydd.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Arlein:** agora brosiect Scratch newydd yma [rpf.io/scratch-new](https://rpf.io/scratchon)l.
 
-**Offline**: open a new project in the offline editor.
+**All-lein** agora brosiect newydd yn y golygydd all-lein.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Os oes angen i ti lawrlwytho a gosod golygydd Scratch all-lein, mae modd dod o hyd iddo yma [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- Dewisa gymeriad a chefndir. Does dim rhaid i dy gymeriad fod yn berson, ond mae’n rhaid iddo allu dangos lliwiau gwahanol.
 
-![screenshot](images/colour-sprite.png) \--- /task \---
+![sgrinlun](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ Dylai dy gêm ddefnyddio rhif gwahanol i gynrychioli pob lliw:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = coch
+    + 2 = glas
+    + 3 = gwyrdd
+    + 4 = melyn
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \---Rho 4 wisg lliw gwahanol i dy gymeriad, un ar gyfer y 4 lliw uchod. Gwna’n siwr bod dy wisgoedd yn y drefn gywir, fel y rhestr uchod.
 
-![screenshot](images/colour-costume.png) \--- /task \---
+![sgrinlun](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Os hoffet ti, alli di ddefnydio'r teclyn **lliwio siâp** i lenwi darnau o'r wisg mewn lliw gwahanol.
 
-![color-a-shape](images/color-a-shape.png)
+![lliw-a-siâp](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Nesaf, ychwanega restr ar gyfer storio dilyniant ar hap o liwiau mae'n rhaid i'r chwareuwr eu cofio.
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- Creu rhestr o'r enw `dilyniant`{:class="block3variables"}. Gan mai dim ond dy gymeriad sydd angen gweld y rhestr, fe alli di ddewis **Ar gyfer y ciplun yma yn unig’**.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Fe ddyle ti nawr weld dy restr gwag ar ochr top-chwith y llwyfan, yn ogystal â llawer o flociau newydd ar gyfer defnyddio’r rhestr.
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![sgrinlun](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Mae gan bob lliw rif gwahanol, fel dy fod yn gallu dewis lliw ar hap gan ddewis rhif a'i ychwanegu i'r rhestr.
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- Ychwanega’r côd yma i dy gymeriad i ddewis ac ychwanegu rhif ar hap i'r `dilyniant`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
@@ -56,13 +56,13 @@ add (pick random (1) to (4)) to [sequence v]
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- Profa dy gôd. Gwna'n siwr, bob tro rwyt ti'n clicio'r faner, fod rhif ar hap rhwng 1 a 4 yn cael ei ychwanegu i'r rhestr. \--- /task \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- Alli di ychwanegu côd i dy raglen i greu pump o rifau ar hap ar unwaith?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Ychwanega `dileu pob dilyniant`{:class="block3variables"} i ddileu pob eitem ar y rhestr, yna ychwanegu bloc `ail-adrodd`{:class="block3control"} sy'n ychwanegu pump rhif ar hap i dy restr. \--- /hint \--- \--- hint \---
 
-This is what your code should look like:
+Dyma sut dylai dy gôd edrych:
 
 ![ballerina](images/ballerina.png)
 
@@ -76,7 +76,7 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- Bob tro mae rhif yn cael ei ychwanegu i'r rhestr, fe ddylai'r cymeriad newid ei wisg fel bod lliw y wisg yn cyfateb i'r rhif. Rho'r blociau yma i'r côd yn syth o dan lle mae'r rhif ar hap yn cael ei ychwanegu i'r `dilyniant`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
