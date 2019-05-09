@@ -12,7 +12,7 @@
 
 \--- hints \--- \--- hint \--- التعليمات البرمجية الجديدة التي ستضيفها يجب أن تتبع النمط التالي:
 
-بعد `انتهت اللعبة!`{:class="block3looks"} رسالة `اذا`{:class="block3control"} كانت `الدرجة`{:class="block3variables"} `أعلى من`{:class="block3operators"} `أعلى درجة`{:class="block3variables"} `اجعل`{:class="block3variables"} `أعلى درجة`{:class="block3variables"} مساوياً `الدرجة`{:class="block3variables"} `اسأل`{:class="block3sensing"} عن اسم اللاعب `اجعل`{:class="block3variables"} ` اسم اللاعب`{:class="block3variables"} مساوياً `للاجابة`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+بعد رسالة `انتهت اللعبة!`{:class="block3looks"} `اذا`{:class="block3control"} كانت `الدرجة`{:class="block3variables"} `أعلى من`{:class="block3operators"} `أعلى درجة`{:class="block3variables"} `اجعل`{:class="block3variables"} `أعلى درجة`{:class="block3variables"} مساوياً `الدرجة`{:class="block3variables"} `اسأل`{:class="block3sensing"} عن اسم اللاعب `اجعل`{:class="block3variables"} ` اسم اللاعب`{:class="block3variables"} مساوياً `للاجابة`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
 ستحتاج الكتل البرمجية التالية:
 
