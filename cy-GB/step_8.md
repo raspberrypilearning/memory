@@ -7,7 +7,7 @@ Rho gynnig ar y prosiect [Osgoi'r bêl](https://projects.raspberrypi.org/en/proj
 Cliciwch y faner werdd i ddechrau, yna defnyddio'r saethau ar y bysellfwrdd i symud a'r allwedd <kbd>gofod</kbd> i neidio.
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0" scrolling="no"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
   <img src="images/dodge-final.png">
 </div>
 
