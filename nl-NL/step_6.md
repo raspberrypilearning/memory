@@ -71,10 +71,9 @@ zeg [Game over!] (1) sec.
 als < (score :: variables) > (topscore) > dan
     maak [topscore v] (score :: variables)
     vraag [Topscore! Wat is je naam?] en wacht	 vraag [Topscore! Wat is je naam?] en wacht
-        maak [Wat is je naam? v] (antwoord)
+    maak [naam v] (antwoord)
     einde
     stop [alle v]
-einde
 ```
 
 Als je een van de 'Game over'-codes moet veranderen, bijvoorbeeld om een geluid toe te voegen of het 'Game over'-bericht te veranderen, moet je het vier keer wijzigen. Dat is vervelend en verspilt veel tijd.
@@ -95,9 +94,10 @@ zeg [Game over!] (1) sec.
 als < (score :: variables) > (topscore) > dan
     maak [topscore v] (score :: variables)
     vraag [Topscore! Wat is je naam?] en wacht vraag [Topscore! Wat is je naam?] en wacht
-    maak [naam v] (antwoord)
+        maak [Wat is je naam? v] (antwoord)
     einde
     stop [alle v]
+einde
 ```
 
 \--- /task \---
@@ -151,8 +151,8 @@ als < (score :: variables) > (topscore) > dan
     maak [topscore v] (score)
     vraag [Topscore! Wat is je naam?] en wacht vraag [Topscore! Wat is je naam?] en wacht
     maak [naam v] (antwoord)
-einde
-stop [alle v]
+    einde
+    stop [alle v]
 ```
 
 \--- /task \---
