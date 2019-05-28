@@ -22,7 +22,7 @@ Nu ga je vier knoppen toevoegen die de speler moet indrukken om de volgorde van 
 
 Een `uitzending`{:class="block3events"} is als een bericht dat wordt aangekondigd over een luidspreker, die je bijvoorbeeld kunt horen in scholen of supermarkten. Alle sprites kunnen de `uitzending`{:class="block3events"} horen, maar alleen de sprite wiens taak het is om te reageren zal iets doen.
 
-\--- task \----
+\--- task \---
 
 Voeg vergelijkbare code toe aan de blauwe, groene en gele sprites om ze berichten over hun eigen kleur te laten `uitzenden`{:class="block3events"}.
 
