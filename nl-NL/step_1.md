@@ -10,7 +10,7 @@ In dit project ga je een geheugenspel maken waarin je een willekeurige reeks kle
 
 ### Wat ga je maken
 
-\--- no-print \--- Klik op de groene vlag om te starten. Kijk naar de reeks kleuren van de jurk van de danseres en luister naar de bijbehorende slagen op de trommels, en herhaal ze daarna. Als je de verkeerde volgorde van kleuren hebt ingevoerd, is het game over!
+\--- no-print \--- Klik op de groene vlag om te starten. Kijk naar de reeks kleuren van de jurk van de danseres en luister naar de bijbehorende slagen op de trommels, en herhaal ze daarna. Als je de verkeerde volgorde van de kleuren kiest, is het spel voorbij!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
