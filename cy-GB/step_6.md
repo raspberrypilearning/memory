@@ -44,18 +44,18 @@ gosod [enw v] i [ ]
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
+pan rwy'n derbyn [coch v]
+os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
+  chwarae drwm (eitem (1 v) o [dilyniant v]) am (0.25) curiad
+  dileu (1 v) o [dilyniant v]
+fel arall 
+  dweud [Game over!] am (1) eiliad
+  os <(sgôr :: variables) > (sgôr uchel)> yna 
+    gosod [sgôr uchel v] i (sgôr :: variables)
+    gofyn [Sgôr uchel!  What is your name?] ac aros
+    gosod [enw v] i (ateb)
+  end
+  aros [all v]
 end
 ```
 
@@ -68,13 +68,14 @@ Alli di weld fod y côd ar gyfer 'Gêm drosodd' ar gyfer y pedwar lliw yn union 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+dweud [Game over!] am (1) eiliad
+os <(sgôr :: variables) > (sgôr uchel)> yna 
+  gosod [sgôr uchel v] i (sgôr :: variables)
+  ask [Sgôr uchel!]
+end What is your name?] ac aros
+  gosod [enw v] i (ateb)
 end
-stop [all v]
+aros [all v]
 ```
 
 Os wyt ti byth eisiau newid rhan o’r côd yma, fel ychwanegu sain neu newid y neges ‘Gêm drosodd!’, bydd angen i ti ei newid 4 gwaith! Gall hwnna fod yn boen, ac yn wastraff amser.
@@ -90,14 +91,15 @@ Yn hytrach, mae modd i ti ddiffinio dy flociau dy hunan, a’u ail-defnyddio ar 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-define Game over
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+diffinio Game over
+dweud [Game over!] am (1) eiliad
+os <(sgôr :: variables) > (sgôr uchel)> yna 
+  gosod [sgôr uchel v] i (sgôr :: variables)
+  ask [Sgôr uchel!]
+end What is your name?] ac aros
+  gosod [enw v] i (ateb)
 end
-stop [all v]
+aros [all v]
 ```
 
 \--- /task \---
@@ -107,12 +109,12 @@ stop [all v]
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
+pan rwy'n derbyn [coch v]
+os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
+  chwarae drwm ((1) Snare Drum v) am (0.25) curiad
+  dileu (1 v) o [dilyniant v]
+fel arall 
+  Game over :: custom
 end
 ```
 
@@ -127,12 +129,12 @@ Mae dy floc `Gêm drosodd`{:class="block3myblocks"} yn **weithred**, sgript y ma
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
+pan rwy'n derbyn [glas v]
+os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
+  chwarae drwm ((2) Bass Drum v) am (0.25) curiad
+  dileu (1 v) o [dilyniant v]
+fel arall 
+  Game over :: custom
 end
 ```
 
@@ -143,16 +145,16 @@ end
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-define Game over
-start sound [Cough1 v]
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+diffinio Game over
+cychwyn sain [Cough1 v]
+dweud [Game over!] am (1) eiliad
+os <(sgôr :: variables) > (sgôr uchel)> yna 
+  cychwyn sain (trumpet1 v)
+  gosod [sgôr uchel v] i (sgôr)
+  ask [Sgôr uchel! What is your name?] ac aros
+  gosod [enw v] i (ateb)
 end
-stop [all v]
+aros [all v]
 ```
 
 \--- /task \---
