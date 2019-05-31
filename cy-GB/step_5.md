@@ -16,7 +16,7 @@ Yn hytrach na chreu dilyniant o bum lliw bob amser, rwyt ti eisiau i'r `sgôr`{:
 
 <p><img src="images/ballerina.png" alt="corlun" /></p>
 
-<pre><code class="blocks3">repeat (score :: variables)
+<pre><code class="blocks3">ailadrodd (sgôr :: variables)
 end
 `</pre> 
 
@@ -27,7 +27,7 @@ end
 ![corlun](images/ballerina.png)
 
 ```blocks3
-change [score v] by (1)
+newid [sgôr v] gan (1)
 ```
 
 \--- hints \--- \--- hint \--- Ti'n gwybod bod y dilynant yn gywir ar y pwynt mae'r gêm yn `darlledu`{:class="block3events"} y neges 'ennill. \--- /hint \--- \--- /hints \---
@@ -39,18 +39,18 @@ change [score v] by (1)
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of [sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
+pan fo'r flag werdd yn cael ei glicio
+gosod [sgôr v] i [3]
+am byth 
+  dileu (all v) o [dilyniant v]
+  ailadrodd (sgôr) 
+    ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
+    newid gwisg i (eitem (hyd [dilyniant v]) o [dilyniant v])
+    aros (1) eiliad
+  end
+  aros hyd at <(hyd [dilyniant v]) = [0]>
+  darlledu (won v) ac aros
+  newid [sgôr v] gan (1)
 end
 ```
 
