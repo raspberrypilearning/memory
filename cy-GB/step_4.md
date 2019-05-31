@@ -14,8 +14,8 @@ Rwy ti nawr am ychwanegu pedwar botwm i'r chwareuwr wasgu i ail-adrodd dilyniant
 ![drwm coch](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    pan gaiff y ciplun yma ei glicio
+darlledu (coch v)
 ```
 
 \--- /task \---
@@ -39,12 +39,12 @@ Os mai `1` sydd ar gychwyn y rhestr, fe ddylai'r côd dynnu'r rhif o'r rhestr, g
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
+pan rwy'n derbyn [coch v]
+os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
+  dileu (1 v) o [dilyniant v]
+fel arall 
+  dweud [Game over!] am (1) eiliad
+  aros [all v]
 end
 ```
 
@@ -62,14 +62,13 @@ end
 \--- /hint \--- \--- hint \--- Dyma'r blociau côd rwyt ti eu hangen:
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
+pan rwy'n derbyn [coch v]
+os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
+  + chwarae drwm ((1) Snare Drum v) am (0.25) curiad
+  dileu (1 v) o [dilyniant v]
+fel arall 
+  dweud [Game over!] am (1) eiliad
+  aros [all v]
 end
 
 ```
@@ -89,11 +88,11 @@ Cadwa'r blociau yma, ond bydd angen eu newid mewn ryw ffordd:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<(eitem (1 v) o [dilyniant v]) = [1]>
 
-when I receive [red v]
+pan rwy'n derbyn [coch v]
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+chwarae drwm ((1) Snare Drum v) am (0.25) curiad
 ```
 
 \--- /hint \--- \--- hint \--- Dyma sut ddylai dy gôd edrych ar gyfer y darllediad `glas`{:class="block3events"}.
