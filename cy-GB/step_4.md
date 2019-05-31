@@ -100,13 +100,13 @@ chwarae drwm ((1) Snare Drum v) am (0.25) curiad
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    stop [all v]
+pan rwy'n derbyn [glas v]
+os <(eitem (1 v) o [dilyniant v]) = [2]> yna 
+  chwarae drwm ((2) Bass Drum v) am (0.25) curiad
+  dileu (1 v) o [dilyniant v]
+fel arall 
+  dweud [Game over!] am (1) eiliad
+  aros [all v]
 end
 ```
 
@@ -123,8 +123,8 @@ Pan fydd y chwaraewr yn ailadrodd y dilyniant lliw cyfan yn gywir, bydd rhestr y
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
+    aros hyd at <(hyd [dilyniant v]) = [0]>
+darlledu (won v) ac aros
 ```
 
 \--- /task \---
@@ -140,13 +140,13 @@ Pan fydd y chwaraewr yn ailadrodd y dilyniant lliw cyfan yn gywir, bydd rhestr y
 ![ballerina](images/stage.png)
 
 ```blocks3
-    when I receive [won v]
-    start sound (drum machine v)
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
-    end
-    clear graphic effects
+    pan rwy'n derbyn [won v]
+cychwyn sain (drum machine v)
+ailadrodd (50) 
+  newid effaith [color v] gan (25)
+  aros (0.1) eiliad
+end
+clirio effeithiau graffeg
 ```
 
 \--- /task \---
