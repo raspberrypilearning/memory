@@ -19,24 +19,24 @@ Mae angen y blociau canlynol:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-if < > then
+os <> yna
 end
 
-(score)
+(sgôr)
 
-(score)
+(sgôr)
 
-[ ] > [ ]
+<[ ] > [ ]>
 
-answer
+(ateb)
 
-(high score)
+(sgôr uchel)
 
-ask [What's your name?] and wait
+gofyn [What's your name?] ac aros
 
-set [high score v] to [ ] 
+gosod [sgôr uchel v] i [ ]
 
-set [name v] to [ ] 
+gosod [enw v] i [ ] 
 ```
 
 \--- /hint \--- \--- hint \--- Dyma sut y dylai'r côd edrych ar gyfer pan mae'r botwm coch wedi ei wasgu:
