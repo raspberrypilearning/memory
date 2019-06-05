@@ -32,7 +32,7 @@ end
 
 (sgôr uchel)
 
-gofyn [What's your name?] ac aros
+gofyn [Beth yw dy enw?] ac aros
 
 gosod [sgôr uchel v] i [ ]
 
@@ -49,10 +49,10 @@ os <(eitem (1 v) o [dilyniant v]) = [1]> yna
   chwarae drwm (eitem (1 v) o [dilyniant v]) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
-  dweud [Game over!] am (1) eiliad
+  dweud [Gêm drosodd!] am (1) eiliad
   os <(sgôr :: variables) > (sgôr uchel)> yna 
     gosod [sgôr uchel v] i (sgôr :: variables)
-    gofyn [Sgôr uchel!  What is your name?] ac aros
+    gofyn [Sgôr uchel!  Beth yw dy enw?] ac aros
     gosod [enw v] i (ateb)
   end
   aros [all v]
@@ -68,11 +68,11 @@ Alli di weld fod y côd ar gyfer 'Gêm drosodd' ar gyfer y pedwar lliw yn union 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-dweud [Game over!] am (1) eiliad
+dweud [Gêm drosodd!] am (1) eiliad
 os <(sgôr :: variables) > (sgôr uchel)> yna 
   gosod [sgôr uchel v] i (sgôr :: variables)
   ask [Sgôr uchel!]
-end What is your name?] ac aros
+end Beth yw dy enw?] ac aros
   gosod [enw v] i (ateb)
 end
 aros [all v]
@@ -91,12 +91,12 @@ Yn hytrach, mae modd i ti ddiffinio dy flociau dy hunan, a’u ail-defnyddio ar 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-diffinio Game over
-dweud [Game over!] am (1) eiliad
+diffinio Gêm drosodd
+dweud [Gêm drosodd!] am (1) eiliad
 os <(sgôr :: variables) > (sgôr uchel)> yna 
   gosod [sgôr uchel v] i (sgôr :: variables)
   ask [Sgôr uchel!]
-end What is your name?] ac aros
+end Beth yw dy enw?] ac aros
   gosod [enw v] i (ateb)
 end
 aros [all v]
@@ -114,7 +114,7 @@ os <(eitem (1 v) o [dilyniant v]) = [1]> yna
   chwarae drwm ((1) Snare Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
-  Game over :: custom
+  Gêm drosodd :: custom
 end
 ```
 
@@ -134,7 +134,7 @@ os <(eitem (1 v) o [dilyniant v]) = [1]> yna
   chwarae drwm ((2) Bass Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
-  Game over :: custom
+  Gêm drosodd :: custom
 end
 ```
 
@@ -145,13 +145,13 @@ end
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-diffinio Game over
+diffinio Gêm drosodd
 cychwyn sain [Cough1 v]
-dweud [Game over!] am (1) eiliad
+dweud [Gêm drosodd!] am (1) eiliad
 os <(sgôr :: variables) > (sgôr uchel)> yna 
   cychwyn sain (trumpet1 v)
   gosod [sgôr uchel v] i (sgôr)
-  ask [Sgôr uchel! What is your name?] ac aros
+  ask [Sgôr uchel! Beth yw dy enw?] ac aros
   gosod [enw v] i (ateb)
 end
 aros [all v]
