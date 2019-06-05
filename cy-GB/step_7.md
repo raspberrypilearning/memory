@@ -10,7 +10,7 @@ os <(eitem (1 v) o [dilyniant v]) = [1]> yna
   chwarae drwm ((1) Snare Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
-  Game Over :: custom
+  Gêm drosodd :: custom
 end
 
 pan rwy'n derbyn [glas v]
@@ -18,7 +18,7 @@ os <(eitem (1 v) o [dilyniant v]) = [1]> yna
   chwarae drwm ((2) Bass Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
-  Game over :: custom
+  Gêm drosodd :: custom
 end
 ```
 
