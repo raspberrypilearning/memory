@@ -2,8 +2,7 @@
 
 Sla nu de hoogste score op zodat je tegen je vrienden kunt spelen.
 
---- task --- Voeg twee nieuwe variabelen toe met de naam `topscore`{:class="blockdata"} en `naam`{:class="blockdata"}. 
---- /task ---
+--- task --- Voeg twee nieuwe variabelen toe met de naam `topscore`{:class="blockdata"} en `naam`{:class="blockdata"}. --- /task ---
 
 Wanneer het spel eindigt omdat de speler de reeks verkeerd heeft, moet het spel controleren of de score hoger is dan de huidige topscore. Als dat zo is, moet het spel de score opslaan als topscore en ook de naam van de speler opslaan.
 
@@ -62,7 +61,9 @@ anders
 einde
 ```
 
---- /hint --- --- /hints --- --- /task ---
+--- /hint ---
+--- /hints --- 
+--- /task ---
 
 Je moet deze nieuwe code ook aan de personage-sprite toevoegen voor de andere drie kleuren!
 
@@ -75,10 +76,9 @@ zeg [Game over!] (1) sec.
 als < (score :: variables) > (topscore) > dan
     maak [topscore v] (score :: variables)
     vraag [Topscore! Wat is je naam?] en wacht	 vraag [Topscore! Wat is je naam?] en wacht
-        maak [Wat is je naam? v] (antwoord)
+    maak [naam v] (antwoord)
     einde
     stop [alle v]
-einde
 ```
 
 Als je een van de 'Game over'-codes moet veranderen, bijvoorbeeld om een geluid toe te voegen of het 'Game over'-bericht te veranderen, moet je het vier keer wijzigen. Dat is vervelend en verspilt veel tijd.
@@ -99,9 +99,10 @@ zeg [Game over!] (1) sec.
 als < (score :: variables) > (topscore) > dan
     maak [topscore v] (score :: variables)
     vraag [Topscore! Wat is je naam?] en wacht vraag [Topscore! Wat is je naam?] en wacht
-    maak [naam v] (antwoord)
+        maak [Wat is je naam? v] (antwoord)
     einde
     stop [alle v]
+einde
 ```
 
 --- /task ---
@@ -155,8 +156,8 @@ als < (score :: variables) > (topscore) > dan
     maak [topscore v] (score)
     vraag [Topscore! Wat is je naam?] en wacht vraag [Topscore! Wat is je naam?] en wacht
     maak [naam v] (antwoord)
-einde
-stop [alle v]
+    einde
+    stop [alle v]
 ```
 
 --- /task ---

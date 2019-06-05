@@ -2,11 +2,9 @@
 
 Maak eerst een personage dat een willekeurige reeks kleuren kan weergeven.
 
---- task --- 
+--- task --- Open een nieuw Scratch project.
 
-Open een nieuw Scratch project.
-
-**Online**: open een nieuw online Scratch project op [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online:** open een nieuw online Scratch project op [rpf.io/scratch-new](https://rpf.io/scratchon).
 
 **Offline:** open een nieuw project in de offline editor.
 
@@ -79,7 +77,7 @@ herhaal (5)
 end
 ```
 
---- /hint ---
+--- /hint --- 
 --- /hints --- 
 --- /task ---
 
