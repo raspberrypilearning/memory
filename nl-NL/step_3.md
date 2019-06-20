@@ -1,63 +1,59 @@
-## Maak een kleurenreeks
+## Geluid toevoegen
 
-Laten we een personage maken die een willekeurige reeks kleuren laat zien om te onthouden.
+--- task ---
 
-+ Start een nieuw Scratch-project en verwijder de kat-sprite zodat je project leeg is. Je kunt de online Scratch-editor [hier](http://jumpto.cc/scratch-new) vinden.
+Test je project een paar keer. Merk je dat soms hetzelfde nummer twee keer (of meer) achter elkaar wordt gekozen, waardoor de volgorde moeilijker te onthouden is?
 
-+ Kies een sprite en een achtergrond. Je personage hoeft geen persoon te zijn, maar moet verschillende kleuren kunnen weergeven.
+--- /task ---
 
-![screenshot](images/colour-sprite.png)
+Kun je een drumgeluid laten spelen telkens als de personagesprite van kostuum verandert? En wat dacht je van een ander drumgeluid voor elke kleur?
 
-+ In je game gebruik je verschillende getallen om elke kleur weer te geven:
-    
-    + 1 = rood
-    + 2 = blauw
-    + 3 = groen
-    + 4 = geel
-    
-    Geef je personage vier verschillend gekleurde uiterlijken, een voor elk van de vier kleuren hierboven. Zorg ervoor dat de gekleurde uiterlijken in dezelfde volgorde staan ​​als in bovenstaande lijst.
-    
-    ![screenshot](images/colour-costume.png)
+--- task ---
 
-We gaan nu een willekeurige reeks kleuren maken.
+Voeg de Muziek-extensie toe aan je project zodat je het `drum afspelen`{:class="block3extensions"} blok kunt gebruiken.
 
-+ Maak een lijst met de naam `reeks`{:class="blockdata"}. In deze lijst bewaren we de kleurenreeks die de speler moet gaan onthouden. Alleen de sprite van de personage gebruikt deze lijst, dus kun je **Alleen voor deze sprite** selecteren.
+[[[generic-scratch3-add-music-extension]]]
 
-[[[generic-scratch-make-list]]]
+--- /task ---
 
-Je zou nu een lege lijst moeten zien, links in het speelveld, plus nieuwe blokken om met lijsten te kunnen werken.
+--- task ---
 
-![screenshot](images/colour-list-blocks.png)
+De code die de drum speelt is **erg** vergelijkbaar met de code die het kostuum van het personage verandert.
 
-+ Weet je nog dat we elke kleur een nummer hebben gegeven? We kunnen nu met een willekeurig getal een kleur selecteren en aan de lijst toevoegen. Voeg deze code toe:
+--- hints ---
+ --- hint --- Je hoeft slechts twee blokken toe te voegen: een `speel drum voor (0.25) beats`{:class="block3sound"} blok en een `item (lengte van reeks) van reeks`{:class="block3variabees"} blok.
+--- /hint ---
+ --- hint ---
 
-```blocks
-wanneer groene vlag wordt aangeklikt
-voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
+Dit zijn de blokken die je nodig hebt:
+
+![balletdanseres](images/ballerina.png)
+
+```blocks3
+speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
+
+(item (lengte van [reeks v]) van [reeks v])
 ```
 
-+ Test de code door op de groene vlag te klikken. Kijk of er een willekeurig getal tussen 1 en 4 aan de lijst wordt toegevoegd als je klikt.
+--- /hint ---
 
-+ Kun je dit blok toevoegen aan je programma om in één keer vijf willekeurige kleuren te genereren?
+--- hint --- Zo zou het voltooide programma eruit moeten zien:
 
-```blocks
-herhaal (5) keer
-end
-```
+![balletdanseres](images/ballerina.png)
 
-+ Je merkt dat de lijst vol raakt. We gaan een blok toevoegen om de hele lijst te wissen voordat er getallen worden gegenereerd.
-
-```blocks
+```blocks3
 wanneer groene vlag wordt aangeklikt
-verwijder item (alle v) van [reeks v]
-herhaal (5) keer 
+verwijder (alle v) van [reeks v]
+herhaal  (5) 
   voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
+  speel drum (item (laatste v) van [reeks v]) gedurende (0.25) maten
+  verander uiterlijk naar (item (laatste v) van [reeks v])
+  wacht (1) sec.
 end
 ```
 
-+ Tot slot veranderen we het uiterlijk van de danser, door het item te gebruiken dat het laatst aan de lijst is toegevoegd, en dat is het nummer dat zojuist willekeurig is gekozen. Voeg deze blokken toe aan je programma, net nadat het willekeurige nummer aan je lijst is toegevoegd:
+--- /hint ---
 
-```blocks
-verander uiterlijk naar (item (laaste v) van [reeks v] :: list)
-wacht (1) sec.
-```
+--- /hints ---
+
+--- /task ---
