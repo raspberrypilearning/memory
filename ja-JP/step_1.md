@@ -52,6 +52,6 @@
 
 \--- /no-print \---
 
-あなたは、することができます [ここに完成したプロジェクトをダウンロードしてください](http://rpf.io/p/en/memory-get)。
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
