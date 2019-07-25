@@ -2,15 +2,15 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Metti alla prova il tuo progetto alcune volte. Ti accorgi che a volte lo stesso numero viene scelto due volte (o più) in fila, il che rende più difficile memorizzare la sequenza?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Puoi eseguire un suono di batteria ogni volta che lo sprite del personaggio cambia costume? E che dire di un suono di batteria diverso per ogni colore?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Aggiungi l'estensione Music al tuo progetto in modo da poter usare il blocco `play drum`{: class = "block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,18 +18,18 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Il codice che suona il tamburo è **molto** simile al codice che cambia il costume del personaggio.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Hai solo bisogno di aggiungere due blocchi: un blocco `suona tamburo per (0.25) battute`{: class = "block3sound"} e un `elemento (lunghezza di sequenza) di sequenza`{: class = "block3variables"}. \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Qui ci sono i blocchi di codice che ti serviranno:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(item (length of [sequence v]) of [sequence v])
+(item (length of [sequenza v]) of [sequenza v])
 ```
 
 \--- /hint \---
@@ -40,11 +40,11 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 ```blocks3
 when flag clicked
-delete (all v) of [sequence v]
+delete (all v) of [sequenza v]
 repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
+    add (pick random (1) to (4)) to [sequenza v]
+    play drum (item (length of [sequenza v]) of [sequenza v]) for (0.25) beats
+    switch costume to (item (length of [sequenza v]) of [sequenza v])
     wait (1) seconds
 end
 ```
