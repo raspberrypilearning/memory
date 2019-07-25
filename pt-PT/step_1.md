@@ -1,16 +1,16 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Esta é a versão **Scratch 3** do projeto. Há também uma versão [Scratch 2 do projeto](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## Introdução
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+Neste projeto, irás criar um jogo de memória no qual tens que memorizar e repetir uma sequência aleatória de cores!
 
-### What you will make
+### O que vais fazer
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- Clica na bandeira verde para começar. Observa a sequência de cores mostradas pelo vestido da bailarina e ouve os sons de bateria que as acompanham, depois repete as cores em resposta. Se errares na ordem das cores, o jogo acaba!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -22,36 +22,36 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: O que vais aprender
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Como acrescentar um som ao teu actor no Scratch
++ Como criar e utilizar listas para armazenar dados
++ Como criar e utilizar blocos personalizados para repetir o código
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Do que vais precisar
 
 ### Hardware
 
-+ A computer capable of running Scratch 3
++ Um computador com capacidade para executar o Scratch 3
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (ou [online](https://rpf.io/scratchon){: target = "_ blank"} ou [offline](https://rpf.io/scratchoff){: target = "_ blank"})
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: Informações adicionais para educadores
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Se for necessário imprimir este projeto, por favor, utiliza a [versão para impressão](https://projects.raspberrypi.org/en/projects/memory/print){: target = "_ blank"}.
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
