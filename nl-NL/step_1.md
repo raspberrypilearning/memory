@@ -42,8 +42,7 @@ title: Wat heb je nodig
 
 ### Software
 
-Scratch 3 ([online](https://rpf.io/scratchon){:target="_blank"} of [offline](https://rpf.io/scratchoff){:target="_ blank}) 
-
+Scratch 3 ([online](https://rpf.io/scratchon){:target="_blank"} of [offline](https://rpf.io/scratchoff){:target="_blank}) 
 --- /collapse ---
 
 --- collapse ---
@@ -53,10 +52,10 @@ title: Aanvullende informatie voor docenten
 
 --- no-print ---
 
-Als je dit project wilt afdrukken, gebruik dan de [printvriendelijke versie](https://projects.raspberrypi.org/nl-NL/projects/memory/print){:target="_ blank"}.
+Als je dit project wilt afdrukken, gebruik dan de [printvriendelijke versie](https://projects.raspberrypi.org/nl-NL/projects/memory/print){:target="_blank"}.
 
 --- /no-print ---
 
-Je kunt [het voltooide project hier downloaden](http://rpf.io/p/nl-NL/memory-get).
+Hier kun je het [voltooide project](http://rpf.io/p/nl-NL/memory-get) downloaden.
 
 --- /collapse ---

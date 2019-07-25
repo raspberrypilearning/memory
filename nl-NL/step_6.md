@@ -61,9 +61,7 @@ anders
 einde
 ```
 
---- /hint ---
---- /hints --- 
---- /task ---
+--- /hint --- --- /hints --- --- /task ---
 
 Je moet deze nieuwe code ook aan de personage-sprite toevoegen voor de andere drie kleuren!
 

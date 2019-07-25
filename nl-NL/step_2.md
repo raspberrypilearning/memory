@@ -77,9 +77,7 @@ herhaal (5)
 end
 ```
 
---- /hint --- 
---- /hints --- 
---- /task ---
+--- /hint --- --- /hints --- --- /task ---
 
 --- task --- Elke keer dat een getal wordt toegevoegd aan de lijst, moet het karakter zijn kostuum wijzigen zodat de kleur van het kostuum overeenkomt met het nummer. Plaats deze blokken in je code direct onder waar een willekeurig nummer aan `reeks` wordt toegevoegd{:class="block3variables"}:
 

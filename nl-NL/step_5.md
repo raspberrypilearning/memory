@@ -32,9 +32,7 @@ verander [score v] met (1)
 ```
 
 --- hints ---
- --- hint --- Je weet dat de volgorde correct is op het moment dat het spel het 'gewonnen'-bericht `uitzendt`{:class="block3events"}. 
---- /hint --- 
- --- /hints ---
+ --- hint --- Je weet dat de volgorde correct is op het moment dat het spel het 'gewonnen'-bericht `uitzendt`{:class="block3events"}. --- /hint --- --- /hints ---
 
 --- /task ---
 
