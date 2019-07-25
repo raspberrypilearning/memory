@@ -1,10 +1,10 @@
-## What next?
+## O que é que se segue?
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
+Experimenta o projeto [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects) e cria um jogo no qual tens de salvar a Terra de monstros espaciais.
 
 \--- no-print \---
 
-Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+Clique na bandeira verde para começar e, de seguida, usa as teclas das setas para mover e a do <kbd>espaço</kbd> chave para saltar.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -15,6 +15,6 @@ Click the green flag to start, and then use the arrow keys to move and the <kbd>
 
 \--- print-only \---
 
-![dodgeball game being played](images/dodgeball-showcase.png)
+![jogo de dodgeball a ser jogado](images/dodgeball-showcase.png)
 
 \--- /print-only \---
