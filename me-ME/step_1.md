@@ -52,6 +52,6 @@ Ukoliko je potrebno da odštampate ovaj projekat, koristite [verziju za štampu]
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
