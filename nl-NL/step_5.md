@@ -2,7 +2,7 @@
 
 Tot nu toe hoeft de speler maar een reeks van vijf kleuren te onthouden. Verbeter je spel door een score toe te voegen en code toe te voegen, zodat wanneer de speler punten scoort, het spel naar het volgende niveau gaat en de te onthouden kleurenreeks langer wordt.
 
---- task --- Maak een nieuwe variabele met de naam `score` {:class="block3variables"}.
+--- task --- Maak een nieuwe variabele met de naam `score`{:class="block3variables"}.
 
 [[[generic-scratch3-add-variable]]] --- /task ---
 
@@ -32,9 +32,7 @@ verander [score v] met (1)
 ```
 
 --- hints ---
- --- hint --- Je weet dat de volgorde correct is op het moment dat het spel het 'gewonnen'-bericht `uitzendt`{:class="block3events"}. 
---- /hint --- 
- --- /hints ---
+ --- hint --- Je weet dat de volgorde correct is op het moment dat het spel het 'gewonnen'-bericht `uitzendt`{:class="block3events"}. --- /hint --- --- /hints ---
 
 --- /task ---
 

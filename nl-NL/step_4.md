@@ -9,7 +9,7 @@ Nu ga je vier knoppen toevoegen die de speler moet indrukken om de volgorde van 
 
 ![screenshot](images/colour-drums.png) --- /task ---
 
---- task --- Voeg code toe aan de rode sprite zodat, wanneer de sprite geklikt wordt, het een 'rood' bericht `uitzendt`:class="block3events"} naar de personage-sprite:
+--- task --- Voeg code toe aan de rode sprite zodat, wanneer de sprite geklikt wordt, het een 'rood' bericht `uitzendt`{:class="block3events"} naar de personage-sprite:
 
 ![rode-drum](images/red_drum.png)
 
@@ -58,15 +58,11 @@ einde
 + 1 = rood
 + 2 = blauw
 + 3 = groen
-+ 4 = geel 
++ 4 = geel
+--- /hint ---
+ --- hint --- Boven het `verwijder 1 van reeks`{:class="block3variables"} blok, voeg het `speel drum`{:class="block3sound"} blok toe om het eerste geluid in de `reeks`{:class="block3variables"} lijst af te spelen.
 
---- /hint --- 
---- hint --- 
-Boven het `verwijder 1 van reeks`{:class="block3variables"} blok, voeg het `speel drum`{:class="block3sound"} blok toe om het eerste geluid in de `reeks`{:class="block3variables"} lijst af te spelen.
-
---- /hint --- 
---- hint --- 
-Dit is de code die je moet toevoegen:
+--- /hint --- --- hint --- Dit is de code die je moet toevoegen:
 
 ```blocks3
 wanneer ik signaal [rood v] ontvang
@@ -81,9 +77,7 @@ einde
 
 ```
 
---- /hint ---
---- /hints --- 
---- /task ---
+--- /hint --- --- /hints --- --- /task ---
 
 --- task --- Dupliceer de code die je hebt gebruikt om je personage-sprite op het bericht `rood`{:class="block3events"} te laten reageren. Wijzig de gedupliceerde code zodat deze het bericht `blauw`{:class="block3events"} verzendt. --- /task ---
 
@@ -106,9 +100,7 @@ wanneer ik signaal [rood v] ontvang
 speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
 ```
 
---- /hint --- 
---- hint --- 
-Hier is hoe je code er uit moet zien voor het signaal `blauw`{:class="block3events"}.
+--- /hint --- --- hint --- Hier is hoe je code er uit moet zien voor het signaal `blauw`{:class="block3events"}.
 
 ![balletdanseres](images/ballerina.png)
 
@@ -123,9 +115,7 @@ anders
 end
 ```
 
---- /hint ---
---- /hints --- 
---- /task ---
+--- /hint --- --- /hints --- --- /task ---
 
 --- task --- Dupliceer de code nogmaals twee keer (voor de groene en gele knoppen) en verander de benodigde delen zodat het personage correct reageert op de nieuwe `uitzendingen`{:class="block3events"}. --- /task ---
 
