@@ -1,16 +1,16 @@
-## Add sound
+## Adicionar som
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Testa o teu projeto algumas vezes. Vais perceber que às vezes o mesmo número é escolhido duas vezes (ou mais) seguidas, o que é que dificulta a memorização da sequência?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Consegues fazer tocar um som de bateria de todas as vezes que o sprite mudar de roupa? E que tal um som de bateria diferente para cada cor?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Adiciona a extensão Música ao teu projeto para que possas uttiliar o bloco `play drum`{:class="block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,13 +18,13 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+O código que faz tocar o tambor é **muito** semelhante ao código que faz mudar o traje do sprite.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Basta adicionar dois blocos: um Bloco `play drum for (0.25) beats` {:class="block3sound"} e um bloco `item (length of sequence) of sequence`{:class="block3variables"}. \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Aqui estão os blocos de que necessitas:
 
-![ballerina](images/ballerina.png)
+![bailarina](images/ballerina.png)
 
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
@@ -34,9 +34,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Aqui está o aspeto que o teu código final deve ter:
 
-![ballerina](images/ballerina.png)
+![bailarina](images/ballerina.png)
 
 ```blocks3
 when flag clicked
