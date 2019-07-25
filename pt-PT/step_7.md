@@ -1,8 +1,8 @@
-## Challenge: improve your game
+## Desafio: Melhorar o teu jogo
 
-### Make more blocks
+### Faz mais blocos
 
-Do you see any other code that is the same for all four buttons?
+Estar a ver algum outro código que seja o mesmo para os quatro botões?
 
 ```blocks3
 when I receive [red v]
@@ -22,18 +22,18 @@ else
 end
 ```
 
-Can you make another custom block that all buttons can use?
+Consegues fazer outro bloco personalizado que todos os botões possam utilizar?
 
-### Another costume
+### Outro traje
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+Consegues assegurar que o teu jogo inicia com o teu personagem a mostrar uma das quatro cores, e que o personagem exibe sempre a última cor da sequência quando o jogador está a repetir a sequência de cores?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+Consegues acrescentar outro traje branco ao teu personagem, e adicionar código para que o personagem apresente este traje no início do jogo e enquanto o jogador está a repetir a sequência?
 
-![screenshot](images/colour-white.png)
+![captura de ecrã](images/colour-white.png)
 
-### Difficulty level
+### Nível de Dificuldade
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+Consegues dar permissão ao jogador para escolher entre 'modo fácil' (utilizando apenas a bateria vermelha e azul) e 'modo normal' (que utiliza os quatro tambores)?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+Podes até adicionar um modo 'hard', que utiliza um quinto tambor!
