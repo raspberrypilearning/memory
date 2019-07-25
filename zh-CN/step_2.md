@@ -1,39 +1,39 @@
-## Create a colour sequence
+## 创建一个颜色序列
 
-First create a character that can display a random sequence of colours.
+首先，让我们创建一个角色，该角色将展示一个需要记住的随机颜色序列。
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- 打开一个新的Scratch项目。
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**在线： **在[rpf.io/scrath-new](https://rpf.io/scratchon)打开一个新的Scratch在线项目。
 
-**Offline**: open a new project in the offline editor.
+**离线： **在离线编辑器中打开一个新项目。
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+如果您需要下载并安装Scratch离线编辑器，可以在[ rpf.io/scratchoff ](https://rpf.io/scratchoff)中获取。
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+-- task -- 选择一个角色和一个背景。比如你可以用芭蕾舞演员。你的角色也不一定是一个人，只要能展示不同颜色就够了。
 
 ![screenshot](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ 您的游戏应使用不同的数字来表示每种颜色：
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = 红色
+    + 2 = 蓝色
+    + 3 = 绿色
+    + 4 = 黄色
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\---任务\--- 你的角色提供四种不同颜色的服装，以上四种颜色各一套。 确保您的服装颜色的顺序与上面的列表顺序相同。
 
 ![screenshot](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+如果需要，可以使用**填充**工具来给服装不同部分填上不同的颜色。
 
 ![color-a-shape](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+接下来，添加一个列表，用于存储玩家必须记住的随机颜色序列。
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- 创建一个列表，名字是 `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
 
 [[[generic-scratch3-make-list]]]
 
