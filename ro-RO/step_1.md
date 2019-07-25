@@ -52,6 +52,6 @@ Dacă doriți să printați acest proiect, folosiți[printer-friendly version](h
 
 \--- /no-print \---
 
-Puteți [descarca proiectul finalizat aici](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
