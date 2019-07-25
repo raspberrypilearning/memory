@@ -22,7 +22,7 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Що ви вивчите
 
 + How to add sound to your Scratch project
 + How to create and use lists to store data
@@ -32,7 +32,7 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Що вам знадобиться
 
 ### Обладнання
 
@@ -52,6 +52,6 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
