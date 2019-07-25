@@ -2,12 +2,12 @@
 
 Nu ga je vier knoppen toevoegen die de speler moet indrukken om de volgorde van de kleuren te herhalen.
 
-\--- taak \--- Voeg vier nieuwe sprites toe aan je project om de vier knoppen weer te geven.
+\--- task \--- Voeg vier nieuwe sprites toe aan je project om de vier knoppen weer te geven.
 
 + Bewerk de uiterlijken van de nieuwe sprites zodat er één sprite in elk van de vier kleuren is
 + Zet de sprites in dezelfde volgorde op het podium als de uiterlijken: rood, blauw, groen, geel
 
-![screenshot](images/colour-drums.png) \---/task\---
+![screenshot](images/colour-drums.png) \--- /task \---
 
 \--- task \--- Voeg code toe aan de rode sprite zodat, wanneer de sprite geklikt wordt, het een 'rood' bericht `uitzendt`:class="block3events"} naar de personage-sprite:
 
@@ -30,7 +30,7 @@ Voeg vergelijkbare code toe aan de blauwe, groene en gele sprites om ze berichte
 
 Weet je nog dat de `uitzending`{:class="block3events"} is als een luidsprekerbericht? Je zult code toevoegen om het de taak van de personage-sprite te maken om te reageren op de `uitzending`{:class="block3events"} van berichten.
 
-\--- task \----
+\--- task \---
 
 Als de personage-sprite een signaal `rood`{:class="block3events"} krijgt moet het programma controleren of het getal `1` aan het begin van de `reeks`{:class="block3variables"} lijst staat (wat betekent dat `rood`{:class="block3events"} de volgende kleur in de reeks is).
 
@@ -57,9 +57,9 @@ einde
 + 1 = rood
 + 2 = blauw
 + 3 = groen
-+ 4 = geel \--- / hint \--- \--- hint \--- Boven het `verwijder 1 van reeks`{:class="block3variables"} blok, voeg het `speel drum`{:class="block3sound"} blok toe om het eerste geluid in de `reeks`{:class="block3variables"} lijst af te spelen.
++ 4 = geel \--- /hint \--- \--- hint \--- Boven het `verwijder 1 van reeks`{:class="block3variables"} blok, voeg het `speel drum`{:class="block3sound"} blok toe om het eerste geluid in de `reeks`{:class="block3variables"} lijst af te spelen.
 
-\--- / hint \--- \--- hint \--- Dit is de code die je moet toevoegen:
+\--- /hint \--- \--- hint \--- Dit is de code die je moet toevoegen:
 
 ```blocks3
 wanneer ik signaal [rood v] ontvang
@@ -96,7 +96,7 @@ wanneer ik signaal [rood v] ontvang
 speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
 ```
 
-\---/hint\--- \---hint\--- Hier is hoe je code er uit moet zien voor het signaal `blauw`{:class="block3events"}.
+\--- /hint \--- \--- hint \--- Hier is hoe je code er uit moet zien voor het signaal `blauw`{:class="block3events"}.
 
 ![balletdanseres](images/ballerina.png)
 
@@ -130,13 +130,13 @@ Wanneer de speler de hele kleursequentie correct herhaalt, is de `reeks`{:class=
 
 \--- /task \---
 
-\--- taak \--- Schakel naar het Speelveld en importeer het `drum machine` geluid of een ander geluid dat je wilt.
+\--- task \--- Schakel naar het Speelveld en importeer het `drum machine` geluid of een ander geluid dat je wilt.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- taak \--- Voeg deze code toe om een geluid te spelen en de achtergrond van kleur te laten veranderen als de speler wint.
+\--- task \--- Voeg deze code toe om een geluid te spelen en de achtergrond van kleur te laten veranderen als de speler wint.
 
 ![balletdanseres](images/stage.png)
 
