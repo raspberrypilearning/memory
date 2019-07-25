@@ -1,16 +1,16 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+זוהי גרסה ** Scratch 3 **של הפרויקט. יש גם גרסה [ Scratch 2 של הפרויקט ](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## הקדמה
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+בפרויקט זה תצרו משחק זכרון, בו עליכם לחזור על רצף אקראי של צבעים!
 
-### What you will make
+### מה תכינו
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+לחצו על הדגל הירוק כדי להתחיל. צפו ברצף הצבעים המוצגים לפי הלבוש המתחלף של הרקדנית, שמעו את פעימות התוף הנלווה, ולאחר מכן חזרו על רצף הצבעים באמצעות לחיצה על התופים בצבע המתאים. אם תטעו בסדר הצבעים, המשחק יגמר!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -22,36 +22,36 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: מה תלמדו
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ כיצד להוסיף צליל לפרויקט סקרטץ'
++ כיצד ליצור רשימות ולהשתמש בהן כדי לאחסן נתונים
++ כיצד ליצור בלוקים מותאים אישית ולהשתמש בהם עבור קוד שחוזר על עצמו
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: למה תזדקקו
 
-### Hardware
+### חומרה
 
-+ A computer capable of running Scratch 3
++ מחשב המסוגל להריץ סקראטץ 3
 
-### Software
+### תוכנה
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (או [ מקוון ](https://rpf.io/scratchon) {:target="_blank"} או [ במצב לא מקוון ](https://rpf.io/scratchoff) {:target="_blank \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: מידע נוסף למורי המועדון
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+אם אתם צריכים להדפיס את הפרויקט הזה, אנא השתמשו ב [ גרסה ידידותית למדפסת ](https://projects.raspberrypi.org/en/projects/memory/print).
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
