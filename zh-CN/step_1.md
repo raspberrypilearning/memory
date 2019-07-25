@@ -1,16 +1,16 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+这个项目是基于**Scratch 3**版本的，另外还有一个基于[Scratch 2的版本](https://projects.raspberrypi.org/en/projects/memory-scratch2)。
 
 \--- /no-print \---
 
-## Introduction
+## 介绍
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+你将在本项目中创建一个记忆游戏，在游戏中，你必须记住并重复随机的颜色序列！
 
-### What you will make
+### 你将做出什么
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- no-print \--- 点击绿色旗帜开始游戏。 观察舞者裙子显示的颜色顺序并倾听伴随的鼓声，然后向她重复这些颜色。 如果你把顺序弄错，游戏就会结束！
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -22,36 +22,36 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: 你将学习什么
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ 如何为Scratch项目添加声音
++ 如何创建和使用列表来存储数据
++ 如何创建和使用自定义块来重复代码
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: 你需要准备什么
 
-### Hardware
+### 硬件
 
-+ A computer capable of running Scratch 3
++ 一台能够运行Scratch 3的电脑
 
-### Software
+### 软件
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3（[在线版本](https://rpf.io/scratchon){:target="_blank"}或[离线版本](https://rpf.io/scratchoff){:target="_blank"}） -- /collapse --
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: 教师附加信息
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+如果您需要打印本项目文件，请使用[适合打印版本](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}。
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
