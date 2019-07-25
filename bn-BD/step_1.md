@@ -52,6 +52,6 @@
 
 \----প্রিন্ট করা লাগবেনা --
 
-আপনি [এখানে সম্পন্ন প্রকল্পটি ডাউনলোড করতে পারেন](http://rpf.io/p/en/memory-get)।
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 -- /collapse \---
