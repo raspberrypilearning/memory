@@ -1,6 +1,6 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Questa è la versione **Scratch 3** del progetto. C'è anche una [versione Scratch 2 del progetto](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
@@ -10,7 +10,7 @@ In questo progetto, creerai un gioco di memoria nel quale dovrai memorizzare e r
 
 ### Che cosa creerai
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- no-print \--- Fare clic sulla bandiera verde per vedere l'animazione. Guarda la sequenza di colori mostrata dall'abito della ballerina e ascolta i ritmi della batteria, quindi ripeti i colori. Se ripeti l'ordine dei colori sbagliato, è finita!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -24,9 +24,9 @@ In questo progetto, creerai un gioco di memoria nel quale dovrai memorizzare e r
 
 ## title: Cosa imparerai
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Come aggiungere suoni al tuo progetto Scratch
++ Come creare e utilizzare le liste i per memorizzare i dati
++ Come creare e utilizzare blocchi personalizzati per la ripetizione del codice
 
 \--- /collapse \---
 
@@ -40,11 +40,11 @@ In questo progetto, creerai un gioco di memoria nel quale dovrai memorizzare e r
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (o [online](https://rpf.io/scratchon){: target = "_ blank"} o [offline](https://rpf.io/scratchoff){: target = "_ blank"}) \--- / collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: Informazioni aggiuntive per gli educatori
 
 \--- no-print \---
 
@@ -52,6 +52,6 @@ Se intendete stampare questo progetto, cliccate su [Versione stampabile](https:/
 
 \--- /no-print \---
 
-You can [download the completed project here](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
