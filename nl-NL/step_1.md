@@ -19,7 +19,9 @@ In dit project ga je een geheugenspel maken waarin je een willekeurige reeks kle
 
 --- /no-print ---
 
---- print-only --- ![screenshot of finished game](images/screenshot.png) --- /print-only ---
+--- print-only --- 
+![screenshot of finished game](images/screenshot.png) 
+--- /print-only ---
 
 --- collapse ---
 ---
