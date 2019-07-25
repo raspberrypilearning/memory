@@ -1,16 +1,16 @@
-## Add sound
+## Thêm âm thanh
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Kiểm tra dự án của bạn một vài lần. Bạn có để ý rằng đôi khi cùng một số được chọn hai lần (hoặc nhiều hơn) liên tiếp, điều này làm cho trình tự ghi nhớ khó hơn không?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Bạn có thể tạo ra một âm thanh trống mỗi khi nhân vật thay đổi trang phục? Và làm thế nào về một âm thanh trống khác nhau cho mỗi màu?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Thêm tiện ích mở rộng Âm nhạc vào dự án của bạn để bạn có thể sử dụng khối `phát trống`{: class = "block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,39 +18,39 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Mã chơi trống là **rất** tương tự như mã thay đổi trang phục của nhân vật.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- gợi ý \--- \--- gợi ý \--- Bạn chỉ cần thêm hai khối: một trống `phát cho (0,25) nhịp`{: class = "block3sound"} và `mục (độ dài của chuỗi) của chuỗi`{: class = "block3variables"}. \--- / gợi ý \--- \--- gợi ý \---
 
-Here are the blocks you need:
+Dưới đây là các khối bạn cần:
 
-![ballerina](images/ballerina.png)
+![diễn viên ba lê](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+chơi trống (\ (1 \) Snare Drum v) trong (0,25) nhịp
 
-(item (length of [sequence v]) of [sequence v])
+(mục (độ dài của [chuỗi v]) của [chuỗi v])
 ```
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- gợi ý \--- Đây là cách mã hoàn thành của bạn sẽ trông như thế nào:
 
-![ballerina](images/ballerina.png)
+![diễn viên ba lê](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
-end
+khi cờ nhấp
+xóa (tất cả v) của [chuỗi v]
+lặp lại (5)
+    thêm (chọn ngẫu nhiên (1) đến (4)) vào [chuỗi v]
+    phát trống (mục (độ dài của [chuỗi v]) của [chuỗi v]) cho (0,25) nhịp
+    trang phục chuyển sang (vật phẩm (độ dài của [chuỗi v]) của [chuỗi v])
+    chờ (1) giây
+kết thúc
 ```
 
 \--- /hint \---
 
-\--- /hints \---
+\--- / gợi ý \---
 
 \--- /task \---
