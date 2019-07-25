@@ -52,6 +52,6 @@
 
 \--- /no-print \---
 
-당신은 수 [여기에 완성 된 프로젝트를 다운로드](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 -- /collapse \---
