@@ -52,6 +52,6 @@
 
 \--- /無印刷\---
 
-你可以 [這裡下載完成的項目](http://rpf.io/p/en/memory-get)。
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 - - /坍方 - -
