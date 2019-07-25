@@ -1,88 +1,88 @@
-## Create a colour sequence
+## Tạo một chuỗi màu
 
-First create a character that can display a random sequence of colours.
+Đầu tiên tạo một nhân vật có thể hiển thị một chuỗi màu sắc ngẫu nhiên.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- Mở một dự án Scratch mới.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Trực tuyến**: mở dự án Scratch trực tuyến mới tại [rpf.io/scratch-new](https://rpf.io/scratchon).
 
-**Offline**: open a new project in the offline editor.
+**Ngoại tuyến**: mở một dự án mới trong trình chỉnh sửa ngoại tuyến.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Nếu bạn cần tải xuống và cài đặt trình soạn thảo ngoại tuyến Scratch, bạn có thể tìm thấy nó tại [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
-\--- /task \---
+\--- /bài tập \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- Chọn một nhân vật và bối cảnh. Bạn có thể sử dụng nữ diễn viên ballet, nhưng nhân vật của bạn không phải là một người, họ chỉ cần có thể hiển thị các màu sắc khác nhau.
 
-![screenshot](images/colour-sprite.png) \--- /task \---
+![ảnh chụp màn hình](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ Trò chơi của bạn nên sử dụng một số khác nhau để thể hiện mỗi màu:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = đỏ
+    + 2 = màu xanh
+    + 3 = xanh
+    + 4 = màu vàng
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- Cung cấp cho nhân vật của bạn bốn trang phục có màu sắc khác nhau, một trang phục cho mỗi bốn màu được hiển thị ở trên. Hãy chắc chắn rằng trang phục màu của bạn theo thứ tự như danh sách trên.
 
-![screenshot](images/colour-costume.png) \--- /task \---
+![ảnh chụp màn hình](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Nếu bạn muốn, bạn có thể sử dụng công cụ **color a shape** để tô các phần của trang phục bằng một màu khác.
 
-![color-a-shape](images/color-a-shape.png)
+![màu sắc](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Tiếp theo, thêm một danh sách để lưu trữ chuỗi màu ngẫu nhiên mà người chơi phải nhớ.
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- Tạo một danh sách gọi là `chuỗi`{: class = "block3variables"}. Chỉ sprite ký tự cần xem danh sách này, vì vậy bạn có thể chọn **Đối với sprite này chỉ** khi bạn tạo danh sách.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Bây giờ bạn sẽ thấy nhiều khối mã mới để sử dụng danh sách. Danh sách trống sẽ hiển thị ở góc trên bên trái của Sân khấu.
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![ảnh chụp màn hình](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Mỗi màu có một số khác nhau, vì vậy bạn có thể chọn một màu ngẫu nhiên bằng cách chọn ngẫu nhiên một số và thêm nó vào danh sách.
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- Thêm mã này vào ký tự sprite để chọn một số ngẫu nhiên và thêm nó vào `chuỗi`{: class = "block3variables"}:
 
-![ballerina](images/ballerina.png)
+![diễn viên ba lê](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+khi cờ nhấp
+thêm (chọn ngẫu nhiên (1) đến (4)) vào [chuỗi v]
 ```
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- nhiệm vụ \--- Kiểm tra mã của bạn. Kiểm tra xem, mỗi lần bạn nhấp vào cờ, một số ngẫu nhiên từ 1 đến 4 sẽ được thêm vào danh sách. \--- / nhiệm vụ \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- Bạn có thể thêm mã vào chương trình của mình để tạo năm số ngẫu nhiên cùng một lúc không?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- gợi ý \--- \--- gợi ý \--- Thêm a `xóa tất cả chuỗi`{: class = "block3variables"} để trước tiên xóa tất cả các mục trong danh sách, sau đó thêm `lặp lại`{: class = "block3control"} thêm năm số ngẫu nhiên vào danh sách. \--- / gợi ý \--- \--- gợi ý \---
 
-This is what your code should look like:
+Đây là mã của bạn sẽ trông như thế nào:
 
-![ballerina](images/ballerina.png)
+![diễn viên ba lê](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+khi cờ nhấp
+xóa (tất cả v) của [chuỗi v]
+lặp lại (5)
+    thêm (chọn ngẫu nhiên (1) đến (4)) vào [chuỗi v]
+kết thúc
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- / gợi ý \--- \--- / gợi ý \--- \--- / nhiệm vụ \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- Mỗi khi một số được thêm vào danh sách, nhân vật nên thay đổi trang phục để màu của trang phục phù hợp với số đó. Đặt các khối này vào mã của bạn ngay bên dưới, nơi một số ngẫu nhiên được thêm vào `chuỗi`{: class = "block3variables"}:
 
-![ballerina](images/ballerina.png)
+![diễn viên ba lê](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+chuyển trang phục sang (mục (độ dài của [chuỗi v]) của [chuỗi v])
+chờ (1) giây
 ```
 
 \--- /task \---
