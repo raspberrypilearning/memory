@@ -1,33 +1,33 @@
-## Create a colour sequence
+## צרו רצף של צבעים
 
-First create a character that can display a random sequence of colours.
+קודם כל, צרו דמות שתציג רצף אקראי של צבעים.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- פתחו פרוייקט חדש של Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+** מקוון: ** פתחו פרוייקט Scratch מקוון חדש ב [ rpf.io/scratch-new ](https://rpf.io/scratchon).
 
-**Offline**: open a new project in the offline editor.
+** לא מקוון: ** פתחו פרוייקט חדש בעורך הלא מקוון.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+אם אתם צריכים להוריד ולהתקין את העורך הלא מקוון של Scratch, תוכלו למצוא אותו בכתובת [rpf.io/scratchoff ](https://rpf.io/scratchoff).
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- בחרו דמות ורקע. אתם יכולים לבחור ברקדנית, אבל הדמות שלכם לא חייבת להיות אנושית, העיקר שתוכל להציג צבעים שונים.
 
 ![screenshot](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ במשחק, כל צבע ייוצג על ידי מספר:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = אדום
+    + 2 = כחול
+    + 3 = ירוק
+    + 4 = צהוב
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- בחרו לדמות שלכם ארבע תלבושות, אחת בכל אחד מהצבעים שהזכרנו קודם. ודאו שהתלבושות הצבעוניות יהיו באותו הסדר כמו ברשימה.
 
 ![screenshot](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+אם תרצו, תוכלו להשתמש בכלי **מילוי** כדי למלא חלקי התלבושת בצבע שונה.
 
 ![color-a-shape](images/color-a-shape.png)
 
