@@ -4,11 +4,11 @@
 
 Test je project een paar keer. Merk je dat soms hetzelfde nummer twee keer (of meer) achter elkaar wordt gekozen, waardoor de volgorde moeilijker te onthouden is?
 
-\---/task\---
+\--- /task \---
 
 Kun je een drumgeluid laten spelen telkens als de personagesprite van kostuum verandert? En wat dacht je van een ander drumgeluid voor elke kleur?
 
-\--- task \----
+\--- task \---
 
 Voeg de Muziek-extensie toe aan je project zodat je het `drum afspelen`{:class="block3extensions"} blok kunt gebruiken.
 
@@ -16,7 +16,7 @@ Voeg de Muziek-extensie toe aan je project zodat je het `drum afspelen`{:class="
 
 \--- /task \---
 
-\--- task \----
+\--- task \---
 
 De code die de drum speelt is **erg** vergelijkbaar met de code die het kostuum van het personage verandert.
 
