@@ -13,12 +13,6 @@ Klik om te beginnen op de groene vlag en gebruik vervolgens de pijltjestoetsen o
 
 --- /no-print ---
 
---- print-only ---
-
-![trefbal spel wordt gespeeld](images/dodgeball-showcase.png)
-
---- /print-only ---
-
 
 **Door de community geleverde vertaling**
 

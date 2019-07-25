@@ -9,7 +9,7 @@ Nu ga je vier knoppen toevoegen die de speler moet indrukken om de volgorde van 
 
 ![screenshot](images/colour-drums.png) --- /task ---
 
---- task --- Voeg code toe aan de rode sprite zodat, wanneer de sprite geklikt wordt, het een 'rood' bericht `uitzendt`:class="block3events"} naar de personage-sprite:
+--- task --- Voeg code toe aan de rode sprite zodat, wanneer de sprite geklikt wordt, het een 'rood' bericht `uitzendt`{:class="block3events"} naar de personage-sprite:
 
 ![rode-drum](images/red_drum.png)
 
