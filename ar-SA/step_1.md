@@ -52,6 +52,6 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- /no-print \---
 
-يمكنك [تنزيل المشروع المكتمل من هنا](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
