@@ -22,29 +22,29 @@ Dans ce projet, tu vas créer un jeu de mémoire dans lequel tu devras mémorise
 
 ## \--- collapse \---
 
-## title: What you will learn
+## Titre : Ce que tu vas apprendre :
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Comment ajouter du son à ton projet Scratch
++ Comment créer et utiliser une liste pour stocker des données
++ Comment créer et utiliser des blocks personnalisés pour répéter le code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## titre : Ce qu'il te faut avoir
 
-### Hardware
+### Matériel
 
-+ A computer capable of running Scratch 3
++ Un ordinateur capable d’exécuter Scratch 3
 
-### Software
+### Logiciel
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [hors ligne](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## titre : Informations additionnelles pour les éducateurs
 
 \--- no-print \---
 
