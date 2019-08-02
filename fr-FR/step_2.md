@@ -1,6 +1,6 @@
-## Create a colour sequence
+## Crée une séquence de couleurs
 
-First create a character that can display a random sequence of colours.
+Premièrement, crée un personnage qui puisse afficher des séquences de couleurs aléatoires.
 
 \--- task \--- Open a new Scratch project.
 
