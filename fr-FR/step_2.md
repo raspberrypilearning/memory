@@ -39,11 +39,11 @@ Ensuite, ajoute une liste pour stocker la séquence aléatoire de couleurs que l
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Tu devrais maintenant voir beaucoup de nouveaux blocs de code pour utiliser les listes. La liste vide doit être visible dans le coin supérieur gauche de la scène.
 
 ![screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Chaque couleur a un numéro différent, tu peux donc choisir une couleur aléatoire en choisissant un nombre au hasard et en l'ajoutant à la liste.
 
 \--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
 
