@@ -8,7 +8,7 @@ Premièrement, crée un personnage qui puisse afficher des séquences de couleur
 
 **Hors-ligne**: ouvre Un nouveau projet dans l’éditeur hors-ligne.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Si tu as besoin de télécharger et d’installer l’éditeur Scratch hors-ligne, tu peux le trouver ici : [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
 \--- /task \---
 
