@@ -23,7 +23,7 @@ Si tu as besoin de télécharger et d’installer l’éditeur Scratch hors-lign
     + 3 = vert
     + 4 = jaune
 
-—- task —- Donne à ton personnage quatre costumes, chacun ayant une couleur différente, une par costume pour chacune des couleurs ci-dessus. Assure-toi que les costumes colorés sont dans le même ordre que ci-dessus.
+\--- task \--- Donne à ton personnage quatre costumes, chacun ayant une couleur différente, une par costume pour chacune des couleurs ci-dessus. Assure-toi que les costumes colorés sont dans le même ordre que ci-dessus.
 
 ![screenshot](images/colour-costume.png) \--- /task \---
 
