@@ -4,9 +4,9 @@ Premièrement, crée un personnage qui puisse afficher des séquences de couleur
 
 —- task —- Ouvre un nouveau projet scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**En ligne**: ouvre un nouveau projet scratch à [rpf.io/scratch-new](https://rpf.io/scratchon).
 
-**Offline**: open a new project in the offline editor.
+**Hors-ligne**: ouvre Un nouveau projet dans l’éditeur hors-ligne.
 
 If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
