@@ -12,26 +12,26 @@ Si tu as besoin de télécharger et d’installer l’éditeur Scratch hors-lign
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- Choisis un personnage (lutin) et un arrière-plan. Tu peux utiliser la ballerine, mais ton lutin ne dois pas forcément être une personne, il doit seulement être capable de montrer différentes couleurs.
 
 ![screenshot](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ Ton jeu doit utiliser différents nombres afin de représenter chaque couleur :
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = rouge
+    + 2 = bleu
+    + 3 = vert
+    + 4 = jaune
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+—- task —- Donne à ton personnage quatre costumes, chacun ayant une couleur différente, une par costume pour chacune des couleurs ci-dessus. Assure-toi que les costumes colorés sont dans le même ordre que ci-dessus.
 
 ![screenshot](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Si tu le souhaites, tu peux utiliser l’outil de ** coloriage de forme **Pour remplir les parties du costume avec une couleur différente.
 
 ![color-a-shape](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Ensuite, ajoute une liste pour stocker la séquence aléatoire de couleurs que le joueur doit mémoriser.
 
 \--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
 
