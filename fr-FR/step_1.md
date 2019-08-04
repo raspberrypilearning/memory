@@ -50,8 +50,8 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [hors 
 
 Si tu as besoin d’imprimer ce projet, utilise plutôt la [ version imprimable ](https://projects.raspberrypi.org/en/projects/memory/print) {:target="_blank"}.
 
-—- /no-print —-
+\--- /no-print \---
 
 Tu peux trouver le [projet complet ici](http://rpf.io/p/en/memory-get).
 
-—- /collapse —-
+\--- /collapse \---
