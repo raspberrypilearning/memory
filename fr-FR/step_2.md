@@ -2,7 +2,7 @@
 
 Premièrement, crée un personnage qui puisse afficher des séquences de couleurs aléatoires.
 
-\--- task \--- Open a new Scratch project.
+—- task —- Ouvre un nouveau projet scratch.
 
 **Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
 
