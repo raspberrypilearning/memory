@@ -33,7 +33,7 @@ Si tu le souhaites, tu peux utiliser l’outil de ** coloriage de forme **Pour r
 
 Ensuite, ajoute une liste pour stocker la séquence aléatoire de couleurs que le joueur doit mémoriser.
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- Premièrement, ajoute une nouvelle liste appelée `Séquence `{: class = "block3variables"}. Seul le lutin doit avoir besoin de voir cette liste, donc tu peux sélectionner **Pour ce lutin seulement** quand tu crées la liste.
 
 [[[generic-scratch3-make-list]]]
 
