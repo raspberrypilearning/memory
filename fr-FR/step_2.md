@@ -45,20 +45,20 @@ Tu devrais maintenant voir beaucoup de nouveaux blocs de code pour utiliser les 
 
 Chaque couleur a un numéro différent, tu peux donc choisir une couleur aléatoire en choisissant un nombre au hasard et en l'ajoutant à la liste.
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- Ajoute ce code au lutin pour choisir un nombre aléatoire et l'ajouter à la `séquence` {:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+quand le drapeau est cliqué
+ajouter (prendre un nombre aléatoire entre (1) et (4)) à [séquence v]
 ```
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- Teste ton code. Vérifie que, chaque fois que tu cliques sur le drapeau, un chiffre aléatoire entre 1 et 4 est ajouté à la liste. \--- /task \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- Peux-tu ajouter du code à ton programme qui génère cinq chiffres aléatoires en même temps ?
 
 \--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
 
