@@ -52,6 +52,6 @@ Se for necessário imprimir este projeto, por favor, utiliza a [versão para imp
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Podes encontrar o [projeto concluído aqui](http://rpf.io/p/en/memory-get){: target = "_ blank.
 
 \--- /collapse \---
