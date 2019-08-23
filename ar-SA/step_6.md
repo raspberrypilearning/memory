@@ -6,13 +6,13 @@
 
 عند انتهاء اللعبة بسبب أن اللاعب لم يتذكر تسلسل الألوان بشكل صحيح، يجب أن تقوم اللعبة بالتحقق هل الدرجة الحالية التي وصل إليها اللاعب أعلى من الدرجة السابقة أم لا. إذا كان الأمر كذلك، فيجب أن تقوم اللعبة بحفظ الدرجة الأعلى، و ايضا حفظ اسم اللاعب.
 
-\--- task \--- أضف تعليمة برمجية لكائن الشخصية الرئيسية لحفظ `أعلى درجة`{:class="block3variables"}. ايضا اسأل عن اسم اللاعب، و احفظه في المتغير `اسم اللاعب`{:class="block3variables"}.
+\--- task \--- أضف تعليمة برمجية لكائن الشخصية الرئيسية لحفظ `أعلى درجة`{:class="block3variables"}. ايضا اسأل عن اسم اللاعب, و احفظه في المتغير `اسم اللاعب`{:class="block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
 \--- hints \--- \--- hint \--- التعليمات البرمجية الجديدة التي ستضيفها يجب أن تتبع النمط التالي:
 
-بعد رسالة `انتهت اللعبة!`{:class="block3looks"} `اذا`{:class="block3control"} كانت `الدرجة`{:class="block3variables"} `أعلى من`{:class="block3operators"} `أعلى درجة`{:class="block3variables"} `اجعل`{:class="block3variables"} `أعلى درجة`{:class="block3variables"} مساوياً `الدرجة`{:class="block3variables"} `اسأل`{:class="block3sensing"} عن اسم اللاعب `اجعل`{:class="block3variables"} ` اسم اللاعب`{:class="block3variables"} مساوياً `للاجابة`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+بعد `انتهت اللعبة!`{:class="block3looks"} رسالة `اذا`{:class="block3control"} كانت `الدرجة`{:class="block3variables"} `أعلى من`{:class="block3operators"} `أعلى درجة`{:class="block3variables"} `اجعل`{:class="block3variables"} `أعلى درجة`{:class="block3variables"} مساوياً `الدرجة`{:class="block3variables"} `اسأل`{:class="block3sensing"} عن اسم اللاعب `اجعل`{:class="block3variables"} ` اسم اللاعب`{:class="block3variables"} مساوياً `للاجابة`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
 ستحتاج الكتل البرمجية التالية:
 
@@ -56,10 +56,11 @@ end
     اجعل [اسم اللاعب v] مساويًا (الإجابة :: sensing) :: variables :: control
   end
   أوقف [الكل v] :: control :: control
-end What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
+end ما اسمك؟\] and wait
+اجعل [name v] مساوياً (الإجابة)
+end
+أوقف [الكل v]
+
 end
 ```
 
