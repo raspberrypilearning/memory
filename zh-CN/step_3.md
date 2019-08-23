@@ -1,16 +1,16 @@
-## Add sound
+## 添加音效
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+测试你的项目几次。您是否注意到，有时同一个数字在一行中被选择两次（或更多），这会使序列难以记忆？
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+每次角色精灵改变服装时，你能使程序发出鼓声吗？每种颜色的鼓声怎么样？
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+将音乐扩展添加到你的项目中，以便您可以使用`播放鼓声`{:class="block3extensions"} 模块。
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,35 +18,35 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+播放鼓声的代码 **非常**类似于改变角色服装的代码。
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- 你只需要添加两个块：一个 `击打鼓(0.25) 拍`{:class="block3sound"} 和`序列的第(序列的项目数)项`{:class="block3variables"}。 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+以下是你需要的代码块：
 
-![ballerina](images/ballerina.png)
+![芭蕾舞演员](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+击打 (\(1\) 小军鼓) (0.25) 拍
 
-(item (length of [sequence v]) of [sequence v])
+([序列] 的第 (length of 序列\]) 项)
 ```
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- 你完成的代码应该像下面这样：
 
-![ballerina](images/ballerina.png)
+![芭蕾舞演员](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
-end
+当 ⚑ 被点击
+删除 [序列] 的第 (all v) 项
+重复执行 (5) 次 
+  将 (在 (1) 和 (4) 之间取随机数) 加入 [序列]
+  击打 ([序列] 的第 ([序列] 的项目数) 项) (0.25) 拍
+  换成 ([序列] 的第 ([序列] 的项目数) 项) 造型
+  等待 (1) 秒
+结束
 ```
 
 \--- /hint \---
