@@ -1,6 +1,6 @@
 ## Desafío: más colores
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
+Prueba el siguiente proyecto, [Alón Prisionero](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), donde harás un juego en el que tendrás que evitar bolas mientras se mueven de la plataforma a la plataforma.
 
 \--- no-print \---
 
