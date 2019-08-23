@@ -1,153 +1,152 @@
-## Repeat the sequence
+## 重复顺序
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+现在，您将添加四个按钮，玩家必须按下才能重复颜色序列。
 
-\--- task \--- Add four new sprites to your project to represent the four buttons.
+\--- task \--- 在项目中添加四个新精灵来表示四个按钮。
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ 编辑新精灵的服装，以便四种颜色中的每一种都有一个精灵
++ 将精灵放在舞台上的顺序与服装相同：红色，蓝色，绿色，黄色
 
-![screenshot](images/colour-drums.png) \--- /task \---
+![截图](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+\--- task \--- 将代码添加到红色精灵中，以便在点击精灵时，该精灵能`广播` {：class =“block3events”}“红色”消息到角色精灵：
 
-![red-drum](images/red_drum.png)
+![红鼓](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    当角色被点击
+广播 (红色)
 ```
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+一个`广播/0>{:class="block3events"} 就像是通过扬声器宣布的消息，您可以在学校或超市中听到。 所有的精灵都可以听到 <code>广播`{:class="block3events"}, 但只有响应广播消息的精灵会做某些事情。
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+添加类似的代码到蓝色，绿色和黄色精灵，使它们 `广播`{:class="block3events"}有关自己颜色的消息。
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+你还记得 `广播`{:class="block3events"}就像一个扬声器信息吗？ 您将添加代码以使其成为精灵的任务，以响应`广播`{:class="block3events"}消息。
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+当你的精灵接收到 `红色`{:class="block3events"}信息时，代码应该检查数字 `1`是否在 `序列`{:class="block3variables"} 列表的开头(这意味着 `红色`{:class="block3events"}是序列中的下一个颜色)
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+如果 `1` 在列表的开头，代码应该从列表中删除数字，因为玩家记住了正确的颜色。 否则游戏结束，代码需要 `停止所有脚本`{:class="block3control"} 去结束游戏。
 
-![ballerina](images/ballerina.png)
+![芭蕾舞演员](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
+当接收到 [红色]
+如果 <([序列] 的第 (1 v) 项) = [1] > 那么 
+ 删除 [序列] 的第 (1 v) 项
+否则 
+ 说 [游戏结束!] (1) 秒
+ 停止 [全部脚本]
+结束
 ```
 
 \--- /task \---
 
-\--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+\--- task \--- 添加到您刚编写的代码中，以便角色精灵收到正确的 `广播`{:class="block3events"}消息。
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- 你能使用与每种颜色相对应的数字来播放正确的鼓点吗？
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 1 = 红色
++ 2 = 蓝色
++ 3 = 绿色
++ 4 =黄色 \--- /hint \--- \--- hint \--- 在 `删除序列的第1项`{:class="block3variables"} 代码中，添加 `击打鼓`{:class="block3sound"} 代码块去播放`序列`{:class="block3variables"} 列表的第一个声音。
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- /hint \--- \--- hint \--- 下面是你需要添加的代码：
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
+当接收到 [红色]
+如果<([序列] 的第 (1 v) 项) = [1]> 那么 
+ + 击打 (\(1\) 小军鼓) (0.25) 拍
+ 删除 [序列] 的第 (1 v) 项
+否则 
+ 说 [游戏结束!] (1) 秒
+ 停止 [全部脚本]
+结束
 
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}. \--- /task \---
+\--- task \--- 复制你用来使你的精灵响应 `红色`{:class="block3events"}信息的代码。 修改复制的代码使代码发送`蓝色`{:class="block3events"}信息。 \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+当精灵响应 `蓝色`{:class="block3events"}消息时，哪一段代码应该保持不变，哪一段代码应该改变？ 请记住，每种颜色都有相应的数字。
 
-\--- task \--- Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+\--- task \--- 更改精灵的代码，使精灵正确响应 `蓝色`{:class="block3events"} 消息。
 
 \--- hints \--- \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+保留这些块，但需要以某种方式改变它们：
 
-![ballerina](images/ballerina.png)
+![芭蕾舞演员](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<([序列] 的第 (1 v) 项) = [1]>
 
-when I receive [red v]
+当接收到 [红色]
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+击打 ((1) 小军鼓) (0.25) 拍
 ```
 
-\--- /hint \--- \--- hint \--- Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+\--- /hint \--- \--- hint \--- 这里是你的代码应该如何接受`蓝色`{:class="block3events"}广播。
 
-![ballerina](images/ballerina.png)
+![芭蕾舞演员](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    stop [all v]
-end
+当接收到 [蓝色]
+如果 <([序列] 的第 (1 v) 项) = [2]> 那么 
+  击打 (\(2\) 低音鼓) (0.25) 拍
+  删除 [序列] 的第 (1 v) 项
+否则 
+  说 [游戏结束!] (1) 秒
+  停止 [全部脚本]
+结束
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+\--- task \--- 再次复制代码两次(对于绿色和黄色按钮)，并更改必要的部分，以便角色正确响应新的`广播`{:class="block3events"}。 \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+记得测试代码！你能记住五种颜色的序列吗？每次序列是否不同？
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+当玩家正确地重复完整个颜色序列时，`序列`{:class="block3variables"}列表被清空，玩家获胜。 如果需要，一旦`序列`{:class="block3variables"} 列表变为空，你也可以显示一些闪烁的灯光作为奖励。
 
-\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+\--- task \--- 添加此代码到角色的`当 ⚑ 被点击`{:class="block3events"} 脚本的最后:
 
-![ballerina](images/ballerina.png)
+![芭蕾舞演员](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
+    等待  <([序列] 的项目数) = [0]>
+广播 (won v) 并等待
 ```
 
 \--- /task \---
 
-\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+\--- task \--- 切换到舞台，然后导入 `drum machine` 的声音或其他你喜欢的 声音。
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+\--- task \--- 添加此代码以播放音效，并在玩家获胜时使背景改变颜色。
 
-![ballerina](images/stage.png)
+![芭蕾舞演员](images/stage.png)
 
 ```blocks3
-    when I receive [won v]
-    start sound (drum machine v)
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
-    end
-    clear graphic effects
+    当接收到 [won v]
+播放声音 (drum machine v)
+重复执行 (50) 次 
+  将 [颜色] 特效增加 (25)
+  等待 (0.1) 秒
+结束
+清除图形特效
 ```
 
 \--- /task \---
