@@ -4,7 +4,7 @@
 
 \--- no-print \---
 
-انقر على العلم الأخضر للبدء ، ثم استخدم مفاتيح الأسهم للتحرك و مفتاح المسافة <kbd> </kbd> للقفز.
+انقر على العلم الأخضر للبدء ، ثم استخدم مفاتيح الأسهم للتحرك و مفتاح <kbd>المسافة </kbd> للقفز.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
