@@ -4,7 +4,7 @@
 
 \--- task \--- 새 Scratch 프로젝트를 엽니 다.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**온라인:**: [rpf.io/scratch-new](https://rpf.io/scratchon) 에서 새로운 온라인 스크래치 프로젝트 열기.
 
 **오프라인**: 오프라인 편집기에서 새 프로젝트를 엽니 다.
 
