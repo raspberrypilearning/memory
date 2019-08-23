@@ -22,7 +22,7 @@
 
 ## \--- collapse \---
 
-## title: 你将学习什么
+## title: 你将学到什么
 
 + 如何为Scratch项目添加声音
 + 如何创建和使用列表来存储数据
@@ -52,6 +52,6 @@ Scratch 3（[在线版本](https://rpf.io/scratchon){:target="_blank"}或[离线
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+你能找到 [完成的项目](http://rpf.io/p/en/memory-get)。
 
 \--- /collapse \---
