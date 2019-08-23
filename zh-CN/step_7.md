@@ -1,39 +1,39 @@
-## Challenge: improve your game
+## 挑战：完善你的游戏
 
-### Make more blocks
+### 制作更多模块
 
-Do you see any other code that is the same for all four buttons?
+你看到所有四个按钮的其他代码是否相同？
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
-end
+当接收到 [红色 v]
+如果 <([序列 v] 的第 (1 v) 项) = [1]> 那么 
+  击打 ((1) 小军鼓 v) (0.25) 拍
+  删除 [序列 v] 的第 (1 v) 项
+否则 
+  游戏结束 :: custom
+结束
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+当接收到 [蓝色 v]
+如果 <([序列 v] 的第 (1 v) 项) = [1]> 那么 
+  击打 ((2) 低音鼓 v) (0.25) 拍
+  删除 [序列 v] 的第 (1 v) 项
+否则 
+  游戏结束 :: custom
+结束
 ```
 
-Can you make another custom block that all buttons can use?
+你能制作另一个所有按钮都可以使用的自定义块吗？
 
-### Another costume
+### 另一种服装
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+你能看到你的游戏开始时你的角色显示四种颜色中的一种，并且当玩家重复颜色序列时，角色总是显示序列中的最后一种颜色吗？
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+你可以为你的角色添加另一个纯白色服装，并添加代码，以便角色在游戏开始时和玩家重复序列时显示这个服装吗？
 
-![screenshot](images/colour-white.png)
+![截图](images/colour-white.png)
 
-### Difficulty level
+### 困难级别
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+你可以让你的玩家在“简单模式”(仅使用红色和蓝色) 和“普通模式”(使用所有四种颜色) 之间进行选择吗？
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+如果你愿意，你甚至可以添加一个“困难”模式，这可以使用第五个鼓！
