@@ -10,17 +10,17 @@ steps:
   - 
     title: 介绍
   - 
-    title: 你将需要什么
-  - 
     title: 创建一个颜色序列
   - 
-    title: 挑战：添加声音
+    title: 添加声音
   - 
     title: 重复序列
   - 
-    title: 多个等级
+    title: 多重水平
   - 
-    title: "高分"
+    title: 高分
   - 
-    title: 挑战：编写更多代码块
+    title: "挑战：完善你的游戏"
+  - 
+    title: 下一步是什么？
 
