@@ -1,16 +1,16 @@
-## Add sound
+## Ajouter du son
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Teste ton projet plusieurs fois. As-tu remarqué que des fois, le même nombre est choisi deux fois (ou plus) dans la suite, ce qui rend la séquence plus difficile à mémoriser ?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Peux-tu mettre un son de batterie à chaque fois que le personnage change de costume ? Et que dis-tu d'un son de batterie différent pour chaque couleur ?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Ajoute l'extension Musique à ton projet de sorte à pouvoir utiliser le bloc ` jouer de la batterie `{:class="block3extensions"} .
 
 [[[generic-scratch3-add-music-extension]]]
 
