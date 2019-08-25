@@ -19,24 +19,27 @@ Hai bisogno dei seguenti blocchi:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-if < > then
+se <> allora
 end
 
 (score)
 
-(score)
+(punteggio)
 
-[ ] > [ ]
+[ ] &gt; [ ]
 
-answer
+(risposta)
 
 (punteggio record)
 
-ask [Come ti chiami?] and wait
+chiedi [Come ti chiami?] e attendi
 
-set [punteggio record v] to [ ] 
+porta [punteggio record v] a [ ]
 
-set [nome v] to [ ] 
+porta [nome v] a [ ]
+
+Text
+Xpath: /pre/code 
 ```
 
 \--- /hint \--- \--- hint \--- Ecco come dovrebbe essere il codice per quando viene premuto il pulsante rosso:
@@ -44,18 +47,18 @@ set [nome v] to [ ]
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequenza v])=[1]> then
-    play drum (item (1 v) of [sequenza v]) for (0.25) beats
-    delete (1 v) of [sequenza v]
-else
-    say [Hai perso!] for (1) seconds
-    if < (punteggio :: variables) > (Punteggio record) > then
-        set [Punteggio record v] to (punteggio :: variables)
-        ask [Record! Come ti chiami?] and wait
-        set [nome v] to (answer)
-    end
-    stop [all v]
+quando ricevo [rosso v]
+se <(elemento (1 v) di [sequenza v]) = [1]> allora 
+  suona il tamburo (elemento (1 v) di [sequenza v]) per (0.25) battute
+  cancella (1 v) da [sequenza v]
+altrimenti 
+  dire [Hai perso!] per (1) secondi
+  se <(punteggio :: variables) > (punteggio record)> allora 
+    porta [punteggio record v] a (punteggio :: variables)
+    chiedi [Punteggio Record! Come ti chiami?] e attendi
+    porta [nome v] a (risposta)
+  end
+  ferma [all v]
 end
 ```
 
