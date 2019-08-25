@@ -1,18 +1,18 @@
 ## Crea una sequenza di colori
 
-Prima crea un personaggio in grado di visualizzare una sequenza casuale di colori.
+Prima crea un personaggio con il quale visualizzare una sequenza casuale di colori.
 
 \--- task \--- Apri un nuovo progetto Scratch.
 
-**Online**: apri un nuovo progetto Scratch online a [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: apri un nuovo progetto Scratch online all'indirizzo [rpf.io/scratch-new](https://rpf.io/scratchon).
 
-**Offline**: apre un nuovo progetto nell'editor offline.
+**Offline**: apri un nuovo progetto nell'editor offline.
 
-Se devi scaricare e installare l'editor offline di Scratch, puoi trovarlo su [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Se devi scaricare e installare l'editor offline di Scratch, puoi trovarlo all'indirizzo [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
 \--- /task \---
 
-\--- task \--- Scegli un personaggio sprite e uno sfondo. Potresti usare la ballerina, ma il tuo personaggio non deve essere una persona, devono solo essere in grado di mostrare colori diversi.
+\--- task \--- Scegli uno sprite come personaggio e uno sfondo. Potresti usare la ballerina, ma il tuo personaggio non deve essere necessariamente una persona, devono solo essere in grado di mostrare colori diversi.
 
 ![schermata](images/colour-sprite.png) \--- /task \---
 
@@ -23,7 +23,7 @@ Se devi scaricare e installare l'editor offline di Scratch, puoi trovarlo su [rp
     + 3 = verde
     + 4 = giallo
 
-\--- task \--- Dai al tuo personaggio quattro costumi con colori diversi, un costume per ciascuno dei quattro colori mostrati sopra. Assicurati che i tuoi costumi colorati siano nello stesso ordine dell'elenco sopra.
+\--- task \--- Dai al tuo personaggio quattro costumi con colori diversi, un costume per ciascuno dei quattro colori mostrati sopra. Assicurati che i tuoi costumi colorati siano nello stesso ordine sopra elencato.
 
 ![schermata](images/colour-costume.png) \--- /task \---
 
@@ -33,13 +33,13 @@ Se lo desideri, puoi utilizzare lo strumento **colora una forma** per riempire p
 
 Quindi, aggiungi un elenco per memorizzare la sequenza casuale di colori che il giocatore deve ricordare.
 
-\--- task \--- Crea una lista chiamata `sequenza`{: class = "block3variables"}. Solo lo sprite del personaggio deve vedere questa lista, quindi puoi selezionare **Solo per questo sprite** quando crei la lista.
+\--- task \--- Crea una lista chiamata `sequenza`{:class="block3variables"}. Solo lo sprite del personaggio deve vedere questa lista, quindi puoi selezionare **Solo per questo sprite** quando crei la lista.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-Ora dovresti vedere molti nuovi blocchi di codice per l'utilizzo delle liste. L'a lista vuota dovrebbe essere visibile nell'angolo in alto a sinistra dello schermo.
+Ora dovresti vedere molti nuovi blocchi di codice per l'utilizzo delle liste. La lista vuota dovrebbe essere visibile nell'angolo in alto a sinistra dello stage.
 
 ![schermata](images/colour-list-blocks-annotated.png)
 
