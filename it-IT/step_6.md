@@ -109,17 +109,17 @@ se <(elemento (1 v) di [sequenza v]) = [1]> allora
   suona il tamburo ((1) Snare Drum v) per (0.25) battute
   cancella (1 v) da [sequenza v]
 altrimenti 
-  Hai perso :: custom
+  Game over :: custom
 end
 ```
 
 \--- /task \---
 
-\--- task \--- Metti alla prova il tuo nuovo blocco giocando e cliccando il pulsante rosso nel punto sbagliato nella sequenza di colori. \--- /task \---
+\--- task \--- Testa il tuo nuovo blocco giocando e cliccando il pulsante rosso in un punto sbagliato nella sequenza di colori. \--- /task \---
 
-Il tuo nuovo blocco `Hai perso`{: class = "block3myblocks"} è una **funzione**, un piccolo script che puoi usare ovunque nel codice aggiungendo il blocco `Hai perso`{: class = "block3myblocks"}.
+Il tuo nuovo blocco `Game over`{:class="block3myblocks"} è una **funzione**, un piccolo script che puoi usare ovunque nel codice aggiungendo il blocco `Game over`{:class="block3myblocks"}.
 
-\--- task \--- Sostituisci anche il codice nel blocco `else`{: class = "block3control"} collegato alle trasmissioni `broadcasts`{: class = "block3events"} per gli altri colori con il tuo nuovo blocco `Hai perso`{: class = "block3myblocks"}. Ecco come dovrebbe apparire il codice per il messaggio `blue`{: class = "block3events"}
+\--- task \--- Sostituisci anche il codice sotto `altrimenti`{: class = "block3control"} all'interno del gruppo di codice `quando ricevo`{:class="block3events"}, relativo agli altri colori, con il tuo nuovo blocco personale `Game over`{:class="block3myblocks"}. Ecco come dovrebbe apparire il codice per il messaggio `blu`{:class="block3events"}
 
 ![ballerina](images/ballerina.png)
 
@@ -129,13 +129,13 @@ se <(elemento (1 v) di [sequenza v]) = [1]> allora
   suona il tamburo ((2) Bass Drum v) per (0.25) battute
   cancella (1 v) da [sequenza v]
 altrimenti 
-  Hai perso :: custom
+  Game over :: custom
 end
 ```
 
 \--- /task \---
 
-\--- task \--- Ora aggiungi un suono che viene riprodotto quando viene premuto il pulsante sbagliato. Devi solo aggiungere questo codice una volta nel blocco `Hai perso`{: class = "block3myblocks"} che hai creato, e non quattro volte!
+\--- task \--- Ora aggiungi un suono che venga riprodotto quando viene premuto il pulsante sbagliato. Devi solo aggiungere questo codice una volta sola, all'interno del blocco `Game over`{:class="block3myblocks"} che hai creato, e non quattro volte!
 
 ![ballerina](images/ballerina.png)
 
