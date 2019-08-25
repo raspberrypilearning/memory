@@ -83,16 +83,15 @@ In alternativa, potresti definire un tuo blocco personale di codice e utilizzarl
 
 \--- /task \---
 
-\--- task \--- Aggiungi il codice dal blocco `else`{: class = "block3control"} collegato al `rosso`{: class = "block3events"} trasmesso al `Hai perso`{: class = blocco "block3myblocks"} in modo che assomigli a questo:
+\--- task \--- Dal gruppo di comandi riguardanti la ricezione del messaggio `rosso`{:class="block3events"}, copia il codice contenuto in `altrimenti`{:class="block3control"} e aggiungilo al blocco `Game over`{:class="block3myblocks"} in modo che assomigli a questo:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-definisci Hai perso
+definisci Game over
 say [Hai perso!] per (1) secondi
-se <(punteggio :: variables) > (Punteggio record)> then
-porta [Punteggio record v] a (punteggio)
-chiedi [Record ! Come ti chiami?] e attendi
+se <(punteggio :: variables) > (Punteggio record) > then
+porta [record v] a (punteggio) chiedi [Nuovo record! Come ti chiami?] e attendi
 porta [nome v] a (risposta)
 end
 ferma [all v]
