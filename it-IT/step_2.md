@@ -60,7 +60,7 @@ aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
 
 \--- task \--- Puoi aggiungere codice al tuo programma per generare cinque numeri casuali in una volta?
 
-\--- hints \--- \--- hint \--- Aggiungi a `delete all of sequenza`{: class = "block3variables"} per eliminare prima tutti gli elementi nella lista, quindi aggiungi un `repeat`{: class = "block3control"} che aggiunge cinque numeri casuali all'elenco. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Aggiungi a `delete all of sequenza`{: class = "block3variables"} per eliminare prima tutti gli elementi nella lista, quindi aggiungi un `ripeti`{: class = "block3control"} che aggiunge cinque numeri casuali all'elenco. \--- /hint \--- \--- hint \---
 
 Ecco come dovrebbe apparire il risultato:
 
@@ -81,8 +81,8 @@ end
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequenza v]) of [sequenza v])
-wait (1) seconds
+passa al costume (elemento (lunghezza di [sequenza v]) di [sequenza v])
+attendi (1) secondi
 ```
 
 \--- /task \---
