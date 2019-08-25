@@ -5,20 +5,20 @@
 Vedi qualche altro codice uguale per tutti e quattro i pulsanti?
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
+quando ricevo [rosso v]
+se <(elemento (1 v) di [sequenza v]) = [1]> allora 
+  suona il tamburo ((1) Snare Drum v) per (0.25) battute
+  cancella (1 v) da [sequenza v]
+altrimenti 
+  Hai perso :: custom
 end
 
-when I receive [blue v]
-if <(item (1 v) of [sequenza v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequenza v]
-else
-    Game over :: custom
+quando ricevo [blu v]
+se <(elemento (1 v) di [sequenza v]) = [1]> allora 
+  suona il tamburo ((2) Bass Drum v) per (0.25) battute
+  cancella (1 v) da [sequenza v]
+altrimenti 
+  Hai perso :: custom
 end
 ```
 
