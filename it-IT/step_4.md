@@ -114,7 +114,7 @@ end
 
 \--- task \--- Duplica nuovamente il codice due volte (per i pulsanti verde e giallo) e modifica le parti necessarie in modo che il carattere risponda correttamente ai nuovi messaggi `inviati a tutti`{:class="block3events"}. \--- /task \---
 
-Ricordati di testare il codice! Sei in grado di memorizzare una sequenza di cinque colori? La sequenza è diversa ogni volta?
+Ricordati di testare il codice! Viene memorizzata una sequenza di cinque colori? La sequenza è diversa ogni volta?
 
 Quando il giocatore ripete correttamente l'intera sequenza di colori, la lista `sequenza`{:class="block3variables"} si svuota e il giocatore vince. Se vuoi, puoi anche mostrare alcune luci lampeggianti come ricompensa una volta che la lista `sequenza`{:class="block3variables"} è vuota.
 
