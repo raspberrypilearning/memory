@@ -50,9 +50,8 @@ se <(elemento (1 v) di [sequenza v]) = [1]> allora
   cancella (1 v) da [sequenza v]
 altrimenti 
   dire [Hai perso!] per (1) secondi
-  se <(punteggio :: variables) > (punteggio record)> allora 
-    porta [punteggio record v] a (punteggio :: variables)
-    chiedi [Punteggio Record! Come ti chiami?] e attendi
+  se <(punteggio :: variables) > (punteggio record) > allora 
+    porta [record v] a (punteggio :: variables)  chiedi [Nuovo record! Come ti chiami?] e attendi
     porta [nome v] a (risposta)
   end
   ferma [all v]
@@ -61,27 +60,26 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-È necessario aggiungere questo nuovo codice allo sprite del personaggio anche per gli altri tre colori!
+È necessario aggiungere questa parte di codice allo sprite personaggio anche in corrispondenza degli altri tre colori!
 
-Riesci a vedere che il codice "Hai perso" per ciascuno dei quattro colori è esattamente lo stesso?
+Ti risulta che il codice "Game over" per ciascuno dei quattro colori sia esattamente lo stesso?
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
 dire [Hai perso!] per (1) secondi
 se <(punteggio :: variables) > (punteggio record)> allora 
-  porta [punteggio record v] a (punteggio :: variables)
-  chiedi [Punteggio Record! Come ti chiami?] e attendi
+  porta [record v] a (punteggio :: variables) chiedi [Nuovo record! Come ti chiami?] e attendi
   porta [nome v] a (risposta)
 end
 ferma [all v]
 ```
 
-Se è necessario modificare il codice "Hai perso", ad esempio per aggiungere un suono o cambiare il messaggio "Hai perso", è necessario cambiarlo quattro volte. È fastidioso e fa perdere un sacco di tempo.
+Se vuoi modificare il codice di "Game over", ad esempio per aggiungere un suono o cambiare il messaggio "Hai perso", è necessario cambiarlo quattro volte. È fastidioso e fa perdere un sacco di tempo.
 
-Invece, puoi definire il tuo blocco di codice e utilizzarlo ovunque nel tuo progetto.
+In alternativa, potresti definire un tuo blocco personale di codice e utilizzarlo più volte all'interno del tuo progetto.
 
-\--- task \--- Fare clic su `I Miei Blocchi`{: class = "block3myblocks"}, quindi su **Crea blocco**. Chiama questo nuovo blocco `Hai perso`{: class = "block3myblocks"}.
+\--- task \--- Fare clic su `I Miei Blocchi`{:class="block3myblocks"}, quindi su **Crea blocco**. Chiama questo nuovo blocco `Game over`{:class="block3myblocks"}.
 
 \--- /task \---
 
