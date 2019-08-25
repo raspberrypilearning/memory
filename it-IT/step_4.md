@@ -50,14 +50,14 @@ end
 
 \--- /task \---
 
-\--- task \--- Aggiungi al codice che hai appena scritto in modo che anche un tamburo suoni quando lo sprite del personaggio riceve la corretta trasmissione `broadcast`{: class = "block3events"}.
+\--- task \--- A quanto appena scritto, aggiungi del codice in modo che anche un tamburo suoni, quando lo sprite del personaggio riceve, tramite l'`invia a tutti`{:class="block3events"}, il messaggio corretto.
 
 \--- hints \--- \--- hint \--- Riesci a usare i numeri che corrispondono ad ogni colore per riprodurre il suono di tamburo corretto?
 
 + 1 = rosso
 + 2 = blu
 + 3 = verde
-+ 4 = giallo \--- /hint \--- \--- hint \--- Sopra il `delete 1 of sequenza`{: class = "block3variables"}, aggiungi il `play drum`{: class = " block3sound "} per riprodurre il primo suono nell'elenco `sequenza`{: class =" block3variables "}.
++ 4 = giallo \--- /hint \--- \--- hint \--- Sopra il `cancella 1 da sequenza`{:class="block3variables"}, aggiungi `suona il tamburo`{:class=" block3sound "} per riprodurre il primo suono nell'elenco `sequenza`{:class="block3variables "}.
 
 \--- /hint \--- \--- hint \--- Ecco il codice che dovrai aggiungere:
 
@@ -75,15 +75,15 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplica il codice che hai usato per far rispondere lo sprite del tuo personaggio al messaggio `red`{: class = "block3events"}. Cambia il codice appena copiato in modo che invii il messaggio `blue`{: class = "block3events"}. \--- /task \---
+\--- task \--- Duplica il codice che hai usato per far rispondere lo sprite personaggio al messaggio `rosso`{:class="block3events"}. Cambia il codice appena copiato in modo che invii il messaggio `blu`{:class="block3events"}. \--- /task \---
 
-Quando lo sprite risponde al messaggio `blue`{: class = "block3events"}, quale parte di codice dovrebbe rimanere lo stesso e quale dovrebbe cambiare? Ricorda che ogni colore ha un numero corrispondente.
+Quando lo sprite risponde al messaggio `blu`{:class="block3events"}, quale parte di codice dovresti mantenere e quale cambiare? Ricorda che ad ogni colore corrisponde un numero preciso.
 
-\--- task \--- Modifica il codice dello sprite del personaggio in modo che il carattere risponda correttamente al messaggio `blue`{: class = "block3events"}.
+\--- task \--- Modifica il codice dello sprite personaggio in modo che il personaggio risponda correttamente al messaggio `blu`{:class="block3events"}.
 
 \--- hints \--- \--- hint \---
 
-Conserva questi blocchi, ma è necessario modificarli in qualche modo:
+Puoi riciclare questi blocchi, ma devi modificarli in qualche modo:
 
 ![ballerina](images/ballerina.png)
 
