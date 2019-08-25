@@ -4,42 +4,39 @@ Ora salva il punteggio più alto in modo da poter sfidare i tuoi amici.
 
 \--- task \--- Aggiungi due nuove variabili chiamate `Punteggio record`{:class="block3variables"} e `nome`{:class="block3variables"} al tuo progetto. \--- /task \---
 
-Quando il gioco finisce perché il giocatore ottiene la sequenza sbagliata, il gioco dovrebbe verificare se il punteggio è superiore al punteggio record corrente. Se lo è, il gioco deve salvare il punteggio come il punteggio record e anche memorizzare il nome del giocatore.
+Quando il gioco finisce, perché il giocatore esegue una sequenza sbagliata, del codice dovrebbe verificare se il punteggio è superiore al punteggio record corrente. Se ciò si verifica, il gioco deve salvare il punteggio come il punteggio record e memorizzare anche il nome del giocatore.
 
-\--- task \--- Aggiungi codice al tuo sprite personaggio per memorizzare il `punteggio record`{: class = "block3variables"}. Chiedi anche il nome del giocatore e memorizzalo nella variabile `nome`{: class = "block3variables"}.
+\--- task \--- Aggiungi codice al tuo sprite personaggio per memorizzare il `punteggio record`{:class="block3variables"}. Chiedi anche il nome del giocatore e memorizzalo nella variabile `nome`{:class="block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
 \--- hints \--- \--- hint \--- Il tuo nuovo codice deve seguire questo schema:
 
-Dopo il messaggio `gioco finito`{: class = "block3looks"} `Se`{: class = "block3control"} il `punteggio`{: class = "block3variables"} è `maggiore di`{: class = "block3operators "} il `punteggio più alto`{: class =" block3variables "} `Porta`{: class =" block3variables "} il `punteggio più alto`{: class =" block3variables "} uguale al `punteggio `{: class =" block3variables "} `Chiedi`{: class =" block3sensing "} il nome del giocatore `Imposta`{: class =" block3variables "} il `nome`{: class =" block3variables "} uguale alla `risposta`{: class = "block3sensing"} \--- /hint \--- \--- hint \---
+Dopo il messaggio `game overo`{:class="block3looks"} `Se`{:class="block3control"} il `punteggio`{:class="block3variables"} è `maggiore`{:class="block3operators "} del `punteggio record`{:class=" block3variables "} `Porta`{:class="block3variables "} `record`{:class=" block3variables "} al valore `punteggio`{:class=" block3variables "} `Chiedi`{:class="block3sensing "} il nome del giocatore `Imposta`{:class="block3variables "} il `nome`{:class="block3variables "} al valore `risposta`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
 Hai bisogno dei seguenti blocchi:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-se <> allora
+se < > allora
 end
-
-(score)
 
 (punteggio)
 
-[ ] &gt; [ ]
+(punteggio)
+
+[ ] > [ ]
 
 (risposta)
 
-(punteggio record)
+(record)
 
-chiedi [Come ti chiami?] e attendi
+chiedi [What's your name?] e attendi
 
-porta [punteggio record v] a [ ]
+porta [record v] a [ ]
 
-porta [nome v] a [ ]
-
-Text
-Xpath: /pre/code 
+porta [nome v] a [ ] 
 ```
 
 \--- /hint \--- \--- hint \--- Ecco come dovrebbe essere il codice per quando viene premuto il pulsante rosso:
