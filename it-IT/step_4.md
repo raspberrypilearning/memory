@@ -24,17 +24,17 @@ L' `invia a tutti`{:class="block3events"} è simile a quei messaggi emessi dagli
 
 \--- task \---
 
-Aggiungi codice simile agli sprite blu, verdi e gialli per far loro trasmettere messaggi `broadcast`{: class = "block3events"} del proprio colore.
+Aggiungi codice simile al precedente anche agli sprite blu, verde e giallo per far `inviare a tutti`{:class="block3events"} il numero del proprio colore.
 
 \--- /task \---
 
-Ti ricordi che il `broadcast`{: class = "block3events"} è come un messaggio di altoparlante? Si aggiungerà codice per renderlo il lavoro del sprite personaggio di rispondere alla `trasmissione`{: class = "block3events"} messaggi.
+Ti ricordi che l'`invia a tutti`{: class = "block3events"} è come un messaggio di un altoparlante? Aggiungerai del codice per assicurarti che lo sprite del personaggio reagisca ai messaggi trasmessi tramite l'`invia a tutti`{:class="block3events"}.
 
 \--- task \---
 
-Quando il tuo personaggio sprite riceve il messaggio `red`{: class = "block3events"}, il codice dovrebbe verificare se il numero `1` è all'inizio della lista di `sequenza`{: class = "block3variables"} (che significa che `rosso`{: class = "block3events"} è il colore successivo nella sequenza).
+Quando il tuo personaggio sprite riceve il messaggio `rosso`{:class="block3events"}, il codice dovrebbe verificare se il numero `1` è all'inizio della lista `sequenza`{:class="block3variables"} (ciò significa che `rosso`{:class="block3events"} è il colore successivo nella sequenza).
 
-Se `1` è all'inizio della lista, il codice deve rimuovere il numero dalla lista, perché il giocatore ha ricordato il colore corretto. Altrimenti è game over, e il codice ha bisogno di fermare tutto `fermare tutti`{: class = "block3control"} per terminare il gioco.
+Se `1` è all'inizio della lista, il codice rimuoverà il numero dalla lista perché il giocatore ha ricordato il colore corretto. Diversamente sarà game over e un comando `ferma tutto`{:class="block3control"} terminerà il gioco.
 
 ![ballerina](images/ballerina.png)
 
