@@ -27,9 +27,9 @@ Qui ci sono i blocchi di codice che ti serviranno:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+suona il tamburo ((1) Snare Drum v) per (0.25) battute
 
-(item (length of [sequenza v]) of [sequenza v])
+(elemento (lunghezza di [sequenza v]) di [sequenza v])
 ```
 
 \--- /hint \---
@@ -39,13 +39,13 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequenza v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequenza v]
-    play drum (item (length of [sequenza v]) of [sequenza v]) for (0.25) beats
-    switch costume to (item (length of [sequenza v]) of [sequenza v])
-    wait (1) seconds
+quando si clicca sulla bandiera verde
+cancella (all v) da [sequenza v]
+ripeti (5) volte 
+  aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
+  suona il tamburo (elemento (lunghezza di [sequenza v]) di [sequenza v]) per (0.25) battute
+  passa al costume (elemento (lunghezza di [sequenza v]) di [sequenza v])
+  attendi (1) secondi
 end
 ```
 
