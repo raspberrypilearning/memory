@@ -88,11 +88,11 @@ Conserva questi blocchi, ma è necessario modificarli in qualche modo:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequenza v]) = [1]>
+<(elemento (1 v) di [sequenza v]) = [1]>
 
-when I receive [red v]
+quando ricevo [rosso v]
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+suona il tamburo ((1) Snare Drum v) per (0.25) battute
 ```
 
 \--- /hint \--- \--- hint \--- Ecco come il tuo codice dovrebbe cercare la trasmissione `blu`{: class = "block3events"}.
@@ -100,13 +100,13 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequenza v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequenza v]
-else
-    say [Hai perso!] for (1) seconds
-    stop [all v]
+quando ricevo [blu v]
+se <(elemento (1 v) di [sequenza v]) = [2]> allora 
+  suona il tamburo ((2) Bass Drum v) per (0.25) battute
+  cancella (1 v) da [sequenza v]
+altrimenti 
+  dire [Hai perso!] per (1) secondi
+  ferma [all v]
 end
 ```
 
@@ -123,8 +123,8 @@ Quando il giocatore ripete correttamente l'intera sequenza di colori, la `sequen
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequenza v]) = [0]>
-    broadcast (vinto v) and wait
+    attendi fino a quando <(lunghezza di [sequenza v]) = [0]>
+invia a tutti (vinto v) e attendi
 ```
 
 \--- /task \---
@@ -140,13 +140,13 @@ Quando il giocatore ripete correttamente l'intera sequenza di colori, la `sequen
 ![ballerina](images/stage.png)
 
 ```blocks3
-    when I receive [vinto v]
-    start sound (drum machine v)
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
-    end
-    clear graphic effects
+    quando ricevo [vinto v]
+avvia riproduzione suono (drum machine v)
+ripeti (50) volte 
+  cambia effetto [color v] di (25)
+  attendi (0.1) secondi
+end
+rimuovi effetti grafici
 ```
 
 \--- /task \---
