@@ -39,12 +39,12 @@ Se `1` è all'inizio della lista, il codice deve rimuovere il numero dalla lista
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequenza v])=[1]> then
-delete (1 v) of [sequenza v]
-else
-say [Hai perso!] for (1) seconds
-stop [all v]
+quando ricevo [rosso v]
+se <(elemento (1 v) di [sequenza v]) = [1]> allora 
+ cancella (1 v) da [sequenza v]
+altrimenti 
+ dire [Hai perso!] per (1) secondi
+ ferma [all v]
 end
 ```
 
@@ -62,14 +62,13 @@ end
 \--- /hint \--- \--- hint \--- Ecco il codice che dovrai aggiungere:
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequenza v])=[1]> then
-
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequenza v]
-else
-say [Hai perso!] for (1) seconds
-stop [all v]
+quando ricevo [rosso v]
+se <(elemento (1 v) di [sequenza v]) = [1]> allora 
+ + suona il tamburo ((1) Snare Drum v) per (0.25) battute
+ cancella (1 v) da [sequenza v]
+altrimenti 
+ dire [Hai perso!] per (1) secondi
+ ferma [all v]
 end
 
 ```
