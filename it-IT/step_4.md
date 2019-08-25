@@ -95,7 +95,7 @@ quando ricevo [rosso v]
 suona il tamburo ((1) Snare Drum v) per (0.25) battute
 ```
 
-\--- /hint \--- \--- hint \--- Ecco come il tuo codice dovrebbe cercare la trasmissione `blu`{: class = "block3events"}.
+\--- /hint \--- \--- hint \--- Ecco come dovrebbere risultare il codice in risposta all'invio del messaggio`blu`{:class="block3events"}.
 
 ![ballerina](images/ballerina.png)
 
@@ -112,13 +112,13 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplica nuovamente il codice due volte (per i pulsanti verde e giallo) e modifica le parti necessarie in modo che il carattere risponda correttamente alle nuove trasmissioni `broadcast`{: class = "block3events"}. \--- /task \---
+\--- task \--- Duplica nuovamente il codice due volte (per i pulsanti verde e giallo) e modifica le parti necessarie in modo che il carattere risponda correttamente ai nuovi messaggi `inviati a tutti`{:class="block3events"}. \--- /task \---
 
-Ricordati di testare il codice! Puoi memorizzare una sequenza di cinque colori? La sequenza è diversa ogni volta?
+Ricordati di testare il codice! Sei in grado di memorizzare una sequenza di cinque colori? La sequenza è diversa ogni volta?
 
-Quando il giocatore ripete correttamente l'intera sequenza di colori, la `sequenza `{: class = "block3variables"} si svuota e il giocatore vince. Se vuoi, puoi anche mostrare alcune luci lampeggianti come ricompensa una volta che la lista `sequenza`{: class = "block3variables"} è vuota.
+Quando il giocatore ripete correttamente l'intera sequenza di colori, la lista `sequenza`{:class="block3variables"} si svuota e il giocatore vince. Se vuoi, puoi anche mostrare alcune luci lampeggianti come ricompensa una volta che la lista `sequenza`{:class="block3variables"} è vuota.
 
-\--- task \--- Aggiungi questo codice alla fine dello script del tuo personaggio `when flag clicked`{: class = "block3events"}:
+\--- task \--- Aggiungi questo codice alla fine dello script `quando si clicca sulla bandiera verde`{:class="block3events"} del tuo personaggio:
 
 ![ballerina](images/ballerina.png)
 
@@ -129,7 +129,7 @@ invia a tutti (vinto v) e attendi
 
 \--- /task \---
 
-\--- task \--- Passa allo schermo principale e importa il suono `batteria elettronica` o un altro suono che si desidera.
+\--- task \--- Passa allo Stage e importa il suono `drum machine` o quello che desideri.
 
 [[[generic-scratch3-sound-from-library]]]
 
