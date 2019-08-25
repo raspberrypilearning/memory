@@ -40,18 +40,18 @@ cambia [punteggio v] di (1)
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequenza v]
-    repeat (punteggio)
-        add (pick random (1) to (4)) to [sequenza v]
-        switch costume to (item (length of [sequenza v]) of [sequenza v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequenza v]) = [0]>
-    broadcast (vinto v) and wait
-    change [punteggio v] by (1)
+quando si clicca sulla bandiera verde
+porta [score v] a [3]
+per sempre 
+  cancella (all v) da [sequenza v]
+  ripeti (punteggio) volte 
+    aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
+    passa al costume (elemento (lunghezza di [sequenza v]) di [sequenza v])
+    attendi (1) secondi
+  end
+  attendi fino a quando <(lunghezza di [sequenza v]) = [0]>
+  invia a tutti (vinto v) e attendi
+  cambia [punteggio v] di (1)
 end
 ```
 
