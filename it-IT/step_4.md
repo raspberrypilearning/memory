@@ -4,23 +4,23 @@ Ora stai per aggiungere quattro pulsanti che il giocatore deve premere per ripet
 
 \--- task \--- Aggiungi quattro nuovi sprite al tuo progetto per rappresentare i quattro pulsanti.
 
-+ Modifica i costumi dei nuovi sprite in modo che ci sia uno sprite in ciascuno dei quattro colori
++ Modifica il colore ai costumi dei nuovi sprite in modo che ci sia uno sprite corrispondente a ciascuno dei quattro colori
 + Metti gli sprite nello stesso ordine sul palco come i costumi: rosso, blu, verde, giallo
 
 ![screenshot](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Aggiungere il codice al sprite rosso in modo che, quando lo sprite viene cliccato, un messaggio 'rosso' `viene inviato`{: class = "block3events"} allo sprite personaggio:
+\--- task \--- Aggiungi il codice al sprite rosso in modo che, quando lo sprite viene cliccato, un messaggio "rosso" `viene inviato`{:class="block3events"} allo sprite personaggio:
 
 ![tamburo-rosso](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    quando si clicca questo sprite
+invia a tutti (rosso v)
 ```
 
 \--- /task \---
 
-Un `broadcast`{: class = "block3events"} è come un messaggio annunciato da un altoparlante, che si può per esempio sentire nelle scuole o nei supermercati. Tutti gli sprite possono ascoltare il `broadcast`{: class = "block3events"}, ma solo lo sprite incaricato di rispondere farà qualcosa.
+L' `invia a tutti`{:class="block3events"} è simile a quei messaggi emessi dagli altoparlanti, che si possono sentire per esempio nelle scuole o nei supermercati. Tutti gli sprite possono ascoltare l'`invia a tutti`{:class="block3events"}, ma solo lo sprite incaricato di rispondere farà qualcosa.
 
 \--- task \---
 
