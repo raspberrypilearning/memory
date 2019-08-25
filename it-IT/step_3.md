@@ -2,15 +2,15 @@
 
 \--- task \---
 
-Metti alla prova il tuo progetto alcune volte. Ti accorgi che a volte lo stesso numero viene scelto due volte (o più) in fila, il che rende più difficile memorizzare la sequenza?
+Metti alla prova il tuo progetto alcune volte. Hai notato che a volte lo stesso numero viene scelto due o più volte consecutivamente, rendendo più difficile memorizzare la sequenza?
 
 \--- /task \---
 
-Puoi eseguire un suono di batteria ogni volta che lo sprite del personaggio cambia costume? E che dire di un suono di batteria diverso per ogni colore?
+Sei in grado di aggiungere un suono di batteria ogni volta che lo sprite del personaggio cambia costume? E che dire di un suono di batteria diverso per ogni colore?
 
 \--- task \---
 
-Aggiungi l'estensione Music al tuo progetto in modo da poter usare il blocco `play drum`{: class = "block3extensions"}.
+Aggiungi l'estensione Musica al tuo progetto in modo da poter usare il blocco `suona il tamburo`{:class="block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -20,9 +20,9 @@ Aggiungi l'estensione Music al tuo progetto in modo da poter usare il blocco `pl
 
 Il codice che suona il tamburo è **molto** simile al codice che cambia il costume del personaggio.
 
-\--- hints \--- \--- hint \--- Hai solo bisogno di aggiungere due blocchi: un blocco `suona tamburo per (0.25) battute`{: class = "block3sound"} e un `elemento (lunghezza di sequenza) di sequenza`{: class = "block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Hai solo bisogno di aggiungere due blocchi: un blocco `suona tamburo per (0.25) battute`{:class="block3sound"} e un `elemento (lunghezza di sequenza) di sequenza`{:class="block3variables"}. \--- /hint \--- \--- hint \---
 
-Qui ci sono i blocchi di codice che ti serviranno:
+Ecco i blocchi di codice che ti serviranno:
 
 ![ballerina](images/ballerina.png)
 
