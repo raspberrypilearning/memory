@@ -1,12 +1,12 @@
 ## Livelli multipli
 
-Finora, il giocatore deve solo ricordare una sequenza di cinque colori. Migliora il tuo gioco aggiungendo un punteggio e aggiungendo del codice in modo che quando il giocatore guadagna punti, il gioco passi al livello successivo e la sequenza di colori da ricordare diventi più lunga.
+Finora, il giocatore deve solo ricordare una sequenza di cinque colori. Migliora il tuo gioco aggiungendo un punteggio e facendo in modo che, quando il giocatore guadagna punti, il gioco passi al livello successivo e la sequenza di colori da ricordare diventi più lunga.
 
 \--- Crea una nuova variabile chiamata `punteggio`{:class="block3variables"}.
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
-Sulla base del `punteggio `{: class = "block3variables"}, il gioco deciderà sulla lunghezza della sequenza di colori. Inizia con un punteggio (e una lunghezza della sequenza) di `3`.
+In base al `punteggio `{:class="block3variables"}, il gioco deciderà la lunghezza della sequenza di colori. Inizia con un punteggio (e una lunghezza della sequenza) di `3`.
 
 \--- task \--- Aggiungi un blocco `all'inizio`{: class = "block3events"} per impostare il `punteggio `{: class = "block3variables"} su `3`. \--- /task \---
 
