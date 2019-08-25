@@ -140,13 +140,12 @@ end
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-definisci Hai perso
+definisci Game over
 avvia riproduzione suono [Cough1 v]
 dì [Hai perso!] per (1) secondi
-se <(punteggio :: variables) > (Punteggio record)> poi
+se <(punteggio :: variables) > (Punteggio record) > poi
 suono play (trumpet1 v)
-porta [Punteggio record v] a (punteggio)
-ask [Record! Come ti chiami?] e attendi
+porta [Punteggio record v] a (punteggio) chiedi [Nuovo record! Come ti chiami?] e attendi
 porta [nome v] a (risposta)
 end
 ferma [all v]
