@@ -10,7 +10,7 @@ In questo progetto, creerai un gioco di memoria nel quale dovrai memorizzare e r
 
 ### Che cosa creerai
 
-\--- no-print \--- Fare clic sulla bandiera verde per vedere l'animazione. Guarda la sequenza di colori mostrata dall'abito della ballerina e ascolta i ritmi della batteria, quindi ripeti i colori. Se ripeti l'ordine dei colori sbagliato, è finita!
+\--- no-print \--- Fare clic sulla bandiera verde per vedere l'animazione. Guarda la sequenza di colori mostrata dall'abito della ballerina e ascolta i ritmi della batteria, quindi ripeti la sequenza di colori. Se ripeti l'ordine dei colori sbagliato, è game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -25,7 +25,7 @@ In questo progetto, creerai un gioco di memoria nel quale dovrai memorizzare e r
 ## title: Cosa imparerai
 
 + Come aggiungere suoni al tuo progetto Scratch
-+ Come creare e utilizzare le liste i per memorizzare i dati
++ Come creare e utilizzare le liste per memorizzare i dati
 + Come creare e utilizzare blocchi personalizzati per la ripetizione del codice
 
 \--- /collapse \---
@@ -40,7 +40,7 @@ In questo progetto, creerai un gioco di memoria nel quale dovrai memorizzare e r
 
 ### Software
 
-Scratch 3 (o [online](https://rpf.io/scratchon){: target = "_ blank"} o [offline](https://rpf.io/scratchoff){: target = "_ blank"}) \--- / collapse \---
+Scratch 3 (o [online](https://rpf.io/scratchon){:target="_ blank"} o [offline](https://rpf.io/scratchoff){:target="_ blank"}) \--- / collapse \---
 
 ## \--- collapse \---
 
@@ -52,6 +52,6 @@ Se intendete stampare questo progetto, cliccate su [Versione stampabile](https:/
 
 \--- /no-print \---
 
-Puoi trovare il [ progetto completato qui ](http://rpf.io/p/en/memory-get).
+Puoi trovare il [progetto completato qui ](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
