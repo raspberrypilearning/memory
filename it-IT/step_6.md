@@ -1,8 +1,8 @@
 ## Record
 
-Ora salva il punteggio più alto in modo da poter giocare contro i tuoi amici.
+Ora salva il punteggio più alto in modo da poter sfidare i tuoi amici.
 
-\--- task \--- Aggiungi due nuove variabili chiamate `Punteggio record`{: class = "block3variables"} e `nome`{: class = "block3variables"} al tuo progetto. \--- /task \---
+\--- task \--- Aggiungi due nuove variabili chiamate `Punteggio record`{:class="block3variables"} e `nome`{:class="block3variables"} al tuo progetto. \--- /task \---
 
 Quando il gioco finisce perché il giocatore ottiene la sequenza sbagliata, il gioco dovrebbe verificare se il punteggio è superiore al punteggio record corrente. Se lo è, il gioco deve salvare il punteggio come il punteggio record e anche memorizzare il nome del giocatore.
 
