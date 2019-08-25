@@ -45,7 +45,7 @@ Ora dovresti vedere molti nuovi blocchi di codice per l'utilizzo delle liste. La
 
 Ogni colore ha un numero diverso, quindi puoi scegliere un colore casuale scegliendo casualmente un numero e aggiungendolo all'elenco.
 
-\--- task \--- Aggiungi questo codice allo sprite del personaggio per scegliere un numero casuale e aggiungilo a `sequenza`{: class = "block3variables"}:
+\--- task \--- Aggiungi questo codice allo sprite del personaggio per scegliere un numero casuale e aggiungerlo alla lista `sequenza`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
@@ -58,11 +58,11 @@ aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
 
 \--- task \--- Verifica il tuo codice. Controlla che, ogni volta che fai clic sulla bandiera, un numero casuale compreso tra 1 e 4 venga aggiunto all'elenco. \--- /task \---
 
-\--- task \--- Puoi aggiungere codice al tuo programma per generare cinque numeri casuali in una volta?
+\--- task \--- Puoi aggiungere codice al tuo programma per generare cinque numeri casuali in una volta sola?
 
-\--- hints \--- \--- hint \--- Aggiungi a `delete all of sequenza`{: class = "block3variables"} per eliminare prima tutti gli elementi nella lista, quindi aggiungi un `ripeti`{: class = "block3control"} che aggiunge cinque numeri casuali all'elenco. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Aggiungi `cancella tutto da sequenza`{:class="block3variables"} per eliminare prima tutti gli elementi nella lista, quindi aggiungi un `ripeti`{:class="block3control"} per aggiunge cinque numeri casuali all'elenco. \--- /hint \--- \--- hint \---
 
-Ecco come dovrebbe apparire il risultato:
+Ecco cosa dovresti ottenere:
 
 ![ballerina](images/ballerina.png)
 
@@ -76,7 +76,7 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Ogni volta che un numero viene aggiunto alla lista, il personaggio dovrebbe cambiare il suo costume in modo che il colore del costume corrisponda al numero. Metti questi blocchi nel tuo codice immediatamente sotto, dove viene aggiunto un numero casuale a `sequenza`{: class = "block3variables"}:
+\--- task \--- Ogni volta che un numero viene aggiunto alla lista, il personaggio dovrebbe cambiare il suo costume in modo che il colore del costume corrisponda al numero estratto. Metti questi blocchi nel tuo codice immediatamente sotto al comando che aggiunge un numero casuale alla lista `sequenza`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
