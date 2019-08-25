@@ -71,13 +71,13 @@ Riesci a vedere che il codice "Hai perso" per ciascuno dei quattro colori è esa
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-say [Hai perso!] for (1) seconds
-if < (punteggio :: variables) > (Punteggio record) > then
-    set [Punteggio record v] to (punteggio :: variables)
-    ask [Record! Come ti chiami?] and wait
-    set [nome v] to (answer)
+dire [Hai perso!] per (1) secondi
+se <(punteggio :: variables) > (punteggio record)> allora 
+  porta [punteggio record v] a (punteggio :: variables)
+  chiedi [Punteggio Record! Come ti chiami?] e attendi
+  porta [nome v] a (risposta)
 end
-stop [all v]
+ferma [all v]
 ```
 
 Se è necessario modificare il codice "Hai perso", ad esempio per aggiungere un suono o cambiare il messaggio "Hai perso", è necessario cambiarlo quattro volte. È fastidioso e fa perdere un sacco di tempo.
@@ -93,14 +93,14 @@ Invece, puoi definire il tuo blocco di codice e utilizzarlo ovunque nel tuo prog
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-define Hai perso
+definisci Hai perso
 say [Hai perso!] per (1) secondi
-se < (punteggio :: variables) > (Punteggio record) > then
-    set [Punteggio record v] to (punteggio :: variabili)
-    ask [Record ! Come ti chiami?] and wait
-    set [nome v] to (answer)
+se <(punteggio :: variables) > (Punteggio record)> then
+porta [Punteggio record v] a (punteggio)
+chiedi [Record ! Come ti chiami?] e attendi
+porta [nome v] a (risposta)
 end
-stop [all v]
+ferma [all v]
 ```
 
 \--- /task \---
@@ -110,12 +110,12 @@ stop [all v]
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequenza v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequenza v]
-else
-    Hai perso :: custom
+quando ricevo [rosso v]
+se <(elemento (1 v) di [sequenza v]) = [1]> allora 
+  suona il tamburo ((1) Snare Drum v) per (0.25) battute
+  cancella (1 v) da [sequenza v]
+altrimenti 
+  Hai perso :: custom
 end
 ```
 
@@ -130,12 +130,12 @@ Il tuo nuovo blocco `Hai perso`{: class = "block3myblocks"} è una **funzione**,
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequenza v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequenza v]
-else
-    Hai perso :: custom
+quando ricevo [blu v]
+se <(elemento (1 v) di [sequenza v]) = [1]> allora 
+  suona il tamburo ((2) Bass Drum v) per (0.25) battute
+  cancella (1 v) da [sequenza v]
+altrimenti 
+  Hai perso :: custom
 end
 ```
 
@@ -146,16 +146,16 @@ end
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-define Hai perso
-start sound [Cough1 v]
+definisci Hai perso
+avvia riproduzione suono [Cough1 v]
 dì [Hai perso!] per (1) secondi
-se < (punteggio :: variables) > (Punteggio record) > poi
-    suono play (trumpet1 v)
-    set [Punteggio record v] to (punteggio)
-    ask [Record! Come ti chiami?] and wait
-    set [nome v] to (answer)
+se <(punteggio :: variables) > (Punteggio record)> poi
+suono play (trumpet1 v)
+porta [Punteggio record v] a (punteggio)
+ask [Record! Come ti chiami?] e attendi
+porta [nome v] a (risposta)
 end
-stop [all v]
+ferma [all v]
 ```
 
 \--- /task \---
