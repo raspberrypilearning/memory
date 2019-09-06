@@ -1,26 +1,26 @@
-## Repeat the sequence
+## Répéter la séquence
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+Maintenant, tu vas ajouter quatre boutons sur lesquels le joueur doit appuyer pour répéter la séquence de couleurs.
 
-\--- task \--- Add four new sprites to your project to represent the four buttons.
+\--- task \--- Ajoute quatre nouveaux lutins à ton projet pour représenter les quatre boutons.
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ Modifie les costumes des nouveaux lutins de manière à ce qu'il y ait un lutin dans chacune des quatre couleurs
++ Place les lutins dans le même ordre sur la scène que les costumes : rouge, bleu, vert et jaune
 
-![screenshot](images/colour-drums.png) \--- /task \---
+![capture d'écran](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+\--- task \--- Ajoute du code au lutin rouge pour que, lorsqu'il est cliqué, il `envoie à tous`{:class="block3events"} le message 'rouge' :
 
-![red-drum](images/red_drum.png)
+![tambour rouge](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    quand ce lutin est cliqué
+    envoyer à tous (rouge)
 ```
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+Un `envoyer à tous`{:class="block3events"} est comme une annonce par haut-parleur : elle doit être entendue par tous les lutins. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
 \--- task \---
 
