@@ -1,46 +1,62 @@
 ## Lefelau gwahanol
 
-Hyd yn hyn, mae'r chwareuwr ond wedi gorfod cofio 5 lliw.  Beth am wella'r gêm, fel bod hyd y dilyniant yn cynyddu.
+Hyd yn hyn, mae’r chwareuwr ond wedi gorfod cofio 5 lliw. Beth am wella’r gêm trwy ychwanegu sgôr, ac ychwanegu côd fel bod y chwareuwr yn ennill pwyntiau, y gêm yn symud i'r lefel nesaf a'r dilyniant lliwiau i'w gofio yn cynyddu.
 
-+ Gwna newidyn newydd o'r enw `sgôr`{:class="blockdata"}.
+--- Creu newidyn newydd o'r enw `sgôr`{:class="block3variables"}.
 
-	![screenshot](images/colour-score.png)
+[[[generic-scratch3-add-variable]]] --- /task ---
 
-+ Bydd y `sgôr`{:class="blockdata"} yn cael ei ddefnyddio i benderfynu hyd y dilyniant bydd angen i'r chwareuwr ei gofio.  Felly, fe wnawn ni ddechrau gyda'r sgôr (a hyd y dilyniant) o 3. Ychwanega'r bloc côd yma ar ddechrau côd dy gymeriad `pan fo baner wedi ei glicio`{:class="blockevents"}:
+Yn seiliedig ar y `sgôr`{:class="block3variables"}, bydd y gêm yn penderfynu ar hyd y dilyniant lliw. Cychwyna gyda sgôr (a hyd dilyniant) o `3`.
 
-	```blocks
-		gosod [sgôr v] i [3]
-	```
+--- task --- Ychwanega floc ar ddechrau côd dy gymeriad `pan fo'r faner wedi ei chlicio`{:class="block3events"} i osod y `sgôr`{:class="block3variables"} i `3`. --- /task ---
 
-+ Yn lle creu dilyniant o 5 lliw bob tro, rwyt ti nawr eisiau i'r sgôr i benderfynu hyd y dilyniant. Newida ddolen `am byth`{:class="blockcontrol"} dy gymeriad (i greu y dilyniant) i:
+Yn hytrach na chreu dilyniant o bum lliw bob amser, rwyt ti eisiau i'r `sgôr`{:class="block3variables"} i benderfynu hyd y dilyniant.
 
-	```blocks
-		ailwna (sgôr)
-		end
-	```
+--- task --- Newida dolen y cymeriad `ail-adrodd`{:class="block3control"} (i greu y dilyniant lliw) i ail-adrodd y `sgôr/0>{:class="block3variables"}:</p>
 
-+ Os yw'r dilynant yma yn cael ei ddyfalu'n gywir, fe ddyle ti ychwanegu 1 i'r sgôr i gynyddu hyd y dilyniant.
+<p><img src="images/ballerina.png" alt="corlun" /></p>
 
-	```blocks
-		newid [sgôr v] gan (1)
-	```
+<pre><code class="blocks3">ailadrodd (sgôr :: variables)
+end
+`</pre> 
 
-+ Yn olaf, bydd angen i ti ychwanegu dolen `am byth`{:class="blockcontrol"} o amgylch y côd i greu y dilyniant, fel bod dilyniant newydd yn cael ei greu ar gyfer pob lefel. Dyma sut ddylai côd dy gymeriad edrych:
+--- /task ---
 
-	```blocks
-		pan fo ⚑ wedi ei glicio
-		gosod [sgôr v] i [3]
-		am byth
-   			dileu (y cyfan v) o [dilyniant v]
-   			ailwna (sgôr)
-      		ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
-      		newid i wisg (eitem (olaf v) o [dilyniant v])
-      		aros (1) eiliad
-   		end
-   			aros hyd at <(hyd [dilyniant v]) = [0]>
-   			darlledu [ennill v] ac aros
-   			newid [sgôr v] gan (1)
-		end
-	```
+--- task --- Os yw'r chwaraewr yn ailadrodd y dilyniant cywir, fe ddylai ychwanegu `1` i'r `sgôr`{:class="block3variables"}, ac mae gwneud hynny yn cynyddu hyd y dilyniant nesaf. Ychwanega'r bloc canlynol i gôd y cymeriad **ar y rhan rwyt ti'n gwybod bod y dilyniant yn gywir**:
 
-+ Gofyn i dy ffrindiau i brofi dy gêm. Cofia guddio y rhestr `dilyniant`{:class="blockdata"} cyn eu bod yn ei chwarae!
+![corlun](images/ballerina.png)
+
+```blocks3
+newid [sgôr v] gan (1)
+```
+
+--- hints ---
+ --- hint --- Ti'n gwybod bod y dilynant yn gywir ar y pwynt mae'r gêm yn `darlledu`{:class="block3events"} y neges 'ennill.
+--- /hint ---
+--- /hints ---
+
+--- /task ---
+
+--- task --- Yn olaf, ychwanega dolen `am byth`{:class="block3control"} o amgylch y côd sydd yn creu'r dilyniant, fel fod y gêm yn creu lliw newydd ar gyfer pob lefel. Dyma sut y gallai côd y cymeriad edrych:
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+pan fo'r flag werdd yn cael ei glicio
+gosod [sgôr v] i [3]
+am byth 
+  dileu (all v) o [dilyniant v]
+  ailadrodd (sgôr) 
+    ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
+    newid gwisg i (eitem (hyd [dilyniant v]) o [dilyniant v])
+    aros (1) eiliad
+  end
+  aros hyd at <(hyd [dilyniant v]) = [0]>
+  darlledu (won v) ac aros
+  newid [sgôr v] gan (1)
+end
+```
+
+--- /task ---
+
+--- task --- Gofyn i dy ffrindiau brofi dy gêm. Cofia guddio rhestr `dilyniant`{:class="block3variables"} cyn iddynt ei chwarae! --- /task ---

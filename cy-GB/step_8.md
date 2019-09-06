@@ -1,9 +1,20 @@
---- challenge ---
-## Her: Gwisg arall
-Wyt ti wedi sylwi bod dy gêm yn cychwyn gyda dy gymeriad yn dangos un o 4 lliw, a'i fod bob tro yn dangos y lliw olaf yn y dilyniant tra bod y chwareuwr yn ailadrodd y dilyniant?
+## Beth nesaf?
 
-Wyt ti'n gallu ychwanegu gwisg wen plaen i dy gymeriad, sydd yn ymddangos ar ddechrau'r gêm, a pan mae dy chwareuwr yn ceisio copio'r dilyniant?
+Rho gynnig ar y prosiect [Osgoi'r bêl](https://projects.raspberrypi.org/cy-GB/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), lle fyddi di'n creu gêm lle mae angen i ti osgoi peli wrth symud o blatfform i blatfform.
 
-![screenshot](images/colour-white.png)
+--- no-print ---
 
---- /challenge ---
+Cliciwch y faner werdd i ddechrau, yna defnyddio'r saethau ar y bysellfwrdd i symud a'r allwedd <kbd>gofod</kbd> i neidio.
+
+<div class="scratch-preview">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
+  <img src="images/dodge-final.png">
+</div>
+
+--- /no-print ---
+
+--- print-only ---
+
+![gêm pêl-osgoi yn cael ei chwarae](images/dodgeball-showcase.png)
+
+--- /print-only ---
