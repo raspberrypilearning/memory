@@ -1,40 +1,57 @@
+--- no-print ---
+
+Dyma fersiwn **Scratch 3** y prosiect. Ceir hefyd [fersiwn Scratch 2 o'r prosiect](https://projects.raspberrypi.org/cy-GB/projects/memory-scratch2).
+
+--- /no-print ---
+
 ## Cyflwyniad
 
-Yn y prosiect yma, fe fyddi di'n creu gêm gofio, lle mae'n rhaid i ti gofio ac ailadrodd dilyniant o liwiau ar hap!
+Yn y prosiect hwn, byddi di yn creu gêm cofio lle mae'n rhaid i ti gofio ac ailadrodd cyfres o liwiau ar hap!
+
+### Yr hyn byddi di'n ei greu
+
+--- no-print --- Clicia'r faner werdd i gychwyn. Gwylia'r dilyniant o liwiau sy'n cael eu arddangos ar wisg y dawnsiwr a gwrando ar guriadau'r drwm, yna ail-adrodda'r lliwiau yn ôl iddi. Os wyt ti'n cael trefn y lliwiau yn anghywir, yna mae'r gêm ar ben!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="images/colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/327351946/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
---- collapse ---
+--- /no-print ---
+
+--- print-only --- ![screenshot of finished game](images/screenshot.png) --- /print-only ---
+
+---collapse---
 ---
-title: Nodiadau i Wirfoddolwyr
+title: Yr hyn byddi di'n ei ddysgu
 ---
++ Sut i ychwanegu sain at dy brosiect Scratch
++ Sut i greu a defnyddio rhestrau i storio data
++ Sut i greu a defnyddio blociau unigryw ar gyfer ailadrodd côd
 
-## Cyflwyniad:
-Yn y prosiect yma, bydd plant yn dysgu sut i ddefnyddio rhestr newidiol i storio data, yn ogystal â blociau syml unigryw sydd yn cael eu defnyddio i symleiddio'r rhaglen. 
+--- /collapse ---
 
-## Adnoddau
-Ar gyfer y prosiect yma, dylid defnyddio Scratch 2.  Mae modd defnyddio Scratch 2 arlein yma [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) neu mae modd ei lawrlwytho yma [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) a'i ddefnyddio heb gysylltiad gwe.
+---collapse---
+---
+title: Beth fydd ei angen arno ti
+---
+### Caledwedd
 
-Mae modd gweld y prosiect wedi ei gwblhau yma  <a href="http://scratch.mit.edu/projects/34874510/#editor">online</a>, neu mae modd ei lawrlwytho wrth glicio ar ddolen 'Adnoddau'r Prosiect' ar gyfer y prosiect yma, sydd yn cynnwys:
++ Cyfrifiadur sy'n gallu rhedeg Scratch 3
 
-+ Memory.sb2
+### Meddalwedd
 
-## Nodau Addysgol
-+ Rhestrau;
-+ Gweithrediad syml.
+Scratch 3 (unai [arlein](https://rpf.io/scratchon){:target="_blank"} neu [all-lein](https://rpf.io/scratchoff){:target="_blank"}) --- /collapse ---
 
-Mae'r prosiect yma yn trin elfennau sydd yn rhan o'r adran ganlynol o [Faes Llafur Gwneud Digidol Raspberry Pi](http://rpf.io/curriculum):
+---collapse---
+---
+title: Gwybodaeth ychwanegol i addysgwyr
+---
+--- no-print ---
 
-+ [Cyfuno adeiladwaith rhaglenni i ddatrys problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+Os oes angen i chi argraffu y prosiect, defnyddiwch [fersiwn i'w argraffu](https://projects.raspberrypi.org/cy-GB/projects/memory/print){:target="_blank"}.
 
-## Heriau
-+ "Ychwanegu sain" - gwella defnydd y gêm;
-+ "Creu 4 botwm" - trin rhestrau;
-+ "Gwneud mwy o flociau" - creu blociau unigryw;
-+ "Gwisg arall" - gwella defnydd y gêm;
-+ "Lefelau'r gêm" - golygu'r data wedi ei storio yn y rhestr. 
+--- /no-print ---
+
+Gallwch ddod o hyd i'r prosiect gorffenedig [yma](http://rpf.io/p/cy-GB/memory-get).
 
 --- /collapse ---
