@@ -24,7 +24,7 @@ Le code qui joue de la batterieest ** très ** similaire au code qui change le c
 
 Voici les blocs dont tu auras besoin :
 
-![ballerina](images/ballerina.png)
+![ballerine](images/ballerina.png)
 
 ```blocks3
 jouer de la batterie (\(1\) caisse claire v) pour (0.25) battements
@@ -36,17 +36,17 @@ jouer de la batterie (\(1\) caisse claire v) pour (0.25) battements
 
 \--- hint \--- Voici à quoi devrait ressembler ton code fini :
 
-![ballerina](images/ballerina.png)
+![ballerine](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
-end
+quand le drapeau est cliqué
+supprimer (toutes les valeurs) de [séquence v]
+répéter (5) fois
+    ajouter (nombre aléatoire entre (1) et (4)) à la [séquence v]
+    jouer de la batterie (élément (longueur de la [séquence v]) de la  [séquence v]) pour (0.25) battements
+    changer le costume à (élément (longueur de la [éequence v]) de la [séquence v])
+    attendre (1) secondes
+fin
 ```
 
 \--- /hint \---
