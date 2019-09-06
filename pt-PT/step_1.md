@@ -10,7 +10,7 @@ Neste projeto, irás criar um jogo de memória no qual tens que memorizar e repe
 
 ### O que vais fazer
 
-\--- Clica na bandeira verde para começar. Observa a sequência de cores mostradas pelo vestido da bailarina e ouve os sons de bateria que as acompanham, depois repete as cores em resposta. Se errares na ordem das cores, o jogo acaba!
+\--- no-print\--- Clica na bandeira verde para começar. Observa a sequência de cores mostradas pelo vestido da bailarina e ouve os sons de bateria que as acompanham, depois repete as cores em resposta. Se errares na ordem das cores, o jogo acaba!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -24,7 +24,7 @@ Neste projeto, irás criar um jogo de memória no qual tens que memorizar e repe
 
 ## title: O que vais aprender
 
-+ Como acrescentar um som ao teu actor no Scratch
++ Como acrescentar um som ao teu ator no Scratch
 + Como criar e utilizar listas para armazenar dados
 + Como criar e utilizar blocos personalizados para repetir o código
 
@@ -48,10 +48,10 @@ Scratch 3 (ou [online](https://rpf.io/scratchon){: target = "_ blank"} ou [offli
 
 \--- no-print \---
 
-Se for necessário imprimir este projeto, por favor, utiliza a [versão para impressão](https://projects.raspberrypi.org/en/projects/memory/print){: target = "_ blank"}.
+Se precisar imprimir este projeto, por favor use a [versão para impressão](https://projects.raspberrypi.org/en/projects/memory/print) {: target = blank"}.
 
 \--- /no-print \---
 
-Podes encontrar o [projeto concluído aqui](http://rpf.io/p/en/memory-get){: target = "_ blank.
+Pode encontrar o [projeto concluído aqui](http://rpf.io/p/en/memory-get){: target="_ blank.
 
 \--- /collapse \---
