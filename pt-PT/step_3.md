@@ -2,15 +2,15 @@
 
 \--- task \---
 
-Testa o teu projeto algumas vezes. Vais perceber que às vezes o mesmo número é escolhido duas vezes (ou mais) seguidas, o que é que dificulta a memorização da sequência?
+Testa o teu projeto algumas vezes. Percebeste que às vezes o mesmo número é escolhido duas vezes (ou mais) seguidas, o que dificulta a memorização da sequência?
 
 \--- /task \---
 
-Consegues fazer tocar um som de bateria de todas as vezes que o sprite mudar de roupa? E que tal um som de bateria diferente para cada cor?
+Consegues fazer tocar um som de bateria de todas as vezes que o actor mudar de traje? E que tal um som de bateria diferente para cada cor?
 
 \--- task \---
 
-Adiciona a extensão Música ao teu projeto para que possas uttiliar o bloco `play drum`{:class="block3extensions"}.
+Adiciona a extensão Música ao teu projeto para que possas utilizar o bloco `toca a percussāo`{:class="block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -20,16 +20,16 @@ Adiciona a extensão Música ao teu projeto para que possas uttiliar o bloco `pl
 
 O código que faz tocar o tambor é **muito** semelhante ao código que faz mudar o traje do sprite.
 
-\--- hints \--- \--- hint \--- Basta adicionar dois blocos: um Bloco `play drum for (0.25) beats` {:class="block3sound"} e um bloco `item (length of sequence) of sequence`{:class="block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Basta adicionar dois blocos: um bloco `toca a percussāo durante (0.25) tempos`{:class="block3sound"} e um bloco `item (comprimento de sequência) de sequência`{:class="block3variables"}. \--- /hint \--- \--- hint \---
 
-Aqui estão os blocos de que necessitas:
+Aqui estão os blocos de que precisas:
 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+toca a percussão ((1) Snare Drum v) durante (0.25) tempos
 
-(item (length of [sequence v]) of [sequence v])
+((o comprimento de [sequência v]) de [sequência v])
 ```
 
 \--- /hint \---
@@ -39,13 +39,13 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
+Quando alguém clicar na bandeira verde
+remove (tudo v) de [sequência v]
+repete (5) vezes 
+  acrescenta (um valor ao acaso entre (1) e (4)) a [sequência v]
+  toca a percussão ((o comprimento de [sequência v]) de [sequência v]) durante (0.25) tempos
+  muda o teu traje para ((o comprimento de [sequência v]) de [sequência v])
+  espera (1) s
 end
 ```
 
