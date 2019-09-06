@@ -2,7 +2,7 @@
 
 Hyd yn hyn, mae’r chwareuwr ond wedi gorfod cofio 5 lliw. Beth am wella’r gêm trwy ychwanegu sgôr, ac ychwanegu côd fel bod y chwareuwr yn ennill pwyntiau, y gêm yn symud i'r lefel nesaf a'r dilyniant lliwiau i'w gofio yn cynyddu.
 
---- Creu newidyn newydd o'r enw `sgôr`{:class="block3variables"}.
+--- task --- Creu newidyn newydd o'r enw `sgôr`{:class="block3variables"}.
 
 [[[generic-scratch3-add-variable]]] --- /task ---
 
@@ -12,13 +12,14 @@ Yn seiliedig ar y `sgôr`{:class="block3variables"}, bydd y gêm yn penderfynu a
 
 Yn hytrach na chreu dilyniant o bum lliw bob amser, rwyt ti eisiau i'r `sgôr`{:class="block3variables"} i benderfynu hyd y dilyniant.
 
---- task --- Newida dolen y cymeriad `ail-adrodd`{:class="block3control"} (i greu y dilyniant lliw) i ail-adrodd y `sgôr/0>{:class="block3variables"}:</p>
+--- task --- Newida dolen y cymeriad `ail-adrodd`{:class="block3control"} (i greu y dilyniant lliw) i ail-adrodd y `sgôr`{:class="block3variables"}:
 
 <p><img src="images/ballerina.png" alt="corlun" /></p>
 
-<pre><code class="blocks3">ailadrodd (sgôr :: variables)
+```blocks3
+ailadrodd (sgôr)
 end
-`</pre> 
+```
 
 --- /task ---
 
