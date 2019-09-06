@@ -18,23 +18,23 @@ Ajoute l'extension Musique à ton projet de sorte à pouvoir utiliser le bloc ` 
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Le code qui joue de la batterieest ** très ** similaire au code qui change le costume du personnage.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Il suffit d'ajouter deux blocs : un bloc ` jouer de la batterie pendant (0.25) battements `{:class="block3sound"} et un ` élément (longueur de la séquence) de la séquence ` . \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Voici les blocs dont tu auras besoin :
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+jouer de la batterie (\(1\) caisse claire v) pour (0.25) battements
 
-(item (length of [sequence v]) of [sequence v])
+(élément (longueur de [séquence v) de [séquence v])
 ```
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- Voici à quoi devrait ressembler ton code fini :
 
 ![ballerina](images/ballerina.png)
 
