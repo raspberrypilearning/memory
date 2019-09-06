@@ -1,50 +1,50 @@
-## Repete a sequência
+## Repetir a sequência
 
-Agora vais acrescentar quatro botões que o jogador deve uitlizar para repetir a sequência de cores.
+Agora vais acrescentar quatro botões que o jogador deve usar para repetir a sequência de cores.
 
-\--- task \--- Adiciona quatro novos sprites ao teu projeto para representar os quatro botões.
+\--- task \--- Adiciona quatro novos actores ao teu projeto para representar os quatro botões.
 
-+ Edita os trajes dos novos sprites para que haja um sprite em cada uma das quatro cores
-+ Coloca os sprites no palco na mesma ordem que os figurinos: vermelho, azul, verde, amarelo
++ Edita os trajes dos novos actores para que haja um actor trajado em cada uma das quatro cores
++ Coloca os actores no palco na mesma ordem que os figurinos: vermelho, azul, verde, amarelo
 
 ![captura de ecrã](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Adiciona código ao sprite vermelho para que, quando o sprite for clicado, ele `transmita`{:class="block3events"} uma mensagem 'vermelho' ao personagem sprite:
+\--- task \--- Adiciona código ao actor vermelho para que, quando o actor for clicado, ele `difunda a mensagem`{:class="block3events"} 'vermelho' ao personagem actor:
 
 ![tambor-vermelho](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    Quando alguém clicar em ti
+difunde a mensagem (vermelho v)
 ```
 
 \--- /task \---
 
-Uma `mensagem`{:class="block3events"} é como uma informação anunciada num altifalante, que podes, por exemplo, ouvir em escolas ou supermercados. Todos os sprites podem ouvir a `mensagem`{:class="block3events"}, mas apenas o sprite cujo trabalho é responder fará algo.
+Uma `difusāo de mensagem`{:class="block3events"} é como uma informação anunciada num altifalante, que podes, por exemplo, ouvir em escolas ou supermercados. Todos os actores podem ouvir a `difusāo de mensagem`{:class="block3events"}, mas apenas o actor cujo papel é responder fará alguma coisa.
 
 \--- task \---
 
-Adiciona código semelhante aos sprites azul, verde e amarelo para que enviem mensagens `mensagem`{:class="block3events"} sobre sua própria cor.
+Adiciona código semelhante aos actores azul, verde e amarelo para que enviem `difusões de mensagem`{:class="block3events"} com a sua própria cor.
 
 \--- /task \---
 
-Recordas-te que a `mensagem`{:class="block3events"} é como uma mensagem num altifalante? Vais acrescentar código para fazer com que seja trabalho do sprite do personagem responder às mensagens `mensagem`{:class="block3events"}.
+Recordas-te que a `difusāo de mensagem`{:class="block3events"} é como uma mensagem de um altifalante? Vais acrescentar código para fazer com que seja o papel do actor personagem responder às mensagens da `difusāo de mensagem`{:class="block3events"}.
 
 \--- task \---
 
-Quando o sprite do teu personagem recebe a mensagem `vermelho`{:clas ="block3events"}, o código deve verificar se o número `1` está no início da lista da `sequência`{:class="block3variables"} ( o que significa que o `vermelho`{:class="block3events"} é a próxima cor na sequência).
+Quando o teu actor personagem recebe a mensagem `vermelho`{:clas ="block3events"}, o código deve verificar se o número `1` está no início da lista da `sequência`{:class="block3variables"} ( o que significa que o `vermelho`{:class="block3events"} é a próxima cor na sequência).
 
-Se estiver `1` no início da lista, o código deve remover o número da lista, porque o jogador acertou na cor. Caso contrário, o jogo acaba e o código necessita `parar todos`{:class="block3control"} para terminar o jogo.
+Se estiver `1` no início da lista, o código deve remover o número da lista, porque o jogador acertou na cor. Caso contrário, o jogo acaba e o código necessita `parar tudo`{:class="block3control"} para terminar o jogo.
 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
+Quando receberes a mensagem [vermelho v]
+se <((1 v) de [sequêcia v]) = [1]>, então 
+ remove (1 v) de [sequêcia v]
+senão, 
+ diz [Game over!] durante (1) s
+ pára [tudo v]
 end
 ```
 
