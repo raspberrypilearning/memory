@@ -3,7 +3,7 @@ hero_image: images/memory.png
 listed: true
 copyedit: false
 title: Memória
-description: Cria um jogo em que memorizas e repites sequências de cores aleatórias
+description: Cria um jogo em que memorizas e repetes sequências de cores aleatórias
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
@@ -12,7 +12,7 @@ steps:
   - 
     title: Cria uma sequência de cores
   - 
-    title: Adicionar som
+    title: Adiciona som
   - 
     title: Repete a sequência
   - 
@@ -20,7 +20,7 @@ steps:
   - 
     title: Melhor pontuação
   - 
-    title: "Desafio: Melhorar o teu jogo"
+    title: "Desafio: Melhora o teu jogo"
   - 
     title: O que se segue?
 
