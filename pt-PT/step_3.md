@@ -18,7 +18,7 @@ Adiciona a extensão Música ao teu projeto para que possas utilizar o bloco `to
 
 \--- task \---
 
-O código que faz tocar o tambor é **muito** semelhante ao código que faz mudar o traje do sprite.
+O código que toca a percussāo é **muito** semelhante ao código que faz mudar o traje do actor.
 
 \--- hints \--- \--- hint \--- Basta adicionar dois blocos: um bloco `toca a percussāo durante (0.25) tempos`{:class="block3sound"} e um bloco `item (comprimento de sequência) de sequência`{:class="block3variables"}. \--- /hint \--- \--- hint \---
 
