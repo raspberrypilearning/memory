@@ -20,15 +20,15 @@ Maintenant, tu vas ajouter quatre boutons sur lesquels le joueur doit appuyer po
 
 \--- /task \---
 
-Un `envoyer à tous`{:class="block3events"} est comme une annonce par haut-parleur : elle doit être entendue par tous les lutins. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+Un `envoyer à tous`{:class="block3events"} est comme une annonce par haut-parleur : elle doit être entendue par tous les lutins. Tous les lutins peuvent entendre le ` envoyer à tous `{:class="block3events"}, mais seulement le lutin dont le travail consiste à répondre fera quelque chose.
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+Ajoute un code similaire aux lutins bleu, vert et jaune pour les faire faire ` envoyer à tous `{:class="block3events"} un message à propos de leur propre couleur.
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+Te souviens-tu que le ` Envoyer à tous `{:class="block3events"} est comme un message de haut-parleur ? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
 
 \--- task \---
 
