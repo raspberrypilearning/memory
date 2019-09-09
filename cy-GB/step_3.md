@@ -30,7 +30,7 @@ Dyma'r blociau côd rwyt ti eu hangen:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-chwarae drwm ((1) Snare Drum v) am (0.25) curiad
+chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
 
 (eitem (hyd [dilyniant v]) o [dilyniant v])
 ```
@@ -45,10 +45,10 @@ chwarae drwm ((1) Snare Drum v) am (0.25) curiad
 pan fo'r flag werdd yn cael ei glicio
 dileu (all v) o [dilyniant v]
 ailadrodd (5) 
-  ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
-  chwarae drwm (eitem (hyd [dilyniant v]) o [dilyniant v]) am (0.25) curiad
-  newid gwisg i (eitem (hyd [dilyniant v]) o [dilyniant v])
-  aros (1) eiliad
+    ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
+    chwarae drwm (eitem (hyd [dilyniant v]) o [dilyniant v]) am (0.25) curiad
+    newid gwisg i (eitem (hyd [dilyniant v]) o [dilyniant v])
+    aros (1) eiliad
 end
 ```
 
