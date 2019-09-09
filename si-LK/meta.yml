@@ -3,24 +3,24 @@ hero_image: images / memory.png
 listed: true
 copyedit: false
 title: මතකය(Memory)
-description: Create a game in which you memorise and repeat random colour sequences
+description: නැවත නැවත දිස්වෙන අහඹු(random) වර්ණ(colour) අනුපිළිවෙලවල්(sequences) මතක තබාගෙන කරන ක්‍රීඩාවක් සෑදීම
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
     title: හැදින්වීම
   - 
-    title: Create a colour sequence
+    title: වර්ණ(colour) අනුක්‍රමයක්(sequence එකක්) සෑදීම
   - 
-    title: Add sound
+    title: ශබ්ද එක් කිරීම
   - 
-    title: Repeat the sequence
+    title: අනුක්‍රමය නැවත(repeat) ක්‍රියාත්මක කිරීම
   - 
-    title: Multiple levels
+    title: බහු(multiple) මට්ටම්(levels)
   - 
-    title: High score
+    title: වැඩිම(high) ලකුණු(score)
   - 
-    title: "Challenge: improve your game"
+    title: "අභියෝගය: ඔබේ ක්‍රීඩාව වැඩි දියුණු කිරීම"
   - 
     title: ඊලඟට කුමක්ද?
 
