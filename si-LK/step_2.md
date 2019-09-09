@@ -60,7 +60,7 @@ add (pick random (1) to (4)) to [sequence v]
 
 \--- කාර්යය \--- අහඹු(random) සංඛ්‍යා(numbers) පහක් එකවර ජනනය(generate) කිරීමට ඔබේ වැඩසටහනට(program එකට) කේතයක්(code එකක්) එක් කළ හැකිද?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Add a `සියලු අනුක්‍රම මකන්න(delete all of sequence)`{:class="block3variables"} පළමුව ලැයිස්තුවේ(list එකේ) ඇති සියලුම(all) අයිතම(items) මකා(delete කරන්න) දමන්න, පසුව එම ලැයිස්තුවට(list එකට) අහඹු(random) සංඛ්‍යා(numbers) පහක් එක් කරන `පුනරාවර්තන(repeat)`{:class="block3control"} කට්ටියක්(block එකක්) එක් කරන්න. \--- /hint \--- \--- hint \---
 
 ඔබගේ කේතය(code එක) මෙබඳු එකක් විය යුතුයි:
 
@@ -76,7 +76,7 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- ලැයිස්තුවට(list එකට) අංකයක්(number එකක්) එකතු(add) වූ සෑම අවස්ථාවකම චරිතය(character එක), එමඟින් ඇඳුමේ(costume's) වර්ණය අංකයට ගැලපෙන පරිදි සැකසිය ‍යුතුයි. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
