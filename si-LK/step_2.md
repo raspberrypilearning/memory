@@ -6,17 +6,17 @@
 
 **අන්තර්ජාල මාර්ගගත(Online):** [rpf.io/scratch-new](https://rpf.io/scratchon) හි අන්තර්ජාල මාර්ගගතව නව Scratch ව්‍යාපෘතියක් විවෘත කරන්න.
 
-**Offline**: open a new project in the offline editor.
+**අන්තර්ජාලයට නොබැඳිව(Offline):** නොබැඳි සංස්කාරකයේ(offline editor එකේ) නව ව්‍යාපෘතියක්(new project එකක්) විවෘත කරන්න.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+ඔබට Scratch නොබැඳි(offline) සංස්කාරකය(editor එක) බාගත(download) කර ස්ථාපනය(install) කිරීමට අවශ්‍ය නම්, ඔබට එය [rpf.io/scratchoff](https://rpf.io/scratchoff) වෙතින් ලබාගත හැකිය.
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- sprite චරිතය(character එකක්) සහ පසුබිමක්(backdrop එකක්) තෝරාගන්න. ඔබට නර්තන ශිල්පිනිය භාවිතා කළ හැකිය, නමුත් ඔබේ චරිතය(character එක) පුද්ගල චරිතයක් විය යුතු නැත, අවශ්‍ය වන්නේ විවිධ වර්ණ පෙන්වීමට ඇති හැකියාව පමණි.
 
 ![තිර රුව(screenshot)](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ එක් එක් වර්ණය නියෝජනය කිරීමට ඔබගේ ක්‍රීඩාව වෙනස්(different) අංකයක්(number එකක්) භාවිතා කළ යුතුයි:
     
     + 1 = red
     + 2 = blue
