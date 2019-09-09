@@ -33,13 +33,13 @@
 
 ඊළඟට, ක්‍රීඩකයා මතක තබා ගත යුතු වර්ණවල අහඹු(random) අනුක්‍රමය(sequence එක) ගබඩා(store) කිරීම සඳහා ලැයිස්තුවක්(list එකක්) එක් කරන්න.
 
-\--- task \--- `sequence`{:class="block3variables"} නමින් ලැයිස්තුවක්(list එකක්) සාදන්න. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- `sequence`{:class="block3variables"} නමින් ලැයිස්තුවක්(list එකක්) සාදන්න. මෙම ලැයිස්තුව දැකීමට අවශ්‍ය වන්නේ අදාළ sprite චරිතය(character එක) පමණි, එබැවින් ඔබ ලැයිස්තුව(list එක) නිර්මාණය කරන විට **මෙම sprite එක සඳහා පමණක්(for this sprite only)** තෝරා ගත හැකිය.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+ලැයිස්තු(lists) භාවිතා කිරීම සඳහා ඔබට දැන් නව කේත(code) කට්ටි(blocks) ගොඩක් දැකගත හැකිය. හිස්(empty) ලැයිස්තුවක්(list එකක්) වේදිකාවේ ඉහළ වම්(left-hand) කෙළවරේ(corner එකේ) දැකිය හැකිය.
 
 ![තිර රුව(screenshot)](images/colour-list-blocks-annotated.png)
 
