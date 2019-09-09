@@ -6,11 +6,11 @@
 
 ## හැදින්වීම
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+මෙම ව්‍යාපෘතියේ දී, ඔබ අහඹු(random) ලෙස ක්‍රියාත්මක වන වර්ණ(colour) අනුපිළිවෙලක්(sequence එකක්) මතක තබා ගැනීමට සහ එය නැවත ක්‍රියාත්මක කරන මතක(memory) ක්‍රීඩාවක්(game) නිර්මාණය කරනු ඇත!
 
 ### ඔබ සාදන්නට යන දේ
 
-\--- no-print \--- ආරම්භ කිරීමට කොල(green) ධජය(flag එක) මත ක්ලික් කරන්න. නර්තන ශිල්පිනියගේ ඇඳුමෙන් පෙන්වන වර්ණ අනුපිළිවෙල(sequence එක) නරඹා, ඒ සමඟ වයන බෙර හඬ වලට සවන් දෙන්න, ඉන්පසු නැවත වර්ණ වල අනුපිලිවෙල ඇයට පවසන්න. ඔබ වර්ණ අනුපිළිවෙල වැරදියට ප්‍රකාශ කලහොත්, ඔබ තරඟය පරාද වනු ඇත!
+\--- no-print \--- ආරම්භ කිරීමට කොල(green) ධජය(flag එක) මත ක්ලික් කරන්න. නර්තන ශිල්පිනියගේ ඇඳුමෙන් පෙන්වන වර්ණ අනුපිළිවෙල(sequence එක) නරඹා, ඒ සමඟ වයන බෙර(drum) හඬට(beats වලට) සවන් දෙන්න, ඉන්පසු වර්ණ(colour) වල අනුපිලිවෙල(sequence එක) නැවත ක්‍රියාත්මක කරන්න. ඔබ වර්ණ(colour) අනුපිළිවෙල(order එක) වැරදියට ප්‍රකාශ කලහොත්, ඔබ තරඟය(game) පරාජය(over) වනු ඇත!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -24,9 +24,9 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## title: ඔබ ඉගෙන ගන්නා දේ
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ ඔබේ Scratch ව්‍යාපෘතියට ශබ්ද එකතු කරන ආකාරය
++ දත්ත(data) ගබඩා(store) කිරීම සඳහා ලැයිස්තුවක්(lists) නිර්මාණය කරන්නේ සහ භාවිතා කරන්නේ කෙසේද යන්න
++ කේත(code) පුනරාවර්තනය(repeat) කිරීම සඳහා අභිරුචි(custom) කට්ටි(blocks) නිර්මාණය කරන්නේ සහ භාවිතා කරන්නේ කෙසේද යන්න
 
 \--- /collapse \---
 
