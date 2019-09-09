@@ -43,7 +43,7 @@
 
 ![තිර රුව(screenshot)](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+සෑම වර්ණයකටම වෙනස් අංකයක්(number එකක්) ඇත, එබැවින් ඔබට අහඹු(random) ලෙස අංකයක්(number එකක්) තෝරාගෙන එය ලැයිස්තුවට(list එකට) එක් කිරීමෙන් අහඹු(random) වර්ණයක්(colour එකක්) තෝරා ගත හැකිය.
 
 \--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
 
