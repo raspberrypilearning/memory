@@ -2,15 +2,15 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+ඔබේ ව්‍යාපෘතිය කිහිප වතාවක් පරීක්ෂා(test) කරන්න. සමහර විට එකම(same) අංකය(number එක) පේළියක(row) දෙවරක් (හෝ ඊට වැඩි) වාර ගනනක් තෝරාගෙන බව ඔබට පෙනෙනු ඇති අතර එමඟින් අනුක්‍රමය(sequence එක) කටපාඩම්(memorise) කිරීම අපහසු වේ.
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+sprite චරිතය ඇඳුම(costume එක) වෙනස් කරන සෑම අවස්ථාවකම, ඔබට ඩ්‍රම් ශබ්ද වාදනය කළ හැකිද? එක් එක් වර්ණය සඳහා වෙනස් ඩ්‍රම් ශබ්දයක් වැයේ නම් කෙතරම් අගනේද?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+ඔබේ ව්‍යාපෘතියට(project එකට) සංගීත(music) දිගුව(extension) එක් කරන්න, එවිට ඔබට `බෙර වාදනය(play drum)`{:class="block3extensions"} කට්ටිය(block එක) භාවිතා කළ හැකියි.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,7 +18,7 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+බෙර වාදනය කරන කේතය(code එක) චරිතයේ(character එකේ) ඇඳුම(costume එක) වෙනස් කරන කේතයට(code එකට) **ඉතා(very)** සමානය.
 
 \--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
 
