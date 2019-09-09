@@ -43,8 +43,8 @@ pan rwy'n derbyn [coch v]
 os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
   dileu (1 v) o [dilyniant v]
 fel arall 
-  dweud [Game over!] am (1) eiliad
-  aros [all v]
+  dweud [Gêm drosodd!] am (1) eiliad
+  aros [y cyfan v]
 end
 ```
 
@@ -70,7 +70,7 @@ os <(eitem (1 v) o [dilyniant v]) = [1]> yna
 + chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
 dileu (1 v) o [dilyniant v]
 fel arall 
-dweud [Game over!] am (1) eiliad
+dweud [Gêm drosodd!] am (1) eiliad
 aros [y cyfan v]
 end
 
@@ -109,12 +109,12 @@ os <(eitem (1 v) o [dilyniant v]) = [2]> yna
   chwarae drwm (\(2\) Bass Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
-  dweud [Game over!] am (1) eiliad
-  aros [all v]
+  dweud [Gêm drosodd!] am (1) eiliad
+  aros [y cyfan v]
 end
 ```
 
---- /hint ------ /hints --- --- /task ---
+--- /hint --- --- /hints --- --- /task ---
 
 --- task --- Dyblyga'r côd yma ddwywaith arall (ar gyfer y botymau gwyrdd a melyn), a newid y rhannau angenrheidiol fel fod y cymeriad yn ymateb yn gywir i'r `darllediad`{:class="block3events"} . --- /task ---
 
