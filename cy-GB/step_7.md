@@ -7,7 +7,7 @@ Wyt ti’n sylwi ar unrhyw gôd arall sydd yr un peth ar gyfer y 4 botwm?
 ```blocks3
 pan rwy'n derbyn [coch v]
 os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm ((1) Snare Drum v) am (0.25) curiad
+  chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
   Gêm drosodd :: custom
@@ -15,7 +15,7 @@ end
 
 pan rwy'n derbyn [glas v]
 os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm ((2) Bass Drum v) am (0.25) curiad
+  chwarae drwm (\(2\) Bass Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
   Gêm drosodd :: custom

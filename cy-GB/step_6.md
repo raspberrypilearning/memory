@@ -73,12 +73,11 @@ Alli di weld fod y côd ar gyfer 'Gêm drosodd' ar gyfer y pedwar lliw yn union 
 ```blocks3
 dweud [Gêm drosodd!] am (1) eiliad
 os <(sgôr :: variables) > (sgôr uchel)> yna 
-  gosod [sgôr uchel v] i (sgôr :: variables)
-  ask [Sgôr uchel!]
-end Beth yw dy enw?] ac aros
-  gosod [enw v] i (ateb)
+    gosod [sgôr uchel v] i (sgôr :: variables)
+    ask [Sgôr uchel!Beth yw dy enw?] ac aros
+    gosod [enw v] i (ateb)
 end
-aros [all v]
+aros [y cyfan v]
 ```
 
 Os wyt ti byth eisiau newid rhan o’r côd yma, fel ychwanegu sain neu newid y neges ‘Gêm drosodd!’, bydd angen i ti ei newid 4 gwaith! Gall hwnna fod yn boen, ac yn wastraff amser.
@@ -98,11 +97,10 @@ diffinio Gêm drosodd
 dweud [Gêm drosodd!] am (1) eiliad
 os <(sgôr :: variables) > (sgôr uchel)> yna 
   gosod [sgôr uchel v] i (sgôr :: variables)
-  ask [Sgôr uchel!]
-end Beth yw dy enw?] ac aros
+  gofyn [Sgôr uchel!Beth yw dy enw?] ac aros
   gosod [enw v] i (ateb)
 end
-aros [all v]
+aros [y cyfan v]
 ```
 
 --- /task ---
@@ -114,7 +112,7 @@ aros [all v]
 ```blocks3
 pan rwy'n derbyn [coch v]
 os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm ((1) Snare Drum v) am (0.25) curiad
+  chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
   Gêm drosodd :: custom
@@ -134,7 +132,7 @@ Mae dy floc `Gêm drosodd`{:class="block3myblocks"} yn **weithred**, sgript y ma
 ```blocks3
 pan rwy'n derbyn [glas v]
 os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm ((2) Bass Drum v) am (0.25) curiad
+  chwarae drwm (\(2\) Bass Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
   Gêm drosodd :: custom
@@ -151,13 +149,13 @@ end
 diffinio Gêm drosodd
 cychwyn sain [Cough1 v]
 dweud [Gêm drosodd!] am (1) eiliad
-os <(sgôr :: variables) > (sgôr uchel)> yna 
-  cychwyn sain (trumpet1 v)
-  gosod [sgôr uchel v] i (sgôr)
-  ask [Sgôr uchel! Beth yw dy enw?] ac aros
-  gosod [enw v] i (ateb)
+os < (sgôr :: variables) > (sgôr uchel)> yna 
+    cychwyn sain (trumpet1 v)
+    gosod [sgôr uchel v] i (sgôr)
+    gofyn [Sgôr uchel! Beth yw dy enw?] ac aros
+    gosod [enw v] i (ateb)
 end
-aros [all v]
+aros [y cyfan v]
 ```
 
 --- /task ---

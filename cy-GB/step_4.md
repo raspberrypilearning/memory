@@ -67,11 +67,11 @@ end
 ```blocks3
 pan rwy'n derbyn [coch v]
 os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  + chwarae drwm ((1) Snare Drum v) am (0.25) curiad
-  dileu (1 v) o [dilyniant v]
++ chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
+dileu (1 v) o [dilyniant v]
 fel arall 
-  dweud [Game over!] am (1) eiliad
-  aros [all v]
+dweud [Game over!] am (1) eiliad
+aros [y cyfan v]
 end
 
 ```
@@ -96,7 +96,7 @@ Cadwa'r blociau yma, ond bydd angen eu newid mewn ryw ffordd:
 
 pan rwy'n derbyn [coch v]
 
-chwarae drwm ((1) Snare Drum v) am (0.25) curiad
+chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
 ```
 
 --- /hint --- --- hint --- Dyma sut ddylai dy gôd edrych ar gyfer y darllediad `glas`{:class="block3events"}.
@@ -106,7 +106,7 @@ chwarae drwm ((1) Snare Drum v) am (0.25) curiad
 ```blocks3
 pan rwy'n derbyn [glas v]
 os <(eitem (1 v) o [dilyniant v]) = [2]> yna 
-  chwarae drwm ((2) Bass Drum v) am (0.25) curiad
+  chwarae drwm (\(2\) Bass Drum v) am (0.25) curiad
   dileu (1 v) o [dilyniant v]
 fel arall 
   dweud [Game over!] am (1) eiliad
