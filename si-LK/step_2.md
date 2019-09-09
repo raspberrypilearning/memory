@@ -47,7 +47,7 @@
 
 \--- task \--- අහඹු(random) අංකයක්(number එකක්) තෝරා ගැනීමට, මෙම කේතය(code එක) sprite චරිතට(character එකට) එකතු කර එය `අනුක්‍රමයට(sequence)`{:class= "block3variables"} එක් කරන්න:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 when flag clicked
@@ -64,7 +64,7 @@ add (pick random (1) to (4)) to [sequence v]
 
 ඔබගේ කේතය(code එක) මෙබඳු එකක් විය යුතුයි:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 when flag clicked
@@ -76,13 +76,12 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- ලැයිස්තුවට(list එකට) අංකයක්(number එකක්) එකතු(add) වූ සෑම අවස්ථාවකම චරිතය(character එක), එමඟින් ඇඳුමේ(costume's) වර්ණය අංකයට ගැලපෙන පරිදි සැකසිය ‍යුතුයි. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- ලැයිස්තුවට(list එකට) අංකයක්(number එකක්) එකතු(add) වූ සෑම අවස්ථාවකම චරිතය(character එක), එමඟින් ඇඳුමේ(costume's) වර්ණය අංකයට ගැලපෙන පරිදි සැකසිය ‍යුතුයි. `අනුක්‍රමයට(sequence එකට)`{:class= "block3variables"} අහඹු(random) අංකයක්(number එකක්) එක් කළ තැනට පහළින් මෙම කට්ටි(blocks) ඔබේ කේතයට(code එකට) යොදන්න:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+switch costume to (item (length of [sequence v]) of [sequence v]) wait (1) seconds
 ```
 
 \--- /task \---
