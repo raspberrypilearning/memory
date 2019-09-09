@@ -1,10 +1,10 @@
 ## වර්ණ(colour) අනුක්‍රමයක්(sequence එකක්) සෑදීම
 
-First create a character that can display a random sequence of colours.
+පළමුව අහඹු(random) ලෙස වර්ණ(colour) අනුක්‍රමයක්(sequence එකක්) පෙන්විය හැකි චරිතයක්(character එකක්) සාදන්න.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- නව Scratch ව්යාපෘතියක්(project එකක්) විවෘත්ත කරන්න.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**අන්තර්ජාල මාර්ගගත(Online):** [rpf.io/scratch-new](https://rpf.io/scratchon) හි අන්තර්ජාල මාර්ගගතව නව Scratch ව්‍යාපෘතියක් විවෘත කරන්න.
 
 **Offline**: open a new project in the offline editor.
 
