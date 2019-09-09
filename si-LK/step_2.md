@@ -1,4 +1,4 @@
-## Create a colour sequence
+## වර්ණ(colour) අනුක්‍රමයක්(sequence එකක්) සෑදීම
 
 First create a character that can display a random sequence of colours.
 
