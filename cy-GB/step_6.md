@@ -55,10 +55,10 @@ fel arall
   dweud [Gêm drosodd!] am (1) eiliad
   os <(sgôr :: variables) > (sgôr uchel)> yna 
     gosod [sgôr uchel v] i (sgôr :: variables)
-    gofyn [Sgôr uchel!  Beth yw dy enw?] ac aros
+    gofyn [Sgôr uchel! Beth yw dy enw?] ac aros
     gosod [enw v] i (ateb)
   end
-  aros [all v]
+  aros [y cyfan v]
 end
 ```
 
@@ -74,7 +74,7 @@ Alli di weld fod y côd ar gyfer 'Gêm drosodd' ar gyfer y pedwar lliw yn union 
 dweud [Gêm drosodd!] am (1) eiliad
 os <(sgôr :: variables) > (sgôr uchel)> yna 
     gosod [sgôr uchel v] i (sgôr :: variables)
-    ask [Sgôr uchel!Beth yw dy enw?] ac aros
+    gofyn [Sgôr uchel! Beth yw dy enw?] ac aros
     gosod [enw v] i (ateb)
 end
 aros [y cyfan v]
@@ -97,7 +97,7 @@ diffinio Gêm drosodd
 dweud [Gêm drosodd!] am (1) eiliad
 os <(sgôr :: variables) > (sgôr uchel)> yna 
   gosod [sgôr uchel v] i (sgôr :: variables)
-  gofyn [Sgôr uchel!Beth yw dy enw?] ac aros
+  gofyn [Sgôr uchel! Beth yw dy enw?] ac aros
   gosod [enw v] i (ateb)
 end
 aros [y cyfan v]
