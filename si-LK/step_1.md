@@ -40,7 +40,7 @@
 
 ### මෘදුකාංග(Software)
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 ([අන්තර්ජාල ගතව(online)](https://rpf.io/scratchon){:target="_blank"} හෝ [අන්තර්ජාලයට නොබැඳිව(offline)](https://rpf.io/scratchoff){:target="_blank}) \--- /collapse \---
 
 ## \--- collapse \---
 
