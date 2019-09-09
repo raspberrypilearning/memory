@@ -23,11 +23,11 @@
     + 3 = green
     + 4 = yellow
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- ඔබේ චරිතයට(character එකට) විවිධ වර්ණ ඇති ඇඳුම්(costumes) හතරක් ලබා දෙන්න, ඉහත පෙන්වා ඇති වර්ණ හතරෙන් එක් එක් ඇඳුම(costume එක) එන පරිදි සකසන්න. ඔබේ වර්ණවත්(coloured) ඇඳුම්(costumes) ඉහත ලැයිස්තුවට(list) සමාන පිළිවෙලට(order එකට) ඇති බවට වග බලා ගන්න.
 
 ![තිර රුව(screenshot)](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+ඔබට අවශ්‍ය නම්, ඔබට **හැඩයක් වර්ණ ගැන්වීම(color a shape)** මෙවලම භාවිතා කර, ඇඳුමේ(costume එකේ) කොටස් වෙනත් වර්ණයකින් වර්ණ ගැන්විය හැකිය.
 
 ![color-a-shape](images/color-a-shape.png)
 
