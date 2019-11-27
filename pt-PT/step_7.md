@@ -2,23 +2,23 @@
 
 ### Faz mais blocos
 
-Estar a ver algum outro código que seja o mesmo para os quatro botões?
+Estás a ver algum outro código que seja o mesmo para os quatro botões?
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
+quando receberes a mensagem [vermelho v]
+se <((1 v) de [sequência v]) = [1]> , então 
+  toca a percussão ((1) Snare Drum v) durante (0.25) tempos
+  remove (1 v) de [sequência v]
+senão, 
+  Game Over :: custom
 end
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
+quando receberes a mensagem [azul v]
+se <((1 v) de [sequência v]) = [1]> , então 
+  toca a percussão ((2) Bass Drum v) durante (0.25) tempos
+  remove (1 v) de [sequência v]
+senão, 
+  Game over :: custom
 end
 ```
 
@@ -32,8 +32,8 @@ Consegues acrescentar outro traje branco ao teu personagem, e adicionar código 
 
 ![captura de ecrã](images/colour-white.png)
 
-### Nível de Dificuldade
+### Nível de dificuldade
 
-Consegues dar permissão ao jogador para escolher entre 'modo fácil' (utilizando apenas a bateria vermelha e azul) e 'modo normal' (que utiliza os quatro tambores)?
+Consegues dar opçāo ao jogador para escolher entre 'modo fácil' (utilizando apenas as cores vermelha e azul) e 'modo normal' (que utiliza as quatro cores)?
 
-Podes até adicionar um modo 'hard', que utiliza um quinto tambor!
+Se quiseres podes até adicionar um modo 'hard', que utiliza um quinto tambor!
