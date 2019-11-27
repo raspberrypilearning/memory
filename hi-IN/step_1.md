@@ -1,16 +1,16 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+यह प्रोजेक्ट का **स्क्रैच 3** संस्करण है। प्रोजेक्ट का एक [स्क्रैच 2](https://projects.raspberrypi.org/en/projects/memory-scratch2) संस्करण भी है।
 
 \--- /no-print \---
 
 ## परिचय
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+इस प्रोजेक्ट में, आप एक मेमोरी गेम बनाएंगे जिसमें आपको रंगों के एक यादृच्छिक क्रम को याद रखना और दोहराना होगा!
 
 ### आप क्या बनाएँगे
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- नो-प्रिंट \--- शुरू करने के लिए हरे झंडे पर क्लिक करें। नर्तक की पोशाक द्वारा दिखाए गए रंगों के अनुक्रम को देखें और साथ में ढोल की आवाज़ को सुनें, फिर रंगों को वापस उसके पास दोहराएं। यदि आपके रंगों का अनुक्रम गलत हुआ, तो खेल खत्म!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -24,15 +24,15 @@ In this project, you will create a memory game in which you have to memorise and
 
 ## title: आप क्या सीखेंगे
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ अपने स्क्रैच प्रोजेक्ट में ध्वनि कैसे जोड़ें
++ डेटा को संग्रहीत करने के लिए सूचियों का निर्माण और उपयोग कैसे करें
++ कोड को दोहराने के लिए कस्टम ब्लॉक कैसे बनाएं और उपयोग करें
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: आपको किन चीज़ों की आवश्यकता होगी
+## title: आपको क्या आवश्यकता होगी
 
 ### हार्डवेयर
 
@@ -44,7 +44,7 @@ Scratch 3 ([ऑनलाइन](https://rpf.io/scratchon){:target="_blank"} य�
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: शिक्षकों के लिए अतिरिक्त जानकारी
 
 \--- no-print \---
 
@@ -52,6 +52,6 @@ Scratch 3 ([ऑनलाइन](https://rpf.io/scratchon){:target="_blank"} य�
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+आप यहां [ पूर्ण किया हुआ प्रोजेक्ट ](http://rpf.io/p/en/memory-get) पा सकते हैं {: target = "_ blank"}।
 
 \--- /collapse \---
