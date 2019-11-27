@@ -1,39 +1,39 @@
 ## Herausforderung: Erstelle mehr Blöcke
 
-### Make more blocks
+### Erstelle mehr Blöcke
 
-Do you see any other code that is the same for all four buttons?
+Findest du noch anderen Code, der für alle vier Tasten gleich ist?
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
+Wenn ich [rot v] empfange
+falls <(Element (1 v) von [Sequenz v])=[1]>, dann 
+    spiele Schlaginstrument (\(1\) Snare Drum v) für (0.25) Schläge
+    lösche (1 v) aus [Sequenz v]
+sonst 
     Game Over :: custom
 end
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
+Wenn ich [blau v] empfange
+falls <(Element (1 v) von [Sequenz v])=[1]>, dann 
+    spiele Schlaginstrument (\(2\) Basstrommel v) für (0.25) Schläge
+    lösche (1 v) aus [Sequenz v]
+sonst 
     Game over :: custom
 end
 ```
 
-Can you make another custom block that all buttons can use?
+Kannst Du einen anderen benutzerdefinierten Block erstellen, der von jeder Taste verwendet wird?
 
-### Another costume
+### Ein anderes Kostüm
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+Hast Du bemerkt, dass das Spiel damit beginnt, dass Dein Charakter eine der vier Farben zeigt, und dass das Kostüm immer die letzte Farbe anzeigt, die der Spieler beim wiederholen der Farbsequenz ausgewählt hat?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+Kannst Du dem Charakter ein anderes komplett weißes Kostüm geben, welches zu Beginn des Spiels angezeigt wird, und wenn der Spieler versucht, die Sequenz zu wiederholen?
 
 ![Screenshot](images/colour-white.png)
 
-### Difficulty level
+### Schwierigkeitsgrad
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+Kannst Du Deinen Spielern erlauben, zwischen dem "einfachen" Modus (nur mit roten und blauen Trommeln) und dem "normalen" Modus (alle vier Trommeln werden verwendet) zu wählen?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+Du könntest sogar einen “Schwierig-Modus” hinzufügen, wo eine fünfte Trommel verwendet wird!
