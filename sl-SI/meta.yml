@@ -1,0 +1,26 @@
+---
+hero_image: images/memory.png
+listed: true
+copyedit: false
+title: Spomin
+description: Ustvari igro, v kateri si moraš zapomniti in ponoviti naključno barvno zaporedje
+version: 4.1.0
+last_tested: 2018-10-04
+steps:
+  - 
+    title: Uvod
+  - 
+    title: Ustvari barvno zaporedje
+  - 
+    title: Dodaj zvok
+  - 
+    title: Ponovi zaporedje
+  - 
+    title: Več stopenj
+  - 
+    title: Najboljši rezultat
+  - 
+    title: "Izziv: izboljšaj igro"
+  - 
+    title: Kaj sledi?
+
