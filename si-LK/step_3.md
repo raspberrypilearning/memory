@@ -20,11 +20,11 @@ sprite චරිතය ඇඳුම(costume එක) වෙනස් කරන �
 
 බෙර වාදනය කරන කේතය(code එක) චරිතයේ(character එකේ) ඇඳුම(costume එක) වෙනස් කරන කේතයට(code එකට) **ඉතා(very)** සමානය.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- ඔබට එකතු කළ යුත්තේ කට්ටි(blocks) දෙකක් පමණි: `(0.25) සඳහා බෙර වාදනය(play drum for 0.25)`{:class="block3sound"} කට්ටිය සහ ` අයිතම(item) [අනුක්‍රමයේ දිග(length of sequence)] අනුක්‍රමය(sequence)`{:class="block3variables"} කට්ටිය. \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+ඔබට අවශ්‍ය කට්ටි(blocks) මෙහි දැක්වේ:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පිනිය(ballerina)](images/ballerina.png)
 
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
@@ -34,9 +34,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \--- ඔබේ නිමි(finished) කේතය(code එක) මෙහි දැක්වෙන ආකාරයේ එකක් වියයුතුයි:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පිනිය(ballerina)](images/ballerina.png)
 
 ```blocks3
 when flag clicked
