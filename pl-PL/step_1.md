@@ -10,7 +10,7 @@ W tym projekcie stworzysz grę pamięciową, w której będziesz musiał zapami�
 
 ### Co będziesz robił
 
-\--- no-print \--- Kliknij zieloną flagę, aby rozpocząć. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- no-print \--- Kliknij zieloną flagę, aby rozpocząć. Obserwuj sekwencję kolorów zaprezentowaną przez sukienkę tancerki i wysłuchaj towarzyszących rytmów bębna. Następnie powtórz zaprezentowane kolory. Jeśli źle podasz kolejność kolorów, gra się kończy!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -24,9 +24,9 @@ W tym projekcie stworzysz grę pamięciową, w której będziesz musiał zapami�
 
 ## title: Czego się nauczysz
 
-+ Jak dodać dźwięk do projektu Scratchu
-+ Jak tworzyć i używać list do przechowywania danych
-+ How to create and use custom blocks for repeating code
++ Jak dodać dźwięk do projektu Scratch
++ Jak tworzyć listy i używać ich do przechowywania danych
++ Jak tworzyć spersonalizowane bloki i używać ich do powtarzania kodu
 
 \--- /collapse \---
 
@@ -52,6 +52,6 @@ Jeśli chcesz wydrukować ten projekt, użyj [wersji do druku](https://projects.
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Tutaj znajdziesz [ukończoną wersję projektu](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
