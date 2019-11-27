@@ -14,45 +14,45 @@
 
 \--- task \--- 改变角色的`重复执行`{:class="block3control"}循环(用于创建颜色序列)为重复 `分数`{:class="block3variables"} 次：
 
-![精灵](images/ballerina.png)
+![sprite](images/ballerina.png)
 
 ```blocks3
-重复执行 (分数 :: variables) 次
-结束
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
 
 \--- task \--- 如果玩家重复正确的序列，你就应该给 `分数`{:class="block3variables"}加`1` ，这样做会增加下一个序列的长度。 添加下面的块到角色的代码 **在你知道颜色顺序正确的时候**:
 
-![精灵](images/ballerina.png)
+![sprite](images/ballerina.png)
 
 ```blocks3
-将[分数] 增加(1)
+change [score v] by (1)
 ```
 
 \--- hints \--- \--- hint \--- 在游戏`广播`{:class="block3events"} ‘won' 的消息时你知道序列是正确的。 \--- /hint \--- \--- /hints \---
 
 \--- /task \---
 
-\--- task \--- 最后，添加一个`重复执行`{:class="block3control"} 循环在产生序列的代码周围，以至于游戏为每个水平建立一个新的颜色序列。 这是您的角色代码的外观：
+\--- task \--- 最后，添加一个`重复执行`{:class="block3control"} 循环在产生序列的代码周围，以至于游戏为每个水平建立一个新的颜色序列。 你的代码看起来应该是这样的：
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-当 ⚑ 被点击
-将 [分数] 设为 [3]
-重复执行 
-  删除 [序列] 的第 (全部) 项
-  重复执行 (分数) 次 
-    将 (在 (1) 和 (4) 之间取随机数) 加入 [序列]
-    换成 ([序列] 的第 ([序列] 的项目数) 项) 造型
-    等待 (1) 秒
-  结束
-  等待 <([序列] 的项目数) = [0]>
-  广播 (won v) 并等待
-  将 [分数 v] 增加 (1)
-结束
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
+end
 ```
 
 \--- /task \---
