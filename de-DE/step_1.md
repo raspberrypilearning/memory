@@ -10,7 +10,7 @@ In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folg
 
 ### Was du machen wirst
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+Drücke auf die grüne Flagge, um zu starten. Beobachte die Farbenfolge, die das Kleid des Tänzers/der Tänzerin zeigt und höre den begleitenden Trommelschlägen zu, wiederhole die Reihenfolge um ein Level weiter zu kommen. Wenn du die Reihenfolge falsch eingegeben hast, ist das Spiel vorbei!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -24,15 +24,15 @@ In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folg
 
 ## title: Was du lernen wirst
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Wie ein Klang zu deiner Scratch-Figur hinzugefügt wird
++ Wie man Listen erstellt und verwendet, um Daten zu speichern
++ Wie man benutzerdefinierte Blöcke zum Wiederholen von Codes erstellt und verwendet
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Was du brauchen wirst
+## title: Was du benötigst
 
 ### Hardware
 
@@ -40,11 +40,11 @@ In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folg
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (entweder [online](https://rpf.io/scratchon){:target="_blank"} oder [ohne Internetverbindung ](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: Zusätzliche Informationen für Lehrer
 
 \--- no-print \---
 
@@ -52,6 +52,6 @@ Wenn du dieses Projekt ausdrucken möchtest, verwende die [druckerfreundliche Ve
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Du findest das [abgeschlossene Projekt hier](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
