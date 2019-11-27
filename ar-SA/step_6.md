@@ -79,10 +79,12 @@ end
   اسأل [درجة عالية ! ما هو اسمك ؟] وانتظر :: sensing
   اجعل [اسم اللاعب v] مساويًا (الإجابة :: sensing) :: variables :: control
 end
-أوقف [الكل v] :: control What is your name?] and wait
-    set [name v] to (answer)
+أوقف [الكل v] :: control ما اسمك؟\] and wait
+اجعل [name v] مساوياً (الإجابة)
 end
-stop [all v]
+أوقف [الكل v]
+
+end
 ```
 
 إذا أردت تغيير أي من التعليمات البرمجية الخاصة بحالة "انتهاء اللعبة"، على سبيل المثال إضافة صوت أو تغيير رسالة "انتهت اللعبة !"، فعليك أن تقوم بتغيرها أربع مرات، مرة لكل لون. و قد يكون هذا مزعج و فيه مضيعة للوقت.
@@ -105,10 +107,12 @@ if < (الدرجة :: variables) > (أعلى درجة) > then
     ask [درجة عالية ! ما هو اسمك؟] and wait
     set [اسم اللاعب v] to (answer)
 end
-stop [all v] What is your name?] and wait
-    set [name v] to (answer)
+stop [all v] ما اسمك؟\] and wait
+اجعل [name v] مساوياً (الإجابة)
 end
-stop [all v]
+أوقف [الكل v]
+
+end
 ```
 
 \--- /task \---
@@ -163,10 +167,10 @@ end
   اسأل [درجة عالية! ما هو اسمك?] وانتظر :: sensing
   اجعل [اسم اللاعب v] مساويًا (الإجابة :: sensing) :: variables :: control
 end
-أوقف [الكل v] :: control What is your name?] and wait
-    set [name v] to (answer)
+أوقف [الكل v] :: control ما اسمك؟\] and wait
+اجعل [name v] مساوياً (الإجابة)
 end
-stop [all v]
+أوقف [الكل v]
 ```
 
 \--- /task \---
