@@ -10,7 +10,7 @@ Neste projeto, você criará um jogo de memória no qual você terá que memoriz
 
 ### O que você vai fazer
 
-\--- no-print \--- Clique na bandeira verde para começar. Observe a sequência de cores mostrada pelo vestido da bailarina e ouça as batidas de tambor que as acompanham e repita-as de volta para ela. Se você errar a ordem, o jogo acaba!
+\--- no-print \--- Clique na bandeira verde para começar. Observe a sequência de cores mostradas pelo vestido da bailarina e ouça as batidas de tambor que as acompanham e repita-as de volta para ela. Se você errar a ordem das cores, o jogo acaba!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -24,9 +24,9 @@ Neste projeto, você criará um jogo de memória no qual você terá que memoriz
 
 ## title: O que você vai aprender
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Como adicionar som ao seu projeto Scratch
++ Como criar e utilizar listas para armazenar dados
++ Como criar e usar blocos personalizados para repetir código
 
 \--- /collapse \---
 
@@ -40,7 +40,7 @@ Neste projeto, você criará um jogo de memória no qual você terá que memoriz
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 ([online](https://rpf.io/scratchon){:target="_blank"} ou [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
 
 ## \--- collapse \---
 
@@ -52,6 +52,6 @@ Se você precisar imprimir este projeto, por favor, use a [versão para impress�
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Você pode encontrar o projeto [completo aqui](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
