@@ -15,6 +15,6 @@
 
 \--- print-only \---
 
-![躲避球游戏正在播放](images/dodgeball-showcase.png)
+![玩躲避球游戏](images/dodgeball-showcase.png)
 
 \--- /print-only \---
