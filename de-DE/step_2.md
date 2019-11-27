@@ -1,83 +1,88 @@
 ## Zufällige Farben
 
-First create a character that can display a random sequence of colours.
+Erstelle zunächst einen Charakter, der eine zufällige Reihenfolge von unterschiedlichen Farben annehmen kann.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- Öffne ein neues Scratch-Projekt.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: Erstelle ein neues Scratch-Projekt unter [rpf.io/scratch-new](https://rpf.io/scratchon).
 
-**Offline**: open a new project in the offline editor.
+**Offline**: Öffne ein neues Projekt im Offline-Editor.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Wenn du den Scratch-Offline-Editor herunterladen und installieren möchtest, findest du diesen unter [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- Füge eine neue Figur, sowie den passenden Bühnenhintergrund hinzu. Dein Charakter muss keine Person sein, aber er muss verschiedene Farben annehmen können.
 
 ![Screenshot](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ In dem Spiel sollte für jede Farbe eine andere Nummer verwendet werden:
     
     + 1 = rot
     + 2 = blau
     + 3 = grün
     + 4 = gelb
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- Aufgabe \--- Gib deinen Charakter vier Kostüme mit unterschiedliche Farben. Jedem Kostüm soll eine der oben genannten vier Farben zugeordnet werden. Stelle sicher, dass die farbigen Kostüme in der gleichen Reihenfolge zugeordnet werden wie in der oben aufgeführten Liste.
 
 ![Screenshot](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Du kannst das **Farb-Werkzeug** verwenden, um Teile des Kostüms mit einer anderen Farbe zu füllen.
 
-![color-a-shape](images/color-a-shape.png)
+![eine-Form-einfärben](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Als nächste füge eine Liste hinzu, um die zufällige Reihenfolge der Farben zu speichern, die der Spieler sich dann merken muss.
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- Erstelle unter ‘Daten’ eine neue Liste namens `Sequenz`. Da nur Dein Charakter die Liste sehen muss, können wir auf **Nur für diese Figur** klicken.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Du solltest nun sowohl Deine leere Liste in der oberen linken Ecke Deiner Bühne sehen, als auch eine Menge neuer Bausteine für die Verwendung der Liste.
 
 ![Screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Jede Farbe hat eine andere Nummer. Um eine zufällige Farbe zu erhalten kannst Du eine Zahl Dir ausdenken und in die Liste einfügen.
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+Füge diesen Code zur Figur hinzu, um `Sequenz`{:class="block3variables"} nacheinander eine zufällige Nummer zuzuordnen:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-wenn das Flag angeklickt wurde, addiere (wähle Zufall (1) bis (4)) zu [Sequenz v]
+Wenn die grüne Flagge angeklickt
+füge (Zufallszahl von (1) bis (4)) zu [Sequenz v] hinzu
 ```
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- Test deinen Code. Überprüfe, dass jedes Mal, wenn Du auf die Flagge klickst, eine zufällige Nummer zwischen 1 und 4 zur Liste hinzugefügt wird. \--- /task \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- Kannst dem Programm einen Code hinzufügen, um damit fünf zufällige Zahlen gleichzeitig zu erhalten?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- hints \--- \---- hint \---- Füge ein `Sequenz leeren` {:class="block3variables"} hinzu, um zunächst alle Elemente in der Liste zu entfernen und dann über einen `Wiederhole`{:class="block3control"} - Block 5 zufällige Elemente zu der Liste hinzufügen. \--- /hint \--- \--- hint \---
 
-This is what your code should look like:
+So sollte dein Code aussehen:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-Wenn das Flag angeklickt wurde lösche (alle v) von [Sequenz v] wiederhole (5) füge hinzu (wähle Zufall (1) bis (4)) zum [Sequenz v] Ende
+Wenn die grüne Flagge angeklickt
+lösche (alle v) aus [Sequenz v]
+wiederhole (5) mal 
+  füge (Zufallszahl von (1) bis (4)) zu [Sequenz v] hinzu
+end
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- Ändere jedes Mal, wenn eine neue Zahl zur Liste hinzugefügt wird, das Kostüm, sodass die Farbe des Kostüms zur Zahl passt. Füge diese Blöcke in deinen Code ein, direkt unter dem Teil, an dem die Zufallszahlen zur `Sequenz`{:class="block3variables"} hinzugefügt werden:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+wechsle zu Kostüm (Element (Länge von [Sequenz v]) von [Sequenz v])
+warte (1) Sekunden
 ```
 
 \--- /task \---
