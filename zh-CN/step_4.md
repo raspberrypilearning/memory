@@ -7,15 +7,15 @@
 + 编辑新精灵的服装，以便四种颜色中的每一种都有一个精灵
 + 将精灵放在舞台上的顺序与服装相同：红色，蓝色，绿色，黄色
 
-![截图](images/colour-drums.png) \--- /task \---
+![screenshot](images/colour-drums.png) \--- /task \---
 
 \--- task \--- 将代码添加到红色精灵中，以便在点击精灵时，该精灵能`广播` {：class =“block3events”}“红色”消息到角色精灵：
 
-![红鼓](images/red_drum.png)
+![red-drum](images/red_drum.png)
 
 ```blocks3
-    当角色被点击
-广播 (红色)
+    when this sprite clicked
+    broadcast (red v)
 ```
 
 \--- /task \---
@@ -36,16 +36,16 @@
 
 如果 `1` 在列表的开头，代码应该从列表中删除数字，因为玩家记住了正确的颜色。 否则游戏结束，代码需要 `停止所有脚本`{:class="block3control"} 去结束游戏。
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-当接收到 [红色]
-如果 <([序列] 的第 (1 v) 项) = [1] > 那么 
- 删除 [序列] 的第 (1 v) 项
-否则 
- 说 [游戏结束!] (1) 秒
- 停止 [全部脚本]
-结束
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 ```
 
 \--- /task \---
@@ -62,14 +62,15 @@
 \--- /hint \--- \--- hint \--- 下面是你需要添加的代码：
 
 ```blocks3
-当接收到 [红色]
-如果<([序列] 的第 (1 v) 项) = [1]> 那么 
- + 击打 (\(1\) 小军鼓) (0.25) 拍
- 删除 [序列] 的第 (1 v) 项
-否则 
- 说 [游戏结束!] (1) 秒
- 停止 [全部脚本]
-结束
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 
 ```
 
@@ -85,29 +86,29 @@
 
 保留这些块，但需要以某种方式改变它们：
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-<([序列] 的第 (1 v) 项) = [1]>
+<(item (1 v) of [sequence v]) = [1]>
 
-当接收到 [红色]
+when I receive [red v]
 
-击打 ((1) 小军鼓) (0.25) 拍
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 \--- /hint \--- \--- hint \--- 这里是你的代码应该如何接受`蓝色`{:class="block3events"}广播。
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-当接收到 [蓝色]
-如果 <([序列] 的第 (1 v) 项) = [2]> 那么 
-  击打 (\(2\) 低音鼓) (0.25) 拍
-  删除 [序列] 的第 (1 v) 项
-否则 
-  说 [游戏结束!] (1) 秒
-  停止 [全部脚本]
-结束
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[2]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    stop [all v]
+end
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
@@ -118,13 +119,13 @@
 
 当玩家正确地重复完整个颜色序列时，`序列`{:class="block3variables"}列表被清空，玩家获胜。 如果需要，一旦`序列`{:class="block3variables"} 列表变为空，你也可以显示一些闪烁的灯光作为奖励。
 
-\--- task \--- 添加此代码到角色的`当 ⚑ 被点击`{:class="block3events"} 脚本的最后:
+\--- task \--- 添加这个代码到角色的`when flag clicked`{:class="block3events"} 脚本的最后:
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-    等待  <([序列] 的项目数) = [0]>
-广播 (won v) 并等待
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
 ```
 
 \--- /task \---
@@ -137,16 +138,16 @@
 
 \--- task \--- 添加此代码以播放音效，并在玩家获胜时使背景改变颜色。
 
-![芭蕾舞演员](images/stage.png)
+![ballerina](images/stage.png)
 
 ```blocks3
-    当接收到 [won v]
-播放声音 (drum machine v)
-重复执行 (50) 次 
-  将 [颜色] 特效增加 (25)
-  等待 (0.1) 秒
-结束
-清除图形特效
+    when I receive [won v]
+    start sound (drum machine v)
+    repeat (50)
+        change [color v] effect by (25)
+        wait (0.1) seconds
+    end
+    clear graphic effects
 ```
 
 \--- /task \---
