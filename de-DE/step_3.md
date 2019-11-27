@@ -2,15 +2,15 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Teste Dein Projekt einige Male. Du stellst möglicherweise fest, dass manchmal die gleiche Zahl zweimal (oder mehrmals) nacheinander ausgewählt wird, was es schwieriger macht sich die Reihenfolge zu merken.
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Kannst Du jedes Mal, wenn das Kostüm wechselt ein Trommel-Geräusch spielen? Kannst Du jeweils ein anderes Trommel-Geräusch machen, abhängig von der Zufallszahl, die ausgewählt wird?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Füge die Musik-Erweiterung zu deinem Projekt hinzu, damit du den `Spiele-Trommel` {:class="block3extensions"} - Block nutzen kannst.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,34 +18,34 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Dies wird **sehr** ähnlich zu dem Code sein, der für das Verändern des Kostüms des Charakters verantwortlich ist.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Du brauchst nur zwei Blöcke hinzufügen: einen `spiele-Trommel für (0,25) Schläge` {:class="block3sound"} - Block und einen `Element (Länge der Sequenz) von Sequenz`{:class="block3variables"} - Block. \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Hier sind die Blöcke, die du brauchst:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+spiele Schlaginstrument ((1) Snare Drum v) für (0.25) Schläge
 
-(item (length of [sequence v]) of [sequence v])
+(Element (Länge von [Sequenz v]) von [Sequenz v])
 ```
 
 \--- /hint \---
 
 \--- hint \---So sollte dein fertiger Code aussehen:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
+Wenn die grüne Flagge angeklickt
+lösche (alle v) aus [Sequenz v]
+wiederhole (5) mal 
+    füge (Zufallszahl von (1) bis (4)) zu [Sequenz v] hinzu
+    spiele Trommel (Element (Länge von [Sequenz v]) von [Sequenz v]) für (0.25) Schläge
+  wechsle zu Kostüm (Element (Länge von [Sequenz v]) von [Sequenz v])
+  warte (1) Sekunden
 end
 ```
 
