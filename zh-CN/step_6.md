@@ -16,47 +16,47 @@
 
 您需要以下块：
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-如果 &lt;&gt; 那么
+if < > then
 end
 
-(分数)
+(score)
 
-(分数)
+(score)
 
-<[ ] &gt;[ ]>
+[ ] > [ ]
 
-(回答)
+answer
 
-(高分)
+(high score)
 
-询问 [你的姓名是?] 并等待
+ask [What's your name?] and wait
 
-将 [高分 v] 设为 [ ]
+set [high score v] to [ ] 
 
-将 [姓名 v] 设为 [ ] 
+set [name v] to [ ] 
 ```
 
 \--- /hint \--- \--- hint \--- 下面是你按下红色按钮的应该包含的代码：
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-当接收到 [红色v]
-如果 <([序列 v] 的第 (1 v) 项) = [1]> 那么 
-  击打 ([序列 v] 的第 (1 v) 项) (0.25) 拍
-  删除 [序列 v] 的第 (1 v) 项
-否则 
-  说 [游戏结束!] (1) 秒
-  如果 <(分数 :: variables) > (高分)> 那么 
-    将 [高分 v] 设为 (分数 :: variables)
-    询问 [高分! 你的名字是?] 并等待
-    将 [姓名 v] 设为 (回答)
-  结束
-  停止[所有脚本 v]
-结束
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (item (1 v) of [sequence v]) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    if < (score :: variables) > (high score) > then
+        set [high score v] to (score :: variables)
+        ask [High score! What is your name?] and wait
+        set [name v] to (answer)
+    end
+    stop [all v]
+end
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
@@ -65,16 +65,16 @@ end
 
 你能看到四种颜色中每种颜色的“游戏结束”代码是完全相同的吗？
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-说 [游戏结束!] (1) 秒
-如果 <(分数 :: variables) >>(高分)> 那么 
-  将 [高分 v] 设为 (分数 :: variables)
-  ask [高分! 你的姓名是?] 并等待
-将 [姓名 v] 设为 (回答)
-结束
-停止 [所有脚本 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 如果您需要更改任何“游戏结束”代码，例如添加声音或更改“游戏结束”消息，则必须更改四次。这很烦人，浪费了很多时间。
@@ -87,71 +87,71 @@ end
 
 \--- task \--- 从连接 `红色`{:class="block3events"} 广播的 `否则`{:class="block3control"} 模块到`游戏结束`{:class="block3myblocks"}添加代码，像下面这样：
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-定义 游戏结束
-说 [游戏结束!] (1) 秒
-如果 <(分数 :: variables) > (高分)> 那么 
-  将 [高分 v] 设为 (分数 :: variables)
-  询问 [高分! 你的名字是?] 并等待
-  将 [姓名 v] 设为 (回答)
-结束
-停止 [所有脚本 v]
+define Game over
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
 
 \--- task \--- 现在移除在 `否则`{:class="block3control"}块中连接`红色`{:class="block3events"} 广播的代码，然后加入`游戏结束/0>{:class="block3myblocks"} 模块：</p>
 
-<p><img src="images/ballerina.png" alt="芭蕾舞演员" /></p>
+<p><img src="images/ballerina.png" alt="ballerina" /></p>
 
-<pre><code class="blocks3">当接收到 [红色 v]
-如果 <([序列 v] 的第 (1 v) 项) = [1]> 那么 
-  击打 ((1) 小军鼓 v) (0.25) 拍
-  删除 [序列 v] 的第 (1 v) 项
-否则 
-  游戏结束 :: custom
-结束
+<pre><code class="blocks3">when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 `</pre> 
 
 \--- /task \---
 
-\--- task \--- 通过玩游戏并在错误的时间点点击红色按钮来测试新块。 \--- /任务\---
+\--- task \--- 通过玩游戏并在错误的时间点点击红色按钮来测试新块。 \--- /task\---
 
 你的新的`游戏结束`{:class="block3myblocks"}块是一个 **函数**, 你可以在任何地方使用这一段脚本通过添加`游戏结束`{:class="block3myblocks"} 块：
 
 \--- task \--- 现在将对于接收其他颜色`广播`{:class="block3events"} 的代码块的 `否则`{:class="block3control"}块内的代码替换为你的新的 `游戏结束`{:class="block3myblocks"} 模块。 对于`蓝色`{:class="block3events"} 消息的代码应该像这样：
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-当接收到 [蓝色 v]
-如果 <([序列 v] 的第 (1 v) 项) = [1]> 那么 
-  击打 ((2) 低音鼓 v) (0.25) 拍
-  删除 [序列 v] 的第 (1 v) 项
-否则 
-  游戏结束 :: custom
-结束
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
 
 \--- task \--- 现在添加按下错误按钮时播放的声音。 您只需要在 `游戏结束`{:class="block3myblocks"} 模块中添加此代码一次，而不是四次！
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-定义 游戏结束
-播放声音 [Cough1 v]
-说 [游戏结束!] (1) 秒
-如果 <(分数 :: variables) > (高分)> 那么 
-  播放声音 (trumpet1 v)
-  将 [高分 v] 设为 (分数)
-  询问 [高分! 你的姓名是?] 并等待
-  将 [姓名 v] 设为 (回答)
-结束
-停止 [所有脚本v]
+define Game over
+start sound [Cough1 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    play sound (trumpet1 v)
+    set [high score v] to (score)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
