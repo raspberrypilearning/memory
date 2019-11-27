@@ -24,29 +24,29 @@
 
 以下是你需要的代码块：
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-击打 (\(1\) 小军鼓) (0.25) 拍
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
-([序列] 的第 (length of 序列\]) 项)
+(item (length of [sequence v]) of [sequence v])
 ```
 
 \--- /hint \---
 
 \--- hint \--- 你完成的代码应该像下面这样：
 
-![芭蕾舞演员](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-当 ⚑ 被点击
-删除 [序列] 的第 (all v) 项
-重复执行 (5) 次 
-  将 (在 (1) 和 (4) 之间取随机数) 加入 [序列]
-  击打 ([序列] 的第 ([序列] 的项目数) 项) (0.25) 拍
-  换成 ([序列] 的第 ([序列] 的项目数) 项) 造型
-  等待 (1) 秒
-结束
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
+    switch costume to (item (length of [sequence v]) of [sequence v])
+    wait (1) seconds
+end
 ```
 
 \--- /hint \---
