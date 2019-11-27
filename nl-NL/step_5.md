@@ -31,11 +31,11 @@ einde
 verander [score v] met (1)
 ```
 
-\--- hints \--- \--- hint \--- Je weet dat de volgorde correct is op het moment dat het spel het 'gewonnen'-bericht `uitzendt`{:class="block3events"}. \--- / hint \--- \--- / hints \---
+\--- hints \--- \--- hint \--- Je weet dat de volgorde correct is op het moment dat het spel het 'gewonnen'-signaal`uitzendt`{:class="block3events"}. \--- / hint \--- \--- / hints \---
 
 \--- /task \---
 
-\--- task \--- Tenslotte moet er nog een `herhaal`{:class="blockcontrol"}-lus om de code worden gezet die de reeks maakt, zodat er voor elk niveua een nieuwe reeks wordt gemaakt. Zo zou de code van het personage eruit kunnen zien:
+\--- task \--- Tenslotte moet er nog een `herhaal`{:class="blockcontrol"}-lus om de code worden gezet die de reeks maakt, zodat er voor elk niveau een nieuwe reeks wordt gemaakt. Zo zou de code van het personage eruit kunnen zien:
 
 ![balletdanseres](images/ballerina.png)
 
