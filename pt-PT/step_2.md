@@ -2,7 +2,7 @@
 
 Primeiro cria um personagem que possa exibir uma sequência aleatória de cores.
 
-\--- Abre um projeto Scratch novo.
+\--- task \--- Abre um novo projeto Scratch.
 
 **Online:** abre um novo projeto online Scratch em [rpf.io/scratch-new](https://rpf.io/scratchon){:target="_blank.
 
@@ -12,7 +12,7 @@ Se precisares de descarregar e instalar o editor offline do Scratch, podes encon
 
 \--- /task \---
 
-\--- task \--- Escolhe um ator e um palco. Podes utilizar a bailarina, mas o personagem não tem que ser uma pessoa, só precisa ser capaz de mostrar cores diferentes.
+\--- task \--- Escolhe um actor e um palco. Podes utilizar a bailarina, mas o personagem não tem que ser uma pessoa, só precisa ser capaz de mostrar cores diferentes.
 
 ![captura de ecrã](images/colour-sprite.png) \--- /task \---
 
@@ -45,12 +45,12 @@ Agora já deves ver muitos novos blocos de código para utilizar com listas. A l
 
 Como cada cor tem um número diferente, podes escolher uma cor aleatória escolhendo aleatoriamente um número e adicionando-o à lista.
 
-\--- task \--- Adicione este código ao sprite para escolher um número aleatório e adicioná-lo à `sequência` {: class = "block3variables"}:
+\--- task \--- Adiciona este código ao actor para escolher um número aleatório e adicioná-lo à `sequência` {: class = "block3variables"}:
 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-Quando alguém clicar na bandeira verde
+quando alguém clicar na bandeira verde
 acrescenta (um valor ao acaso entre (1) e (4)) a [sequencia v]
 ```
 
@@ -60,14 +60,14 @@ acrescenta (um valor ao acaso entre (1) e (4)) a [sequencia v]
 
 \--- task \--- Consegues adicionar código ao teu programa para gerar cinco números aleatórios de uma só vez?
 
-\--- hints \--- \--- hint \--- Acrescenta `apaga a sequência`{:class="block3variables"} para primeiro apagar todos os itens na lista, e depois um bloco `repetir`{:class="block3control"} que acrescente cinco números aleatórios à lista. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Acrescenta `apaga a sequência`{:class="block3variables"} para primeiro apagar todos os itens na lista, e depois adiciona um bloco `repetir`{:class="block3control"} que acrescente cinco números aleatórios à lista. \--- /hint \--- \--- hint \---
 
 Este é o aspeto que o teu código deve ter:
 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-Quando alguém clicar na bandeira verde
+quando alguém clicar na bandeira verde
 remove (tudo v) de [sequência v]
 repete (5) vezes 
   acrescenta (um valor ao acaso entre (1) e (4)) a [sequência v]
@@ -76,7 +76,7 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- De cada vez que um número é acrescentado à lista, o actor deve mudar o seu traje para que a cor do traje corresponda ao número acrescentado. Coloca estes blocos no teu código imediatamente abaixo de onde um número aleatório é adicionado à `sequência`{:class="block3variables"}:
+\--- task \--- De cada vez que um número é acrescentado à lista, o personagem deve mudar o traje para que a cor do traje corresponda ao número acrescentado. Coloca estes blocos no teu código imediatamente abaixo de onde um número aleatório é adicionado à `sequência`{:class="block3variables"}:
 
 ![bailarina](images/ballerina.png)
 
