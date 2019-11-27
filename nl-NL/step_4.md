@@ -80,7 +80,7 @@ einde
 
 Wanneer de sprite reageert op het bericht `blauw`{:class="block3events"}, welk deel van de code moet hetzelfde blijven en welk deel moet veranderen? Vergeet niet dat elke kleur een bijbehorend nummer heeft.
 
-\--- task \--- Wijzig de code van de personage-sprite zodat het personage correct reageert op het `-blauw`{:class="block3events"} bericht.
+\--- task \--- Wijzig de code van de personage-sprite zodat het personage correct reageert op het `blauw`{:class="block3events"} bericht.
 
 \--- hints \--- \--- hint \---
 
