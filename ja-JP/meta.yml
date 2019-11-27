@@ -8,19 +8,19 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
-    title: 前書き
+    title: はじめに
   - 
     title: カラーシーケンスを作成する
   - 
-    title: 音を追加
+    title: サウンドを追加
   - 
     title: シーケンスを繰り返す
   - 
-    title: 複数レベル
+    title: 複数のレベル
   - 
-    title: 高得点
+    title: ハイスコア
   - 
-    title: "チャレンジ：ゲームをより良くする"
+    title: "Challenge: ゲームをより良くする"
   - 
     title: 次は何をしますか？
 
