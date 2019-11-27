@@ -1,153 +1,153 @@
 ## Reihenfolge wiederholen
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+Jetzt musst Du vier Tasten hinzufügen, die der Spieler drücken muss, um die Farbsequenz zu wiederholen.
 
-\--- task \--- Add four new sprites to your project to represent the four buttons.
+\--- task \--- Füge Deinem Projekt vier Figuren hinzu, welche die vier Tasten darstellen.
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ Bearbeite Deine Figuren so, dass jeweils eine Figur für eine der vier Farben steht
++ Bringe die Figuren in der gleichen Reihenfolge auf die Bühne wie die Kostüme: rot, blau, grün, gelb
 
 ![Screenshot](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+\--- task \--- Wenn die rote Taste angeklickt wird, musst Du Deinem Charakter eine Nachricht `senden`{:class="block3events"}, dass die 'rote' Taste gedrückt wurde:
 
-![red-drum](images/red_drum.png)
+![rote Trommel](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    Wenn diese Figur angeklickt wird
+    sende (rot v) an alle
 ```
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+Ein `Sendung an alle`{:class="block3events"} ist wie eine Nachricht über einen Lautsprecher, die man zum Beispiel in Schulen oder Supermärkten hören kann. Alle Sprites hören die`Sendung an alle`{:class="block3events"}, aber nur die Figur, deren Aufgabe es ist, zu reagieren, wird etwas tun.
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+Wiederhole die oben beschriebenen Schritte für Deine blauen, grünen und gelben Tasten, damit auch sie eine `Sendung an alle` für ihre eigene Farbe senden.
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+Erinnerst du dich, dass die `Sendung an alle`{:class="block3events"} wie eine Lautsprecher-Durchsage funktioniert? Füge nun Code zu deiner Spielerfigur hinzu, damit sie auf die `Sendung an alle`{:class="block3events"} - Nachrichten reagiert.
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+Wenn dein Charakter die Nachricht `rot`{:class="block3events"} empfängt, sollte der Code prüfen, ob die Nummer `1` am Anfang der `Sequenz`{:class="block3variables} steht (was bedeutet, dass `rot`{:class="block3events"} die nächste Farbe in der Sequenz ist).
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+Wenn `1` am Beginn der Liste steht, kann die Nummer aus der Liste entfernt werden, da sie richtig erraten worden ist, weil der Spieler sich an die richtige Farbe erinnert hat. Ansonsten ist das Spiel vorbei, und der Code muss `alles anhalten`{:class="block3control"} um das Spiel zu beenden.
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
+Wenn ich [rot v] empfange
+falls <(Element (1 v) von [Sequenz v]) = [1]>, dann 
+lösche (1 v) aus [Sequenz v]
+sonst 
+sage [Game over!] für (1) Sekunden
+stoppe [alles v]
 end
 ```
 
 \--- /task \---
 
-\--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+\--- task \--- Füge zu dem Code, den du gerade geschrieben hast, hinzu, dass auch ein Trommelschlag gespielt wird, wenn die Charakterfigur die korrekte `Sendung an alle`{:class="block3events"} erhält.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- Kannst du Zahlen nutzen, passend zu der jeder Farbe, um das Trommel-Geräusch zu spielen?
 
 + 1 = rot
 + 2 = blau
 + 3 = grün
-+ 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 4 = gelb \--- /hint \--- \--- hint \--- Füge über dem `lösche 1 aus Sequenz`{:class="block3variables"} - Block einen `spiele Trommel`{:class="block3sound"} - Block hinzu um das erste Geräusch der `Sequenz`{:class="block3variables"} - Liste zu spielen.
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- /hint \--- \--- hint \--- Hier steht der Code, den du brauchen wirst:
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
+Wenn ich [rot v] empfange
+falls <(Element (1 v) von [Sequenz v]) = [1]>, dann 
 
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
++ spiele Trommel ((1) Snare Drum v) für (0.25) Schläge
+lösche (1 v) aus [Sequenz v]
+sonst 
+sage [Game over!] für (1) Sekunden
+stoppe [alles v]
 end
 
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}. \--- /task \---
+\--- task \--- Kopiere den Code, den du gerade genutzt hast, um deiner Spielerfigur auf die Nachricht `rot`{:class="block3events"} zu reagieren. Ändere den kopierten Code, sodass er die Nachricht `blau` {:class="block3events"}sendet. \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+Wenn die Figur auf die Nachricht `blau`{:class="block3events"} reagiert, welcher Teil des Codes sollte dann gleich bleiben und welcher sich verändern? Erinnere dich daran, dass jede Farbe eine zugehörige Ziffer hat.
 
-\--- task \--- Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+\--- task \--- Ändere den Code der Spielerfigur so, dass der Character jedes Mal korrekt auf die Nachricht `blau`{:class="block3events"} reagiert.
 
 \--- hints \--- \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+Behalte diese Blöcke, aber du musst sie irgendwie ändern:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<(Element (1 v) von [Sequenz v]) = [1]>
 
-when I receive [red v]
+Wenn ich [rot v] empfange
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+spiele Trommel ((1) Snare Drum v) für (0.25) Schläge
 ```
 
-\--- /hint \--- \--- hint \--- Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+\--- /hint \--- \--- Hinweis \--- So sollte dein Code für die `blau`{:class="block3events"} - Nachrichten aussehen.
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    stop [all v]
+Wenn ich [blau v] empfange
+falls < (Element (1 v) von [Sequenz v]) = [2] >, dann 
+    spiele Trommel ((2) Basstrommel v) für (0.25) Schläge
+    lösche (1 v) aus [Sequenz v]
+sonst 
+    sage [Game over!] für (1) Sekunden
+    stoppe [alles v]
 end
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+\--- task \--- Kopiere den Code erneut (für die grünen und gelben Schaltflächen), und ändere die notwendigen Teile, damit die Spielerfigur korrekt auf die neuen `Sendung an alle`{:class="block3events"} reagiert. \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+Denke daran, den Code, den Du hinzugefügt hast, zu testen! Kannst Du Dir eine Folge von 5 Farben merken? Ist die Reihenfolge jedes Mal anders?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+Wenn der Spieler die komplette `Sequenz`{:class="block3variables"} korrekt wiederholt, ist die Liste leer und der Spieler gewinnt. Du kannst auch ein paar blinkende Lichter anzeigen, sobald die `Liste`{:class="block3variables"} leer ist, da es bedeutet, dass die komplette Reihenfolge der Farben richtig erraten worden ist.
 
-\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+Fügen diesen Code an das Ende des `wenn Fahne geklickt`{:class="block3events"} -Skripts Deines Charakters hinzu:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
+    warte bis <(Länge von [Sequenz v]) = [0]>
+    sende (gewonnen v) an alle und warte
 ```
 
 \--- /task \---
 
-\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+\--- task \--- Wechsele die Bühne und importieren den `Drum-Maschine`-Ton oder andere Töne, die du magst.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+\--- task \--- Füge diesen Code hinzu, um einen Ton abzuspielen und den Hintergrund zu wechseln, sobald der Spieler gewonnen hat.
 
-![ballerina](images/stage.png)
+![Ballerina](images/stage.png)
 
 ```blocks3
-    when I receive [won v]
-    start sound (drum machine v)
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
+    Wenn ich [gewonnen v] empfange
+    spiele Klang (drum machine v)
+    wiederhole (50) mal 
+        ändere Effekt [Farbe v] um (25)
+        warte (0.1) Sekunden
     end
-    clear graphic effects
+    schalte Grafikeffekte aus
 ```
 
 \--- /task \---
