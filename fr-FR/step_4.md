@@ -28,11 +28,11 @@ Ajoute un code similaire aux lutins bleu, vert et jaune pour les faire faire ` e
 
 \--- /task \---
 
-Te souviens-tu que le ` Envoyer à tous `{:class="block3events"} est comme un message de haut-parleur ? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+Te souviens-tu que le ` Envoyer à tous `{:class="block3events"} est comme un message de haut-parleur ? Tu ajouteras un code pour faire en sorte que le lutin principal réponde à la diffusion du message `Envoyer à tous`{:class="block3events"} .
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+Quand ton sprite reçoit le message `rouge`{:class="block3events"}, le code doit vérifier si le nombre ` 1 ` est au début de la ` séquence `{:class="block3variables"} (ce qui signifie que ` rouge `{:class="block3events"} est la prochaine couleur de la séquence).
 
 If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
 
