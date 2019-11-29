@@ -4,7 +4,7 @@ Prueba el siguiente proyecto, [Alón Prisionero](https://projects.raspberrypi.or
 
 \--- no-print \---
 
-Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+Haga clic en la bandera verde para empezar, y luego utilice las teclas de flecha para moverse y la tecla <kbd>espacio</kbd> para saltar.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -15,6 +15,6 @@ Click the green flag to start, and then use the arrow keys to move and the <kbd>
 
 \--- print-only \---
 
-![dodgeball game being played](images/dodgeball-showcase.png)
+![partida de esquiva-pelotas en curso](images/dodgeball-showcase.png)
 
 \--- /print-only \---
