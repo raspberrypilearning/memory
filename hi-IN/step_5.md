@@ -12,23 +12,23 @@
 
 हमेशा पांच रंगों के अनुक्रम को बनाने के बजाय, आप अब अनुक्रम की लम्बाई निर्धारित करने के लिए `स्कोर`{:class="block3variables"} चाहते हैं।
 
-\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+\--- task \--- पात्र के `दोहराएँ`{:class="block3control"} लूप (रंग अनुक्रम बनाने के लिए) को `स्कोर`{:class="block3variables"} बार दोहराने के लिए बदलें:
 
 ![sprite](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables)
-end
+दोहरायें (स्कोर :: variables)
+अंत
 ```
 
 \--- /task \---
 
-\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+\--- task \--- यदि खिलाड़ी सही अनुक्रम दोहराता है, तो आपको `स्कोर`{:class="block3variables"} में `1` जोड़ना चाहिए, और ऐसा करने से अगले अनुक्रम की लंबाई बढ़ जाती है। निम्न ब्लाक को पात्र के कोड में ** उस बिंदु पर जोड़ें जहाँ आपको पता है कि अनुक्रम सही है**:
 
 ![sprite](images/ballerina.png)
 
 ```blocks3
-change [score v] by (1)
+[स्कोर v] को (1) से बदलें
 ```
 
 \--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
