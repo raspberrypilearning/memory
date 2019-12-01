@@ -6,11 +6,11 @@
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+क्या आप हर बार जब भी पात्र स्प्राइट कॉस्ट्यूम बदलती है, एक ड्रम की आवाज़ बजा सकते हैं? और कैसा रहेगा कि प्रत्येक रंग के लिए एक अलग ड्रम की आवाज़ बजाई जाये?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+अपनी परियोजना में संगीत विस्तार जोड़ें ताकि आप ` ड्रम की आवाज़ बजाएँ ` {:class="block3extensions"} ब्लॉक का उपयोग कर सकें।
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,7 +18,7 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+ड्रम बजाने वाला कोड पात्र की पोशाक को बदलने वाले कोड के ** बहुत ** ही समान है।
 
 \--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
 
