@@ -1,8 +1,8 @@
-## Create a colour sequence
+## एक रंगो का अनुक्रम बनाएँ
 
-First create a character that can display a random sequence of colours.
+पहले एक पात्र बनाएं जो रंगों के यादृच्छिक अनुक्रम को प्रदर्शित कर सके।
 
-\--- task \--- Open a new Scratch project.
+\---task \--- एक नया स्क्रैच प्रोजेक्ट खोलें।
 
 **Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
 
