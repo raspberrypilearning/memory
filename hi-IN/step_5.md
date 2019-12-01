@@ -1,14 +1,14 @@
 ## कई स्तर
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+अब तक, खिलाड़ी को केवल पांच रंगों का एक क्रम याद रखना पड़ता है। एक स्कोर जोड़कर और कोड जोड़कर ताकि जैसे ही खिलाड़ी अंक प्राप्त करे, खेल अगले स्तर पर चला जाए और याद रखने के लिए रंग अनुक्रम लंबा हो जाए अपने खेल में सुधार करें।
 
-\--- task \--- Create a new variable called `score`{:class="block3variables"}.
+\--- task \--- `स्कोर`{:class="block3variables"} नामक एक नया चर बनाएं।
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+`स्कोर`{:class="block3variables"} के आधार पर, खेल रंग अनुक्रम की लंबाई पर फैसला करेगा। `3` के स्कोर (और एक अनुक्रम लंबाई) से शुरू करें।
 
-\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
+\--- task \--- `स्कोर`{:class="block3variables"} को `3` पर स्थिर करने के लिए अपने पात्र के `जब ध्वज पर क्लिक किया`{:class="block3events"} कोड के प्रारंभ में एक खंड जोड़ें। \--- /task \---
 
 Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
 
