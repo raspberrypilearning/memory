@@ -45,20 +45,20 @@
 
 प्रत्येक रंग की एक अलग संख्या है, इसलिए आप यादृच्छिक रूप से एक संख्या चुनकर और उसे सूची में जोड़कर एक यादृच्छिक रंग चुन सकते हैं।
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- एक यादृच्छिक संख्या चुनने के लिए और इसे ` अनुक्रम ` {:class="block3variables"}: सूची में जोड़ने के लिए इस कोड को पात्र स्प्राइट में जोड़ें।
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+जब ध्वज पर क्लिक किया
+[अनुक्रम v] में (यादृच्छिक (1) से (4) के बीच चुनें) को जोड़ें
 ```
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- अपने कोड का परीक्षण करें। जांच करें कि हर बार जब आप ध्वज पर क्लिक करते हैं, तो सूची में 1 और 4 के बीच एक यादृच्छिक संख्या जुड़ जाती है। \--- /task \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- क्या आप एक बार में पाँच यादृच्छिक संख्याएँ बनाने के लिए अपने प्रोग्राम में कोड जोड़ सकते हैं?
 
 \--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
 
