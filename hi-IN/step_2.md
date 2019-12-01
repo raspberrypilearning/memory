@@ -76,13 +76,13 @@
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- प्रत्येक बार जब कोई संख्या सूची में जुड़ जाती है, तो पात्र की पोशाक बदलनी चाहिए ताकि पोशाक का रंग संख्या से मेल खाए। Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- प्रत्येक बार जब कोई संख्या सूची में जुड़ जाती है, तो पात्र की पोशाक बदलनी चाहिए ताकि पोशाक का रंग संख्या से मेल खाए। इन ब्लॉकों को तुरंत अपने कोड में डालें जहां एक यादृच्छिक संख्या ` अनुक्रम ` में जोड़ी जाती है {:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+कॉस्ट्यूम को [अनुक्रम v] के (आइटम ([अनुक्रम v] की लंबाई)) से बदलें
+(1) सेकंड के लिए प्रतीक्षा करें
 ```
 
 \--- /task \---
