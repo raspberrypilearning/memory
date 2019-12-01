@@ -76,7 +76,7 @@
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- प्रत्येक बार जब कोई संख्या सूची में जुड़ जाती है, तो पात्र की पोशाक बदलनी चाहिए ताकि पोशाक का रंग संख्या से मेल खाए। Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
