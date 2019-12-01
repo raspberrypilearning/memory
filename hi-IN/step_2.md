@@ -31,9 +31,9 @@
 
 ![color-a-shape](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+फिर, रंगों के यादृच्छिक अनुक्रम को संग्रहीत करने के लिए एक सूची जोड़ें जिसे खिलाड़ियों को याद रखना होगा।
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- कार्य \--- ` अनुक्रम ` नामक एक सूची बनाएँ {:class="block3variables"}। Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
 
 [[[generic-scratch3-make-list]]]
 
