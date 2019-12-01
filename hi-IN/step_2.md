@@ -4,15 +4,15 @@
 
 \---task \--- एक नया स्क्रैच प्रोजेक्ट खोलें।
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+** ऑनलाइन **: [ rpf.io/scratch-new ](https://rpf.io/scratchon) पर एक नया ऑनलाइन स्क्रैच प्रोजेक्ट खोलें ।
 
 **ऑफ़लाइन**: ऑफ़लाइन संपादक में एक नया प्रोजेक्ट खोलें।
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+यदि आपको स्क्रैच ऑफ़लाइन संपादक को डाउनलोड और इंस्टॉल करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](https://rpf.io/scratchoff) {:target="_blank"} पर पा सकते हैं।
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- एक पात्र स्प्राइट और एक पृष्ठभूमि चुनें। आप बैलेरीना का उपयोग कर सकते हैं, लेकिन आपके पात्र को एक व्यक्ति होने की आवश्यकता नहीं है, उन्हें केवल अलग-अलग रंग दिखाने में सक्षम होने की आवश्यकता है।
 
 ![स्क्रीनशॉट](images/colour-sprite.png) \--- /task \---
 
