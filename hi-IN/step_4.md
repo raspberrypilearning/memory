@@ -83,31 +83,31 @@
 
 \--- hints \--- \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+इन ब्लॉकों को रखें, लेकिन आपको उन्हें किसी तरह से बदलने की आवश्यकता है:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<([अनुक्रम v] का मद (1 वी)) = [1]>
 
-when I receive [red v]
+जब मुझे [लाल v] प्राप्त हो
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+(0.25) बीट्स के लिए (\(1\) फंदे वाला ड्रम v) बजाएँ
 ```
 
-\--- /hint \--- \--- hint \--- Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+\--- /hint \--- \--- hint \--- आपका कोड `नीला`{:class="block3events"} प्रसारण के लिए ऐसा दिखना चाहिए ।
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    stop [all v]
-end
+जब मुझे [नीला v] प्राप्त हो
+अगर <[अनुक्रम v] का (मद (1 v))=[2]> फिर
+    (0.25) बीट्स के लिए (\(2\) बास ड्रम v) बजाएँ
+    [अनुक्रम v] का(1 v) हटाएँ
+अन्यथा
+    (1) सेकंड के लिए [खेल समाप्त!] कहें
+    [सभी v] को रोकें
+अंत
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
