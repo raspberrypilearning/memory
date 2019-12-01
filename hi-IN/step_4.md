@@ -1,26 +1,26 @@
 ## Repeat the sequence
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+अब आप चार बटन जोड़ने जा रहे हैं जिन्हें खिलाड़ी को रंग क्रम दोहराने के लिए दबाना होगा।
 
-\--- task \--- Add four new sprites to your project to represent the four buttons.
+\--- task \--- चार बटनों का प्रतिनिधित्व करने के लिए अपनी परियोजना में चार नए स्प्राइट जोड़ें।
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ नए स्प्राइट की पोशाक को संपादित करें ताकि चारों रंगों में से प्रत्येक में एक स्प्राइट हो
++ स्टेज पर स्प्राइट्स को पोशाकों के ही क्रम में डालें: लाल, नीला, हरा, पीला
 
 ![स्क्रीनशॉट](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+\--- task \--- लाल स्प्राइट में कोड जोड़ें ताकि स्प्राइट पर क्लिक करने पर यह पात्र स्प्राइट के लिए एक 'लाल' संदेश ` प्रसारित करें ` {:class="block3events"}:
 
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    जब यह स्प्राइट क्लिक किया
+    प्रसारित करें (लाल v)
 ```
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+` प्रसारित करें ` {"class =" block3events "} लाउडस्पीकर पर घोषित एक संदेश की तरह है, जिसे आप उदाहरण के लिए स्कूलों या सुपरमार्केटों में सुन सकते हैं। सभी स्प्राइट्स ` प्रसारित करें ` {:class="block3events"} को सुन सकते हैं, लेकिन केवल वह स्प्राइट ही कुछ करेगा जिसका काम इसका जवाब देना है।
 
 \--- task \---
 
