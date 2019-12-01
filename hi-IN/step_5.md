@@ -40,21 +40,21 @@
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of [sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
-end
+जब झंडा क्लिक हुआ
+[स्कोर v] को [3] स्थिर करें
+हमेशा के लिए
+    [अनुक्रम v] का (सभी v) हटाएँ
+    दोहराएँ (स्कोर)
+        [अनुक्रम v] में (यादृच्छिक (1) से (4) के बीच) जोड़ें
+        ([अनुक्रम v] के (मद ([अनुक्रम v] की लंबाई)) से पोशाक बदलें
+        (1) सेकंड प्रतीक्षा करें
+    अंत
+    < ([अनुक्रम v] की लंबाई = [0]> तक प्रतीक्षा करें;
+    (जीत v) प्रसारित करें और प्रतीक्षा करें
+    [ स्कोर v] को (1) से बदलें
+अंत
 ```
 
 \--- /task \---
 
-\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
+\--- task \--- अपने खेल का परीक्षण करने के लिए अपने दोस्तों को सहायता लें। उनके खेलने से पहले `अनुक्रम`{:class="block3variables"} सूची को छिपाने के लिए याद रखें! \--- /task \---
