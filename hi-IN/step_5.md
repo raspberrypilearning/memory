@@ -31,11 +31,11 @@
 [स्कोर v] को (1) से बदलें
 ```
 
-\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
+\--- hints \--- \--- hint \--- जब खेल 'जीत' संदेश `प्रसारित करें`{:class="block3events"} तो उस बिंदु पर आपको पता होता है कि अनुक्रम सही है। \--- /hint \--- \--- /hints \---
 
 \--- /task \---
 
-\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+\--- task \--- अंत में, एक `हमेशा के लिए`{:class="block3control"} लूप को अनुक्रम उत्पन्न करने वाले कोड के इर्द-गिर्द जोड़ें, जिससे गेम प्रत्येक स्तर पर एक नया रंग अनुक्रम बनाये। आपके पात्र का कोड ऐसा दिख सकता है:
 
 ![ballerina](images/ballerina.png)
 
