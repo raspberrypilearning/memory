@@ -60,18 +60,18 @@
 
 \--- task \--- क्या आप एक बार में पाँच यादृच्छिक संख्याएँ बनाने के लिए अपने प्रोग्राम में कोड जोड़ सकते हैं?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- पहले सूची के सभी संख्याओं को हटाने के लिए एक ` पूरा अनुक्रम हटाएं `{:class="block3variables"} जोड़ें, और फिर एक ` दोहराएँ ` {:class="block3control"} ब्लॉक जोड़ें जो सूची में पाँच यादृच्छिक संख्याएँ जोड़ता है। \--- /hint \--- \--- hint \---
 
-यहाँ दिखाया गया है कि आपका कोड कैसा दिखना चाहिए:
+आपका कोड ऐसा दिखना चाहिए:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+जब झंडा क्लिक किया
+[अनुक्रम v] को (पूरा v) हटाएँ
+दोहराने (5)
+    [अनुक्रम v] में (यादृच्छिक (1) से (4) के बीच चुनें) जोड़ें
+अंत
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
