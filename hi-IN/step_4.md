@@ -32,25 +32,25 @@
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+जब आपका पात्र स्प्राइट `लाल` {:class="block3events"} संदेश प्राप्त करता है, तो कोड को जांचना चाहिए कि संख्या `1` `अनुक्रम`{:class="block3variables"} सूची के प्रारंभ में है या नहीं (जिसका अर्थ है कि `लाल` {:class="block3events"} अनुक्रम में अगला रंग है)।
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+यदि `1` सूची की प्रारम्भ में है, कोड को सूची से संख्या को हटा देना चाहिए, क्योंकि खिलाड़ी को सही रंग याद था। अन्यथा खेल खत्म, और खेल को समाप्त करने के लिए कोड में `सभी को रोकें`{:class="block3control"}।
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
+जब मुझे [लाल v] प्राप्त हो
+अगर <[अनुक्रम v] का(मद (1 v))=[1]> फिर
+[अनुक्रम v] का(1 v) हटाएँ
+अन्यथा
+(1) सेकंड के लिए [खेल समाप्त!] कहें
+[सभी v] को रोकें
+अंत
 ```
 
 \--- /task \---
 
-\--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+\--- task \--- आपके द्वारा लिखे गए कोड में जोड़ें ताकि जब पात्र स्प्राइट को सही `प्रसारित करें`{:class="block3events"} प्राप्त हो तो एक ड्रम बीट भी बजे।
 
 \--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
 
