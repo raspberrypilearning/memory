@@ -40,7 +40,7 @@
 
 ```blocks3
 जब मुझे [लाल v] प्राप्त हो
-अगर <[अनुक्रम v] का(मद (1 v))=[1]> फिर
+अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
 [अनुक्रम v] का(1 v) हटाएँ
 अन्यथा
 (1) सेकंड के लिए [खेल समाप्त!] कहें
@@ -50,27 +50,26 @@
 
 \--- /task \---
 
-\--- task \--- आपके द्वारा लिखे गए कोड में जोड़ें ताकि जब पात्र स्प्राइट को सही `प्रसारित करें`{:class="block3events"} प्राप्त हो तो एक ड्रम बीट भी बजे।
+\--- task \--- आपके द्वारा लिखे गए कोड में जोड़ें ताकि जब पात्र स्प्राइट को सही `प्रसारित करें`{:class="block3events"} प्राप्त हो तो एक ड्रम की आवाज़ भी बजे।
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- क्या आप सही ड्रम की अवाज बजाने के लिए प्रत्येक रंग के अनुरूप संख्याओं का उपयोग कर सकते हैं?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 1 = लाल
++ 2 = नीला
++ 3 = हरा
++ 4 = पीला \--- /hint \--- \--- hint \--- `अनुक्रम का 1 हटाएं`{:class="block3variables"} ब्लॉक के ऊपर, `अनुक्रम`{:class="block3variables"} सूची में पहली ध्वनि बजाने के लिए `ड्रम बजाएँ`{:class="block3sound"} ब्लॉक जोड़ें।
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- /hint \--- \--- hint \--- यहाँ आपको जोड़ने के लिए आवश्यक कोड है:
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
+जब मुझे [लाल v] प्राप्त हो
+अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
++ (0.25) बीट्स के लिए (\(1\) फंदे वाला ड्रम v) बजाएँ
+[अनुक्रम v] का(1 v) हटाएँ
+अन्यथा
+(1) सेकंड के लिए [खेल समाप्त!] कहें
+[सभी v] को रोकें
+अंत
 
 ```
 
