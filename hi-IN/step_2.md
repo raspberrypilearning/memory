@@ -27,7 +27,7 @@
 
 ![स्क्रीनशॉट](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+यदि आप चाहें, तो आप एक अलग रंग के साथ पोशाक के कुछ हिस्सों को भरने के लिए ** आकृति को रंगे ** का उपयोग कर सकते हैं।
 
 ![color-a-shape](images/color-a-shape.png)
 
