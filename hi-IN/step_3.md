@@ -2,7 +2,7 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+अपनी परियोजना का कुछ समय परीक्षण करें। क्या आपने ध्यान दिया कि कभी-कभी एक ही संख्या को एक लगातार दो (या अधिक) बार चुना जाता है, जिससे अनुक्रम को याद रखना कठिन हो जाता है?
 
 \--- /task \---
 
