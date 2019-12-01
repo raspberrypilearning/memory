@@ -24,11 +24,11 @@
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+नीले, हरे और पीले स्प्राइट में भी ऐसा ही कोड जोड़ें, ताकि वे भी अपने रंग के बारे में संदेश ` प्रसारित करें ` {:class="block3events"}
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+क्या आपको याद है कि ` प्रसारित करें ` {:class="block3events"} एक लाउडस्पीकर संदेश की तरह है? आप ` प्रसारित करें `{:class="block3events"} संदेशों का जवाब देने को पात्र स्प्राइट की ज़िम्मेदारी बनाने के लिए कोड जोडेंगे।
 
 \--- task \---
 
