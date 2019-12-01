@@ -10,7 +10,7 @@
 
 \--- task \--- `स्कोर`{:class="block3variables"} को `3` पर स्थिर करने के लिए अपने पात्र के `जब ध्वज पर क्लिक किया`{:class="block3events"} कोड के प्रारंभ में एक खंड जोड़ें। \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+हमेशा पांच रंगों के अनुक्रम को बनाने के बजाय, आप अब अनुक्रम की लम्बाई निर्धारित करने के लिए `स्कोर`{:class="block3variables"} चाहते हैं।
 
 \--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
