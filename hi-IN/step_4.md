@@ -75,11 +75,11 @@
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}. \--- /task \---
+\--- task \--- अपने पात्र स्प्राइट द्वारा `लाल`{:class="block3events"} संदेश के प्रति प्रतिक्रिया देने के लिए आपके द्वारा उपयोग किए गए कोड को दोहराएँ। दोहराए गए कोड को बदलें ताकि यह `नीला`{:class="block3events"} संदेश भेजे। \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+जब स्प्राइट `नीला`{:class="block3events"} संदेश का जवाब देता है, तब कौन सा कोड समान रहना चाहिए, और कौन सा कोड बदलना चाहिए? याद रखें कि प्रत्येक रंग के अनुरूप एक संख्या है।
 
-\--- task \--- Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+\--- task \--- पात्र स्प्राइट के कोड को बदलें ताकि पात्र `नीला`{:class="block3events"} संदेश को सही तरीके से प्रतिक्रिया दे।
 
 \--- hints \--- \--- hint \---
 
