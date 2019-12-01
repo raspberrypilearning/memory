@@ -33,17 +33,17 @@
 
 फिर, रंगों के यादृच्छिक अनुक्रम को संग्रहीत करने के लिए एक सूची जोड़ें जिसे खिलाड़ियों को याद रखना होगा।
 
-\--- कार्य \--- ` अनुक्रम ` नामक एक सूची बनाएँ {:class="block3variables"}। Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- कार्य \--- ` अनुक्रम ` नामक एक सूची बनाएँ {:class="block3variables"}। केवल पात्र स्प्राइट को इस सूची को देखने की आवश्यकता है, इसलिए जब आप सूची बनाते हैं आप ** केवल इस स्प्राइट के लिए ** का चयन कर सकते हैं।
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+अब आपको सूचियों का उपयोग करने के लिए बहुत सारे नए कोड ब्लॉक दिखाई देने चाहिए।स्टेज के ऊपरी बाएं कोने में खाली सूची दिखाई देनी चाहिए।
 
 ![स्क्रीनशॉट](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+प्रत्येक रंग की एक अलग संख्या है, इसलिए आप यादृच्छिक रूप से एक संख्या चुनकर और उसे सूची में जोड़कर एक यादृच्छिक रंग चुन सकते हैं।
 
 \--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
 
