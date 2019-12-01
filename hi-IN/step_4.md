@@ -112,13 +112,13 @@
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+\--- task \--- कोड को फिर से दो बार (हरे और पीले बटन के लिए) दोहराएँ, और आवश्यक भागों को बदल दें ताकि पात्र नए `प्रसारित करें`{:class="block3events"} के लिए सही ढंग से प्रतिक्रिया दे। \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+कोड का परीक्षण करना याद रखें! क्या आप पांच रंगों के अनुक्रम को याद कर सकते हैं? क्या हर बार अनुक्रम अलग है?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+जब खिलाड़ी रंगों के पूरे अनुक्रम को सही ढंग से दोहराता है, तो `अनुक्रम`{:class="block3variables"} सूची ख़ाली हो जाती है और खिलाड़ी जीत जाता है। यदि आप चाहें, तो जब `अनुक्रम`{:class="block3variables"} सूची ख़ाली होती है तब आप इनाम के रूप में कुछ चमकती रोशनी को भी प्रदर्शित कर सकते हैं ।
 
-\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+\--- task \--- अपने पात्र के `जब ध्वज पर क्लिक हुआ`{:class="block3events"} स्क्रिप्ट के अंत में इस कोड को जोड़ें:
 
 ![ballerina](images/ballerina.png)
 
