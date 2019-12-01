@@ -16,14 +16,14 @@
 
 ![स्क्रीनशॉट](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ आपके खेल को प्रत्येक रंग का प्रतिनिधित्व करने के लिए एक अलग संख्या का उपयोग करना चाहिए:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = लाल
+    + 2 = नीला
+    + 3 = हरा
+    + 4 = पीला
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- अपने पात्र को चार पोशाकें दें जिनमें अलग-अलग रंग हों, ऊपर दिखाए गए चार रंगों में से प्रत्येक के लिए एक पोशाक। सुनिश्चित करें कि आपके रंगीन पोशाक ऊपर की सूची के समान क्रम में हैं।
 
 ![स्क्रीनशॉट](images/colour-costume.png) \--- /task \---
 
