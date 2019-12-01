@@ -123,30 +123,30 @@
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
+    <([अनुक्रम v] की लंबाई) = [0]> होने तक प्रतीक्षा करें;
+   (जीत v) प्रसारित करें और प्रतीक्षा करें
 ```
 
 \--- /task \---
 
-\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+\--- task \--- स्टेज पर जाएं, और `ड्रम मशीन` ध्वनि या कोई अन्य ध्वनि जो आपको पसंद हो को आयात करें।
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+\--- task \--- खिलाड़ी के जीतने पर एक आवाज़ निकालने और पृष्ठभूमि का रंग बदलने के लिए इस कोड को जोड़ें ।
 
 ![ballerina](images/stage.png)
 
 ```blocks3
-    when I receive [won v]
-    start sound (drum machine v)
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
-    end
-    clear graphic effects
+    जब मुझे [जीत v] प्राप्त हो
+    (ड्रम मशीन v) की आवाज़ प्रारम्भ करें
+    (50) दोहराएँ
+        [रंग v] प्रभाव को (25) से बदलें
+        (0.1) सेकंड प्रतीक्षा करें
+    अंत
+    ग्राफिक्स प्रभाव को हटाएँ
 ```
 
 \--- /task \---
