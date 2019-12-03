@@ -123,23 +123,23 @@
 
 आपका नया `खेल समाप्त`{:class="block3myblocks"} ब्लॉक एक **फ़ंक्शन** है, एक छोटी स्क्रिप्ट जिसे आप अपने कोड में `खेल समाप्त`{:class="block3myblocks"} जोड़कर कहीं भी उपयोग कर सकते हैं।
 
-\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+\--- task \--- अब अन्य रंगो के लिए `प्रसारित करें`{:class="block3events"} से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को भी `खेल समाप्त`{:class="block3myblocks"} ब्लॉक से बदलें। यहाँ दिखाया गया है कि `नीला`{:class="block3events"} संदेश के लिए कोड कैसा दिखना चाहिए
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+जब मुझे [नीला v] प्राप्त हो
+अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
+    (0.25) बीट्स के लिए (\(2\) बेस वाला ड्रम v) बजाएँ
+    [अनुक्रम v] का (1 v) हटाएँ
+अन्यथा
+    खेल समाप्त :: custom
+अंत
 ```
 
 \--- /task \---
 
-\--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+\--- task \--- अब एक आवाज़ जोड़ें जो गलत बटन दबाने पर बजेगी। आपको `खेल समाप्त`{:class="block3myblocks"} ब्लाक जो आपने बनाया था में इस कोड को केवल एक बार जोड़ना होगा, और चार अलग-अलग जगहों पर नहीं!
 
 ![ballerina](images/ballerina.png)
 
