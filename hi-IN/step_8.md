@@ -15,6 +15,6 @@
 
 \--- print-only \---
 
-![dodgeball game being played](images/dodgeball-showcase.png)
+![डॉजबॉल खेल खेलते हुए](images/dodgeball-showcase.png)
 
 \--- /print-only \---
