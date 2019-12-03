@@ -1,8 +1,8 @@
-## High score
+## उच्च स्कोर
 
-Now save the high score so that you can play against your friends.
+अब उच्च स्कोर को संचित करें ताकि आप अपने दोस्तों के खिलाफ खेल सकें।
 
-\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
+\--- task \--- अपनी परियोजना में `उच्च स्कोर`{:class="block3variables"} और `नाम`{:class="block3variables"} नामक दो नए चर जोड़ें। \--- /task \---
 
 When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
 
