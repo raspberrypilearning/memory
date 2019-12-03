@@ -144,16 +144,16 @@
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-define Game over
-start sound [Cough1 v]
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+खेल समाप्त को परिभाषित करें
+[खाँसी1 v] आवाज़ शुरू करें 
+(1) सेकंड के लिए  [खेल समाप्त!] कहें 
+यदि < (स्कोर :: variables) > (उच्च स्कोर) > तो
+    (तुरही1 v) आवाज़ बजाएँ
+    [उच्च स्कोर] v] को (स्कोर) से स्थिर करें
+    पूछें [उच्च स्कोर! आपका नाम क्या है?] और प्रतीक्षा करें
+    [नाम v] को (उत्तर) से स्थिर करें
+अंत
+[सभी v] को रोकें
 ```
 
 \--- /task \---
