@@ -8,9 +8,9 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 
 În acest proiect vei crea un joc de memorie unde va trebui să memorezi și să repeți o secvență aleatorie de culori!
 
-### Ce veți face
+### Ce vei face
 
-\--- no-print \--- Faceți clic pe steagul verde pentru a începe. Urmăriți secvența de culori afișate de rochia dansatorului și ascultați bataia de însoțire a tobei, apoi repetați culorile înapoi la ea. Dacă obțineți ordinea culorilor greșite, jocul este terminat!
+\--- no-print \--- Faceți clic pe steagul verde pentru a începe. Urmăriți secvența de culori afișate de rochia dansatoarei și ascultați sunetele tobelor ce o insoțesc, apoi repetați culorile înapoi pe ea. Dacă nu identificați ordinea corectă a culorilor, jocul este terminat!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,21 +18,21 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 
 \--- /no-print \---
 
-\--- numai printare \--- ![screenshot of finished game](images/screenshot.png) \--- / numai prin print
+\--- numai printare \--- ![screenshot of finished game](images/screenshot.png) \--- / numai printare
 
-## \--- collapse \---
+## \--- restrangere \---
 
 ## titlu: Ce veți învăța
 
 + Cum să adăugați un sunet la proiectul Scratch
 + Cum se creează și se utilizează liste pentru stocarea datelor
-+ Cum se creează și se utilizează blocuri personalizate pentru repetarea codului
++ Cum se creează și se utilizează blocuri personalizate pentru repetitivitatea codului
 
-\--- /collapse \---
+\--- /restrângere \---
 
-## \--- collapse \---
+## \--- restrângere \---
 
-## titlu: Ce veți avea nevoie
+## titlu: Ce vă trebuie
 
 ### Dispozitive
 
