@@ -18,9 +18,9 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 
 \--- /no-print \---
 
-\--- numai printare \--- ![screenshot of finished game](images/screenshot.png) \--- / numai printare
+\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- print-only \---
 
-## \--- restrangere \---
+## \--- collapse \---
 
 ## titlu: Ce veți învăța
 
@@ -34,13 +34,13 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 
 ## titlu: Ce vă trebuie
 
-### Dispozitive
+### Dispozitive _Hardware_
 
 + Un computer capabil de a rula Scratch 3
 
 ### Programe
 
-Scratch 3 (fie [online](https://rpf.io/scratchon){: target = "_ blank"} sau [offline](https://rpf.io/scratchoff){: target = "_ blank"}) \--- /
+Scratch 3 (fie [online](https://rpf.io/scratchon){:target="_ blank"} sau [offline](https://rpf.io/scratchoff){: target="_blank"}) \--- collapse \---
 
 ## \--- collapse \---
 
@@ -48,10 +48,10 @@ Scratch 3 (fie [online](https://rpf.io/scratchon){: target = "_ blank"} sau [off
 
 \--- no-print \---
 
-Dacă doriți să printați acest proiect, folosiți[printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Dacă doriți să printați acest proiect, folosiți[versiunea printare prietenoasă](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Găsești versiunea [proiect finalizat](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
