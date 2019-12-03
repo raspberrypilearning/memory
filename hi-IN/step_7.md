@@ -22,11 +22,11 @@
 अंत
 ```
 
-Can you make another custom block that all buttons can use?
+क्या आप एक और कस्टम ब्लॉक बना सकते हैं जिसे सभी बटन उपयोग कर सकें?
 
-### Another costume
+### एक और पोशाक
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+क्या आप देख सकते हैं कि आपका खेल चार रंगों में से एक को दिखाने वाले आपके पात्र के साथ शुरू होता है, और जब खिलाड़ी रंग क्रम को दोहरा रहा होता है तो यह पात्र हमेशा अनुक्रम में अंतिम रंग दिखाता है?
 
 Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
