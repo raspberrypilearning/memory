@@ -34,6 +34,6 @@
 
 ### कठिनाई स्तर
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+क्या आप अपने खिलाड़ी को 'आसान स्तर' (केवल लाल और नीले रंगों का उपयोग करके) और 'सामान्य स्तर' (जो सभी चार रंगों का उपयोग करता है) पर खेल खेलने के बीच चयन करने की अनुमति दे सकते हैं?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+यदि आप चाहें, तो आप एक 'हार्ड' स्तर भी जोड़ सकते हैं, जो पांचवें ड्रम का उपयोग करता है!
