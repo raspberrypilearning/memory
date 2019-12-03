@@ -68,36 +68,37 @@
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+(1) सेकंड के लिए [खेल समाप्त!] कहें
+यदि < (स्कोर :: variables) > (उच्च स्कोर) > तो
+    [उच्च स्कोर v] को (स्कोर :: variables) से स्थिर करें
+    पूछें [उच्च स्कोर! आपका नाम क्या है?] और प्रतीक्षा करें
+        [नाम v] को (उत्तर) से स्थिर करें
+    अंत
+    [सभी v] को रोकें
+अंत
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+यदि आपको 'खेल समाप्त' कोड में से किसी को बदलने की आवश्यकता है, उदाहरण के लिए ध्वनि जोड़ने या 'खेल समाप्त' संदेश को बदलने के लिए, आपको इसे चार बार बदलना होगा। यह कष्टप्रद है और बहुत समय बर्बाद करता है।
 
-Instead, you can define your own code block, and use it anywhere in your project.
+इसके बजाय, आप अपने स्वयं के कोड ब्लॉक को परिभाषित कर सकते हैं, और इसे अपनी परियोजना में कहीं भी उपयोग कर सकते हैं।
 
-\--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+\--- task \--- `मेरे ब्लॉक`{:class="block3myblocks"} पर क्लिक करें, और फिर **ब्लॉक बनाएं** पर। इस नए ब्लॉक को `खेल समाप्त`{:class="block3myblocks"} कहें।
 
 \--- /task \---
 
-\--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+\--- task \--- `लाल`{:class="block3events"} प्रसारण से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को `खेल समाप्त`{:class="block3myblocks"} ब्लॉक में जोड़ें ताकि यह इस तरह दिखे:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-define Game over
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+खेल समाप्त को परिभाषित करें
+(1) सेकंड के लिए [खेल समाप्त!] कहें
+यदि < (स्कोर :: variables) > (उच्च स्कोर) > तो
+    [उच्च स्कोर v] को (स्कोर :: variables) से स्थिर करें
+    पूछें [उच्च स्कोर! आपका नाम क्या है?] और प्रतीक्षा करें
+        [नाम v] को (उत्तर) से स्थिर करें
+    अंत
+    [सभी v] को रोकें
 ```
 
 \--- /task \---
