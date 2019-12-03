@@ -12,34 +12,34 @@
 
 \--- hints \--- \--- hint \--- आपके नए कोड को इस स्वरूप का पालन करने की आवश्यकता है:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+`खेल समाप्त`{:class="block3looks"} संदेश के बाद `यदि`{:class="block3control"} `स्कोर`{:class="block3variables"} `उच्च स्कोर`{:class="block3variables"} `से ज़्यादा`{:class="block3operators"} है तो `उच्च स्कोर`{:class="block3variables"} को `स्कोर`{:class="block3variables"} से `स्थिर करें`{:class="block3variables"} खिलाड़ी का नाम `पूछें`{:class="block3sensing"} `नाम`{:class="block3variables"} को `उत्तर`{:class="block3sensing"} से `स्थिर करें`{:class="block3variables"}
 
-You need the following blocks:
+आपको निम्नलिखित ब्लॉक चाहिए:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-if < > then
-end
+यदि < > तो
+अंत
 
-(score)
+(स्कोर)
 
-(score)
+(स्कोर)
 
-[ ] > [ ]
+[] > []
 
-answer
+उत्तर
 
-(high score)
+(उच्च स्कोर)
 
-ask [What's your name?] and wait
+[आपका नाम क्या है?] पूछें और प्रतीक्षा करें
 
-set [high score v] to [ ] 
+[उच्च स्कोर v] को [] से स्थिर करें 
 
-set [name v] to [ ] 
+[नाम v] को [] से स्थिर करें 
 ```
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- /hint \--- \--- hint \--- जब लाल बटन दबाया गया के लिए आपका कोड इस प्रकार दिखाई देना चाहिए:
 
 ![ballerina](images/ballerina.png)
 
