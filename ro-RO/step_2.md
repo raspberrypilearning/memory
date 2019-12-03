@@ -4,7 +4,7 @@ Mai întâi creați un caracter care poate afișa o secvență aleatoare de culo
 
 \--- task \--- Deschide un nou proiect Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online<0>: deschide un proiect Scratch nou în [rpf.io/scratch-new](https://rpf.io/scratchon).</p> 
 
 **Offline**: deschideți un nou proiect în editorul offline.
 
@@ -12,7 +12,7 @@ Dacă trebuie să descărcați și să instalați editorul Scratch offline, îl 
 
 \--- /task \---
 
-\--- task \--- Alege un sprite de caractere și un fundal. Ai putea folosi balerina, dar personajul tău nu trebuie să fie o persoană, trebuie doar să poată arăta culori diferite.
+\--- task \--- Alege un personaj "sprite " și un fundal. Poți folosi balerina, dar personajul tău nu trebuie să fie o persoană, trebuie doar să poată indica culori diferite.
 
 ![captură de ecran](images/colour-sprite.png) \--- /task \---
 
@@ -27,13 +27,13 @@ Dacă trebuie să descărcați și să instalați editorul Scratch offline, îl 
 
 ![captură de ecran](images/colour-costume.png) \--- /task \---
 
-Dacă doriți, puteți utiliza instrumentul de culoare **forma** pentru a umple părțile costumului cu o altă culoare.
+Dacă doriți, puteți utiliza instrumentul de culoare **colorează o formă** pentru a umple părțile costumului cu o altă culoare.
 
 ![culoare-o formă](images/color-a-shape.png)
 
-Apoi, adăugați o listă pentru stocarea secvenței aleatoare a culorilor pe care playerul trebuie să o rețină.
+Apoi, adăugați o listă pentru stocarea secvenței aleatorii a culorilor pe care playerul trebuie să o rețină.
 
-\--- task \--- Creați o listă numită `secvență`{: class = "block3variables"}. Numai caracterul sprite trebuie să vadă această listă, astfel încât să puteți selecta **Pentru această sprite numai** când creați lista.
+\--- task \--- Creați o listă numită `secvență`{:class="block3variables"}. Numai personajul "sprite" trebuie să vadă această listă, de aceea puteți selecta **Doar pentru aceast personaj "sprite"** când creați lista.
 
 [[[generic-scratch3-make-list]]]
 
