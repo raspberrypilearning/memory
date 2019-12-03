@@ -44,26 +44,26 @@
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
-end
+जब मुझे [लाल v] प्राप्त हो
+यदि < ([अनुक्रम v] का मद (1 v))=[1]> तो
+    (0.25) बीट्स के लिए ([अनुक्रम v] का मद (1 v)) ड्रम बजाएँ
+    [अनुक्रम v] का (1 v) हटाएँ 
+अन्यथा
+    (1) सेकंड के लिए [खेल समाप्त!] कहें 
+    यदि < (स्कोर :: variables) > (उच्च स्कोर) > तो
+        [उच्च स्कोर v] को (स्कोर :: variables) से स्थिर करें
+        पूछें [उच्च स्कोर! आपका नाम क्या है?] और प्रतीक्षा करें
+        [नाम v] को (उत्तर) से स्थिर करें
+    अंत
+    [सभी v] को रोकें
+अंत
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+आपको इस नए कोड को अन्य तीन रंगों के लिए भी पात्र स्प्राइट में जोड़ने की आवश्यकता है!
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+क्या आप देख सकते हैं कि चारों रंगों के लिए 'खेल समाप्त' कोड बिल्कुल समान है?
 
 ![ballerina](images/ballerina.png)
 
