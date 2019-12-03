@@ -1,25 +1,25 @@
 ## चुनौती: अपने गेम में सुधार करें
 
-### Make more blocks
+### और ब्लॉक बनाएँ
 
-Do you see any other code that is the same for all four buttons?
+क्या आपको कोई अन्य कोड दिखाई देता है जो चारों बटन के लिए समान है?
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
-end
+जब मुझे [लाल v] प्राप्त हो
+अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
+    (0.25) बीट्स के लिए (\(1\) फंदे वाला ड्रम v) बजाएँ
+    [अनुक्रम v] का (1 v) हटाएँ
+अन्यथा
+    खेल समाप्त :: custom
+अंत
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+जब मुझे [नीला v] प्राप्त हो
+अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
+    (0.25) बीट्स के लिए (\(2\) बेस वाला ड्रम v) बजाएँ
+    [अनुक्रम v] का (1 v) हटाएँ
+अन्यथा
+    खेल समाप्त :: custom
+अंत
 ```
 
 Can you make another custom block that all buttons can use?
