@@ -61,21 +61,21 @@ atunci când faceți clic pe steag adăugați (alegeți aleatoriu de la (1) la (
 
 \--- hints \--- \--- hint \--- Adăugați a`șterge toate secvențele`{:class=„block3variables“} pentru a șterge mai întâi toate elementele de pe listă, și apoi adaugă `repetare`{block:"block3control"} block care adaugă cinci numere aleatorii în listă. \--- /hint \--- \--- hint \---
 
-Acesta ar trebui să arate codul dvs.:
+Așa ar trebui să arate codul dvoastră:
 
 ![balerină](images/ballerina.png)
 
 ```blocks3
-când pavilion apasat
+când apăsați steagul
 șterge (toate v) [secvență v]
-repeat (5)
-    add (alege aleator (1) la (4)) la [secvență v]
-capăt
+repetă (5)
+adaugă (alege aleator de la (1) la (4)) la [secvență v]
+sfârșit
 ```
 
-\--- / indiciu \--- \--- / sugestii \--- \--- / sarcina \---
+\--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- De fiecare dată când un număr se adaugă la listă, personajul trebuie să-și schimbe costumul, astfel încât culoarea costumului să se potrivească cu numărul. Pune aceste blocuri în codul imediat mai jos în cazul în care se adaugă un număr aleatoriu la `secvență de`{: class = „block3variables“}:
+\--- task \--- De fiecare dată când un număr se adaugă în listă, personajul trebuie să-și schimbe costumul, astfel încât culoarea costumului să se potrivească cu numărul. Pune aceste blocuri de coduri în codul tău imediat mai jos unde ai adaugat un număr aleatoriu la `secvență`{:class=„block3variables“}:
 
 ![balerină](images/ballerina.png)
 
