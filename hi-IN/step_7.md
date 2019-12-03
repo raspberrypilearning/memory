@@ -28,11 +28,11 @@
 
 क्या आप देख सकते हैं कि आपका खेल चार रंगों में से एक को दिखाने वाले आपके पात्र के साथ शुरू होता है, और जब खिलाड़ी रंग क्रम को दोहरा रहा होता है तो यह पात्र हमेशा अनुक्रम में अंतिम रंग दिखाता है?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+क्या आप अपने पात्र में एक और सादी सफेद पोशाक जोड़ सकते हैं, और कोड जोड़ सकते हैं ताकि पात्र खेल की शुरुआत में और जब खिलाड़ी अनुक्रम दोहरा रहा हो तब इस पोशाक को प्रदर्शित करे?
 
 ![स्क्रीनशॉट](images/colour-white.png)
 
-### Difficulty level
+### कठिनाई स्तर
 
 Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
