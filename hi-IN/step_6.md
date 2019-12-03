@@ -1,16 +1,16 @@
 ## उच्च स्कोर
 
-अब उच्च स्कोर को संचित करें ताकि आप अपने दोस्तों के खिलाफ खेल सकें।
+अब उच्च स्कोर को सहेजें ताकि आप अपने दोस्तों के खिलाफ खेल सकें।
 
 \--- task \--- अपनी परियोजना में `उच्च स्कोर`{:class="block3variables"} और `नाम`{:class="block3variables"} नामक दो नए चर जोड़ें। \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+खिलाड़ी का अनुक्रम गलत होने पर जब खेल समाप्त हो जाता है, तो खेल को यह जाँचना चाहिए कि स्कोर वर्तमान उच्च स्कोर से अधिक है या नहीं। यदि ऐसा है, तो खेल को स्कोर को उच्च स्कोर के रूप में सहेजना चाहिए, और खिलाड़ी का नाम भी संग्रहित करना चाहिए।
 
-\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- task \--- `उच्च स्कोर`{:class="block3variables"} को सहेजने के लिए अपने पात्र स्प्राइट मे कोड जोड़ें । खिलाड़ी का नाम भी पूछें, और उसे `नाम`{:class="block3variables"} चर में संग्रहित करें।
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
+\--- hints \--- \--- hint \--- आपके नए कोड को इस स्वरूप का पालन करने की आवश्यकता है:
 
 After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
