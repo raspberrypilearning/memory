@@ -103,25 +103,25 @@
 
 \--- /task \---
 
-\--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+\--- task \--- अब `लाल`{:class="block3events"} प्रसारण से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को हटाएँ और इसकी जगह `खेल समाप्त`{:class="block3myblocks"} ब्लॉक को जोड़ें:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+जब मुझे [लाल v] प्राप्त हो
+अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
+    (0.25) बीट्स के लिए (\(1\) फंदे वाला ड्रम v) बजाएँ
+    [अनुक्रम v] का (1 v) हटाएँ
+अन्यथा
+    खेल समाप्त :: custom
+अंत
 ```
 
 \--- /task \---
 
-\--- task \--- Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence. \--- /task \---
+\--- task \--- खेल खेलते हुए और रंग क्रम में गलत स्थिति में लाल बटन पर क्लिक करके अपने नए ब्लॉक का परीक्षण करें। \--- /task \---
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+आपका नया `खेल समाप्त`{:class="block3myblocks"} ब्लॉक एक **फ़ंक्शन** है, एक छोटी स्क्रिप्ट जिसे आप अपने कोड में `खेल समाप्त`{:class="block3myblocks"} जोड़कर कहीं भी उपयोग कर सकते हैं।
 
 \--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
 
