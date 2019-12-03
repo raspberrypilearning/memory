@@ -81,7 +81,7 @@ sfârșit
 
 ```blocks3
 comutați costumul la (elementul (lungimea secvenței v) a secvenței v)
-așteptați (1) secunde
+așteptați (1) secundă
 ```
 
 \--- /task \---
