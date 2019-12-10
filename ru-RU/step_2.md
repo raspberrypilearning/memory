@@ -1,29 +1,29 @@
-## Create a colour sequence
+## Создай последовательность цветов
 
-First create a character that can display a random sequence of colours.
+Сначала создай персонажа, который смоежт отображать случайную последовательность цветов.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- Создай новый проект Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Онлайн**: создай новый онлайн проект Scratch [rpf.io/scratch-new](https://rpf.io/scratchon).
 
-**Offline**: open a new project in the offline editor.
+**Оффлайн**: Создай новый проект в редакторе оффлайн.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff).
+Если тебе необходимо скачать и установить оффлайн редактор Scratch, то ты можешь найти его на [rpf.io/scratchoff](https://rpf.io/scratchoff).
 
 \--- /task \---
 
-\--- task \--- Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+\--- task \--- Выбери спрайт персонажа и фон. Ты можешь использовать балерину, но твой персонаж не обязан быть человеком, о должен только уметь показывать разные цвета.
 
 ![screenshot](images/colour-sprite.png) \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ Твоя игра должна использовать раличные числа, чтобы представлять каждый цвет:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = красный
+    + 2 = синий
+    + 3 = зеленый
+    + 4 = желтый
 
-\--- task \--- Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+\--- task \--- Создай своему персонажу четыре костюма разных цветов - один костюм для каждого цвета. Убедись, что твои цветные костюмы перечислены в том же порядке, что и список выше.
 
 ![screenshot](images/colour-costume.png) \--- /task \---
 
