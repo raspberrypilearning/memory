@@ -1,26 +1,26 @@
 ---
-hero_image: images/memory.png
+hero_image: images/memoire.png
 listed: true
 copyedit: false
-title: Memory
-description: Create a game in which you memorise and repeat random colour sequences
+title: Mémoire
+description: Crées un jeu de mémoire dans lequel tu devras mémoriser et répéter une séquence aléatoire de couleurs
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
     title: Introduction
   - 
-    title: Create a colour sequence
+    title: Crée une séquence de couleurs
   - 
-    title: Add sound
+    title: Ajouter du son
   - 
-    title: Repeat the sequence
+    title: Répéter la séquence
   - 
-    title: Multiple levels
+    title: De multiples niveaux
   - 
-    title: High score
+    title: Meilleur pointage
   - 
-    title: "Challenge: improve your game"
+    title: "Défi : Améliorez votre jeu"
   - 
-    title: What next?
+    title: Que faire ensuite?
 
