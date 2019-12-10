@@ -1,25 +1,60 @@
+--- no-print ---
+
+هذا هو إصدار **Scratch 3** من المشروع. هناك أيضًا [ إصدار Scratch 2 للمشروع ](https://projects.raspberrypi.org/ar-SA/projects/memory-scratch2).
+
+--- /no-print ---
+
 ## المقدمة
 
-في هذا المشروع، ستنشئ لعبة ذاكرة تتذكَّر فيها تسلسلًا عشوائيًا من الألوان وتكرِّره!
+في هذا المشروع، ستقوم بإنشاء لعبة تذكر. حيث سيتطلب منك تذكر وتكرار تسلسل عشوائي للألوان!
 
-### ما ستصنعه
+### ما الذي ستصنعه
 
-انقر فوق العلم الأخضر للبدء. شاهد تسلسل الألوان التي سيظهر بها فستان الراقصة واستمع إلى إيقاع الطبلة المصاحب وكرِّرهما. وإذا أخطأتَ في الترتيب، فستنتهي اللعبة!
+--- no-print --- انقر على العلم الأخضر للبدء. شاهد تسلسل الألوان الذي يظهر به ثوب الراقصة واستمع إلى دقات الطبلة المصاحبة ، ثم قم بتكرار الألوان مرة آخرى رداً عليها. إذا ادخلت ترتيب الألوان بشكل خاطئ، فإنها نهاية اللعبة!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="images/colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/352378030/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
-### ما ستتعلمه
+--- /no-print ---
 
-يتناول هذا المشروع عناصر من الصفوف التالية من [المناهج الرقمية الخاصة بـ Raspberry Pi](http://rpf.io/curriculum){:target="_blank"}:
+--- print-only --- ![screenshot of finished game](images/screenshot.png) --- /print-only ---
 
-+ [دمج الإنشاءات البرمجية لحل مشكلة](https://www.raspberrypi.org/curriculum/programming/builder){:target="_blank"}
+--- collapse ---
+---
+title: ما الذي ستتعلمه
+---
 
++ كيفية إضافة الصوت إلى مشروع Scratch الخاص بك
++ كيفية إنشاء و استخدام القوائم لتخزين البيانات
++ كيفية إنشاء و استخدام اللبنات لتكرار التعليمات البرمجية
 
-### معلومات إضافية للمعلمين
+--- /collapse ---
 
-إذا كنت بحاجة إلى طباعة هذا المشروع، فيُرجى استخدام [نسخة سهلة الطباعة](https://projects.raspberrypi.org/ar-SA/projects/memory/print){:target="_blank"}.
+--- collapse ---
+---
+title: ما الذي ستحتاجه
+---
 
-استخدم الرابط الموجود في تذييل الصفحة للوصول إلى مستودع GitHub لهذا المشروع، الذي يحتوي على كل الموارد (ومنها مثال لمشروع مكتمل) في المجلد 'ar-SA/resources'.
+### الأجهزة
+
++ جهاز كمبيوتر يدعم تشغيل برنامج Scratch 3
+
+### البرامج
+
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) --- /collapse ---
+
+--- collapse ---
+---
+title: معلومات إضافية للمعلمين
+---
+
+--- no-print ---
+
+إذا كنت بحاجة إلى طباعة هذا المشروع، فالرجاء استخدام [نسخة متوافقة مع الطابعة](https://projects.raspberrypi.org/ar-SA/projects/memory/print){:target="_blank"}.
+
+--- /no-print ---
+
+يمكنك ايجاد [المشروع كامل هنا](http://rpf.io/p/ar-SA/memory-get).
+
+--- /collapse ---
