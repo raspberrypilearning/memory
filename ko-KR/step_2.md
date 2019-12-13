@@ -4,11 +4,11 @@
 
 \--- task \--- 새 Scratch 프로젝트를 엽니 다.
 
-**온라인:**: [rpf.io/scratch-new](https://rpf.io/scratchon) 에서 새로운 온라인 스크래치 프로젝트 열기.
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **오프라인**: 오프라인 편집기에서 새 프로젝트를 엽니 다.
 
-Scratch 오프라인 편집기를 다운로드하여 설치해야하는 경우 [rpf.io/scratchoff](https://rpf.io/scratchoff)에서 찾을 수 있습니다.
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
