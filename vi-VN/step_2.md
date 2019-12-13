@@ -4,11 +4,11 @@
 
 \--- task \--- Mở một dự án Scratch mới.
 
-**Trực tuyến**: mở dự án Scratch trực tuyến mới tại [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Ngoại tuyến**: mở một dự án mới trong trình chỉnh sửa ngoại tuyến.
 
-Nếu bạn cần tải xuống và cài đặt trình soạn thảo ngoại tuyến Scratch, bạn có thể tìm thấy nó tại [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /bài tập \---
 
