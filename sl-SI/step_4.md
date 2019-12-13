@@ -2,20 +2,20 @@
 
 Sedaj boš dodal štiri gumbe, ki jih mora igralec pritisniti, da ponovi barvno zaporedje.
 
-\--- task \--- Add four new sprites to your project to represent the four buttons.
+\--- task \--- Projektu dodaj štiri nove figure, ki bodo predstavljale štiri gumbe.
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ Uredi videze novih figur, da bo vsak ustreza eni od štirih barv
++ Figure postavi na oder v enakem zaporedju, kot si sledijo videzi: rdeča, modra, zelena, rumena
 
 ![posnetek zaslona](images/colour-drums.png) \--- /task \---
 
-\--- task \--- Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+\--- task \--- Rdeči figuri dodaj kodo, da bo ob kliku na njo `objavila`{:class="block3events"} sporočilo 'rdeča' za figuro lika:
 
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    ko kliknemo na to figuro
+  objavi (rdeča v)
 ```
 
 \--- /task \---
