@@ -20,15 +20,15 @@ Sedaj boš dodal štiri gumbe, ki jih mora igralec pritisniti, da ponovi barvno 
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+`Objava`{:class="block3events"} je kot sporočilo, ki je posredovano preko zvočnika, kot ga lahko denimo slišiš v šoli ali v trgovskih centrih. Vse figure lahko slišijo `objavo`{:class="block3events"}, vendar se bo nanjo odzvala le tista figura, ki ji je namenjena.
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+Dodaj podobno kodo modri, zeleni in rumeni figuri, da bodo `objavile`{:class="block3events"} sporočila o svoji barvi.
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+Si si zapomnil, da je `objava`{:class="block3events"} kot sporočilo posredovano preko zvočnika? Dodal boš kodo, ki bo poskrbela, da se bo figra lika odzvala na sporočilo `objave`{:class="block3events"}.
 
 \--- task \---
 
