@@ -4,11 +4,11 @@
 
 \--- task \--- פתחו פרוייקט חדש של Scratch.
 
-** מקוון: ** פתחו פרוייקט Scratch מקוון חדש ב [ rpf.io/scratch-new ](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 ** לא מקוון: ** פתחו פרוייקט חדש בעורך הלא מקוון.
 
-אם אתם צריכים להוריד ולהתקין את העורך הלא מקוון של Scratch, תוכלו למצוא אותו בכתובת [rpf.io/scratchoff ](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
