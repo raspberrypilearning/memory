@@ -4,11 +4,11 @@ Erstelle zunächst einen Charakter, der eine zufällige Reihenfolge von untersch
 
 \--- task \--- Öffne ein neues Scratch-Projekt.
 
-**Online**: Erstelle ein neues Scratch-Projekt unter [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline**: Öffne ein neues Projekt im Offline-Editor.
 
-Wenn du den Scratch-Offline-Editor herunterladen und installieren möchtest, findest du diesen unter [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
