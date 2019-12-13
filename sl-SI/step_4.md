@@ -1,6 +1,6 @@
-## Repeat the sequence
+## Ponovi zaporedje
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+Sedaj boš dodal štiri gumbe, ki jih mora igralec pritisniti, da ponovi barvno zaporedje.
 
 \--- task \--- Add four new sprites to your project to represent the four buttons.
 
