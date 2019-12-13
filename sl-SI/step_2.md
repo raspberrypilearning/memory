@@ -4,11 +4,11 @@ Najprej ustvari lik, ki zna prikazati naključno zaporedje barv na zaslonu.
 
 \--- task \--- Odprite nov Scratch projekt.
 
-**S povezavo:** ustvari nov spletni Scratch projekt na [rpf.io/scratch-new](https://rpf.io/scratchon){:target="_blank.
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Brez povezave:** ustvari nov projekt v namiznem Scratch urejevalniku.
 
-Če želiš prenesti in namestiti Namizni Scratch, ga lahko najdeš na [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
