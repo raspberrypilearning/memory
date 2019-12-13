@@ -4,11 +4,11 @@ Mai întâi creați un caracter care poate afișa o secvență aleatoare de culo
 
 \--- task \--- Deschide un nou proiect Scratch.
 
-**Online<0>: deschide un proiect Scratch nou în [rpf.io/scratch-new](https://rpf.io/scratchon).</p> 
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline**: deschideți un nou proiect în editorul offline.
 
-Dacă trebuie să descărcați și să instalați editorul Scratch offline, îl puteți găsi la [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
