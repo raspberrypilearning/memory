@@ -4,11 +4,11 @@
 
 \---task \--- एक नया स्क्रैच प्रोजेक्ट खोलें।
 
-** ऑनलाइन **: [ rpf.io/scratch-new ](https://rpf.io/scratchon) पर एक नया ऑनलाइन स्क्रैच प्रोजेक्ट खोलें ।
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **ऑफ़लाइन**: ऑफ़लाइन संपादक में एक नया प्रोजेक्ट खोलें।
 
-यदि आपको स्क्रैच ऑफ़लाइन संपादक को डाउनलोड और इंस्टॉल करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](https://rpf.io/scratchoff) {:target="_blank"} पर पा सकते हैं।
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
