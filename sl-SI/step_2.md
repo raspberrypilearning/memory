@@ -60,29 +60,29 @@ dodaj (naključno število med (1) in (4)) k [zaporedje]
 
 \--- task \--- Ali lahko svojemu programu dodaš kodo, ki bo ustvarila pet naključnih števil naenkrat?
 
-\--- hints \--- \--- hint \--- Dodaj `izbriši vse v zaporedju`{:class="block3variables"}, da najprej izbrišeš vse predmete v seznamu in nato dodaj blok `ponavljaj`{:class="block3control"}, ki doda pet naključnih števil v szenam. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Dodaj `izbriši vse v zaporedju`{:class="block3variables"}, da najprej izbrišeš vse predmete v seznamu in nato dodaj blok `ponovi`{:class="block3control"}, ki doda pet naključnih števil v szenam. \--- /hint \--- \--- hint \---
 
 Tvoja koda mora izgledati tako:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-end
+ko kliknemo na zastavico
+izbriši (vse v) v [zaporedje v]
+ponovi (5) krat
+  dodaj (naključno število med (1) in (4)) k [zaporedje v]
+konec
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- Vsakič, ko je število dodano k seznamu, naj lik zamenja svoj videz, tako da barva videza ustreza številki. Dodaj te bloke v svojo kodo, takoj pod delom, kjer se naključno število doda v `zaporedje`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+zamenjaj videz na (element(dolžina [zaporedje v]) v [zaporedje v])
+počakaj (1) sekund
 ```
 
 \--- /task \---
