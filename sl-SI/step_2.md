@@ -29,7 +29,7 @@ Najprej ustvari lik, ki zna prikazati naključno zaporedje barv na zaslonu.
 
 Če želiš, lahko uporabiš orodje **pobarvaj lik**, da zapolniš posamezne dele videza z drugačno barvo.
 
-![color-a-shape](images/color-a-shape.png)
+![barva-a-oblika](images/color-a-shape.png)
 
 Nato ustvari seznam, v katerega se bo shranilo naključno zaporedje barv, ki si jih mora igralec zapomniti.
 
@@ -47,7 +47,7 @@ Vsaka barva ima drugačno številko, zato lahko izbereš naključno barvo s pomo
 
 \--- task \--- Figuri lika dodaj to kodo, da izbere naključno številko in jo doda v `zaporedje`{:class="block3variables"}:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 ko kliknemo na zastavico
@@ -64,7 +64,7 @@ dodaj (naključno število med (1) in (4)) k [zaporedje]
 
 Tvoja koda mora izgledati tako:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 ko kliknemo na zastavico
@@ -78,7 +78,7 @@ konec
 
 \--- task \--- Vsakič, ko je število dodano k seznamu, naj lik zamenja svoj videz, tako da barva videza ustreza številki. Dodaj te bloke v svojo kodo, takoj pod delom, kjer se naključno število doda v `zaporedje`{:class="block3variables"}:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 zamenjaj videz na (element(dolžina [zaporedje v]) v [zaporedje v])
