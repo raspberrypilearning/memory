@@ -4,11 +4,11 @@ Najprej ustvari lik, ki zna prikazati naključno zaporedje barv na zaslonu.
 
 \--- task \--- Odprite nov Scratch projekt.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**S povezavo:** ustvari nov spletni Scratch projekt na [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Brez povezave:** ustvari nov projekt v namiznem Scratch urejevalniku.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+Če želiš prenesti in namestiti Namizni Scratch, ga lahko najdeš na [rpf.io/scratchoff](https://rpf.io/scratchoff){: target = "_ blank"}.
 
 \--- /task \---
 
@@ -50,17 +50,17 @@ Vsaka barva ima drugačno številko, zato lahko izbereš naključno barvo s pomo
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+ko kliknemo na zastavico
+dodaj (naključno število med (1) in (4)) k [zaporedje]
 ```
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- Preizkusi svojo kodo. Preveri ali je ob vsakem kliku na zastavico na seznam dodana števlka med 1 in 4. \--- /task \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- task \--- Ali lahko svojemu programu dodaš kodo, ki bo ustvarila pet naključnih števil naenkrat?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Dodaj `izbriši vse v zaporedju`{:class="block3variables"}, da najprej izbrišeš vse predmete v seznamu in nato dodaj blok `ponavljaj`{:class="block3control"}, ki doda pet naključnih števil v szenam. \--- /hint \--- \--- hint \---
 
 Tvoja koda mora izgledati tako:
 
