@@ -4,11 +4,11 @@
 
 \--- task \--- 打開一個新的Scratch項目。
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **脫機**：在脫機編輯器中打開一個新項目。
 
-如果您需要下載並安裝Scratch離線編輯器，可以在 [rpf.io/scratchoff](https://rpf.io/scratchoff)找到它。
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /任務\---
 
