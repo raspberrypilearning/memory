@@ -4,11 +4,11 @@
 
 \--- task \--- Ανοίξτε ένα νέο έργο Scratch.
 
-**Online**: άνοιξε το αρχικό έργο στο [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Eκτός σύνδεσης**: ανοίξτε ένα νέο project στο Scratch.
 
-Αν χρειαστεί να κατεβάσετε και να εγκαταστήσετε τον Scratch editor, μπορείτε να τον βρείτε στο [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- / task \---
 
