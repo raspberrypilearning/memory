@@ -4,11 +4,11 @@ Maak eerst een personage dat een willekeurige reeks kleuren kan weergeven.
 
 \--- task \--- Open een nieuw Scratch project.
 
-**Online:** open een nieuw online Scratch project op [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline:** open een nieuw project in de offline editor.
 
-Als je de Scratch offline editor wilt downloaden en installeren dan kan je die vinden op [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
