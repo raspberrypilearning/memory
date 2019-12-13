@@ -4,11 +4,11 @@
 
 \--- টাস্ক \--- একটি নতুন স্ক্র্যাচ প্রকল্প খুলুন।
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **অফলাইন**: অফলাইন সম্পাদকে একটি নতুন প্রকল্প খুলুন।
 
-ডাউনলোড করুন এবং স্ক্র্যাচ অফলাইন সম্পাদক ইনস্টল করার প্রয়োজন হয়, তাহলে আপনি এটি জানতে পারেন [rpf.io/scratchoff](https://rpf.io/scratchoff)।
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /কাজ \---
 
