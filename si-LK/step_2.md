@@ -4,11 +4,11 @@
 
 \--- task \--- නව Scratch ව්යාපෘතියක්(project එකක්) විවෘත්ත කරන්න.
 
-**අන්තර්ජාල මාර්ගගත(Online):** [rpf.io/scratch-new](https://rpf.io/scratchon) හි අන්තර්ජාල මාර්ගගතව නව Scratch ව්‍යාපෘතියක් විවෘත කරන්න.
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **අන්තර්ජාලයට නොබැඳිව(Offline):** නොබැඳි සංස්කාරකයේ(offline editor එකේ) නව ව්‍යාපෘතියක්(new project එකක්) විවෘත කරන්න.
 
-ඔබට Scratch නොබැඳි(offline) සංස්කාරකය(editor එක) බාගත(download) කර ස්ථාපනය(install) කිරීමට අවශ්‍ය නම්, ඔබට එය [rpf.io/scratchoff](https://rpf.io/scratchoff) වෙතින් ලබාගත හැකිය.
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
