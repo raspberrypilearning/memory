@@ -4,11 +4,11 @@ Najpierw utwórz postać, która może wyświetlać losową sekwencję kolorów.
 
 \--- task \--- Otwórz nowy projekt Scratcha.
 
-**Online**: otwórz nowy projekt Scratcha na stronie [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline**: otwórz nowy projekt w edytorze offline.
 
-Jeśli musisz pobrać i zainstalować edytor Scratcha w wersji offline, znajdziesz go na stronie [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /zadanie \---
 
