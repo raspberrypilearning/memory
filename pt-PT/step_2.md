@@ -4,11 +4,11 @@ Primeiro cria um personagem que possa exibir uma sequência aleatória de cores.
 
 \--- task \--- Abre um novo projeto Scratch.
 
-**Online:** abre um novo projeto online Scratch em [rpf.io/scratch-new](https://rpf.io/scratchon){:target="_blank.
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline:** abre um novo projeto no editor offline.
 
-Se precisares de descarregar e instalar o editor offline do Scratch, podes encontrá-lo em [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
