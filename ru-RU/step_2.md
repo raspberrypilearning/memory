@@ -4,11 +4,11 @@
 
 \--- task \--- Создай новый проект Scratch.
 
-**Онлайн**: создай новый онлайн проект Scratch [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Оффлайн**: Создай новый проект в редакторе оффлайн.
 
-Если тебе необходимо скачать и установить оффлайн редактор Scratch, то ты можешь найти его на [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
