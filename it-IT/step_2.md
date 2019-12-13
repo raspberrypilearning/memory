@@ -4,11 +4,11 @@ Prima crea un personaggio con il quale visualizzare una sequenza casuale di colo
 
 \--- task \--- Apri un nuovo progetto Scratch.
 
-**Online**: apri un nuovo progetto Scratch online all'indirizzo [rpf.io/scratch-new](https://rpf.io/scratchon).
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline**: apri un nuovo progetto nell'editor offline.
 
-Se devi scaricare e installare l'editor offline di Scratch, puoi trovarlo all'indirizzo [rpf.io/scratchoff](https://rpf.io/scratchoff).
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
