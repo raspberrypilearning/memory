@@ -28,13 +28,13 @@ Dodaj podobno kodo modri, zeleni in rumeni figuri, da bodo `objavile`{:class="bl
 
 \--- /task \---
 
-Si si zapomnil, da je `objava`{:class="block3events"} kot sporočilo posredovano preko zvočnika? Dodal boš kodo, ki bo poskrbela, da se bo figra lika odzvala na sporočilo `objave`{:class="block3events"}.
+Si si zapomnil, da je `objava`{:class="block3events"} kot sporočilo posredovano preko zvočnika? Dodal boš kodo, ki bo poskrbela, da se bo figura lika odzvala na sporočilo `objave`{:class="block3events"}.
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+Ko tvoja figura lika prejme sporočilo `rdeča`{:class="block3events"}, naj koda preveri ali je številka `1` na začetku seznama `zaporedje`{:class="block3variables"} (kar pomeni, da je `rdeča`{:class="block3events"} naslednja barva v zaporedju).
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+Če je `1` na začetku seznama, naj koda odstrani številko iz seznama, ker si je igralec zapomnil pravo barvo. V nasprotnem primeru pa je igre konec in koda mora `ustvaviti vse`{:class="block3control"}, da se igra konča.
 
 ![ballerina](images/ballerina.png)
 
