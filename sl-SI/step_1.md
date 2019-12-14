@@ -6,7 +6,7 @@ To je **Scratch 3** različica projekta. Obstaja tudi [Scratch 2](https://projec
 
 ## Uvod
 
-V tej igri boš naredil-a igro spomina, v kateri si moraš zapomniti in ponoviti naključno zaporedje barv!
+V tej igri boš naredil-a igro Spomin, v kateri si moraš zapomniti in ponoviti naključno zaporedje barv!
 
 ### Kaj boš ustvaril-a?
 
