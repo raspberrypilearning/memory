@@ -4,7 +4,7 @@ Sedaj boš dodal štiri gumbe, ki jih mora igralec pritisniti, da ponovi barvno 
 
 \--- task \--- Projektu dodaj štiri nove figure, ki bodo predstavljale štiri gumbe.
 
-+ Uredi videze novih figur, da bo vsak ustreza eni od štirih barv
++ Uredi videze novih figur, da bo vsak ustrezal eni od štirih barv
 + Figure postavi na oder v enakem zaporedju, kot si sledijo videzi: rdeča, modra, zelena, rumena
 
 ![posnetek zaslona](images/colour-drums.png) \--- /task \---
