@@ -76,7 +76,7 @@ konec
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Vsakič, ko je število dodano k seznamu, naj lik zamenja svoj videz, tako da barva videza ustreza številki. Dodaj te bloke v svojo kodo, takoj pod delom, kjer se naključno število doda v `zaporedje`{:class="block3variables"}:
+\--- task \--- Vsakič, ko je število dodano k seznamu, naj lik zamenja svoj videz, tako da barva videza ustreza številki. Dodaj te bloke v svojo kodo, takoj pod delom, kjer se naključno število doda k `zaporedju`{:class="block3variables"}:
 
 ![balerina](images/ballerina.png)
 
