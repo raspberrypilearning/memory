@@ -4,11 +4,11 @@
 
 \--- task \--- افتح مشروع Scratch جديد.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**اتصال بالانترنيت:** افتح مشروع سكراتش Scratch جديد عبر الانترنيت من [rpf.io/scratch-new](https://rpf.io/scratch-new) {:target="_blank"}.
 
 **دون اتصال بالانترنت**: افتح مشروع Scratch جديد عبر المحرر الموجود على جهازك دون اتصال بالانترنت.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+اذا تحتاج تنزيل وتنصيب برنامج السكراتش Scratch على جهازك الشخصي، ستجده في [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
