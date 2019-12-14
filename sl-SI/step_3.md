@@ -6,7 +6,7 @@ Nekajkrat preizkusi svoj projekt. Ali opaziš, da je včasih enaka številka izb
 
 \--- /task \---
 
-Ali lahko narediš, da bo zvok bobna zaigral vsakič, ko bo lik zamenjal svoj videz? Kako pa je z drugačnim zvokom bobna za vsako barvo?
+Ali lahko narediš, da bo zvok bobna zaigral vsakič, ko bo lik zamenjal svoj videz? Kaj pa da ima boben različen zvok za vsako barvo?
 
 \--- task \---
 
