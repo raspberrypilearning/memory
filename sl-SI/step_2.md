@@ -12,7 +12,7 @@ Najprej ustvari lik, ki zna prikazati naključno zaporedje barv na zaslonu.
 
 \--- /task \---
 
-\--- task \--- Izberi figuro lika in ozadje. Lahko denimo uporabiš balerino, vendar ni nujno, da je tvoj lik sploh oseba, vse kar je pomembno je to, da zna prikazati različne barve.
+\--- task \--- Izberi figuro lika in ozadje. Lahko uporabiš balerino, vendar ni nujno, da je tvoj lik sploh oseba, vse kar je pomembno je to, da zna prikazati različne barve.
 
 ![posnetek zaslona](images/colour-sprite.png) \--- /task \---
 
