@@ -11,7 +11,7 @@ Sedaj boš dodal štiri gumbe, ki jih mora igralec pritisniti, da ponovi barvno 
 
 \--- task \--- Rdeči figuri dodaj kodo, da bo ob kliku na njo `objavila`{:class="block3events"} sporočilo 'rdeča' za figuro lika:
 
-![red-drum](images/red_drum.png)
+![rdeči boben](images/red_drum.png)
 
 ```blocks3
     ko kliknemo na to figuro
@@ -36,7 +36,7 @@ Ko tvoja figura lika prejme sporočilo `rdeča`{:class="block3events"}, naj koda
 
 Če je `1` na začetku seznama, naj koda odstrani številko iz seznama, ker si je igralec zapomnil pravo barvo. V nasprotnem primeru pa je igre konec in koda mora `ustvaviti vse`{:class="block3control"}, da se igra konča.
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 ko prejmem [rdeča v]
@@ -86,7 +86,7 @@ Kateri del kode bo spremenjen in kateri del bo ostal enak, ko figura prejme spor
 
 Obdrži te bloke, vendar jih ustrezno spremeni:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 <(element (1 v) v [zaporedje v])=[1]>
@@ -98,7 +98,7 @@ zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
 
 \--- /hint \--- \--- hint \--- Tako bi morala izgledati tvoja koda za objavo `modra`{:class="block3events"}.
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 ko prejmem [rdeča v]
@@ -121,11 +121,11 @@ Ko igralec pravilno ponovi zaporedje, je seznam `zaporedje`{:class="block3variab
 
 \--- task \--- Na konec zaporedja ukazov pod blokom `ko kliknemo na zastavico`{:class="block3events"} dodaj to kodo:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
+    počakaj dokler ni < (dolžina [zaporedje v]) = [0]>
+    objavi (zmaga v) in čakaj
 ```
 
 \--- /task \---
@@ -136,18 +136,18 @@ Ko igralec pravilno ponovi zaporedje, je seznam `zaporedje`{:class="block3variab
 
 \--- /task \---
 
-\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+\--- task \--- Dodaj to kodo, ki zaigra zvok in spremeni barvo ozadja, ko igralec zmaga.
 
-![ballerina](images/stage.png)
+![balerina](images/stage.png)
 
 ```blocks3
-    when I receive [won v]
-    start sound (drum machine v)
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
-    end
-    clear graphic effects
+    ko prejmem [zmaga v]
+  predvajaj zvok (drum machine v)
+  ponovi (50) krat
+    spremeni učinek [barva v] za (25)
+    počakaj (0.25) sekund
+  konec
+  odstrani slikovne učinke
 ```
 
 \--- /task \---
