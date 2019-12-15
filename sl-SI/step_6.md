@@ -19,24 +19,24 @@ Potrebuješ naslednje bloke:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-if < > then
-end
+če < > potem
+konec
 
-(score)
+(točke)
 
-(score)
+(točke)
 
 [ ] > [ ]
 
-answer
+(odgovor)
 
-(high score)
+(najboljši rezultat)
 
-ask [What's your name?] and wait
+Vprašaj [Kako ti je ime?] in počakaj
 
-set [high score v] to [ ] 
+nastavi [najboljši rezultat v] na [ ] 
 
-set [name v] to [ ] 
+nastavi [ime v] na [ ] 
 ```
 
 \--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
