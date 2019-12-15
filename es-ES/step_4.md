@@ -74,11 +74,11 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- tarea \--- Duplique el código que usó para hacer que su sprite de personaje responda al mensaje ` rojo ` {: class = "block3events"}. Cambie el código duplicado para que envíe el mensaje ` azul ` {: class = "block3events"}. \--- /task \---
+\--- task \--- Duplica el código que usaste para hacer que el objeto personaje responda al mensaje ` rojo ` {: class = "block3events"}. Cambia el código duplicado para que envíe el mensaje ` azul ` {: class = "block3events"}. \--- /task \---
 
-Cuando el sprite responde al mensaje ` azul ` {: class = "block3events"}, ¿qué parte del código debería permanecer igual y cual cambiar? Recuerda que cada color tiene se asocia a un número.
+Cuando el sprite responde al mensaje ` azul ` {: class = "block3events"}, ¿qué parte del código debería permanecer igual y cual cambiar? Recuerda que cada color se asocia a un número.
 
-\--- tarea \--- Cambia el código sprite del perosnaje para que responda correctamente al ` azul ` {: class = "block3events"} mensaje.
+\--- task \--- Cambia el código del objeto personaje para que responda correctamente al mensaje ` azul ` {: class = "block3events"}.
 
 \--- hints \--- \--- hint \---
 
@@ -89,20 +89,20 @@ Mantén estos bloques, pero necesitas cambiarlos de alguna manera:
 ```blocks3
 <(elemento (1 v) de [secuencia v]) = [1]>
 
-cuando recibo [red v]
+cuando recibo [rojo v]
 
 tocar el tambor (\ (1 \) Snare Drum v) durante (0.25) tiempos
 ```
 
-\--- /pista\--- \--- pista \--- Aquí está cómo tu código debe buscar el `azul`{:class="block3events"} emitido.
+\--- /hint \--- \--- hint \--- Aquí está cómo tu código debe buscar el `azul`{:class="block3events"} emitido.
 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-al recibir [blue v]
-si <(item (1 v) of [sequence v]:: list) = [2]> entonces 
-  tocar tambor (elemento (1 v) de [sequence v]:: list) durante (0.25) pulsos
-  borrar (1 v) de [sequence v]
+al recibir [azul v]
+si <(elemento (1 v) of [secuencia v]:: list) = [2]> entonces 
+  tocar tambor (elemento (1 v) de [secuencia v]:: list) durante (0.25) pulsos
+  borrar (1 v) de [secuencia v]
 
   decir [Game over!] por (1) segundos
   detener [todos v]
@@ -111,19 +111,19 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- tarea \--- Duplicar el código dos veces (para los botones verdes y amarillos), y cambiar las partes necesarias para que el personaje responda correctamente a las nuevas `emisiones`{:class="block3events"} . \--- /task \---
+\--- tarea \--- Duplicar el código dos veces (para los botones verde y amarillo), y cambia las partes necesarias para que el personaje responda correctamente a las nuevas `emisiones`{:class="block3events"} . \--- /task \---
 
 ¡Recuerda probar el código! ¿Puedes memorizar una secuencia de cinco colores? ¿La secuencia es diferente cada vez?
 
-Cuando el jugador repite toda la secuencia de colores correctamente, la secuencia ` ` {: class = "block3variables"} lista vacia y el jugador gana. Si lo desea, también puede mostrar algunas luces de brillantes como recompensa una vez que la lista `secuencia`{:class="block3variables"} este vacía.
+Cuando el jugador repite toda la secuencia de colores correctamente, la ` secuencia ` {: class = "block3variables"} lista vacía y el jugador gana. Si lo deseas, también puedes mostrar algunas luces de brillantes como recompensa una vez que la lista `secuencia`{:class="block3variables"} este vacía.
 
-\--- tarea \--- Agregue este código al final de su carácter ` cuando haga clic en la bandera ` {: class = "block3events"} script:
+\--- task \--- Agrega este código al final del código ` al hacer clic en la bandera ` {: class = "block3events"} del personaje:
 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-    espere hasta < (longitud de [secuencia v]) = [0]>
-    transmisión (ganada v) y espere
+    esperar hasta que < (longitud de [secuencia v]) = [0]>
+    enviar (ganar v) y espere
 ```
 
 \--- /task \---
