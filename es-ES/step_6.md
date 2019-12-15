@@ -1,16 +1,16 @@
-## Reto: Crear más bloques
+## Puntaje mayor
 
 Ahora guarda la puntuación más alta para jugar contra tus amigos.
 
-\--- tarea \--- Agrega dos nuevas variables llamadas ` puntuación alta ` {: class = "block3variables"} y ` nombre ` {: class = "block3variables"} para su proyecto. \--- / tarea \---
+\--- task \--- Agrega dos nuevas variables llamadas ` puntaje mayor ` {: class = "block3variables"} y ` nombre ` {: class = "block3variables"} a tu proyecto. \--- /task \---
 
-Cuando el juego termina porque el jugador se equivoca de secuencia, el juego debe verificar si la puntuación es más alta que la puntuación más alta actual. Si es así, el juego debería guardar la puntuación como la puntuación más alta, y también guardar el nombre del jugador.
+Cuando el juego termina porque el jugador se equivoca de secuencia, el juego debe verificar si la puntuación es más alta que la puntuación más alta actual. Si es así, el juego debe guardar la puntuación como la puntuación más alta, y también guardar el nombre del jugador.
 
-\--- tarea \--- Añade el código a su sprite de caracteres para almacenar la `puntuación alta`{:class="block3variables"}. También pida el nombre del jugador y almacenalo en la variable `name`{:class="block3variables"}.
+\--- task \--- Añade el código a tu objeto personaje para almacenar el `puntaje mayor`{:class="block3variables"}. También pide el nombre del jugador y guárdalo en la variable `nombre`{:class="block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
-\--- pista \--- \--- pista \--- Tu nuevo código necesita seguir esta estructura:
+\--- hints \--- \--- hint \--- Tu nuevo código necesita seguir esta estructura:
 
 Después del ` juego terminado ` {: class = "block3looks"} mensaje ` Si ` {: class = "block3control"} la puntuación ` ` {: class = "block3variables"} es ` mayor que ` {: class = "block3operators"} the ` high score ` {: class = "block3variables"} ` Set ` {: class = "block3variables"} the ` high score ` {: class = "block3variables"} a la puntuación ` ` {: class = "block3variables"} ` Ask ` {: class = "block3sensing"} para el nombre del jugador ` Establecer ` {: class = "block3variables"} el nombre ` ` {: class = "block3variables"} a la respuesta ` ` {: class = "block3sensing"} \--- / hint \--- \--- hint \---
 
