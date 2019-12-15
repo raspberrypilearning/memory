@@ -91,20 +91,19 @@ En cambio, puedes definir tu propio bloque de código y usarlo en cualquier luga
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-defina Juego por encima de
-diga [Juego terminado!] por (1) segundos
-si < (puntaje :: variables) > (puntaje alto) > luego
-    establece [puntaje alto v] a (puntaje :: variables)
-    pregunte [puntaje alto ! ¿Cuál es su nombre?] Y espere
-        establezca [nombre v] a (responder)
-    fin
-    pare [todos v]
-fin
+definir Fin del juego
+decir [¡Fin del juego!] durante (1) segundos
+si < (puntaje :: variables) >  (puntaje mayor) > entonces 
+  dar a [puntaje mayor v] el valor (puntaje :: variables)
+  preguntar [¡Mejor puntaje! ¿Cuál es tu nombre?] y esperar
+   dar a [nombre v] el valor (respuesta)
+end
+detener [todos v]
 ```
 
 \--- /task \---
 
-\--- tarea \--- Agregue el código de la ` else ` {: class = "block3control"} bloque conectado al rojo ` ` {: class = "block3events"} transmitido al ` Juego terminado ` El bloque {: class = "block3myblocks"} para que se vea así:
+\--- task \--- Ahora quita el código del bloque ` si no ` {: class = "block3control"} conectado al enviar ` rojo ` {: class = "block3events"} al bloque ` Juego terminado `{: class = "block3myblocks"} para que se vea así:
 
 ![bailarina](images/ballerina.png)
 
