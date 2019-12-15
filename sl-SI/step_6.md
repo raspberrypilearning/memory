@@ -122,25 +122,25 @@ konec
 
 \--- task \--- Preizkusi svoj novi blok s klikom na rdeč gumb, ko ta ne ustreza zaporedju barv. \--- /task \---
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+Tvoj novi blok `Konec igre`{:class="block3myblocks"} je **funkcija**, kratko zaporedje ukazov, ki jo lahko uporabiš kjerkoli želiš, tako da dodaš blok `Konec igre`{:class="block3myblocks"}.
 
-\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+\--- task \--- Zamenjaj tudi kodo v bloku `sicer`{:class="block3control"}, ki je povezan z `objavami`{:class="block3events"} za druge barve, s tvojim `Konec igre`{:class="block3myblocks"} blokom. Tako mora izgledati tvoja koda za sporočilo `moda`{:class="block3events"}
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+ko prejmem [modra v]
+če <(element (1 v) v [zaporedje v])=[2]> potem
+  zaigraj na boben (\(2\) Mali boben v) za (0.25) utripov
+  zbriši (1 v) v [zaporedje v]
+sicer
+   Konec igre :: custom
+konec
 ```
 
 \--- /task \---
 
-\--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+\--- task \--- Sedaj dodaj zvok, ki zazveni, kadar je pritisnjen napačen gumb. Ta zvok je potrebno dodati le enkrat v blok `Konec igre`{:class="block3myblocks"}, ki si ga ustvaril-a in ne štirikrat!
 
 ![ballerina](images/ballerina.png)
 
