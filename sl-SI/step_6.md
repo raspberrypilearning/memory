@@ -34,9 +34,9 @@ konec
 
 Vprašaj [Kako ti je ime?] in počakaj
 
-nastavi [najboljši rezultat v] na [ ] 
+nastavi [najboljši rezultat v] na ()
 
-nastavi [ime v] na [ ] 
+nastavi [ime v] na () 
 ```
 
 \--- /hint \--- \--- hint \--- Tako bi morala izgledati koda za pritisk na rdeči gumb:
@@ -45,7 +45,7 @@ nastavi [ime v] na [ ]
 
 ```blocks3
 ko prejmem [rdeča v]
-če <(element (1 v) v [zaporedje v])=[1]> potem
+če <(element (1 v) v [zaporedje v])=(1)> potem
   zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
   zbriši (1 v) v [zaporedje v]
 sicer
@@ -109,7 +109,7 @@ reci [Konec igre!] za (1) sekund
 
 ```blocks3
 ko prejmem [rdeča v]
-če <(element (1 v) v [zaporedje v])=[1]> potem
+če <(element (1 v) v [zaporedje v])=(1)> potem
   zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
   zbriši (1 v) v [zaporedje v]
 sicer
@@ -129,7 +129,7 @@ Tvoj novi blok `Konec igre`{:class="block3myblocks"} je **funkcija**, kratko zap
 
 ```blocks3
 ko prejmem [modra v]
-če <(element (1 v) v [zaporedje v])=[2]> potem
+če <(element (1 v) v [zaporedje v])=(2)> potem
   zaigraj na boben (\(2\) Mali boben v) za (0.25) utripov
   zbriši (1 v) v [zaporedje v]
 sicer
