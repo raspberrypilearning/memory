@@ -17,13 +17,13 @@ Namesto tega, da vedno ustvariš zaporedje petih barv, boš sedaj uporabil-a `to
 ![figura](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables)
-end
+ponovi (točke :: Spremenljivka) krat
+konec
 ```
 
 \--- /task \---
 
-\--- task \--- Če igralec pravilno ponovi zaporedje, dodaj `1` k `točkam`{:class="block3variables"}, kar podaljša dolžino naslednjega zaporedja. Add the following block to the character's code **at the point you know the sequence is correct**:
+\--- task \--- Če igralec pravilno ponovi zaporedje, dodaj `1` k `točkam`{:class="block3variables"}, kar podaljša dolžino naslednjega zaporedja. Kodi lika dodaj naslednji blok na **tisto mesto, kjer že veš, da je zaporedje pravilno**:
 
 ![figura](images/ballerina.png)
 
