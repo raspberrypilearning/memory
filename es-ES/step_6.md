@@ -12,34 +12,34 @@ Cuando el juego termina porque el jugador se equivoca de secuencia, el juego deb
 
 \--- hints \--- \--- hint \--- Tu nuevo código necesita seguir esta estructura:
 
-Después del ` juego terminado ` {: class = "block3looks"} mensaje ` Si ` {: class = "block3control"} la puntuación ` ` {: class = "block3variables"} es ` mayor que ` {: class = "block3operators"} the ` high score ` {: class = "block3variables"} ` Set ` {: class = "block3variables"} the ` high score ` {: class = "block3variables"} a la puntuación ` ` {: class = "block3variables"} ` Ask ` {: class = "block3sensing"} para el nombre del jugador ` Establecer ` {: class = "block3variables"} el nombre ` ` {: class = "block3variables"} a la respuesta ` ` {: class = "block3sensing"} \--- / hint \--- \--- hint \---
+Después del mensaje ` ¡Fin del juego! ` {: class = "block3looks"} ` Si ` {: class = "block3control"} el ` puntaje ` {: class = "block3variables"} es ` mayor que ` {: class = "block3operators"} el ` mayor puntaje ` {: class = "block3variables"} `Dar ` {: class = "block3variables"} a ` mayor puntaje ` {: class = "block3variables"} el valor de `puntaje ` {: class = "block3variables"} ` Preguntar ` {: class = "block3sensing"} el nombre del jugador ` Dar a ` {: class = "block3variables"} ` nombre` {: class = "block3variables"} el valor de ` respuesta ` {: class = "block3sensing"} \--- / hint \--- \--- hint \---
 
 Necesitas los siguientes bloques:
 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-si < > luego
+si < > entonces
 final
 
-(puntuación)
+(puntaje)
 
-(puntuación)
+(puntaje)
 
 [] > []
 
 respuesta
 
-(puntuación alta)
+(puntaje mayor)
 
-pregunte [¿Cuál es su nombre?] y espere
+preguntar [¿Cuál es tu nombre?] y esperar
 
-series [puntuación alta v] a [] 
+dar a [puntaje mayor v] el valor [] 
 
-series [ nombre v] a [] 
+dar a [ nombre v] el valor [] 
 ```
 
-\--- / pista\--- \--- pista \--- Así es como debe verse su código para cuando se presiona el botón rojo:
+\--- /hint \--- \--- hint \--- Así es como debe verse tu código al presionar el botón rojo:
 
 ![bailarina](images/ballerina.png)
 
