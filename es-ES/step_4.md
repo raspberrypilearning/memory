@@ -39,8 +39,8 @@ Si `1` está al comienzo de la lista, el código debe eliminar el número de la 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-al recibir [red v]
-si <(item (1 v) of [sequence v] :: list) = [1]> entonces 
+al recibir [rojo v]
+si <(item (1 v) of [sequence v]:: list) = [1]> entonces 
  borrar (1 v) de [sequence v]
 
  decir [Game over!] por (1) segundos
@@ -57,7 +57,7 @@ end
 + 1 = rojo
 + 2 = azul
 + 3 = verde
-+ 4 = amarillo \--- /pista \--- \--- pista \--- Above the `delete 1 of secuencia`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 4 = amarillo \--- /hint \--- \--- hint \--- Sobre el bloque `borrar 1 de secuencia`{:class="block3variables"}, agrega el bloque `tocar tambor`{:class="block3sound"} para emitir el primer sonido en la lista `secuencia`{:class="block3variables"}.
 
 \--- /hint \--- \--- hint \--- Aquí está el código que necesitarás:
 
