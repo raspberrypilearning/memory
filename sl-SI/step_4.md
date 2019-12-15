@@ -40,7 +40,7 @@ Ko tvoja figura lika prejme sporočilo `rdeča`{:class="block3events"}, naj koda
 
 ```blocks3
 ko prejmem [rdeča v]
-če <(element (1 v) v [zaporedje v])=[1]> potem
+če <(element (1 v) v [zaporedje v])=(1)> potem
 zbriši (1 v) v [zaporedje v]
 sicer
 reci [Konec igre!] za (1) sekund
@@ -63,7 +63,7 @@ konec
 
 ```blocks3
 ko prejmem [rdeča v]
-če <(element (1 v) v [zaporedje v])=[1]> potem
+če <(element (1 v) v [zaporedje v])=(1)> potem
 
 + zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
 zbriši (1 v) v [zaporedje v]
@@ -89,7 +89,7 @@ Obdrži te bloke, vendar jih ustrezno spremeni:
 ![balerina](images/ballerina.png)
 
 ```blocks3
-<(element (1 v) v [zaporedje v])=[1]>
+<(element (1 v) v [zaporedje v])=(1)>
 
 ko prejmem [rdeča v]
 
@@ -102,7 +102,7 @@ zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
 
 ```blocks3
 ko prejmem [rdeča v]
-če <(element (1 v) v [zaporedje v])=[2]> potem
+če <(element (1 v) v [zaporedje v])=(2)> potem
 zaigraj na boben (\(2\) Mali boben v) za (0.25) utripov
 zbriši (1 v) v [zaporedje v]
 sicer
@@ -124,7 +124,7 @@ Ko igralec pravilno ponovi zaporedje, je seznam `zaporedje`{:class="block3variab
 ![balerina](images/ballerina.png)
 
 ```blocks3
-    počakaj dokler ni < (dolžina [zaporedje v]) = [0]>
+    počakaj dokler ni < (dolžina [zaporedje v]) = (0)>
     objavi (zmaga v) in čakaj
 ```
 
