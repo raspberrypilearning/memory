@@ -41,7 +41,7 @@ Na koncu dodaj okoli kode, ki ustvarja zaporedje še zanko `ponavljaj`{:class="b
 
 ```blocks3
 ko kliknemo na zastavico
-nastavi [točke v] na [3]
+nastavi [točke v] na (3)
 ponavljaj
     izbriši (vse v) v [zaporedje v]
     ponovi (točke) krat
@@ -49,7 +49,7 @@ ponavljaj
         zamenjaj videz na (element (dolžina [zaporedje v]) v [zaporedje v]
         počakaj (1) sekund
     konec
-    počakaj dokler ni < (dolžina [zaporedje v]) = [0]>
+    počakaj dokler ni < (dolžina [zaporedje v]) = (0)>
     objavi (zmaga v) in čakaj
     spremeni [točke v] za (1)
 konec
