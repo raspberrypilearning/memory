@@ -57,34 +57,34 @@ konec
 + 1 = rdeča
 + 1 = modra
 + 3 = zelena
-+ 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 4 = rumena \--- /hint \--- \--- hint \--- Nad blok `zbriši 1 v zaporedju`{:class="block3variables"} dodaj blok `zaigraj na boben`{:class="block3sound"}, ki zaigra prvi zvok iz seznama `zaporedje`{:class="block3variables"}.
 
-\--- /hint \--- \--- hint \--- Here is the code you will need to add:
+\--- /hint \--- \--- hint \--- To je koda, ki jo moraš dodati:
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
+ko prejmem [rdeča v]
+če <(element (1 v) v [zaporedje v])=[1]> potem
 
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
++ zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
+zbriši (1 v) v [zaporedje v]
+sicer
+reci [Konec igre!] za (1) sekund
+ustavi [vse v]
+konec
 
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}. \--- /task \---
+\--- task \--- Podvoji kodo, ki skrbi za odziv tvoje figure lika na sporočilo `rdeča`{:class="block3events"}. Podvojeno kodo spremeni na tak način, da se bo odzvala na sporočilo `modra`{:class="block3events"}. \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+Kateri del kode bo spremenjen in kateri del bo ostal enak, ko figura prejme sporočilo `modra`{:class="block3events"}? Zapomni si, da ima vsaka barva svojo številko.
 
-\--- task \--- Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+\--- task \--- Spremeni kodo lika figure, da se bo lik pravilno odzval na sporočilo `modra`{:class="block3events"}.
 
 \--- hints \--- \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+Obdrži te bloke, vendar jih ustrezno spremeni:
 
 ![ballerina](images/ballerina.png)
 
