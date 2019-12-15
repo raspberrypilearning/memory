@@ -1,20 +1,20 @@
-## High score
+## Najboljši rezultat
 
-Now save the high score so that you can play against your friends.
+Sedaj poskrbi, da se bo najboljši rezultat shranil, da boste lahko prijatelji tekmovali med seboj.
 
-\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
+\--- task \--- Projektu dodaj dve novi spremenljivki: `najboljši rezultat`{:class="block3variables"} in `ime`{:class="block3variables"}. \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+Ko se igra konča, ker igralec ni ugotovil zaporedja, naj igra preveri, če je rezultat boljši od trenutno najboljšega rezultata. Če je, naj igra shrani točke kot najboljši rezultat, hkrati pa naj shrani tudi ime tekmovalca.
 
-\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- task \--- Figuri lika dodaj kodo, ki shrani `najboljši rezultat`{:class="block3variables"}. Vprašaj igralca tudi za ime in ga shrani v spremenljivko `ime`{:class="block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
+\--- hints \--- \--- hint \--- Tvoja nova koda mora slediti temu vzorcu:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+Ko je objavljeno sporočilo `konec igre`{:class="block3looks"} `Če`{:class="block3control"} so `točke`{:class="block3variables"} `večje od`{:class="block3operators"} `najboljšega rezultata`{:class="block3variables"} `nastavi`{:class="block3variables"} `najboljši rezultat`{:class="block3variables"} na `točke`{:class="block3variables"}. `Vprašaj`{:class="block3sensing"}, kako je igralcu ime in `nastavi`{:class="block3variables"} `ime`{:class="block3variables"} na `odgovor`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
-You need the following blocks:
+Potrebuješ naslednje bloke:
 
 ![ballerina](images/ballerina.png)
 
