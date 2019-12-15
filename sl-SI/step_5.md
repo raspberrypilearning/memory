@@ -1,16 +1,16 @@
-## Multiple levels
+## Več stopenj
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+Zaenkrat si mora igralec zapomniti zaporedje petih barv. Izboljšaj svojo igro, tako da dodaš točke in dodaj kode, da bo igralec, ko dobi dovolj točk, prešel na naslednjo stopnjo, na kateri si bo moral zapomniti daljše zaporedje.
 
-\--- task \--- Create a new variable called `score`{:class="block3variables"}.
+\--- task \--- Ustvari novo spremenljivko z imenom `točke`{:class="block3variables"}.
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+Glede na točke `score`{:class="block3variables"}, se bo igra odločila, kako dolgo bo zaporedje. Začni s številom točk (in dolžino zaporedja) `3`.
 
-\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
+\--- task \--- Na začetek bloka `ko kliknemo na zastavico`v figuri tvojega lika {:class="block3events"} dodaj kodo, ki nastavi `točke`{:class="block3variables"} na `3`. \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+Namesto tega, da vedno ustvariš zaporedje petih barv, boš sedaj uporabil-a `točke`{:class="block3variables"} za določitev dolžine zaporedja.
 
 \--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
