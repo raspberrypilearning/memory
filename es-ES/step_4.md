@@ -2,7 +2,7 @@
 
 Ahora vas a agregar cuatro botones que el jugador tiene que presionar para repetir la secuencia de colores.
 
-\--- tarea \--- Agrega cuatro nuevos sprites a tu proyecto para representar los cuatro botones.
+-- task \--- Agrega cuatro nuevos sprites a tu proyecto para representar los cuatro botones.
 
 + Editar los trajes de los nuevos sprites para que haya un sprite en cada uno de los cuatro colores
 + Pon los sprites en el mismo orden en el escenario que los trajes: rojo, azul, verde, amarillo
@@ -28,13 +28,13 @@ Añade código similar a los sprites azul, verde y amarillo para hacerlos `broad
 
 \--- /task \---
 
-¿Te acuerdas de que la emisión ` ` {: class = "block3events"} es como un mensaje de altavoz? Añadirá código para que sea tarea del personaje sprite responder a los mensajes `broadcast`{:class="block3events"}.
+¿Te acuerdas de que `enviar` {: class = "block3events"} es como un mensaje de altavoz? Añadirá código para que sea tarea del personaje sprite responder a los mensajes `enviar`{:class="block3events"}.
 
 \--- task \---
 
 Cuando el sprite de tu personaje recibe el mensaje ` rojo `, el código debería verificar si el número ` 1 ` está al comienzo de la lista (lo que significa que ` rojo ` es el siguiente color en la secuencia).
 
-Si `1` está al comienzo de la lista, el código debe eliminar el número de la lista, porque el jugador recordr'a el color correcto. De lo contrario, se acabó el juego, y el código debe ` detener todo ` {: class = "block3control"} para finalizar el juego.
+Si `1` está al comienzo de la lista, el código debe eliminar el número de la lista, porque el jugador recordó el color correcto. De lo contrario, se acabó el juego, y el código debe ` detener todo ` {: class = "block3control"} para finalizar el juego.
 
 ![bailarina](images/ballerina.png)
 
