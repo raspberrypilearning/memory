@@ -39,7 +39,7 @@ nastavi [najboljši rezultat v] na [ ]
 nastavi [ime v] na [ ] 
 ```
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- /hint \--- \--- hint \--- Tako bi morala izgledati koda za pritisk na rdeči gumb:
 
 ![ballerina](images/ballerina.png)
 
@@ -99,7 +99,6 @@ reci [Konec igre!] za (1) sekund
     nastavi [ime v] na (odgovor)
   konec
   ustavi [vse v]
-konec
 ```
 
 \--- /task \---
@@ -145,16 +144,16 @@ konec
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-define Game over
-start sound [Cough1 v]
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+definiraj Konec igre
+predvajaj zvok (Cough1 v)
+reci [Konec igre!] za (1) sekund
+  če < (točke :: variables) > (najboljši rezultat) > potem
+        predvajaj zvok (Trumpet1) do konca
+        nastavi [najboljši rezultat v] na (točke :: variables)
+        Vprašaj [Najboljši rezultat! Kako ti je ime?] in počakaj
+    nastavi [ime v] na (odgovor)
+  konec
+  ustavi [vse v]
 ```
 
 \--- /task \---
