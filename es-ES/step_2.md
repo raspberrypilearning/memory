@@ -51,7 +51,7 @@ Cada color tiene un número diferente, por lo que puede elegir un color al azar 
 
 ```blocks3
 al presionar bandera verde
-añade (número al azar entre (1) y (4)) a [sequence v]
+añade (número al azar entre (1) y (4)) a [secuencia v]
 ```
 
 \--- /task \---
@@ -60,7 +60,7 @@ añade (número al azar entre (1) y (4)) a [sequence v]
 
 \--- tarea \--- ¿Puedes agregar código a tu programa para generar cinco números aleatorios a la vez?
 
-\--- pistas \--- \--- pista \--- Añadir a `eliminar toda la secuencia`{:class="block3variables"} para eliminar primero todos los elementos de la lista, y luego añadir un bloque `repetir`{:class="block3control"} que añade cinco números aleatorios a la lista. \--- /pista \--- \--- pista \---
+\--- pistas \--- \--- pista \--- Añadir a `eliminar toda la secuencia`{:class="block3variables"} para eliminar primero todos los elementos de la lista, y luego añadir un bloque `repetir`{:class="block3control"} que añade cinco números aleatorios a la lista. \--- /hint \--- \--- hint \---
 
 Así es como debería verse tu c'odigo:
 
@@ -74,7 +74,7 @@ repetir (5)
 end
 ```
 
-\--- /pista \--- \--- /pista\--- \--- /tarea\---
+\--- /hint \--- \--- /hints \--- \--- /task \---
 
 \--- tarea \--- Cada vez que se agrega un número a la lista, el personaje debe cambiar su traje para que el color del traje coincida con el número. Pon estos bloques en tu código inmediatamente debajo del cual se añade un número aleatorio a `secuencia`{:class="block3variables"}:
 
