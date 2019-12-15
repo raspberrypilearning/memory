@@ -37,24 +37,24 @@ spremeni [točke v] za (1)
 
 Na koncu dodaj okoli kode, ki ustvarja zaporedje še zanko `ponavljaj`{:class="block3control"}, da bo za vsako naslednjo stopnjo ustvarjeno novo barvno zaporedje. Tvoja koda lika bi lahko bila videti takole:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of [sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
-end
+ko kliknemo na zastavico
+nastavi [točke v] na [3]
+ponavljaj
+    izbriši (vse v) v [zaporedje v]
+    ponovi (točke) krat
+        dodaj (naključno število med (1) in (4)) k [zaporedje v]
+        zamenjaj videz na (element (dolžina [zaporedje v]) v [zaporedje v]
+        počakaj (1) sekund
+    konec
+    počakaj dokler ni < (dolžina [zaporedje v]) = [0]>
+    objavi (zmaga v) in čakaj
+    spremeni [točke v] za (1)
+konec
 ```
 
 \--- /task \---
 
-\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
+\--- task \--- Prijatelji naj igro preizkusijo. Ne pozabi skriti seznama `zaporedje`{:class="block3variables"}, preden jo začenjo igrati! \--- /task \---
