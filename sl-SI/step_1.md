@@ -10,7 +10,7 @@ V tej igri boš naredil-a igro Spomin, v kateri si moraš zapomniti in ponoviti 
 
 ### Kaj boš ustvaril-a?
 
-\--- no-print \--- Za začetek klikni na zeleno zastavico. Oglej si zaporedje barv, ki jih prikazuje plesalčeva obleka, in poslušaj spremljajoče ritme bobna, nato pa ponovi to zaporedje barv. Če se zmotiš, je igre konec!
+\--- no-print \--- Za začetek klikni na zeleno zastavico. Oglej si zaporedje barv, ki jih prikazuje plesalkina obleka, in poslušaj spremljajoče ritme bobna, nato pa ponovi to zaporedje barv. Če se zmotiš, je igre konec!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
