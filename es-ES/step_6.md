@@ -71,22 +71,22 @@ fin
 decir [¡Fin del juego!] por (1) segundos
 si < (puntaje :: variables) > (puntaje mayor) > entonces
     dar a [puntaje mayor v] el valor (puntaje :: variables)
-    preguntar [¡Puntaje mayor! ¿Cuál es su nombre?] Y espere
-        establezca [nombre v] a (responder)
+    preguntar [¡Puntaje mayor! ¿Cuál es tu nombre?] Y esperar
+        dar a [nombre v] el valor  (respuesta)
     fin
-    pare [todos v]
+    detener [todos v]
 fin
 ```
 
-Si necesita cambiar cualquiera de los códigos de 'Game over', por ejemplo, para agregar un sonido o cambiar el mensaje 'Game over', debe cambiarlo cuatro veces. Eso es molesto y desperdicia mucho tiempo.
+Si necesitas cambiar cualquiera de los códigos de 'Fin del juego', por ejemplo, para agregar un sonido o cambiar el mensaje '¡Fin del juego!', debe cambiarlo cuatro veces. Eso es molesto y desperdicia mucho tiempo.
 
 En cambio, puedes definir tu propio bloque de código y usarlo en cualquier lugar de tu proyecto.
 
-\--- tarea \--- Haga clic en ` Mis bloques ` {: class = "block3myblocks"}, y luego en ** Make a Block **. Llama a este nuevo bloque ` Game over ` {: class = "block3myblocks"}.
+\--- task \--- Haz clic en ` Mis bloques ` {: class = "block3myblocks"}, y luego en ** Crear un bloque **. Llama a este nuevo bloque ` Fin del juego ` {: class = "block3myblocks"}.
 
 \--- /task \---
 
-\--- tarea \--- Agregue el código de la ` else ` {: class = "block3control"} bloque conectado al rojo ` ` {: class = "block3events"} transmitido al ` Juego terminado ` El bloque {: class = "block3myblocks"} para que se vea así:
+\--- task \--- Agrega el código del bloque ` si no` {: class = "block3control"} conectado a enviar `rojo ` {: class = "block3events"} al bloque ` Fin del juego ` {: class = "block3myblocks"} para que se vea así:
 
 ![bailarina](images/ballerina.png)
 
