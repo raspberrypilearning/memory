@@ -1,6 +1,6 @@
 ## Kaj sledi?
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
+Preizkusi naslednji projekt [Umakni se žogi](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), kjer boš ustvaril-a igro, v kateri se moraš izogibati žogam, medtem ko se premikaš iz ploščadi na ploščad.
 
 \--- no-print \---
 
