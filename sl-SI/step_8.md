@@ -4,7 +4,7 @@ Preizkusi naslednji projekt [Umakni se žogi](https://projects.raspberrypi.org/e
 
 \--- no-print \---
 
-Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+Klikni na zeleno zastavico, da začneš in uporabljaj smerne tipke za premikanje in <kbd>preslednico</kbd> za skok.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -15,6 +15,6 @@ Click the green flag to start, and then use the arrow keys to move and the <kbd>
 
 \--- print-only \---
 
-![dodgeball game being played](images/dodgeball-showcase.png)
+![igranje igre](images/dodgeball-showcase.png)
 
 \--- /print-only \---
