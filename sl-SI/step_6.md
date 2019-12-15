@@ -91,35 +91,36 @@ Namesto tega lahko definiraš svoj lastni blok kode in ga uporabiš kjerkoli v p
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-define Game over
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+definiraj Konec igre
+reci [Konec igre!] za (1) sekund
+  če < (točke :: variables) > (najboljši rezultat) > potem
+        nastavi [najboljši rezultat v] na (točke :: variables)
+        Vprašaj [Najboljši rezultat! Kako ti je ime?] in počakaj
+    nastavi [ime v] na (odgovor)
+  konec
+  ustavi [vse v]
+konec
 ```
 
 \--- /task \---
 
-\--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+\--- task \--- Zdaj odstrani kodo iz bloka `sicer`{:class="block3control"}, ki je povezan z objavo `rdeča`{:class="block3events"}, in maesto nje dodaj blok `Konec igre`{:class="block3myblocks"}:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+ko prejmem [rdeča v]
+če <(element (1 v) v [zaporedje v])=[1]> potem
+  zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
+  zbriši (1 v) v [zaporedje v]
+sicer
+   Konec igre :: custom
+konec
 ```
 
 \--- /task \---
 
-\--- task \--- Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence. \--- /task \---
+\--- task \--- Preizkusi svoj novi blok s klikom na rdeč gumb, ko ta ne ustreza zaporedju barv. \--- /task \---
 
 Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
 
