@@ -44,48 +44,49 @@ nastavi [ime v] na [ ]
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
-end
+ko prejmem [rdeča v]
+če <(element (1 v) v [zaporedje v])=[1]> potem
+  zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
+  zbriši (1 v) v [zaporedje v]
+sicer
+  reci [Konec igre!] za (1) sekund
+  če < (točke :: variables) > (najboljši rezultat) > potem
+        nastavi [najboljši rezultat v] na (točke :: variables)
+        Vprašaj [Najboljši rezultat! Kako ti je ime?] in počakaj
+    nastavi [ime v] na (odgovor)
+  konec
+  ustavi [vse v]
+konec
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+To novo kodo moraš dodati figuri lika tudi za preostale tri barve!
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+Ali opaziš, da je koda 'konec igre' enaka za vse štiri barve?
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+reci [Konec igre!] za (1) sekund
+  če < (točke :: variables) > (najboljši rezultat) > potem
+        nastavi [najboljši rezultat v] na (točke :: variables)
+        Vprašaj [Najboljši rezultat! Kako ti je ime?] in počakaj
+    nastavi [ime v] na (odgovor)
+  konec
+  ustavi [vse v]
+konec
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+Če želiš spremeniti kakšen del kode 'konec igre', da bi npr. dodal zvok ali spremenil napis, moraš to spremeniti štirikrat. To je zoprno in vzame precej časa.
 
-Instead, you can define your own code block, and use it anywhere in your project.
+Namesto tega lahko definiraš svoj lastni blok kode in ga uporabiš kjerkoli v projektu.
 
-\--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+\--- task \--- Klikni na `Moji bloki`{:class="block3myblocks"}, nato pa na **Ustvari blok**. Novi blok poimenuj `Konec igre`{:class="block3myblocks"}.
 
 \--- /task \---
 
-\--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+\--- task \--- Dodaj kodo iz bloka `sicer`{:class="block3control"}, ki je povezan z objavo `rdeča`{:class="block3events"}, v blok `Konec igre`{:class="block3myblocks"} da bo ta videti tako:
 
 ![ballerina](images/ballerina.png)
 
