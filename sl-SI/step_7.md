@@ -1,8 +1,8 @@
-## Challenge: improve your game
+## Izziv: izboljšaj igro
 
-### Make more blocks
+### Ustvari več blokov
 
-Do you see any other code that is the same for all four buttons?
+Vidiš še kakšen drug del kode, ki je enak za vse štiri gumbe?
 
 ```blocks3
 when I receive [red v]
