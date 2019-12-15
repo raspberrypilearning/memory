@@ -44,33 +44,34 @@ dar a [ nombre v] el valor []
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-al recibir [blue v]
-si <(item (1 v) of [sequence v] :: list) = [1]> entonces 
-  tocar tambor (elemento (1 v) de [sequence v] :: list) durante (0.25) pulsos
-  borrar (1 v) de [sequence v]
-
-  decir [Game over!] por (1) segundos
-  detener [todos v]
-end! ¿Cuál es su nombre?] Y espere
-        establezca [nombre v] a (responder)
+al recibir [rojo v]
+si <(elemento (1 v) of [secuencia v] :: list) = [1]> entonces 
+  tocar tambor (elemento (1 v) de [secuencia v] :: list) durante (0.25) pulsos
+  eliminar (1 v) de [secuencia v]
+si no
+  decir [¡Fin del juego!] por (1) segundos
+  si < (puntaje:: variables) > (puntaje mayor) > entonces
+  dar a [puntaje mayor v] el valor (puntaje :: variables)!
+  preguntar [¡Puntaje mayor! ¿Cuál es tu nombre?] Y esperar
+        dar a  [nombre v] el valor (respuesta)
     fin
-    pare [todos v]
+    detener [todos v]
 fin
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-¡Necesitas añadir este nuevo código al sprite de caracteres también para los otros tres colores!
+¡También necesitas añadir este nuevo código al objeto personaje para los otros tres colores!
 
-¿Puedes ver que el código 'Game over' para cada uno de los cuatro colores es exactamente el mismo?
+¿Puedes ver que el código 'Fin del juego' para cada uno de los cuatro colores es exactamente el mismo?
 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-diga [Game over!] por (1) segundos
-si < (puntaje :: variables) > (puntaje alto) > luego
-    establece [puntaje alto v] a (puntaje :: variables)
-    pregunta [puntaje alto! ¿Cuál es su nombre?] Y espere
+decir [¡Fin del juego!] por (1) segundos
+si < (puntaje :: variables) > (puntaje mayor) > entonces
+    dar a [puntaje mayor v] el valor (puntaje :: variables)
+    preguntar [¡Puntaje mayor! ¿Cuál es su nombre?] Y espere
         establezca [nombre v] a (responder)
     fin
     pare [todos v]
