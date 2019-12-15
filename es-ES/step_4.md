@@ -139,13 +139,13 @@ Cuando el jugador repite toda la secuencia de colores correctamente, la ` secuen
 ![bailarina](images/stage.png)
 
 ```blocks3
-    cuando esccho el sonido de inicio [won v]
-    (caja de ritmos v)
-    repetición (50)
-        cambio [color v] a (25)
-        espera (0.1) segundos
+    al recibir  [ganar v]
+    tocar sonido (caja de ritmos v)
+    repetir (50)
+        cambiar [color v] a (25)
+        esperar (0.1) segundos
     final
-    efectos gráficos claros
+    quitar efectos gráficos
 ```
 
 \--- /task \---
