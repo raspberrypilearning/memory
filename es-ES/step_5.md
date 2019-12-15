@@ -40,21 +40,21 @@ sumar a [puntuación v] (1)
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-cuando se hace clic en la bandera
-establece [puntuación v] en [3]
-para siempre
-    elimina (toda v) de [secuencia v]
-    repite (puntúa)
-        agrega (elige al azar (1) a (4)) a [secuencia v]
-        cambiar traje a (elemento (longitud de [secuencia v]) de [secuencia v]
-        espere (1) segundos
-    finalice
-    espere hasta < (longitud de [secuencia v]) = [0]>
-    transmisión (ganada v) y espere
-    cambios [ puntuación v] por (1)
+al hacer clic en la bandera
+dar a [puntaje v] el valor [3]
+por siempre
+    eliminar (todos v) de [secuencia v]
+    repetir (puntaje)
+        agregar (número aleatorio entre  (1) y (4)) a [secuencia v]
+        cambiar disfraz a (elemento (longitud de [secuencia v]) de [secuencia v]
+        esperar (1) segundos
+    fin
+    esperar hasta que < (longitud de [secuencia v]) = [0]>
+    enviar (ganar v) y esperar
+    sumar a [ puntaje v] (1)
 final
 ```
 
 \--- /task \---
 
-\--- tarea \--- Consigue que tus amigos prueben tu juego. Recuerda ocultar la secuencia ` ` {: class = "block3variables"} lista antes de que lo jueguen! \--- / tarea \---
+\--- task \--- Consigue que tus amigos prueben tu juego. Recuerda ocultar la lista ` secuencia ` {: class = "block3variables"} antes de que lo jueguen. \--- /task \---
