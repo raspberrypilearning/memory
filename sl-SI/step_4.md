@@ -130,7 +130,7 @@ Ko igralec pravilno ponovi zaporedje, je seznam `zaporedje`{:class="block3variab
 
 \--- /task \---
 
-\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+\--- task \--- Zamenjaj oder in uvozi zvok `drum machine` (ritem mašina) ali drug zvok, ki ti je všeč.
 
 [[[generic-scratch3-sound-from-library]]]
 
