@@ -89,37 +89,37 @@ Obdrži te bloke, vendar jih ustrezno spremeni:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<(element (1 v) v [zaporedje v])=[1]>
 
-when I receive [red v]
+ko prejmem [rdeča v]
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
 ```
 
-\--- /hint \--- \--- hint \--- Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+\--- /hint \--- \--- hint \--- Tako bi morala izgledati tvoja koda za objavo `modra`{:class="block3events"}.
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    stop [all v]
-end
+ko prejmem [rdeča v]
+če <(element (1 v) v [zaporedje v])=[2]> potem
+zaigraj na boben (\(2\) Mali boben v) za (0.25) utripov
+zbriši (1 v) v [zaporedje v]
+sicer
+reci [Konec igre!] za (1) sekund
+ustavi [vse v]
+konec
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+Podvoji kodo še dvakrat (za zeleni in rumeni gumb) in spremeni ustrezne dele, da se bosta lika ustrezno odzvala za novi `objavi`{:class="block3events"} . \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+Ne pozabi preizkusiti kode! Ali si lahko zapomniš zaporedje petih barv? Ali je zaporedje vsakič drugačno?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+Ko igralec pravilno ponovi zaporedje, je seznam `zaporedje`{:class="block3variables"} prazno in igralec zmaga. Če želiš, lahko za nagrado prikažeš kakšne utripajoče luči, potem ko je seznam `zaporedje`{:class="block3variables"} prazen.
 
-\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+\--- task \--- Na konec zaporedja ukazov pod blokom `ko kliknemo na zastavico`{:class="block3events"} dodaj to kodo:
 
 ![ballerina](images/ballerina.png)
 
