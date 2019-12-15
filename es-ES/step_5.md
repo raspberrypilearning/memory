@@ -2,7 +2,7 @@
 
 Hasta ahora, el jugador solo tiene que recordar una secuencia de cinco colores. Mejora tu juego añadiendo una puntuación, y agregando código para que a medida que el jugador consigue puntos, el juego se mueve al siguiente nivel y la secuencia de color para recordar se vuelve más larga.
 
-\--- Crea una nueva variable llamada ` puntuación ` {: class = "blockdata"}.
+\--- Crea una nueva variable llamada ` puntaje` {: class = "blockdata"}.
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
