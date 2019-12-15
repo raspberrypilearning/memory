@@ -1,6 +1,6 @@
 ## Kaj sledi?
 
-Preizkusi naslednji projekt [Umakni se žogi](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), kjer boš ustvaril-a igro, v kateri se moraš izogibati žogam, medtem ko se premikaš iz ploščadi na ploščad.
+Preizkusi naslednji projekt [Pazi, žoga!](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), kjer boš ustvaril-a igro, v kateri se moraš izogibati žogam, medtem ko se premikaš iz ploščadi na ploščad.
 
 \--- no-print \---
 
