@@ -108,22 +108,22 @@ detener [todos v]
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-cuando recibo [red v]
-si <(elemento (1 v) de [secuencia v]) =[1]> luego
-    toca el tambor (\ (1 \) Snare Drum v) durante (0.25) beats
-    delete (1 v) de [secuencia v]
-else
-    Game over :: custom
+al recibir [red v]
+si <(elemento (1 v) de [secuencia v]) =[1]> entonces 
+  tocar tambor ((1) Caja v) durante (0.25) tiempos
+  eliminar (1 v) de [secuencia v]
+si no 
+  Fin del juego :: custom
 end
 ```
 
 \--- /task \---
 
-\--- tarea \--- Prueba tu nuevo bloque jugando el juego y haciendo clic en el botón rojo en el punto equivocado en la secuencia de colores. \--- / tarea \---
+\--- task \--- Prueba tu nuevo bloque jugando el juego y haciendo clic en el botón rojo en el punto equivocado en la secuencia de colores. \--- /task \---
 
-Tu nuevo bloque `Game over`{:class="block3myblocks"} es un bloque **function**, un pequeño script que puedes usar en cualquier lugar que quieras en tu código agregando el bloque `Game over`{:class="block3myblocks"} en.
+Tu nuevo bloque `Fin del juego`{:class="block3myblocks"} es un bloque **función**, un pequeño programa que puedes usar en cualquier lugar que quieras en tu código agregando el bloque `Fin del juego`{:class="block3myblocks"}.
 
-\--- tarea \--- También reemplaza el código en ` else ` {: class = "block3control"} bloque conectado a las transmisiones ` ` {: class = "block3events"} para los otros colores con su nuevo ` Game over ` {: class = "block3myblocks"} block. Aquí está el código para el mensaje `azul`{:class="block3events"} debe ser
+\--- task \--- También reemplaza el código del bloque ` si no ` {: class = "block3control"} conectado al bloque ` enviar ` {: class = "block3events"} para los otros colores con el nuevo bloque ` Fin del juego`{: class = "block3myblocks"}. Aquí está el código para el enviar `azul`{:class="block3events"} debe verse
 
 ![bailarina](images/ballerina.png)
 
