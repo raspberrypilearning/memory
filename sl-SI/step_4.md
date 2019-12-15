@@ -39,24 +39,24 @@ Ko tvoja figura lika prejme sporočilo `rdeča`{:class="block3events"}, naj koda
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
-end
+ko prejmem [rdeča v]
+če <(element (1 v) v [zaporedje v])=[1]> potem
+zbriši (1 v) v [zaporedje v]
+sicer
+reci [Konec igre!] za (1) sekund
+ustavi [vse v]
+konec
 ```
 
 \--- /task \---
 
-\--- task \--- Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+\--- task \--- Pravkar spisano kodo dopolni. da bo zazvenel boben tudi tedaj, ko figura lika prejme pravilno `objavo`{:class="block3events"}.
 
-\--- hints \--- \--- hint \--- Can you use the numbers that correspond to each colour to play the correct drum beat?
+\--- hints \--- \--- hint \--- Ali lahko uporabiš številke, ki ustrezajo vsaki od barv, da zaigraš pravilno zaporedje bobnov?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
++ 1 = rdeča
++ 1 = modra
++ 3 = zelena
 + 4 = yellow \--- /hint \--- \--- hint \--- Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
 
 \--- /hint \--- \--- hint \--- Here is the code you will need to add:
