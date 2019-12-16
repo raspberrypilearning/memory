@@ -113,9 +113,9 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"} . \--- /task \---
+\--- කාර්යය \--- කේතය දෙවරක් අනුපිටපත්(Duplicate) කරන්න (කොළ සහ කහ බොත්තම් වලට යෙදීම සඳහා), දැන් එහි අවශ්‍ය කොටස් වෙනස් කරන්න, එවිට චරිතය(character එක) නව `විකාශන(broadcasts)` {:class="block3events"} වලට නිවැරදිව ප්‍රතිචාර දක්වයි. \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+කේතය(code එක) පරීක්ෂා(test) කිරීමට මතක තබා ගන්න! ඔබට වර්ණ පහක අනුක්‍රමයක් මතක තබාගත හැකිද? සෑම අවස්ථාවකම අනුක්‍රමය(sequence එක) වෙනස් වන්නේද?
 
 When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
 
