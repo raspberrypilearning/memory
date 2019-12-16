@@ -31,7 +31,7 @@ end
 change [score v] by (1)
 ```
 
-\--- hints \--- \--- hint \--- You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message. \--- /hint \--- \--- /hints \---
+\--- hints \--- \--- hint \--- ක්‍රීඩාව 'win' යන පණිවිඩය `විකාශනය(broadcasts)` {:class="block3events"} කරන මොහොතේ අනුක්‍රමය(sequence එක) නිවැරදි බව ඔබට දැනගත හැකියි. \--- /hint \--- \--- /hints \---
 
 \--- /task \---
 
