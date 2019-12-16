@@ -23,7 +23,7 @@ end
 
 \--- /task \---
 
-\--- task \--- If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+\--- task \--- ක්‍රීඩකයා විසින් නිවැරදි අනුක්‍රමය(sequence එක) පුනරාවර්තනය(repeat) කරන්නේ නම්, ඔබ `1` ලකුණක් `ලකුණු(score)`{:class="block3variables"} වලට එකතු කළ යුතුය, එසේ කිරීමෙන් ඊළඟ අනුක්‍රමයේ(sequence එකේ) දිග වැඩි වේ. **අනුක්‍රමය(sequence එක) නිවැරදි බව ඔබ දන්නා මොහොතේ** චරිතයේ කේතයට(code එකට) පහත කට්ටිය(block එක) එකතු කරන්න:
 
 ![sprite](images/ballerina.png)
 
