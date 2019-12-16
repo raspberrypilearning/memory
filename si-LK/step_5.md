@@ -35,7 +35,7 @@ change [score v] by (1)
 
 \--- /task \---
 
-\--- task \--- Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+\--- task \--- අවසාන වශයෙන්, අනුක්‍රම ජනනය කරන කේතයට `අපරිමිත(infinite)`{:class="block3control"} ලූප(loop) එක් කර, ක්‍රීඩාව එක් එක් මට්ටම්(levels) සඳහා නව වර්ණ අනුක්‍රම(sequence) නිර්මාණය කරන පරිදි සකසන්න. This is how your character's code might look:
 
 ![ballerina](images/ballerina.png)
 
