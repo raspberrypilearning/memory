@@ -119,7 +119,7 @@ end
 
 ක්‍රීඩකයා සම්පූර්ණ වර්ණ අනුක්‍රමය(sequence එක) නිවැරදිව පුනරාවර්තනය(repeat) කරන විට, `අනුක්‍රමය(sequence)`{:class="block3variables"} ලැයිස්තුව(list එක) හිස්වීමෙන්(emtpy වීමෙන්) සහ ක්‍රීඩකයා ජය ගනී. ඔබට අවශ්‍ය නම්, `අනුක්‍රම(sequence)`{:class="block3variables"} ලැයිස්තුව(list එක) හිස්වූ(empty වූ) පසු ඔබට ත්‍යාගයක්(reward එකක්) ලෙස නිවි නිවී දැල්වෙන(flashing) විදුලි පහන් කිහිපයක් ප්‍රදර්ශනය කළ හැකිය.
 
-\--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+\--- task \--- ඔබේ චරිතයේ(character එකේ) `කොඩිය ක්ලික් කළ විට`{:class="block3events"} කේත කට්ටිය (script එක) අවසානයට මෙම කේතය(code) එක් කරන්න:
 
 ![ballerina](images/ballerina.png)
 
@@ -130,13 +130,13 @@ end
 
 \--- /task \---
 
-\--- task \--- Switch to the Stage, and import the `drum machine` sound or another sound you like.
+\--- task \--- අදියර වෙත මාරු වී, `බෙර යන්ත්‍රය(drum machine)` ශබ්දය වෙනුවට ඔබ කැමති වෙනත් ශබ්දයක් ආයාත(import) කරන්න.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- Add this code to play a sound and make the backdrop change colour when the player wins.
+\--- task \--- ශබ්දයක් වාදනය කිරීමට මෙම කේතය(code එක) එක් කර, ක්‍රීඩකයා ජයග්‍රහණය කළ විට පසුබිම්(backdrop) වර්ණය වෙනස් කරන්න.
 
 ![ballerina](images/stage.png)
 
