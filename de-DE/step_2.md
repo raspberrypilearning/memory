@@ -33,13 +33,13 @@ Du kannst den **Fülleimer** verwenden, um Teile des Kostüms mit einer anderen 
 
 Füge jetzt eine Liste hinzu, um die zufällige Reihenfolge der Farben zu speichern, die der Spieler sich merken soll.
 
-\--- task \--- Erstelle unter ‘Daten’ eine neue Liste mit dem Namen `Sequenz`. Da nur Dein Charakter die Liste sehen muss, können wir auf **Nur für diese Figur** klicken.
+\--- task \--- Erstelle eine Liste mit dem Namen `Sequenz`. Da nur dein Charakter die Liste sehen muss, kannst du beim erstellen der LIste **Nur für diese Figur** auswählen.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-Du solltest nun sowohl Deine leere Liste in der oberen linken Ecke Deiner Bühne sehen, als auch eine Menge neuer Bausteine für die Verwendung der Liste.
+Du solltest nun eine Menge neuer Code-Blöcke für die Verwendung von Listen sehen. Die leere Liste sollte in der oberen linken Ecke der Bühne sichtbar sein.
 
 ![Screenshot](images/colour-list-blocks-annotated.png)
 
