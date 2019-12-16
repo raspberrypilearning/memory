@@ -27,13 +27,13 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 ![Screenshot](images/colour-costume.png) \--- /task \---
 
-Du kannst das **Farb-Werkzeug** verwenden, um Teile des Kostüms mit einer anderen Farbe zu füllen.
+Du kannst den **Fülleimer** verwenden, um Teile des Kostüms mit einer anderen Farbe zu füllen.
 
 ![eine-Form-einfärben](images/color-a-shape.png)
 
-Als nächste füge eine Liste hinzu, um die zufällige Reihenfolge der Farben zu speichern, die der Spieler sich dann merken muss.
+Füge jetzt eine Liste hinzu, um die zufällige Reihenfolge der Farben zu speichern, die der Spieler sich merken soll.
 
-\--- task \--- Erstelle unter ‘Daten’ eine neue Liste namens `Sequenz`. Da nur Dein Charakter die Liste sehen muss, können wir auf **Nur für diese Figur** klicken.
+\--- task \--- Erstelle unter ‘Daten’ eine neue Liste mit dem Namen `Sequenz`. Da nur Dein Charakter die Liste sehen muss, können wir auf **Nur für diese Figur** klicken.
 
 [[[generic-scratch3-make-list]]]
 
