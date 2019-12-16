@@ -1,4 +1,4 @@
-## Multiple levels
+## බහු(multiple) මට්ටම්(levels)
 
 So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
