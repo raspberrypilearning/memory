@@ -12,12 +12,12 @@
 
 සෑම විටම වර්ණ පහක අනුක්‍රමයක්(sequence එකක්) නිර්මාණය කරනවා වෙනුවට, ඔබට දැන් අවශ්‍ය වන්නේ `ලකුණු(score එක)`{:class="block3variables"} මගින් අනුක්‍රමයේ(sequence එකේ) දිග තීරණය කිරීම සඳහායි.
 
-\--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+\--- task \--- චරිතයේ වර්ණ අනුක්‍රමය(sequence එක) නිර්මාණය කිරීම සඳහා ඇති `පුනරාවර්තන(repeat)`{:class= "block3control"} ලූපය(loop) වෙනස් කර, `ලකුණු(score)`{:class="block3variables"} ගණන වරක් පුනරාවර්තනය වන පරිදි සකසන්න:
 
 ![sprite](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables)
+repeat (score :: variables) 
 end
 ```
 
