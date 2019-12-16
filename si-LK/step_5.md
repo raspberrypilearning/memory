@@ -1,8 +1,8 @@
 ## බහු(multiple) මට්ටම්(levels)
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+මෙතෙක්, ක්‍රීඩකයා මතක තබා ගත යුත්තේ වර්ණ පහක අනුක්‍රමයක්(sequence එකක්) පමණි. ලකුණු(score එකක්) ලබාගතහැකි ක්‍රමයක් ක්‍රීඩාවට එකතු කිරීමෙන් ඔබේ ක්‍රීඩාව වැඩි දියුණු කරන්න, එවිට ක්‍රීඩකයා ලකුණු ලබා ගන්නා විට, ක්‍රීඩාව ඊළඟ(next) මට්ටමට(level එකට) ගමන් කරන අතර මතක තබා ගතයුතු වර්ණ අනුක්‍රමය(sequence එක) දිගු වේ.
 
-\--- task \--- Create a new variable called `score`{:class="block3variables"}.
+\--- task \--- `score`{:class="block3variables"} නමින් නව විචල්‍යයක්(variable එකක්) සාදන්න.
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
