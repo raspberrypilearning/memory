@@ -35,12 +35,12 @@ change [score v] by (1)
 
 \--- /task \---
 
-\--- task \--- අවසාන වශයෙන්, අනුක්‍රම ජනනය කරන කේතයට `අපරිමිත(infinite)`{:class="block3control"} ලූප(loop) එක් කර, ක්‍රීඩාව එක් එක් මට්ටම්(levels) සඳහා නව වර්ණ අනුක්‍රම(sequence) නිර්මාණය කරන පරිදි සකසන්න. This is how your character's code might look:
+\--- task \--- අවසාන වශයෙන්, අනුක්‍රම ජනනය කරන කේතයට `අපරිමිත(infinite)`{:class="block3control"} ලූප(loop) එක් කර, ක්‍රීඩාව එක් එක් මට්ටම්(levels) සඳහා නව වර්ණ අනුක්‍රම(sequence) නිර්මාණය කරන පරිදි සකසන්න. ඔබගේ චරිතයේ(character's) කේතය(code එක) මෙවැන්නක් වියයුතුයි:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
+when flag clicked 
 set [score v] to [3]
 forever
     delete (all v) of [sequence v]
@@ -57,4 +57,4 @@ end
 
 \--- /task \---
 
-\--- task \--- Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it! \--- /task \---
+\--- task \--- ඔබගේ ක්‍රීඩාව පරීක්ෂා කිරීමට ඔබේ මිතුරන් යොදාගන්න. ඔවුන් එය ක්‍රීඩා කිරීමට පෙර `අනුක්‍රම(sequence)`{:class="block3variables"} ලැයිස්තුව(list එක) සැඟවීමට මතක තබා ගන්න! \--- /task \---
