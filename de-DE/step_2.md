@@ -1,6 +1,6 @@
 ## Zufällige Farben
 
-Erstelle zunächst einen Charakter, der eine zufällige Reihenfolge von unterschiedlichen Farben annehmen kann.
+Erstelle zuerst einen Charakter, der eine zufällige Farbfolge anzeigen kann.
 
 \--- task \--- Öffne ein neues Scratch-Projekt.
 
@@ -12,18 +12,18 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 \--- /task \---
 
-\--- task \--- Füge eine neue Figur, sowie den passenden Bühnenhintergrund hinzu. Dein Charakter muss keine Person sein, aber er muss verschiedene Farben annehmen können.
+\--- task \--- Füge eine neue Figur, sowie den passenden Bühnenhintergrund hinzu. Dein Charakter muss keine Person sein, aber er muss verschiedene Farben darstellen können.
 
 ![Screenshot](images/colour-sprite.png) \--- /task \---
 
-+ In dem Spiel sollte für jede Farbe eine andere Nummer verwendet werden:
++ Dein Spiel sollte für jede Farbe eine andere Nummer verwenden:
     
     + 1 = rot
     + 2 = blau
     + 3 = grün
     + 4 = gelb
 
-\--- Aufgabe \--- Gib deinen Charakter vier Kostüme mit unterschiedliche Farben. Jedem Kostüm soll eine der oben genannten vier Farben zugeordnet werden. Stelle sicher, dass die farbigen Kostüme in der gleichen Reihenfolge zugeordnet werden wie in der oben aufgeführten Liste.
+\--- task \--- Gib deinem Charakter vier Kostüme mit unterschiedlichen Farben - jeweils eins für jede der oben gennanten Farben. Stelle sicher, dass die farbigen Kostüme in der gleichen Reihenfolge zugeordnet werden wie in der oben aufgeführten Liste.
 
 ![Screenshot](images/colour-costume.png) \--- /task \---
 
