@@ -8,9 +8,9 @@
 
 `ලකුණු(score)` {:class="block3variables"} මත පදනම්ව, ක්‍රීඩාව වර්ණ අනුක්‍රමයේ(sequence එකේ) දිග තීරණය කරයි. ලකුණු `3` ක් (සහ අනුක්‍රමික දිග ක්) සමඟ ක්‍රීඩාව ආරම්භ කරන්න. 
 
-\--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
+\--- task \--- `කොඩිය ක්ලික් කළ විට`{:class="block3events"} ඔබේ චරිතයේ(character එකේ) ආරම්භයේදී `ලකුණු(score)`{:class="block3variables"} `3` ලෙස සැකසීමට කේතය(code) කට්ටියක්(block එකක්) එක් කරන්න. \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+සෑම විටම වර්ණ පහක අනුක්‍රමයක්(sequence එකක්) නිර්මාණය කරනවා වෙනුවට, ඔබට දැන් අවශ්‍ය වන්නේ `ලකුණු(score එක)`{:class="block3variables"} මගින් අනුක්‍රමයේ(sequence එකේ) දිග තීරණය කිරීම සඳහායි.
 
 \--- task \--- Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
