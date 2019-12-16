@@ -117,7 +117,7 @@ end
 
 කේතය(code එක) පරීක්ෂා(test) කිරීමට මතක තබා ගන්න! ඔබට වර්ණ පහක අනුක්‍රමයක් මතක තබාගත හැකිද? සෑම අවස්ථාවකම අනුක්‍රමය(sequence එක) වෙනස් වන්නේද?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+ක්‍රීඩකයා සම්පූර්ණ වර්ණ අනුක්‍රමය(sequence එක) නිවැරදිව පුනරාවර්තනය(repeat) කරන විට, `අනුක්‍රමය(sequence)`{:class="block3variables"} ලැයිස්තුව(list එක) හිස්වීමෙන්(emtpy වීමෙන්) සහ ක්‍රීඩකයා ජය ගනී. ඔබට අවශ්‍ය නම්, `අනුක්‍රම(sequence)`{:class="block3variables"} ලැයිස්තුව(list එක) හිස්වූ(empty වූ) පසු ඔබට ත්‍යාගයක්(reward එකක්) ලෙස නිවි නිවී දැල්වෙන(flashing) විදුලි පහන් කිහිපයක් ප්‍රදර්ශනය කළ හැකිය.
 
 \--- task \--- Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
 
