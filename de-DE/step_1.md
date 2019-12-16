@@ -26,13 +26,13 @@ In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Reih
 
 + Wie ein Klang zu deiner Scratch-Figur hinzugefügt wird
 + Wie man Listen erstellt und verwendet, um Daten zu speichern
-+ Wie man benutzerdefinierte Blöcke zum Wiederholen von Codes erstellt und verwendet
++ Wie man benutzerdefinierte Blöcke erstellt und verwendet, um Code zu widerholen
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Was du benötigst
+## title: Was du brauchst
 
 ### Hardware
 
@@ -52,6 +52,6 @@ Wenn du dieses Projekt ausdrucken möchtest, verwende die [druckerfreundliche Ve
 
 \--- /no-print \---
 
-Du findest das [abgeschlossene Projekt hier](http://rpf.io/p/en/memory-get).
+Du findest das [fertige Projekt hier](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
