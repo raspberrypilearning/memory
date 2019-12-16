@@ -6,11 +6,11 @@ Dies ist die ** Scratch 3 ** Version des Projekts. Es gibt auch eine [ Scratch-2
 
 ## Einleitung
 
-In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
+In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Reihe von zufälligen Farben merken und wiederholen muss!
 
 ### Was du machen wirst
 
-Drücke auf die grüne Flagge, um zu starten. Beobachte die Farbenfolge, die das Kleid des Tänzers/der Tänzerin zeigt und höre den begleitenden Trommelschlägen zu, wiederhole die Reihenfolge um ein Level weiter zu kommen. Wenn du die Reihenfolge falsch eingegeben hast, ist das Spiel vorbei!
+\--- no-print \--- Klicke auf die grüne Flagge, um zu beginnen. Beobachte die Farbenfolge, die das Kleid des Tänzers/der Tänzerin zeigt und höre den begleitenden Trommelschlägen zu, wiederhole die Reihenfolge um ein Level weiter zu kommen. Wenn du die Reihenfolge falsch eingegeben hast, ist das Spiel vorbei!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
