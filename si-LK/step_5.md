@@ -6,7 +6,7 @@
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+`ලකුණු(score)` {:class="block3variables"} මත පදනම්ව, ක්‍රීඩාව වර්ණ අනුක්‍රමයේ(sequence එකේ) දිග තීරණය කරයි. ලකුණු `3` ක් (සහ අනුක්‍රමික දිග ක්) සමඟ ක්‍රීඩාව ආරම්භ කරන්න. 
 
 \--- task \--- Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`. \--- /task \---
 
