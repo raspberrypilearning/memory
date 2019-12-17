@@ -45,7 +45,7 @@
 
 Каждый цвет имеет свой номер, поэтому ты можешь выбрать случайный цвет, случайным образом выбрав номер и добавив его в список.
 
-\--- task \--- Добавьте этот код в спрайт персонажа, чтобы выбрать случайное число и добавить его в последовательность `sequence`{:class="block3variables"}:
+\--- task \--- Добавьте этот код в спрайт персонажа, чтобы выбрать случайное число и добавить его в `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
@@ -58,11 +58,11 @@ add (pick random (1) to (4)) to [sequence v]
 
 \--- task \--- Протестируй свой код. Проверь, что каждый раз, когда ты нажимаешь на флаг, случайное число от 1 до 4 добавляется к списку. \--- /task \---
 
-\--- task \--- Can you add code to your program to generate five random numbers at once?
+\--- задача \--- Как изменить код программы, чтобы генерировать пять случайных чисел одновременно?
 
-\--- hints \--- \--- hint \--- Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Добавь `delete all of sequence`{:class="block3variables"}, чтобы сначала удалить все элементы списка, а затем добавить `повторяющийся`{:class="block3control"} блок, который добавит пять случайных чиселв список. \--- /hint \--- \--- hint \---
 
-This is what your code should look like:
+Так должен выглядеть твой код:
 
 ![ballerina](images/ballerina.png)
 
@@ -76,7 +76,7 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+\--- task \--- Каждый раз, когда число добавляется в список, персонаж должен сменить цвет костюма в соответствии с числом. Добавь эти блоки в твой код сразу после добавления случайного числа в `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
