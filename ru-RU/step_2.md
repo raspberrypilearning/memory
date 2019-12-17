@@ -27,11 +27,11 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 ![screenshot](images/colour-costume.png) \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Если вы хотите, вы можете использовать ** цвет фигуры ** инструмент для заливки частей костюма другим цветом.
 
 ![color-a-shape](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Затем добавьте список для хранения случайной последовательности цветов, которую игрок должен запомнить.
 
 \--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
 
