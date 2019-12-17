@@ -23,7 +23,7 @@ Wenn du den Scratch-Offline-Editor herunterladen und installieren möchtest, fin
     + 3 = grün
     + 4 = gelb
 
-\--- task \--- Gib deinem Charakter vier Kostüme mit unterschiedlichen Farben - jeweils eins für jede der oben gennanten Farben. Stelle sicher, dass die farbigen Kostüme in der gleichen Reihenfolge zugeordnet werden wie in der oben aufgeführten Liste.
+\--- task \--- Gib deinem Charakter vier Kostüme mit unterschiedlichen Farben - jeweils eins für jede der oben gennanten Farben. Sorge dafür, dass deine Kostüme, je nach Farbe, die gleiche Reihenfolge haben, wie die Liste oben.
 
 ![Screenshot](images/colour-costume.png) \--- /task \---
 
