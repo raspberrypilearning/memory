@@ -6,11 +6,11 @@ Enregistrez maintenant le meilleur score afin de pouvoir jouer contre vos amis.
 
 Lorsque le jeu se termine parce que le joueur se trompe de séquence, le jeu doit vérifier si le score est supérieur au score élevé actuel. Si tel est le cas, le jeu doit enregistrer le score en tant que meilleur score et également stocker le nom du joueur.
 
-\--- task \--- Ajoutez du code à votre sprite de personnage pour stocker le `High score` {:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- task \--- Ajoutez du code à votre sprite de personnage pour stocker le `High score` {:class="block3variables"}. Demandez également le nom du joueur et enregistrez-le sous le nom `name` {:class ="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
+\--- hints \--- \--- hint \--- Ton nouveau code doit suivre ce modèle:
 
 After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
