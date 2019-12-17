@@ -1,12 +1,12 @@
-## High score
+## Meilleur pointage
 
-Now save the high score so that you can play against your friends.
+Enregistrez maintenant le meilleur score afin de pouvoir jouer contre vos amis.
 
-\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
+\--- task \--- Add two new variables called `High score`{: class = "block3variables"} and `name`{:class="block3variables"} to your project. \--- /task\---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+Lorsque le jeu se termine parce que le joueur se trompe de séquence, le jeu doit vérifier si le score est supérieur au score élevé actuel. Si tel est le cas, le jeu doit enregistrer le score en tant que meilleur score et également stocker le nom du joueur.
 
-\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- task \--- Ajoutez du code à votre sprite de personnage pour stocker le `High score` {:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
