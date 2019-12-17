@@ -4,11 +4,11 @@
 
 \--- task \--- Создай новый проект Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**Онлайн**: Создай новый онлан проект на [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Оффлайн**: Создай новый проект в редакторе оффлайн.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+Оффлайн редактор Scratch можно найти тут [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
@@ -33,19 +33,19 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 Затем добавьте список для хранения случайной последовательности цветов, которую игрок должен запомнить.
 
-\--- task \--- Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+\--- task \--- Создай список с именем `sequence`{:class="block3variables"}. Только спрайт персонажа должен видеть этот список, поэтому вы можете выбрать **Только для этого спрайта **при создании списка.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Теперь ты увидишь много новых блоков кода для использования списков. Пустой список должен быть виден в верхнем левом углу рабочей области.
 
 ![screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Каждый цвет имеет свой номер, поэтому ты можешь выбрать случайный цвет, случайным образом выбрав номер и добавив его в список.
 
-\--- task \--- Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+\--- task \--- Добавьте этот код в спрайт персонажа, чтобы выбрать случайное число и добавить его в последовательность `sequence`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
@@ -56,7 +56,7 @@ add (pick random (1) to (4)) to [sequence v]
 
 \--- /task \---
 
-\--- task \--- Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list. \--- /task \---
+\--- task \--- Протестируй свой код. Проверь, что каждый раз, когда ты нажимаешь на флаг, случайное число от 1 до 4 добавляется к списку. \--- /task \---
 
 \--- task \--- Can you add code to your program to generate five random numbers at once?
 
