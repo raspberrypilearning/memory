@@ -15,25 +15,25 @@ end
 
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
+    play drum (\(2\) Bass Drum v) for (0.25) beat
     delete (1 v) of [sequence v]
 else
     Game over :: custom
 end
 ```
 
-Can you make another custom block that all buttons can use?
+Pouvez-vous créer un autre bloc personnalisé que tous les boutons peuvent utiliser?
 
-### Another costume
+### Un autre costume
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+Pouvez-vous voir que votre jeu commence avec votre personnage montrant l'une des quatre couleurs et que le personnage affiche toujours la dernière couleur de la séquence pendant que le joueur répète la séquence de couleurs?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+Pouvez-vous ajouter un autre costume blanc uni à votre personnage et ajouter du code pour que le personnage affiche ce costume au début du jeu et pendant que le joueur répète la séquence?
 
-![screenshot](images/colour-white.png)
+![capture d'écran](images/colour-white.png)
 
-### Difficulty level
+### Niveau de difficulté
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+Pouvez-vous permettre à votre joueur de choisir entre jouer au jeu en «mode facile» (en utilisant uniquement les couleurs rouge et bleu) et en «mode normal» (qui utilise les quatre couleurs)?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+Si vous voulez, vous pouvez même ajouter un mode "dur" qui utilise un cinquième tambour !
