@@ -1,8 +1,8 @@
-## Challenge: improve your game
+## Défi : Améliore ton jeu
 
-### Make more blocks
+### Faire plus de blocs
 
-Do you see any other code that is the same for all four buttons?
+Voyez-vous un autre code identique pour les quatre boutons?
 
 ```blocks3
 when I receive [red v]
