@@ -1,4 +1,4 @@
-## Zufällige Farben
+## Erstelle ein zufällige Farbenfolge
 
 Erstelle zuerst einen Charakter, der eine zufällige Farbfolge anzeigen kann.
 
