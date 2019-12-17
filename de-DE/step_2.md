@@ -4,11 +4,11 @@ Erstelle zuerst einen Charakter, der eine zufällige Farbfolge anzeigen kann.
 
 \--- task \--- Öffne ein neues Scratch-Projekt.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**Online:** Erstelle ein neues Scratch-Projekt unter [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline**: Öffne ein neues Projekt im Offline-Editor.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+Wenn du den Scratch-Offline-Editor herunterladen und installieren möchtest, findest du diesen unter [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
@@ -43,7 +43,7 @@ Du solltest nun eine Menge neuer Code-Blöcke für die Verwendung von Listen seh
 
 ![Screenshot](images/colour-list-blocks-annotated.png)
 
-Jede Farbe hat eine andere Nummer. Um eine zufällige Farbe zu erhalten kannst Du eine Zahl Dir ausdenken und in die Liste einfügen.
+Jede Farbe hat eine andere Nummer, so kannst du eine Zufallszahl auswählen um ein zufällige Farbe in die Liste hinzuzufügen.
 
 Füge diesen Code zur Figur hinzu, um `Sequenz`{:class="block3variables"} nacheinander eine zufällige Nummer zuzuordnen:
 
