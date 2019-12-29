@@ -109,16 +109,16 @@ stop [all v]
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
+   play drum (\(1\) Snare Drum v) for (0.25) beats
+   delete (1 v) of [sequence v]
 else
-    Game over :: custom
+   Game over :: custom
 end
 ```
 
 \--- /task \---
 
-\--- task \--- Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence. \--- /task \---
+\--- task \--- ක්‍රීඩාව ක්‍රීඩා කිරීමෙන් සහ වර්ණ අනුපිළිවෙලෙහි(sequence එකේ) වැරදි ස්ථානයක රතු(red) බොත්තම(button එක) එබීමෙන් ඔබගේ නව(new) කේත(code) කට්ටිය(block) පරීක්ෂා කරන්න. \--- /task \---
 
 Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
 
