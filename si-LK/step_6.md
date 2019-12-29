@@ -1,6 +1,6 @@
 ## වැඩිම(high) ලකුණු(score)
 
-Now save the high score so that you can play against your friends.
+දැන් ඔබේ මිතුරන්ට එරෙහිව ක්‍රීඩා කිරීමට හැකි වන පරිදි, ඔබ ලබාගත් වැඩිම(high) ලකුණු(score එක) සුරැකුම(save) කරන්න.
 
 \--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
 
