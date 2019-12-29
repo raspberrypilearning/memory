@@ -12,9 +12,9 @@
 
 \--- hints \--- \--- hint \--- ඔබේ නව(new) කේතය(code) මෙම රටාව(pattern එක) අනුගමනය කළ යුතුයි:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+`ක්‍රීඩාව අවසන්(Game over)`{:class="block3looks"} පණිවුඩයට(message එකට) පසුව ලබාගත් `ලකුණු(score)`{:class="block3variables"} සංඛ්‍යාව `වැඩිම ලකුණු(high score)`{:class="block3variables"} වලට `වඩා වැඩි(greater than)`{:class="block3operators"} `නම්(If)`{:class="block3control"} `ලකුණු`{:class="block3variables"} `වැඩිම ලකුණු(high score)`{:class="block3variables"} විචල්‍යට `ස්ථාපනය(Set)`{:class="block3variables"} කරන්න. ක්‍රීඩකයාගේ නම `විමසා(Ask)`{:class="block3sensing"} `පිළිතුර(answer)`{:class="block3sensing"} `නම(name)`{:class="block3variables"} නම් විචල්‍යට `ස්ථාපනය(Set)`{:class="block3variables"} කරන්න. \--- /hint \--- \--- hint \---
 
-You need the following blocks:
+ඔබට පහත ඇති කට්ටි(blocks) අවශ්‍ය වේවි:
 
 ![ballerina](images/ballerina.png)
 
@@ -39,23 +39,23 @@ set [high score v] to [ ]
 set [name v] to [ ] 
 ```
 
-\--- /hint \--- \--- hint \--- Here's how your code for when the red button is pressed should look:
+\--- /hint \--- \--- hint \--- රතු(red) බොත්තම(button එක) එබූ විට, ඔබේ කේතය(code එක) මෙවැනි එකක් වියයුතුයි:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
+   play drum (item (1 v) of [sequence v]) for (0.25) beats
+   delete (1 v) of [sequence v]
 else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
+   say [Game over!] for (1) seconds
+   if < (score :: variables) > (high score) > then
+       set [high score v] to (score :: variables)
+       ask [High score! What is your name?] and wait
+       set [name v] to (answer)
+   end
+   stop [all v]
 end
 ```
 
