@@ -4,7 +4,7 @@
 
 \--- no-print \---
 
-Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+ආරම්භ කිරීමට කොළ(green) කොඩිය(flag එක) ක්ලික් කරන්න, ඉන්පසු චලනය කිරීමට ඊතල(arrow) යතුරු(keys) සහ පැනීමට <kbd>ඉඩ යතුර(space bar)</kbd> භාවිතා කරන්න.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -15,6 +15,6 @@ Click the green flag to start, and then use the arrow keys to move and the <kbd>
 
 \--- print-only \---
 
-![dodgeball game being played](images/dodgeball-showcase.png)
+![ඩොජ්බෝල් ක්‍රීඩාව ක්‍රීඩා කරනලදී](images/dodgeball-showcase.png)
 
 \--- /print-only \---
