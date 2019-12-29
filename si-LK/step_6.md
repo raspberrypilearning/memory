@@ -41,7 +41,7 @@ set [name v] to [ ]
 
 \--- /hint \--- \--- hint \--- රතු(red) බොත්තම(button එක) එබූ විට, ඔබේ කේතය(code එක) මෙවැනි එකක් වියයුතුයි:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -65,7 +65,7 @@ end
 
 එක් එක් වර්ණ හතර සඳහාම 'ක්‍රීඩාව අවසන්'('game over') කේතය(code එක) හරියටම සමාන බව ඔබට පෙනේද?
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 say [Game over!] for (1) seconds
@@ -87,7 +87,7 @@ stop [all v]
 
 \--- task \--- `රතු`{:class="block3events"} විකාශනයට සමඟ සම්බන්ධ `නැත්නම්(else)`{:class="block3control"} කට්ටිය(block) `ක්‍රීඩාව අවසන්(game over)`{:class="block3myblocks"} කේත(code) කට්ටියට(block) එක් කරන්න, එවිට එය මේ ආකාරයට පෙනේවී:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 define Game over
@@ -104,7 +104,7 @@ stop [all v]
 
 \--- task \--- දැන් `රතු(red)`{:class="block3events"} විකාශනය(broadcast) සමඟ සම්බන්ධ `නැත්නම්(else)`{:class="block3control"} කට්ටියේ(block එකේ) ඇති කේතය(code එක) ඉවත් කර ඒ වෙනුවට `ක්‍රීඩාව අවසන්(Game over)`{:class="block3myblocks"} කට්ටිය එක් කරන්න:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -124,7 +124,7 @@ end
 
 \--- task \--- අනෙක් වර්ණ `විකාශනය`{:class="block3events"} සඳහා සම්බන්ධ `නැත්නම්(else)`{:class="block3control"} කට්ටියේ(block එකේ) ඇති කේතය ඔබගේ නව `ක්‍රීඩාව අවසන්(Game over)`{:class="block3myblocks"} කට්ටිය(block එක) මගින් ප්‍රතිස්ථාපනය කරන්න. `නිල්(blue)`{:class="block3events"} පණිවිඩය(message එක) සඳහා යෙදිය යුතු කේතය(code එක) මෙවන් එකක් විය යුතුයි
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
@@ -138,19 +138,19 @@ end
 
 \--- /task \---
 
-\--- task \--- Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+\--- task \--- දැන් වැරදි(wrong) බොත්තමක්(button එකක්) එබූ විට වාදනය වියයුතු ශබ්දයක් එක් කරන්න. ඔබට මෙම කේතය(code එක) ඔබ විසින් සාදන ලද `ක්‍රීඩාව අවසන්(Game over)`{:class="block3myblocks"}කට්ටියට(block එකට) එක් කිරීමට අවශ්‍ය වන්නේ එක් වරක් පමණක්, මිස වාර හතරක් නොවේ!
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 define Game over
 start sound [Cough1 v]
 say [Game over!] for (1) seconds
 if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+   play sound (trumpet1 v)
+   set [high score v] to (score)
+   ask [High score! What is your name?] and wait
+   set [name v] to (answer)
 end
 stop [all v]
 ```
