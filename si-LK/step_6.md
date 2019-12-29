@@ -61,18 +61,18 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+අනෙක් වර්ණ තුන සඳහාද ඔබේ sprite චරිතයට මෙම නව(new) කේතය(code එක) එක් කළ යුතුය!
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+එක් එක් වර්ණ හතර සඳහාම 'ක්‍රීඩාව අවසන්'('game over') කේතය(code එක) හරියටම සමාන බව ඔබට පෙනේද?
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
 say [Game over!] for (1) seconds
 if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+   set [high score v] to (score :: variables)
+   ask [High score! What is your name?] and wait
+   set [name v] to (answer)
 end
 stop [all v]
 ```
