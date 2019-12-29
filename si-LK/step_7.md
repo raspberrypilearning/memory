@@ -34,6 +34,6 @@ end
 
 ### දුෂ්කරතා(Difficulty) මට්ටම(level)
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+'පහසු මාදිලිය(easy mode)' (රතු සහ නිල් වර්ණ භාවිතා කරමින්) හෝ 'සාමාන්‍ය මාදිලිය(normal mode)' (වර්ණ හතරම භාවිතා කරමින්) තෝරා ගැනීමට ඔබේ ක්‍රීඩකයාට ඉඩ දෙන පරිදි සැකසිය හැකිද? 
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+ඔබට අවශ්‍ය නම්, 'අසීරු මාදිලිය(hard mode)' පවා එයට එක් කළ හැකිය!
