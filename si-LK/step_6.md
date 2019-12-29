@@ -4,9 +4,9 @@
 
 \--- task \--- `වැඩිම ලකුණු(high score)` {:class="block3variables"} සහ `නම(name)`{:class="block3variables"} ලෙස නව(new) විචල්‍ය(variables) දෙකක් ඔබේ ව්‍යාපෘතියට එක් කර. \--- /task \---
 
-ක්‍රීඩකයා විසින් අනුක්‍රමය වැරදියට ලබාදීම නිසා ක්‍රීඩාව අවසන් වන විට, ක්‍රීඩකයාට වත්මන් ඉහළම ලකුණු(high score) සංඛ්‍යාවට වඩා වැඩි ලකුණු ඇත් දැයි පරීක්ෂා කළ යුතුය. If it is, the game should save the score as the high score, and also store the name of the player.
+ක්‍රීඩකයා විසින් අනුක්‍රමය වැරදියට ලබාදීම නිසා ක්‍රීඩාව අවසන් වන විට, ක්‍රීඩකයාට වත්මන් ඉහළම ලකුණු(high score) සංඛ්‍යාවට වඩා වැඩි ලකුණු ඇත් දැයි පරීක්ෂා කළ යුතුය. එය එසේ නම්, එම ලකුණු සංඛ්‍යාව ක්‍රීඩාවේ ඉහළම ලකුණු(high score එක) ලෙස සුරැකුම්(save) කළ යුතු අතර ක්‍රීඩකයාගේ නමද සුරැකුම්(save) කළ යුතුය.
 
-\--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- task \--- `ඉහළම ලකුණු(high score එක)`{:class="block3variables"} සුරැකුම කිරීම සඳහා ඔබේ sprite චරිතය වෙත කේතයක්(code එකක්) එක් කරන්න. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
