@@ -77,9 +77,9 @@ end
 stop [all v]
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+ඔබට කිසියම් 'ක්‍රීඩාව අවසන්'('game over') කේතයක්(code එකක්) වෙනස් කිරීමට අවශ්‍ය නම්, උදාහරණයක් ලෙස ශබ්දයක් එක් කිරීමට හෝ 'ක්‍රීඩාව අවසන්'('game over') පණිවිඩය(message එක) වෙනස් කිරීමට අවශ්‍ය නම්, ඔබ එය හතර වතාවක් වෙනස් කළ යුතුයි. එය කරදරකාරී වන අතර බොහෝ කාලයක් වැයවනු ඇත.
 
-Instead, you can define your own code block, and use it anywhere in your project.
+ඒ වෙනුවට, ඔබට ඔබේම කේත(code) කට්ටියක්(block) අර්ථ දැක්විය(define කළ) හැකි අතර එය ඔබේ ව්‍යාපෘතියේ ඕනෑම තැනක භාවිතා කළහැකිය.
 
 \--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
