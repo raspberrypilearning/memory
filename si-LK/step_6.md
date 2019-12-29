@@ -81,7 +81,7 @@ stop [all v]
 
 ඒ වෙනුවට, ඔබට ඔබේම කේත(code) කට්ටියක්(block) අර්ථ දැක්විය(define කළ) හැකි අතර එය ඔබේ ව්‍යාපෘතියේ ඕනෑම තැනක භාවිතා කළහැකිය.
 
-\--- task \--- Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+\--- task \--- ` මගේ කට්ටි(My blocks)`{:class="block3myblocks"} මත ක්ලික් කරන්න, ඉන්පසු **කට්ටියක් සාදන්න(Make a Block)** මත, මෙම නව කට්ටිය(block එක) අමතන්න(call කරන්න) `ක්‍රීඩාව අවසන්(Game over)`{:class="block3myblocks"}.
 
 \--- /task \---
 
