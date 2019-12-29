@@ -22,17 +22,17 @@ else
 end
 ```
 
-Can you make another custom block that all buttons can use?
+සියලුම බොත්තම්(buttons) සඳහා භාවිතා කළ හැකි තවත් අභිරුචි(custom) කට්ටියක්(block එකක්) සෑදිය හැකිද?
 
-### Another costume
+### තවත් ඇඳුමක්(costume)
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+ඔබේ ක්‍රීඩාව ආරම්භ වන්නේ චරිතය වර්ණ හතරෙන් එකක් පෙන්වන ලෙසට බවත්, ක්‍රීඩකයා වර්ණ අනුක්‍රමය පුනරාවර්තනය(repeat) කරන අතරතුර, චරිතය සෑම විටම වර්ණ අනුක්‍රමයෙහි(sequence) අවසාන වර්ණය පෙන්වන බවත් ඔබට පෙනේද? 
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+ඔබේ චරිතයට(character එකට) තවත් සරල(plain) සුදු(white) ඇඳුමක්(costume එකක්) එක් කළ හැකිද?, ක්‍රීඩකයා අනුක්‍රමය(sequence එක) පුනරාවර්තනය(repeat) කරන අතරතුර, චරිතය(character එක) මෙම සුදු ඇඳුම ක්‍රීඩාවේ ආරම්භයේදීම පෙන්වන පරිදි කේතයක්(code එකක්) සකස් කරන්න.
 
 ![තිර රුව(screenshot)](images/colour-white.png)
 
-### Difficulty level
+### දුෂ්කරතා(Difficulty) මට්ටම(level)
 
 Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
