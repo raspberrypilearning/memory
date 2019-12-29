@@ -1,6 +1,6 @@
 ## ඊලඟට කුමක්ද?
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
+මීළඟ ව්‍යාපෘතිය අත්හදා බලන්න, [ඩොජ්බෝල්(Dogeball)](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), එහිදී ඔබ වේදිකාවෙන්(platform එකෙන්) වේදිකාවට(platform එකට) ගමන් කරන විට බෝල වලින් බේරියයුතු(doge) ක්‍රීඩාවක් ක්‍රීඩා කරනු ඇත.
 
 \--- no-print \---
 
