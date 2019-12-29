@@ -2,9 +2,9 @@
 
 දැන් ඔබේ මිතුරන්ට එරෙහිව ක්‍රීඩා කිරීමට හැකි වන පරිදි, ඔබ ලබාගත් වැඩිම(high) ලකුණු(score එක) සුරැකුම(save) කරන්න.
 
-\--- task \--- Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project. \--- /task \---
+\--- task \--- `වැඩිම ලකුණු(high score)` {:class="block3variables"} සහ `නම(name)`{:class="block3variables"} ලෙස නව(new) විචල්‍ය(variables) දෙකක් ඔබේ ව්‍යාපෘතියට එක් කර. \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+ක්‍රීඩකයා විසින් අනුක්‍රමය වැරදියට ලබාදීම නිසා ක්‍රීඩාව අවසන් වන විට, ක්‍රීඩකයාට වත්මන් ඉහළම ලකුණු(high score) සංඛ්‍යාවට වඩා වැඩි ලකුණු ඇත් දැයි පරීක්ෂා කළ යුතුය. If it is, the game should save the score as the high score, and also store the name of the player.
 
 \--- task \--- Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
