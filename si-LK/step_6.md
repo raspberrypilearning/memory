@@ -85,7 +85,7 @@ stop [all v]
 
 \--- /task \---
 
-\--- task \--- Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+\--- task \--- `රතු`{:class="block3events"} විකාශනයට සමඟ සම්බන්ධ `නැත්නම්(else)`{:class="block3control"} කට්ටිය(block) `ක්‍රීඩාව අවසන්(game over)`{:class="block3myblocks"} කේත(code) කට්ටියට(block) එක් කරන්න, එවිට එය මේ ආකාරයට පෙනේවී:
 
 ![ballerina](images/ballerina.png)
 
@@ -93,16 +93,16 @@ stop [all v]
 define Game over
 say [Game over!] for (1) seconds
 if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+   set [high score v] to (score :: variables)
+   ask [High score! What is your name?] and wait
+   set [name v] to (answer)
 end
 stop [all v]
 ```
 
 \--- /task \---
 
-\--- task \--- Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+\--- task \--- දැන් `රතු(red)`{:class="block3events"} විකාශනය(broadcast) සමඟ සම්බන්ධ `නැත්නම්(else)`{:class="block3control"} කට්ටියේ(block එකේ) ඇති කේතය(code එක) ඉවත් කර ඒ වෙනුවට `ක්‍රීඩාව අවසන්(Game over)`{:class="block3myblocks"} කට්ටිය එක් කරන්න:
 
 ![ballerina](images/ballerina.png)
 
