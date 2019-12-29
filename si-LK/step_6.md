@@ -122,17 +122,17 @@ end
 
 ඔබගේ නව `ක්‍රීඩාව අවසන්(game over)`{:class="block3myblocks"} කට්ටිය(block) යනු **ශ්‍රිතයකි(function එකකි)**, එය `ක්‍රීඩාව අවසන්(Game over)`{:class="block3myblocks"} කට්ටිය(block) සමග ඔබේ කේතයේ(code එකේ) ඔබ කැමති ඕනෑම තැනක භාවිතා කළ හැකි කුඩා පිටපතකි(script).
 
-\--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+\--- task \--- අනෙක් වර්ණ `විකාශනය`{:class="block3events"} සඳහා සම්බන්ධ `නැත්නම්(else)`{:class="block3control"} කට්ටියේ(block එකේ) ඇති කේතය ඔබගේ නව `ක්‍රීඩාව අවසන්(Game over)`{:class="block3myblocks"} කට්ටිය(block එක) මගින් ප්‍රතිස්ථාපනය කරන්න. `නිල්(blue)`{:class="block3events"} පණිවිඩය(message එක) සඳහා යෙදිය යුතු කේතය(code එක) මෙවන් එකක් විය යුතුයි
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
+   play drum (\(2\) Bass Drum v) for (0.25) beats
+   delete (1 v) of [sequence v]
 else
-    Game over :: custom
+   Game over :: custom
 end
 ```
 
