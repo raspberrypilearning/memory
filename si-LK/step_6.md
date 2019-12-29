@@ -120,7 +120,7 @@ end
 
 \--- task \--- ක්‍රීඩාව ක්‍රීඩා කිරීමෙන් සහ වර්ණ අනුපිළිවෙලෙහි(sequence එකේ) වැරදි ස්ථානයක රතු(red) බොත්තම(button එක) එබීමෙන් ඔබගේ නව(new) කේත(code) කට්ටිය(block) පරීක්ෂා කරන්න. \--- /task \---
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+ඔබගේ නව `ක්‍රීඩාව අවසන්(game over)`{:class="block3myblocks"} කට්ටිය(block) යනු **ශ්‍රිතයකි(function එකකි)**, එය `ක්‍රීඩාව අවසන්(Game over)`{:class="block3myblocks"} කට්ටිය(block) සමග ඔබේ කේතයේ(code එකේ) ඔබ කැමති ඕනෑම තැනක භාවිතා කළ හැකි කුඩා පිටපතකි(script).
 
 \--- task \--- Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
 
