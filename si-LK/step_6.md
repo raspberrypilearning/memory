@@ -6,11 +6,11 @@
 
 ක්‍රීඩකයා විසින් අනුක්‍රමය වැරදියට ලබාදීම නිසා ක්‍රීඩාව අවසන් වන විට, ක්‍රීඩකයාට වත්මන් ඉහළම ලකුණු(high score) සංඛ්‍යාවට වඩා වැඩි ලකුණු ඇත් දැයි පරීක්ෂා කළ යුතුය. එය එසේ නම්, එම ලකුණු සංඛ්‍යාව ක්‍රීඩාවේ ඉහළම ලකුණු(high score එක) ලෙස සුරැකුම්(save) කළ යුතු අතර ක්‍රීඩකයාගේ නමද සුරැකුම්(save) කළ යුතුය.
 
-\--- task \--- `ඉහළම ලකුණු(high score එක)`{:class="block3variables"} සුරැකුම කිරීම සඳහා ඔබේ sprite චරිතය වෙත කේතයක්(code එකක්) එක් කරන්න. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+\--- task \--- `ඉහළම ලකුණු(high score එක)`{:class="block3variables"} සුරැකුම කිරීම සඳහා ඔබේ sprite චරිතය වෙත කේතයක්(code එකක්) එක් කරන්න. ක්‍රීඩකයාගේ නම විමසා එය `නම(name)`{:class="block3variables"} යන විචල්‍යයේ සුරැකුම(save) කරන්න.
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- Your new code needs to follow this pattern:
+\--- hints \--- \--- hint \--- ඔබේ නව(new) කේතය(code) මෙම රටාව(pattern එක) අනුගමනය කළ යුතුයි:
 
 After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"} \--- /hint \--- \--- hint \---
 
