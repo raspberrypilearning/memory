@@ -1,10 +1,10 @@
 ## Kaj sledi?
 
-Preizkusi naslednji projekt [Pazi, žoga!](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), kjer boš ustvaril-a igro, v kateri se moraš izogibati žogam, medtem ko se premikaš iz ploščadi na ploščad.
+Preizkusi naslednji projekt [Pazi, žoga!](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), kjer boš ustvaril-a igro, v kateri se moraš izogibati žogam, medtem ko se premikaš s ploščadi na ploščad.
 
 \--- no-print \---
 
-Klikni na zeleno zastavico, da začneš in uporabljaj smerne tipke za premikanje in <kbd>preslednico</kbd> za skok.
+Za začetek klikni na zeleno zastavico. Uporabi smerne tipke za premikanje in <kbd>preslednico</kbd> za skok.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
