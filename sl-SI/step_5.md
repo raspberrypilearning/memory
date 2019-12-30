@@ -6,7 +6,7 @@ Zaenkrat si mora igralec zapomniti zaporedje petih barv. Izboljšaj svojo igro, 
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
-Glede na točke `score`{:class="block3variables"}, se bo igra odločila, kako dolgo bo zaporedje. Začni s številom točk (in dolžino zaporedja) `3`.
+Glede na `točke`{:class="block3variables"} bo igra določila, kako dolgo bo zaporedje. Začni s številom točk (in dolžino zaporedja) `3`.
 
 \--- task \--- Na začetek bloka `ko kliknemo na zastavico`v figuri tvojega lika {:class="block3events"} dodaj kodo, ki nastavi `točke`{:class="block3variables"} na `3`. \--- /task \---
 
