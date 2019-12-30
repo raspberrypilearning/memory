@@ -57,4 +57,4 @@ konec
 
 \--- /task \---
 
-\--- task \--- Prijatelji naj igro preizkusijo. Ne pozabi skriti seznama `zaporedje`{:class="block3variables"}, preden jo začenjo igrati! \--- /task \---
+\--- task \--- Prijatelji naj igro preizkusijo. Ne pozabi skriti seznama `zaporedje`{:class="block3variables"}, preden jo začnejo igrati! \--- /task \---
