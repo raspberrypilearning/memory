@@ -28,7 +28,7 @@ Dodaj podobno kodo modri, zeleni in rumeni figuri, da bodo `objavile`{:class="bl
 
 \--- /task \---
 
-Si si zapomnil, da je `objava`{:class="block3events"} kot sporočilo posredovano preko zvočnika? Dodal boš kodo, ki bo poskrbela, da se bo figura lika odzvala na sporočilo `objave`{:class="block3events"}.
+Še veš, da je `objava`{:class="block3events"} kot sporočilo posredovano preko zvočnika? Dodaj kodo, ki bo poskrbela, da se bo figura lika odzvala na sporočilo `objave`{:class="block3events"}.
 
 \--- task \---
 
