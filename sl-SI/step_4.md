@@ -130,7 +130,7 @@ Ko igralec pravilno ponovi zaporedje, je seznam `zaporedje`{:class="block3variab
 
 \--- /task \---
 
-\--- task \--- Zamenjaj oder in uvozi zvok `drum machine` (ritem mašina) ali drug zvok, ki ti je všeč.
+\--- task \--- Izberi oder in vanj uvozi zvok `drum machine` (ritem mašina) ali drug zvok, ki ti je všeč.
 
 [[[generic-scratch3-sound-from-library]]]
 
