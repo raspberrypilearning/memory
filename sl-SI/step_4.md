@@ -80,7 +80,7 @@ konec
 
 Kateri del kode bo spremenjen in kateri del bo ostal enak, ko figura prejme sporočilo `modra`{:class="block3events"}? Zapomni si, da ima vsaka barva svojo številko.
 
-\--- task \--- Spremeni kodo lika figure, da se bo lik pravilno odzval na sporočilo `modra`{:class="block3events"}.
+\--- task \--- Spremeni kodo lika figure, da se bo pravilno odzval na sporočilo `modra`{:class="block3events"}.
 
 \--- hints \--- \--- hint \---
 
@@ -117,7 +117,7 @@ Podvoji kodo še dvakrat (za zeleni in rumeni gumb) in spremeni ustrezne dele, d
 
 Ne pozabi preizkusiti kode! Ali si lahko zapomniš zaporedje petih barv? Ali je zaporedje vsakič drugačno?
 
-Ko igralec pravilno ponovi zaporedje, je seznam `zaporedje`{:class="block3variables"} prazno in igralec zmaga. Če želiš, lahko za nagrado prikažeš kakšne utripajoče luči, potem ko je seznam `zaporedje`{:class="block3variables"} prazen.
+Ko igralec pravilno ponovi zaporedje, je seznam `zaporedje`{:class="block3variables"} prazen in igralec zmaga. Če želiš, lahko za nagrado prikažeš kakšne utripajoče luči, potem ko je seznam `zaporedje`{:class="block3variables"} prazen.
 
 \--- task \--- Na konec zaporedja ukazov pod blokom `ko kliknemo na zastavico`{:class="block3events"} dodaj to kodo:
 
