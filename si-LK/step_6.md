@@ -16,7 +16,7 @@
 
 ඔබට පහත ඇති කට්ටි(blocks) අවශ්‍ය වේවි:
 
-![ballerina](images/ballerina.png)
+![මුද්‍රා නාට්‍ය ශිල්පියා](images/ballerina.png)
 
 ```blocks3
 if < > then
