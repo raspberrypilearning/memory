@@ -16,7 +16,7 @@
 
 आपको निम्नलिखित ब्लॉक चाहिए:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 यदि < > तो
@@ -41,7 +41,7 @@
 
 \--- /hint \--- \--- hint \--- जब लाल बटन दबाया गया के लिए आपका कोड इस प्रकार दिखाई देना चाहिए:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 जब मुझे [लाल v] प्राप्त हो
@@ -65,7 +65,7 @@
 
 क्या आप देख सकते हैं कि चारों रंगों के लिए 'खेल समाप्त' कोड बिल्कुल समान है?
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 (1) सेकंड के लिए [खेल समाप्त!] कहें
@@ -88,7 +88,7 @@
 
 \--- task \--- `लाल`{:class="block3events"} प्रसारण से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को `खेल समाप्त`{:class="block3myblocks"} ब्लॉक में जोड़ें ताकि यह इस तरह दिखे:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 खेल समाप्त को परिभाषित करें
@@ -105,7 +105,7 @@
 
 \--- task \--- अब `लाल`{:class="block3events"} प्रसारण से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को हटाएँ और इसकी जगह `खेल समाप्त`{:class="block3myblocks"} ब्लॉक को जोड़ें:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 जब मुझे [लाल v] प्राप्त हो
@@ -125,7 +125,7 @@
 
 \--- task \--- अब अन्य रंगो के लिए `प्रसारित करें`{:class="block3events"} से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को भी `खेल समाप्त`{:class="block3myblocks"} ब्लॉक से बदलें। यहाँ दिखाया गया है कि `नीला`{:class="block3events"} संदेश के लिए कोड कैसा दिखना चाहिए
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 जब मुझे [नीला v] प्राप्त हो
@@ -141,7 +141,7 @@
 
 \--- task \--- अब एक आवाज़ जोड़ें जो गलत बटन दबाने पर बजेगी। आपको `खेल समाप्त`{:class="block3myblocks"} ब्लाक जो आपने बनाया था में इस कोड को केवल एक बार जोड़ना होगा, और चार अलग-अलग जगहों पर नहीं!
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 खेल समाप्त को परिभाषित करें
