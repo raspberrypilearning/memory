@@ -4,11 +4,11 @@ Primeiro, crie uma entidade que possa exibir uma sequência aleatória de cores.
 
 \--- task \--- Abra um novo projeto do Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**Online**: abra um novo projeto online de Scratch em [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline**: abra um novo projeto no editor offline.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+Se você precisa baixar e instalar o editor offline do Scratch, você pode encontra-lo em [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
