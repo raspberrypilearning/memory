@@ -24,7 +24,7 @@
 
 इन ब्लॉक्स की आपको आवश्यकता होगी:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 (0.25) बीट्स के लिए (\ (1 \) फंदे वाला ड्रम v) बजाएँ
