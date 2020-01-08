@@ -4,11 +4,11 @@
 
 \---task \--- एक नया स्क्रैच प्रोजेक्ट खोलें।
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**ऑनलाइन**: [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"} पर एक नया Scratch प्रोजेक्ट खोलें।
 
 **ऑफ़लाइन**: ऑफ़लाइन संपादक में एक नया प्रोजेक्ट खोलें।
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+यदि आपको स्क्रैच ऑफ़लाइन संपादक को डाउनलोड और इंस्टॉल करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](https://rpf.io/scratchoff) {:target="_blank"} पर पा सकते हैं।
 
 \--- /task \---
 
@@ -29,7 +29,7 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 यदि आप चाहें, तो आप एक अलग रंग के साथ पोशाक के कुछ हिस्सों को भरने के लिए ** आकृति को रंगे ** का उपयोग कर सकते हैं।
 
-![color-a-shape](images/color-a-shape.png)
+![आकृति को रंगे](images/color-a-shape.png)
 
 फिर, रंगों के यादृच्छिक अनुक्रम को संग्रहीत करने के लिए एक सूची जोड़ें जिसे खिलाड़ियों को याद रखना होगा।
 
@@ -47,7 +47,7 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 \--- task \--- एक यादृच्छिक संख्या चुनने के लिए और इसे ` अनुक्रम ` {:class="block3variables"}: सूची में जोड़ने के लिए इस कोड को पात्र स्प्राइट में जोड़ें।
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 जब ध्वज पर क्लिक किया
@@ -64,7 +64,7 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 आपका कोड ऐसा दिखना चाहिए:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 जब झंडा क्लिक किया
@@ -78,7 +78,7 @@ If you need to download and install the Scratch offline editor, you can find it 
 
 \--- task \--- प्रत्येक बार जब कोई संख्या सूची में जुड़ जाती है, तो पात्र की पोशाक बदलनी चाहिए ताकि पोशाक का रंग संख्या से मेल खाए। इन ब्लॉकों को तुरंत अपने कोड में डालें जहां एक यादृच्छिक संख्या ` अनुक्रम ` में जोड़ी जाती है {:class="block3variables"}:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 कॉस्ट्यूम को [अनुक्रम v] के (आइटम ([अनुक्रम v] की लंबाई)) से बदलें
