@@ -1,4 +1,4 @@
-## Add sound
+## आवाज डालें
 
 \--- task \---
 
@@ -36,7 +36,7 @@
 
 \--- hint \--- यहां बताया गया है कि आपका तैयार कोड कैसा दिखना चाहिए:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 जब झंडा क्लिक किया
