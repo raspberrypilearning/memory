@@ -26,7 +26,7 @@ En este proyecto, crearás un juego de memoria en el que tendrás que memorizar 
 
 + Cómo añadir sonido a tu projecto Scratch
 + Cómo crear y usar listas para almacenar datos
-+ Cómo crear y usar bloques personalizados para repetir código
++ Cómo crear y usar bloques personalizados para reutilizar código
 
 \--- /collapse \---
 
@@ -36,11 +36,11 @@ En este proyecto, crearás un juego de memoria en el que tendrás que memorizar 
 
 ### Hardware
 
-+ Una computadora capaz de hacer correr Scratch 3
++ Un ordenador capaz de ejecutar Scratch 3
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (ya sea [online](https://rpf.io/scratchon){:target="_blank"} u [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
 
 ## \--- collapse \---
 
