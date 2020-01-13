@@ -1,6 +1,6 @@
 \--- no-print \---
 
-Este es el ** Scratch 3 ** Versión del proyecto. También hay una versión [ Scratch 2 del proyecto. ](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Esta es la versión **Scratch 3** del proyecto. También hay una [versión Scratch 2 del proyecto](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
@@ -10,7 +10,7 @@ En este proyecto, crearás un juego de memoria en el que tendrás que memorizar 
 
 ### Lo que harás
 
-\--- no-print \--- Haz clic en la bandera verde para comenzar. Observa la secuencia de colores que muestra en el vestido de la bailarina y escucha al tambor que lo acompaña, luego repite la secuencia de colores. ¡Si el orden de los colores es incorrecto, el juego termina!
+\--- no-print \--- Haz clic en la bandera verde para comenzar. Observa la secuencia de colores que muestra el vestido de la bailarina y escucha al tambor que lo acompaña, luego repite la secuencia de colores. Si el orden de los colores es incorrecto, ¡el juego termina!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
