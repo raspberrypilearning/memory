@@ -76,12 +76,12 @@ end
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- tarea \--- Cada vez que se agrega un número a la lista, el personaje debe cambiar su traje para que el color del traje coincida con el número. Pon estos bloques en tu código inmediatamente debajo del cual se añade un número aleatorio a `secuencia`{:class="block3variables"}:
+\--- task \--- Cada vez que se añada un número a la lista, el personaje debe cambiar su disfraz de forma que el color del traje coincide con el número. Pon estos bloques en tu código justo debajo del bloque que añade un número aleatorio a la lista `secuencia`{:class="block3variables"}:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-cambia de traje a (artículo (longitud de [secuencia v]) de [secuencia v])
+cambiar disfraz a (elemento (longitud de [secuencia v]) de [secuencia v])
 esperar (1) segundos
 ```
 
