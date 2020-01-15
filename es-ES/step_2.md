@@ -27,27 +27,27 @@ Si necesitas descargar e instalar el editor offline de Scratch, puedes encontrar
 
 ![screenshot](images/colour-costume.png) \--- /task \---
 
-Puedes usar la herramienta **colorear una parte** para colorear partes del traje de un color diferente.
+Puedes usar la herramienta **rellenar** para colorear partes del traje de un color diferente.
 
-![coloreas una parte](images/color-a-shape.png)
+![color-a-shape](images/color-a-shape.png)
 
-A continuación, agregue una lista para almacenar la secuencia aleatoria de colores que el jugador debe recordar.
+A continuación, añade una lista para almacenar la secuencia aleatoria de colores que el jugador tiene que recordar.
 
-\--- tarea \--- Crea una lista llamada secuencia ` ` {: class = "block3variables"}. Solo el sprite de caracteres necesita ver esta lista, por lo que puede seleccionar ** Solo para este sprite ** cuando crea la lista.
+\--- task \--- Crea una lista llamada `secuencia`{: class = "block3variables"}. Solo el sprite del personaje necesita ver esta lista, por lo que puedes seleccionar **Sólo para este objeto** al crear la lista.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-Ahora debería ver muchos nuevos bloques de código para usar listas. La lista vacía debe estar visible en la esquina superior izquierda del escenario.
+Ahora deberías ver muchos nuevos bloques de código para usar listas. La lista vacía debería ser visible en la esquina superior izquierda del Escenario.
 
-![captura de pantalla](images/colour-list-blocks-annotated.png)
+![screenshot](images/colour-list-blocks-annotated.png)
 
-Cada color tiene un número diferente, por lo que puede elegir un color al azar al elegir un número al azar y agregarlo a la lista.
+Cada color tiene un número diferente, por lo que puedes elegir un color al azar al elegir un número al azar y agregarlo a la lista.
 
-\--- tarea \--- Agregue este código al sprite de caracteres para elegir un número aleatorio y agregarlo a la secuencia ` ` {: class = "block3variables"}:
+\--- task \--- Añade este código al personaje para elegir un número aleatorio y añadirlo a la lista `secuencia`{:class="block3variables"}:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 al presionar bandera verde
