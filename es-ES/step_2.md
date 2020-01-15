@@ -56,21 +56,21 @@ añadir (número aleatorio entre (1) y (4)) a [secuencia v]
 
 \--- /task \---
 
-\--- tarea \--- Prueba tu código. Comprueba que, cada vez que haces clic en la bandera, un número aleatorio entre 1 y 4 se añade a la lista. \--- /task \---
+\--- task \--- Prueba tu código. Comprueba que, cada vez que haces clic en la bandera, un número aleatorio entre 1 y 4 se añade a la lista. \--- /task \---
 
-\--- tarea \--- ¿Puedes agregar código a tu programa para generar cinco números aleatorios a la vez?
+\--- task \--- ¿Puedes añadir código a tu programa para generar cinco números aleatorios a la vez?
 
-\--- pistas \--- \--- pista \--- Añadir a `eliminar toda la secuencia`{:class="block3variables"} para eliminar primero todos los elementos de la lista, y luego añadir un bloque `repetir`{:class="block3control"} que añade cinco números aleatorios a la lista. \--- /hint \--- \--- hint \---
+\--- hints \--- \--- hint \--- Añade un bloque `eliminar todos de secuencia`{:class="block3variables"} para eliminar primero todos los elementos de la lista, y luego añade un bloque `repetir`{:class="block3control"} que añade cinco números aleatorios a la lista. \--- /hint \--- \--- hint \---
 
-Así es como debería verse tu c'odigo:
+Así es como debería verse tu código:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-al presionar bandera verde
-borrar (todos v) de [sequence v]
+al hacer clic en bandera verde
+eliminar (todos v) de [secuencia v]
 repetir (5) 
-  añade (número al azar entre (1) y (4)) a [sequence v]
+añadir (número aleatorio entre (1) y (4)) a [secuencia v]
 end
 ```
 
