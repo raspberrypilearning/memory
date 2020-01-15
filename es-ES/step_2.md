@@ -50,8 +50,8 @@ Cada color tiene un número diferente, por lo que puedes elegir un color al azar
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-al presionar bandera verde
-añade (número al azar entre (1) y (4)) a [secuencia v]
+al hacer clic en bandera verde
+añadir (número aleatorio entre (1) y (4)) a [secuencia v]
 ```
 
 \--- /task \---
