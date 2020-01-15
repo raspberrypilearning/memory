@@ -2,30 +2,30 @@
 
 Primero crea un personaje que pueda mostrar una secuencia aleatoria de colores.
 
-\--- task \--- Open a new Scratch project.
+\--- task \--- Abre un nuevo proyecto en Scratch.
 
 **En línea:** abre un nuevo proyecto en [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline**: abra un nuevo proyecto en el editor offline.
+**Offline:** abre un nuevo proyecto en el editor offline.
 
 Si necesitas descargar e instalar el editor offline de Scratch, puedes encontrarlo en [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
-\--- tarea \--- Elige un personaje sprite y un telón de fondo. Puedes usar la bailarina, pero tu personaje no tiene que ser una persona, solo necesita poder mostrar diferentes colores.
+\--- task \--- Elige un personaje sprite y un escenario. Puedes usar la bailarina, pero tu personaje no tiene que ser una persona, solo necesita poder mostrar diferentes colores.
 
 ![screenshot](images/colour-sprite.png) \--- /task \---
 
-+ Tu juego debe usar un número diferente para cada color:
++ Tu juego debe usar un número diferente para representar cada color:
     
     + 1 = rojo
     + 2 = azul
     + 3 = verde
     + 4 = amarillo
 
-\--- tarea \--- Da a tu personaje cuatro trajes que tienen diferentes colores, uno traje para cada uno de los cuatro colores mostrados arriba. Asegúrese de que sus trajes coloreados están en el mismo orden que la lista anterior.
+\--- task \--- Crea cuatro disfraces con colores diferentes para tu personaje, un disfraz para cada uno de los cuatro colores mostrados arriba. Asegúrate de que los colores de los disfraces están en el mismo orden que la lista anterior.
 
-![captura de pantalla](images/colour-costume.png) \--- /task \---
+![screenshot](images/colour-costume.png) \--- /task \---
 
 Puedes usar la herramienta **colorear una parte** para colorear partes del traje de un color diferente.
 
