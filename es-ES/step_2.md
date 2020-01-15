@@ -1,8 +1,8 @@
-## cambiar disfraz a (elemento (last v) de [sequence v] :: list) esperar (1) segundos
+## Crea una secuencia de colores
 
 Primero crea un personaje que pueda mostrar una secuencia aleatoria de colores.
 
-\--- tarea \--- Abrir un nuevo proyecto Scratch.
+\--- task \--- Open a new Scratch project.
 
 **En línea:** abre un nuevo proyecto en [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
