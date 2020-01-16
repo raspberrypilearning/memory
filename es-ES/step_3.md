@@ -1,12 +1,12 @@
-## Reto: Añadir sonido
+## Añadir sonido
 
 \--- task \---
 
-Prueba tu proyecto unas cuantas veces. ¿Observa que a veces se elige el mismo número dos veces (o más) en una fila, lo que hace que la secuencia sea más difícil de memorizar?
+Prueba tu proyecto unas cuantas veces. ¿Te has dado cuenta que a veces se elige el mismo número dos veces (o más) en una fila, lo que hace que la secuencia sea más difícil de memorizar?
 
 \--- /task \---
 
-¿Puedes hacer que suene un tambor cada vez que el objeto personaje cambia de disfraz? ¿Y qué tal un sonido de tambor diferente para cada color?
+¿Puedes hacer que suene un tambor cada vez que el personaje cambie de disfraz? ¿Y qué tal un sonido de tambor diferente para cada color?
 
 \--- task \---
 
