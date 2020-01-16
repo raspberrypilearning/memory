@@ -1,6 +1,6 @@
 ## Repite la secuencia
 
-Ahora vas a agregar cuatro botones que el jugador tiene que presionar para repetir la secuencia de colores.
+Ahora vas a añadir cuatro botones que el jugador tiene que presionar para repetir la secuencia de colores.
 
 -- task \--- Agrega cuatro nuevos sprites a tu proyecto para representar los cuatro botones.
 
