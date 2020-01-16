@@ -2,12 +2,12 @@
 
 Ahora vas a añadir cuatro botones que el jugador tiene que presionar para repetir la secuencia de colores.
 
--- task \--- Agrega cuatro nuevos sprites a tu proyecto para representar los cuatro botones.
+-- task \--- Añade cuatro nuevos sprites (objetos) a tu proyecto para representar los cuatro botones.
 
-+ Editar los trajes de los nuevos sprites para que haya un sprite en cada uno de los cuatro colores
-+ Pon los sprites en el mismo orden en el escenario que los trajes: rojo, azul, verde, amarillo
++ Edita los disfraces de los nuevos sprites para que haya un sprite en cada uno de los cuatro colores
++ Pon los sprites en el escenario en el mismo orden que los trajes: rojo, azul, verde, amarillo
 
-![captura de pantalla](images/colour-drums.png) \--- /task \---
+![screenshot](images/colour-drums.png) \--- /task \---
 
 \--- tarea \--- Añadir código al sprite rojo para que, cuando el sprite sea pulsado, `emita`{:class="block3events"} un mensaje 'rojo' al sprite de caracteres:
 
