@@ -10,7 +10,7 @@ Prueba tu proyecto unas cuantas veces. ¿Te has dado cuenta que a veces se elige
 
 \--- task \---
 
-Añade la extensión de Música a tu proyecto para que puedas usar el bloque `toca la bateria`{:class="block3extensions"}.
+Añade la extensión de Música a tu proyecto para que puedas usar el bloque `tocar tambor`{:class="block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,7 +18,7 @@ Añade la extensión de Música a tu proyecto para que puedas usar el bloque `to
 
 \--- task \---
 
-El código que toca el tambor es ** muy ** similar al código que cambia el traje del personaje.
+El código que toca el tambor es **muy** similar al código que cambia el disfraz del personaje.
 
 \--- pistas \--- \--- pista \--- Sólo necesitas añadir dos bloques: un `play drum para (0.25) golpea`{:class="block3sound"} bloque y un elemento `item (longitud de secuencia) de la secuencia`{:class="block3variables"} bloque. \--- /hint \--- \--- hint \---
 
