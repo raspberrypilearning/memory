@@ -71,7 +71,7 @@ al hacer clic en bandera verde
 eliminar (todos v) de [secuencia v]
 repetir (5) 
 añadir (número aleatorio entre (1) y (4)) a [secuencia v]
-end
+fin
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
