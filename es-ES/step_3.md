@@ -39,13 +39,13 @@ tocar tambor (\(1\) Caja v) durante (0.25) tiempos
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-cuando se hace clic en la bandera
-eliminar (todo v) de [secuencia v]
-repetición (5)
-    agregar (seleccionar aleatoriamente (1) a (4)) a [secuencia v]
-    tocar el tambor (elemento (longitud de [secuencia v]) de [secuencia v]) para (0.25) beats
-    cambia el traje a (elemento (longitud de [secuencia v]) de [secuencia v])
-    esperar (1) segundos
+al hacer clic en bandera
+eliminar (todos v) de [secuencia v]
+repetir (5)
+Añadir (número aleatorio entre (1) y (4)) a [secuencia v]
+tocar tambor (elemento (longitud de [secuencia v]) de [secuencia v]) durante (0.25) tiempos
+cambiar disfraz a (elemento (longitud de [secuencia v]) de [secuencia v])
+esperar (1) segundos
 fin
 ```
 
