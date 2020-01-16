@@ -32,11 +32,11 @@ Añade código similar a los sprites (objetos) azul, verde y amarillo para hacer
 
 \--- task \---
 
-Cuando el sprite de tu personaje recibe el mensaje ` rojo `, el código debería verificar si el número ` 1 ` está al comienzo de la lista (lo que significa que ` rojo ` es el siguiente color en la secuencia).
+Cuando el sprite de tu personaje recibe el mensaje `rojo`{:class="block3events"}, el código debería verificar si el número `1` está al comienzo de la lista `secuencia`{:class="block3variables"} (lo que significa que `rojo` es el siguiente color en la secuencia).
 
-Si `1` está al comienzo de la lista, el código debe eliminar el número de la lista, porque el jugador recordó el color correcto. De lo contrario, se acabó el juego, y el código debe ` detener todo ` {: class = "block3control"} para finalizar el juego.
+Si `1` está al comienzo de la lista, el código debe eliminar el número de la lista, porque el jugador recordó el color correcto. De lo contrario, se acaba el juego, y el código debe `detener todos` {: class = "block3control"} para finalizar el juego.
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 al recibir [rojo v]
