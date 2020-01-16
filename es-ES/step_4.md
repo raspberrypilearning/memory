@@ -4,31 +4,31 @@ Ahora vas a añadir cuatro botones que el jugador tiene que presionar para repet
 
 -- task \--- Añade cuatro nuevos sprites (objetos) a tu proyecto para representar los cuatro botones.
 
-+ Edita los disfraces de los nuevos sprites para que haya un sprite en cada uno de los cuatro colores
-+ Pon los sprites en el escenario en el mismo orden que los trajes: rojo, azul, verde, amarillo
++ Edita los disfraces de los nuevos sprites (objetos) para que haya uno en cada uno de los cuatro colores
++ Pon los sprites (objetos) en el escenario en el mismo orden que los trajes: rojo, azul, verde, amarillo
 
 ![screenshot](images/colour-drums.png) \--- /task \---
 
-\--- tarea \--- Añadir código al sprite rojo para que, cuando el sprite sea pulsado, `emita`{:class="block3events"} un mensaje 'rojo' al sprite de caracteres:
+\--- task \--- Añade código al sprite rojo para que, cuando sea pulsado, `envíe`{:class="block3events"} un mensaje 'rojo' al sprite del personaje:
 
-![tambor rojo](images/red_drum.png)
+![red-drum](images/red_drum.png)
 
 ```blocks3
-    cuando  haces click en este sprite
-emite(rojo v)
+    cuando  haces clic en este objeto
+enviar (rojo v)
 ```
 
 \--- /task \---
 
-Una emisión ` ` {: class = "block3events"} es como un mensaje anunciado a través de un altavoz, que puede escuchar, por ejemplo, en escuelas o supermercados. Todos los sprites pueden escuchar el mensaje, pero sólo el sprite cuyo trabajo es responder va a hacer algo.
+Un `enviar` {: class = "block3events"} es como un mensaje anunciado a través de un altavoz, que puedes escuchar, por ejemplo, en escuelas o supermercados. Todos los sprites (objetos) pueden escuchar el mensaje, pero sólo el sprite cuyo trabajo es responder va a hacer algo.
 
 \--- task \---
 
-Añade código similar a los sprites azul, verde y amarillo para hacerlos `broadcast`{:class="block3events"} mensajes sobre su propio color.
+Añade código similar a los sprites (objetos) azul, verde y amarillo para hacerlos `enviar`{:class="block3events"} mensajes sobre su propio color.
 
 \--- /task \---
 
-¿Te acuerdas de que `enviar` {: class = "block3events"} es como un mensaje de altavoz? Añadirá código para que sea tarea del personaje sprite responder a los mensajes `enviar`{:class="block3events"}.
+¿Te acuerdas de que `enviar` {: class = "block3events"} es como un mensaje de altavoz? Añadirás código para que sea tarea del personaje sprite responder a los mensajes `enviar`{:class="block3events"}.
 
 \--- task \---
 
