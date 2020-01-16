@@ -40,12 +40,12 @@ Si `1` está al comienzo de la lista, el código debe eliminar el número de la 
 
 ```blocks3
 al recibir [rojo v]
-si <(item (1 v) of [sequence v]:: list) = [1]> entonces 
- borrar (1 v) de [sequence v]
-
- decir [Game over!] por (1) segundos
- detener [todos v]
-end
+si <(elemento (1 v) de [secuencia v])=[1]> entonces
+eliminar (1 v) de [secuencia v]
+si no
+decir [¡Has perdido!] durante (1) segundos
+detener [todos v]
+fin
 ```
 
 \--- /task \---
@@ -84,7 +84,7 @@ Cuando el sprite responde al mensaje ` azul ` {: class = "block3events"}, ¿qué
 
 Mantén estos bloques, pero necesitas cambiarlos de alguna manera:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 <(elemento (1 v) de [secuencia v]) = [1]>
@@ -96,7 +96,7 @@ tocar el tambor (\ (1 \) Snare Drum v) durante (0.25) tiempos
 
 \--- /hint \--- \--- hint \--- Aquí está cómo tu código debe buscar el `azul`{:class="block3events"} emitido.
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 al recibir [azul v]
@@ -119,7 +119,7 @@ Cuando el jugador repite toda la secuencia de colores correctamente, la ` secuen
 
 \--- task \--- Agrega este código al final del código ` al hacer clic en la bandera ` {: class = "block3events"} del personaje:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
     esperar hasta que < (longitud de [secuencia v]) = [0]>
@@ -136,7 +136,7 @@ Cuando el jugador repite toda la secuencia de colores correctamente, la ` secuen
 
 \--- tarea \--- Agrega este código para reproducir un sonido y hacer que el fondo cambie de color cuando el jugador gana.
 
-![bailarina](images/stage.png)
+![ballerina](images/stage.png)
 
 ```blocks3
     al recibir  [ganar v]
