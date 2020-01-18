@@ -51,37 +51,37 @@ si no
 decir [¡Fin del juego!] por (1) segundos
 si < (puntos:: variables) > (mayor resultado) > entonces
 dar a [mayor resultado v] el valor (puntos :: variables)
-preguntar [¡Mayor Resultado! ¿Cuál es tu nombre?] Y esperar
-        dar a  [nombre v] el valor (respuesta)
-    fin
-    detener [todos v]
-fin
+preguntar [¡Mayor Resultado! ¿Cuál es tu nombre?] y esperar
+dar a  [nombre v] el valor (respuesta)
+end
+detener [todos v]
+end
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-¡También necesitas añadir este nuevo código al objeto personaje para los otros tres colores!
+¡También necesitas añadir este nuevo código al objeto del personaje para los otros tres colores!
 
-¿Puedes ver que el código 'Fin del juego' para cada uno de los cuatro colores es exactamente el mismo?
+¿Te has fijado que el código 'Fin del juego' para cada uno de los cuatro colores es exactamente el mismo?
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 decir [¡Fin del juego!] por (1) segundos
-si < (puntaje :: variables) > (puntaje mayor) > entonces
-    dar a [puntaje mayor v] el valor (puntaje :: variables)
-    preguntar [¡Puntaje mayor! ¿Cuál es tu nombre?] Y esperar
-        dar a [nombre v] el valor  (respuesta)
-    fin
-    detener [todos v]
-fin
+si < (puntos :: variables) > (mayor resultado) > entonces
+dar a [mayor resultado v] el valor (puntos :: variables)
+preguntar [¡Mayor resultado! ¿Cuál es tu nombre?] y esperar
+dar a [nombre v] el valor  (respuesta)
+end
+detener [todos v]
+end
 ```
 
-Si necesitas cambiar cualquiera de los códigos de 'Fin del juego', por ejemplo, para agregar un sonido o cambiar el mensaje '¡Fin del juego!', debe cambiarlo cuatro veces. Eso es molesto y desperdicia mucho tiempo.
+Si necesitas cambiar cualquiera de los códigos de 'Fin del juego', por ejemplo para agregar un sonido o cambiar el mensaje '¡Fin del juego!', tienes que cambiarlo cuatro veces. Eso es molesto y lleva mucho tiempo.
 
 En cambio, puedes definir tu propio bloque de código y usarlo en cualquier lugar de tu proyecto.
 
-\--- task \--- Haz clic en ` Mis bloques ` {: class = "block3myblocks"}, y luego en ** Crear un bloque **. Llama a este nuevo bloque ` Fin del juego ` {: class = "block3myblocks"}.
+\--- task \--- Haz clic en `Mis bloques`{:class="block3myblocks"}, y luego en **Crear un bloque**. Llama a este nuevo bloque `Fin del juego`{:class="block3myblocks"}.
 
 \--- /task \---
 
