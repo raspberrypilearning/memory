@@ -124,18 +124,18 @@ Cuando el jugador repite toda la secuencia de colores correctamente, la lista `s
 
 ```blocks3
     esperar hasta que < (longitud de [secuencia v]) = [0]>
-    enviar (ganar v) y espere
+enviar (¡Tu ganas! v) y esperar
 ```
 
 \--- /task \---
 
-\--- tarea \--- Cambie al escenario e importa la sonidos de la caja de ritmos ` ` u otro sonido que te guste.
+\--- task \--- Cambia el escenario e importa el sonido `drum machine` (caja de ritmos) u otro sonido que te guste.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- tarea \--- Agrega este código para reproducir un sonido y hacer que el fondo cambie de color cuando el jugador gana.
+\--- task \--- Añade este código para reproducir un sonido y hacer que el escenario cambie de color cuando el jugador gane.
 
 ![ballerina](images/stage.png)
 
