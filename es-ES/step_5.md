@@ -12,18 +12,18 @@ En base a los `puntos`{:class="block3variables"}, el juego decidirá la longitud
 
 En lugar de crear siempre una secuencia de cinco colores, ahora quieres que los `puntos`{:class="block3variables"} determinen la longitud de la secuencia.
 
-\--- task \--- Cambia el bucle `repetir`{:class="block3control"} (para crear la secuencia de color) para repetir `puntaje`{:class="block3variables"} veces:
+\--- task \--- Cambia el bucle `repetir`{:class="block3control"} (que crea la secuencia de color) para que se repita las mismas veces que el número de `puntos`{:class="block3variables"}:
 
-![objeto](images/ballerina.png)
+![sprite](images/ballerina.png)
 
 ```blocks3
-repetir (puntuación :: variables)
-final
+repetir (puntos :: variables)
+end
 ```
 
 \--- /task \---
 
-\--- tarea \--- Si el jugador repite la secuencia correcta, debes agregar ` 1 ` a ` puntaje` {: class = "block3variables"}, y al hacerlo aumenta la longitud de la siguiente secuencia. Agrega el siguiente bloque al código del personaje ** en el punto en que sabes que la secuencia es correcta **:
+\--- task \--- Si el jugador repite la secuencia correcta, debes agregar ` 1 ` a ` puntaje` {: class = "block3variables"}, y al hacerlo aumenta la longitud de la siguiente secuencia. Agrega el siguiente bloque al código del personaje ** en el punto en que sabes que la secuencia es correcta **:
 
 ![objeto](images/ballerina.png)
 
