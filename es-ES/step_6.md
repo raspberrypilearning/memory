@@ -1,10 +1,10 @@
-## Puntaje mayor
+## Mayor resultado
 
 Ahora guarda la puntuación más alta para jugar contra tus amigos.
 
-\--- task \--- Agrega dos nuevas variables llamadas ` puntaje mayor ` {: class = "block3variables"} y ` nombre ` {: class = "block3variables"} a tu proyecto. \--- /task \---
+\--- task \--- Agrega dos nuevas variables llamadas `mayor resultado`{:class="block3variables"} y `nombre`{:class="block3variables"} a tu proyecto. \--- /task \---
 
-Cuando el juego termina porque el jugador se equivoca de secuencia, el juego debe verificar si la puntuación es más alta que la puntuación más alta actual. Si es así, el juego debe guardar la puntuación como la puntuación más alta, y también guardar el nombre del jugador.
+Cuando el juego termina porque el jugador se equivoca de secuencia, el juego debe verificar si la puntuación es más alta que la puntuación más alta actual. Si es así, el juego debe guardar la puntuación como la puntuación más alta (mayor resultado), y también guardar el nombre del jugador.
 
 \--- task \--- Añade el código a tu objeto personaje para almacenar el `puntaje mayor`{:class="block3variables"}. También pide el nombre del jugador y guárdalo en la variable `nombre`{:class="block3variables"}.
 
