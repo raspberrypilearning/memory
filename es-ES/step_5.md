@@ -1,12 +1,12 @@
-## Múltiples niveles
+## Varios niveles
 
-Hasta ahora, el jugador solo tiene que recordar una secuencia de cinco colores. Mejora tu juego añadiendo una puntuación, y agregando código para que a medida que el jugador consigue puntos, el juego se mueve al siguiente nivel y la secuencia de color para recordar se vuelve más larga.
+Hasta ahora, el jugador solo tiene que recordar una secuencia de cinco colores. Mejora tu juego añadiendo una puntuación, y agregando código para que a medida que el jugador consiga puntos, el juego avance al siguiente nivel y la secuencia de color para recordar se vuelva más larga.
 
-\--- Crea una nueva variable llamada ` puntaje` {: class = "blockdata"}.
+\--- task \--- Crea una nueva variable llamada `puntos`{:class="block3variables"}.
 
 [[[generic-scratch3-add-variable]]] \--- /task \---
 
-Basado en el `puntaje`{:class="block3variables"}, el juego decidirá sobre la longitud de la secuencia de color. Empieza con un puntaje (y una longitud de secuencia) de `3`.
+En base a los `puntos`{:class="block3variables"}, el juego decidirá la longitud de la secuencia de color. Empieza con una puntuación (y una longitud de secuencia) de `3`.
 
 \--- task \--- En el código de tu personaje, agrega un bloque al principio del código `al hacer clic en la bandera`{:class="block3events"} para dar a `puntaje`{:class="block3variables"} el valor `3`. \--- /task \---
 
