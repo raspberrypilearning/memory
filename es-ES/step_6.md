@@ -102,23 +102,23 @@ detener [todos v]
 
 \--- /task \---
 
-\--- task \--- Ahora quita el código del bloque ` si no ` {: class = "block3control"} conectado al enviar ` rojo ` {: class = "block3events"} al bloque ` Juego terminado `{: class = "block3myblocks"} para que se vea así:
+\--- task \--- Ahora quita el código del bloque `si no`{:class="block3control"} conectado al enviar `rojo`{:class="block3events"} y añádelo al bloque `Fin del juego`{:class="block3myblocks"}:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-al recibir [red v]
-si <(elemento (1 v) de [secuencia v]) =[1]> entonces 
-  tocar tambor ((1) Caja v) durante (0.25) tiempos
-  eliminar (1 v) de [secuencia v]
+al recibir [rojo v]
+si <(elemento (1 v) de [secuencia v])=[1]> entonces 
+tocar tambor ((1) Caja v) durante (0.25) tiempo
+eliminar (1 v) de [secuencia v]
 si no 
-  Fin del juego :: custom
+Fin del juego :: custom
 end
 ```
 
 \--- /task \---
 
-\--- task \--- Prueba tu nuevo bloque jugando el juego y haciendo clic en el botón rojo en el punto equivocado en la secuencia de colores. \--- /task \---
+\--- task \--- Prueba tu nuevo bloque jugando el juego y haciendo clic en el botón rojo en el punto equivocado de la secuencia de colores. \--- /task \---
 
 Tu nuevo bloque `Fin del juego`{:class="block3myblocks"} es un bloque **función**, un pequeño programa que puedes usar en cualquier lugar que quieras en tu código agregando el bloque `Fin del juego`{:class="block3myblocks"}.
 
