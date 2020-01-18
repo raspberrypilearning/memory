@@ -45,7 +45,7 @@ eliminar (1 v) de [secuencia v]
 si no
 decir [¡Has perdido!] durante (1) segundos
 detener [todos v]
-fin
+end
 ```
 
 \--- /task \---
@@ -69,7 +69,7 @@ eliminar (1 v) de [secuencia v]
 si no
 decir [¡Has perdido!] durante (1) segundos
 detener [todos v]
-fin
+end
 
 ```
 
@@ -107,7 +107,7 @@ eliminar (1 v) de [secuencia v]
 si no
 decir [¡Has perdido!] durante (1) segundos
 detener [todos v]
-fin
+end
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
@@ -145,7 +145,7 @@ iniciar sonido (drum machine v)
 repetir (50)
 sumar al efecto [color v] (25)
 esperar (0.1) segundos
-fin
+end
 quitar efectos gráficos
 ```
 
