@@ -140,13 +140,13 @@ enviar (¡Tu ganas! v) y esperar
 ![ballerina](images/stage.png)
 
 ```blocks3
-    al recibir  [ganar v]
-    tocar sonido (caja de ritmos v)
-    repetir (50)
-        cambiar [color v] a (25)
-        esperar (0.1) segundos
-    final
-    quitar efectos gráficos
+    al recibir  [¡Tu ganas! v]
+iniciar sonido (drum machine v)
+repetir (50)
+sumar al efecto [color v] (25)
+esperar (0.1) segundos
+fin
+quitar efectos gráficos
 ```
 
 \--- /task \---
