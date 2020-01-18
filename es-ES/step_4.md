@@ -50,7 +50,7 @@ fin
 
 \--- /task \---
 
-\--- tarea \--- Añadir al código que acabas de escribir para que un tambor también suene cuando el caracter sprite recibe el c'odigo correcto `broadcast`{:class="block3events"}.
+\--- task \--- Añade al código que acabas de escribir instrucciones para que también suene un tambor cuando el sprite del personaje recibe el código `enviar`{:class="block3events"} correcto.
 
 \--- hints \--- \--- hint \--- ¿Puedes usar los números que corresponden a cada color para tocar el ritmo de tambor correcto?
 
