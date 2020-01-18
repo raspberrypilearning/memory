@@ -10,7 +10,7 @@ En base a los `puntos`{:class="block3variables"}, el juego decidirá la longitud
 
 \--- task \--- Añade un bloque al principio del código del personaje (objeto) `al hacer clic en bandera verde`{:class="block3events"} para asignar a la variable `puntos`{:class="block3variables"} el valor `3`. \--- /task \---
 
-En lugar de crear siempre una secuencia de cinco colores, ahora quieres que el ` puntaje ` {: class = "block3variables"} determine la longitud de la secuencia.
+En lugar de crear siempre una secuencia de cinco colores, ahora quieres que los `puntos`{:class="block3variables"} determinen la longitud de la secuencia.
 
 \--- task \--- Cambia el bucle `repetir`{:class="block3control"} (para crear la secuencia de color) para repetir `puntaje`{:class="block3variables"} veces:
 
