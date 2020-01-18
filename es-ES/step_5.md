@@ -23,38 +23,38 @@ end
 
 \--- /task \---
 
-\--- task \--- Si el jugador repite la secuencia correcta, debes agregar ` 1 ` a ` puntaje` {: class = "block3variables"}, y al hacerlo aumenta la longitud de la siguiente secuencia. Agrega el siguiente bloque al código del personaje ** en el punto en que sabes que la secuencia es correcta **:
+\--- task \--- Si el jugador repite la secuencia correcta, debes agregar `1` a la variable `puntos`{:class="block3variables"}, y al hacerlo aumentará la longitud de la siguiente secuencia. Agrega el siguiente bloque al código del personaje **en el punto en que sabes que la secuencia es correcta**:
 
-![objeto](images/ballerina.png)
+![sprite](images/ballerina.png)
 
 ```blocks3
-sumar a [puntuación v] (1)
+sumar a [puntos v] (1)
 ```
 
-\--- hints \--- \--- hint \--- Sabes que la secuencia es correcta en el punto donde el juego `envía`{:class="block3events"} el mensaje "ganar". \--- /hint \--- \--- /hints \---
+\--- hints \--- \--- hint \--- Sabes que la secuencia es correcta en el punto donde el juego `envía`{:class="block3events"} el mensaje "¡Tu ganas!". \--- /hint \--- \--- /hints \---
 
 \--- /task \---
 
-\--- tarea \--- Finalmente, agrega un bucle ` por siempre ` {: class = "block3control"} al código que genera la secuencia, de modo que el juego cree una nueva secuencia de colores para cada nivel. Así es como se ve el código de tu personaje:
+\--- task \--- Finalmente, agrega un bucle `por siempre`{:class="block3control"} al código que genera la secuencia, de modo que el juego cree una nueva secuencia de colores para cada nivel. Así es como se debería ver el código de tu personaje:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
-al hacer clic en la bandera
-dar a [puntaje v] el valor [3]
+al hacer clic en bandera verde
+dar a [puntos v] el valor [3]
 por siempre
-    eliminar (todos v) de [secuencia v]
-    repetir (puntaje)
-        agregar (número aleatorio entre  (1) y (4)) a [secuencia v]
-        cambiar disfraz a (elemento (longitud de [secuencia v]) de [secuencia v]
-        esperar (1) segundos
-    fin
-    esperar hasta que < (longitud de [secuencia v]) = [0]>
-    enviar (ganar v) y esperar
-    sumar a [ puntaje v] (1)
-final
+eliminar (todos v) de [secuencia v]
+repetir (puntos)
+añadir (número aleatorio entre (1) y (4)) a [secuencia v]
+cambiar disfraz a (elemento (longitud de [secuencia v]) de [secuencia v]
+esperar (1) segundos
+end
+esperar hasta que < (longitud de [secuencia v]) = [0]>
+enviar (¡Tu ganas! v) y esperar
+sumar a [ puntos v] (1)
+end
 ```
 
 \--- /task \---
 
-\--- task \--- Consigue que tus amigos prueben tu juego. Recuerda ocultar la lista ` secuencia ` {: class = "block3variables"} antes de que lo jueguen. \--- /task \---
+\--- task \--- Haz que tus amigos prueben tu juego. Recuerda ocultar la lista `secuencia`{:class="block3variables"} antes de que lo jueguen. \--- /task \---
