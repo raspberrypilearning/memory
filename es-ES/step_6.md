@@ -12,47 +12,46 @@ Cuando el juego termina porque el jugador se equivoca de secuencia, el juego deb
 
 \--- hints \--- \--- hint \--- Tu nuevo código necesita seguir esta estructura:
 
-Después del mensaje ` ¡Fin del juego! ` {: class = "block3looks"} ` Si ` {: class = "block3control"} el ` puntaje ` {: class = "block3variables"} es ` mayor que ` {: class = "block3operators"} el ` mayor puntaje ` {: class = "block3variables"} `Dar ` {: class = "block3variables"} a ` mayor puntaje ` {: class = "block3variables"} el valor de `puntaje ` {: class = "block3variables"} ` Preguntar ` {: class = "block3sensing"} el nombre del jugador ` Dar a ` {: class = "block3variables"} ` nombre` {: class = "block3variables"} el valor de ` respuesta ` {: class = "block3sensing"} \--- / hint \--- \--- hint \---
+Después del mensaje `Fin del juego`{:class="block3looks"} `Si`{:class="block3control"} `puntos`{:class="block3variables"} es `mayor que`{:class="block3operators"} el `mayor resultado`{:class="block3variables"} `Dar`{:class="block3variables"} a `mayor resultado`{:class="block3variables"} el valor de `puntos`{:class="block3variables"} `Preguntar`{:class="block3sensing"} el nombre del jugador `Dar`{:class="block3variables"} a `nombre`{:class="block3variables"} el valor de `respuesta`{:class="block3sensing"} \--- / hint \--- \--- hint \---
 
 Necesitas los siguientes bloques:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 si < > entonces
-final
+end
 
-(puntaje)
+(puntos)
 
-(puntaje)
+(puntos)
 
 [] > []
 
 respuesta
 
-(puntaje mayor)
+(mayor resultado)
 
 preguntar [¿Cuál es tu nombre?] y esperar
 
-dar a [puntaje mayor v] el valor [] 
+dar a [mayor resultado v] el valor [] 
 
-dar a [ nombre v] el valor [] 
+dar a [nombre v] el valor [] 
 ```
 
 \--- /hint \--- \--- hint \--- Así es como debe verse tu código al presionar el botón rojo:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 al recibir [rojo v]
-si <(elemento (1 v) of [secuencia v] :: list) = [1]> entonces 
-  tocar tambor (elemento (1 v) de [secuencia v] :: list) durante (0.25) pulsos
-  eliminar (1 v) de [secuencia v]
+si <(elemento (1 v) de [secuencia v])=[1]> entonces 
+toca tambor (elemento (1 v) de [secuencia v]) durante (0.25) tiempos  eliminar (1 v) de [secuencia v]
 si no
-  decir [¡Fin del juego!] por (1) segundos
-  si < (puntaje:: variables) > (puntaje mayor) > entonces
-  dar a [puntaje mayor v] el valor (puntaje :: variables)!
-  preguntar [¡Puntaje mayor! ¿Cuál es tu nombre?] Y esperar
+decir [¡Fin del juego!] por (1) segundos
+si < (puntos:: variables) > (mayor resultado) > entonces
+dar a [mayor resultado v] el valor (puntos :: variables)
+preguntar [¡Mayor Resultado! ¿Cuál es tu nombre?] Y esperar
         dar a  [nombre v] el valor (respuesta)
     fin
     detener [todos v]
