@@ -128,11 +128,11 @@ Tu nuevo bloque `Fin del juego`{:class="block3myblocks"} es un bloque **función
 
 ```blocks3
 al recibir [azul v]
-si < (elemento (1 v) de [secuencia v]) = [1] > entonces 
-  tocar tambor ((2) Bombo v) durante (0.25) tiempos
-  eliminar (1 v) de [secuencia v]
+si < (elemento (1 v) de [secuencia v]) = [1] > entonces
+tocar tambor ((2) Bombo v) durante (0.25) tiempos
+eliminar (1 v) de [secuencia v]
 si no 
-  Fin del juego :: custom
+Fin del juego :: custom
 end
 ```
 
@@ -140,20 +140,20 @@ end
 
 \--- task \--- Ahora añade un sonido que suene cuando se presiona el botón equivocado. ¡Sólo necesitas añadir este código una vez en el bloque `Fin del juego`{:class="block3myblocks"} que has hecho, y no cuatro veces separadas!
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 definir Fin del juego
 iniciar sonido [Cough1 v]
 decir [¡Fin del juego!] durante (1) segundos
-si < (puntuación :: variables) > (puntaje mayor) > entonces 
-  iniciar sonido (trumpet1 v)
-  dar a [puntaje mayor v] el valor (puntaje)
-  preguntar [¡Mejor puntaje! ¿Cuál es su nombre?] Y esperar
-        dar a [nombre v] el valor (respuesta)
-    fin
-    detener [todos v]
-fin
+si < (puntos :: variables) > (mayor resultado) > entonces 
+iniciar sonido (trumpet1 v)
+dar a [mayor resultado v] el valor (puntos)
+preguntar [¡Mayor resultado! ¿Cuál es tu nombre?] y esperar
+dar a [nombre v] el valor (respuesta)
+end
+detener [todos v]
+end
 ```
 
 \--- /task \---
