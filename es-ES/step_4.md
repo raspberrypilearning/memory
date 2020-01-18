@@ -79,7 +79,7 @@ fin
 
 Cuando el sprite (objeto) responde al mensaje `azul`{:class="block3events"}, ¿qué parte del código debería permanecer igual y cual cambiar? Recuerda que cada color está asociado a un número.
 
-\--- task \--- Cambia el código del objeto personaje para que responda correctamente al mensaje ` azul ` {: class = "block3events"}.
+\--- task \--- Cambia el código del objeto personaje para que responda correctamente al mensaje `azul`{:class="block3events"}.
 
 \--- hints \--- \--- hint \---
 
@@ -90,12 +90,12 @@ Mantén estos bloques, pero necesitas cambiarlos de alguna manera:
 ```blocks3
 <(elemento (1 v) de [secuencia v]) = [1]>
 
-cuando recibo [rojo v]
+al recibir [rojo v]
 
-tocar el tambor (\ (1 \) Snare Drum v) durante (0.25) tiempos
+tocar tambor (\(1\) Caja v) durante (0.25) tiempos
 ```
 
-\--- /hint \--- \--- hint \--- Aquí está cómo tu código debe buscar el `azul`{:class="block3events"} emitido.
+\--- /hint \--- \--- hint \--- Así es cómo tu código debería verse para el enviar `azul`{:class="block3events"}.
 
 ![ballerina](images/ballerina.png)
 
