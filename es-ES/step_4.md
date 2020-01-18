@@ -62,21 +62,22 @@ fin
 \--- /hint \--- \--- hint \--- Aquí está el código que necesitarás añadir:
 
 ```blocks3
-cuando recibo [red v]
-si <(elemento (1 v) de [secuencia v]) =[1]> luego
-    toca el tambor (\ (1 \) Snare Drum v) durante (0.25) beats
-    delete (1 v) de [secuencia v]
-else
-    Game over :: custom
-end
+al recibir [rojo v]
+si <(elemento (1 v) de [secuencia v])=[1]> entonces
++ tocar tambor (\(1\) Caja v) durante (0.25) tiempos
+eliminar (1 v) de [secuencia v]
+si no
+decir [¡Has perdido!] durante (1) segundos
+detener [todos v]
+fin
 
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- task \--- Duplica el código que usaste para hacer que el objeto personaje responda al mensaje ` rojo ` {: class = "block3events"}. Cambia el código duplicado para que envíe el mensaje ` azul ` {: class = "block3events"}. \--- /task \---
+\--- task \--- Duplica el código que usaste para hacer que el objeto personaje responda al mensaje `rojo` {:class="block3events"}. Cambia el código duplicado para que envíe el mensaje `azul` {:class="block3events"}. \--- /task \---
 
-Cuando el sprite responde al mensaje ` azul ` {: class = "block3events"}, ¿qué parte del código debería permanecer igual y cual cambiar? Recuerda que cada color se asocia a un número.
+Cuando el sprite (objeto) responde al mensaje `azul`{:class="block3events"}, ¿qué parte del código debería permanecer igual y cual cambiar? Recuerda que cada color está asociado a un número.
 
 \--- task \--- Cambia el código del objeto personaje para que responda correctamente al mensaje ` azul ` {: class = "block3events"}.
 
