@@ -85,17 +85,17 @@ En cambio, puedes definir tu propio bloque de código y usarlo en cualquier luga
 
 \--- /task \---
 
-\--- task \--- Agrega el código del bloque ` si no` {: class = "block3control"} conectado a enviar `rojo ` {: class = "block3events"} al bloque ` Fin del juego ` {: class = "block3myblocks"} para que se vea así:
+\--- task \--- Añade el código del bloque `si no`{:class="block3control"} conectado al enviar `rojo`{:class="block3events"} al bloque `Fin del juego`{:class="block3myblocks"} para que se vea así:
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 definir Fin del juego
 decir [¡Fin del juego!] durante (1) segundos
-si < (puntaje :: variables) >  (puntaje mayor) > entonces 
-  dar a [puntaje mayor v] el valor (puntaje :: variables)
-  preguntar [¡Mejor puntaje! ¿Cuál es tu nombre?] y esperar
-   dar a [nombre v] el valor (respuesta)
+si < (puntos :: variables) >  (mayor resultados) > entonces
+dar a [mayor resultados v] el valor (puntos :: variables)
+preguntar [¡Mayor resultado! ¿Cuál es tu nombre?] y esperar
+dar a [nombre v] el valor (respuesta)
 end
 detener [todos v]
 ```
