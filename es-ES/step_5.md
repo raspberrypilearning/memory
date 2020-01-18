@@ -8,7 +8,7 @@ Hasta ahora, el jugador solo tiene que recordar una secuencia de cinco colores. 
 
 En base a los `puntos`{:class="block3variables"}, el juego decidirá la longitud de la secuencia de color. Empieza con una puntuación (y una longitud de secuencia) de `3`.
 
-\--- task \--- En el código de tu personaje, agrega un bloque al principio del código `al hacer clic en la bandera`{:class="block3events"} para dar a `puntaje`{:class="block3variables"} el valor `3`. \--- /task \---
+\--- task \--- Añade un bloque al principio del código del personaje (objeto) `al hacer clic en bandera verde`{:class="block3events"} para asignar a la variable `puntos`{:class="block3variables"} el valor `3`. \--- /task \---
 
 En lugar de crear siempre una secuencia de cinco colores, ahora quieres que el ` puntaje ` {: class = "block3variables"} determine la longitud de la secuencia.
 
