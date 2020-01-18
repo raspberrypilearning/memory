@@ -52,14 +52,14 @@ fin
 
 \--- task \--- Añade al código que acabas de escribir instrucciones para que también suene un tambor cuando el sprite del personaje recibe el código `enviar`{:class="block3events"} correcto.
 
-\--- hints \--- \--- hint \--- ¿Puedes usar los números que corresponden a cada color para tocar el ritmo de tambor correcto?
+\--- hints \--- -- hint \--- ¿Puedes usar los números que corresponden a cada color para tocar el ritmo de tambor correcto?
 
 + 1 = rojo
 + 2 = azul
 + 3 = verde
-+ 4 = amarillo \--- /hint \--- \--- hint \--- Sobre el bloque `borrar 1 de secuencia`{:class="block3variables"}, agrega el bloque `tocar tambor`{:class="block3sound"} para emitir el primer sonido en la lista `secuencia`{:class="block3variables"}.
++ 4 = amarillo \--- /hint \--- \--- hint \--- Sobre el bloque `eliminar 1 de secuencia`{:class="block3variables"}, añade el bloque `tocar tambor`{:class="block3sound"} para reproducir el primer sonido en la lista `secuencia`{:class="block3variables"}.
 
-\--- /hint \--- \--- hint \--- Aquí está el código que necesitarás:
+\--- /hint \--- \--- hint \--- Aquí está el código que necesitarás añadir:
 
 ```blocks3
 cuando recibo [red v]
