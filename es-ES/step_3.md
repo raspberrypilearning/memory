@@ -46,7 +46,7 @@ Añadir (número aleatorio entre (1) y (4)) a [secuencia v]
 tocar tambor (elemento (longitud de [secuencia v]) de [secuencia v]) durante (0.25) tiempos
 cambiar disfraz a (elemento (longitud de [secuencia v]) de [secuencia v])
 esperar (1) segundos
-fin
+end
 ```
 
 \--- /hint \---
