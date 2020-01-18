@@ -120,11 +120,11 @@ end
 
 \--- task \--- Prueba tu nuevo bloque jugando el juego y haciendo clic en el botón rojo en el punto equivocado de la secuencia de colores. \--- /task \---
 
-Tu nuevo bloque `Fin del juego`{:class="block3myblocks"} es un bloque **función**, un pequeño programa que puedes usar en cualquier lugar que quieras en tu código agregando el bloque `Fin del juego`{:class="block3myblocks"}.
+Tu nuevo bloque `Fin del juego`{:class="block3myblocks"} es un bloque **función**, un pequeño programa que puedes usar en cualquier lugar de tu código agregando dicho bloque `Fin del juego`{:class="block3myblocks"}.
 
-\--- task \--- También reemplaza el código del bloque ` si no ` {: class = "block3control"} conectado al bloque ` enviar ` {: class = "block3events"} para los otros colores con el nuevo bloque ` Fin del juego`{: class = "block3myblocks"}. Aquí está el código para el enviar `azul`{:class="block3events"} debe verse
+\--- task \--- Reemplaza también el código del bloque `si no`{:class="block3control"} conectado al bloque `enviar`{:class="block3events"} para los otros colores con el nuevo bloque `Fin del juego`{:class="block3myblocks"}. Así es como el código para el enviar `azul`{:class="block3events"} debería verse
 
-![bailarina](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 al recibir [azul v]
