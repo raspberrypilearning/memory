@@ -116,9 +116,9 @@ fin
 
 ¡Recuerda probar tu código! ¿Puedes memorizar una secuencia de cinco colores? ¿Es la secuencia diferente cada vez?
 
-Cuando el jugador repite toda la secuencia de colores correctamente, la ` secuencia ` {: class = "block3variables"} lista vacía y el jugador gana. Si lo deseas, también puedes mostrar algunas luces de brillantes como recompensa una vez que la lista `secuencia`{:class="block3variables"} este vacía.
+Cuando el jugador repite toda la secuencia de colores correctamente, la lista `secuencia`{:class="block3variables"} se queda vacía y el jugador gana. Si quieres, también puedes mostrar algunas luces parpadeantes como recompensa una vez que la lista `secuencia`:class="block3variables"} esté vacía.
 
-\--- task \--- Agrega este código al final del código ` al hacer clic en la bandera ` {: class = "block3events"} del personaje:
+\--- task \--- Añade estos bloques al final del código del personaje (objeto) `al hacer clic en bandera verde`{:class="block3events"}:
 
 ![ballerina](images/ballerina.png)
 
