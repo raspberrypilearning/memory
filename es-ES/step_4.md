@@ -101,20 +101,20 @@ tocar tambor (\(1\) Caja v) durante (0.25) tiempos
 
 ```blocks3
 al recibir [azul v]
-si <(elemento (1 v) of [secuencia v]:: list) = [2]> entonces 
-  tocar tambor (elemento (1 v) de [secuencia v]:: list) durante (0.25) pulsos
-  borrar (1 v) de [secuencia v]
-
-  decir [Game over!] por (1) segundos
-  detener [todos v]
-end
+si <(elemento (1 v) de [secuencia v])=[2]> entonces 
+tocar tambor (\(2\) Bombo v) durante (0.25) tiempos
+eliminar (1 v) de [secuencia v]
+si no
+decir [¡Has perdido!] durante (1) segundos
+detener [todos v]
+fin
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-\--- tarea \--- Duplicar el código dos veces (para los botones verde y amarillo), y cambia las partes necesarias para que el personaje responda correctamente a las nuevas `emisiones`{:class="block3events"} . \--- /task \---
+\--- task \--- Duplica el código dos veces mas (para los botones verde y amarillo), y cambia las partes necesarias para que el personaje responda correctamente a los nuevos bloques `enviar`{:class="block3events"} . \--- /task \---
 
-¡Recuerda probar el código! ¿Puedes memorizar una secuencia de cinco colores? ¿La secuencia es diferente cada vez?
+¡Recuerda probar tu código! ¿Puedes memorizar una secuencia de cinco colores? ¿Es la secuencia diferente cada vez?
 
 Cuando el jugador repite toda la secuencia de colores correctamente, la ` secuencia ` {: class = "block3variables"} lista vacía y el jugador gana. Si lo deseas, también puedes mostrar algunas luces de brillantes como recompensa una vez que la lista `secuencia`{:class="block3variables"} este vacía.
 
