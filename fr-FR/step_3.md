@@ -20,11 +20,19 @@ Ajoute l'extension Musique à ton projet de sorte à pouvoir utiliser le bloc ` 
 
 Le code qui joue de la batterieest ** très ** similaire au code qui change le costume du personnage.
 
-\--- hints \--- \--- hint \--- Il suffit d'ajouter deux blocs : un bloc ` jouer de la batterie pendant (0.25) battements `{:class="block3sound"} et un ` élément (longueur de la séquence) de la séquence ` . \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Voici les blocs dont tu auras besoin :
+\--- hint \---
 
-![ballerine](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 jouer de la batterie (\(1\) caisse claire v) pour (0.25) battements
@@ -34,9 +42,11 @@ jouer de la batterie (\(1\) caisse claire v) pour (0.25) battements
 
 \--- /hint \---
 
-\--- hint \--- Voici à quoi devrait ressembler ton code fini :
+\--- hint \---
 
-![ballerine](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 quand le drapeau est cliqué
