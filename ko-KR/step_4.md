@@ -2,16 +2,22 @@
 
 이제 플레이어가 색 순서를 반복하기 위해 누르는 버튼 4 개를 추가 할 것입니다.
 
-\--- task \--- 네 개의 새로운 스프라이트를 프로젝트에 추가하여 네 개의 버튼을 나타냅니다.
+\--- task \---
+
+Add four new sprites to your project to represent the four buttons.
 
 + 새로운 스프라이트의 복장을 편집하여 네 가지 색상 각각에 스프라이트가 하나가되게하십시오.
 + 의상과 같은 순서로 스프라이트를 무대에 올려 놓습니다 : 빨간색, 파란색, 녹색, 노란색
 
-![스크린샷](images/colour-drums.png) \--- /task \---
+![screenshot](images/colour-drums.png)
 
-\--- task \--- Sprite가 클릭되었을 때, ``{: class = "block3events"} 문자 스프라이트에 'red'메시지를 브로드 캐스트하도록 코드를 빨간색 스프라이트에 추가합니다.
+\--- /task \---
 
-![빨간 드럼](images/red_drum.png)
+\--- task \---
+
+Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+
+![red-drum](images/red_drum.png)
 
 ```blocks3
     이 스프라이트가
@@ -20,23 +26,23 @@
 
 \--- /task \---
 
-`브로드 캐스트`{: class = "block3events"}는 예를 들어 학교 나 슈퍼마켓에서들을 수있는 라우드 스피커를 통해 발표 된 메시지와 같습니다. 모든 스프라이트는 `브로드 캐스트`{: class = "block3events"}를들을 수 있지만, 응답 할 작업이있는 스프라이트 만이 뭔가를 할 것입니다.
+A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
 \--- task \---
 
-이를 확인하기 위해, 파란색, 녹색, 노란색 스프라이트 유사한 코드를 추가 `방송`{: 클래스 = "block3events을"} 고유 한 색상에 대한 메시지.
+Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
 
 \--- /task \---
 
-`브로드 캐스트`{{class = "block3events"}는 라우드 스피커 메시지와 같다는 것을 기억하십니까? `브로드 캐스트`{ </code> : : class = "block3events"} 메시지에 응답하는 문자 스프라이트의 작업이되도록 코드를 추가합니다.
+Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
 
 \--- task \---
 
-문자 스프라이트가 `빨간색`{: class = "block3events"} 메시지를 받으면 코드는 숫자 `1` 이 `시퀀스`{: class = "block3variables"} 목록의 시작 부분에 있는지 확인해야합니다. `빨강`{: class = "block3events"}이 시퀀스의 다음 색상입니다.
+When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
 
-`1` 이 목록의 시작 부분에 있으면 플레이어가 올바른 색을 기억했기 때문에 코드에서 목록의 번호를 제거해야합니다. 그렇지 않으면 게임은 끝났다, 그리고 코드에 필요 `정지 모두`: 게임을 종료 {클래스 = "block3control"}.
+If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
 
-![발레리나](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 I는 [적색 V] 나타나면
@@ -50,16 +56,32 @@ I는 [적색 V] 나타나면
 
 \--- /task \---
 
-\--- task \--- 문자 스프라이트가 올바른 `브로드 캐스트`{{class = "block3events"}를 수신 할 때 드럼 비트가 재생되도록 방금 쓴 코드에 추가하십시오.
+\--- task \---
 
-\--- 귀뜸말 \--- \--- 귀뜸말 \--- 드럼을 바르게 연주하기 위해서 각 색깔에 해당하는 숫자를 사용할 수 있나요?
+Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+
+\--- hints \---
+
+\--- hint \---
+
+Can you use the numbers that correspond to each colour to play the correct drum beat?
 
 + 1 = 적색
 + 2 = 청색
 + 3 = 녹색
-+ 4 = 노란색 \--- / 힌트 \--- \--- 힌트 \--- 시퀀스</code>{{class = "block3variables"} 블록 중 `삭제 1 블록 위에 <code>재생 드럼 추가`{: class = " block3sound "} 블록을 사용하여 `시퀀스`{: class ="block3variables "} 목록의 첫 번째 사운드를 재생합니다.
++ 4 = yellow
 
-\--- / 귀뜸말 \--- \--- 귀뜸말 \--- 다음은 추가해야 할 코드입니다.
+\--- /hint \---
+
+\--- hint \---
+
+Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here is the code you will need to add:
 
 ```blocks3
 I는 [적색 V] 나타나면
@@ -71,34 +93,49 @@ else
 게임 오버! (1) 초 동안
 stop [all v]
 end
-
 ```
 
-\--- / 힌트 \--- \--- / 힌트 \--- \--- / 작업 \---
+\--- /hint \---
 
-\--- task \--- 캐릭터 스프라이트가 메시지 `반응하도록 만드는 코드를 복제합니다. <code> red`{: class = "block3events"}. 중복 된 코드를 변경하여 ``blue {{class = "block3events"} 메시지를 보냅니다. \--- /task \---
+\--- /hints \---
 
-스프라이트가 메시지 `blue`{: class = "block3events"}에 응답 할 때, 어떤 비트의 코드가 동일하게 유지되어야하고 어떤 비트가 변경되어야 하는가? 각 색상에는 해당 번호가 있음을 기억하십시오.
+\--- /task \---
 
-\--- task \--- 문자가 파란색</code>{: class = "block3events"} 메시지 `에 올바르게 응답하도록 문자 스프라이트의 코드를 변경합니다.</p>
+\--- task \---
 
-<p>--- hints ---
---- hint ---</p>
+Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
 
-<p>이러한 블록을 유지하지만 어떤 방식 으로든 변경해야합니다.</p>
+\--- /task \---
 
-<p><img src="images/ballerina.png" alt="발레리나" /></p>
+When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
 
-<pre><code class="blocks3">(시퀀스 v)의 <(1 v) = [1]>
+\--- task \---
+
+Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+
+\--- hints \---
+
+\--- hint \---
+
+Keep these blocks, but you need to change them in some way:
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+(시퀀스 v)의 <(1 v) = [1]>
 
 (0.25) 박자의 경우 [빨간색 v]
 
 재생 드럼 (\ (1 \) 스네어 드럼 v)
-`</pre> 
+```
 
-\--- / 힌트 \--- \--- 힌트 \--- 다음은 코드가 `파란색`{: class = "block3events"} 브로드 캐스트를 찾는 방법입니다.
+\--- /hint \---
 
-![발레리나](images/ballerina.png)
+\--- hint \---
+
+Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 I는 [블루 V] 나타나면
@@ -111,17 +148,27 @@ else
 end
 ```
 
-\--- / 힌트 \--- \--- / 힌트 \--- \--- / 작업 \---
+\--- /hint \---
 
-\--- task \--- 캐릭터가 새로운 `방송`{: class = "block3events"}에 올바르게 응답 할 수 있도록 코드를 다시 두 번 (녹색과 노란색 버튼의 경우) 두 번 반복하고 필요한 부분을 변경합니다. \--- /task \---
+\--- /hints \---
 
-코드를 테스트하는 것을 잊지 마십시오! 5 가지 색상의 순서를 암기 할 수 있습니까? 시퀀스가 매번 다른가요?
+\--- /task \---
 
-플레이어가 전체 색상 시퀀스를 올바르게 반복하면 `시퀀스`{: class = "block3variables"}에 emtpy가 표시되고 플레이어가 이깁니다. 원하는 경우 `시퀀스`{: class = "block3variables"} 목록이 비어지면 보상으로 일부 깜박이는 표시등을 표시 할 수도 있습니다.
+\--- task \---
 
-\--- task \--- 깃발을 클릭했을 때 캐릭터 `의 끝에이 코드를 추가합니다.`{: class = "block3events"} script :
+Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
 
-![발레리나](images/ballerina.png)
+\--- /task \---
+
+Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+
+\--- task \---
+
+Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
     < (시퀀스 v의 길이) = [0]>
@@ -130,15 +177,19 @@ end
 
 \--- /task \---
 
-\--- task \--- 스테이지로 전환하고 `드럼 머신` 사운드 또는 원하는 사운드를 가져옵니다.
+\--- task \---
+
+Switch to the Stage, and import the `drum machine` sound or another sound you like.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- 이 코드를 추가하여 플레이어가 이기면 사운드를 재생하고 배경막을 변경합니다.
+\--- task \---
 
-![발레리나](images/stage.png)
+Add this code to play a sound and make the backdrop change colour when the player wins.
+
+![ballerina](images/stage.png)
 
 ```blocks3
     I받을 때 원 V]
