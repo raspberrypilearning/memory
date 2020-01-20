@@ -20,11 +20,19 @@ Voeg de Muziek-extensie toe aan je project zodat je het `drum afspelen`{:class="
 
 De code die de drum speelt is **erg** vergelijkbaar met de code die het kostuum van het personage verandert.
 
-\--- hints \--- \--- hint \--- Je hoeft slechts twee blokken toe te voegen: een `speel drum voor (0.25) beats`{:class="block3sound"} blok en een `item (lengte van reeks) van reeks`{:class="block3variabees"} blok. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Dit zijn de blokken die je nodig hebt:
+\--- hint \---
 
-![balletdanseres](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
@@ -34,9 +42,11 @@ speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
 
 \--- /hint \---
 
-\--- hint \--- Zo zou het voltooide programma eruit moeten zien:
+\--- hint \---
 
-![balletdanseres](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 wanneer groene vlag wordt aangeklikt
