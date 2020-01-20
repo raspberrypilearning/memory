@@ -2,21 +2,35 @@
 
 Acum salva scorul mare pentru a putea juca impotriva prietenilor tai.
 
-\--- task \--- Adăugați la proiect două variabile noi denumite `scor mare`{: class = "block3variables"} și `nume`{: class = "block3variables"}. \--- / sarcina \---
+\--- task \---
 
-Când jocul se termină deoarece jucătorul primește secvența greșită, jocul ar trebui să verifice dacă scorul este mai mare decât scorul curent ridicat. Dacă este, jocul ar trebui să salveze scorul ca scorul mare și să stocheze și numele jucătorului.
+Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
 
-\--- task \--- Adăugați codul pentru personajul dvs. sprite pentru a stoca `scor mare`{: class = "block3variables"}. De asemenea, cereți numele jucătorului și păstrați-l în variabila `nume`{: class = "block3variables"}.
+\--- /task \---
+
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+
+\--- task \---
+
+Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
-\--- sugestii \--- \--- sugestie \--- Codul dvs. nou trebuie să urmeze acest model:
+\--- hints \---
 
-După `joc peste`{: class = "block3looks"} Mesaj `Dacă`{: class = "block3control"} cele `scor`{: class = "block3variables"} este `mai mare de`{: class = "block3operators "} `scor`{: class =" block3variables "} `Set`{: class =" block3variables "} a `mare scor`{: class =" block3variables "} la `scor`{: class =" block3variables "} `Ask`{: class =" block3sensing "} pentru numele jucătorului `Set`{: class =" block3variables "} `nume`{: class =" block3variables "} la `răspuns`{: class = "block3sensing") \--- / indiciu \--- \--- indiciu \---
+\--- hint \---
 
-Aveți nevoie de următoarele blocuri:
+Your new code needs to follow this pattern:
 
-![balerină](images/ballerina.png)
+After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+
+\--- /hint \---
+
+\--- hint \---
+
+You need the following blocks:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 dacă < > apoi
@@ -39,9 +53,13 @@ set de [scor v de mare] la []
 set [ numele v] la [] 
 ```
 
-\--- / hint \--- \--- sugestie \--- Iată cum codul dvs. pentru atunci când butonul roșu este apăsat ar trebui să arate:
+\--- /hint \---
 
-![balerină](images/ballerina.png)
+\--- hint \---
+
+Here's how your code for when the red button is pressed should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 atunci când primesc [v red]
@@ -59,13 +77,17 @@ altceva
 
 ```
 
-\--- / indiciu \--- \--- / sugestii \--- \--- / sarcina \---
+\--- /hint \---
 
-Trebuie să adăugați acest nou cod la caracterul sprite și pentru celelalte trei culori.
+\--- /hints \---
 
-Puteți vedea că codul "Joc peste" pentru fiecare dintre cele patru culori este exact același?
+\--- /task \---
 
-![balerină](images/ballerina.png)
+You need to add this new code to the character sprite for the other three colours too!
+
+Can you see that the 'Game over' code for each of the four colours is exactly the same?
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 spun [Joc de peste!] pentru (1) secunde
@@ -77,17 +99,21 @@ capăt
 oprire [toate v]
 ```
 
-Dacă trebuie să schimbați oricare dintre codurile "Joc peste", de exemplu pentru a adăuga un sunet sau pentru a modifica mesajul "Joc peste", trebuie să îl modificați de patru ori. Asta e enervant și pierde mult timp.
+If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
-În schimb, puteți să vă definiți propriul bloc de cod și să îl utilizați oriunde în proiect.
+Instead, you can define your own code block, and use it anywhere in your project.
 
-\--- task \--- Faceți clic pe `blocurile mele`{: class = "block3myblocks"}, apoi pe **Faceți un bloc**. Apelați acest nou bloc `Joc peste`{: class = "block3myblocks"}.
+\--- task \---
+
+Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
 \--- /task \---
 
-\--- sarcina \--- Adăugați codul din blocul `{`} = {block3control}} conectat la `roșu`{: class = "block3events"} difuzat la jocul `peste`{: class = "block3myblocks"} bloc, astfel încât să pară următoarele:
+\--- task \---
 
-![balerină](images/ballerina.png)
+Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 defini Joc de peste
@@ -102,9 +128,11 @@ oprire [toate v]
 
 \--- /task \---
 
-\--- task \--- Acum eliminati codul care se afla in blocul `else`{: class = "block3control"} conectat la emisiunea `rosie`{: class = "block3events"} si adaugati in jocul ``{: class = "block3myblocks"}} în loc de bloc:
+\--- task \---
 
-![balerină](images/ballerina.png)
+Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 atunci când primesc [v red]
@@ -118,13 +146,19 @@ sfarsit
 
 \--- /task \---
 
-\--- task \--- Testați-vă noul bloc jucând jocul și făcând clic pe butonul roșu într-un punct greșit din secvența de culoare. \--- / sarcina \---
+\--- task \---
 
-Noul dvs. `Joc de peste`{: class = „block3myblocks“} bloc este un **funcție**, un pic script pe care le puteți utiliza oriunde doriți în codul dvs. adăugând `Joc de peste`{: class = „block3myblocks“} bloc în.
+Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
 
-\--- sarcina \--- înlocui , de asemenea codul din `altceva`{: class = „block3control“} bloc conectat la `emisiunile`{: class = „block3events“} pentru celelalte culori cu noul `Joc de peste`{: class = "block3myblocks"} bloc. Iată ce ar trebui să arate codul pentru mesajul `albastru`{: class = "block3events"}
+\--- /task \---
 
-![balerină](images/ballerina.png)
+Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+
+\--- task \---
+
+Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 atunci când primesc [v blue]
@@ -138,9 +172,11 @@ sfarsit
 
 \--- /task \---
 
-\--- task \--- Acum adăugați un sunet care se joacă când este apăsat un buton greșit. Trebuie doar să adăugați acest cod o singură dată în blocul `joc peste`{block = block3myblocks}} pe care l-ați făcut și nu patru ori separat!
+\--- task \---
 
-![balerină](images/ballerina.png)
+Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 defini Joc de peste
