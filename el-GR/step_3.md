@@ -20,11 +20,19 @@
 
 Ο κώδικας που παίζει το τύμπανο είναι **πολύ** παρόμοιος με τον κώδικα που αλλάζει το κοστούμι του χαρακτήρα.
 
-\--- hints \--- \--- hint \--- Το μόνο που χρειάζεται είναι να προσθέσετε δύο μπλοκ: α `παίξε τύμπανο για (0.25) κτύπους`{: class = «block3sound»} μπλοκ και ένα `στοιχείο (μήκος λίστας) της [λίστας]`{: class = "block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Εδώ είναι τα μπλοκ που χρειάζεστε:
+\--- hint \---
 
-![μπαλλαρίνα](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 παίξει τύμπανο (\ (1 \) Ταμπούρο) για (0.25) κτύπους
@@ -34,9 +42,11 @@
 
 \--- /hint \---
 
-\--- hint \--- O τρόπος με τον οποίο πρεπει να μοίαζει ο τελικό σας κώδικας:
+\--- hint \---
 
-![μπαλλαρίνα](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 όταν γίνει κλικ σε σημαία
@@ -52,4 +62,4 @@
 
 \--- /hints \---
 
-\--- / task \---
+\--- /task \---
