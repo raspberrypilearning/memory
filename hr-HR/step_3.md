@@ -20,7 +20,15 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 The code that plays the drum is **very** similar to the code that changes the character's costume.
 
-\--- hints \--- \--- hint \--- You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \---
+
+\--- hint \---
+
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /pomoć \---
+
+\--- hint \---
 
 Here are the blocks you need:
 
@@ -32,9 +40,11 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 (item (length of [sequence v]) of [sequence v])
 ```
 
-\--- /pomoć \---
+\--- /hint \---
 
-\--- hint \--- Here is how your finished code should look:
+\--- hint \---
+
+Here is how your finished code should look:
 
 ![ballerina](images/ballerina.png)
 
@@ -49,8 +59,8 @@ repeat (5)
 end
 ```
 
-\--- /pomoć \---
+\--- /hint \---
 
-\--- /pomoć \---
+\--- /hints \---
 
 \--- /task \---
