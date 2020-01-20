@@ -2,19 +2,29 @@
 
 지금까지 플레이어는 5 가지 색상 순서 만 기억하면됩니다. 점수를 추가하고 플레이어가 점수를 매기면서 게임이 다음 단계로 이동하고 기억할 색상 순서가 길어 지도록 코드를 추가하여 게임을 개선하십시오.
 
-\--- task \--- `score`{: class = "block3variables"}라는 새 변수를 만듭니다.
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- / task \---
+Create a new variable called `score`{:class="block3variables"}.
 
-`점`{{class = "block3variables"}에 기초하여 게임은 색상 순서의 길이를 결정합니다. 스코어 (그리고 시퀀스 길이) `3`.
+[[[generic-scratch3-add-variable]]]
 
-\--- 작업 \--- 의 시작 부분에 블록을 추가 캐릭터의 `플래그를 클릭하면`: 설정 {클래스 = "block3events"} 코드를 `점`{: 클래스 = "block3variables"}로 `3`. \--- /task \---
+\--- /task \---
 
-항상 5 가지 색상 시퀀스를 만드는 대신 `스코어`{: class = "block3variables"}을 사용하여 시퀀스 길이를 결정해야합니다.
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- task \--- `점수`{: class = "block3variables"} 번 반복하기 위해 캐릭터의 `반복`{: class = "block3control"} 루프를 변경합니다.
+\--- task \---
 
-![스프라이트](images/ballerina.png)
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 반복 (score :: variables)
@@ -23,21 +33,33 @@
 
 \--- /task \---
 
-\--- task \--- 플레이어가 올바른 순서를 반복한다면, `1` `score`{: class = "block3variables"}를 추가해야하며, 그렇게하면 다음 시퀀스의 길이가 늘어납니다. 순서가 맞다는 것을 알 때, 다음 블록을 문자의 코드 **에 추가하십시오**:
+\--- task \---
 
-![스프라이트](images/ballerina.png)
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 [점수 v]를 (1)
 ```
 
-\--- 힌트 \--- \--- 힌트 \--- 게임 ``{: class = "block3events"}의 'win'메시지를 브로드 캐스트 할 때 시퀀스가 정확하다는 것을 알고 있습니다. \--- / 힌트 \--- \--- / 힌트 \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-\--- 작업 \--- 마지막으로 추가 `영원히`{: 클래스 = "block3control"} 게임은 각 레벨에 대한 새로운 색상 시퀀스를 생성하도록 시퀀스를 생성하는 코드 주위에 루프를. 캐릭터의 코드가 다음과 같이 표시됩니다.
+\--- task \---
 
-![발레리나](images/ballerina.png)
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 플래그가 클릭하면
@@ -57,4 +79,8 @@ end
 
 \--- /task \---
 
-\--- task \--- 친구들에게 게임을 테스트 해보십시오. 재생하기 전에 `시퀀스`{: class = "block3variables"} 목록을 숨기십시오! \--- / task \---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
