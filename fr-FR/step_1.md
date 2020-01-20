@@ -10,7 +10,9 @@ Dans ce projet, tu vas créer un jeu de mémoire dans lequel tu devras mémorise
 
 ### Ce que tu vas créer
 
-\--- no-print \--- Clique sur le drapeau vert pour commencer. Observe la séquence de couleurs montrée par la robe de la danseuse et écoutez les battements de tambour qui l'accompagnent, puis répète les couleurs à la danseuse. Si tu répètes les couleurs dans le mauvais ordre, tu as perdu !
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@ Dans ce projet, tu vas créer un jeu de mémoire dans lequel tu devras mémorise
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -40,7 +46,9 @@ Dans ce projet, tu vas créer un jeu de mémoire dans lequel tu devras mémorise
 
 ### Logiciel
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [hors ligne](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -48,10 +56,10 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [hors 
 
 \--- no-print \---
 
-Si tu as besoin d’imprimer ce projet, utilise plutôt la [ version imprimable ](https://projects.raspberrypi.org/en/projects/memory/print) {:target="_blank"}.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-Tu peux trouver le [projet complet ici](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
