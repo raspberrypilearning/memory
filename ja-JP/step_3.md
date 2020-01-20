@@ -20,11 +20,19 @@
 
 ドラムを鳴らすコードは **非常に** キャラクタのコスチュームを変更するコードに似ています。
 
-\--- hints \--- \--- hint \--- 2つのブロックを追加するだけです: `(0.25) 拍ドラムを鳴らす`{:class = "block3sound"}ブロックと `アイテム(シーケンスの長さ)` {:class="block3variables"}ブロック。 \--- /hint \--- \--- hint \---
+\--- hints \---
 
-必要なブロックは次のとおりです。
+\--- hint \---
 
-![バレリーナ](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 (\(1\) スネアドラム v) のドラムを(0.25) 拍鳴らす
@@ -34,9 +42,11 @@
 
 \--- /hint \---
 
-\--- hint \--- 完成したコードは次のようになります:
+\--- hint \---
 
-![バレリーナ](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 フラグがクリックされたとき
