@@ -2,19 +2,33 @@
 
 现在保存高分，以便您可以与朋友对战。
 
-\--- task \--- 添加两个名为`高分` {:class="block3variables"}和`姓名` {:class="block3variables"}到你的项目中。 \--- /任务\---
+\--- task \---
 
-当游戏结束时因为玩家得到错误的序列，游戏应该检查得分是否高于当前的高分。 如果是，游戏应该将得分保存为高分，并且还存储玩家的名字。
+Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
 
-\--- task \--- 将代码添加到角色精灵中以存储`高分`{:class="block3variables"}. 同时询问玩家的名字，并将其存储在`姓名`{:class="block3variables"}变量。
+\--- /task \---
+
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+
+\--- task \---
+
+Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- 你的新代码需要遵循以下模式：
+\--- hints \---
 
-在 `游戏结束`{:class="block3looks"} 消息之后 `如果`{:class="block3control"} `分数`{:class="block3variables"} `高于`{:class="block3operators"} `高分`{:class="block3variables"} `设置`{:class="block3variables"}`高分`{:class="block3variables"} 为`分数`{:class="block3variables"} <0询问</code>{:class="block3sensing"}玩家的姓名 `设置/0>{:class="block3variables"} <code>姓名`{:class="block3variables"} 为玩家的`回答`{:class="block3sensing"} \--- /hint \--- \--- hint \---
+\--- hint \---
 
-您需要以下块：
+Your new code needs to follow this pattern:
+
+After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+
+\--- /hint \---
+
+\--- hint \---
+
+You need the following blocks:
 
 ![ballerina](images/ballerina.png)
 
@@ -39,7 +53,11 @@ set [high score v] to [ ]
 set [name v] to [ ] 
 ```
 
-\--- /hint \--- \--- hint \--- 下面是你按下红色按钮的应该包含的代码：
+\--- /hint \---
+
+\--- hint \---
+
+Here's how your code for when the red button is pressed should look:
 
 ![ballerina](images/ballerina.png)
 
@@ -59,11 +77,15 @@ else
 end
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-你需要将这个新代码添加到其他三种颜色的角色精灵中！
+\--- /hints \---
 
-你能看到四种颜色中每种颜色的“游戏结束”代码是完全相同的吗？
+\--- /task \---
+
+You need to add this new code to the character sprite for the other three colours too!
+
+Can you see that the 'Game over' code for each of the four colours is exactly the same?
 
 ![ballerina](images/ballerina.png)
 
@@ -77,15 +99,19 @@ end
 stop [all v]
 ```
 
-如果您需要更改任何“游戏结束”代码，例如添加声音或更改“游戏结束”消息，则必须更改四次。这很烦人，浪费了很多时间。
+If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
-相反，您可以定义自己的代码块，并在项目的任何位置使用它。
+Instead, you can define your own code block, and use it anywhere in your project.
 
-\--- task \--- 单击`自制积木`{:class="block3myblocks"}，然后在**制作新的积木** 。将此新块称为`游戏结束`{:class="block3myblocks"}。
+\--- task \---
+
+Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
 \--- /task \---
 
-\--- task \--- 从连接 `红色`{:class="block3events"} 广播的 `否则`{:class="block3control"} 模块到`游戏结束`{:class="block3myblocks"}添加代码，像下面这样：
+\--- task \---
+
+Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
 
 ![ballerina](images/ballerina.png)
 
@@ -102,26 +128,35 @@ stop [all v]
 
 \--- /task \---
 
-\--- task \--- 现在移除在 `否则`{:class="block3control"}块中连接`红色`{:class="block3events"} 广播的代码，然后加入`游戏结束/0>{:class="block3myblocks"} 模块：</p>
+\--- task \---
 
-<p><img src="images/ballerina.png" alt="ballerina" /></p>
+Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
 
-<pre><code class="blocks3">when I receive [red v]
+![ballerina](images/ballerina.png)
+
+```blocks3
+when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
     play drum (\(1\) Snare Drum v) for (0.25) beats
     delete (1 v) of [sequence v]
 else
     Game over :: custom
 end
-`</pre> 
+```
 
 \--- /task \---
 
-\--- task \--- 通过玩游戏并在错误的时间点点击红色按钮来测试新块。 \--- /task\---
+\--- task \---
 
-你的新的`游戏结束`{:class="block3myblocks"}块是一个 **函数**, 你可以在任何地方使用这一段脚本通过添加`游戏结束`{:class="block3myblocks"} 块：
+Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
 
-\--- task \--- 现在将对于接收其他颜色`广播`{:class="block3events"} 的代码块的 `否则`{:class="block3control"}块内的代码替换为你的新的 `游戏结束`{:class="block3myblocks"} 模块。 对于`蓝色`{:class="block3events"} 消息的代码应该像这样：
+\--- /task \---
+
+Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+
+\--- task \---
+
+Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
 
 ![ballerina](images/ballerina.png)
 
@@ -137,7 +172,9 @@ end
 
 \--- /task \---
 
-\--- task \--- 现在添加按下错误按钮时播放的声音。 您只需要在 `游戏结束`{:class="block3myblocks"} 模块中添加此代码一次，而不是四次！
+\--- task \---
+
+Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
 
 ![ballerina](images/ballerina.png)
 
