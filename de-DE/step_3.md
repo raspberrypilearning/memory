@@ -20,11 +20,19 @@ Füge die Musik-Erweiterung zu deinem Projekt hinzu, damit du den `Spiele-Tromme
 
 Dies wird **sehr** ähnlich zu dem Code sein, der für das Verändern des Kostüms des Charakters verantwortlich ist.
 
-\--- hints \--- \--- hint \--- Du brauchst nur zwei Blöcke hinzufügen: einen `spiele-Trommel für (0,25) Schläge` {:class="block3sound"} - Block und einen `Element (Länge der Sequenz) von Sequenz`{:class="block3variables"} - Block. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Hier sind die Blöcke, die du brauchst:
+\--- hint \---
 
-![Ballerina](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 spiele Schlaginstrument ((1) Snare Drum v) für (0.25) Schläge
@@ -34,9 +42,11 @@ spiele Schlaginstrument ((1) Snare Drum v) für (0.25) Schläge
 
 \--- /hint \---
 
-\--- hint \---So sollte dein fertiger Code aussehen:
+\--- hint \---
 
-![Ballerina](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 Wenn die grüne Flagge angeklickt
@@ -51,6 +61,6 @@ end
 
 \--- /hint \---
 
-\---/hints\---
+\--- /hints \---
 
 \--- /task \---
