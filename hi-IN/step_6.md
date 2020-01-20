@@ -2,21 +2,35 @@
 
 अब उच्च स्कोर को सहेजें ताकि आप अपने दोस्तों के खिलाफ खेल सकें।
 
-\--- task \--- अपनी परियोजना में `उच्च स्कोर`{:class="block3variables"} और `नाम`{:class="block3variables"} नामक दो नए चर जोड़ें। \--- /task \---
+\--- task \---
 
-खिलाड़ी का अनुक्रम गलत होने पर जब खेल समाप्त हो जाता है, तो खेल को यह जाँचना चाहिए कि स्कोर वर्तमान उच्च स्कोर से अधिक है या नहीं। यदि ऐसा है, तो खेल को स्कोर को उच्च स्कोर के रूप में सहेजना चाहिए, और खिलाड़ी का नाम भी संग्रहित करना चाहिए।
+Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
 
-\--- task \--- `उच्च स्कोर`{:class="block3variables"} को सहेजने के लिए अपने पात्र स्प्राइट मे कोड जोड़ें । खिलाड़ी का नाम भी पूछें, और उसे `नाम`{:class="block3variables"} चर में संग्रहित करें।
+\--- /task \---
+
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+
+\--- task \---
+
+Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- आपके नए कोड को इस स्वरूप का पालन करने की आवश्यकता है:
+\--- hints \---
 
-`खेल समाप्त`{:class="block3looks"} संदेश के बाद `यदि`{:class="block3control"} `स्कोर`{:class="block3variables"} `उच्च स्कोर`{:class="block3variables"} `से ज़्यादा`{:class="block3operators"} है तो `उच्च स्कोर`{:class="block3variables"} को `स्कोर`{:class="block3variables"} से `स्थिर करें`{:class="block3variables"} खिलाड़ी का नाम `पूछें`{:class="block3sensing"} `नाम`{:class="block3variables"} को `उत्तर`{:class="block3sensing"} से `स्थिर करें`{:class="block3variables"}
+\--- hint \---
 
-आपको निम्नलिखित ब्लॉक चाहिए:
+Your new code needs to follow this pattern:
 
-![बैलरीना](images/ballerina.png)
+After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+
+\--- /hint \---
+
+\--- hint \---
+
+You need the following blocks:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 यदि < > तो
@@ -39,9 +53,13 @@
 [नाम v] को [] से स्थिर करें 
 ```
 
-\--- /hint \--- \--- hint \--- जब लाल बटन दबाया गया के लिए आपका कोड इस प्रकार दिखाई देना चाहिए:
+\--- /hint \---
 
-![बैलरीना](images/ballerina.png)
+\--- hint \---
+
+Here's how your code for when the red button is pressed should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 जब मुझे [लाल v] प्राप्त हो
@@ -59,13 +77,17 @@
 अंत
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-आपको इस नए कोड को अन्य तीन रंगों के लिए भी पात्र स्प्राइट में जोड़ने की आवश्यकता है!
+\--- /hints \---
 
-क्या आप देख सकते हैं कि चारों रंगों के लिए 'खेल समाप्त' कोड बिल्कुल समान है?
+\--- /task \---
 
-![बैलरीना](images/ballerina.png)
+You need to add this new code to the character sprite for the other three colours too!
+
+Can you see that the 'Game over' code for each of the four colours is exactly the same?
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 (1) सेकंड के लिए [खेल समाप्त!] कहें
@@ -78,17 +100,21 @@
 अंत
 ```
 
-यदि आपको 'खेल समाप्त' कोड में से किसी को बदलने की आवश्यकता है, उदाहरण के लिए ध्वनि जोड़ने या 'खेल समाप्त' संदेश को बदलने के लिए, आपको इसे चार बार बदलना होगा। यह कष्टप्रद है और बहुत समय बर्बाद करता है।
+If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
-इसके बजाय, आप अपने स्वयं के कोड ब्लॉक को परिभाषित कर सकते हैं, और इसे अपनी परियोजना में कहीं भी उपयोग कर सकते हैं।
+Instead, you can define your own code block, and use it anywhere in your project.
 
-\--- task \--- `मेरे ब्लॉक`{:class="block3myblocks"} पर क्लिक करें, और फिर **ब्लॉक बनाएं** पर। इस नए ब्लॉक को `खेल समाप्त`{:class="block3myblocks"} कहें।
+\--- task \---
+
+Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
 \--- /task \---
 
-\--- task \--- `लाल`{:class="block3events"} प्रसारण से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को `खेल समाप्त`{:class="block3myblocks"} ब्लॉक में जोड़ें ताकि यह इस तरह दिखे:
+\--- task \---
 
-![बैलरीना](images/ballerina.png)
+Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 खेल समाप्त को परिभाषित करें
@@ -103,9 +129,11 @@
 
 \--- /task \---
 
-\--- task \--- अब `लाल`{:class="block3events"} प्रसारण से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को हटाएँ और इसकी जगह `खेल समाप्त`{:class="block3myblocks"} ब्लॉक को जोड़ें:
+\--- task \---
 
-![बैलरीना](images/ballerina.png)
+Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 जब मुझे [लाल v] प्राप्त हो
@@ -119,13 +147,19 @@
 
 \--- /task \---
 
-\--- task \--- खेल खेलते हुए और रंग क्रम में गलत स्थिति में लाल बटन पर क्लिक करके अपने नए ब्लॉक का परीक्षण करें। \--- /task \---
+\--- task \---
 
-आपका नया `खेल समाप्त`{:class="block3myblocks"} ब्लॉक एक **फ़ंक्शन** है, एक छोटी स्क्रिप्ट जिसे आप अपने कोड में `खेल समाप्त`{:class="block3myblocks"} जोड़कर कहीं भी उपयोग कर सकते हैं।
+Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
 
-\--- task \--- अब अन्य रंगो के लिए `प्रसारित करें`{:class="block3events"} से जुड़े `अन्यथा`{:class="block3control"} ब्लॉक के कोड को भी `खेल समाप्त`{:class="block3myblocks"} ब्लॉक से बदलें। यहाँ दिखाया गया है कि `नीला`{:class="block3events"} संदेश के लिए कोड कैसा दिखना चाहिए
+\--- /task \---
 
-![बैलरीना](images/ballerina.png)
+Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+
+\--- task \---
+
+Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 जब मुझे [नीला v] प्राप्त हो
@@ -139,9 +173,11 @@
 
 \--- /task \---
 
-\--- task \--- अब एक आवाज़ जोड़ें जो गलत बटन दबाने पर बजेगी। आपको `खेल समाप्त`{:class="block3myblocks"} ब्लाक जो आपने बनाया था में इस कोड को केवल एक बार जोड़ना होगा, और चार अलग-अलग जगहों पर नहीं!
+\--- task \---
 
-![बैलरीना](images/ballerina.png)
+Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 खेल समाप्त को परिभाषित करें
