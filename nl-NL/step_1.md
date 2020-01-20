@@ -10,7 +10,9 @@ In dit project ga je een geheugenspel maken waarin je een willekeurige reeks kle
 
 ### Wat ga je maken
 
-\--- no-print \--- Klik op de groene vlag om te starten. Kijk naar de reeks kleuren van de jurk van de danseres en luister naar de bijbehorende slagen op de trommels, en herhaal ze daarna. Als je de verkeerde volgorde van de kleuren kiest, is het spel voorbij!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@ In dit project ga je een geheugenspel maken waarin je een willekeurige reeks kle
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -40,7 +46,9 @@ In dit project ga je een geheugenspel maken waarin je een willekeurige reeks kle
 
 ### Software
 
-Scratch 3 ([online](https://rpf.io/scratchon){:target="_ blank"} of [offline](https://rpf.io/scratchoff){:target="_ blank}) \--- /collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -48,10 +56,10 @@ Scratch 3 ([online](https://rpf.io/scratchon){:target="_ blank"} of [offline](ht
 
 \--- no-print \---
 
-Als je dit project wilt afdrukken, gebruik dan de [printvriendelijke versie](https://projects.raspberrypi.org/en/projects/memory/print){:target="_ blank"}.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-Hier kun je het [voltooide project](http://rpf.io/p/en/memory-get) downloaden.
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
