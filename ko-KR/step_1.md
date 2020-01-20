@@ -10,7 +10,9 @@
 
 ### 만들 작품
 
-\--- no-print \--- 시작하려면 녹색 플래그를 클릭하십시오. 댄서의 드레스에 표시된 색상 순서를보고 동반하는 드럼 비트를 듣고 다시 색상을 반복하십시오. 색상 순서가 잘못되면 게임이 끝납니다!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@
 
 \--- /no-print \---
 
-\--- 인쇄 전용 \--- ![screenshot of finished game](images/screenshot.png) \--- / 인쇄 전용 \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -40,7 +46,9 @@
 
 ### 소프트웨어
 
-스크래치 3 ( [온라인](https://rpf.io/scratchon){: target = "_ blank"} 또는 오프라인 [](https://rpf.io/scratchoff){: target = "_ blank"}) \--- / collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -48,10 +56,10 @@
 
 \--- no-print \---
 
-이 프로젝트를 인쇄한다면 [프린트용 버전](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}을 사용해 주십시오.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-여기서 [완료된 프로젝트를 확인할 수 있습니다](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
--- /collapse \---
+\--- /collapse \---
