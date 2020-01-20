@@ -2,19 +2,25 @@
 
 Primeiro cria um personagem que possa exibir uma sequência aleatória de cores.
 
-\--- task \--- Abre um novo projeto Scratch.
+\--- task \---
+
+Open a new Scratch project.
 
 **Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline:** abre um novo projeto no editor offline.
+**Offline**: open a new project in the offline editor.
 
 If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
-\--- task \--- Escolhe um actor e um palco. Podes utilizar a bailarina, mas o personagem não tem que ser uma pessoa, só precisa ser capaz de mostrar cores diferentes.
+\--- task \---
 
-![captura de ecrã](images/colour-sprite.png) \--- /task \---
+Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+
+![screenshot](images/colour-sprite.png)
+
+\--- /task \---
 
 + O teu jogo deve usar um número diferente para representar cada cor:
     
@@ -23,31 +29,39 @@ If you need to download and install the Scratch offline editor, you can find it 
     + 3 = verde
     + 4 = amarelo
 
-\--- task \--- Dá ao teu personagem quatro trajes com cores diferentes, um traje para cada uma das quatro cores acima indicadas. Certifica-te que as roupas coloridas estão na mesma ordem da lista acima.
+\--- task \---
 
-![captura de ecrã](images/colour-costume.png) \--- /task \---
+Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
 
-Se quiseres, podes utilizar a ferramenta ** color a shape ** para preencher partes do traje com uma cor diferente.
+![screenshot](images/colour-costume.png)
 
-![preenche-a-forma](images/color-a-shape.png)
+\--- /task \---
 
-De seguida, acrescenta uma lista para armazenar a sequência aleatória de cores que o jogador deve memorizar.
+If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
 
-\--- task \--- Cria uma lista chamada ` sequência ` {: class = "block3variables"}. Apenas o actor necessita ver esta lista, por isso seleciona **Apenas para este actor** quando criares a lista.
+![color-a-shape](images/color-a-shape.png)
+
+Next, add a list for storing the random sequence of colours that the player has to remember.
+
+\--- task \---
+
+Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-Agora já deves ver muitos novos blocos de código para utilizar com listas. A lista vazia deve estar visível no canto superior esquerdo do Palco.
+You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
-![captura de ecrã](images/colour-list-blocks-annotated.png)
+![screenshot](images/colour-list-blocks-annotated.png)
 
-Como cada cor tem um número diferente, podes escolher uma cor aleatória escolhendo aleatoriamente um número e adicionando-o à lista.
+Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
 
-\--- task \--- Adiciona este código ao actor para escolher um número aleatório e adicioná-lo à `sequência` {: class = "block3variables"}:
+\--- task \---
 
-![bailarina](images/ballerina.png)
+Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 quando alguém clicar na bandeira verde
@@ -56,15 +70,29 @@ acrescenta (um valor ao acaso entre (1) e (4)) a [sequencia v]
 
 \--- /task \---
 
-\--- task \--- Testa o teu código. Verifica se, de cada vez que clicas na bandeira, um número aleatório entre 1 e 4 é adicionado à lista. \--- / task \---
+\--- task \---
 
-\--- task \--- Consegues adicionar código ao teu programa para gerar cinco números aleatórios de uma só vez?
+Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list.
 
-\--- hints \--- \--- hint \--- Acrescenta `apaga a sequência`{:class="block3variables"} para primeiro apagar todos os itens na lista, e depois adiciona um bloco `repetir`{:class="block3control"} que acrescente cinco números aleatórios à lista. \--- /hint \--- \--- hint \---
+\--- /task \---
 
-Este é o aspeto que o teu código deve ter:
+\--- task \---
 
-![bailarina](images/ballerina.png)
+Can you add code to your program to generate five random numbers at once?
+
+\--- hints \---
+
+\--- hint \---
+
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
+
+\--- /hint \---
+
+\--- hint \---
+
+This is what your code should look like:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 quando alguém clicar na bandeira verde
@@ -74,11 +102,17 @@ repete (5) vezes
 end
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-\--- task \--- De cada vez que um número é acrescentado à lista, o personagem deve mudar o traje para que a cor do traje corresponda ao número acrescentado. Coloca estes blocos no teu código imediatamente abaixo de onde um número aleatório é adicionado à `sequência`{:class="block3variables"}:
+\--- /hints \---
 
-![bailarina](images/ballerina.png)
+\--- /task \---
+
+\--- task \---
+
+Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 muda o teu traje para ((o comprimento de [sequência v]) de [sequência v])
