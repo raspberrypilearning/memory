@@ -2,16 +2,22 @@
 
 الآن ستقوم بإضافة أربعة أزرار و سيكون على اللاعب الضغط عليها لتكرار تسلسل اللون.
 
-\--- task \--- أضف أربع كائنات جديدة لمشروعك لتمثيل أزرار الألوان الأربعة المختلفة.
+\--- task \---
+
+Add four new sprites to your project to represent the four buttons.
 
 + عدّل على مظهر الكائنات التي اخترتها بحيث يصبح لكل كائن لون واحد فقط من الألوان الأربعة
 + رتب الكائنات على المنصة حسب ألوانها بالترتيب التالي: أحمر، أزرق، أخضر، أصفر
 
-![لقطة الشاشة](images/colour-drums.png) \---/task--
+![screenshot](images/colour-drums.png)
 
-\--- task \--- أضف تعليمة برمجية للكائن الأحمر بحيث أنه ،عندما يتم النقر على الكائن يقوم ببث `broadcasts`{:class="block3events"} رسالة إلى كائن الشخصية الرئيسية بأن اللون الآن 'أحمر':
+\--- /task \---
 
-![طبل أحمر](images/red_drum.png)
+\--- task \---
+
+Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+
+![red-drum](images/red_drum.png)
 
 ```blocks3
     عند نقر هذا الكائن :: events
@@ -20,23 +26,23 @@
 
 \--- /task \---
 
-عملية البث `broadcast`{:class="block3events"} تشبه الرسالة التي يتم إعلانها عبر مكبر الصوت، مثل التي تسمعها في المدرسة أو السوبر ماركت على سبيل المثال. جميع الكائنات قادرة على سماع `البث`{:class="block3events"}, و لكن فقط الكائن الذي تكون مهمته الاستجابة الآن سيفعل شيئاً.
+A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
 \--- task \---
 
-أضف برمجية تعليمية مشابهه للكائن الأزرق، و الأخضر، و الأصفر لجعلهم يقومون بعمل `بث`{:class="block3events"} لرسائل عن ألوانهم.
+Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
 
-\---/task\---
+\--- /task \---
 
-هل تتذكر بأن `البث`{:class="block3events"} يشبه رسالة عبر مكبر الصوت؟ ستضيف الآن تعليمة برمجية ستجعل مهمة كائن الشخصية الرئيسية أن يستجيب لرسائل`البث`{:class="block3events"}.
+Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
 
 \--- task \---
 
-عندما تقوم شخصيتك الرئيسية باستقبال الرسالة `أحمر`{:class="block3events"}, ستقوم التعليمة البرمجية بالتحقق من أن الرقم `1` يقع فعلاً في بداية القائمة `تسلسل`{:class="block3variables"} (بمعنى أن `أحمر`{:class="block3events"} هو اللون التالي في التسلسل).
+When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
 
-إذا كان الرقم `1` في بداية القائمة, يجب أن تقوم التعليمة البرمجية بإزالته من القائمة, و ذلك لأن اللاعب تذكر اللون بشكل صحيح. و خلاف ذلك فإن اللعبة انتهت، و على التعليمة البرمجية أن تقوم بـ `أوقف الكل`{:class="block3control"} لإنهاء اللعبة.
+If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
 
-![راقصة البالية](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 عندما تستقبل [أحمر v] :: events
@@ -50,16 +56,32 @@ end
 
 \--- /task \---
 
-\--- task \--- أضف ايضا التعليمة البرمجية التالية و التي ستضيف صوت ايقاع طبل عندما يستقبل كائن الشخصية الرئيسية رسالة`بث`{:class="block3events"} باللون الصحيح.
+\--- task \---
 
-\--- hints \--- \--- hint \--- هل بإمكانك استخدام الأرقام التي تتوافق مع كل لون لعزف نغمة الطبلة الصحيحة؟
+Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+
+\--- hints \---
+
+\--- hint \---
+
+Can you use the numbers that correspond to each colour to play the correct drum beat?
 
 + 1 = أحمر
 + 2 = أزرق
 + 3 = أخضر
-+ 4 = أصفر \--- /hint \--- \--- hint \--- فوق كتلة `احذف 1 من تسلسل`{:class="block3variables"}, أضف كتلة `دقّ الطبل`{:class="block3sound"} لتشغيل أول صوت في القائمة `تسلسل`{:class="block3variables"}.
++ 4 = yellow
 
-\--- hint/ \--- \--- hint \--- هنا الكود الذي تحتاج لإضافته:
+\--- /hint \---
+
+\--- hint \---
+
+Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here is the code you will need to add:
 
 ```blocks3
 عندما تستقبل [أحمر v] :: events
@@ -70,22 +92,33 @@ end
   قل [انتهت اللعبة!] لمدة (1) ثانية :: looks
   أوقف [الكل v] :: control :: control
 end
-
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-\--- task \--- كرر التعليمة البرمجية التي استخدمتها لجعل كائن شخصيتك يستجيب للرسالة `أحمر`{:class="block3events"}. عدّل على التعليمة البرمجية المكررة بحيث ترسل الرسالة `أزرق`{:class="block3events"}. \--- /task \---
+\--- /hints \---
 
-عندما يستجيب كائن الشخصية للرسالة `أزرق`{:class="block3events"}, أي جزء من التعليمة البرمجية يجب أن يبقى كما هو, و أي جزء يجب أن يتغير؟ تذكر بأن لكل لون رقم مقابل خاص به.
+\--- /task \---
 
-\--- task \--- غير التعليمة البرمجية الخاصة بكائن الشخصية الرئيسية بحيث تصبح الشخصية قادرة على الاستجابة للون `أزرق`{:class="block3events"} بشكل صحيح.
+\--- task \---
 
-\--- hints \--- \--- hint \---
+Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
 
-احتفظ بهذه الكتل البرمجية، و لكنك ستحتاج إلى عمل بعض التغييرات بطريقة ما:
+\--- /task \---
 
-![راقصة البالية](images/ballerina.png)
+When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+
+\--- task \---
+
+Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+
+\--- hints \---
+
+\--- hint \---
+
+Keep these blocks, but you need to change them in some way:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 <(العنصر (1 v) of [تسلسل v]) = [1] :: operators>
@@ -95,9 +128,13 @@ end
 دقَّ الطبل ((1) Snare Drum v) لمدة (0.25) وحدة إيقاع :: music
 ```
 
-\--- /hint \--- \--- hint \--- هنا نوضح لك كيف ستبدو التعليمة البرمجية لرسالة بث اللون `أزرق`{:class="block3events"}.
+\--- /hint \---
 
-![راقصة البالية](images/ballerina.png)
+\--- hint \---
+
+Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 عندما تستقبل [أزرق v] :: events
@@ -110,17 +147,27 @@ end
 end
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-\--- task \--- كرر التعليمة البرمجية مرتين ايضاً (للونين الأخضر و الأصفر), و عدّل على الاجزاء الضرورية و التي ستجعل كائن الشخصية يستجيب بشكل صحيح للرسائل الجديدة`broadcasts`{:class="block3events"}. \--- /task \---
+\--- /hints \---
 
-تذكر بأن تقوم باختبار تعليماتك البرمجية! هل يمكنك تذكر تسلسل مكون من خمس ألوان؟ هل التسلسل مختلف كل مرة؟
+\--- /task \---
 
-عندما يقوم اللاعب بتكرار تسلسل الألوان كاملاً بشكل صحيح, ستكون قائمة `تسلسل`{:class="block3variables"} فارغة و سيعتبر اللاعب فائز. اذا كنت ترغب, يمكنك إضافة بعض الأنوار الوامضة كجائزة للاعب الفائز، و يكون ذلك بعد أن تصبح قائمة `تسلسل` فارغة {:class="block3variables"}.
+\--- task \---
 
-\--- task \--- أضف هذه التعليمة البرمجية في نهاية مقطع`عند النقر على`{:class="block3events"}:
+Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
 
-![راقصة البالية](images/ballerina.png)
+\--- /task \---
+
+Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+
+\--- task \---
+
+Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
     انتظر حتى <(طول [تسلسل v] :: list) = [0] :: operators> :: control
@@ -129,15 +176,19 @@ end
 
 \--- /task \---
 
-\--- task \--- من جزء المنصة, استورد صوت `آلة الطبلة` أو أي صوت تفضله.
+\--- task \---
+
+Switch to the Stage, and import the `drum machine` sound or another sound you like.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- أضف هذه التعليمات البرمجية لتشغيل صوت و لتغيير ألوان الخلفية عندما يفوز اللاعب.
+\--- task \---
 
-![راقصة البالية](images/stage.png)
+Add this code to play a sound and make the backdrop change colour when the player wins.
+
+![ballerina](images/stage.png)
 
 ```blocks3
     عندما تستقبل [فزت! v] :: events
