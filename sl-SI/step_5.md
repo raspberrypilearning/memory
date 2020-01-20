@@ -2,19 +2,29 @@
 
 Zaenkrat si mora igralec zapomniti zaporedje petih barv. Izboljšaj svojo igro, tako da dodaš točke in dodaj kode, da bo igralec, ko dobi dovolj točk, prešel na naslednjo stopnjo, na kateri si bo moral zapomniti daljše zaporedje.
 
-\--- task \--- Ustvari novo spremenljivko z imenom `točke`{:class="block3variables"}.
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+Create a new variable called `score`{:class="block3variables"}.
 
-Glede na `točke`{:class="block3variables"} bo igra določila, kako dolgo bo zaporedje. Začni s številom točk (in dolžino zaporedja) `3`.
+[[[generic-scratch3-add-variable]]]
 
-\--- task \--- Na začetek bloka `ko kliknemo na zastavico`v figuri tvojega lika {:class="block3events"} dodaj kodo, ki nastavi `točke`{:class="block3variables"} na `3`. \--- /task \---
+\--- /task \---
 
-Namesto tega, da vedno ustvariš zaporedje petih barv, boš sedaj uporabil-a `točke`{:class="block3variables"} za določitev dolžine zaporedja.
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- task \--- V figuri spremeni zanko `ponovi`{:class="block3control"} (ki ustvarja barvno zaporedje), da se ponovi `točke-`{:class="block3variables"}krat:
+\--- task \---
 
-![figura](images/ballerina.png)
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 ponovi (točke :: Spremenljivka) krat
@@ -23,21 +33,33 @@ konec
 
 \--- /task \---
 
-\--- task \--- Če igralec pravilno ponovi zaporedje, dodaj `1` k `točkam`{:class="block3variables"}, kar podaljša dolžino naslednjega zaporedja. Kodi lika dodaj naslednji blok na **tisto mesto, kjer že veš, da je zaporedje pravilno**:
+\--- task \---
 
-![figura](images/ballerina.png)
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 spremeni [točke v] za (1)
 ```
 
-\--- hints \--- \--- hint \--- Da je zaporedje pravilno, veš tedaj, ko igra `objavi`{:class="block3events"} sporočilo 'zmaga'. \--- /hint \--- \--- /hints \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-Na koncu dodaj okoli kode, ki ustvarja zaporedje še zanko `ponavljaj`{:class="block3control"}, da bo za vsako naslednjo stopnjo ustvarjeno novo barvno zaporedje. Tvoja koda lika bi lahko bila videti takole:
+\--- task \---
 
-![balerina](images/ballerina.png)
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 ko kliknemo na zastavico
@@ -57,4 +79,8 @@ konec
 
 \--- /task \---
 
-\--- task \--- Prijatelji naj igro preizkusijo. Ne pozabi skriti seznama `zaporedje`{:class="block3variables"}, preden jo začnejo igrati! \--- /task \---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
