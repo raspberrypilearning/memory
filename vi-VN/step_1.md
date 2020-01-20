@@ -10,15 +10,21 @@ Trong dự án này, bạn sẽ tạo ra một trò chơi trí nhớ trong đó 
 
 ### Những gì bạn sẽ làm
 
-\--- không in \--- Nhấp vào cờ xanh để bắt đầu. Xem chuỗi màu sắc được thể hiện bởi trang phục của vũ công và lắng nghe tiếng trống đi kèm, sau đó lặp lại màu sắc cho cô ấy. Nếu bạn nhận được thứ tự sai màu, đó là trò chơi kết thúc!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
-\--- / không in \---
+\--- /no-print \---
 
-\--- chỉ in \--- ![screenshot of finished game](images/screenshot.png) \--- / chỉ in \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- sụp đổ \---
 
@@ -40,17 +46,19 @@ Trong dự án này, bạn sẽ tạo ra một trò chơi trí nhớ trong đó 
 
 ### Phần mềm
 
-Cào 3 ( [trực tuyến](https://rpf.io/scratchon){: target = "_ blank"} hoặc [ngoại tuyến](https://rpf.io/scratchoff){: target = "_ blank"}) \--- / thu gọn \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- sụp đổ \---
 
 ## tiêu đề: Thông tin bổ sung cho các nhà giáo dục
 
-\--- không in \---
+\--- no-print \---
 
-Nếu bạn cần in dự án này, vui lòng sử dụng [bản in](https://projects.raspberrypi.org/en/projects/memory/print){:target="_ blank"}.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
-\--- / không in \---
+\--- /no-print \---
 
 You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
