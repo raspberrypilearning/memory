@@ -20,11 +20,19 @@
 
 播放鼓的代碼是 **非常** 相似改變人物的服裝的代碼。
 
-\---提示\--- \---提示\--- 你只需要添加兩個塊：一個 `播放鼓用於（0.25）節拍`{：class =“block3sound”}塊和一個 `項目（長度為2個）序列`的序列{：class =“block3variables”}塊。 \--- /提示\--- \---提示\---
+\--- hints \---
 
-以下是您需要的塊：
+\--- hint \---
 
-![芭蕾舞演員](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /提示\---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 播放鼓（\（1 \）Snare Drum v）for（0.25）beats
@@ -32,11 +40,13 @@
 （[sequence v]的項目（[sequence v]的長度））
 ```
 
-\--- /提示\---
+\--- /hint \---
 
-\---提示\--- 以下是完成的代碼的外觀：
+\--- hint \---
 
-![芭蕾舞演員](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 當標記點擊時
@@ -49,8 +59,8 @@
 結束
 ```
 
-\--- /提示\---
+\--- /hint \---
 
-\--- /提示\---
+\--- /hints \---
 
-\--- /任務\---
+\--- /task \---
