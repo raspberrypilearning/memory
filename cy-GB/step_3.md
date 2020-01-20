@@ -20,9 +20,17 @@ Ychwanega estyniad Sain i dy brosiect fel dy fod yn gallu defnyddio bloc `chwara
 
 Mae'r côd sy'n chwarae'r drwm yn debyg **iawn** i'r côd sy'n newid gwisg y cymeriad.
 
-\--- hints \--- \--- hint \--- Mae dim ond angen i ti ychwanegu dau floc: bloc `chwarae drwm am (0.25) beats`{:class="block3sound"} a bloc `eitem dilyniant (hyd y dilyniant)`{:class="block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Dyma'r blociau côd rwyt ti eu hangen:
+\--- hint \---
+
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
 
 ![ballerina](images/ballerina.png)
 
@@ -34,7 +42,9 @@ chwarae drwm ((1) Snare Drum v) am (0.25) curiad
 
 \--- /hint \---
 
-\--- hint \--- Dyma sut ddylai dy gôd gorffenedig edrych:
+\--- hint \---
+
+Here is how your finished code should look:
 
 ![ballerina](images/ballerina.png)
 
