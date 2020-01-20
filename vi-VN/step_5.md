@@ -2,17 +2,27 @@
 
 Cho đến nay, người chơi chỉ phải nhớ một chuỗi năm màu. Cải thiện trò chơi của bạn bằng cách thêm điểm và thêm mã để khi người chơi ghi điểm, trò chơi sẽ chuyển sang cấp độ tiếp theo và chuỗi màu cần nhớ trở nên dài hơn.
 
-\--- task \--- Tạo một biến mới gọi là `điểm`{: class = "block3variables"}.
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- / nhiệm vụ \---
+Create a new variable called `score`{:class="block3variables"}.
 
-Dựa trên `điểm`{: class = "block3variables"}, trò chơi sẽ quyết định độ dài của chuỗi màu. Bắt đầu với số điểm (và độ dài chuỗi) là `3`.
+[[[generic-scratch3-add-variable]]]
 
-\--- task \--- Thêm một khối khi bắt đầu `ký tự của bạn khi cờ nhấp vào mã`{: class = "block3events"} để đặt `điểm`{: class = "block3variables"} thành `3`. \--- /task \---
+\--- /task \---
 
-Thay vì luôn tạo một chuỗi năm màu, giờ đây bạn muốn `điểm`{: class = "block3variables"} để xác định độ dài chuỗi.
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- Nhiệm vụ \--- Thay đổi của nhân vật `lặp lại`{: class = "block3control"} loop (cho việc tạo chuỗi màu sắc) để lặp lại `điểm`{: class = "block3variables"} lần:
+\--- task \---
+
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
 ![sprite](images/ballerina.png)
 
@@ -23,7 +33,9 @@ kết thúc
 
 \--- /task \---
 
-\--- task \--- Nếu người chơi lặp lại trình tự chính xác, bạn nên thêm `1` vào `điểm`{: class = "block3variables"} và làm như vậy sẽ tăng độ dài của chuỗi tiếp theo. Thêm khối sau vào mã **của ký tự tại điểm bạn biết chuỗi là đúng**:
+\--- task \---
+
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
 ![sprite](images/ballerina.png)
 
@@ -31,13 +43,23 @@ kết thúc
 thay đổi [điểm v] bằng (1)
 ```
 
-\--- gợi ý \--- \--- gợi ý \--- Bạn biết trình tự là chính xác tại điểm khi trò chơi `phát`{: class = "block3events"} thông báo 'win'. \--- / gợi ý \--- \--- / gợi ý \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-\--- task \--- Cuối cùng, thêm một vòng lặp `mãi mãi`{: class = "block3control"} xung quanh mã tạo ra chuỗi, để trò chơi tạo ra một chuỗi màu mới cho mỗi cấp độ. Đây là cách mã của nhân vật của bạn có thể trông:
+\--- task \---
 
-![diễn viên ba lê](images/ballerina.png)
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 khi cờ nhấp
@@ -57,4 +79,8 @@ kết thúc
 
 \--- /task \---
 
-\--- nhiệm vụ \--- Hãy nhờ bạn bè kiểm tra trò chơi của bạn. Hãy nhớ ẩn danh sách `chuỗi`{: class = "block3variables"} trước khi họ chơi nó! \--- / nhiệm vụ \---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
