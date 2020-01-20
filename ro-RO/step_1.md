@@ -10,7 +10,9 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 
 ### Ce vei face
 
-\--- no-print \--- Faceți clic pe steagul verde pentru a începe. Urmăriți secvența de culori afișate de rochia dansatoarei și ascultați sunetele tobelor ce o insoțesc, apoi repetați culorile înapoi pe ea. Dacă nu identificați ordinea corectă a culorilor, jocul este terminat!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- print-only \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -28,7 +34,7 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 + Cum se creează și se utilizează liste pentru stocarea datelor
 + Cum se creează și se utilizează blocuri personalizate pentru repetitivitatea codului
 
-\--- /restrângere \---
+\--- /collapse \---
 
 ## \--- restrângere \---
 
@@ -40,7 +46,9 @@ Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [v
 
 ### Programe
 
-Scratch 3 (fie [online](https://rpf.io/scratchon){:target="_ blank"} sau [offline](https://rpf.io/scratchoff){: target="_blank"}) \--- collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -48,10 +56,10 @@ Scratch 3 (fie [online](https://rpf.io/scratchon){:target="_ blank"} sau [offlin
 
 \--- no-print \---
 
-Dacă doriți să printați acest proiect, folosiți[versiunea printare prietenoasă](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-Găsești versiunea [proiect finalizat](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
