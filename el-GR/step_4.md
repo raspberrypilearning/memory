@@ -2,41 +2,47 @@
 
 Τώρα θα προσθέσετε τέσσερα κουμπιά που πρέπει να πατήσετε για να επαναλάβετε την ακολουθία χρωμάτων.
 
-\--- task \--- Προσθέστε τέσσερα νέα sprites στο έργο σας για να αναπαριστάτε τα τέσσερα κουμπιά.
+\--- task \---
+
+Add four new sprites to your project to represent the four buttons.
 
 + Επεξεργαστείτε τα κοστούμια των νέων Sprites έτσι ώστε να υπάρχει ένα sprite σε κάθε ένα από τα τέσσερα χρώματα
 + Βάλτε τα σκίτσα στην ίδια σειρά με τα κοστούμια: κόκκινο, μπλε, πράσινο, κίτρινο
 
-![screenshot](images/colour-drums.png) \--- / task \---
+![screenshot](images/colour-drums.png)
 
-\--- task \--- Προσθέστε τον κωδικό στο κόκκινο sprite, έτσι ώστε, όταν κάνετε κλικ στο sprite τότε `μετάδωσε`{: class = «block3events»} ένα μήνυμα «κόκκινο» στο χαρακτήρα:
+\--- /task \---
 
-![κόκκινο τύμπανο](images/red_drum.png)
+\--- task \---
+
+Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+
+![red-drum](images/red_drum.png)
 
 ```blocks3
     όταν γίνει κλικ σε αυτό το αντικείμενο 
     μετάδωσε (κόκκινο)
 ```
 
-\--- / task \---
+\--- /task \---
 
-Ένα μπλοκ `μετάδωσε`{: class = «block3events»} είναι σαν ένα μήνυμα να ανακοινώθηκε από ένα μεγάφωνο, το οποίο θα μπορεί για παράδειγμα να ακούσετε σε σχολεία ή σούπερ μάρκετ. Όλοι οι sprites μπορούν να ακούσουν το `μετάδωσε`{: class = "block3events"}, αλλά μόνο το sprite που η δουλειά του είναι να ανταποκριθεί θα κάνει κάτι.
-
-\--- task \---
-
-Προσθέστε παρόμοιο κώδικα για τα μπλε, πράσινο, κίτρινο sprites για εκείνο να `μετάδωσε`{: class = «block3events»} μηνύματα σχετικά με το δικό τους χρώμα.
-
-\--- / task \---
-
-Θυμάσαι ότι το `μετάδωσε`{: class = "block3events"} είναι σαν ένα μήνυμα μεγαφώνου; Θα προσθέσω κώδικα για να κάνει τη δουλειά του sprite χαρακτήρα για την αντιμετώπιση της `εκπομπή`{: class = «block3events»} μηνύματα.
+A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
 \--- task \---
 
-Όταν sprite χαρακτήρας σας λαμβάνει το μήνυμα `κόκκινο`{: class = «block3events»}, ο κώδικας οφείλει να ελέγξει εάν ο αριθμός `1` είναι στην αρχή της `λίστα`{: class = «block3variables»} λίστα (που σημαίνει ότι το `κόκκινο`{: class = "block3events"} είναι το επόμενο χρώμα στην ακολουθία).
+Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
 
-Εάν το `1` βρίσκεται στην αρχή της λίστας, ο κώδικας πρέπει να αφαιρέσει τον αριθμό από τη λίστα, επειδή ο παίκτης θυμόταν το σωστό χρώμα. Διαφορετικά, το παιχνίδι τελειώνει και ο κωδικός θα πρέπει να `στάση όλων`{: class = «block3control»} για να τελειώσει το παιχνίδι.
+\--- /task \---
 
-![μπαλλαρίνα](images/ballerina.png)
+Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+
+\--- task \---
+
+When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+
+If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 όταν λάβω [κόκκινο v]
@@ -48,18 +54,34 @@
 end
 ```
 
-\--- / task \---
+\--- /task \---
 
-\--- έργο \--- Προσθέστε τον κώδικα που μόλις έγραψε, έτσι ώστε ένα τύμπανο κτύπησε παίζει επίσης όταν το ξωτικό χαρακτήρα λαμβάνει τις σωστές `εκπομπής`{: class = «block3events»}.
+\--- task \---
 
-\--- Συμβουλές \--- \--- υπαινιγμός \--- Μπορείτε να χρησιμοποιήσετε τους αριθμούς που αντιστοιχούν σε κάθε χρώμα για να παίξετε το σωστό beat beat;
+Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+
+\--- hints \---
+
+\--- hint \---
+
+Can you use the numbers that correspond to each colour to play the correct drum beat?
 
 + 1 = κόκκινο
 + 2 = μπλε
 + 3 = πράσινο
-+ 4 = κίτρινο \--- / υπαινιγμός \--- \--- υπαινιγμός \--- Πάνω από το `διαγράψτε 1 από την αλληλουχία`{block: block3variables}}, προσθέστε το `τύμπανο αναπαραγωγής`{: class = " block3sound "} για να αναπαράγετε τον πρώτο ήχο στη λίστα `σειράς`{: class =" block3variables "}.
++ 4 = yellow
 
-\--- /hint \--- \--- hint \--- Εδώ είναι ο κώδικας που θα χρειαστεί να προσθέσετε:
+\--- /hint \---
+
+\--- hint \---
+
+Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here is the code you will need to add:
 
 ```blocks3
 όταν λάβω [κόκκινο v]
@@ -70,22 +92,33 @@ end
   πες [Τέλος παιχνιδιού!] για (1) δευτερόλεπτα
   σταμάτησε [all v]
 end
-
 ```
 
-\--- /hint \--- \--- /hint \--- \--- / task \---
+\--- /hint \---
 
-\--- task \--- Διπλασιάστε τον κώδικα που χρησιμοποιήσατε για να κάνετε το sprite χαρακτήρα σας να ανταποκριθεί στο μήνυμα `red`{: class = "block3events"}. Αλλάξτε τον διπλότυπο κώδικα έτσι ώστε να στέλνει το μήνυμα `μπλε`{: class = "block3events"}. \--- / task \---
+\--- /hints \---
 
-Όταν ο σπρίτ απαντήσει στο μήνυμα `μπλε`{: class = "block3events"}, ποιο κομμάτι κώδικα θα πρέπει να παραμείνει το ίδιο και ποιο bit θα πρέπει να αλλάξει; Θυμηθείτε ότι κάθε χρώμα έχει έναν αντίστοιχο αριθμό.
+\--- /task \---
 
-\--- task \--- Αλλαγή του κώδικα του sprite χαρακτήρα, ώστε ο χαρακτήρας να ανταποκρίνεται σωστά στο μήνυμα `blue`{: class = "block3events"}.
+\--- task \---
 
-\--- hints \--- \--- hint \---
+Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
 
-Κρατήστε αυτά τα μπλοκ, αλλά πρέπει να τα αλλάξετε με κάποιο τρόπο:
+\--- /task \---
 
-![μπαλλαρίνα](images/ballerina.png)
+When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+
+\--- task \---
+
+Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+
+\--- hints \---
+
+\--- hint \---
+
+Keep these blocks, but you need to change them in some way:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 <(στοιχείο (1 v) της ακολουθίας v) = [1]>
@@ -95,9 +128,13 @@ end
 τύμπανο παιχνιδιού (\ (1 \) Snare Drum v)
 ```
 
-\--- / hint \--- \--- υπαινιγμός \--- Εδώ είναι ο τρόπος με τον οποίο ο κώδικας σας θα πρέπει να αναζητήσει την εκπομπή `μπλε`{: class = "block3events"}.
+\--- /hint \---
 
-![μπαλλαρίνα](images/ballerina.png)
+\--- hint \---
+
+Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 όταν λάβω [μπλε v]
@@ -110,34 +147,48 @@ end
 end
 ```
 
-\--- /hint \--- \--- /hints \--- \--- / task \---
+\--- /hint \---
 
-\--- καθήκον \--- Διπλασιασμός ο κωδικός πάλι δύο φορές (για τα πράσινα και κίτρινα κουμπιά), και να αλλάξετε τα απαραίτητα εξαρτήματα, έτσι ώστε ο χαρακτήρας ανταποκρίνεται σωστά στις νέες `μεταδόσεις`{: class = «block3events»}. \--- / task \---
+\--- /hints \---
 
-Θυμηθείτε να δοκιμάσετε τον κώδικα! Μπορείτε να απομνημονεύσετε μια σειρά πέντε χρωμάτων; Είναι η ακολουθία διαφορετική κάθε φορά;
+\--- /task \---
 
-Όταν ο παίκτης επαναλαμβάνει σωστά ολόκληρη την ακολουθία των χρωμάτων, η `αλληλουχία`{: class = «block3variables»} λίστα emtpy και ο παίκτης κερδίζει. Εάν θέλετε, μπορείτε επίσης να εμφανίσετε φώτα που αναβοσβήνουν ως ανταμοιβή αφού η λίστα `ακολουθίας`{: class = "block3variables"} είναι κενή.
+\--- task \---
 
-\--- task \--- Προσθέστε αυτόν τον κώδικα στο τέλος του χαρακτήρος `όταν πατήσετε σημαία`{: class = "block3events"} script:
+Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
 
-![μπαλλαρίνα](images/ballerina.png)
+\--- /task \---
+
+Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+
+\--- task \---
+
+Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
     περίμενε ώσπου <(μήκος λίστας [sequence v]) = [0]>
 μετάδωσε (νίκη v) και περίμενε
 ```
 
-\--- / task \---
+\--- /task \---
 
-\--- task \--- Μεταβείτε στο Stage και εισάγετε το `drum machine` ή άλλο ήχο που σας αρέσει.
+\--- task \---
+
+Switch to the Stage, and import the `drum machine` sound or another sound you like.
 
 [[[generic-scratch3-sound-from-library]]]
 
-\--- / task \---
+\--- /task \---
 
-\--- task \--- Προσθέστε αυτόν τον κωδικό για να παίξετε έναν ήχο και να αλλάξετε το χρώμα της σκηνής όταν κερδίσει ο παίκτης.
+\--- task \---
 
-![μπαλλαρίνα](images/stage.png)
+Add this code to play a sound and make the backdrop change colour when the player wins.
+
+![ballerina](images/stage.png)
 
 ```blocks3
     όταν λάβω [νίκη v]
@@ -149,4 +200,4 @@ end
 επανάφερε εφέ γραφικών
 ```
 
-\--- / task \---
+\--- /task \---
