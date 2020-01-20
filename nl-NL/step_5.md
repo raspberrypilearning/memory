@@ -2,17 +2,27 @@
 
 Tot nu toe hoeft de speler maar een reeks van vijf kleuren te onthouden. Verbeter je spel door een score toe te voegen en code toe te voegen, zodat wanneer de speler punten scoort, het spel naar het volgende niveau gaat en de te onthouden kleurenreeks langer wordt.
 
-\--- task \--- Maak een nieuwe variabele met de naam `score` {:class="block3variables"}.
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+Create a new variable called `score`{:class="block3variables"}.
 
-Op basis van de `score`{:class="block3variables"}, zal het spel beslissen over de lengte van de kleurenreeks. Begin met een score (en een lengte van de kleurenreeks) van `3`.
+[[[generic-scratch3-add-variable]]]
 
-\--- task \--- Voeg een blok toe aan het begin van de code van je personage met `wanneer op de groene vlag wordt geklikt`{:class="blockevents"} om de `score`{:class="blockdata"} op `3`te zetten. \--- /task \---
+\--- /task \---
 
-In plaats van altijd een reeks van vijf kleuren te maken, gebruik je nu de `score`{:class="block3variables"} om de lengte van de reeks te bepalen.
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- task \--- Verander de `herhaal`{:class="blockcontrol"}-lus van het personage (om de kleuren reeks te maken) om `score`{:class="blockdata"} keer te herhalen:
+\--- task \---
+
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
 ![sprite](images/ballerina.png)
 
@@ -23,7 +33,9 @@ einde
 
 \--- /task \---
 
-\--- task \--- Als de speler de juiste volgorde herhaalt, moet je `1` aan `score`{:class="block3variabelen"} toevoegen, en daarmee verhoog je de lengte van de volgende reeks. Voeg het volgende blok toe aan de code van het personage **op het punt waar je weet dat de reeks correct is**:
+\--- task \---
+
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
 ![sprite](images/ballerina.png)
 
@@ -31,13 +43,23 @@ einde
 verander [score v] met (1)
 ```
 
-\--- hints \--- \--- hint \--- Je weet dat de volgorde correct is op het moment dat het spel het 'gewonnen'-signaal`uitzendt`{:class="block3events"}. \--- / hint \--- \--- / hints \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-\--- task \--- Tenslotte moet er nog een `herhaal`{:class="blockcontrol"}-lus om de code worden gezet die de reeks maakt, zodat er voor elk niveau een nieuwe reeks wordt gemaakt. Zo zou de code van het personage eruit kunnen zien:
+\--- task \---
 
-![balletdanseres](images/ballerina.png)
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 wanneer groene vlag wordt aangeklikt
@@ -57,4 +79,8 @@ einde
 
 \--- /task \---
 
-\--- task \--- Laat je vrienden je spel testen. Vergeet niet om de `reeks`{:class="block3variables"} lijst te verbergen voordat ze het spelen! \--- / task \---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
