@@ -20,11 +20,19 @@
 
 التعليمات البرمجية التي تشغل الطبل **مشابهه جداً** للتعليمات البرمجية التي تقوم بتغيير مظهر الشخصية.
 
-\--- hints \--- \--- hint \--- تحتاج فقط لإضافة كتلتين:`دقّ الطبل لمدة (0.25) وحدة ايقاع`{:class="block3sound"} block و كتلة `العنصر (طول تسلسل) من تسلسل`{:class="block3variables"} block. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-إليك الكتل التي تحتاجها:
+\--- hint \---
 
-![راقصة البالية](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- hint/ \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 دقَّ الطبل ((1) Snare Drum v) لمدة (0.25) وحدة إيقاع :: music
@@ -32,11 +40,13 @@
 (العنصر (طول [تسلسل v] :: list) من [تسلسل v] :: list)
 ```
 
-\--- hint/ \---
+\--- /hint \---
 
-\--- hint \--- سيكون الكود النهائي كالتالي:
+\--- hint \---
 
-![راقصة البالية](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 عند نقر ⚑ :: events
@@ -49,8 +59,8 @@
 end
 ```
 
-\--- hint/ \---
+\--- /hint \---
 
-\--- hints/ \---
+\--- /hints \---
 
 \--- /task \---
