@@ -10,7 +10,9 @@ Yn y prosiect hwn, byddi di yn creu gêm cofio lle mae'n rhaid i ti gofio ac ail
 
 ### Yr hyn byddi di'n ei greu
 
-\--- no-print \--- Clicia'r faner werdd i gychwyn. Gwylia'r dilyniant o liwiau sy'n cael eu arddangos ar wisg y dawnsiwr a gwrando ar guriadau'r drwm, yna ail-adrodda'r lliwiau yn ôl iddi. Os wyt ti'n cael trefn y lliwiau yn anghywir, yna mae'r gêm ar ben!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@ Yn y prosiect hwn, byddi di yn creu gêm cofio lle mae'n rhaid i ti gofio ac ail
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \---collapse\---
 
@@ -40,7 +46,9 @@ Yn y prosiect hwn, byddi di yn creu gêm cofio lle mae'n rhaid i ti gofio ac ail
 
 ### Meddalwedd
 
-Scratch 3 (unai [arlein](https://rpf.io/scratchon){:target="_blank"} neu [all-lein](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \---collapse\---
 
@@ -48,7 +56,7 @@ Scratch 3 (unai [arlein](https://rpf.io/scratchon){:target="_blank"} neu [all-le
 
 \--- no-print \---
 
-Os oes angen i chi argraffu y prosiect, defnyddiwch [fersiwn i'w argraffu](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
