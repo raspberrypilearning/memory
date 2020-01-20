@@ -20,11 +20,19 @@ Dodaj rozszerzenie Muzyka do swojego projektu, aby móc użyć bloku `graj na b�
 
 Kod odtwarzający bęben to **bardzo** podobny do kodu zmieniającego kostium postaci.
 
-\--- wskazówki \--- \--- wskazówka\--- Musisz tylko dodać dwa bloki: `graj na bębnie przez (0.25) uderzeń`{:class="block3sound"} i blok `element (długość sekwencji) z sekwencji`{:class="block3variables"}. -- /wskazówki \--- \--- wskazówka \---
+\--- hints \---
 
-Oto bloki, których potrzebujesz:
+\--- hint \---
 
-![balerina](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 graj na (\ (1 \) Werbel v) przez (0.25) taktów
@@ -34,9 +42,11 @@ graj na (\ (1 \) Werbel v) przez (0.25) taktów
 
 \--- /hint \---
 
-\--- wskazówka \--- Oto, jak powinien wyglądać gotowy kod:
+\--- hint \---
 
-![balerina](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 kiedy kliknięto flagę
