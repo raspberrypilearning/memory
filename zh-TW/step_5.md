@@ -2,42 +2,64 @@
 
 到目前為止，玩家只需要記住五種顏色的序列。 通過添加分數和添加代碼來改善您的遊戲，以便當玩家得分時，遊戲移動到下一級別並且要記住的顏色序列變得更長。
 
-\--- task \--- 創建一個名為 `score`{：class =“block3variables”}的新變量。
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- /任務\---
+Create a new variable called `score`{:class="block3variables"}.
 
-基於 `得分`{：class =“block3variables”}，遊戲將決定顏色序列的長度。以分數（和序列長度） `3`。
+[[[generic-scratch3-add-variable]]]
 
-\--- task \--- 當標記點擊</code>{：class =“block3events”}代碼時，在角色 `的開頭添加一個塊，將 <code>得分`{：class =“block3variables”}設置為 `3`。 \--- /任務\---
+\--- /task \---
 
-您現在希望 `得分`{：class =“block3variables”}來確定序列長度，而不是始終創建五種顏色的序列。
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- task \--- 更改角色的 `重複`{：class =“block3control”}循環（用於創建顏色序列）以重複 `分`{：class =“block3variables”}次：
+\--- task \---
 
-![精靈](images/ballerina.png)
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /任務\---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 repeat（score :: variables）
 結束
 ```
 
-\--- /任務\---
+\--- /task \---
 
-\--- task \--- 如果玩家重複正確的序列，你應該添加 `1` 到 `得分`{：class =“block3variables”}，這樣做會增加下一個序列的長度。 在您知道序列正確的位置將以下塊添加到字符的代碼 ****：
+\--- task \---
 
-![精靈](images/ballerina.png)
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 通過（1）改變[得分v]
 ```
 
-\---提示\--- \---提示\--- 當遊戲 `廣播`{：class =“block3events”}'win'消息時，你知道序列是正確的。 \--- /提示\--- \--- /提示\---
+\--- hints \---
 
-\--- /任務\---
+\--- hint \---
 
-\--- task \--- 最後，在生成序列的代碼周圍添加 `永久`{：class =“block3control”}循環，以便遊戲為每個級別創建一個新的顏色序列。 這是您的角色代碼的外觀：
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
 
-![芭蕾舞演員](images/ballerina.png)
+\--- /hint \---
+
+\--- /hints \---
+
+\--- /task \---
+
+\--- task \---
+
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 當標誌點擊
@@ -55,6 +77,10 @@ repeat（score :: variables）
 結束
 ```
 
-\--- /任務\---
+\--- /task \---
 
-\---任務\--- 讓你的朋友測試你的遊戲。記得在播放之前隱藏 `序列`{：class =“block3variables”}列表！ \--- /任務\---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
