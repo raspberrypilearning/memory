@@ -2,17 +2,27 @@
 
 මෙතෙක්, ක්‍රීඩකයා මතක තබා ගත යුත්තේ වර්ණ පහක අනුක්‍රමයක්(sequence එකක්) පමණි. ලකුණු(score එකක්) ලබාගතහැකි ක්‍රමයක් ක්‍රීඩාවට එකතු කිරීමෙන් ඔබේ ක්‍රීඩාව වැඩි දියුණු කරන්න, එවිට ක්‍රීඩකයා ලකුණු ලබා ගන්නා විට, ක්‍රීඩාව ඊළඟ(next) මට්ටමට(level එකට) ගමන් කරන අතර මතක තබා ගතයුතු වර්ණ අනුක්‍රමය(sequence එක) දිගු වේ.
 
-\--- task \--- `score`{:class="block3variables"} නමින් නව විචල්‍යයක්(variable එකක්) සාදන්න.
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+Create a new variable called `score`{:class="block3variables"}.
 
-`ලකුණු(score)` {:class="block3variables"} මත පදනම්ව, ක්‍රීඩාව වර්ණ අනුක්‍රමයේ(sequence එකේ) දිග තීරණය කරයි. ලකුණු `3` ක් (සහ අනුක්‍රමික දිග ක්) සමඟ ක්‍රීඩාව ආරම්භ කරන්න. 
+[[[generic-scratch3-add-variable]]]
 
-\--- task \--- `කොඩිය ක්ලික් කළ විට`{:class="block3events"} ඔබේ චරිතයේ(character එකේ) ආරම්භයේදී `ලකුණු(score)`{:class="block3variables"} `3` ලෙස සැකසීමට කේතය(code) කට්ටියක්(block එකක්) එක් කරන්න. \--- /task \---
+\--- /task \---
 
-සෑම විටම වර්ණ පහක අනුක්‍රමයක්(sequence එකක්) නිර්මාණය කරනවා වෙනුවට, ඔබට දැන් අවශ්‍ය වන්නේ `ලකුණු(score එක)`{:class="block3variables"} මගින් අනුක්‍රමයේ(sequence එකේ) දිග තීරණය කිරීම සඳහායි.
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- task \--- චරිතයේ වර්ණ අනුක්‍රමය(sequence එක) නිර්මාණය කිරීම සඳහා ඇති `පුනරාවර්තන(repeat)`{:class= "block3control"} ලූපය(loop) වෙනස් කර, `ලකුණු(score)`{:class="block3variables"} ගණන වරක් පුනරාවර්තනය වන පරිදි සකසන්න:
+\--- task \---
+
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
 ![sprite](images/ballerina.png)
 
@@ -23,7 +33,9 @@ end
 
 \--- /task \---
 
-\--- task \--- ක්‍රීඩකයා විසින් නිවැරදි අනුක්‍රමය(sequence එක) පුනරාවර්තනය(repeat) කරන්නේ නම්, ඔබ `1` ලකුණක් `ලකුණු(score)`{:class="block3variables"} වලට එකතු කළ යුතුය, එසේ කිරීමෙන් ඊළඟ අනුක්‍රමයේ(sequence එකේ) දිග වැඩි වේ. **අනුක්‍රමය(sequence එක) නිවැරදි බව ඔබ දන්නා මොහොතේ** චරිතයේ කේතයට(code එකට) පහත කට්ටිය(block එක) එකතු කරන්න:
+\--- task \---
+
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
 ![sprite](images/ballerina.png)
 
@@ -31,11 +43,21 @@ end
 change [score v] by (1)
 ```
 
-\--- hints \--- \--- hint \--- ක්‍රීඩාව 'win' යන පණිවිඩය `විකාශනය(broadcasts)` {:class="block3events"} කරන මොහොතේ අනුක්‍රමය(sequence එක) නිවැරදි බව ඔබට දැනගත හැකියි. \--- /hint \--- \--- /hints \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-\--- task \--- අවසාන වශයෙන්, අනුක්‍රම ජනනය කරන කේතයට `අපරිමිත(infinite)`{:class="block3control"} ලූප(loop) එක් කර, ක්‍රීඩාව එක් එක් මට්ටම්(levels) සඳහා නව වර්ණ අනුක්‍රම(sequence) නිර්මාණය කරන පරිදි සකසන්න. ඔබගේ චරිතයේ(character's) කේතය(code එක) මෙවැන්නක් වියයුතුයි:
+\--- task \---
+
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
 
 ![ballerina](images/ballerina.png)
 
@@ -57,4 +79,8 @@ end
 
 \--- /task \---
 
-\--- task \--- ඔබගේ ක්‍රීඩාව පරීක්ෂා කිරීමට ඔබේ මිතුරන් යොදාගන්න. ඔවුන් එය ක්‍රීඩා කිරීමට පෙර `අනුක්‍රම(sequence)`{:class="block3variables"} ලැයිස්තුව(list එක) සැඟවීමට මතක තබා ගන්න! \--- /task \---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
