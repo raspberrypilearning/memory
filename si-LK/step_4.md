@@ -2,14 +2,20 @@
 
 දැන් ඔබ සූදානම් වන්නෙ බොත්තම්(buttons) හතරක් එක් කිරීමටයි, ක්‍රීඩකයාට එම බොත්තම් එබීම මගින් වර්ණ(colour) අනුක්‍රමය(sequence එක) නැවත නැවත(repeat) ක්‍රියාත්මක කරවිය හැකියි.
 
-\--- task \--- බොත්තම්(buttons) හතර නියෝජනය කිරීම සඳහා, ඔබේ ව්‍යාපෘතියට නව sprite හතරක් එක් කරන්න.
+\--- task \---
+
+Add four new sprites to your project to represent the four buttons.
 
 + නව sprite වල ඇඳුම්(costume) වෙනස් කරන්න, එවිට වර්ණ හතරට sprite එක බැගින් ඇත.
 + රතු(red), නිල්(blue), කොළ(green) සහ කහ(yellow) යන වර්ණ ඇඳුම්(costume): අනුපිළිවෙලටම sprites වේදිකා මත තබන්න
 
-![තිර රුව(screenshot)](images/colour-drums.png) \--- /task \---
+![screenshot](images/colour-drums.png)
 
-\--- task \--- රතු(red) sprite එක මත ක්ලික් කළ විට එය 'රතු'('red') පණිවිඩයක්(message එකක්) sprite: චරිතයට(character sprite එකට), `විකාශනය(broadcasts)`{:class="block3events"} කරන පරිදි, එයට කේතයක්(code එකක්) එක් කරන්න
+\--- /task \---
+
+\--- task \---
+
+Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
 
 ![red-drum](images/red_drum.png)
 
@@ -20,21 +26,21 @@
 
 \--- /task \---
 
-`විකාශනයක්(broadcast)`{:class="block3events"} යනු ශබ්ද විකාශන යන්ත්‍රයක් හරහා විකාශනය කරන පණිවිඩයකට සමානය දෙයකි, එය ඔබට පාසැල්වල හෝ සුපිරි වෙළඳසැල්වල ඇසෙන විකාශන වලට සමාන වේ. සියලුම sprite වලට `විකාශනය(broadcast)`{:class="block3events"} ඇසෙනු ඇත, නමුත් ප්‍රතිචාර දැක්විය හැක්කේ ප්‍රතිචාර දැක්විය යුතු sprite පමණි.
+A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
 \--- task \---
 
-නිල්(blue), කොළ(green) සහ කහ(yellow) sprite මගින් ඔවුන්ගේම වර්ණය පිළිබඳ පණිවිඩ `විකාශනය(broadcast)`{:class="block3events"} කරවීමට, පෙර මෙන් සමාන කේත(code) එක් කරන්න.
+Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
 
 \--- /task \---
 
-`විකාශනය(broadcast)`{:class="block3events"}, ශබ්ද විකාශන පණිවිඩයකට සමාන බව ඔබට මතකද? `විකාශනයට(broadcast)`{:class="block3events"} පණිවිඩයට(message එකට) ප්‍රතිචාර දැක්වීම චරිත(character) sprite ගේ කාර්යය බවට පත් කිරීම සඳහා ඔබ එයට කේතයක්(code එකක්) එක් කරනු ඇත.
+Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
 
 \--- task \---
 
-ඔබේ sprite චරිතයට `රතු(red)`{:class="block3events"} පණිවිඩය(message එක) ලැබුණු විට, කේතය(code එක) මගින් අංක `1` `අනුක්‍රමය(sequence එකේ)`{:class="block3variables"} ලැයිස්තුව(list) ආරම්භයේ ඇති දැයි පරීක්ෂා කළ යුතු අතර (එයින් අදහස් වන්නේ `රතු(red)`{:class="block3events"} යනු අනුක්‍රමයේ ඊළඟ වර්ණය බවයි).
+When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
 
-`1` ලැයිස්තුව(list එක) ආරම්භයේ ඇත්නම්, කේතය(code එක) ලැයිස්තුවෙන්(list එකෙන්) අංකය ඉවත් කළ යුතුය, මන්ද ක්‍රීඩකයාට නිවැරදි වර්ණය මතක ඇති බැවිනි. එසේ නොමැතිනම් තරඟය අවසන් කළයුතු අතර කේතය(code එක) ක්‍රීඩාව අවසන් කිරීමට `සියල්ල නැවැත්විය යුතුය(stop all)`{:class="block3control"}.
+If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
 
 ![ballerina](images/ballerina.png)
 
@@ -50,16 +56,32 @@ end
 
 \--- /task \---
 
-\--- task \--- ඔබ දැන් ලියා ඇති කේතයට(code එකට) කේතයක් එක් කර, sprite චරිතයට නිවැරදි `විකාශනය(broadcast එක)` {:class="block3events"} ලැබුන විට බෙර පද(drum beat එක) වාදනය වන පරිදි සකසන්න.
+\--- task \---
 
-\--- hints \--- \--- hint \--- එක් එක් වර්ණයට අනුරූප සංඛ්‍යා භාවිතා කර, ඒවාට අදාල නිවැරදි බෙර(drum) පද(beats) වාදනය කරවීම ඔබට කළ හැකිද?
+Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+
+\--- hints \---
+
+\--- hint \---
+
+Can you use the numbers that correspond to each colour to play the correct drum beat?
 
 + 1 = red
 + 2 = blue
 + 3 = green
-+ 4 = yellow \--- /hint \--- \--- hint \--- `අනුක්‍රම(sequence)`{:class="block3variables"} ලැයිස්තුවේ පළමු ශබ්දය වාදනය කිරීමට `අනුක්‍රමයේ 1 මකන්න(delete 1 of sequence)`{:class="block3variables"} කට්ටියට ඉහළින්, `බෙර වාදනය(play drum)`{:class="block3sound"} කට්ටිය එක් කරන්න. 
++ 4 = yellow
 
-\--- /hint \--- \--- hint \--- ඔබ එකතු කළයුතු කේතය(code) මෙහි දැක්වේ:
+\--- /hint \---
+
+\--- hint \---
+
+Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here is the code you will need to add:
 
 ```blocks3
 when I receive [red v]
@@ -71,20 +93,31 @@ else
 say [Game over!] for (1) seconds
 stop [all v]
 end
-
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-\--- task \--- ඔබ ඔබේ sprite චරිතය සඳහා භාවිතා කළ කේතය(code එක) `රතු(red)`{:class="block3events"} පණිවිඩයට ප්‍රතිචාර දැක්වීමට හැකිවන පරිදි අනුපිටපත්(duplicate) කරන්න. `නිල්(blue)` {:class="block3events"} පණිවිඩය(message) යවන පරිදි, අනුපිටපත්(duplicate) කේතය(code එක) වෙනස් කරන්න. \--- /task \---
+\--- /hints \---
 
-`නිල්(blue)`{:class="block3events"} යන පණිවිඩයට sprite ප්‍රතිචාර දක්වන විට, කුමන කේත(code) කොටස(bit) නොවෙනස්ව පැවතිය යුතුද, කුමන කේත(code) කොටස(bit) වෙනස් විය යුතුද? සෑම වර්ණයකටම අනුරූප(corresponding) අංකයක් ඇති බව මතක තබා ගන්න.
+\--- /task \---
 
-\--- task \--- `නිල්(blue)`{:class="block3events"} පාට පණිවිඩයට නිවැරදිව ප්‍රතිචාර දක්වනපරිදි sprite චරිතයේ කේතය(code එක) වෙනස් කරන්න. 
+\--- task \---
 
-\--- hints \--- \--- hint \---
+Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
 
-මෙම කට්ටි(blocks) තබා ගන්න, නමුත් ඔබ ඒවා යම් යම් ආකාරයෙන් වෙනස් කළ යුතුවේ:
+\--- /task \---
+
+When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+
+\--- task \---
+
+Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+
+\--- hints \---
+
+\--- hint \---
+
+Keep these blocks, but you need to change them in some way:
 
 ![ballerina](images/ballerina.png)
 
@@ -96,7 +129,11 @@ when I receive [red v]
 play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
-\--- /hint \--- \--- hint \--- ඔබේ කේතය(code එක) `නිල්`{:class="block3events"} විකාශනය(broadcast) සෙවිය යුත්තේ මේ ආකාරයටයි.
+\--- /hint \---
+
+\--- hint \---
+
+Here is how your code should look for the `blue`{:class="block3events"} broadcast.
 
 ![ballerina](images/ballerina.png)
 
@@ -111,15 +148,25 @@ else
 end
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-\--- කාර්යය \--- කේතය දෙවරක් අනුපිටපත්(Duplicate) කරන්න (කොළ සහ කහ බොත්තම් වලට යෙදීම සඳහා), දැන් එහි අවශ්‍ය කොටස් වෙනස් කරන්න, එවිට චරිතය(character එක) නව `විකාශන(broadcasts)` {:class="block3events"} වලට නිවැරදිව ප්‍රතිචාර දක්වයි. \--- /task \---
+\--- /hints \---
 
-කේතය(code එක) පරීක්ෂා(test) කිරීමට මතක තබා ගන්න! ඔබට වර්ණ පහක අනුක්‍රමයක් මතක තබාගත හැකිද? සෑම අවස්ථාවකම අනුක්‍රමය(sequence එක) වෙනස් වන්නේද?
+\--- /task \---
 
-ක්‍රීඩකයා සම්පූර්ණ වර්ණ අනුක්‍රමය(sequence එක) නිවැරදිව පුනරාවර්තනය(repeat) කරන විට, `අනුක්‍රමය(sequence)`{:class="block3variables"} ලැයිස්තුව(list එක) හිස්වීමෙන්(emtpy වීමෙන්) සහ ක්‍රීඩකයා ජය ගනී. ඔබට අවශ්‍ය නම්, `අනුක්‍රම(sequence)`{:class="block3variables"} ලැයිස්තුව(list එක) හිස්වූ(empty වූ) පසු ඔබට ත්‍යාගයක්(reward එකක්) ලෙස නිවි නිවී දැල්වෙන(flashing) විදුලි පහන් කිහිපයක් ප්‍රදර්ශනය කළ හැකිය.
+\--- task \---
 
-\--- task \--- ඔබේ චරිතයේ(character එකේ) `කොඩිය ක්ලික් කළ විට`{:class="block3events"} කේත කට්ටිය (script එක) අවසානයට මෙම කේතය(code) එක් කරන්න:
+Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
+
+\--- /task \---
+
+Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+
+\--- task \---
+
+Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
 
 ![ballerina](images/ballerina.png)
 
@@ -130,13 +177,17 @@ end
 
 \--- /task \---
 
-\--- task \--- අදියර වෙත මාරු වී, `බෙර යන්ත්‍රය(drum machine)` ශබ්දය වෙනුවට ඔබ කැමති වෙනත් ශබ්දයක් ආයාත(import) කරන්න.
+\--- task \---
+
+Switch to the Stage, and import the `drum machine` sound or another sound you like.
 
 [[[generic-scratch3-sound-from-library]]]
 
 \--- /task \---
 
-\--- task \--- ශබ්දයක් වාදනය කිරීමට මෙම කේතය(code එක) එක් කර, ක්‍රීඩකයා ජයග්‍රහණය කළ විට පසුබිම්(backdrop) වර්ණය වෙනස් කරන්න.
+\--- task \---
+
+Add this code to play a sound and make the backdrop change colour when the player wins.
 
 ![ballerina](images/stage.png)
 
