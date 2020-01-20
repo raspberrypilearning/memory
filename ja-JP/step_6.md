@@ -2,21 +2,35 @@
 
 ハイスコアを保存して、友達と対戦できるようにしましょう。
 
-\--- task \--- `ハイスコア`{:class="block3variables"}と `名前`{:class="block3variables"}という2つの新しい変数をプロジェクトに追加します。 \--- /task \---
+\--- task \---
 
-プレイヤーがシーケンスを間違えてゲームが終了したとき、ゲームはスコアが現在のハイスコアより高いかどうかをチェックする必要があります。 もしそうであれば、ゲームはそのスコアをハイスコアとして保存し、またプレイヤーの名前を保存する必要があります。
+Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
 
-\--- task \--- あなたのキャラクタースプライトに `ハイスコア`{:class="block3variables"}を保存するコードを追加してください。 また、プレイヤーの名前を尋ね、それを `名前`{:class="block3variables"}変数に保存します。
+\--- /task \---
+
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+
+\--- task \---
+
+Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
-\--- hints \--- \--- hint \--- 新しいコードは次のパターンに従う必要があります。
+\--- hints \---
 
-`ゲームオーバー`{:class="block3looks"}メッセージの後 `もし`{:class="block3control"} `スコア`{:class="block3variables"}が `ハイスコア`{:class=" block3variables"} `より大きいければ`{:class="block3operators"} `ハイスコア`{:class="block3variables"} を`スコア`{:class="block3variables"} に `し`{:class="block3variables"}、プレイヤーの名前を`質問`{:class="block3sensing"}し、その`名前`{:class="block3variables"} を`答え`{:class="block3sensing"} に`する`{:class="block3variables"} \--- /hint \--- \--- hint \---
+\--- hint \---
 
-以下のブロックが必要です。
+Your new code needs to follow this pattern:
 
-![バレリーナ](images/ballerina.png)
+After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+
+\--- /hint \---
+
+\--- hint \---
+
+You need the following blocks:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 もし < > なら
@@ -39,9 +53,13 @@
 [名前 v] を[ ] にする 
 ```
 
-\--- /hint \--- \--- hint \--- 赤いボタンが押されたときのコードは次のようになります。
+\--- /hint \---
 
-![バレリーナ](images/ballerina.png)
+\--- hint \---
+
+Here's how your code for when the red button is pressed should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 [赤 v] を受け取ったとき
@@ -59,13 +77,17 @@
 終了
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-他の3色についても、この新しいコードをキャラクタスプライトに追加する必要があります。
+\--- /hints \---
 
-4色それぞれの「ゲームオーバー」コードがまったく同じであることがわかりますか。
+\--- /task \---
 
-![バレリーナ](images/ballerina.png)
+You need to add this new code to the character sprite for the other three colours too!
+
+Can you see that the 'Game over' code for each of the four colours is exactly the same?
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 [ゲームオーバー！] と(1) 秒間言う
@@ -77,17 +99,21 @@
 [すべて v] を止める
 ```
 
-例えば、サウンドを追加したり、「ゲームオーバー」メッセージを変更するなど、「ゲームオーバー」コードを変更する必要がある場合は、4回変更する必要があります。それは厄介なことであり、多くの時間を無駄にします。
+If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
-代わりに、独自のコードブロックを定義し、それをプロジェクト内の任意の場所で使用できます。
+Instead, you can define your own code block, and use it anywhere in your project.
 
-\--- task \--- `ブロック定義`{:class="block3myblocks"}を押し、そして **ブロックを作る**を押す。この新しいブロックを`ゲームオーバー`{:class="block3myblocks"}と名前を付けます。
+\--- task \---
+
+Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
 \--- /task \---
 
-\--- task \--- `赤`{:class="block3events"}ブロードキャストに接続された`でなければ`{:class="block3control"}ブロックから`ゲームオーバー`{:class="block3myblocks"}ブロックまでのコードを追加します、すると、次のようになります。
+\--- task \---
 
-![バレリーナ](images/ballerina.png)
+Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 定義ゲームオーバー
@@ -102,9 +128,11 @@
 
 \--- /task \---
 
-\--- task \--- `赤`{:class="block3events"}ブロードキャストに接続された `でなければ`{:class="block3control"}ブロックにあるコードを削除し、 `ゲームオーバー`{:class="block3myblocks"}ブロックの中に代わりに追加します:
+\--- task \---
 
-![バレリーナ](images/ballerina.png)
+Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 [赤 v] を受け取ったとき
@@ -118,13 +146,19 @@
 
 \--- /task \---
 
-\--- task \--- ゲームをプレイして、カラーシーケンスの間違った箇所で赤いボタンを押して、新しいブロックをテストしてください。 \--- /task \---
+\--- task \---
 
-あなたの新しい `ゲームオーバー`{:class="block3myblocks"}ブロックは **関数**です、 `ゲームオーバー`{:class="block3myblocks"}ブロックを追加することであなたのコードの好きな場所で使える小さなスクリプトです。
+Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
 
-\--- task \--- ほかの色についても、`ブロードキャスト`{:class="block3events"}に接続された`でなければ`{:class="block3control"}ブロックを、あなたの新しい`ゲームオーバー`{:class="block3myblocks"}ブロックに置き換えます。 `青`{:class="block3events"}メッセージのコードは次のようになります。
+\--- /task \---
 
-![バレリーナ](images/ballerina.png)
+Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+
+\--- task \---
+
+Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 [青 v] を受信したとき
@@ -138,9 +172,11 @@
 
 \--- /task \---
 
-\--- task \--- 間違ったボタンが押されたときに鳴る音を追加します。 このコードを追加したのは、あなたが作成した `ゲームオーバー`{:class="block3myblocks"}ブロックに1回だけで追加します、4回追加する必要はありません。
+\--- task \---
 
-![バレリーナ](images/ballerina.png)
+Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 定義ゲームオーバー
