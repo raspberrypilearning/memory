@@ -2,21 +2,35 @@
 
 Bây giờ hãy lưu điểm số cao để bạn có thể chơi với bạn bè của mình.
 
-\--- task \--- Thêm hai biến mới gọi là `điểm cao`{: class = "block3variables"} và `tên`{: class = "block3variables"} vào dự án của bạn. \--- / nhiệm vụ \---
+\--- task \---
 
-Khi trò chơi kết thúc vì người chơi bị sai trình tự, trò chơi nên kiểm tra xem điểm số có cao hơn điểm số cao hiện tại hay không. Nếu có, trò chơi nên lưu điểm dưới dạng điểm cao, đồng thời lưu tên của người chơi.
+Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
 
-\--- task \--- Thêm mã vào sprite nhân vật của bạn để lưu trữ `điểm cao`{: class = "block3variables"}. Đồng thời hỏi tên người chơi và lưu nó trong biến `name`{: class = "block3variables"}.
+\--- /task \---
+
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+
+\--- task \---
+
+Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
-\--- gợi ý \--- \--- gợi ý \--- Mã mới của bạn cần tuân theo mẫu này:
+\--- hints \---
 
-Sau `Trò chơi trên`{: class = "block3looks"} tin nhắn `Nếu`{: class = "block3control"} `điểm`{: class = "block3variables"} là `lớn hơn`{: class = "block3operators "} `điểm cao`{: class =" block3variabled "} `Đặt`{: class =" block3variabled "} `điểm cao`{: class =" block3variabled "} thành `điểm`{: class =" block3variabled "} `Hỏi`{: class =" block3sensing "} cho tên người chơi `Đặt`{: class =" block3variabled "} `tên`{: class =" block3variabled "} cho `câu trả lời`{: class = "block3sensing"} \--- / gợi ý \--- \--- gợi ý \---
+\--- hint \---
 
-Bạn cần các khối sau:
+Your new code needs to follow this pattern:
 
-![diễn viên ba lê](images/ballerina.png)
+After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+
+\--- /hint \---
+
+\--- hint \---
+
+You need the following blocks:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 nếu < > thì
@@ -39,9 +53,13 @@ hỏi [Tên bạn là gì?] và đợi
 bộ [ tên v] thành [] 
 ```
 
-\--- / gợi ý \--- \--- gợi ý \--- Đây là cách mã của bạn khi nhấn nút màu đỏ sẽ trông như thế nào:
+\--- /hint \---
 
-![diễn viên ba lê](images/ballerina.png)
+\--- hint \---
+
+Here's how your code for when the red button is pressed should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 khi tôi nhận được [đỏ v]
@@ -59,13 +77,17 @@ khác
 kết thúc
 ```
 
-\--- / gợi ý \--- \--- / gợi ý \--- \--- / nhiệm vụ \---
+\--- /hint \---
 
-Bạn cần thêm mã mới này vào sprite ký tự cho ba màu khác!
+\--- /hints \---
 
-Bạn có thể thấy rằng mã 'Trò chơi kết thúc' cho mỗi bốn màu hoàn toàn giống nhau không?
+\--- /task \---
 
-![diễn viên ba lê](images/ballerina.png)
+You need to add this new code to the character sprite for the other three colours too!
+
+Can you see that the 'Game over' code for each of the four colours is exactly the same?
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 nói [Trò chơi kết thúc!] trong (1) giây
@@ -77,17 +99,21 @@ end
 stop [all v]
 ```
 
-Nếu bạn cần thay đổi bất kỳ mã 'Trò chơi nào', ví dụ để thêm âm thanh hoặc thay đổi thông báo 'Trò chơi kết thúc', bạn phải thay đổi bốn lần. Điều đó gây phiền nhiễu và lãng phí rất nhiều thời gian.
+If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
-Thay vào đó, bạn có thể xác định khối mã của riêng mình và sử dụng nó ở bất cứ đâu trong dự án của bạn.
+Instead, you can define your own code block, and use it anywhere in your project.
 
-\--- task \--- Nhấp vào `Khối của tôi`{: class = "block3myblocks"}, và sau đó vào **Tạo khối**. Gọi khối mới này `Trò chơi trên`{: class = "block3myblocks"}.
+\--- task \---
+
+Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
 \--- /task \---
 
-\--- task \--- Thêm mã từ khối `khác`{: class = "block3control"} được kết nối với `màu đỏ`{: class = "block3events"} phát đến `Trò chơi trên`{: class = "block3myblocks"} chặn để nó trông như thế này:
+\--- task \---
 
-![diễn viên ba lê](images/ballerina.png)
+Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 xác định Trò chơi trên
@@ -102,9 +128,11 @@ stop [all v]
 
 \--- /task \---
 
-\--- task \--- Bây giờ hãy xóa mã trong khối `khác`{: class = "block3control"} được kết nối với phát `màu đỏ`{: class = "block3events"} và thêm vào `Trò chơi kết thúc Thay vào đó,`{: class = "block3myblocks"}:
+\--- task \---
 
-![diễn viên ba lê](images/ballerina.png)
+Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 khi tôi nhận được [red v]
@@ -118,13 +146,19 @@ kết thúc
 
 \--- /task \---
 
-\--- task \--- Kiểm tra khối mới của bạn bằng cách chơi trò chơi và nhấp vào nút màu đỏ ở điểm sai trong chuỗi màu. \--- / nhiệm vụ \---
+\--- task \---
 
-Khối `Trò chơi mới của bạn trên`{: class = "block3myblocks"} là khối **chức năng**, một tập lệnh nhỏ mà bạn có thể sử dụng bất cứ nơi nào bạn muốn trong mã của mình bằng cách thêm khối `Trò chơi trên`{: class = "block3myblocks"} trong.
+Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
 
-\--- task \--- Cũng thay thế mã trong khối `khác`{: class = "block3control"} được kết nối với `chương trình phát sóng`{: class = "block3events"} cho các màu khác với `Trò chơi mới của bạn Khối`{: class = "block3myblocks"}. Đây là mã của thông báo `blue`{: class = "block3events"} sẽ như thế nào
+\--- /task \---
 
-![diễn viên ba lê](images/ballerina.png)
+Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+
+\--- task \---
+
+Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 khi tôi nhận được [blue v]
@@ -138,9 +172,11 @@ kết thúc
 
 \--- /task \---
 
-\--- task \--- Bây giờ thêm âm thanh phát khi nhấn nút sai. Bạn chỉ cần thêm mã này một lần trong khối `Trò chơi trên`{: class = "block3myblocks"} mà bạn đã tạo và không phải bốn lần riêng biệt!
+\--- task \---
 
-![diễn viên ba lê](images/ballerina.png)
+Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 xác định Trò chơi trên
