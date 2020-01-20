@@ -10,7 +10,9 @@
 
 ### מה תכינו
 
-לחצו על הדגל הירוק כדי להתחיל. צפו ברצף הצבעים המוצגים לפי הלבוש המתחלף של הרקדנית, שמעו את פעימות התוף הנלווה, ולאחר מכן חזרו על רצף הצבעים באמצעות לחיצה על התופים בצבע המתאים. אם תטעו בסדר הצבעים, המשחק יגמר!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -40,7 +46,9 @@
 
 ### תוכנה
 
-Scratch 3 (או [ מקוון ](https://rpf.io/scratchon) {:target="_blank"} או [ במצב לא מקוון ](https://rpf.io/scratchoff) {:target="_blank \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -48,7 +56,7 @@ Scratch 3 (או [ מקוון ](https://rpf.io/scratchon) {:target="_blank"} או
 
 \--- no-print \---
 
-אם אתם צריכים להדפיס את הפרויקט הזה, אנא השתמשו ב [ גרסה ידידותית למדפסת ](https://projects.raspberrypi.org/en/projects/memory/print).
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
