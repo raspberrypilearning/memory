@@ -10,15 +10,21 @@ In this project, you will create a memory game in which you have to memorise and
 
 ### Lo que hará
 
-\--- no imprimir \--- Presione sobre el indicador verde para comenzar. Observe la secuencia de los colores presentada por el vestido de la bailarina y escuche los sonidos de los tambores, luego repita los colores de la bailarina. ¡Si el orden de los colores es incorrecto, termina el juego!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
-\--- no imprimir \---
+\--- /no-print \---
 
-\--- solo imprimir \--- ![screenshot of finished game](images/screenshot.png) \--- solo imprimir \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -40,17 +46,19 @@ In this project, you will create a memory game in which you have to memorise and
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
 ## título: Información adicional para los formadores
 
-\--- no imprimir \---
+\--- no-print \---
 
-En caso que necesite imprimir este proyecto, utilice [la versión para impresión](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
-\--- no imprimir \---
+\--- /no-print \---
 
 You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
