@@ -10,7 +10,9 @@
 
 ### आप क्या बनाएँगे
 
-\--- नो-प्रिंट \--- शुरू करने के लिए हरे झंडे पर क्लिक करें। नर्तक की पोशाक द्वारा दिखाए गए रंगों के अनुक्रम को देखें और साथ में ढोल की आवाज़ को सुनें, फिर रंगों को वापस उसके पास दोहराएं। यदि आपके रंगों का अनुक्रम गलत हुआ, तो खेल खत्म!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -40,7 +46,9 @@
 
 ### सॉफ्टवेयर
 
-Scratch 3 ([ऑनलाइन](https://rpf.io/scratchon){:target="_blank"} या [ऑफ़लाइन](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -48,10 +56,10 @@ Scratch 3 ([ऑनलाइन](https://rpf.io/scratchon){:target="_blank"} य�
 
 \--- no-print \---
 
-अगर आपको इस प्रोजेक्ट को प्रिंट करने की आवश्यकता है, तो कृप्या [प्रिंटर-अनुकूल संस्करण](https://projects.raspberrypi.org/en/projects/memory/print){: target = "_ blank"} का उपयोग करें।
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-आप यहां [ पूर्ण किया हुआ प्रोजेक्ट ](http://rpf.io/p/en/memory-get) पा सकते हैं {: target = "_ blank"}।
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
