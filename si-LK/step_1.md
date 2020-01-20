@@ -10,7 +10,9 @@
 
 ### ඔබ සාදන්නට යන දේ
 
-\--- no-print \--- ආරම්භ කිරීමට කොල(green) ධජය(flag එක) මත ක්ලික් කරන්න. නර්තන ශිල්පිනියගේ ඇඳුමෙන් පෙන්වන වර්ණ අනුපිළිවෙල(sequence එක) නරඹා, ඒ සමඟ වයන බෙර(drum) හඬට(beats වලට) සවන් දෙන්න, ඉන්පසු වර්ණ(colour) වල අනුපිලිවෙල(sequence එක) නැවත ක්‍රියාත්මක කරන්න. ඔබ වර්ණ(colour) අනුපිළිවෙල(order එක) වැරදියට ප්‍රකාශ කලහොත්, ඔබ තරඟය(game) පරාජය(over) වනු ඇත!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -40,7 +46,9 @@
 
 ### මෘදුකාංග(Software)
 
-Scratch 3 ([අන්තර්ජාල ගතව(online)](https://rpf.io/scratchon){:target="_blank"} හෝ [අන්තර්ජාලයට නොබැඳිව(offline)](https://rpf.io/scratchoff){:target="_blank}) \--- /collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -48,10 +56,10 @@ Scratch 3 ([අන්තර්ජාල ගතව(online)](https://rpf.io/scratc
 
 \--- no-print \---
 
-ඔබට මෙම ව්‍යාපෘතිය මුද්‍රණය කිරීමට අවශ්‍ය නම්, කරුණාකර [මුද්‍රණ-හිතකාමී අනුවාදය(printer-friendly version)](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"} භාවිතා කරන්න.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-[සම්පුර්ණ කරන ලද ව්‍යාපෘතිය(completed project here)](http://rpf.io/p/en/memory-get){:target="_blank"} ඔබට මෙහිදී බලගත හැකිය.
+You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
