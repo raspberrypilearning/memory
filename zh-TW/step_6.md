@@ -2,21 +2,35 @@
 
 現在保存高分，以便您可以與朋友對戰。
 
-\--- task \--- 添加兩個名為 `high score`{：class =“block3variables”}和 `name`{：class =“block3variables”}的新變量。 \--- /任務\---
+\--- task \---
 
-當遊戲結束時因為玩家得到錯誤的序列，遊戲應該檢查得分是否高於當前的高分。 如果是，遊戲應該將得分保存為高分，並且還存儲玩家的名字。
+Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
 
-\--- task \--- 將代碼添加到角色精靈中以存儲 `高分`{：class =“block3variables”}。 同時詢問玩家的名字，並將其存儲在 `名`{：class =“block3variables”}變量中。
+\--- /task \---
+
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+
+\--- task \---
+
+Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
 
 [[[generic-scratch3-high-score]]]
 
-\---提示\--- \---提示\--- 您的新代碼需要遵循以下模式：
+\--- hints \---
 
-後 `遊戲結束`{：類=“block3looks”}消息 `如果`{：類=“block3control”}的 `分`{：類=“block3variables”}是 `大於`{：類=“block3operators “} `高分`{：class =”block3variables“} `將` `高分`{：class =”block3variables“}設為</code> {：class =”block3variables“}到 `分`{：class =” block3variables“} `問`{：class =”block3sensing“}為玩家的名字 `設置`{：class =”block3variables“} `名`{：class =”block3variables“}到 `回答`{： class =“block3sensing”} \--- /提示\--- \---提示\---
+\--- hint \---
 
-您需要以下塊：
+Your new code needs to follow this pattern:
 
-![芭蕾舞演員](images/ballerina.png)
+After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+
+\--- /hint \---
+
+\--- hint \---
+
+You need the following blocks:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 如果 < > 則
@@ -39,9 +53,13 @@
 套[名稱v]到[] 
 ```
 
-\--- /提示\--- \---提示\--- 以下是按下紅色按鈕的代碼應如下所示：
+\--- /hint \---
 
-![芭蕾舞演員](images/ballerina.png)
+\--- hint \---
+
+Here's how your code for when the red button is pressed should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 當我收到[紅色v]
@@ -59,13 +77,17 @@ else
 結束
 ```
 
-\--- /提示\--- \--- /提示\--- \--- /任務\---
+\--- /hint \---
 
-你需要將這個新代碼添加到其他三種顏色的角色精靈中！
+\--- /hints \---
 
-你能看到四種顏色中每種顏色的“遊戲結束”代碼是完全相同的嗎？
+\--- /task \---
 
-![芭蕾舞演員](images/ballerina.png)
+You need to add this new code to the character sprite for the other three colours too!
+
+Can you see that the 'Game over' code for each of the four colours is exactly the same?
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 說[遊戲結束！]為（1）秒
@@ -77,17 +99,21 @@ else
 停止[全部v]
 ```
 
-如果您需要更改任何“遊戲結束”代碼，例如添加聲音或更改“遊戲結束”消息，則必須更改四次。這很煩人，浪費了很多時間。
+If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
 
-相反，您可以定義自己的代碼塊，並在項目的任何位置使用它。
+Instead, you can define your own code block, and use it anywhere in your project.
 
-\--- task \--- 點擊 `My blocks`{：class =“block3myblocks”}，然後點擊 **一個Block**。將這個新區塊稱為 `遊戲超過`{：class =“block3myblocks”}。
+\--- task \---
 
-\--- /任務\---
+Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
 
-\--- task \--- 添加來自 `其他`{：class =“block3control”}塊的代碼連接到 `red`{：class =“block3events”}廣播到 `遊戲超過`{：class = “block3myblocks”}阻止它看起來像這樣：
+\--- /task \---
 
-![芭蕾舞演員](images/ballerina.png)
+\--- task \---
+
+Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 定義遊戲超過
@@ -100,11 +126,13 @@ else
 停止[全部v]
 ```
 
-\--- /任務\---
+\--- /task \---
 
-\--- task \--- 現在刪除 `其他`{：class =“block3control”}塊中連接到 `紅色`{：class =“block3events”}廣播的代碼，並在 `遊戲中添加`{：class =“block3myblocks”}阻止：
+\--- task \---
 
-![芭蕾舞演員](images/ballerina.png)
+Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 當我收到[紅色v]
@@ -116,15 +144,21 @@ else
 結束
 ```
 
-\--- /任務\---
+\--- /task \---
 
-\--- task \--- 通過玩遊戲並單擊顏色序列中錯誤點的紅色按鈕來測試新塊。 \--- /任務\---
+\--- task \---
 
-你的新 `遊戲超過`{：class =“block3myblocks”}塊是一個 **函數**，一個小腳本，你可以在你的代碼中任何你喜歡的地方添加 `遊戲超過`{：class =“block3myblocks”}塊在。
+Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
 
-\--- task \--- 還替換了 `其他`{：class =“block3control”}塊中的代碼連接到 `廣播`{：class =“block3events”}用於其他顏色的新 `遊戲結束`{：class =“block3myblocks”}阻止。 以下是 `blue`{：class =“block3events”}消息的代碼應該是什麼樣子
+\--- /task \---
 
-![芭蕾舞演員](images/ballerina.png)
+Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+
+\--- task \---
+
+Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 當我收到[藍色v]
@@ -136,11 +170,13 @@ else
 結束
 ```
 
-\--- /任務\---
+\--- /task \---
 
-\--- task \--- 現在添加按下錯誤按鈕時播放的聲音。 你只需要在一次添加此代碼 `比賽結束`{：類=“block3myblocks”}所做塊，而不是四個單獨倍！
+\--- task \---
 
-![芭蕾舞演員](images/ballerina.png)
+Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 定義遊戲超過
@@ -155,4 +191,4 @@ else
 停止[全部v]
 ```
 
-\--- /任務\---
+\--- /task \---
