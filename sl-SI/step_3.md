@@ -20,11 +20,19 @@ Projektu dodaj razširitev Glasba, da boš lahko uporabil blok `zaigraj na boben
 
 Koda, ki igra na boben, je **zelo** podobna kodi, ki spreminja videz lika.
 
-\--- hints \--- \--- hint \--- Dodati moraš le dva bloka: blok `zaigraj na boben za (0.25) udarcev`{:class="block3sound"} in blok `element (dolžina zaporedja) v zaporedju`{:class="block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-To so potrebni bloki:
+\--- hint \---
 
-![balerina](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 zaigraj na boben (\1(1\) Mali boben v) za (0.25) udarcev
@@ -34,9 +42,11 @@ zaigraj na boben (\1(1\) Mali boben v) za (0.25) udarcev
 
 \--- /hint \---
 
-\--- hint \--- Tako bi morala izgledati tvoja dokončana koda:
+\--- hint \---
 
-![balerina](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 ko kliknemo na zastavico
