@@ -10,7 +10,9 @@ U ovom projektu kreiraćeš igru pamćenja u kojoj treba da zapamtiš i ponoviš
 
 ### Šta ćeš napraviti
 
-\--- no-print \--- Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -18,7 +20,11 @@ U ovom projektu kreiraćeš igru pamćenja u kojoj treba da zapamtiš i ponoviš
 
 \--- /no-print \---
 
-\--- print-only \--- ![screenshot of finished game](images/screenshot.png) \--- /print-only \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -40,7 +46,9 @@ U ovom projektu kreiraćeš igru pamćenja u kojoj treba da zapamtiš i ponoviš
 
 ### Softver
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"}) \--- /collapse \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -48,7 +56,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- no-print \---
 
-Ukoliko je potrebno da odštampate ovaj projekat, koristite [verziju za štampu](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
