@@ -2,39 +2,62 @@
 
 Hyd yn hyn, mae’r chwareuwr ond wedi gorfod cofio 5 lliw. Beth am wella’r gêm trwy ychwanegu sgôr, ac ychwanegu côd fel bod y chwareuwr yn ennill pwyntiau, y gêm yn symud i'r lefel nesaf a'r dilyniant lliwiau i'w gofio yn cynyddu.
 
-\--- Creu newidyn newydd o'r enw `sgôr`{:class="block3variables"}.
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+Create a new variable called `score`{:class="block3variables"}.
 
-Yn seiliedig ar y `sgôr`{:class="block3variables"}, bydd y gêm yn penderfynu ar hyd y dilyniant lliw. Cychwyna gyda sgôr (a hyd dilyniant) o `3`.
-
-\--- task \--- Ychwanega floc ar ddechrau côd dy gymeriad `pan fo'r faner wedi ei chlicio`{:class="block3events"} i osod y `sgôr`{:class="block3variables"} i `3`. \--- /task \---
-
-Yn hytrach na chreu dilyniant o bum lliw bob amser, rwyt ti eisiau i'r `sgôr`{:class="block3variables"} i benderfynu hyd y dilyniant.
-
-\--- task \--- Newida dolen y cymeriad `ail-adrodd`{:class="block3control"} (i greu y dilyniant lliw) i ail-adrodd y `sgôr/0>{:class="block3variables"}:</p>
-
-<p><img src="images/ballerina.png" alt="corlun" /></p>
-
-<pre><code class="blocks3">ailadrodd (sgôr :: variables)
-end
-`</pre> 
+[[[generic-scratch3-add-variable]]]
 
 \--- /task \---
 
-\--- task \--- Os yw'r chwaraewr yn ailadrodd y dilyniant cywir, fe ddylai ychwanegu `1` i'r `sgôr`{:class="block3variables"}, ac mae gwneud hynny yn cynyddu hyd y dilyniant nesaf. Ychwanega'r bloc canlynol i gôd y cymeriad **ar y rhan rwyt ti'n gwybod bod y dilyniant yn gywir**:
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-![corlun](images/ballerina.png)
+\--- task \---
+
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+
+![sprite](images/ballerina.png)
+
+```blocks3
+ailadrodd (sgôr :: variables)
+end
+```
+
+\--- /task \---
+
+\--- task \---
+
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 newid [sgôr v] gan (1)
 ```
 
-\--- hints \--- \--- hint \--- Ti'n gwybod bod y dilynant yn gywir ar y pwynt mae'r gêm yn `darlledu`{:class="block3events"} y neges 'ennill. \--- /hint \--- \--- /hints \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-\--- task \--- Yn olaf, ychwanega dolen `am byth`{:class="block3control"} o amgylch y côd sydd yn creu'r dilyniant, fel fod y gêm yn creu lliw newydd ar gyfer pob lefel. Dyma sut y gallai côd y cymeriad edrych:
+\--- task \---
+
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
 
 ![ballerina](images/ballerina.png)
 
@@ -56,4 +79,8 @@ end
 
 \--- /task \---
 
-\--- task \--- Gofyn i dy ffrindiau brofi dy gêm. Cofia guddio rhestr `dilyniant`{:class="block3variables"} cyn iddynt ei chwarae! \--- /task \---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
