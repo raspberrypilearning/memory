@@ -20,11 +20,19 @@ Adiciona a extensão Música ao teu projeto para que possas utilizar o bloco `to
 
 O código que toca a percussāo é **muito** semelhante ao código que faz mudar o traje do actor.
 
-\--- hints \--- \--- hint \--- Basta adicionar dois blocos: um bloco `toca a percussāo durante (0.25) tempos`{:class="block3sound"} e um bloco `item (comprimento de sequência) de sequência`{:class="block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Aqui estão os blocos de que precisas:
+\--- hint \---
 
-![bailarina](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 toca a percussão ((1) Snare Drum v) durante (0.25) tempos
@@ -34,9 +42,11 @@ toca a percussão ((1) Snare Drum v) durante (0.25) tempos
 
 \--- /hint \---
 
-\--- hint \--- Aqui está o aspeto que o teu código final deve ter:
+\--- hint \---
 
-![bailarina](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 Quando alguém clicar na bandeira verde
