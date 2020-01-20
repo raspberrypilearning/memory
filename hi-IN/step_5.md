@@ -2,17 +2,27 @@
 
 अब तक, खिलाड़ी को केवल पांच रंगों का एक क्रम याद रखना पड़ता है। एक स्कोर जोड़कर और कोड जोड़कर ताकि जैसे ही खिलाड़ी अंक प्राप्त करे, खेल अगले स्तर पर चला जाए और याद रखने के लिए रंग अनुक्रम लंबा हो जाए अपने खेल में सुधार करें।
 
-\--- task \--- `स्कोर`{:class="block3variables"} नामक एक नया चर बनाएं।
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+Create a new variable called `score`{:class="block3variables"}.
 
-`स्कोर`{:class="block3variables"} के आधार पर, खेल रंग अनुक्रम की लंबाई पर फैसला करेगा। `3` के स्कोर (और एक अनुक्रम लंबाई) से शुरू करें।
+[[[generic-scratch3-add-variable]]]
 
-\--- task \--- `स्कोर`{:class="block3variables"} को `3` पर स्थिर करने के लिए अपने पात्र के `जब ध्वज पर क्लिक किया`{:class="block3events"} कोड के प्रारंभ में एक खंड जोड़ें। \--- /task \---
+\--- /task \---
 
-हमेशा पांच रंगों के अनुक्रम को बनाने के बजाय, आप अब अनुक्रम की लम्बाई निर्धारित करने के लिए `स्कोर`{:class="block3variables"} चाहते हैं।
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- task \--- पात्र के `दोहराएँ`{:class="block3control"} लूप (रंग अनुक्रम बनाने के लिए) को `स्कोर`{:class="block3variables"} बार दोहराने के लिए बदलें:
+\--- task \---
+
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
 ![sprite](images/ballerina.png)
 
@@ -23,7 +33,9 @@
 
 \--- /task \---
 
-\--- task \--- यदि खिलाड़ी सही अनुक्रम दोहराता है, तो आपको `स्कोर`{:class="block3variables"} में `1` जोड़ना चाहिए, और ऐसा करने से अगले अनुक्रम की लंबाई बढ़ जाती है। निम्न ब्लाक को पात्र के कोड में ** उस बिंदु पर जोड़ें जहाँ आपको पता है कि अनुक्रम सही है**:
+\--- task \---
+
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
 ![sprite](images/ballerina.png)
 
@@ -31,13 +43,23 @@
 [स्कोर v] को (1) से बदलें
 ```
 
-\--- hints \--- \--- hint \--- जब खेल 'जीत' संदेश `प्रसारित करें`{:class="block3events"} तो उस बिंदु पर आपको पता होता है कि अनुक्रम सही है। \--- /hint \--- \--- /hints \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-\--- task \--- अंत में, एक `हमेशा के लिए`{:class="block3control"} लूप को अनुक्रम उत्पन्न करने वाले कोड के इर्द-गिर्द जोड़ें, जिससे गेम प्रत्येक स्तर पर एक नया रंग अनुक्रम बनाये। आपके पात्र का कोड ऐसा दिख सकता है:
+\--- task \---
 
-![बैलरीना](images/ballerina.png)
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 जब झंडा क्लिक हुआ
@@ -57,4 +79,8 @@
 
 \--- /task \---
 
-\--- task \--- अपने खेल का परीक्षण करने के लिए अपने दोस्तों को सहायता लें। उनके खेलने से पहले `अनुक्रम`{:class="block3variables"} सूची को छिपाने के लिए याद रखें! \--- /task \---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
