@@ -20,9 +20,17 @@ Añade la extensión de Música a tu proyecto para que puedas usar el bloque `to
 
 El código que toca el tambor es **muy** similar al código que cambia el disfraz del personaje.
 
-\--- hints \--- \--- hint \--- Sólo necesitas añadir dos bloques: un bloque `tocar tambor durante (0.25) tiempos `{:class="block3sound"} y un bloque `elemento (longitud de secuencia) de secuencia`{:class="block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Aquí están los bloques que necesitas:
+\--- hint \---
+
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
 
 ![ballerina](images/ballerina.png)
 
@@ -34,7 +42,9 @@ tocar tambor (\(1\) Caja v) durante (0.25) tiempos
 
 \--- /hint \---
 
-\--- hint \--- Así es como debería verse tu código terminado:
+\--- hint \---
+
+Here is how your finished code should look:
 
 ![ballerina](images/ballerina.png)
 
