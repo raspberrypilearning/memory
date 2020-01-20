@@ -20,11 +20,19 @@ Adăugați extensia Muzică în proiectul dvs. pentru a putea utiliza blocul `jo
 
 Codul care joacă tamburul este **foarte** similar cu codul care schimbă costumul personajului.
 
-\--- sugestii \--- \--- indiciu \--- Doar trebuie sa adaugati doua blocuri: un tambur de `jucari pentru (0.25) batai`{: class = "block3sound"} bloc si un element `(lungimea secvență) din blocul secvenței`{: class = "block3variables"}. \--- / indiciu \--- \--- indiciu \---
+\--- hints \---
 
-Iată blocurile de care aveți nevoie:
+\--- hint \---
 
-![balerină](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- / indiciu \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 juca tambur (\ (1 \) Snare Drum v) pentru (0.25) bate
@@ -32,11 +40,13 @@ juca tambur (\ (1 \) Snare Drum v) pentru (0.25) bate
 (element (lungime de secventa v)) [secventa v]
 ```
 
-\--- / indiciu \---
+\--- /hint \---
 
-\--- hint \--- Aici este modul în care ar trebui să arate codul dvs. finit:
+\--- hint \---
 
-![balerină](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 când pavilion apasat
@@ -49,8 +59,8 @@ repeat (5)
 end
 ```
 
-\--- / indiciu \---
+\--- /hint \---
 
-\--- / sugestii \---
+\--- /hints \---
 
 \--- /task \---
