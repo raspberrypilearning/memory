@@ -2,17 +2,27 @@
 
 到目前为止，玩家只需要记住五种颜色的序列。 通过添加分数和添加代码来改善您的游戏，以便当玩家得分时，游戏移动到下一级别并且要记住的颜色序列变得更长。
 
-\--- task \--- 创建一个新的变量叫做 `分数`{:class="block3variables"}.
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+Create a new variable called `score`{:class="block3variables"}.
 
-基与 `分数`{:class="block3variables"}, 游戏将决定颜色序列的长度。以分数 (和序列长度) 为`3`开始。
+[[[generic-scratch3-add-variable]]]
 
-\--- task \--- 添加一个块到精灵的`当 ⚑ 被点击`{:class="block3events"} 代码的开始，将`分数`{:class="block3variables"} 设为`3`。 \--- /task \---
+\--- /task \---
 
-您现在想要`分数`{:class="block3variables"} 来决定序列长度，而不是总是创建一个五种颜色序列。
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- task \--- 改变角色的`重复执行`{:class="block3control"}循环(用于创建颜色序列)为重复 `分数`{:class="block3variables"} 次：
+\--- task \---
+
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
 
 ![sprite](images/ballerina.png)
 
@@ -23,7 +33,9 @@ end
 
 \--- /task \---
 
-\--- task \--- 如果玩家重复正确的序列，你就应该给 `分数`{:class="block3variables"}加`1` ，这样做会增加下一个序列的长度。 添加下面的块到角色的代码 **在你知道颜色顺序正确的时候**:
+\--- task \---
+
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
 
 ![sprite](images/ballerina.png)
 
@@ -31,11 +43,21 @@ end
 change [score v] by (1)
 ```
 
-\--- hints \--- \--- hint \--- 在游戏`广播`{:class="block3events"} ‘won' 的消息时你知道序列是正确的。 \--- /hint \--- \--- /hints \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-\--- task \--- 最后，添加一个`重复执行`{:class="block3control"} 循环在产生序列的代码周围，以至于游戏为每个水平建立一个新的颜色序列。 你的代码看起来应该是这样的：
+\--- task \---
+
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
 
 ![ballerina](images/ballerina.png)
 
@@ -57,4 +79,8 @@ end
 
 \--- /task \---
 
-\--- task \--- 让你的朋友测试你的游戏。在他们玩之前记着隐藏`序列`{:class="block3variables"}！
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
