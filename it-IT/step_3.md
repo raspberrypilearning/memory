@@ -20,9 +20,17 @@ Aggiungi l'estensione Musica al tuo progetto in modo da poter usare il blocco `s
 
 Il codice che suona il tamburo è **molto** simile al codice che cambia il costume del personaggio.
 
-\--- hints \--- \--- hint \--- Hai solo bisogno di aggiungere due blocchi: un blocco `suona tamburo per (0.25) battute`{:class="block3sound"} e un `elemento (lunghezza di sequenza) di sequenza`{:class="block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Ecco i blocchi di codice che ti serviranno:
+\--- hint \---
+
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
 
 ![ballerina](images/ballerina.png)
 
@@ -34,7 +42,9 @@ suona il tamburo ((1) Snare Drum v) per (0.25) battute
 
 \--- /hint \---
 
-\--- hint \--- Ecco come dovrebbe essere il codice completo:
+\--- hint \---
+
+Here is how your finished code should look:
 
 ![ballerina](images/ballerina.png)
 
