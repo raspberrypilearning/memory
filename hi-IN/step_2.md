@@ -2,19 +2,25 @@
 
 पहले एक पात्र बनाएं जो रंगों के यादृच्छिक अनुक्रम को प्रदर्शित कर सके।
 
-\---task \--- एक नया स्क्रैच प्रोजेक्ट खोलें।
+\--- task \---
 
-**ऑनलाइन**: [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"} पर एक नया Scratch प्रोजेक्ट खोलें।
+Open a new Scratch project.
 
-**ऑफ़लाइन**: ऑफ़लाइन संपादक में एक नया प्रोजेक्ट खोलें।
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-यदि आपको स्क्रैच ऑफ़लाइन संपादक को डाउनलोड और इंस्टॉल करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](https://rpf.io/scratchoff) {:target="_blank"} पर पा सकते हैं।
+**Offline**: open a new project in the offline editor.
+
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
-\--- task \--- एक पात्र स्प्राइट और एक पृष्ठभूमि चुनें। आप बैलेरीना का उपयोग कर सकते हैं, लेकिन आपके पात्र को एक व्यक्ति होने की आवश्यकता नहीं है, उन्हें केवल अलग-अलग रंग दिखाने में सक्षम होने की आवश्यकता है।
+\--- task \---
 
-![स्क्रीनशॉट](images/colour-sprite.png) \--- /task \---
+Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+
+![screenshot](images/colour-sprite.png)
+
+\--- /task \---
 
 + आपके खेल को प्रत्येक रंग का प्रतिनिधित्व करने के लिए एक अलग संख्या का उपयोग करना चाहिए:
     
@@ -23,31 +29,39 @@
     + 3 = हरा
     + 4 = पीला
 
-\--- task \--- अपने पात्र को चार पोशाकें दें जिनमें अलग-अलग रंग हों, ऊपर दिखाए गए चार रंगों में से प्रत्येक के लिए एक पोशाक। सुनिश्चित करें कि आपके रंगीन पोशाक ऊपर की सूची के समान क्रम में हैं।
+\--- task \---
 
-![स्क्रीनशॉट](images/colour-costume.png) \--- /task \---
+Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
 
-यदि आप चाहें, तो आप एक अलग रंग के साथ पोशाक के कुछ हिस्सों को भरने के लिए ** आकृति को रंगे ** का उपयोग कर सकते हैं।
+![screenshot](images/colour-costume.png)
 
-![आकृति को रंगे](images/color-a-shape.png)
+\--- /task \---
 
-फिर, रंगों के यादृच्छिक अनुक्रम को संग्रहीत करने के लिए एक सूची जोड़ें जिसे खिलाड़ियों को याद रखना होगा।
+If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
 
-\--- कार्य \--- ` अनुक्रम ` नामक एक सूची बनाएँ {:class="block3variables"}। केवल पात्र स्प्राइट को इस सूची को देखने की आवश्यकता है, इसलिए जब आप सूची बनाते हैं आप ** केवल इस स्प्राइट के लिए ** का चयन कर सकते हैं।
+![color-a-shape](images/color-a-shape.png)
+
+Next, add a list for storing the random sequence of colours that the player has to remember.
+
+\--- task \---
+
+Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-अब आपको सूचियों का उपयोग करने के लिए बहुत सारे नए कोड ब्लॉक दिखाई देने चाहिए।स्टेज के ऊपरी बाएं कोने में खाली सूची दिखाई देनी चाहिए।
+You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
-![स्क्रीनशॉट](images/colour-list-blocks-annotated.png)
+![screenshot](images/colour-list-blocks-annotated.png)
 
-प्रत्येक रंग की एक अलग संख्या है, इसलिए आप यादृच्छिक रूप से एक संख्या चुनकर और उसे सूची में जोड़कर एक यादृच्छिक रंग चुन सकते हैं।
+Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
 
-\--- task \--- एक यादृच्छिक संख्या चुनने के लिए और इसे ` अनुक्रम ` {:class="block3variables"}: सूची में जोड़ने के लिए इस कोड को पात्र स्प्राइट में जोड़ें।
+\--- task \---
 
-![बैलरीना](images/ballerina.png)
+Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 जब ध्वज पर क्लिक किया
@@ -56,15 +70,29 @@
 
 \--- /task \---
 
-\--- task \--- अपने कोड का परीक्षण करें। जांच करें कि हर बार जब आप ध्वज पर क्लिक करते हैं, तो सूची में 1 और 4 के बीच एक यादृच्छिक संख्या जुड़ जाती है। \--- /task \---
+\--- task \---
 
-\--- task \--- क्या आप एक बार में पाँच यादृच्छिक संख्याएँ बनाने के लिए अपने प्रोग्राम में कोड जोड़ सकते हैं?
+Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list.
 
-\--- hints \--- \--- hint \--- पहले सूची के सभी संख्याओं को हटाने के लिए एक ` पूरा अनुक्रम हटाएं `{:class="block3variables"} जोड़ें, और फिर एक ` दोहराएँ ` {:class="block3control"} ब्लॉक जोड़ें जो सूची में पाँच यादृच्छिक संख्याएँ जोड़ता है। \--- /hint \--- \--- hint \---
+\--- /task \---
 
-आपका कोड ऐसा दिखना चाहिए:
+\--- task \---
 
-![बैलरीना](images/ballerina.png)
+Can you add code to your program to generate five random numbers at once?
+
+\--- hints \---
+
+\--- hint \---
+
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
+
+\--- /hint \---
+
+\--- hint \---
+
+This is what your code should look like:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 जब झंडा क्लिक किया
@@ -74,11 +102,17 @@
 अंत
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-\--- task \--- प्रत्येक बार जब कोई संख्या सूची में जुड़ जाती है, तो पात्र की पोशाक बदलनी चाहिए ताकि पोशाक का रंग संख्या से मेल खाए। इन ब्लॉकों को तुरंत अपने कोड में डालें जहां एक यादृच्छिक संख्या ` अनुक्रम ` में जोड़ी जाती है {:class="block3variables"}:
+\--- /hints \---
 
-![बैलरीना](images/ballerina.png)
+\--- /task \---
+
+\--- task \---
+
+Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 कॉस्ट्यूम को [अनुक्रम v] के (आइटम ([अनुक्रम v] की लंबाई)) से बदलें
