@@ -20,11 +20,19 @@
 
 কোডটি যে ড্রামটি চালায় সেটি **মত** কোড যা চরিত্রের পোশাক পরিবর্তন করে।
 
-\--- ইঙ্গিত \--- \--- ইঙ্গিত \--- আপনাকে শুধুমাত্র দুটি ব্লক যুক্ত করতে হবে: একটি `খেলার ড্রাম (0.25)`বীট ({class = "block3sound"} ব্লক এবং একটি `আইটেম (দৈর্ঘ্য ক্রম) ক্রম`{: শ্রেণী = "block3variables"} ব্লক। \--- / ইঙ্গিত \--- \--- ইঙ্গিত \---
+\--- hints \---
 
-এখানে আপনার প্রয়োজনীয় ব্লকগুলি রয়েছে:
+\--- hint \---
 
-![নর্তকী](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- / ইঙ্গিত \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 ড্রাম (\ (1 \) স্নের ড্রাম v) (0.25) এর জন্য
@@ -32,11 +40,13 @@
 (আইটেম ([ক্রমানুসারে v] এর দৈর্ঘ্য) [ক্রম বনাম])
 ```
 
-\--- / ইঙ্গিত \---
+\--- /hint \---
 
-\--- ইঙ্গিত \--- আপনার সমাপ্ত কোডটি কেমন হওয়া উচিত তা এখানে:
+\--- hint \---
 
-![নর্তকী](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 যখন পতাকা ক্লিক
@@ -49,8 +59,8 @@
 শেষ
 ```
 
-\--- / ইঙ্গিত \---
+\--- /hint \---
 
-\--- / ইঙ্গিত \---
+\--- /hints \---
 
-\--- /কাজ \---
+\--- /task \---
