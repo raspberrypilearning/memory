@@ -20,11 +20,19 @@ Thêm tiện ích mở rộng Âm nhạc vào dự án của bạn để bạn c
 
 Mã chơi trống là **rất** tương tự như mã thay đổi trang phục của nhân vật.
 
-\--- gợi ý \--- \--- gợi ý \--- Bạn chỉ cần thêm hai khối: một trống `phát cho (0,25) nhịp`{: class = "block3sound"} và `mục (độ dài của chuỗi) của chuỗi`{: class = "block3variables"}. \--- / gợi ý \--- \--- gợi ý \---
+\--- hints \---
 
-Dưới đây là các khối bạn cần:
+\--- hint \---
 
-![diễn viên ba lê](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 chơi trống (\ (1 \) Snare Drum v) trong (0,25) nhịp
@@ -34,9 +42,11 @@ chơi trống (\ (1 \) Snare Drum v) trong (0,25) nhịp
 
 \--- /hint \---
 
-\--- gợi ý \--- Đây là cách mã hoàn thành của bạn sẽ trông như thế nào:
+\--- hint \---
 
-![diễn viên ba lê](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 khi cờ nhấp
@@ -51,6 +61,6 @@ kết thúc
 
 \--- /hint \---
 
-\--- / gợi ý \---
+\--- /hints \---
 
 \--- /task \---
