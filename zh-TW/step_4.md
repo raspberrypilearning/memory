@@ -2,41 +2,47 @@
 
 現在，您將添加四個按鈕，玩家必須按下才能重複顏色序列。
 
-\--- task \--- 在項目中添加四個新精靈來表示四個按鈕。
+\--- task \---
+
+Add four new sprites to your project to represent the four buttons.
 
 + 編輯新精靈的服裝，以便四種顏色中的每一種都有一個精靈
 + 將精靈放在舞台上的順序與服裝相同：紅色，藍色，綠色，黃色
 
-![截圖](images/colour-drums.png) \--- /任務\---
+![screenshot](images/colour-drums.png)
 
-\--- \---任務 將代碼添加到紅色子畫面，使得當子畫面被點擊時，它 `廣播`{：類=“block3events”}一個“紅色”消息發送到所述字符子畫面：
+\--- /task \---
 
-![紅鼓](images/red_drum.png)
+\--- task \---
+
+Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+
+![red-drum](images/red_drum.png)
 
 ```blocks3
     當這個精靈點擊
     廣播（紅色v）
 ```
 
-\--- /任務\---
+\--- /task \---
 
-`廣播`{：class =“block3events”}就像通過揚聲器宣布的消息，您可以在學校或超市中聽到。 所有的精靈都可以聽到 `廣播`{：class =“block3events”}，但只有作為響應的作用的精靈會做一些事情。
+A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
 
-\---任務\---
+\--- task \---
 
-添加類似的代碼到藍色，綠色和黃色精靈，使它們 `廣播`{：class =“block3events”}有關自己顏色的消息。
+Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
 
-\--- /任務\---
+\--- /task \---
 
-你還記得 `廣播`{：class =“block3events”}就像一個揚聲器信息嗎？ 您將添加代碼以使其成為字符精靈的工作，以響應 `廣播`{：class =“block3events”}消息。
+Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
 
-\---任務\---
+\--- task \---
 
-當你的角色精靈收到消息 `red`{：class =“block3events”}時，代碼應該檢查數字 `1` 是否在 `序列`{：class =“block3variables”}列表的開頭（這意味著 `red`{：class =“block3events”}是序列中的下一個顏色）。
+When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
 
-如果 `1` 位於列表的開頭，則代碼應從列表中刪除該數字，因為播放器記住了正確的顏色。 否則它的遊戲結束，並且代碼需要 `停止所有`{：class =“block3control”}以結束遊戲。
+If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
 
-![芭蕾舞演員](images/ballerina.png)
+![ballerina](images/ballerina.png)
 
 ```blocks3
 當我收到[red v]
@@ -48,18 +54,34 @@ else
 結束
 ```
 
-\--- /任務\---
+\--- /task \---
 
-\--- task \--- 添加到你剛寫的代碼中，這樣當角色精靈收到正確的 `廣播`{：class =“block3events”}時，鼓聲也會播放。
+\--- task \---
 
-\---提示\--- \---提示\--- 你能使用與每種顏色相對應的數字來播放正確的鼓點嗎？
+Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+
+\--- hints \---
+
+\--- hint \---
+
+Can you use the numbers that correspond to each colour to play the correct drum beat?
 
 + 1 =紅色
 + 2 =藍色
 + 3 =綠色
-+ 4 =黃色 \--- /提示\--- \---提示\--- 在序列</code>{：class =“block3variables”}塊的 `刪除1之上，添加 <code>鼓`{：class =“ block3sound“}阻止播放 `序列`{：class =”block3variables“}列表中的第一個聲音。
++ 4 = yellow
 
-\--- /提示\--- \---提示\--- 這是您需要添加的代碼：
+\--- /hint \---
+
+\--- hint \---
+
+Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here is the code you will need to add:
 
 ```blocks3
 當我收到[紅色v]
@@ -71,22 +93,33 @@ delete（1 v ）[序列v]
 說[遊戲結束！]為（1）秒
 停止[全v]
 結束
-
 ```
 
-\--- /提示\--- \--- /提示\--- \--- /任務\---
+\--- /hint \---
 
-\--- task \--- 複製用於使角色精靈響應消息 `red`{：class =“block3events”}的代碼。 更改重複的代碼，以便它發送消息 `blue`{：class =“block3events”}。 \--- /任務\---
+\--- /hints \---
 
-當精靈響應消息 `blue`{：class =“block3events”}時，哪一位代碼應該保持不變，哪一位應該改變？ 請記住，每種顏色都有相應的數字。
+\--- /task \---
 
-\--- task \--- 更改字符精靈的代碼，使字符正確響應 `藍色`{：class =“block3events”}消息。
+\--- task \---
 
-\---提示\--- \---提示\---
+Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
 
-保留這些塊，但您需要以某種方式更改它們：
+\--- /task \---
 
-![芭蕾舞演員](images/ballerina.png)
+When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+
+\--- task \---
+
+Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+
+\--- hints \---
+
+\--- hint \---
+
+Keep these blocks, but you need to change them in some way:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 <（[序列v]的項目（1 v））= [1]>
@@ -96,9 +129,13 @@ delete（1 v ）[序列v]
 play drum（\（1 \）Snare Drum v）for（0.25）beats
 ```
 
-\--- /提示\--- \---提示\--- 這是你的代碼應該如何尋找 `藍色`{：class =“block3events”}廣播。
+\--- /hint \---
 
-![芭蕾舞演員](images/ballerina.png)
+\--- hint \---
+
+Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 當我收到[藍色v]
@@ -111,33 +148,48 @@ play drum（\（1 \）Snare Drum v）for（0.25）beats
 結束
 ```
 
-\--- /提示\--- \--- /提示\--- \--- /任務\---
+\--- /hint \---
 
-\--- task \--- 再次復制代碼兩次（對於綠色和黃色按鈕），並更改必要的部分，以便角色正確響應新的 `廣播`{：class =“block3events”}。 \--- /任務\---
+\--- /hints \---
 
-記得測試代碼！你能記住五種顏色的序列嗎？每次序列是否不同？
+\--- /task \---
 
-當玩家正確重複整個顏色序列時， `序列`{：class =“block3variables”}列出emtpy並且玩家獲勝。 如果需要，一旦 `序列`{：class =“block3variables”}列表為空，您還可以顯示一些閃爍的燈作為獎勵。
+\--- task \---
 
-\--- task \--- 當標記點擊</code>{：class =“block3events”}腳本時，將此代碼添加到角色 `的末尾：</p>
+Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
 
-<p><img src="images/ballerina.png" alt="芭蕾舞演員" /></p>
+\--- /task \---
 
-<pre><code class="blocks3">    等到 < （[序列v]的長度）= [0]>
+Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+
+\--- task \---
+
+Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+    等到 < （[序列v]的長度）= [0]>
     廣播（贏了v）並等待
-`</pre> 
+```
 
-\--- /任務\---
+\--- /task \---
 
-\---任務\--- 切換到舞台，並導入 `鼓機` 聲音或你喜歡的另一種聲音。
+\--- task \---
+
+Switch to the Stage, and import the `drum machine` sound or another sound you like.
 
 [[[generic-scratch3-sound-from-library]]]
 
-\--- /任務\---
+\--- /task \---
 
-\--- task \--- 添加此代碼以播放聲音，並在玩家獲勝時使背景改變顏色。
+\--- task \---
 
-![芭蕾舞演員](images/stage.png)
+Add this code to play a sound and make the backdrop change colour when the player wins.
+
+![ballerina](images/stage.png)
 
 ```blocks3
     當我收到[won v]
@@ -149,4 +201,4 @@ play drum（\（1 \）Snare Drum v）for（0.25）beats
     清除圖形效果
 ```
 
-\--- /任務\---
+\--- /task \---
