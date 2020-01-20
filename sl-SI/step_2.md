@@ -2,19 +2,25 @@
 
 Najprej ustvari lik, ki zna prikazati naključno zaporedje barv na zaslonu.
 
-\--- task \--- Odprite nov Scratch projekt.
+\--- task \---
 
-**S povezavo:** ustvari nov spletni Scratch projekt na [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+Open a new Scratch project.
 
-**Brez povezave:** ustvari nov projekt v namiznem Scratch urejevalniku.
+**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-Če želiš prenesti in namestiti Namizni Scratch, ga lahko najdeš na [rpf.io/scratchoff](https://rpf.io/scratchoff){: target = "_ blank"}.
+**Offline**: open a new project in the offline editor.
+
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
-\--- task \--- Izberi figuro lika in ozadje. Lahko uporabiš balerino, vendar ni nujno, da je tvoj lik sploh oseba, vse kar je pomembno je to, da zna prikazati različne barve.
+\--- task \---
 
-![posnetek zaslona](images/colour-sprite.png) \--- /task \---
+Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+
+![screenshot](images/colour-sprite.png)
+
+\--- /task \---
 
 + Tvoja igra bi morala uporabljati različne številke za prikaz barv:
     
@@ -23,31 +29,39 @@ Najprej ustvari lik, ki zna prikazati naključno zaporedje barv na zaslonu.
     + 3 = zelena
     + 4 = rumena
 
-\--- task \--- Svojemu liku ustvari štiri videze različnih barv - po en videz za vsako od štirih barv, ki so prikazane zgoraj. Bodi pozoren, da bodo videzi v enakem zaporedju, kot na zgornjem seznamu barv.
+\--- task \---
 
-![posnetek zaslona](images/colour-costume.png) \--- /task \---
+Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
 
-Če želiš, lahko uporabiš orodje **pobarvaj lik**, da zapolniš posamezne dele videza z drugačno barvo.
+![screenshot](images/colour-costume.png)
 
-![barva-a-oblika](images/color-a-shape.png)
+\--- /task \---
 
-Nato ustvari seznam, v katerega se bo shranilo naključno zaporedje barv, ki si jih mora igralec zapomniti.
+If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
 
-\--- task \--- Ustvari seznam imenovan`zaporedje`{:class="block3variables"}. Ta seznam potrebuje le figura lika, zato lahko izbereš **Samo za to figuro**, ko ustvarjaš seznam.
+![color-a-shape](images/color-a-shape.png)
+
+Next, add a list for storing the random sequence of colours that the player has to remember.
+
+\--- task \---
+
+Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-Zdaj bi moral videti številne nove bloke kode, za rabo s seznami. Prazen seznam bi moral biti viden v zgornjem levem kotu odra.
+You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
-![posnetek zaslona](images/colour-list-blocks-annotated.png)
+![screenshot](images/colour-list-blocks-annotated.png)
 
-Vsaka barva ima drugačno številko, zato lahko izbereš naključno barvo s pomočjo naključno izbrane številke, ki jo dodaš seznamu.
+Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
 
-\--- task \--- Figuri lika dodaj to kodo, da izbere naključno številko in jo doda v `zaporedje`{:class="block3variables"}:
+\--- task \---
 
-![balerina](images/ballerina.png)
+Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 ko kliknemo na zastavico
@@ -56,15 +70,29 @@ dodaj (naključno število med (1) in (4)) k [zaporedje]
 
 \--- /task \---
 
-\--- task \--- Preizkusi svojo kodo. Preveri ali je ob vsakem kliku na zastavico na seznam dodana števlka med 1 in 4. \--- /task \---
+\--- task \---
 
-\--- task \--- Ali lahko svojemu programu dodaš kodo, ki bo ustvarila pet naključnih števil naenkrat?
+Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list.
 
-\--- hints \--- \--- hint \--- Dodaj `izbriši vse v zaporedju`{:class="block3variables"}, da najprej izbrišeš vse predmete v seznamu in nato dodaj blok `ponovi`{:class="block3control"}, ki doda pet naključnih števil v szenam. \--- /hint \--- \--- hint \---
+\--- /task \---
 
-Tvoja koda mora izgledati tako:
+\--- task \---
 
-![balerina](images/ballerina.png)
+Can you add code to your program to generate five random numbers at once?
+
+\--- hints \---
+
+\--- hint \---
+
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
+
+\--- /hint \---
+
+\--- hint \---
+
+This is what your code should look like:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 ko kliknemo na zastavico
@@ -74,11 +102,17 @@ ponovi (5) krat
 konec
 ```
 
-\--- /hint \--- \--- /hints \--- \--- /task \---
+\--- /hint \---
 
-\--- task \--- Vsakič, ko je število dodano k seznamu, naj lik zamenja svoj videz, tako da barva videza ustreza številki. Dodaj te bloke v svojo kodo, takoj pod delom, kjer se naključno število doda k `zaporedju`{:class="block3variables"}:
+\--- /hints \---
 
-![balerina](images/ballerina.png)
+\--- /task \---
+
+\--- task \---
+
+Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 zamenjaj videz na (element(dolžina [zaporedje v]) v [zaporedje v])
