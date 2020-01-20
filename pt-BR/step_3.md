@@ -20,11 +20,19 @@ Adicione a extensão Música ao seu projeto para que você possa utilizar o bloc
 
 O código que toca a percussāo é **muito** semelhante ao código que faz mudar a fantasia do ator.
 
-\--- hints \--- \--- hint \--- Você precisa apenas adicionar dois blocos: um bloco `toque tambor durante (0.25) batidas`{:class="block3sound"} e um bloco `item (tamanho de sequência) de sequência`{:class="block3variables"}. \--- /hint \--- \--- hint \---
+\--- hints \---
 
-Aqui estão os blocos que você precisa:
+\--- hint \---
 
-![bailarina](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 toque instrumento (\(1\) Tarol v) por (0.25) batidas
@@ -34,9 +42,11 @@ toque instrumento (\(1\) Tarol v) por (0.25) batidas
 
 \--- /hint \---
 
-\--- hint \--- Aqui está como o seu código deve ficar:
+\--- hint \---
 
-![bailarina](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 quando ⚑ for clicado
