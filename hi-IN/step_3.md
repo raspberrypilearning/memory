@@ -20,11 +20,19 @@
 
 ड्रम बजाने वाला कोड पात्र की पोशाक को बदलने वाले कोड के ** बहुत ** ही समान है।
 
-\--- hints \--- \--- hint \--- आपको केवल दो ब्लॉक जोड़ने की जरूरत है: एक ` (0.25) बीट्स के लिए ड्रम बजाएँ `{:class="block3sound"} ब्लॉक और एक ` अनुक्रम का आइटम (अनुक्रम की लंबाई) ` {:class="block3variables"} ब्लॉक। \--- /hint \--- \--- hint \---
+\--- hints \---
 
-इन ब्लॉक्स की आपको आवश्यकता होगी:
+\--- hint \---
 
-![बैलरीना](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 (0.25) बीट्स के लिए (\ (1 \) फंदे वाला ड्रम v) बजाएँ
@@ -34,9 +42,11 @@
 
 \--- /hint \---
 
-\--- hint \--- यहां बताया गया है कि आपका तैयार कोड कैसा दिखना चाहिए:
+\--- hint \---
 
-![बैलरीना](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 जब झंडा क्लिक किया
