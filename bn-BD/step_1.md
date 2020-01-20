@@ -10,15 +10,21 @@
 
 ### যা তৈরি করতে হবে
 
-\--- কোন মুদ্রণ \--- সবুজ পতাকা শুরু করতে ক্লিক করুন। নর্তকী পোশাক দ্বারা দেখানো রং ক্রম দেখুন এবং সহগামী ড্রাম beats শুনতে, তারপর তার রং ফিরে পুনরাবৃত্তি। যদি আপনি রঙের ক্রম ভুল পান, এটি খেলা শেষ!
+\--- no-print \---
+
+Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" /> 
 </div>
 
-\----প্রিন্ট করা লাগবেনা --
+\--- /no-print \---
 
-\--- শুধুমাত্র মুদ্রণ \--- ![screenshot of finished game](images/screenshot.png) \--- / মুদ্রণ শুধুমাত্র \---
+\--- print-only \---
+
+![screenshot of finished game](images/screenshot.png)
+
+\--- /print-only \---
 
 ## \--- collapse \---
 
@@ -28,7 +34,7 @@
 + কিভাবে তথ্য সংরক্ষণ এবং তালিকা ব্যবহার করতে
 + কিভাবে কোড পুনরাবৃত্তি জন্য কাস্টম ব্লক তৈরি এবং ব্যবহার করতে
 
--- /collapse \---
+\--- /collapse \---
 
 ## \--- collapse \---
 
@@ -40,18 +46,20 @@
 
 ### সফটওয়্যার
 
-স্ক্র্যাচ 3 (হয় [অনলাইন](https://rpf.io/scratchon){: টার্গেট = "_ blank"} অথবা [অফলাইন](https://rpf.io/scratchoff){: টার্গেট = "_ blank"}) \--- / পতন \---
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
 
 ## \--- collapse \---
 
 ## শিরোনাম: শিক্ষাবিদদের জন্য অতিরিক্ত তথ্য
 
-\----প্রিন্ট করা লাগবেনা --
+\--- no-print \---
 
-আপনি যদি এই প্রজেক্টটি প্রিন্ট করতে চান তবে [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print) ব্যবহার করুন {: target = "_ blank"}।
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
-\----প্রিন্ট করা লাগবেনা --
+\--- /no-print \---
 
 You can find the [completed project here](http://rpf.io/p/en/memory-get).
 
--- /collapse \---
+\--- /collapse \---
