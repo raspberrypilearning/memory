@@ -2,19 +2,29 @@
 
 Até agora, o jogador só necessita de se lembrar de uma sequência de cinco cores. Melhora o teu jogo acrescentando uma pontuação e adicionando código para que, à medida que o jogador marcar pontos, o jogo avance para o próximo nível e a sequência de cores para lembrar se torne mais longa.
 
-\--- task \--- Cria uma nova variável chamada `pontuaçāo`{:class="block3variables"}.
+\--- task \---
 
-[[[generic-scratch3-add-variable]]] \--- /task \---
+Create a new variable called `score`{:class="block3variables"}.
 
-Baseado na `pontuação`{:class="block3variables"}, o jogo decidirá o comprimento da sequência de cores. Começa com uma pontuação (e um comprimento de sequência) de ` 3 `.
+[[[generic-scratch3-add-variable]]]
 
-\--- task \--- Acrescentar um bloco no início do código do seu personagem `quando a bandeira é clicada ` {:class = "block3events"} para definir a `pontuação` {:class = "block3variables"} como ` 3 `. \--- /task \---
+\--- /task \---
 
-Em vez criar sempre uma sequência de cinco cores, agora queres que a `pontuação` {:class = "block3variables"} determine o tamanho da sequência.
+Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
 
-\--- task \--- Altera o ciclo de `repetição` {:class = "block3control"} do personagem (para criar a sequência de cores) a repetir ` pontuação ` {:class = "block3variables"} vezes:
+\--- task \---
 
-![actor](images/ballerina.png)
+Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+
+\--- /task \---
+
+Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+
+\--- task \---
+
+Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 repete (pontuação :: variáveis) vezes
@@ -23,21 +33,33 @@ end
 
 \--- /task \---
 
-\--- task \--- Se o jogador repetir a sequência correctamente, deves adicionar ` 1 ` à ` pontuação ` {:class = "block3variables"}, e ao fazê-lo aumenta também o comprimento da próxima sequência. Adiciona o seguinte bloco ao código do personagem ** no ponto em que sabes que a sequência está correta **:
+\--- task \---
 
-![actor](images/ballerina.png)
+If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+
+![sprite](images/ballerina.png)
 
 ```blocks3
 adiciona a [pontuação v] o valor (1)
 ```
 
-\--- hints \--- \--- hint \--- Sabes que a sequência está correta quando o jogo ` difundir ` {:class = "block3events"} a mensagem de 'ganhou'. \--- /hint \--- \--- /hints \---
+\--- hints \---
+
+\--- hint \---
+
+You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+
+\--- /hint \---
+
+\--- /hints \---
 
 \--- /task \---
 
-\--- task \--- Finalmente, adiciona um ` para sempre ` {:class = "block3control"} em volta do código que gera a sequência, para que o jogo crie uma nova sequência de cores em cada nível. É assim que o código do teu personagem pode ficar:
+\--- task \---
 
-![bailarina](images/ballerina.png)
+Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 quando alguém clicar na bandeira verde
@@ -57,4 +79,8 @@ end
 
 \--- /task \---
 
-\--- task \--- Diz os teus amigos para testarem o teu jogo. Lembra-te de esconder a lista da `sequência` {:class = "block3variables"} antes de jogarem! \--- /task \---
+\--- task \---
+
+Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+
+\--- /task \---
