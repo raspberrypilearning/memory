@@ -20,11 +20,19 @@
 
 드럼을 연주하는 코드는 **매우** 캐릭터의 의상을 변경하는 코드와 유사.
 
-\--- 힌트 \--- \--- 힌트 \--- 2 개의 블록을 추가하기 만하면됩니다. (0.25)의 `플레이 드럼은`{: class = "block3sound"} 블록과 `아이템 (길이 서열의 서열)`{CLASS = "block3variables"} 블록. \--- / 힌트 \--- \--- 힌트 \---
+\--- hints \---
 
-필요한 블록은 다음과 같습니다.
+\--- hint \---
 
-![발레리나](images/ballerina.png)
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /귀뜸말 \---
+
+\--- hint \---
+
+Here are the blocks you need:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 [시퀀스 v]의
@@ -34,11 +42,13 @@
  )에 대해 스누핑 드럼 (\ (1 \) 스네어 드럼 v)
 ```
 
-\--- /귀뜸말 \---
+\--- /hint \---
 
-\--- 귀뜸말 \--- 완성된 코드는 다음과 같은 모습입니다.
+\--- hint \---
 
-![발레리나](images/ballerina.png)
+Here is how your finished code should look:
+
+![ballerina](images/ballerina.png)
 
 ```blocks3
 (시퀀스 v)의
@@ -51,8 +61,8 @@ repeat (5)
 끝
 ```
 
-\--- /귀뜸말 \---
+\--- /hint \---
 
-\--- / 귀뜸말 \---
+\--- /hints \---
 
 \--- /task \---
