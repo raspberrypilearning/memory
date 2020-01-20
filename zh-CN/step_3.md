@@ -20,9 +20,17 @@
 
 播放鼓声的代码 **非常**类似于改变角色服装的代码。
 
-\--- hints \--- \--- hint \--- 你只需要添加两个块：一个 `击打鼓(0.25) 拍`{:class="block3sound"} 和`序列的第(序列的项目数)项`{:class="block3variables"}。 \--- /hint \--- \--- hint \---
+\--- hints \---
 
-以下是你需要的代码块：
+\--- hint \---
+
+You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+
+\--- /hint \---
+
+\--- hint \---
+
+Here are the blocks you need:
 
 ![ballerina](images/ballerina.png)
 
@@ -34,7 +42,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- /hint \---
 
-\--- hint \--- 你完成的代码应该像下面这样：
+\--- hint \---
+
+Here is how your finished code should look:
 
 ![ballerina](images/ballerina.png)
 
