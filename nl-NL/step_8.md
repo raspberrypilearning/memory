@@ -13,9 +13,14 @@ Klik om te beginnen op de groene vlag en gebruik vervolgens de pijltjestoetsen o
 
 --- /no-print ---
 
+***
 
-**Door de community geleverde vertaling**
+Dit project werd vertaald door vrijwilligers:
 
-Dit project werd vertaald door **Henny van Haam** en gecontroleerd door **Max Schaaper**/**Cor Groot**.
+Henny van Haam
 
-Onze geweldige vertalers helpen ons om kinderen over de hele wereld de kans te geven te leren coderen. Jij kunt ons helpen nog meer kinderen te bereiken door onze projecten te vertalen - lees meer op [rpf.io/translators](https://rpf.io/translators).
+Max Schaaper
+
+Cor Groot
+
+Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
