@@ -1,6 +1,6 @@
-## බහු(multiple) මට්ටම්(levels)
+## Multiple levels
 
-මෙතෙක්, ක්‍රීඩකයා මතක තබා ගත යුත්තේ වර්ණ පහක අනුක්‍රමයක්(sequence එකක්) පමණි. ලකුණු(score එකක්) ලබාගතහැකි ක්‍රමයක් ක්‍රීඩාවට එකතු කිරීමෙන් ඔබේ ක්‍රීඩාව වැඩි දියුණු කරන්න, එවිට ක්‍රීඩකයා ලකුණු ලබා ගන්නා විට, ක්‍රීඩාව ඊළඟ(next) මට්ටමට(level එකට) ගමන් කරන අතර මතක තබා ගතයුතු වර්ණ අනුක්‍රමය(sequence එක) දිගු වේ.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -27,7 +27,7 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables) 
+repeat (score :: variables)
 end
 ```
 
@@ -62,7 +62,7 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked 
+when flag clicked
 set [score v] to [3]
 forever
     delete (all v) of [sequence v]
