@@ -1,10 +1,10 @@
-## 接下來是什麼？
+## 然後呢？
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
+試試下一個專案，[躲避球](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects)，你要製作一個遊戲，角色要從平台間移動，同時躲開球的攻擊。
 
 \--- no-print \---
 
-Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+點擊綠旗開始，用方向鍵移動，空白鍵跳躍。
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -15,6 +15,6 @@ Click the green flag to start, and then use the arrow keys to move and the <kbd>
 
 \--- print-only \---
 
-![dodgeball game being played](images/dodgeball-showcase.png)
+![玩躲避球遊戲](images/dodgeball-showcase.png)
 
 \--- /print-only \---
