@@ -1,14 +1,14 @@
 \--- no-print \---
 
-Ta wersja projektu jest przeznaczona dla języka **Scratch 3**. Projekt dostępny jest również [w wersji dla języka Scratch 2](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## Wprowadzenie
+## Introduction
 
-W tym projekcie stworzysz grę pamięciową, w której będziesz musiał zapamiętać i powtórzyć losową sekwencję kolorów!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### Co będziesz robił
+### What you will make
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: Czego się nauczysz
+## title: What you will learn
 
-+ Jak dodać dźwięk do projektu Scratch
-+ Jak tworzyć listy i używać ich do przechowywania danych
-+ Jak tworzyć spersonalizowane bloki i używać ich do powtarzania kodu
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Czego będziesz potrzebować
+## title: What you will need
 
-### Sprzęt
+### Hardware
 
-+ Komputer, na którym można uruchomić Scratch 3
++ A computer capable of running Scratch 3
 
-### Oprogramowanie
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: Dodatkowe informacje dla nauczycieli
+## title: Additional information for educators
 
 \--- no-print \---
 
