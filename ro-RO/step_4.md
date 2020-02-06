@@ -1,13 +1,13 @@
-## Repetați secvența
+## Repeat the sequence
 
-Acum veți adăuga patru butoane pe care playerul trebuie să le apese pentru a repeta secvența de culori.
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
 \--- task \---
 
 Add four new sprites to your project to represent the four buttons.
 
-+ Editați costumele noi sprites, astfel încât să existe un sprite în fiecare dintre cele patru culori
-+ Puneți spritele în aceeași ordine pe scenă ca și costumele: roșu, albastru, verde, galben
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
 
@@ -20,8 +20,8 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    când acest sprite a dat clic pe
-    difuzat (roșu v)
+    when this sprite clicked
+    broadcast (red v)
 ```
 
 \--- /task \---
@@ -45,13 +45,13 @@ If `1` is at the start of the list, the code should remove the number from the l
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-atunci când primesc [v red]
-dacă <(punctul (1 v) din [secvența v]) =[1]> , apoi
-șterge (1 v) din [secvența v]
-altceva
-spun [Joc de peste!] pentru (1) secunde
-stop [toate v]
-
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 ```
 
 \--- /task \---
@@ -66,9 +66,9 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = roșu
-+ 2 = albastru
-+ 3 = verde
++ 1 = red
++ 2 = blue
++ 3 = green
 + 4 = yellow
 
 \--- /hint \---
@@ -84,15 +84,15 @@ Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play 
 Here is the code you will need to add:
 
 ```blocks3
-atunci când primesc [v red]
-dacă <(punctul (1 v) din [secvență v]) =[1]> , apoi
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
 
-+ joacă tambur (\ (1 \) Snare Drum v) pentru (0,25) bate
-șterge (1 v ) din [secventa v]
-altceva
-spune [Joc peste!] pentru (1) secunde
-stop [toate v]
-
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -122,11 +122,11 @@ Keep these blocks, but you need to change them in some way:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(punctul (1 v) din [secvență v]) = [1]>
+<(item (1 v) of [sequence v]) = [1]>
 
-atunci când primesc [v red]
+when I receive [red v]
 
-redare tambur (\ (1 \) Snare Drum v) pentru (0,25) bătăi
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 \--- /hint \---
@@ -138,14 +138,14 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-atunci când primesc [v blue]
-dacă <(punctul (1 v) din [secvență v]) =[2]> , apoi
-    tambur joc (\ (2 \) Bass Drum v) pentru (0,25) bate
-    șterge (1 v) din [secventa v]
-altceva
-    spune [Joc peste!] pentru (1) secunde
-    stop [toate v]
-
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[2]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -171,8 +171,8 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    așteptați până când < (lungimea secvenței v]) = [0]>
-    difuzat (câștigat v) și așteptați
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
 ```
 
 \--- /task \---
@@ -192,13 +192,13 @@ Add this code to play a sound and make the backdrop change colour when the playe
 ![ballerina](images/stage.png)
 
 ```blocks3
-    când am primit [castigat v]
-    sunet de pornire (mașină cu tambur v)
+    when I receive [won v]
+    start sound (drum machine v)
     repeat (50)
-        schimbare [culoare v] efect de (25)
-        wait (0,1) secunde
+        change [color v] effect by (25)
+        wait (0.1) seconds
     end
-    efecte grafice clare
+    clear graphic effects
 ```
 
 \--- /task \---
