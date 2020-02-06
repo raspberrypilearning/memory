@@ -1,6 +1,6 @@
-## 複数レベル
+## Multiple levels
 
-これまでのところ、プレーヤーは5色のシーケンスを覚えているだけです。 スコアを追加し、プレーヤーがポイントを獲得したときにゲームが次のレベルに移動し、記憶するカラーシーケンスが長くなるようにコードを追加して、ゲームを向上させます。
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -27,8 +27,8 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-(スコア :: 変数) 回繰り返す
-終了
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-[スコア v] を(1) で変更
+change [score v] by (1)
 ```
 
 \--- hints \---
@@ -62,18 +62,19 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-フラグが押されたとき
-[スコア v] を [3] に設定
-永久
-    [シーケンス v] の(すべて v) を削除
-    (スコア) を繰り返す
-        [シーケンス v] に((1) から(4) の間の乱数) を加える
-        ([シーケンス v] の([シーケンスv] の長さ) 番目にコスチュームを切り替えるする
-        (1) 秒待つ
-    終了
- <  ([シーケンス v] の長さ) = [0] > まで待つ
-    (勝ち v) を送って待つ
-    [スコア v] を(1) ずつ変える
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
+end
 ```
 
 \--- /task \---
