@@ -53,8 +53,9 @@ Scratch 3 ([online](https://rpf.io/scratchon){:target="_blank"} ou [offline](htt
 --- /collapse ---
 
 --- collapse ---
-
-## informações adicionais para educadores
+---
+title: informações adicionais para educadores
+--- 
 
 --- no-print ---
 
