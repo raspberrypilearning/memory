@@ -1,6 +1,6 @@
-## Điểm cao
+## High score
 
-Bây giờ hãy lưu điểm số cao để bạn có thể chơi với bạn bè của mình.
+Now save the high score so that you can play against your friends.
 
 \--- task \---
 
@@ -33,24 +33,24 @@ You need the following blocks:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-nếu < > thì
-kết thúc
+if < > then
+end
 
-(điểm)
+(score)
 
-(điểm)
+(score)
 
-[] > []
+[ ] > [ ]
 
-câu trả lời
+answer
 
-(điểm cao)
+(high score)
 
-hỏi [Tên bạn là gì?] và đợi
+ask [What's your name?] and wait
 
-đặt [điểm cao v] thành [] 
+set [high score v] to [ ] 
 
-bộ [ tên v] thành [] 
+set [name v] to [ ] 
 ```
 
 \--- /hint \---
@@ -62,19 +62,19 @@ Here's how your code for when the red button is pressed should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi tôi nhận được [đỏ v]
-nếu <(mục (1 v) của [trình tự v]) =[1]> thì
-    phát trống (mục (1 v) của [trình tự v]) cho (0,25) nhịp
-    xóa (1 v) của [chuỗi v]
-khác
-    nói [Trò chơi kết thúc!] trong (1) giây
-    nếu < (điểm :: biến) > (điểm cao) > sau đó
-        đặt [điểm cao v] thành (điểm :: biến )
-        hỏi [Điểm cao! Tên bạn là gì?] Và đợi
-        đặt [tên v] thành (câu trả lời)
-    kết thúc
-    điểm dừng [tất cả v]
-kết thúc
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (item (1 v) of [sequence v]) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    if < (score :: variables) > (high score) > then
+        set [high score v] to (score :: variables)
+        ask [High score! What is your name?] and wait
+        set [name v] to (answer)
+    end
+    stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -90,11 +90,11 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-nói [Trò chơi kết thúc!] trong (1) giây
-nếu < (điểm :: biến) > (điểm cao) > rồi
-    đặt [điểm cao v] thành (điểm :: biến)
-    hỏi [Điểm cao! Tên của bạn là gì?] Và đợi
-    đặt [name v] thành (answer)
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
 end
 stop [all v]
 ```
@@ -116,12 +116,12 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-xác định Trò chơi trên
-nói [Trò chơi kết thúc!] trong (1) giây
-nếu < (điểm :: biến) > (điểm cao) > sau đó
-    đặt [điểm cao v] thành (điểm :: biến)
-    hỏi [Điểm cao ! Tên của bạn là gì?] Và đợi
-    đặt [name v] thành (answer)
+define Game over
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
 end
 stop [all v]
 ```
@@ -135,13 +135,13 @@ Now remove the code that's in the `else`{:class="block3control"} block connected
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi tôi nhận được [red v]
-nếu <(mục (1 v) của [chuỗi v]) =[1]> thì
-    trống chơi (\ (1 \) Snare Drum v) cho (0,25) nhịp
-    xóa (1 v) của [chuỗi v]
-khác
-    Trò chơi kết thúc :: tùy chỉnh
-kết thúc
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -161,13 +161,13 @@ Also replace the code in the `else`{:class="block3control"} block connected to t
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi tôi nhận được [blue v]
-nếu <(mục (1 v) của [chuỗi v]) =[1]> thì
-    trống chơi (\ (2 \) Bass Drum v) cho (0,25) nhịp
-    xóa (1 v) của [chuỗi v]
-khác
-    Trò chơi kết thúc :: tùy chỉnh
-kết thúc
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -179,14 +179,14 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-xác định Trò chơi trên
-bắt đầu âm thanh [Cough1 v]
-nói [Trò chơi kết thúc!] trong (1) giây
-nếu < (điểm :: biến) > (điểm cao) > rồi
-    phát âm thanh (kèn1 v)
-    đặt [điểm cao v] đến (điểm)
-    hỏi [Điểm cao! Tên của bạn là gì?] Và đợi
-    đặt [name v] thành (answer)
+define Game over
+start sound [Cough1 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    play sound (trumpet1 v)
+    set [high score v] to (score)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
 end
 stop [all v]
 ```
