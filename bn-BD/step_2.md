@@ -1,6 +1,6 @@
-## একটি রঙ ক্রম তৈরি করুন
+## Create a colour sequence
 
-প্রথম অক্ষরের একটি র্যান্ডম ক্রম প্রদর্শন করতে পারেন যে একটি অক্ষর তৈরি করুন।
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ আপনার খেলা প্রতিটি রং প্রতিনিধিত্ব করতে একটি ভিন্ন সংখ্যা ব্যবহার করা উচিত:
++ Your game should use a different number to represent each colour:
     
-    + 1 = লাল
-    + 2 = নীল
-    + 3 = সবুজ
-    + 4 = হলুদ
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -49,7 +49,7 @@ Create a list called `sequence`{:class="block3variables"}. Only the character sp
 
 [[[generic-scratch3-make-list]]]
 
-\--- /কাজ \---
+\--- /task \---
 
 You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-যখন পতাকা ক্লিক
-যোগ (র্যান্ডম (1) থেকে (4)) [sequence v] বাছাই করুন
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,11 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-যখন পতাকাটি
-ক্রমিক (সমস্ত বনাম) [ক্রম বনাম]
-পুনরাবৃত্তি (5)
-    যোগ ক্লিক করুন (র্যান্ডম (1) থেকে (4)) [ক্রমানুসারে]
-প্রান্তে ক্লিক করুন
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -115,8 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-পরিচয়ে স্যুইচ করুন (আইটেম ([ক্রমানুসারে v] এর দৈর্ঘ্য] [ক্রম বনাম])
-অপেক্ষা করুন (1) সেকেন্ড
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
