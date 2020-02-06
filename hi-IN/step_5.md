@@ -1,6 +1,6 @@
-## कई स्तर
+## Multiple levels
 
-अब तक, खिलाड़ी को केवल पांच रंगों का एक क्रम याद रखना पड़ता है। एक स्कोर जोड़कर और कोड जोड़कर ताकि जैसे ही खिलाड़ी अंक प्राप्त करे, खेल अगले स्तर पर चला जाए और याद रखने के लिए रंग अनुक्रम लंबा हो जाए अपने खेल में सुधार करें।
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -27,8 +27,8 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-दोहरायें (स्कोर :: variables)
-अंत
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-[स्कोर v] को (1) से बदलें
+change [score v] by (1)
 ```
 
 \--- hints \---
@@ -62,19 +62,19 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-जब झंडा क्लिक हुआ
-[स्कोर v] को [3] स्थिर करें
-हमेशा के लिए
-    [अनुक्रम v] का (सभी v) हटाएँ
-    दोहराएँ (स्कोर)
-        [अनुक्रम v] में (यादृच्छिक (1) से (4) के बीच) जोड़ें
-        ([अनुक्रम v] के (मद ([अनुक्रम v] की लंबाई)) से पोशाक बदलें
-        (1) सेकंड प्रतीक्षा करें
-    अंत
-    < ([अनुक्रम v] की लंबाई = [0]> तक प्रतीक्षा करें;
-    (जीत v) प्रसारित करें और प्रतीक्षा करें
-    [ स्कोर v] को (1) से बदलें
-अंत
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
+end
 ```
 
 \--- /task \---
