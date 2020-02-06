@@ -1,16 +1,16 @@
-## Ajouter du son
+## Add sound
 
 \--- task \---
 
-Teste ton projet plusieurs fois. As-tu remarqué que des fois, le même nombre est choisi deux fois (ou plus) dans la suite, ce qui rend la séquence plus difficile à mémoriser ?
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
 \--- /task \---
 
-Peux-tu mettre un son de batterie à chaque fois que le personnage change de costume ? Et que dis-tu d'un son de batterie différent pour chaque couleur ?
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
 \--- task \---
 
-Ajoute l'extension Musique à ton projet de sorte à pouvoir utiliser le bloc ` jouer de la batterie `{:class="block3extensions"} .
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,7 +18,7 @@ Ajoute l'extension Musique à ton projet de sorte à pouvoir utiliser le bloc ` 
 
 \--- task \---
 
-Le code qui joue de la batterieest ** très ** similaire au code qui change le costume du personnage.
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
 \--- hints \---
 
@@ -35,9 +35,9 @@ Here are the blocks you need:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-jouer de la batterie (\(1\) caisse claire v) pour (0.25) battements
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(élément (longueur de [séquence v) de [séquence v])
+(item (length of [sequence v]) of [sequence v])
 ```
 
 \--- /hint \---
@@ -49,14 +49,14 @@ Here is how your finished code should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-quand le drapeau est cliqué
-supprimer (toutes les valeurs) de [séquence v]
-répéter (5) fois
-    ajouter (nombre aléatoire entre (1) et (4)) à la [séquence v]
-    jouer de la batterie (élément (longueur de la [séquence v]) de la  [séquence v]) pour (0.25) battements
-    changer le costume à (élément (longueur de la [éequence v]) de la [séquence v])
-    attendre (1) secondes
-fin
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
+    switch costume to (item (length of [sequence v]) of [sequence v])
+    wait (1) seconds
+end
 ```
 
 \--- /hint \---
