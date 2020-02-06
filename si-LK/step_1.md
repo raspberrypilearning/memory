@@ -1,14 +1,14 @@
 \--- no-print \---
 
-මෙය **Scratch 3** අනුවාදයේ(version එකේ) ව්‍යාපෘතියකි. මෙම ව්යාපෘතියේ [Scratch 2 අනුවාදයක්(version එකක්)](https://projects.raspberrypi.org/en/projects/memory-scratch2) ද ඇත.
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## හැදින්වීම
+## Introduction
 
-මෙම ව්‍යාපෘතියේ දී, ඔබ අහඹු(random) ලෙස ක්‍රියාත්මක වන වර්ණ(colour) අනුපිළිවෙලක්(sequence එකක්) මතක තබා ගැනීමට සහ එය නැවත ක්‍රියාත්මක කරන මතක(memory) ක්‍රීඩාවක්(game) නිර්මාණය කරනු ඇත!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### ඔබ සාදන්නට යන දේ
+### What you will make
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: ඔබ ඉගෙන ගන්නා දේ
+## title: What you will learn
 
-+ ඔබේ Scratch ව්‍යාපෘතියට ශබ්ද එකතු කරන ආකාරය
-+ දත්ත(data) ගබඩා(store) කිරීම සඳහා ලැයිස්තුවක්(lists) නිර්මාණය කරන්නේ සහ භාවිතා කරන්නේ කෙසේද යන්න
-+ කේත(code) පුනරාවර්තනය(repeat) කිරීම සඳහා අභිරුචි(custom) කට්ටි(blocks) නිර්මාණය කරන්නේ සහ භාවිතා කරන්නේ කෙසේද යන්න
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: ඔබට අවශ්‍ය දේ
+## title: What you will need
 
-### දෘඩාංග(Hardware)
+### Hardware
 
-+ Scratch 3 ධාවනය(run) කළ හැකි පරිගණකයක්
++ A computer capable of running Scratch 3
 
-### මෘදුකාංග(Software)
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: අධ්‍යාපකයන්(educators) සඳහා අමතර තොරතුරු
+## title: Additional information for educators
 
 \--- no-print \---
 
