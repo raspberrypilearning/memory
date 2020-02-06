@@ -26,7 +26,7 @@ The code that plays the drum is **very** similar to the code that changes the ch
 
 You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
 
-\--- /pomoć \---
+\--- /hint \---
 
 \--- hint \---
 
