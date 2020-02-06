@@ -1,14 +1,14 @@
-\--- không in \---
+\--- no-print \---
 
-Đây là phiên bản **Scratch 3** của dự án. Ngoài ra còn có một [phiên bản Scratch 2 của dự án](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
-\--- / không in \---
+\--- /no-print \---
 
-## Giới thiệu
+## Introduction
 
-Trong dự án này, bạn sẽ tạo ra một trò chơi trí nhớ trong đó bạn phải ghi nhớ và lặp lại một chuỗi màu sắc ngẫu nhiên!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### Những gì bạn sẽ làm
+### What you will make
 
 \--- no-print \---
 
@@ -26,33 +26,33 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 \--- /print-only \---
 
-## \--- sụp đổ \---
+## \--- collapse \---
 
-## tiêu đề: bạn sẽ học được gì
+## title: What you will learn
 
-+ Cách thêm âm thanh vào dự án Scratch của bạn
-+ Cách tạo và sử dụng danh sách để lưu trữ dữ liệu
-+ Cách tạo và sử dụng các khối tùy chỉnh để lặp lại mã
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## tiêu đề: Những gì bạn sẽ cần
+## title: What you will need
 
-### Phần cứng
+### Hardware
 
-+ Một máy tính có khả năng chạy Scratch 3
++ A computer capable of running Scratch 3
 
-### Phần mềm
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
 \--- /collapse \---
 
-## \--- sụp đổ \---
+## \--- collapse \---
 
-## tiêu đề: Thông tin bổ sung cho các nhà giáo dục
+## title: Additional information for educators
 
 \--- no-print \---
 
