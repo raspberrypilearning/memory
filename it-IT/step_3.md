@@ -24,13 +24,13 @@ Il codice che suona il tamburo è **molto** simile al codice che cambia il costu
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+Hai solo bisogno di aggiungere due blocchi: un blocco `suona tamburo per (0.25) battute`{:class="block3sound"} e un `elemento (lunghezza di sequenza) di sequenza`{:class="block3variables"}.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+Ecco i blocchi di codice che ti serviranno:
 
 ![ballerina](images/ballerina.png)
 
@@ -44,7 +44,7 @@ suona il tamburo ((1) Snare Drum v) per (0.25) battute
 
 \--- hint \---
 
-Here is how your finished code should look:
+Ecco come dovrebbe essere il codice completo:
 
 ![ballerina](images/ballerina.png)
 
