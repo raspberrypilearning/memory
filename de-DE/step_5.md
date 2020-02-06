@@ -1,6 +1,6 @@
-## Mehrere Level
+## Multiple levels
 
-Bisher muss sich der Spieler nur 5 Farben merken. Lass uns Dein Spiel verbessern, so dass die Länge der Farbsequenz erhöht wird. Verbessere dein Spiel, indem du Punkte hinzufügst und Code, der dafür sorgt, dass der Spieler zum nächsten Level gelangt und die Farbsequenz länger wird, wenn er genug Punkte gesammelt hat.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -27,7 +27,7 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-wiederhole (Punktzahl :: variables) mal
+repeat (score :: variables)
 end
 ```
 
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-ändere [Punktzahl v] um (1)
+change [score v] by (1)
 ```
 
 \--- hints \---
@@ -62,18 +62,18 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-Wenn die grüne Flagge angeklickt
-setze [Punktzahl v] auf [3]
-wiederhole fortlaufend 
-    lösche (alles v) aus [Sequenz v]
-    wiederhole (Punktzahl) mal 
-        füge (Zufallszahl von (1) bis (4)) zu [Sequenz v] hinzu
-        wechsle zu Kostüm (Element (Länge von [Sequenz v]) von [Sequenz v])
-        warte (1) Sekunden
-  end
-    warte bis <(Länge von [Sequenz v]) = [0]>
-    sende (gewonnen v) an alle und warte
-    ändere [Punktzahl v] um (1)
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
 end
 ```
 
