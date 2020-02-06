@@ -4,27 +4,27 @@
 
 \--- task \---
 
-Create a new variable called `score`{:class="block3variables"}.
+قم بإنشاء متغير جديد باسم `الدرجة`{:class="block3variables"}.
 
 [[[generic-scratch3-add-variable]]]
 
 \--- /task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+بناءاً على `الدرجة`{:class="block3variables"}, ستقرر اللعبة طول تسلسل الألوان. لنفترض أننا نريد أن نبدأ بدرجة (و طول تسلسل) مساوي للرقم `3`.
 
 \--- task \---
 
-Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+أضف كتلة في بداية التعليمة البرمجية الخاصة بكائن الشخصية الرئيسية `عند النقر على العلم`{:class="block3events"} لجعل المتغير `الدرجة`{:class="block3variables"} يبدأ بالرقم `3`.
 
 \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+بدلاً من إنشاء تسلسل مكون من خمس ألوان,أنت الآن ترغب بأن يقوم المتغير `الدرجة`{:class="block3variables"} بتحديد طول التسلسل.
 
 \--- task \---
 
-Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+task \---غير التكرار الخاص بكائن الشخصية الرئيسية `كرر`{:class="block3control"} loop (و الذي عملته مسبقاً لإنشاء تسلسل الألوان) لتكرار `الدرجة`{:class="block3variables"} عدة مرات:
 
-![sprite](images/ballerina.png)
+![كائن](images/ballerina.png)
 
 ```blocks3
 repeat (score :: variables)
@@ -35,9 +35,9 @@ end
 
 \--- task \---
 
-If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+اذا قام اللاعب بتكرار تسلسل الألوان بشكل صحيح, يجب إضافة `1` إلى `الدرجة`{:class="block3variables"}, و فعل ذلك سيؤدي إلى زيادة طول التسلسل في المرحلة التالية. أضف الكتلة التالية إلى التعليمة البرمجية الخاصة بكائن الشخصية الرئيسية **في المكان الذي ستعلم فيه أن التسلسل قد تم إدخاله بشكل صحيح من قبل اللاعب**:
 
-![sprite](images/ballerina.png)
+![كائن](images/ballerina.png)
 
 ```blocks3
 غيِّر [score v] بمقدار (1)
@@ -47,7 +47,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 
 \--- hint \---
 
-You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+ستعلم أن تسلسل الألوان المدخل صحيح عندما تقوم اللعبة `ببث`{:class="block3events"} رسالة 'لقد فزت'.
 
 \--- /hint \---
 
@@ -57,9 +57,9 @@ You know the sequence is correct at the point when the game `broadcasts`{:class=
 
 \--- task \---
 
-Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+و اخيراً, أضف تكرار `كررّ باستمرار`{:class="block3control"} حول التعليمة البرمجية التي تنشأ التسلسل, حتى تقوم اللعبة بإنشاء تسلسل لوني جديد في كل مرحلة. هذه هي الشاكلة التي سوف يظهر بها كود الشخصية:
 
-![ballerina](images/ballerina.png)
+![راقصة البالية](images/ballerina.png)
 
 ```blocks3
 عند نقر ⚑ :: events
@@ -81,6 +81,6 @@ end
 
 \--- task \---
 
-Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+اطلب من اصدقائك اختبار لعبتك. لا تنسى بأن تقوم بإخفاء قائمة `تسلسل`{:class="block3variables"} قبل قيامهم باللعب!
 
 \--- /task \---
