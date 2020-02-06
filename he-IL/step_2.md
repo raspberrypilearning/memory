@@ -1,6 +1,6 @@
-## צרו רצף של צבעים
+## Create a colour sequence
 
-קודם כל, צרו דמות שתציג רצף אקראי של צבעים.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ במשחק, כל צבע ייוצג על ידי מספר:
++ Your game should use a different number to represent each colour:
     
-    + 1 = אדום
-    + 2 = כחול
-    + 3 = ירוק
-    + 4 = צהוב
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
