@@ -1,65 +1,65 @@
-\---沒有印刷\---
+\--- no-print \---
 
-這是該項目的 **Scratch 3** 版本。項目</a>還有Scratch 2版本。</p> 
+這個專案是 **Scratch 3** 版本。另外還有 [Scratch 2](https://projects.raspberrypi.org/en/projects/memory-scratch2) 版本。
 
-\--- /無印刷\---
+\--- /no-print \---
 
 ## 介紹
 
-在這個項目中，你將創建一個記憶遊戲，你必須記住並重複隨機的顏色序列！
+在這個專案中，你將創建一個記憶遊戲，玩家必須記住隨機出現的顏色序列！
 
-### 你要做什麼
+### 你會做出的玩意兒
 
 \--- no-print \---
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+點擊綠旗開始， 舞者在舞台上會更換不同的服裝，請在觀看後依序點擊顏色。 如果你搞錯顏色順序，就代表你的記憶力…不太行！
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" /> 
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
 \--- /no-print \---
 
 \--- print-only \---
 
-![screenshot of finished game](images/screenshot.png)
+![已完成遊戲的截圖](images/screenshot.png)
 
 \--- /print-only \---
 
-## - - 坍方 - -
+## \--- collapse \---
 
-## 標題：你將學到什麼
+## title: 你會學到
 
-+ 如何為Scratch項目添加聲音
-+ 如何創建和使用列表來存儲數據
-+ 如何創建和使用自定義塊來重複代碼
-
-\--- /collapse \---
-
-## - - 坍方 - -
-
-## 標題：你需要什麼
-
-### 硬件
-
-+ 能夠運行Scratch 3的計算機
-
-### 軟件
-
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
++ 在 Scratch 專案添加音效
++ 用 Scratch 程式創建和使用清單存取數據
++ 用 Scratch 程式創建和使用函式積木取代重複的程式片段
 
 \--- /collapse \---
 
-## - - 坍方 - -
+## \--- collapse \---
 
-## 標題：教育工作者的附加信息
+## title: 你會用到
+
+### 硬體
+
++ 可運行 Scratch 3 的電腦
+
+### 軟體
+
+Scratch 3（[線上版](https://rpf.io/scratchon){:target="_blank"} 或 [離線版](https://rpf.io/scratchoff){:target="_blank"}）
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: 給教師的其它資訊
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+如果你需要列印這個專案，可以先切換成[列印友好模式](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}。
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+你可以在這裡找到[已經完成的專案](http://rpf.io/p/en/memory-get)。
 
 \--- /collapse \---
