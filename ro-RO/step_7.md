@@ -1,39 +1,39 @@
-## Provocare: îmbunătățiți jocul
+## Challenge: improve your game
 
-### Faceți mai multe blocuri
+### Make more blocks
 
-Vedeți alt cod care este același pentru toate cele patru butoane?
+Do you see any other code that is the same for all four buttons?
 
 ```blocks3
-atunci când primesc [v red]
-dacă <(punctul (1 v) din [secvență v]) =[1]> , apoi
-    tambur joc (\ (1 \) Snare Drum v) pentru (0,25) bate
-    șterge (1 v) din [secvență v]
-altceva
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
     Game Over :: custom
 end
 
-atunci când primesc [v blue]
-dacă <(punctul (1 v) din [secvență v]) =[1]> apoi
-    redare tambur (\ (2 \ ) Bass Drum v) pentru (0.25) bate
-    șterge (1 v) din [secvența v]
-altceva
-    Joc peste :: personalizat
-sfârșit
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
-Puteți crea un alt bloc personalizat pe care toate butoanele îl pot utiliza?
+Can you make another custom block that all buttons can use?
 
-### Un alt costum
+### Another costume
 
-Puteți vedea că jocul dvs. începe cu caracterul dvs. care arată una dintre cele patru culori și că caracterul afișează întotdeauna ultima culoare din secvență în timp ce playerul repetă secvența de culoare?
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-Puteți adăuga un alt costum alb simplu caracterului dvs. și adăugați un cod astfel încât personajul să afișeze acest costum la începutul jocului și în timp ce playerul repetă secvența?
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-![captură de ecran](images/colour-white.png)
+![screenshot](images/colour-white.png)
 
-### Nivel de dificultate
+### Difficulty level
 
-Puteți permite jucătorului să aleagă între joc în modul "ușor" (folosind doar culorile roșu și albastru) și "modul normal" (care utilizează toate cele patru culori)?
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-Dacă doriți, puteți adăuga chiar și un mod "dur", care face uz de un al cincilea tambur!
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
