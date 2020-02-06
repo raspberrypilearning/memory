@@ -1,6 +1,6 @@
-## Ustvari barvno zaporedje
+## Create a colour sequence
 
-Najprej ustvari lik, ki zna prikazati naključno zaporedje barv na zaslonu.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ Tvoja igra bi morala uporabljati različne številke za prikaz barv:
++ Your game should use a different number to represent each colour:
     
-    + 1 = rdeča
-    + 2 = modra
-    + 3 = zelena
-    + 4 = rumena
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-ko kliknemo na zastavico
-dodaj (naključno število med (1) in (4)) k [zaporedje]
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,11 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-ko kliknemo na zastavico
-izbriši (vse v) v [zaporedje v]
-ponovi (5) krat
-  dodaj (naključno število med (1) in (4)) k [zaporedje v]
-konec
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -115,8 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-zamenjaj videz na (element(dolžina [zaporedje v]) v [zaporedje v])
-počakaj (1) sekund
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
