@@ -1,13 +1,13 @@
-## Lặp lại trình tự
+## Repeat the sequence
 
-Bây giờ bạn sẽ thêm bốn nút mà trình phát phải nhấn để lặp lại chuỗi màu.
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
 \--- task \---
 
 Add four new sprites to your project to represent the four buttons.
 
-+ Chỉnh sửa trang phục của các họa tiết mới để có một sprite trong mỗi bốn màu
-+ Đặt các họa tiết theo thứ tự trên sân khấu như trang phục: đỏ, xanh dương, xanh lá cây, vàng
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
 
@@ -20,8 +20,8 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    khi sprite này nhấp
-    phát (đỏ v)
+    when this sprite clicked
+    broadcast (red v)
 ```
 
 \--- /task \---
@@ -45,13 +45,13 @@ If `1` is at the start of the list, the code should remove the number from the l
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi tôi nhận được [đỏ v]
-nếu <(mục (1 v) của [trình tự v]) =[1]> thì
-xóa (1 v) của [trình tự v]
-khác
-nói [Trò chơi kết thúc!] cho (1) giây
-dừng [tất cả v]
-kết thúc
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 ```
 
 \--- /task \---
@@ -66,9 +66,9 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = đỏ
-+ 2 = màu xanh
-+ 3 = xanh
++ 1 = red
++ 2 = blue
++ 3 = green
 + 4 = yellow
 
 \--- /hint \---
@@ -84,15 +84,15 @@ Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play 
 Here is the code you will need to add:
 
 ```blocks3
-khi tôi nhận được [red v]
-nếu <(mục (1 v) của [chuỗi v]) =[1]> thì
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
 
-+ chơi trống (\ (1 \) Snare Drum v) cho (0,25) nhịp
-xóa (1 v ) của [chuỗi v]
-khác
-nói [Trò chơi kết thúc!] trong (1) giây
-dừng [tất cả v]
-kết thúc
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -122,11 +122,11 @@ Keep these blocks, but you need to change them in some way:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(mục (1 v) của [chuỗi v]) = [1]>
+<(item (1 v) of [sequence v]) = [1]>
 
-khi tôi nhận được [red v]
+when I receive [red v]
 
-trống chơi (\ (1 \) Snare Drum v) cho (0,25) nhịp
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 \--- /hint \---
@@ -138,14 +138,14 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi tôi nhận được [blue v]
-nếu <(mục (1 v) của [chuỗi v]) =[2]> thì
-    trống chơi (\ (2 \) Bass Drum v) cho (0,25) nhịp
-    xóa (1 v) trong [chuỗi v]
-khác
-    nói [Trò chơi kết thúc!] trong (1) giây
-    dừng [tất cả v]
-kết thúc
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[2]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -171,8 +171,8 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    đợi cho đến < (độ dài của [chuỗi v]) = [0]>
-    phát (thắng v) và chờ
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
 ```
 
 \--- /task \---
@@ -192,13 +192,13 @@ Add this code to play a sound and make the backdrop change colour when the playe
 ![ballerina](images/stage.png)
 
 ```blocks3
-    khi tôi nhận được [won v]
-    âm thanh bắt đầu (trống máy v)
-    lặp lại (50)
-        thay đổi hiệu ứng [màu v] bằng (25)
-        chờ (0,1) giây
-    kết thúc
-    hiệu ứng đồ họa rõ ràng
+    when I receive [won v]
+    start sound (drum machine v)
+    repeat (50)
+        change [color v] effect by (25)
+        wait (0.1) seconds
+    end
+    clear graphic effects
 ```
 
 \--- /task \---
