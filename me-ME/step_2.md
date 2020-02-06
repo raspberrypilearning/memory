@@ -1,4 +1,4 @@
-## Napravi niz boja
+## Create a colour sequence
 
 First create a character that can display a random sequence of colours.
 
@@ -24,10 +24,10 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 + Your game should use a different number to represent each colour:
     
-    + 1 = crvena
-    + 2 = plava
-    + 3 = zelena
-    + 4 = žuta
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -65,7 +65,7 @@ Add this code to the character sprite to choose a random number and add it to `s
 
 ```blocks3
 when flag clicked
-add (pick random (1) to (4)) to [niz v]
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -96,9 +96,9 @@ This is what your code should look like:
 
 ```blocks3
 when flag clicked
-delete (all v) of [niz v]
+delete (all v) of [sequence v]
 repeat (5)
-    add (pick random (1) to (4)) to [niz v]
+    add (pick random (1) to (4)) to [sequence v]
 end
 ```
 
