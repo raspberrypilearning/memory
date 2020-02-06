@@ -1,4 +1,4 @@
-## Izazov: dodavanje zvuka
+## Repeat the sequence
 
 Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
@@ -66,9 +66,9 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = crvena
-+ 2 = plava
-+ 3 = zelena
++ 1 = red
++ 2 = blue
++ 3 = green
 + 4 = yellow
 
 \--- /hint \---
