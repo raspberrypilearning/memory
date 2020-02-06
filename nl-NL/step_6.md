@@ -4,15 +4,15 @@ Sla nu de hoogste score op zodat je tegen je vrienden kunt spelen.
 
 \--- task \---
 
-Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
+Voeg twee nieuwe variabelen toe met de naam `topscore`{:class="blockdata"} en `naam`{:class="blockdata"}.
 
 \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+Wanneer het spel eindigt omdat de speler de reeks verkeerd heeft, moet het spel controleren of de score hoger is dan de huidige topscore. Als dat zo is, moet het spel de score opslaan als topscore en ook de naam van de speler opslaan.
 
 \--- task \---
 
-Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+Voeg code toe aan je personage-sprite om de `topscore`{:class="block3variables"} op te slaan. Vraag ook om de naam van de speler, en sla deze op in de `naam`{:class="block3variables"} variabele.
 
 [[[generic-scratch3-high-score]]]
 
@@ -20,17 +20,17 @@ Add code to your character sprite to store the `high score`{:class="block3variab
 
 \--- hint \---
 
-Your new code needs to follow this pattern:
+Je nieuwe code moet dit patroon volgen:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+Na het `Game over`{:class="block3looks"} bericht `Als`{:class="block3control"} de `score`{:class="block3variables"} is `groter dan`{:class="block3operators"} de `topscore`{:class="block3variables"} `Maak`{:class="block3variables"} de `topscore`{:class="block3variables"} gelijk aan de `score`{:class="block3variables"} `Vraag`{:class="block3sensing"} naar de naam van de speler `Maak`{:class="block3variables"} de `naam`{:class="block3variables"} gelijk aan het `antwoord`{:class="block3sensing"}
 
 \--- /hint \---
 
 \--- hint \---
 
-You need the following blocks:
+Je hebt de volgende blokken nodig:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 als < > dan
@@ -57,9 +57,9 @@ maak [naam v] [ ]
 
 \--- hint \---
 
-Here's how your code for when the red button is pressed should look:
+Zo zou de code eruit moeten zien voor als op de rode knop is gedrukt:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 wanneer ik signaal [rood v] ontvang
@@ -82,11 +82,11 @@ einde
 
 \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+Je moet deze nieuwe code ook aan de personage-sprite toevoegen voor de andere drie kleuren!
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+Zie je dat de 'Game over'-code voor elk van de vier kleuren exact hetzelfde is?
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 zeg [Game over!] (1) sec.
@@ -98,21 +98,21 @@ als < (score :: variables) > (topscore) > dan
     stop [alle v]
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+Als je een van de 'Game over'-codes moet veranderen, bijvoorbeeld om een geluid toe te voegen of het 'Game over'-bericht te veranderen, moet je het vier keer wijzigen. Dat is vervelend en verspilt veel tijd.
 
-Instead, you can define your own code block, and use it anywhere in your project.
+In plaats daarvan kunt je je eigen codeblokken maken en die steeds opnieuw in het project gebruiken.
 
 \--- task \---
 
-Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+Klik op `Mijn blokken`{:class="block3myblocks"} en vervolgens op **Maak een blok**. Noem dit nieuwe blok `Game over`{:class="block3myblocks"}.
 
 \--- /task \---
 
 \--- task \---
 
-Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+Voeg de code van het `anders`{:class="block3control"} blok verbonden met het `rood`{:class="block3events"} signaal toe aan het `Game over`{:class="block3myblocks"} blok zodat het er zo uitziet:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 definieer Game over
@@ -130,9 +130,9 @@ einde
 
 \--- task \---
 
-Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+Verwijder nu de code die in het `anders`{:class="block3control"}-blok staat dat is verbonden met het `rood`{:class="block3events"} signaal en voeg het `Game over`{:class="block3myblocks"}-blok in plaats daarvan toe:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 wanneer ik signaal [rood v] ontvang
@@ -148,17 +148,17 @@ einde
 
 \--- task \---
 
-Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
+Test je nieuwe blok door het spel te spelen en op de rode knop op het verkeerde moment in de kleurenreeks te klikken.
 
 \--- /task \---
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+Je nieuwe `Game over`{:class="block3myblocks"}-blok is een **functie**, een klein script dat je overal kunt gebruiken in je code door het `Game over`{:class="block3myblocks"}-blok toe te voegen.
 
 \--- task \---
 
-Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+Vervang ook de code in het `anders`{:class "block3control"}-blok dat is verbonden met de `signalen`{:class="block3events"} voor de andere kleuren door je nieuwe `Game over`{:class="block3myblocks"}-blok. Hier is hoe de code voor het `blauw`{:class="block3events"} bericht eruit zou moeten zien
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 wanneer ik signaal [blauw v] ontvang
@@ -174,9 +174,9 @@ einde
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+Voeg nu een geluid toe dat wordt afgespeeld als op de verkeerde knop wordt gedrukt. Je hoeft deze code maar één keer toe te voegen in het `Game over`{:class="block3myblocks"}-blok dat je hebt gemaakt en dus niet vier keer apart!
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 definieer Game over
