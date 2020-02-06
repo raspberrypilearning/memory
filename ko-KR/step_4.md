@@ -1,13 +1,13 @@
-## 시퀀스 반복
+## Repeat the sequence
 
-이제 플레이어가 색 순서를 반복하기 위해 누르는 버튼 4 개를 추가 할 것입니다.
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
 \--- task \---
 
 Add four new sprites to your project to represent the four buttons.
 
-+ 새로운 스프라이트의 복장을 편집하여 네 가지 색상 각각에 스프라이트가 하나가되게하십시오.
-+ 의상과 같은 순서로 스프라이트를 무대에 올려 놓습니다 : 빨간색, 파란색, 녹색, 노란색
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
 
@@ -20,8 +20,8 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    이 스프라이트가
-    방송을 클릭했을 때 (빨간색 v)
+    when this sprite clicked
+    broadcast (red v)
 ```
 
 \--- /task \---
@@ -45,13 +45,13 @@ If `1` is at the start of the list, the code should remove the number from the l
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-I는 [적색 V] 나타나면
-경우 <(항목 (1 V) [서열 V]의) =[1]> 다음
-의 삭제 (1 V) [서열 V]
-다른
-[위에 게임!] 말 (1) 초
-스톱 [모두 v]
-끝
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 ```
 
 \--- /task \---
@@ -66,9 +66,9 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = 적색
-+ 2 = 청색
-+ 3 = 녹색
++ 1 = red
++ 2 = blue
++ 3 = green
 + 4 = yellow
 
 \--- /hint \---
@@ -84,13 +84,13 @@ Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play 
 Here is the code you will need to add:
 
 ```blocks3
-I는 [적색 V] 나타나면
-경우 <(항목 (1 V) [서열 V]의) =[1]> 다음,
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
 
-(0.25)에 대한 + 재생 드럼 (\ (1 \) 스네어 드럼 V)를 친다
-(1 V 삭제 ) of [sequence v]
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+delete (1 v) of [sequence v]
 else
-게임 오버! (1) 초 동안
+say [Game over!] for (1) seconds
 stop [all v]
 end
 ```
@@ -122,11 +122,11 @@ Keep these blocks, but you need to change them in some way:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-(시퀀스 v)의 <(1 v) = [1]>
+<(item (1 v) of [sequence v]) = [1]>
 
-(0.25) 박자의 경우 [빨간색 v]
+when I receive [red v]
 
-재생 드럼 (\ (1 \) 스네어 드럼 v)
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 \--- /hint \---
@@ -138,12 +138,12 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-I는 [블루 V] 나타나면
-경우 <(항목 (1 V) [서열 V]의) =[2]> 다음
-    재생 드럼 (\ (2 \)은베이스 드럼 V) (0.25)에 대한 박동
-    삭제 (1 V) [시퀀스 v]
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[2]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
 else
-    [게임 오버!] 동안 (1 초)
+    say [Game over!] for (1) seconds
     stop [all v]
 end
 ```
@@ -171,8 +171,8 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    < (시퀀스 v의 길이) = [0]>
-    브로드 캐스트 (v를 획득)와 대기
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
 ```
 
 \--- /task \---
@@ -192,13 +192,13 @@ Add this code to play a sound and make the backdrop change colour when the playe
 ![ballerina](images/stage.png)
 
 ```blocks3
-    I받을 때 원 V]
-    시작 음 (드럼 머신 V)
-    반복 (50)
-        변화량 색상 V] (25)에 의한 효과
-        대기 (0.1) 초
-    단
-    분명 그래픽 효과
+    when I receive [won v]
+    start sound (drum machine v)
+    repeat (50)
+        change [color v] effect by (25)
+        wait (0.1) seconds
+    end
+    clear graphic effects
 ```
 
 \--- /task \---
