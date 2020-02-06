@@ -1,14 +1,14 @@
 \--- no-print \---
 
-Aceasta este versiunea **Scratch 3** a proiectului. Există , de asemenea , o [versiune Scratch 2 a proiectului](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## Introducere
+## Introduction
 
-În acest proiect vei crea un joc de memorie unde va trebui să memorezi și să repeți o secvență aleatorie de culori!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### Ce vei face
+### What you will make
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## titlu: Ce veți învăța
+## title: What you will learn
 
-+ Cum să adăugați un sunet la proiectul Scratch
-+ Cum se creează și se utilizează liste pentru stocarea datelor
-+ Cum se creează și se utilizează blocuri personalizate pentru repetitivitatea codului
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
-## \--- restrângere \---
+## \--- collapse \---
 
-## titlu: Ce vă trebuie
+## title: What you will need
 
-### Dispozitive _Hardware_
+### Hardware
 
-+ Un computer capabil de a rula Scratch 3
++ A computer capable of running Scratch 3
 
-### Programe
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## titlu: Informații suplimentare pentru educatori
+## title: Additional information for educators
 
 \--- no-print \---
 
