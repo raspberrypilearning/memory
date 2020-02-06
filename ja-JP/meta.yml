@@ -2,25 +2,25 @@
 hero_image: images/memory.png
 listed: true
 copyedit: false
-title: メモリ
-description: ランダムなカラーシーケンスを記憶して繰り返すゲームを作成する
+title: Memory
+description: Create a game in which you memorise and repeat random colour sequences
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
-    title: はじめに
+    title: Introduction
   - 
-    title: カラーシーケンスを作成する
+    title: Create a colour sequence
   - 
-    title: サウンドを追加
+    title: Add sound
   - 
-    title: シーケンスを繰り返す
+    title: Repeat the sequence
   - 
-    title: 複数のレベル
+    title: Multiple levels
   - 
-    title: ハイスコア
+    title: High score
   - 
-    title: "Challenge: ゲームをより良くする"
+    title: "Challenge: improve your game"
   - 
-    title: 次は何をしますか？
+    title: What next?
 
