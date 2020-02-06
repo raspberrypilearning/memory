@@ -1,6 +1,6 @@
-## एक रंगो का अनुक्रम बनाएँ
+## Create a colour sequence
 
-पहले एक पात्र बनाएं जो रंगों के यादृच्छिक अनुक्रम को प्रदर्शित कर सके।
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ आपके खेल को प्रत्येक रंग का प्रतिनिधित्व करने के लिए एक अलग संख्या का उपयोग करना चाहिए:
++ Your game should use a different number to represent each colour:
     
-    + 1 = लाल
-    + 2 = नीला
-    + 3 = हरा
-    + 4 = पीला
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-जब ध्वज पर क्लिक किया
-[अनुक्रम v] में (यादृच्छिक (1) से (4) के बीच चुनें) को जोड़ें
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,11 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-जब झंडा क्लिक किया
-[अनुक्रम v] को (पूरा v) हटाएँ
-दोहराने (5)
-    [अनुक्रम v] में (यादृच्छिक (1) से (4) के बीच चुनें) जोड़ें
-अंत
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -115,8 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-कॉस्ट्यूम को [अनुक्रम v] के (आइटम ([अनुक्रम v] की लंबाई)) से बदलें
-(1) सेकंड के लिए प्रतीक्षा करें
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
