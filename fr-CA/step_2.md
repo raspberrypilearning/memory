@@ -1,6 +1,6 @@
-## Crée une séquence de couleurs
+## Create a colour sequence
 
-Premièrement, crée un personnage qui puisse afficher des séquences de couleurs aléatoires.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ Ton jeu doit utiliser différents nombres afin de représenter chaque couleur :
++ Your game should use a different number to represent each colour:
     
-    + 1 = rouge
-    + 2 = bleu
-    + 3 = vert
-    + 4 = jaune
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
