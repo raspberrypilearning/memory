@@ -1,13 +1,13 @@
-## Répéter la séquence
+## Repeat the sequence
 
-Maintenant, tu vas ajouter quatre boutons sur lesquels le joueur doit appuyer pour répéter la séquence de couleurs.
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
 \--- task \---
 
 Add four new sprites to your project to represent the four buttons.
 
-+ Modifie les costumes des nouveaux lutins de manière à ce qu'il y ait un lutin dans chacune des quatre couleurs
-+ Place les lutins dans le même ordre sur la scène que les costumes : rouge, bleu, vert et jaune
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
 
@@ -20,8 +20,8 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    quand ce lutin est cliqué
-    envoyer à tous (rouge)
+    when this sprite clicked
+    broadcast (red v)
 ```
 
 \--- /task \---
