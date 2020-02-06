@@ -24,15 +24,15 @@ De code die de drum speelt is **erg** vergelijkbaar met de code die het kostuum 
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+Je hoeft slechts twee blokken toe te voegen: een `speel drum voor (0.25) beats`{:class="block3sound"} blok en een `item (lengte van reeks) van reeks`{:class="block3variables"} blok.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+Dit zijn de blokken die je nodig hebt:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
@@ -44,9 +44,9 @@ speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
 
 \--- hint \---
 
-Here is how your finished code should look:
+Zo zou het voltooide programma eruit moeten zien:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
 wanneer groene vlag wordt aangeklikt
