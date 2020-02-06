@@ -1,6 +1,6 @@
-## Meilleur pointage
+## High score
 
-Enregistrez maintenant le meilleur score afin de pouvoir jouer contre vos amis.
+Now save the high score so that you can play against your friends.
 
 \--- task \---
 
