@@ -1,6 +1,6 @@
-## Tạo một chuỗi màu
+## Create a colour sequence
 
-Đầu tiên tạo một nhân vật có thể hiển thị một chuỗi màu sắc ngẫu nhiên.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ Trò chơi của bạn nên sử dụng một số khác nhau để thể hiện mỗi màu:
++ Your game should use a different number to represent each colour:
     
-    + 1 = đỏ
-    + 2 = màu xanh
-    + 3 = xanh
-    + 4 = màu vàng
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi cờ nhấp
-thêm (chọn ngẫu nhiên (1) đến (4)) vào [chuỗi v]
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,11 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi cờ nhấp
-xóa (tất cả v) của [chuỗi v]
-lặp lại (5)
-    thêm (chọn ngẫu nhiên (1) đến (4)) vào [chuỗi v]
-kết thúc
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -115,8 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-chuyển trang phục sang (mục (độ dài của [chuỗi v]) của [chuỗi v])
-chờ (1) giây
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
