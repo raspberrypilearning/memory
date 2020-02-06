@@ -1,14 +1,14 @@
 \--- no-print \---
 
-यह प्रोजेक्ट का **स्क्रैच 3** संस्करण है। प्रोजेक्ट का एक [स्क्रैच 2](https://projects.raspberrypi.org/en/projects/memory-scratch2) संस्करण भी है।
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## परिचय
+## Introduction
 
-इस प्रोजेक्ट में, आप एक मेमोरी गेम बनाएंगे जिसमें आपको रंगों के एक यादृच्छिक क्रम को याद रखना और दोहराना होगा!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### आप क्या बनाएँगे
+### What you will make
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: आप क्या सीखेंगे
+## title: What you will learn
 
-+ अपने स्क्रैच प्रोजेक्ट में ध्वनि कैसे जोड़ें
-+ डेटा को संग्रहीत करने के लिए सूचियों का निर्माण और उपयोग कैसे करें
-+ कोड को दोहराने के लिए कस्टम ब्लॉक कैसे बनाएं और उपयोग करें
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: आपको क्या आवश्यकता होगी
+## title: What you will need
 
-### हार्डवेयर
+### Hardware
 
-+ Scratch 3 चलाने में सक्षम कंप्यूटर
++ A computer capable of running Scratch 3
 
-### सॉफ्टवेयर
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: शिक्षकों के लिए अतिरिक्त जानकारी
+## title: Additional information for educators
 
 \--- no-print \---
 
