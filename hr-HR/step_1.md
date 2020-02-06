@@ -4,11 +4,11 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 \--- /no-print \---
 
-## Uvod
+## Introduction
 
 In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### Što ćete napraviti
+### What you will make
 
 \--- no-print \---
 
@@ -28,7 +28,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: Naučit ćeš
+## title: What you will learn
 
 + How to add sound to your Scratch project
 + How to create and use lists to store data
@@ -38,13 +38,13 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: Trebat ćeš
+## title: What you will need
 
-### Hardver
+### Hardware
 
-+ Računalo koje može pokrenuti Scratch 3
++ A computer capable of running Scratch 3
 
-### Softver
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
