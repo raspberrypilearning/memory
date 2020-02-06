@@ -1,6 +1,6 @@
-## Создай последовательность цветов
+## Create a colour sequence
 
-Сначала создай персонажа, который смоежт отображать случайную последовательность цветов.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ Твоя игра должна использовать раличные числа, чтобы представлять каждый цвет:
++ Your game should use a different number to represent each colour:
     
-    + 1 = красный
-    + 2 = синий
-    + 3 = зеленый
-    + 4 = желтый
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
