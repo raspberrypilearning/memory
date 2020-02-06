@@ -1,6 +1,6 @@
-## Tabela wyników
+## High score
 
-Teraz zapisz nalepszy wynik, aby móc grać przeciwko znajomym.
+Now save the high score so that you can play against your friends.
 
 \--- task \---
 
@@ -70,11 +70,11 @@ else
     say [Game over!] for (1) seconds
     if < (score :: variables) > (high score) > then
         set [high score v] to (score :: variables)
-        ask [High score! Jak masz na imię?] I czekać
-        ustawić [imię v] na (odpowiedź)
-    koniec
-    zatrzymać [wszystkie v]
-koniec
+        ask [High score! What is your name?] and wait
+        set [name v] to (answer)
+    end
+    stop [all v]
+end
 ```
 
 \--- /hint \---
