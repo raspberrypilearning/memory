@@ -23,7 +23,7 @@
 
 يحتاج النص البرمجي الجديد الخاص بك إلى اتباع هذا النمط:
 
-بعد `انتهت اللعبة!`{:class="block3looks"} رسالة `اذا`{:class="block3control"} كانت `الدرجة`{:class="block3variables"} `أعلى من`{:class="block3operators"} `أعلى درجة`{:class="block3variables"} `اجعل`{:class="block3variables"} `أعلى درجة`{:class="block3variables"} مساوياً `الدرجة`{:class="block3variables"} `اسأل`{:class="block3sensing"} عن اسم اللاعب `اجعل`{:class="block3variables"} ` اسم اللاعب`{:class="block3variables"} مساوياً `للاجابة`{:class="block3sensing"}
+بعد `انتهت اللعبة!`{:class="block3looks"} رسالة `اذا`{:class="block3control"} كانت `الدرجة`{:class="block3variables"} `أعلى من`{:class="block3operators"} `أعلى درجة`{:class="block3variables"} `اجعل`{:class="block3variables"} `أعلى درجة`{:class="block3variables"} مساوياً `الدرجة`{:class="block3variables"} `اسأل`{:class="block3sensing"} عن اسم اللاعب `اجعل`{:class="block3variables"} `اسم اللاعب`{:class="block3variables"} مساوياً `للاجابة`{:class="block3sensing"}
 
 --- /hint ---
 
@@ -63,23 +63,18 @@ end
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-عندما تستقبل [أحمر v] :: events
-إذا <(العنصر (1 v) of [تسلسل v]) = [1] :: operators> 
-  دقَّ الطبل (العنصر (1 v) من [تسلسل v] :: list) لمدة (0.25) وحدة إيقاع :: music
-  احذف (1 v) من [تسلسل v] :: list
-
-  قل [انتهت اللعبة!] لمدة (1) ثانية :: looks
-  إذا <(الدرجة :: variables) > (أعلى درجة) :: operators> 
-    اجعل [أعلى درجة v] مساويًا (الدرجة :: variables) :: variables
-    اسأل [درجة عالية ! ما هو اسمك ؟] وانتظر :: sensing
-    اجعل [اسم اللاعب v] مساويًا (الإجابة :: sensing) :: variables :: control
+وقتی که [أحمر v] را دریافت کردم
+اگر <(عنصر (1 v) از [تسلسل v]) = [1]> آن گاه 
+  به مدت (0.25) ضرب صدای (عنصر (1 v) از [تسلسل v]) را در ساز درامز پخش کن
+  (1 v) را از [تسلسل v] حذف کن
+وگر نه 
+  [انتهت اللعبة!] را به مدت (1) ثانیه بگو
+  اگر <(الدرجة :: variables) > (أعلى درجة)> آن گاه 
+    [أعلى درجة v] را به (الدرجة :: variables) تنظیم کن
+    [درجة عالية ! ما هو اسمك ؟] را بپرس و صبر کن
+    [اسم اللاعب v] را به (پاسخ) تنظیم کن
   end
-  أوقف [الكل v] :: control :: control
-end ما اسمك؟\] and wait
-اجعل [name v] مساوياً (الإجابة)
-end
-أوقف [الكل v]
-
+  توقف [الكل v]
 end
 ```
 
