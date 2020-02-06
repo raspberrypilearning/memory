@@ -1,14 +1,14 @@
 \--- no-print \---
 
-To je **Scratch 3** različica projekta. Obstaja tudi [Scratch 2](https://projects.raspberrypi.org/en/projects/memory-scratch2) različica projekta.
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## Uvod
+## Introduction
 
-V tej igri boš naredil-a igro Spomin, v kateri si moraš zapomniti in ponoviti naključno zaporedje barv!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### Kaj boš ustvaril-a?
+### What you will make
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: Kaj se boš naučila-a?
+## title: What you will learn
 
-+ Kako dodati zvok v Scratch projekt
-+ Kako ustvariti in uporabljati sezname za shranjevanje podatkov
-+ Kako ustvariti in uporabljati lastne bloke za ponovno uporabo kode
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Kaj potrebuješ?
+## title: What you will need
 
-### Strojna oprema
+### Hardware
 
-+ Računalnik, ki lahko poganja Scratch 3
++ A computer capable of running Scratch 3
 
-### Programska oprema
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: Dodatne informacije za izobraževalce
+## title: Additional information for educators
 
 \--- no-print \---
 
