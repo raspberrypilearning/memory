@@ -1,10 +1,10 @@
-## Que faire ensuite?
+## What next?
 
-Essayez le prochain projet, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects) , où vous ferez un jeu dans lequel vous devrez éviter les balles en vous déplaçant de plateforme en plateforme.
+Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
 
 \--- no-print \---
 
-Clique sur le drapeau vert pour commencer, puis utilise les touches fléchées pour se déplacer et la touche <kbd>space</kbd> pour sauter.
+Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -15,6 +15,6 @@ Clique sur le drapeau vert pour commencer, puis utilise les touches fléchées p
 
 \--- print-only \---
 
-![dodgeball en cours de lecture](images/dodgeball-showcase.png)
+![dodgeball game being played](images/dodgeball-showcase.png)
 
 \--- /print-only \---
