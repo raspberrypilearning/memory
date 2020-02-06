@@ -49,7 +49,7 @@ Create a list called `sequence`{:class="block3variables"}. Only the character sp
 
 [[[generic-scratch3-make-list]]]
 
-\--- función \---
+\--- /task \---
 
 You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
