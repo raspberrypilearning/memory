@@ -1,39 +1,39 @@
-## Challenge: ゲームをより良くする
+## Challenge: improve your game
 
-### もっとブロックを作る
+### Make more blocks
 
-4つのボタンすべてに同じコードが他にもありますか
+Do you see any other code that is the same for all four buttons?
 
 ```blocks3
-[赤 v] を受取ったとき
-もし < (シーケンス v] の(1 v) 番目) =[1] > なら
-    (\(1 \) スネアドラム v) ドラムを (0.25) 拍鳴らす
-    [シーケンス v] の(1 v) を削除
-でなければ
-    ゲームオーバー :: カスタム
-終了
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game Over :: custom
+end
 
-[青 v] を受取ったとき
-もし < (シーケンス v] の(1 v) 番目) =[1] > なら
-    (\(1 \) バスドラム v) ドラムを (0.25) 拍鳴らす
-    [シーケンス v] の(1 v) を削除
-でなければ
-    ゲームオーバー :: カスタム
-終了
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
-すべてのボタンが使用できる別のカスタムブロックを作ることができますか？
+Can you make another custom block that all buttons can use?
 
-### もう一つのコスチューム
+### Another costume
 
-キャラクターが4色のいずれかを表示することからゲームが始まり、プレイヤーがカラーシーケンスを繰り返している間、キャラクターは常にシーケンスの最後の色を表示することがわかりますか？
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-別の白いコスチュームをキャラクターに追加し、ゲームの開始時とプレイヤーがシーケンスを繰り返している間にキャラクターがこのコスチュームを表示するようにコードを追加できますか？
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-![スクリーンショット](images/colour-white.png)
+![screenshot](images/colour-white.png)
 
-### 難易度
+### Difficulty level
 
-「簡単モード」(赤と青の色のみを使用) と「通常モード」(4色すべてを使用) でプレーヤーがゲームをプレイできるように選べるようにできますか？
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-必要に応じて、5番目のドラムを使用する「ハード」モードを追加することもできます。
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
