@@ -1,16 +1,16 @@
-## आवाज डालें
+## Add sound
 
 \--- task \---
 
-अपनी परियोजना का कुछ समय परीक्षण करें। क्या आपने ध्यान दिया कि कभी-कभी एक ही संख्या को एक लगातार दो (या अधिक) बार चुना जाता है, जिससे अनुक्रम को याद रखना कठिन हो जाता है?
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
 \--- /task \---
 
-क्या आप हर बार जब भी पात्र स्प्राइट कॉस्ट्यूम बदलती है, एक ड्रम की आवाज़ बजा सकते हैं? और कैसा रहेगा कि प्रत्येक रंग के लिए एक अलग ड्रम की आवाज़ बजाई जाये?
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
 \--- task \---
 
-अपनी परियोजना में संगीत विस्तार जोड़ें ताकि आप ` ड्रम की आवाज़ बजाएँ ` {:class="block3extensions"} ब्लॉक का उपयोग कर सकें।
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,7 +18,7 @@
 
 \--- task \---
 
-ड्रम बजाने वाला कोड पात्र की पोशाक को बदलने वाले कोड के ** बहुत ** ही समान है।
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
 \--- hints \---
 
@@ -35,9 +35,9 @@ Here are the blocks you need:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-(0.25) बीट्स के लिए (\ (1 \) फंदे वाला ड्रम v) बजाएँ
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
-([अनुक्रम वी] का आयटम ([अनुक्रम v] की लंबाई))
+(item (length of [sequence v]) of [sequence v])
 ```
 
 \--- /hint \---
@@ -49,14 +49,14 @@ Here is how your finished code should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-जब झंडा क्लिक किया
-(पूरा v) [अनुक्रम v] हटाएँ
-दोहरायें (5)
-    [अनुक्रम v] में (यादृच्छिक (1) से (4) के बीच चुनें) जोड़ें
-    (0.25) बीट्स के लिए ([अनुक्रम v] के मद ([अनुक्रम v] की लम्बाई)) ड्रम बजाएँ
-    पोशाक  को ([अनुक्रम v] के मद ([अनुक्रम v] की लंबाई)) से बदलें
-    (1) सेकंड प्रतीक्षा करें
-अंत
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
+    switch costume to (item (length of [sequence v]) of [sequence v])
+    wait (1) seconds
+end
 ```
 
 \--- /hint \---
