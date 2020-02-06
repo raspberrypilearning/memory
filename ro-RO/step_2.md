@@ -1,6 +1,6 @@
-## Creează o secvenţă de culori
+## Create a colour sequence
 
-Mai întâi creați un caracter care poate afișa o secvență aleatoare de culori.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ Jocul dvs. ar trebui să utilizeze un număr diferit pentru a reprezenta fiecare culoare:
++ Your game should use a different number to represent each colour:
     
-    + 1 = roșu
-    + 2 = albastru
-    + 3 = verde
-    + 4 = galben
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -64,7 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-atunci când faceți clic pe steag adăugați (alegeți aleatoriu de la (1) la (4)) la [secvența v]
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -94,11 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-când apăsați steagul
-șterge (toate v) [secvență v]
-repetă (5)
-adaugă (alege aleator de la (1) la (4)) la [secvență v]
-sfârșit
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -114,8 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-comutați costumul la (elementul (lungimea secvenței v) a secvenței v)
-așteptați (1) secundă
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
