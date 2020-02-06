@@ -1,39 +1,39 @@
-## चुनौती: अपने गेम में सुधार करें
+## Challenge: improve your game
 
-### और ब्लॉक बनाएँ
+### Make more blocks
 
-क्या आपको कोई अन्य कोड दिखाई देता है जो चारों बटन के लिए समान है?
+Do you see any other code that is the same for all four buttons?
 
 ```blocks3
-जब मुझे [लाल v] प्राप्त हो
-अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
-    (0.25) बीट्स के लिए (\(1\) फंदे वाला ड्रम v) बजाएँ
-    [अनुक्रम v] का (1 v) हटाएँ
-अन्यथा
-    खेल समाप्त :: custom
-अंत
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game Over :: custom
+end
 
-जब मुझे [नीला v] प्राप्त हो
-अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
-    (0.25) बीट्स के लिए (\(2\) बेस वाला ड्रम v) बजाएँ
-    [अनुक्रम v] का (1 v) हटाएँ
-अन्यथा
-    खेल समाप्त :: custom
-अंत
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
-क्या आप एक और कस्टम ब्लॉक बना सकते हैं जिसे सभी बटन उपयोग कर सकें?
+Can you make another custom block that all buttons can use?
 
-### एक और पोशाक
+### Another costume
 
-क्या आप देख सकते हैं कि आपका खेल चार रंगों में से एक को दिखाने वाले आपके पात्र के साथ शुरू होता है, और जब खिलाड़ी रंग क्रम को दोहरा रहा होता है तो यह पात्र हमेशा अनुक्रम में अंतिम रंग दिखाता है?
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-क्या आप अपने पात्र में एक और सादी सफेद पोशाक जोड़ सकते हैं, और कोड जोड़ सकते हैं ताकि पात्र खेल की शुरुआत में और जब खिलाड़ी अनुक्रम दोहरा रहा हो तब इस पोशाक को प्रदर्शित करे?
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-![स्क्रीनशॉट](images/colour-white.png)
+![screenshot](images/colour-white.png)
 
-### कठिनाई स्तर
+### Difficulty level
 
-क्या आप अपने खिलाड़ी को 'आसान स्तर' (केवल लाल और नीले रंगों का उपयोग करके) और 'सामान्य स्तर' (जो सभी चार रंगों का उपयोग करता है) पर खेल खेलने के बीच चयन करने की अनुमति दे सकते हैं?
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-यदि आप चाहें, तो आप एक 'हार्ड' स्तर भी जोड़ सकते हैं, जो पांचवें ड्रम का उपयोग करता है!
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
