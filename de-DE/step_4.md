@@ -1,13 +1,13 @@
-## Reihenfolge wiederholen
+## Repeat the sequence
 
-Jetzt musst Du vier Tasten hinzufügen, die der Spieler drücken muss, um die Farbsequenz zu wiederholen.
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
 \--- task \---
 
 Add four new sprites to your project to represent the four buttons.
 
-+ Bearbeite Deine Figuren so, dass jeweils eine Figur für eine der vier Farben steht
-+ Bringe die Figuren in der gleichen Reihenfolge auf die Bühne wie die Kostüme: rot, blau, grün, gelb
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
 
@@ -20,8 +20,8 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    Wenn diese Figur angeklickt wird
-    sende (rot v) an alle
+    when this sprite clicked
+    broadcast (red v)
 ```
 
 \--- /task \---
@@ -45,12 +45,12 @@ If `1` is at the start of the list, the code should remove the number from the l
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-Wenn ich [rot v] empfange
-falls <(Element (1 v) von [Sequenz v]) = [1]>, dann 
-lösche (1 v) aus [Sequenz v]
-sonst 
-sage [Game over!] für (1) Sekunden
-stoppe [alles v]
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
 end
 ```
 
@@ -66,9 +66,9 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = rot
-+ 2 = blau
-+ 3 = grün
++ 1 = red
++ 2 = blue
++ 3 = green
 + 4 = yellow
 
 \--- /hint \---
@@ -84,14 +84,14 @@ Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play 
 Here is the code you will need to add:
 
 ```blocks3
-Wenn ich [rot v] empfange
-falls <(Element (1 v) von [Sequenz v]) = [1]>, dann 
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
 
-+ spiele Trommel ((1) Snare Drum v) für (0.25) Schläge
-lösche (1 v) aus [Sequenz v]
-sonst 
-sage [Game over!] für (1) Sekunden
-stoppe [alles v]
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
 end
 ```
 
@@ -122,11 +122,11 @@ Keep these blocks, but you need to change them in some way:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(Element (1 v) von [Sequenz v]) = [1]>
+<(item (1 v) of [sequence v]) = [1]>
 
-Wenn ich [rot v] empfange
+when I receive [red v]
 
-spiele Trommel ((1) Snare Drum v) für (0.25) Schläge
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 \--- /hint \---
@@ -138,13 +138,13 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-Wenn ich [blau v] empfange
-falls < (Element (1 v) von [Sequenz v]) = [2] >, dann 
-    spiele Trommel ((2) Basstrommel v) für (0.25) Schläge
-    lösche (1 v) aus [Sequenz v]
-sonst 
-    sage [Game over!] für (1) Sekunden
-    stoppe [alles v]
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[2]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    stop [all v]
 end
 ```
 
@@ -171,8 +171,8 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    warte bis <(Länge von [Sequenz v]) = [0]>
-    sende (gewonnen v) an alle und warte
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
 ```
 
 \--- /task \---
@@ -192,13 +192,13 @@ Add this code to play a sound and make the backdrop change colour when the playe
 ![ballerina](images/stage.png)
 
 ```blocks3
-    Wenn ich [gewonnen v] empfange
-    spiele Klang (drum machine v)
-    wiederhole (50) mal 
-        ändere Effekt [Farbe v] um (25)
-        warte (0.1) Sekunden
+    when I receive [won v]
+    start sound (drum machine v)
+    repeat (50)
+        change [color v] effect by (25)
+        wait (0.1) seconds
     end
-    schalte Grafikeffekte aus
+    clear graphic effects
 ```
 
 \--- /task \---
