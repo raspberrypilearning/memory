@@ -1,6 +1,6 @@
-## 색상 순서 만들기
+## Create a colour sequence
 
-먼저 임의의 색상 순서를 표시 할 수있는 문자를 만듭니다.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ 게임에서 각 색상을 나타내는 데 다른 숫자를 사용해야합니다.
++ Your game should use a different number to represent each colour:
     
-    + 1 = 적색
-    + 2 = 청색
-    + 3 = 녹색
-    + 4 = 노란색
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-깃발을 클릭할 때
-랜덤 수 (1) ~ (4) 을 골라서 연속 V에 추가하세요.
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,11 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-깃발이  클릭 될 때
-[연속  V] 의 모든 V  삭제
-반복 (5)
-    추가 ((1) ~ (4) 랜덤을 골라  [연속 V] 에 추가하십시오.
-끝
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -115,8 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-[시퀀스 v]의 (항목 (시퀀스 v)의 길이)로 복장을 바꾼다
-대기 (1) 초
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
