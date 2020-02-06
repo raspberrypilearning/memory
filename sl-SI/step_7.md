@@ -1,39 +1,39 @@
-## Izziv: izboljšaj igro
+## Challenge: improve your game
 
-### Ustvari več blokov
+### Make more blocks
 
-Vidiš še kakšen drug del kode, ki je enak za vse štiri gumbe?
+Do you see any other code that is the same for all four buttons?
 
 ```blocks3
-ko prejmem [rdeča v]
-če <(element (1 v) v [zaporedje v])=(1)> potem
-  zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
-  zbriši (1 v) v [zaporedje v]
-sicer
-   Konec igre :: custom
-konec
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game Over :: custom
+end
 
-ko prejmem [modra v]
-če <(element (1 v) v [zaporedje v])=(2)> potem
-  zaigraj na boben (\(2\) Mali boben v) za (0.25) utripov
-  zbriši (1 v) v [zaporedje v]
-sicer
-   Konec igre :: custom
-konec
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
-Ali lahko ustvariš še en lastni blok, ki ga lahko uporabijo vsi gumbi?
+Can you make another custom block that all buttons can use?
 
-### Drug videz
+### Another costume
 
-Si opazil, da se tvoja igra začne tako, da figura prikazuje eno od štirih barv in da lik vedno prikazuje zadnjo barvo v zaporedju, medtem ko igralec ponavlja barvno zaporedje?
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-Ali lahko dodaš svojemu liku še en bel videz in dodaš kodo, ki ta videz prikaže na začetku igre in medtem ko igralec ponavlja zaporedje?
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-![posnetek zaslona](images/colour-white.png)
+![screenshot](images/colour-white.png)
 
-### Težavnostna stopnja
+### Difficulty level
 
-Ali lahko omogočiš igralcu izbiro med 'enostavnim načinom' (v katerem se uporabljata le rdeče in modra barva) in 'navadnim načinom' (ki uporablja vse štiri barve)?
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-Če želiš, lahko dodaš tudi 'težak' način, ki doda še peti boben!
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
