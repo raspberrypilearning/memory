@@ -1,6 +1,6 @@
-## Več stopenj
+## Multiple levels
 
-Zaenkrat si mora igralec zapomniti zaporedje petih barv. Izboljšaj svojo igro, tako da dodaš točke in dodaj kode, da bo igralec, ko dobi dovolj točk, prešel na naslednjo stopnjo, na kateri si bo moral zapomniti daljše zaporedje.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -27,8 +27,8 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-ponovi (točke :: Spremenljivka) krat
-konec
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-spremeni [točke v] za (1)
+change [score v] by (1)
 ```
 
 \--- hints \---
@@ -62,19 +62,19 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-ko kliknemo na zastavico
-nastavi [točke v] na (3)
-ponavljaj
-    izbriši (vse v) v [zaporedje v]
-    ponovi (točke) krat
-        dodaj (naključno število med (1) in (4)) k [zaporedje v]
-        zamenjaj videz na (element (dolžina [zaporedje v]) v [zaporedje v]
-        počakaj (1) sekund
-    konec
-    počakaj dokler ni < (dolžina [zaporedje v]) = (0)>
-    objavi (zmaga v) in čakaj
-    spremeni [točke v] za (1)
-konec
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
+end
 ```
 
 \--- /task \---
