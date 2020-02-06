@@ -1,6 +1,6 @@
-## Cel mai mare scor
+## High score
 
-Acum salva scorul mare pentru a putea juca impotriva prietenilor tai.
+Now save the high score so that you can play against your friends.
 
 \--- task \---
 
@@ -33,24 +33,24 @@ You need the following blocks:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-dacă < > apoi
-final
+if < > then
+end
 
-(scor)
+(score)
 
-(scor)
+(score)
 
-[] > []
+[ ] > [ ]
 
-răspuns
+answer
 
-(scor mare)
+(high score)
 
-întrebați [Care este numele tau?] și așteptați
+ask [What's your name?] and wait
 
-set de [scor v de mare] la [] 
+set [high score v] to [ ] 
 
-set [ numele v] la [] 
+set [name v] to [ ] 
 ```
 
 \--- /hint \---
@@ -62,19 +62,19 @@ Here's how your code for when the red button is pressed should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-atunci când primesc [v red]
-dacă <(punctul (1 v) din [secvență v]) =[1]> , apoi
-    tambur de redare (element (1 v) din [secvență v]) pentru (0,25) bate
-    șterge (1 v) de la [secventa v]
-altceva
-    spune [Joc peste!] pentru (1) secunde
-    daca < (scor :: variabile) > (scor mare) > apoi
-        set [scor mare v] )
-        cereți [Scor mare! Care este numele dvs.?] Și așteptați
-        setați [nume v] la (răspuns)
-    capăt
-    oprire [toate v]
-
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (item (1 v) of [sequence v]) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    if < (score :: variables) > (high score) > then
+        set [high score v] to (score :: variables)
+        ask [High score! What is your name?] and wait
+        set [name v] to (answer)
+    end
+    stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -90,13 +90,13 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-spun [Joc de peste!] pentru (1) secunde
-dacă < (scor :: variabile) > (scor mare) > , apoi
-    set [scor v mare] la (scor :: variabile)
-    cere [scor mare! Care este numele dvs.?] Și așteptați
-    setați [nume v] la (răspuns)
-capăt
-oprire [toate v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
@@ -116,14 +116,14 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-defini Joc de peste
-spun [Joc de peste!] pentru (1) secunde
-în cazul în care < (scor :: variabile) > (scor ridicat) > apoi
-    set [mare scor v] pentru a (scor :: variabile)
-    cere [scor ridicat ! Care este numele dvs.?] Și așteptați
-    setați [nume v] la (răspuns)
-capăt
-oprire [toate v]
+define Game over
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
@@ -135,13 +135,13 @@ Now remove the code that's in the `else`{:class="block3control"} block connected
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-atunci când primesc [v red]
-dacă <(punctul (1 v) din [secvență v]) =[1]> , apoi
-    tambur joc (\ (1 \) Snare Drum v) pentru (0,25) bate
-    șterge (1 v) din [secventa v]
-altfel
-    Joc peste :: personalizat
-sfarsit
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -161,13 +161,13 @@ Also replace the code in the `else`{:class="block3control"} block connected to t
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-atunci când primesc [v blue]
-dacă <(punctul (1 v) din [secvență v]) =[1]> , apoi
-    tambur joc (\ (2 \) Bass Drum v) pentru (0,25) bate
-    șterge (1 v) din [secventa v]
-altfel
-    Joc peste :: personalizat
-sfarsit
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -179,16 +179,16 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-defini Joc de peste
-de pornire a sunetului [Cough1 v]
-spun [Joc de peste!] pentru (1) secunde
-în cazul în care < (scor :: variabile) > (scor ridicat) > , apoi
-    sunet redare (trumpet1 v)
-    set [scor mare v] la (scor)
-    cere [Scor mare! Care este numele dvs.?] Și așteptați
-    setați [nume v] la (răspuns)
-capăt
-oprire [toate v]
+define Game over
+start sound [Cough1 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    play sound (trumpet1 v)
+    set [high score v] to (score)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
