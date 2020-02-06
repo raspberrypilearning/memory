@@ -12,7 +12,7 @@ In questo progetto, creerai un gioco di memoria nel quale dovrai memorizzare e r
 
 \--- no-print \---
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+Clicca sulla bandiera verde per cominciare. Guarda la sequenza di colori mostrata dall'abito della ballerina e ascolta i ritmi della batteria, quindi ripeti la sequenza di colori. Se ripeti l'ordine dei colori sbagliato, è game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -22,7 +22,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 \--- print-only \---
 
-![screenshot of finished game](images/screenshot.png)
+![screenshot del gioco finito](images/screenshot.png)
 
 \--- /print-only \---
 
@@ -46,7 +46,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+Scratch 3 ([online](https://rpf.io/scratchon){:target="_blank"} o [offline](https://rpf.io/scratchoff){:target="_blank"}"})
 
 \--- /collapse \---
 
@@ -56,10 +56,10 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Se intendete stampare questo progetto, cliccate su [Versione stampabile](https://projects.raspberrypi.org/en/projects/memory/print){:target="_ blank"}.
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Puoi trovare il [progetto completato qui ](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
