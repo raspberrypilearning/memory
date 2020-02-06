@@ -27,8 +27,8 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-powtórz (wynik :: zmienne)
-koniec
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
