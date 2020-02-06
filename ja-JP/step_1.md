@@ -1,14 +1,14 @@
 \--- no-print \---
 
-これは、このプロジェクトの**Scratch 3**バージョンです。このプロジェクトの[ Scratch 2バージョン](https://projects.raspberrypi.org/en/projects/memory-scratch2)もあります。
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## はじめに
+## Introduction
 
-このプロジェクトでは、ランダムなカラーシーケンスを記憶して繰り返さなければならない記憶ゲームを作成します。
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### あなたが作るもの
+### What you will make
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: 学習すること
+## title: What you will learn
 
-+ Scratchプロジェクトにサウンドを追加する方法
-+ データを保存するためのリストを作成し使用する方法
-+ コードを繰り返すためのカスタムブロックを作成して使用する方法
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: 必要なもの
+## title: What you will need
 
-### ハードウェア
+### Hardware
 
-+ Scratch 3を実行できるコンピュータ
++ A computer capable of running Scratch 3
 
-### ソフトウェア
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: 教育者向けの追加情報
+## title: Additional information for educators
 
 \--- no-print \---
 
