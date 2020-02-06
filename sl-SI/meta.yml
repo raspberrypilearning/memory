@@ -2,25 +2,25 @@
 hero_image: images/memory.png
 listed: true
 copyedit: false
-title: Spomin
-description: Ustvari igro, v kateri si moraš zapomniti in ponoviti naključno barvno zaporedje
+title: Memory
+description: Create a game in which you memorise and repeat random colour sequences
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
-    title: Uvod
+    title: Introduction
   - 
-    title: Ustvari barvno zaporedje
+    title: Create a colour sequence
   - 
-    title: Dodaj zvok
+    title: Add sound
   - 
-    title: Ponovi zaporedje
+    title: Repeat the sequence
   - 
-    title: Več stopenj
+    title: Multiple levels
   - 
-    title: Najboljši rezultat
+    title: High score
   - 
-    title: "Izziv: izboljšaj igro"
+    title: "Challenge: improve your game"
   - 
-    title: Kaj sledi?
+    title: What next?
 
