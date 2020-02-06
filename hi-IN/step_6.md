@@ -1,6 +1,6 @@
-## उच्च स्कोर
+## High score
 
-अब उच्च स्कोर को सहेजें ताकि आप अपने दोस्तों के खिलाफ खेल सकें।
+Now save the high score so that you can play against your friends.
 
 \--- task \---
 
@@ -33,24 +33,24 @@ You need the following blocks:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-यदि < > तो
-अंत
+if < > then
+end
 
-(स्कोर)
+(score)
 
-(स्कोर)
+(score)
 
-[] > []
+[ ] > [ ]
 
-उत्तर
+answer
 
-(उच्च स्कोर)
+(high score)
 
-[आपका नाम क्या है?] पूछें और प्रतीक्षा करें
+ask [What's your name?] and wait
 
-[उच्च स्कोर v] को [] से स्थिर करें 
+set [high score v] to [ ] 
 
-[नाम v] को [] से स्थिर करें 
+set [name v] to [ ] 
 ```
 
 \--- /hint \---
@@ -62,19 +62,19 @@ Here's how your code for when the red button is pressed should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-जब मुझे [लाल v] प्राप्त हो
-यदि < ([अनुक्रम v] का मद (1 v))=[1]> तो
-    (0.25) बीट्स के लिए ([अनुक्रम v] का मद (1 v)) ड्रम बजाएँ
-    [अनुक्रम v] का (1 v) हटाएँ 
-अन्यथा
-    (1) सेकंड के लिए [खेल समाप्त!] कहें 
-    यदि < (स्कोर :: variables) > (उच्च स्कोर) > तो
-        [उच्च स्कोर v] को (स्कोर :: variables) से स्थिर करें
-        पूछें [उच्च स्कोर! आपका नाम क्या है?] और प्रतीक्षा करें
-        [नाम v] को (उत्तर) से स्थिर करें
-    अंत
-    [सभी v] को रोकें
-अंत
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (item (1 v) of [sequence v]) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    if < (score :: variables) > (high score) > then
+        set [high score v] to (score :: variables)
+        ask [High score! What is your name?] and wait
+        set [name v] to (answer)
+    end
+    stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -90,14 +90,13 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-(1) सेकंड के लिए [खेल समाप्त!] कहें
-यदि < (स्कोर :: variables) > (उच्च स्कोर) > तो
-    [उच्च स्कोर v] को (स्कोर :: variables) से स्थिर करें
-    पूछें [उच्च स्कोर! आपका नाम क्या है?] और प्रतीक्षा करें
-        [नाम v] को (उत्तर) से स्थिर करें
-    अंत
-    [सभी v] को रोकें
-अंत
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
@@ -117,14 +116,14 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-खेल समाप्त को परिभाषित करें
-(1) सेकंड के लिए [खेल समाप्त!] कहें
-यदि < (स्कोर :: variables) > (उच्च स्कोर) > तो
-    [उच्च स्कोर v] को (स्कोर :: variables) से स्थिर करें
-    पूछें [उच्च स्कोर! आपका नाम क्या है?] और प्रतीक्षा करें
-        [नाम v] को (उत्तर) से स्थिर करें
-    अंत
-    [सभी v] को रोकें
+define Game over
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
@@ -136,13 +135,13 @@ Now remove the code that's in the `else`{:class="block3control"} block connected
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-जब मुझे [लाल v] प्राप्त हो
-अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
-    (0.25) बीट्स के लिए (\(1\) फंदे वाला ड्रम v) बजाएँ
-    [अनुक्रम v] का (1 v) हटाएँ
-अन्यथा
-    खेल समाप्त :: custom
-अंत
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -162,13 +161,13 @@ Also replace the code in the `else`{:class="block3control"} block connected to t
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-जब मुझे [नीला v] प्राप्त हो
-अगर <[अनुक्रम v] का (मद (1 v))=[1]> फिर
-    (0.25) बीट्स के लिए (\(2\) बेस वाला ड्रम v) बजाएँ
-    [अनुक्रम v] का (1 v) हटाएँ
-अन्यथा
-    खेल समाप्त :: custom
-अंत
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -180,16 +179,16 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-खेल समाप्त को परिभाषित करें
-[खाँसी1 v] आवाज़ शुरू करें 
-(1) सेकंड के लिए  [खेल समाप्त!] कहें 
-यदि < (स्कोर :: variables) > (उच्च स्कोर) > तो
-    (तुरही1 v) आवाज़ बजाएँ
-    [उच्च स्कोर] v] को (स्कोर) से स्थिर करें
-    पूछें [उच्च स्कोर! आपका नाम क्या है?] और प्रतीक्षा करें
-    [नाम v] को (उत्तर) से स्थिर करें
-अंत
-[सभी v] को रोकें
+define Game over
+start sound [Cough1 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    play sound (trumpet1 v)
+    set [high score v] to (score)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
