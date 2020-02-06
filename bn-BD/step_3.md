@@ -1,24 +1,24 @@
-## শব্দ যোগ করুন
+## Add sound
 
-\--- কাজ \---
+\--- task \---
 
-আপনার প্রকল্প কয়েক বার পরীক্ষা করুন। আপনি কি লক্ষ্য করেন যে মাঝে মাঝে একই নম্বরটি সারিতে দুবার (বা তার বেশি) চয়ন করা হয়, যা ক্রমকে ক্রমানুযায়ী মনে করে?
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-\--- /কাজ \---
+\--- /task \---
 
-আপনি অক্ষর পরিবর্তন পোশাক পরেন প্রতিটি সময় একটি ড্রাম শব্দ খেলা করতে পারেন? এবং কিভাবে প্রতিটি রঙের জন্য একটি ভিন্ন ড্রাম শব্দ সম্পর্কে?
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
-\--- কাজ \---
+\--- task \---
 
-আপনার প্রোজেক্টে সঙ্গীত এক্সটেনশন যোগ করুন যাতে আপনি `খেলার ড্রাম`{: class = "block3extensions"} ব্লকটি ব্যবহার করতে পারেন।
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
 [[[generic-scratch3-add-music-extension]]]
 
-\--- /কাজ \---
+\--- /task \---
 
-\--- কাজ \---
+\--- task \---
 
-কোডটি যে ড্রামটি চালায় সেটি **মত** কোড যা চরিত্রের পোশাক পরিবর্তন করে।
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
 \--- hints \---
 
@@ -26,7 +26,7 @@
 
 You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
 
-\--- / ইঙ্গিত \---
+\--- /hint \---
 
 \--- hint \---
 
@@ -35,9 +35,9 @@ Here are the blocks you need:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-ড্রাম (\ (1 \) স্নের ড্রাম v) (0.25) এর জন্য
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(আইটেম ([ক্রমানুসারে v] এর দৈর্ঘ্য) [ক্রম বনাম])
+(item (length of [sequence v]) of [sequence v])
 ```
 
 \--- /hint \---
@@ -49,14 +49,14 @@ Here is how your finished code should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-যখন পতাকা ক্লিক
-মুছতে (সমস্ত v) [ক্রম V]
-পুনরাবৃত্তি (5)
-    অ্যাড (বাছাই র্যান্ডম (1) (4) পর্যন্ত) কে [ক্রম V]
-    খেলা ড্রাম (আইটেম (দৈর্ঘ্য [ক্রম বনাম]) [ক্রম V]] এর জন্য (0.25)
-    সুইচ কস্টিউম (আইটেম ([ক্রমানুসারে v] এর দৈর্ঘ্য] এর সাথে বিট করে)
-    অপেক্ষা (1) সেকেন্ড
-শেষ
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
+    switch costume to (item (length of [sequence v]) of [sequence v])
+    wait (1) seconds
+end
 ```
 
 \--- /hint \---
