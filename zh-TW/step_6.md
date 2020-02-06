@@ -1,18 +1,18 @@
-## 高分
+## 最高紀錄
 
-現在保存高分，以便您可以與朋友對戰。
+把得分記錄下來，看看你和朋友誰有超強記憶力。
 
 \--- task \---
 
-Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
+添加名為 `最高分`{:class="block3variables"} 和 `姓名`{:class="block3variables"} 兩個變數到你的專案。
 
 \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+當玩家弄錯順序時，遊戲結束，結束時檢查得分是不是目前的最高分。 如果是，就記錄得分，並儲存玩家的姓名。
 
 \--- task \---
 
-Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+為角色添加記錄`最高分`{:class="block3variables"}的程式。 還要詢問玩家的姓名，把它儲存在`名稱`{:class="block3variables"}變數裡。
 
 [[[generic-scratch3-high-score]]]
 
@@ -20,61 +20,61 @@ Add code to your character sprite to store the `high score`{:class="block3variab
 
 \--- hint \---
 
-Your new code needs to follow this pattern:
+你的新程式要依這個模式安排：
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+在`遊戲結束`{:class="block3looks"} 的訊息廣播後， `如果`{:class="block3control"}玩家的`得分`{:class="block3variables"}數`大於`{:class="block3operators"} 目前的`最高分`{:class="block3variables"}，那麼 `設定`{:class="block3variables"}變數`最高分`{:class="block3variables"}為`得分`{:class="block3variables"} `詢問`{:class="block3sensing"}玩家叫什麼名字 `設定`{:class="block3variables"}變數`名稱`{:class="block3variables"}為`詢問的答案`{:class="block3sensing"}
 
 \--- /hint \---
 
 \--- hint \---
 
-You need the following blocks:
+這裡是你需要的程式積木：
 
-![ballerina](images/ballerina.png)
+![芭蕾舞者](images/ballerina.png)
 
 ```blocks3
-如果 < > 則
-結束
+如果 <> 那麼
+end
 
-（得分）
+(得分)
 
-（得分）
+(得分)
 
-[] > []
+() > (50)
 
-回答
+詢問的答案
 
-（高分）
+(最高分)
 
-問[你的名字是什麼？]並等待
+詢問 (你最高分，貴姓大名？) 並等待
 
-套[高分v]至[] 
+變數 [得分 v] 設為 ()
 
-套[名稱v]到[] 
+變數 [名稱 v] 設為 () 
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Here's how your code for when the red button is pressed should look:
+當你點擊紅色按鈕時的程式應該會像這樣：
 
-![ballerina](images/ballerina.png)
+![芭蕾舞者](images/ballerina.png)
 
 ```blocks3
-當我收到[紅色v]
-如果 <（[序列v]的項目（1 v））=[1]> 那麼
-    播放鼓（[序列v]的項目（1 v））為（0.25）節拍
-    刪除（1 v）[sequence v]
-else
-    說[Game over！] for（1）seconds
-    if < （score :: variables） > （high score） > then
-        set [high score v] to（score :: variables） ）
-        問[高分！ 你的名字是什麼？]並等待
-        集[名字v]到（回答）
-    結束
-    停止[全v]
-結束
+當收到訊息 (紅色 v)
+如果 <((序列 v) 的第 (1) 項) = (1)> 那麼
+    演奏節拍 ( (1)軍鼓 v) (0.25) 拍
+    刪除 [序列 v] 的第 (1) 項
+否則
+    說出 (遊戲結束！) 持續 (1) 秒
+    如果 <((得分)) = ((最高分))> 那麼
+        變數 [最高分 v] 設為 (得分)
+        詢問 (你最高分， 貴姓大名？) 並等待
+        變數 [名稱 v] 設為 (詢問的答案)
+    end
+    停止 [全部 v]
+end
 ```
 
 \--- /hint \---
@@ -83,112 +83,114 @@ else
 
 \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+接著，你必須把這樣的程式寫進其它三個顏色按鈕的角色當中！很麻煩對吧？！
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+你注意到了嗎？這四個顏色按鈕上，為「遊戲結束」安排的程式都完全一樣，對吧？
 
-![ballerina](images/ballerina.png)
+![芭蕾舞者](images/ballerina.png)
 
 ```blocks3
-說[遊戲結束！]為（1）秒
-如果 < （得分::變量） > （高分） > 然後
-    設置[高分v]到（得分::變量）
-    問[高分！ 你的名字是什麼？]並等待
-    集[名字v]到（回答）
-結束
-停止[全部v]
+說出 (遊戲結束！) 持續 (1) 秒
+如果 <((得分)) = ((最高分))> 那麼
+    變數 [最高分 v] 設為 (得分)
+    詢問 (你最高分， 貴姓大名？) 並等待
+    變數 [名稱 v] 設為 (詢問的答案)
+end
+停止 [全部 v]
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+假設你有天突然想重新安排遊戲結束時的程式，比方說加入一個音效、一段文字，那麼就要同時修改四個地方，那很煩人，很浪費時間，對吧？
 
-Instead, you can define your own code block, and use it anywhere in your project.
+所以，如果你可以有個自己的積木，叫做「遊戲結束」，那麼你只要修改一次，在任何地方就能重複使用。
 
 \--- task \---
 
-Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+切換到`函式積木`{:class="block3myblocks"}類，點擊**建立一個積木**，命名為`遊戲結束r`{:class="block3myblocks"}。
 
 \--- /task \---
 
 \--- task \---
 
-Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+把剛剛`紅色`{:class="block3events"}按鈕中`否則`{:class="block3control"}區段的程式複製並安排到`遊戲結束`{:class="block3myblocks"}積木的下面，像這樣：
 
-![ballerina](images/ballerina.png)
-
-```blocks3
-定義遊戲超過
-說[遊戲結束！]為（1）秒
-如果 < （得分::變量） > （高分） > 然後
-    設置[高分v]到（得分::變量）
-    問[高分] ！ 你的名字是什麼？]並等待
-    集[名字v]到（回答）
-結束
-停止[全部v]
-```
-
-\--- /task \---
-
-\--- task \---
-
-Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
-
-![ballerina](images/ballerina.png)
+![芭蕾舞者](images/ballerina.png)
 
 ```blocks3
-當我收到[紅色v]
-如果 <（[序列v]的項目（1 v））=[1]> 則
-    播放鼓（\（1 \）Snare Drum v）for（0.25）beats
-    delete（1 v） [序列v]
-其他
-    遊戲結束::自定義
-結束
+定義 遊戲結束
+說出 (遊戲結束！) 持續 (1) 秒
+如果 <((得分)) = ((最高分))> 那麼
+    變數 [最高分 v] 設為 (得分)
+    詢問 (你最高分，
+ 貴姓大名？) 並等待
+    變數 [名稱 v] 設為 (詢問的答案)
+end
+停止 [全部 v]
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
+現在你可以移除`紅色`{:class="block3events"}按鈕中`否則`{:class="block3control"}區段的程式，改成`遊戲結束`{:class="block3myblocks"}：
 
-\--- /task \---
-
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
-
-\--- task \---
-
-Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
-
-![ballerina](images/ballerina.png)
+![芭蕾舞者](images/ballerina.png)
 
 ```blocks3
-當我收到[藍色v]
-如果 <（[序列v]的項目（1 v））=[1]> 然後
-    播放鼓（\（2 \）Bass Drum v）for（0.25）beats
-    delete（1 v） [序列v]
-其他
-    遊戲結束::自定義
-結束
+當收到訊息 (紅色 v)
+如果 <((序列 v) 的第 (1) 項) = (1)> 那麼
+    演奏節拍 ( (1)軍鼓 v) (0.25) 拍
+    刪除 [序列 v] 的第 (1) 項
+否則
+    遊戲結束 :: custom
+end
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+測試你自己做的函式積木，看看在答錯顏色序列時，是不是會進入遊戲結束的程式。
 
-![ballerina](images/ballerina.png)
+\--- /task \---
+
+建立一個像`遊戲結束`{:class="block3myblocks"}的積木，在程式設計中叫做一個**函式（function）**，在編程時，如果你發現有些程式不斷重複在使用，就可以建立`函式積木`{:class="block3myblocks"}，就可以方便日後的修改或維護。
+
+\--- task \---
+
+現在你可以在`收到其它顏色訊息`{:class="block3events"}事件下的`否則`{:class="block3control"}區段，放入`遊戲結束`{:class="block3myblocks"}這個函式積木。 像收到`藍色`{:class="block3events"}訊息的程式應該會是這樣：
+
+![芭蕾舞者](images/ballerina.png)
 
 ```blocks3
-定義遊戲超過
-開始聲音[Cough1 v]
-說[遊戲結束！]為（1）秒
-如果 < （得分::變量） > （高分） > 然後
-    播放聲音（trumpet1 v）
-    集[高分] v]到（得分）
-    問[高分！ 你的名字是什麼？]並等待
-    集[名字v]到（回答）
-結束
-停止[全部v]
+當收到訊息 (藍色 v)
+如果 <((序列 v) 的第 (1) 項) = (2)> 那麼
+    演奏節拍 ( (2) 低音鼓 v) (0.25) 拍
+    刪除 [序列 v] 的第 (1) 項
+否則
+    遊戲結束 :: custom
+end
+```
+
+\--- /task \---
+
+\--- task \---
+
+現在我們來為按錯按鈕時製造一點音效。 你只要修改自己建立的`遊戲結束`{:class="block3myblocks"}積木就可以了，比起一次要修改四個地方，是不是來得輕鬆多了呢！
+
+![芭蕾舞者](images/ballerina.png)
+
+```blocks3
+定義 遊戲結束
+播放音效 (Cough1 v)
+說出 (遊戲結束！) 持續 (1) 秒
+如果 <((得分)) = ((最高分))> 那麼
+    播放音效 (Trumpet1 v)
+    變數 [最高分 v] 設為 (得分)
+    詢問 (你最高分，
+ 貴姓大名？) 並等待
+    變數 [名稱 v] 設為 (詢問的答案)
+end
+停止 [全部 v]
 ```
 
 \--- /task \---
