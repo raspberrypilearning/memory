@@ -1,39 +1,39 @@
-## Challenge: ඔබේ ක්‍රීඩාව වැඩි දියුණු කිරීම
+## Challenge: improve your game
 
-### තවත් කට්ටි(blocks) සෑදීම
+### Make more blocks
 
-බොත්තම්(buttons) හතරටම සමාන වෙනත් කේතයන්(code) ඔබට පෙනේද?
+Do you see any other code that is the same for all four buttons?
 
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-   play drum (\(1\) Snare Drum v) for (0.25) beats
-   delete (1 v) of [sequence v]
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
 else
-   Game Over :: custom
+    Game Over :: custom
 end
 
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[1]> then
-   play drum (\(2\) Bass Drum v) for (0.25) beats
-   delete (1 v) of [sequence v]
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
 else
-   Game over :: custom
+    Game over :: custom
 end
 ```
 
-සියලුම බොත්තම්(buttons) සඳහා භාවිතා කළ හැකි තවත් අභිරුචි(custom) කට්ටියක්(block එකක්) සෑදිය හැකිද?
+Can you make another custom block that all buttons can use?
 
-### තවත් ඇඳුමක්(costume)
+### Another costume
 
-ඔබේ ක්‍රීඩාව ආරම්භ වන්නේ චරිතය වර්ණ හතරෙන් එකක් පෙන්වන ලෙසට බවත්, ක්‍රීඩකයා වර්ණ අනුක්‍රමය පුනරාවර්තනය(repeat) කරන අතරතුර, චරිතය සෑම විටම වර්ණ අනුක්‍රමයෙහි(sequence) අවසාන වර්ණය පෙන්වන බවත් ඔබට පෙනේද? 
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-ඔබේ චරිතයට(character එකට) තවත් සරල(plain) සුදු(white) ඇඳුමක්(costume එකක්) එක් කළ හැකිද?, ක්‍රීඩකයා අනුක්‍රමය(sequence එක) පුනරාවර්තනය(repeat) කරන අතරතුර, චරිතය(character එක) මෙම සුදු ඇඳුම ක්‍රීඩාවේ ආරම්භයේදීම පෙන්වන පරිදි කේතයක්(code එකක්) සකස් කරන්න.
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-![තිර රුව(screenshot)](images/colour-white.png)
+![screenshot](images/colour-white.png)
 
-### දුෂ්කරතා(Difficulty) මට්ටම(level)
+### Difficulty level
 
-'පහසු මාදිලිය(easy mode)' (රතු සහ නිල් වර්ණ භාවිතා කරමින්) හෝ 'සාමාන්‍ය මාදිලිය(normal mode)' (වර්ණ හතරම භාවිතා කරමින්) තෝරා ගැනීමට ඔබේ ක්‍රීඩකයාට ඉඩ දෙන පරිදි සැකසිය හැකිද? 
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-ඔබට අවශ්‍ය නම්, 'අසීරු මාදිලිය(hard mode)' පවා එයට එක් කළ හැකිය!
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
