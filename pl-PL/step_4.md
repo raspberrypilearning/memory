@@ -1,13 +1,13 @@
-## Powtórz sekwencję
+## Repeat the sequence
 
-Teraz dodasz cztery przyciski, które gracz musi nacisnąć, aby powtórzyć sekwencję kolorów.
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
 \--- task \---
 
 Add four new sprites to your project to represent the four buttons.
 
-+ Edytuj kostiumy nowych duszków tak, aby był duszek był w każdym z czterech kolorów
-+ Na scenie umieść duszki na w tej samej kolejności, co kostiumy: czerwony, niebieski, zielony, żółty
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
 
@@ -20,8 +20,8 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    kiedy duszek kliknięty
-    nadaj komunikat (czerwony v)
+    when this sprite clicked
+    broadcast (red v)
 ```
 
 \--- /task \---
@@ -66,9 +66,9 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = czerwony
-+ 2 = niebieski
-+ 3 = zielony
++ 1 = red
++ 2 = blue
++ 3 = green
 + 4 = yellow
 
 \--- /hint \---
