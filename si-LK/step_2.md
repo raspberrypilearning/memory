@@ -1,6 +1,6 @@
-## වර්ණ(colour) අනුක්‍රමයක්(sequence එකක්) සෑදීම
+## Create a colour sequence
 
-පළමුව අහඹු(random) ලෙස වර්ණ(colour) අනුක්‍රමයක්(sequence එකක්) පෙන්විය හැකි චරිතයක්(character එකක්) සාදන්න.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,7 +22,7 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ එක් එක් වර්ණය නියෝජනය කිරීමට ඔබගේ ක්‍රීඩාව වෙනස්(different) අංකයක්(number එකක්) භාවිතා කළ යුතුයි:
++ Your game should use a different number to represent each colour:
     
     + 1 = red
     + 2 = blue
@@ -115,7 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v]) wait (1) seconds
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
