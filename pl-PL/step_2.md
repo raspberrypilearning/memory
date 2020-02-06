@@ -1,6 +1,6 @@
-## Utwórz sekwencję kolorów
+## Create a colour sequence
 
-Najpierw utwórz postać, która może wyświetlać losową sekwencję kolorów.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ W Twojej grze każdy kolor powinien być reprezentowany przez liczbę:
++ Your game should use a different number to represent each colour:
     
-    + 1 = czerwony
-    + 2 = niebieski
-    + 3 = zielony
-    + 4 = żółty
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -49,7 +49,7 @@ Create a list called `sequence`{:class="block3variables"}. Only the character sp
 
 [[[generic-scratch3-make-list]]]
 
-\--- /zadanie \---
+\--- /task \---
 
 You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-kiedy kliknięto flagę
-dodaj (losuj liczbę od (1) do (4)) do [sekwencja v]
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,11 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-kiedy kliknięto flagę
-usuń (wszystkie v) z [sekwencja v]
-powtarzaj (5)
-    dodaj (losuj liczbę od (1) do (4)) do [sekwencja v]
-koniec
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -115,8 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-zmień kostium na (element (długość [sekwencja v]) z [sekwencja v]) 
-czekaj (1) sekund
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
