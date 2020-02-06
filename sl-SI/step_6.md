@@ -1,6 +1,6 @@
-## Najboljši rezultat
+## High score
 
-Sedaj poskrbi, da se bo najboljši rezultat shranil, da boste lahko prijatelji tekmovali med seboj.
+Now save the high score so that you can play against your friends.
 
 \--- task \---
 
@@ -33,24 +33,24 @@ You need the following blocks:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-če < > potem
-konec
+if < > then
+end
 
-(točke)
+(score)
 
-(točke)
+(score)
 
 [ ] > [ ]
 
-(odgovor)
+answer
 
-(najboljši rezultat)
+(high score)
 
-Vprašaj [Kako ti je ime?] in počakaj
+ask [What's your name?] and wait
 
-nastavi [najboljši rezultat v] na ()
+set [high score v] to [ ] 
 
-nastavi [ime v] na () 
+set [name v] to [ ] 
 ```
 
 \--- /hint \---
@@ -62,19 +62,19 @@ Here's how your code for when the red button is pressed should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-ko prejmem [rdeča v]
-če <(element (1 v) v [zaporedje v])=(1)> potem
-  zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
-  zbriši (1 v) v [zaporedje v]
-sicer
-  reci [Konec igre!] za (1) sekund
-  če < (točke :: variables) > (najboljši rezultat) > potem
-        nastavi [najboljši rezultat v] na (točke :: variables)
-        Vprašaj [Najboljši rezultat! Kako ti je ime?] in počakaj
-    nastavi [ime v] na (odgovor)
-  konec
-  ustavi [vse v]
-konec
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (item (1 v) of [sequence v]) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    if < (score :: variables) > (high score) > then
+        set [high score v] to (score :: variables)
+        ask [High score! What is your name?] and wait
+        set [name v] to (answer)
+    end
+    stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -90,14 +90,13 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-reci [Konec igre!] za (1) sekund
-  če < (točke :: variables) > (najboljši rezultat) > potem
-        nastavi [najboljši rezultat v] na (točke :: variables)
-        Vprašaj [Najboljši rezultat! Kako ti je ime?] in počakaj
-    nastavi [ime v] na (odgovor)
-  konec
-  ustavi [vse v]
-konec
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
@@ -117,14 +116,14 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-definiraj Konec igre
-reci [Konec igre!] za (1) sekund
-  če < (točke :: variables) > (najboljši rezultat) > potem
-        nastavi [najboljši rezultat v] na (točke :: variables)
-        Vprašaj [Najboljši rezultat! Kako ti je ime?] in počakaj
-    nastavi [ime v] na (odgovor)
-  konec
-  ustavi [vse v]
+define Game over
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
@@ -136,13 +135,13 @@ Now remove the code that's in the `else`{:class="block3control"} block connected
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-ko prejmem [rdeča v]
-če <(element (1 v) v [zaporedje v])=(1)> potem
-  zaigraj na boben (\(1\) Mali boben v) za (0.25) utripov
-  zbriši (1 v) v [zaporedje v]
-sicer
-   Konec igre :: custom
-konec
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -162,13 +161,13 @@ Also replace the code in the `else`{:class="block3control"} block connected to t
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-ko prejmem [modra v]
-če <(element (1 v) v [zaporedje v])=(2)> potem
-  zaigraj na boben (\(2\) Mali boben v) za (0.25) utripov
-  zbriši (1 v) v [zaporedje v]
-sicer
-   Konec igre :: custom
-konec
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -180,16 +179,16 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-definiraj Konec igre
-predvajaj zvok (Cough1 v)
-reci [Konec igre!] za (1) sekund
-  če < (točke :: variables) > (najboljši rezultat) > potem
-        predvajaj zvok (Trumpet1) do konca
-        nastavi [najboljši rezultat v] na (točke :: variables)
-        Vprašaj [Najboljši rezultat! Kako ti je ime?] in počakaj
-    nastavi [ime v] na (odgovor)
-  konec
-  ustavi [vse v]
+define Game over
+start sound [Cough1 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    play sound (trumpet1 v)
+    set [high score v] to (score)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
