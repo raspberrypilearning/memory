@@ -1,62 +1,62 @@
-## 添加聲音
+## 添加音效
 
-\---任務\---
+\--- task \---
 
-幾次測試你的項目。您是否注意到有時連續兩次（或更多次）選擇相同的數字，這會使序列難以記憶？
+在你測試專案時，有沒有注意到，在相同數字連續出現兩次以上時，就看不出造型的更換了？
 
-\--- /任務\---
+\--- /task \---
 
-每次角色精靈改變服裝時，你能發出鼓聲嗎？每種顏色的鼓聲怎麼樣？
+那麼，我們在角色改變造型時帶個音效怎麼樣？用「鼓」來試試？
 
-\---任務\---
+\--- task \---
 
-將音樂擴展添加到項目中，以便您可以使用 `play drum`{：class =“block3extensions”}塊。
+為專案加入「音樂」擴展，這樣你就能利用`演奏節拍`{:class="block3extensions"} 積木上的鼓聲了。
 
 [[[generic-scratch3-add-music-extension]]]
 
-\--- /任務\---
+\--- /task \---
 
-\---任務\---
+\--- task \---
 
-播放鼓的代碼是 **非常** 相似改變人物的服裝的代碼。
+用不同的鼓演奏節拍，和讓角色變換不同造型，兩者的程式**非常相似**。
 
 \--- hints \---
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+你只需要再加上兩個積木：`演奏節拍 (0.25) 拍`{:class="block3sound"}還有`(序列)的第(序列長度)項`{:class="block3variables"}。
 
-\--- /提示\---
+\--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+這裡是你需要的程式積木：
 
-![ballerina](images/ballerina.png)
+![芭蕾舞者](images/ballerina.png)
 
 ```blocks3
-播放鼓（\（1 \）Snare Drum v）for（0.25）beats
+演奏節拍 ( (1)軍鼓 v) (0.25) 拍
 
-（[sequence v]的項目（[sequence v]的長度））
+((序列 v)的第(清單 [序列 v] 的長度)項)
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is how your finished code should look:
+你的程式看起來應該會像這樣：
 
-![ballerina](images/ballerina.png)
+![芭蕾舞者](images/ballerina.png)
 
 ```blocks3
-當標記點擊時
-刪除（所有v）[序列v]
-重複（5）
-    添加（選擇隨機（1）到（4））到[序列v]
-    播放鼓（項目（[序列v]的長度） [序列v]的[0.25]節拍
-    開關服裝到[序列v]的項目（[序列v]的長度）
-    等待（1）秒
-結束
+當 @greenflag 被點擊
+刪除 [序列 v] 的所有項目
+重複 (5) 次
+    添加 (隨機取數 (1) 到 (4)) 到 [序列 v]
+    演奏節拍 ((序列 v)的第(清單 [序列 v] 的長度)項) (0.25) 拍
+    造型換成 ((序列 v)的第(清單 [序列 v] 的長度)項)
+    等待 (1) 秒
+end
 ```
 
 \--- /hint \---
