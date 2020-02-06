@@ -1,6 +1,6 @@
-## Nhiều cấp độ
+## Multiple levels
 
-Cho đến nay, người chơi chỉ phải nhớ một chuỗi năm màu. Cải thiện trò chơi của bạn bằng cách thêm điểm và thêm mã để khi người chơi ghi điểm, trò chơi sẽ chuyển sang cấp độ tiếp theo và chuỗi màu cần nhớ trở nên dài hơn.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -27,8 +27,8 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-lặp lại (điểm :: biến)
-kết thúc
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-thay đổi [điểm v] bằng (1)
+change [score v] by (1)
 ```
 
 \--- hints \---
@@ -62,19 +62,19 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi cờ nhấp
-đặt [điểm v] thành [3]
-mãi mãi
-    xóa (tất cả v) của [chuỗi v]
-    lặp lại (điểm)
-        thêm (chọn ngẫu nhiên (1) thành (4)) thành [chuỗi v]
-        chuyển trang phục đến (mục (độ dài của [chuỗi v]) của [chuỗi v]
-        chờ (1) giây
-    kết thúc
-    đợi đến < (độ dài của [chuỗi v]) = [0]>
-    phát (thắng v) và chờ
-    thay đổi [ điểm v] bởi (1)
-kết thúc
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
+end
 ```
 
 \--- /task \---
