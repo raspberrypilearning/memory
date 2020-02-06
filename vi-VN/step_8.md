@@ -1,20 +1,20 @@
-## Bước tiếp theo?
+## What next?
 
-Hãy thử dự án tiếp theo, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), nơi bạn sẽ thực hiện một trò chơi trong đó bạn phải tránh bóng trong khi chuyển từ nền tảng sang nền tảng.
+Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
 
-\--- không in \---
+\--- no-print \---
 
-Bấm vào cờ xanh để bắt đầu, sau đó sử dụng các phím mũi tên để di chuyển và phím <kbd>cách</kbd> để nhảy.
+Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
   <img src="images/dodge-final.png">
 </div>
 
-\--- / không in \---
+\--- /no-print \---
 
-\--- chỉ in \---
+\--- print-only \---
 
-![trò chơi bóng rổ đang được chơi](images/dodgeball-showcase.png)
+![dodgeball game being played](images/dodgeball-showcase.png)
 
-\--- / chỉ in \---
+\--- /print-only \---
