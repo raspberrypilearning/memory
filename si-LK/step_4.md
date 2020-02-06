@@ -1,13 +1,13 @@
-## අනුක්‍රමය නැවත නැවත(repeat) ක්‍රියාත්මක කිරීම
+## Repeat the sequence
 
-දැන් ඔබ සූදානම් වන්නෙ බොත්තම්(buttons) හතරක් එක් කිරීමටයි, ක්‍රීඩකයාට එම බොත්තම් එබීම මගින් වර්ණ(colour) අනුක්‍රමය(sequence එක) නැවත නැවත(repeat) ක්‍රියාත්මක කරවිය හැකියි.
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
 \--- task \---
 
 Add four new sprites to your project to represent the four buttons.
 
-+ නව sprite වල ඇඳුම්(costume) වෙනස් කරන්න, එවිට වර්ණ හතරට sprite එක බැගින් ඇත.
-+ රතු(red), නිල්(blue), කොළ(green) සහ කහ(yellow) යන වර්ණ ඇඳුම්(costume): අනුපිළිවෙලටම sprites වේදිකා මත තබන්න
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
 
@@ -50,7 +50,7 @@ if <(item (1 v) of [sequence v])=[1]> then
 delete (1 v) of [sequence v]
 else
 say [Game over!] for (1) seconds
-stop [all v] 
+stop [all v]
 end
 ```
 
@@ -141,10 +141,10 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[2]> then
     play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v] 
+    delete (1 v) of [sequence v]
 else
     say [Game over!] for (1) seconds
-    stop [all v] 
+    stop [all v]
 end
 ```
 
