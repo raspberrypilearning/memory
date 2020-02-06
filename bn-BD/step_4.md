@@ -1,13 +1,13 @@
-## ক্রম পুনরাবৃত্তি করুন
+## Repeat the sequence
 
-এখন আপনি চারটি বোতাম যোগ করতে যাচ্ছেন, প্লেয়ারকে রঙের ক্রম পুনরাবৃত্তি করতে চাপতে হবে।
+Now you're going to add four buttons the player has to press to repeat the colour sequence.
 
 \--- task \---
 
 Add four new sprites to your project to represent the four buttons.
 
-+ নতুন sprites 'পরিচ্ছদ সম্পাদনা করুন যাতে চার রং প্রতিটি এক sprite আছে
-+ ভাস্কর্য হিসাবে লাল রঙের, নীল, সবুজ, হলুদ হিসাবে একই পর্যায়ে sprites রাখুন
++ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
 
@@ -20,8 +20,8 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    যখন এই sprite
-    সম্প্রচার ক্লিক করুন (লাল v)
+    when this sprite clicked
+    broadcast (red v)
 ```
 
 \--- /task \---
@@ -45,14 +45,13 @@ If `1` is at the start of the list, the code should remove the number from the l
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-যখন আমি [লাল v]
-পাই তখন যদি <(আইটেমটি 1 বনাম) [ক্রম বনাম] =[1]> তারপর
-[মুছে ফেলা v] এর 
- মুছে ফেলা (1 বনাম)
-
-বলুন [খেলা শেষ!] (1) সেকেন্ড
-স্টপ [সব ভী]
-শেষ
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 ```
 
 \--- /task \---
@@ -67,9 +66,9 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = লাল
-+ 2 = নীল
-+ 3 = সবুজ
++ 1 = red
++ 2 = blue
++ 3 = green
 + 4 = yellow
 
 \--- /hint \---
@@ -85,15 +84,15 @@ Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play 
 Here is the code you will need to add:
 
 ```blocks3
-যখন আমি [লাল v]
-পাই তাহলে [ <] (ক্রম বনাম] এর < (আইটেম (1 ভি)) =[1]> তারপর
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
 
-+ ড্রাম ড্রাম (\ (1 \) স্ন্যার ড্রাম v) (0.25)
-মুছে ফেলবে (1 v ) [ক্রম বনাম]
-অন্য
-বলুন [খেলা শেষ!] (1) সেকেন্ড
-স্টপ [সব ভী]
-শেষ
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -123,11 +122,11 @@ Keep these blocks, but you need to change them in some way:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<([ধারা বনাম] এর আইটেম (1 বনাম) = [1]>
+<(item (1 v) of [sequence v]) = [1]>
 
-যখন আমি [লাল v]
+when I receive [red v]
 
-play drum (\ (1 \) স্ন্যারে ড্রাম v) (0.25) বিট
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 \--- /hint \---
@@ -139,14 +138,14 @@ Here is how your code should look for the `blue`{:class="block3events"} broadcas
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-যখন আমি [নীল v]
-পাই তখন [sequence v] এর <(item (1 v)) =[2]> তারপর
-    ড্রাম (\ (2 \) বাস ড্রাম v) (0.25)
-    মুছে ফেলবে (1 v) [অনুক্রম ভী]
-অন্য
-    বলুন [খেলা শেষ!] (1) সেকেন্ড
-    স্টপ [সব ভী]
-শেষ
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[2]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -172,8 +171,8 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    < পর্যন্ত অপেক্ষা করুন [ক্রমানুসারে v]) = [0]>
-    সম্প্রচার (জিতেছে v) এবং অপেক্ষা করুন
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
 ```
 
 \--- /task \---
@@ -193,13 +192,13 @@ Add this code to play a sound and make the backdrop change colour when the playe
 ![ballerina](images/stage.png)
 
 ```blocks3
-    যখন আমি পাই [জিতে v]
-    শুরুর শব্দ (ড্রাম মেশিন v)
-    পুনরাবৃত্তি (50)
-        পরিবর্তন [রঙ v] প্রভাব (25)
-        অপেক্ষা (0.1) সেকেন্ড
-    শেষ
-    স্পষ্ট গ্রাফিক প্রভাব
+    when I receive [won v]
+    start sound (drum machine v)
+    repeat (50)
+        change [color v] effect by (25)
+        wait (0.1) seconds
+    end
+    clear graphic effects
 ```
 
 \--- /task \---
