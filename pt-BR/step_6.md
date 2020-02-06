@@ -1,48 +1,195 @@
-## Múltiplos níveis
+## Recorde
 
-Até agora, o jogador só precisava lembrar de uma sequência de cinco cores. Vamos melhorar o jogo, implementando um placar, e adicionando código para que enquanto aumenta a pontuação, a quantidade de cores que o jogador precisa lembrar vai aumentando também.
+Agora salve a pontuação mais alta para poder jogar contra seus amigos.
 
-+ Crie uma nova variável chamada `placar`{:class="blockdata"}.
+--- task ---
 
-[[[generic-scratch-add-variable]]]
+Adicione duas novas variáveis chamadas `pontuação mais alta`{:class="block3variables"} e `nome`{:class="block3variables"} ao seu projeto.
 
-O `placar`{:class="blockdata"} será usado para determinar o tamanho da sequência que o jogador deve memorizar. Vamos começar com um placar (e tamanho da sequência) de `3`.
+--- /task ---
 
-+ Adicione este código no início do bloco de código `quando clicar em bandeira verde`{:class="blockevents"} do seu personagem, este código vai definir o `placar`{:class="blockdata"} inicial do jogo em `3`.
+Quando o jogo termina porque o jogador errou a sequência, o jogo deve verificar se a pontuação é maior que a melhor pontuação atual. Se for, o jogo deve salvar a pontuação como a pontuação mais alta e também guardar o nome do jogador.
 
-Em vez de sempre criar uma sequência de cinco cores, agora você terá o `placar`{:class="blockdata"} para determinar o tamanho da sequência.
+--- task ---
 
-+ Alterar o bloco de repetição `repita (5) vezes`{:class="blockcontrol"} usado na personagem bailarina que cria a atual sequência, pelo bloco `repita (placar) vezes`{:class="blockdata"}:
+Adicione um código ao seu ator para guardar a `pontuação mais alta`{:class="block3variables"}. Peça também o nome do jogador e guarde-o na variável `nome`{:class="block3variables"}.
 
-```blocks
-    repita (placar) vezes
-   fim
+[[[generic-scratch3-high-score]]]
+
+--- hints ---
+
+
+--- hint ---
+
+Seu novo código precisa seguir este padrão:
+
+Depois da mensagem `Fim do jogo`{:class="block3looks"} `Se`{:class="block3control"} a `pontuação`{:class="block3variables"} é `maior que`{:class="block3operators"} a `pontuação mais alta`{:class="block3variables"} `Define`{:class="block3variables"} a `pontuação mais alta`{:class="block3variables"} como a `pontuação`{:class="block3variables"} `Perguntar`{:class="block3sensing"} pelo nome do jogador `Define`{:class="block3variables"} o `nome`{:class="block3variables"} como a `resposta`{:class="block3sensing"}
+
+--- /hint ---
+
+--- hint ---
+
+Você precisa dos seguintes blocos:
+
+![bailarina](images/ballerina.png)
+
+```blocks3
+se < > então
+fim
+
+(pontuação)
+
+(pontuação)
+
+[ ] > [ ]
+
+resposta
+
+(pontuação mais alta)
+
+pergunte [Qual é o seu nome?] e espere
+
+mude [pontuação mais alta v] para [ ]
+
+mude [nome v] para [ ] 
 ```
 
-+ Se a sequência for lembrada corretamente, você deve adicionar `1` para o placar para aumentar o comprimento da próxima seqüência. Adicione este bloco ao código do personagem **quando a sequência for lembrada corretamente**.
+--- /hint ---
 
-```blocks
-    adicione a [placar v] (1)
+--- hint ---
+
+Veja como o seu código deve ficar para quando o tambor vermelho for pressionado:
+
+![bailarina](images/ballerina.png)
+
+```blocks3
+quando eu receber [vermelho v]
+se <(item (1 v) de [sequência v]) = [1]> então 
+  toque instrumento (item (1 v) de [sequência v]) por (0.25) batidas
+  apague (1 v) de [sequência v]
+senão 
+  diga [Fim de jogo!] por (1) segundos
+  se <(pontuação :: variáveis) > (pontuação mais alta) > então 
+    mude [pontuação mais alta v] para (pontuação :: variáveis)
+    pergunte [Maior pontuação! Qual é o seu nome?] e espere
+    mude [nome v] para (resposta)
+  fim
+  pare [todos v]
+fim
 ```
 
---- hints --- --- hint --- Se a sequência foi lembrada corretamente, você deve transmitir a mensagem de vitória `VITÓRIA!!!`. --- /hint --- --- /hints ---
+--- /hint ---
 
-+ Finalmente, você precisa adicionar o bloco `sempre`{:class="blockcontrol"} englobando todo o código que gera a sequência, para que uma nova sequência seja criada para cada nível. É assim que o código do seu personagem deve ficar:
-    
-    ```blocks
-        quando clicar em ⚑
-       mude [placar v] para [3]
-       sempre
-          apague (todos v) de [sequencia v]
-          repita (placar) vezes
-             insira (número aleatório entre (1) e (4)) a [sequencia v]
-             mude para a fantasia (item (último v) de [sequencia v])
-             espere (1) seg
-          fim
-          espere até <(tamanho de [sequencia v]:: list)=[0]>
-          envie [VITÓRIA!!! v] a todos e espere
-          adicione a [placar v] (1)
-       fim
-    ```
+--- /hints ---
 
-+ Chame seus amigos para testar seu jogo. Lembre-se de esconder a lista `sequencia`{:class="blockdata"} antes de jogar!
+--- /task ---
+
+Você precisa adicionar esse novo código ao ator para as outras três cores também!
+
+Você consegue ver que o código 'Fim de jogo' para cada uma das quatro cores é exatamente o mesmo?
+
+![bailarina](images/ballerina.png)
+
+```blocks3
+diga [Fim de jogo!] por (1) segundos
+se < (pontuação :: variáveis) > (pontuação mais alta) > então 
+  mude [pontuação mais alta v] para (pontuação :: variáveis)
+  pergunte [Pontuação mais alta! Qual é o seu nome?] e espere
+mude [nome v] para (resposta)
+fim
+pare [todos v]
+```
+
+Se precisar alterar alguma parte do código por exemplo, do 'Fim de jogo' para adicionar um som ou alterar a mensagem 'Fim de jogo', terá que alterá-lo quatro vezes. Isto é chato e desperdiça muito tempo.
+
+Em vez disso, você pode criar o teu próprio bloco de código e utilizá-lo em qualquer lugar do seu projeto.
+
+--- task ---
+
+Clique em `Meus blocos`{:class="block3myblocks"}, em seguida em **Criar um bloco**. Chame esse novo bloco de `Fim de jogo`{:class="block3myblocks"}.
+
+--- /task ---
+
+--- task ---
+
+Adicione o código do bloco `senão`{:class="block3control"} ligado à transmissão da mensagem `vermelho`{:class="block3events"} ao bloco `Fim de jogo`{:class="block3myblocks"} para que fique assim:
+
+![bailarina](images/ballerina.png)
+
+```blocks3
+defina Fim de jogo
+diga [Fim de jogo!] por (1) segundos
+se < (pontuação :: variáveis) > (pontuação mais alta) > então 
+  mude [pontuação mais alta v] para (pontuação :: variáveis)
+  pergunte [Maior pontuação! Qual é o seu nome?] e espere
+    mude [nome v] para (resposta)
+  fim
+  pare [todos v]
+```
+
+--- /task ---
+
+--- task ---
+
+Agora remova o código que está no bloco `senão`{:class="block3control"} ligado à transmissão da mensagem `vermelho`{:class="block3control"} e em vez dele adicione o bloco `Fim de jogo`{:class="block3control"}:
+
+![bailarina](images/ballerina.png)
+
+```blocks3
+quando eu receber [vermelho v]
+se < (item (1 v) de [sequência v]) = [1] > então 
+  toque instrumento ((1) Tarol v) por (0.25) batidas
+  apague (1 v) de [sequência v]
+senão 
+  Fim de jogo :: personalizado
+fim
+```
+
+--- /task ---
+
+--- task ---
+
+Teste seu novo bloco jogando o jogo e clicando no botão vermelho no ponto errado na sequência de cores.
+
+--- /task ---
+
+Seu novo bloco`Fim de jogo`{:class="block3myblocks"} é uma **função**, um pequeno conjunto de instruções que podes utilizar onde quiser no seu código, acrescentado o bloco `Fim de jogo`{:class="block3myblocks"}.
+
+--- task ---
+
+Substitua também o código que está no bloco `senão`{:class="block3control"} ligado à `transmissão de mensagem`{:class="block3control"} para as outras cores com o seu novo bloco `Fim de jogo`{:class="block3control"}. Aqui está o código de como a mensagem `azul`{:class="block3events"} deve parecer
+
+![bailarina](images/ballerina.png)
+
+```blocks3
+quando eu receber [azul v]
+se < (item (1 v) de [sequência v]) = [1] > então 
+  toque instrumento ((2) Bumbo v) por (0.25) batidas
+  apague (1 v) de [sequência v]
+senão 
+  Fim de jogo :: personalizado
+fim
+```
+
+--- /task ---
+
+--- task ---
+
+Agora adicione um som que toque quando o botão errado é pressionado. Você só precisa adicionar este código uma vez no bloco `Fim de jogo`{:class="block3myblocks"} que você fez, e não quatro vezes separadas!
+
+![bailarina](images/ballerina.png)
+
+```blocks3
+defina Fim de jogo
+toque o som [Cough1 v]
+diga [Fim de jogo!] por (1) segundos
+se < (pontuação :: variáveis) > (pontuação mais alta) > então 
+  toque o som (trumpet1 v)
+  mude [pontuação mais alta v] para (pontuação)
+  pergunte [Pontuação mais alta! Qual é o seu nome?] e espere
+mude [nome v] para (resposta)
+fim
+pare [todos v]
+```
+
+--- /task ---

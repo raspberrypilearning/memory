@@ -1,29 +1,18 @@
 ---
 hero_image: images/memory.png
-theme: violet
-duration: 2
 listed: true
-ingredient: false
 copyedit: false
-curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: Jogo da memória
 description: Crie um jogo de memória no qual você memoriza e repete uma sequência aleatória de cores
-original_url: https://codeclubprojects.org/en-GB/scratch/memory
-interests: games
-technologies: scratch
-site_areas: projects
-hardware: ''
-software: scratch
-version: 4.0.1
-last_tested: 2017-01-01
+version: 4.1.0
+last_tested: 2018-10-04
 steps:
   - title: Introdução
-  - title: O que você vai precisar
   - title: Crie uma sequência de cores
-  - title: 'Desafio: Adicionando som'
-  - title: Repetindo a sequência
+  - title: Adicione um som
+  - title: Repita a sequência
   - title: Múltiplos níveis
   - title: Recorde
-  - title: 'Desafio: Criar mais blocos'
-  - title: 'Desafio: Criar outra fantasia'
-  - title: 'Desafio: Nível de dificuldade'
+  - title: "Desafio: melhore seu jogo"
+  - title: E agora?
+
