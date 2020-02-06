@@ -1,16 +1,16 @@
-## Thêm âm thanh
+## Add sound
 
 \--- task \---
 
-Kiểm tra dự án của bạn một vài lần. Bạn có để ý rằng đôi khi cùng một số được chọn hai lần (hoặc nhiều hơn) liên tiếp, điều này làm cho trình tự ghi nhớ khó hơn không?
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
 \--- /task \---
 
-Bạn có thể tạo ra một âm thanh trống mỗi khi nhân vật thay đổi trang phục? Và làm thế nào về một âm thanh trống khác nhau cho mỗi màu?
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
 \--- task \---
 
-Thêm tiện ích mở rộng Âm nhạc vào dự án của bạn để bạn có thể sử dụng khối `phát trống`{: class = "block3extensions"}.
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,7 +18,7 @@ Thêm tiện ích mở rộng Âm nhạc vào dự án của bạn để bạn c
 
 \--- task \---
 
-Mã chơi trống là **rất** tương tự như mã thay đổi trang phục của nhân vật.
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
 \--- hints \---
 
@@ -35,9 +35,9 @@ Here are the blocks you need:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-chơi trống (\ (1 \) Snare Drum v) trong (0,25) nhịp
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(mục (độ dài của [chuỗi v]) của [chuỗi v])
+(item (length of [sequence v]) of [sequence v])
 ```
 
 \--- /hint \---
@@ -49,14 +49,14 @@ Here is how your finished code should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-khi cờ nhấp
-xóa (tất cả v) của [chuỗi v]
-lặp lại (5)
-    thêm (chọn ngẫu nhiên (1) đến (4)) vào [chuỗi v]
-    phát trống (mục (độ dài của [chuỗi v]) của [chuỗi v]) cho (0,25) nhịp
-    trang phục chuyển sang (vật phẩm (độ dài của [chuỗi v]) của [chuỗi v])
-    chờ (1) giây
-kết thúc
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
+    switch costume to (item (length of [sequence v]) of [sequence v])
+    wait (1) seconds
+end
 ```
 
 \--- /hint \---
