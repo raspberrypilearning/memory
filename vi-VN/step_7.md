@@ -1,39 +1,39 @@
-## Thử thách: cải thiện trò chơi của bạn
+## Challenge: improve your game
 
-### Tạo nhiều khối hơn
+### Make more blocks
 
-Bạn có thấy mã nào khác giống nhau cho cả bốn nút không?
+Do you see any other code that is the same for all four buttons?
 
 ```blocks3
-khi tôi nhận được [red v]
-nếu <(mục (1 v) của [chuỗi v]) =[1]> thì
-    trống chơi (\ (1 \) Snare Drum v) cho (0,25) nhịp
-    xóa (1 v) của [chuỗi v]
-khác
-    Trò chơi kết thúc :: tùy chỉnh
-kết thúc
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game Over :: custom
+end
 
-khi tôi nhận được [màu xanh v]
-nếu <(mục (1 v) của [trình tự v]) =[1]> sau đó
-    chơi trống (\ (2 \ ) Bass Drum v) cho (0,25) nhịp
-    xóa (1 v) của [chuỗi v]
-khác
-    Trò chơi kết thúc :: tùy chỉnh
-kết thúc
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    Game over :: custom
+end
 ```
 
-Bạn có thể tạo một khối tùy chỉnh khác mà tất cả các nút có thể sử dụng không?
+Can you make another custom block that all buttons can use?
 
-### Trang phục khác
+### Another costume
 
-Bạn có thể thấy rằng trò chơi của bạn bắt đầu với nhân vật của bạn hiển thị một trong bốn màu và nhân vật đó luôn hiển thị màu cuối cùng trong chuỗi trong khi người chơi đang lặp lại chuỗi màu?
+Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
 
-Bạn có thể thêm một trang phục trắng đơn giản khác cho nhân vật của mình và thêm mã để nhân vật hiển thị trang phục này khi bắt đầu trò chơi và trong khi người chơi đang lặp lại trình tự không?
+Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-![ảnh chụp màn hình](images/colour-white.png)
+![screenshot](images/colour-white.png)
 
-### Cấp độ khó
+### Difficulty level
 
-Bạn có thể cho phép người chơi của mình lựa chọn giữa chơi trò chơi ở 'chế độ dễ' (chỉ sử dụng màu đỏ và màu xanh) và 'chế độ bình thường' (sử dụng cả bốn màu) không?
+Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-Nếu bạn muốn, bạn thậm chí có thể thêm chế độ 'cứng', sử dụng trống thứ năm!
+If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
