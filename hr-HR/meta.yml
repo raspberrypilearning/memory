@@ -2,13 +2,13 @@
 hero_image: images/memory.png
 listed: true
 copyedit: false
-title: Igra pamćenja
-description: U ovom projektu kreirat ćeš igru pamćenja u kojoj ćeš trebati upamtiti i ponoviti niz slučajnih boja.
+title: Memory
+description: Create a game in which you memorise and repeat random colour sequences
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
-    title: Sretan rođendan
+    title: Introduction
   - 
     title: Create a colour sequence
   - 
