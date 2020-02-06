@@ -1,6 +1,6 @@
-## 높은 점수
+## High score
 
-이제 높은 점수를 저장하여 친구들과 놀 수 있습니다.
+Now save the high score so that you can play against your friends.
 
 \--- task \---
 
@@ -33,24 +33,24 @@ You need the following blocks:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-< > 점
-점
+if < > then
+end
 
-점
+(score)
 
-점
+(score)
 
-점 > 점
+[ ] > [ ]
 
-점
+answer
 
-점
+(high score)
 
-점
+ask [What's your name?] and wait
 
-점 [높은 점수 v] ~ [ 
+set [high score v] to [ ] 
 
-점] 이름 v]를 [] 
+set [name v] to [ ] 
 ```
 
 \--- /hint \---
@@ -62,19 +62,19 @@ Here's how your code for when the red button is pressed should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-I는 [적색 V] 나타나면
-경우 <(항목 (1 V) [서열 V]의) =[1]> 다음,
-    (0.25) 심박동 재생 드럼 (항목 (1 V) [서열 V]로)
-    삭제 (1 V) [서열 V]의
-다른
-    말 [위에 게임!] (1) 초
-    의 경우 < (점수 : 변수) > (고득점) > 다음,
-        (점수 : 변수 집합 [고득점 V] )
-        [높은 점수! 당신의 이름은 무엇입니까?]
-        기다림 [이름 v]를 (답)
-    끝
-    멈춤 [모두 끝]
-끝
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (item (1 v) of [sequence v]) for (0.25) beats
+    delete (1 v) of [sequence v]
+else
+    say [Game over!] for (1) seconds
+    if < (score :: variables) > (high score) > then
+        set [high score v] to (score :: variables)
+        ask [High score! What is your name?] and wait
+        set [name v] to (answer)
+    end
+    stop [all v]
+end
 ```
 
 \--- /hint \---
@@ -90,13 +90,13 @@ Can you see that the 'Game over' code for each of the four colours is exactly th
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-[게임 오버!] (1 초) 동안
- < (점수 :: 변수) > (높은 점수) > 다음
-    세트 [높은 점수 v] (점수 :: 변수)
-    [높은 점수! 당신의 이름은 무엇입니까?] 그리고 기다림
-    [이름 v]를 (답)
-
-종료 [모두 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
@@ -116,14 +116,14 @@ Add the code from the `else`{:class="block3control"} block connected to the `red
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-이상 게임을 정의
-말 [이상 게임!] (1) 초
-경우 < (점수 : 변수) > (높은 점수) > 다음
-    (점수 : 변수)에 세트 [높은 점수 V]가
-    질문 [높은 점수 ! 당신의 이름은 무엇입니까?] 그리고 기다림
-    [이름 v]를 (답)
-
-종료 [모두 v]
+define Game over
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    set [high score v] to (score :: variables)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
@@ -135,13 +135,13 @@ Now remove the code that's in the `else`{:class="block3control"} block connected
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-I는 [적색 V] 나타나면
-경우 <(항목 (1 V) [서열 V]의) =[1]> 다음
-    재생 드럼 (\ (1 \)은 스네어 드럼 V) (0.25)에 대한 박동
-    삭제 (1 V) [시퀀스 v]
+when I receive [red v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(1\) Snare Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
 else
-    게임 오버 : : 사용자 정의
-끝
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -161,13 +161,13 @@ Also replace the code in the `else`{:class="block3control"} block connected to t
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-I는 [블루 V] 나타나면
-경우 <(항목 (1 V) [서열 V]의) =[1]> 다음
-    재생 드럼 (\ (2 \)은베이스 드럼 V) (0.25)에 대한 박동
-    삭제 (1 V) [시퀀스 v]
+when I receive [blue v]
+if <(item (1 v) of [sequence v])=[1]> then
+    play drum (\(2\) Bass Drum v) for (0.25) beats
+    delete (1 v) of [sequence v]
 else
-    게임 오버 : : 사용자 정의
-끝
+    Game over :: custom
+end
 ```
 
 \--- /task \---
@@ -179,16 +179,16 @@ Now add a sound that plays when the wrong button is pressed. You only need to ad
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-게임 오버를 정의
-시작 음 [Cough1의 V]
-(1) 초 [위에 게임!] 말
-의 경우 < (점수 : 변수) > (고득점) > 다음
-    소리 재생 (trumpet1의 V)
-    세트 [고득점 v] ~ (score)
-    [높은 점수! 당신의 이름은 무엇입니까?] 그리고 기다림
-    [이름 v]를 (답)
-
-종료 [모두 v]
+define Game over
+start sound [Cough1 v]
+say [Game over!] for (1) seconds
+if < (score :: variables) > (high score) > then
+    play sound (trumpet1 v)
+    set [high score v] to (score)
+    ask [High score! What is your name?] and wait
+    set [name v] to (answer)
+end
+stop [all v]
 ```
 
 \--- /task \---
