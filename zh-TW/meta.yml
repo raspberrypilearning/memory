@@ -1,26 +1,26 @@
 ---
-hero_image: 圖片/ memory.png
+hero_image: images/memory.png
 listed: true
 copyedit: false
-title: 記憶
-description: 創建一個記憶和重複隨機顏色序列的遊戲
+title: 記憶力大考驗
+description: 創建一個記憶隨機出現的顏色序列的遊戲
 version: 4.1.0
-last_tested: 2018年10月4日
+last_tested: 2018-10-04
 steps:
   - 
     title: 介紹
   - 
     title: 創建顏色序列
   - 
-    title: 添加聲音
+    title: 添加音效
   - 
-    title: 重複序列
+    title: 找出顏色序列
   - 
-    title: 多個級別
+    title: 多個關卡
   - 
-    title: 高分
+    title: 最高紀錄
   - 
-    title: "挑戰：改善你的遊戲"
+    title: "挑戰：遊戲改良"
   - 
-    title: 接下來是什麼？
+    title: 然後呢？
 
