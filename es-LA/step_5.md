@@ -16,7 +16,7 @@ Based on the `score`{:class="block3variables"}, the game will decide on the leng
 
 Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
 
-\--- función \---
+\--- /task \---
 
 Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
 
