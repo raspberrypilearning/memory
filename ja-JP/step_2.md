@@ -1,6 +1,6 @@
-## カラーシーケンスを作成する
+## Create a colour sequence
 
-まずランダムな色のシーケンスを表示できるキャラクタを作成します。
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ ゲームではそれぞれの色を表現するために異なる数を使うべきです:
++ Your game should use a different number to represent each colour:
     
-    + 1 = 赤
-    + 2 = 青
-    + 3 = 緑
-    + 4 = 黄
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-フラグがクリックされたとき
-( (1) から (4) までの乱数を) [シーケンス v] に追加する
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,11 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-フラグがクリックされたとき
-[シーケンス v] の(すべて v) を削除
-(5) 回繰り返す
-   ((1) から (4) の乱数) を [シーケンス v] に追加する
-終了
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -115,8 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-コスチュームを(([シーケンス v] の[シーケンス v] の長さ) 番目) にする
-(1) 秒待つ
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
