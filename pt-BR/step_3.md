@@ -24,15 +24,15 @@ O código que toca a percussāo é **muito** semelhante ao código que faz mudar
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+Você precisa apenas adicionar dois blocos: um bloco `toque tambor durante (0.25) batidas`{:class="block3sound"} e um bloco `item (tamanho de sequência) de sequência`{:class="block3variables"}.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+Aqui estão os blocos que você precisa:
 
-![ballerina](images/ballerina.png)
+![bailarina](images/ballerina.png)
 
 ```blocks3
 toque instrumento (\(1\) Tarol v) por (0.25) batidas
@@ -44,9 +44,9 @@ toque instrumento (\(1\) Tarol v) por (0.25) batidas
 
 \--- hint \---
 
-Here is how your finished code should look:
+Aqui está como o seu código deve ficar:
 
-![ballerina](images/ballerina.png)
+![bailarina](images/ballerina.png)
 
 ```blocks3
 quando ⚑ for clicado
