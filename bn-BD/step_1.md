@@ -1,21 +1,21 @@
-\----প্রিন্ট করা লাগবেনা --
+\--- no-print \---
 
-এই **স্ক্র্যাচ 3** প্রকল্পের সংস্করণ। প্রকল্প</a>এরস্ক্র্যাচ ২ সংস্করণ রয়েছে।</p> 
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
-\----প্রিন্ট করা লাগবেনা --
+\--- /no-print \---
 
-## পরিচিতি
+## Introduction
 
-এই প্রকল্পে, আপনি একটি মেমরি খেলা তৈরি করবেন যা আপনাকে একটি র্যান্ডম ক্রম স্মরণ এবং পুনরাবৃত্তি করতে হবে!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### যা তৈরি করতে হবে
+### What you will make
 
 \--- no-print \---
 
 Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" /> 
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
 \--- /no-print \---
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## যা শিখতে পারবেন
+## title: What you will learn
 
-+ কিভাবে আপনার স্ক্র্যাচ প্রকল্পে শব্দ যোগ করুন
-+ কিভাবে তথ্য সংরক্ষণ এবং তালিকা ব্যবহার করতে
-+ কিভাবে কোড পুনরাবৃত্তি জন্য কাস্টম ব্লক তৈরি এবং ব্যবহার করতে
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## যা যা প্রয়োজন
+## title: What you will need
 
-### হার্ডওয়্যার
+### Hardware
 
-+ একটি কম্পিউটার যেথানে স্ক্র্যাচ ২.০ (Scratch 3) চালানো যাবে
++ A computer capable of running Scratch 3
 
-### সফটওয়্যার
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## শিরোনাম: শিক্ষাবিদদের জন্য অতিরিক্ত তথ্য
+## title: Additional information for educators
 
 \--- no-print \---
 
