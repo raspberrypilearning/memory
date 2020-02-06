@@ -1,16 +1,16 @@
-## サウンドを追加
+## Add sound
 
 \--- task \---
 
-プロジェクトを数回テストします。あなたは時々同じ数が連続して2回 (またはそれ以上) 選ばれると、シーケンスを覚えることが難しくなることに気付きました？
+Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
 \--- /task \---
 
-キャラクタースプライトがコスチュームを変えるたびにドラムサウンドを鳴らすことができますか？そして、それぞれの色ごとに異なるドラムサウンドはどうでしょうか。
+Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
 \--- task \---
 
-プロジェクトに音楽拡張機能を追加し、 `play drum`{:class="block3extensions"} ブロックを使えるようにします。
+Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,7 +18,7 @@
 
 \--- task \---
 
-ドラムを鳴らすコードは **非常に** キャラクタのコスチュームを変更するコードに似ています。
+The code that plays the drum is **very** similar to the code that changes the character's costume.
 
 \--- hints \---
 
@@ -35,9 +35,9 @@ Here are the blocks you need:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-(\(1\) スネアドラム v) のドラムを(0.25) 拍鳴らす
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
-([シーケンス v] の アイテム ([シーケンス v] の長さ))
+(item (length of [sequence v]) of [sequence v])
 ```
 
 \--- /hint \---
@@ -49,14 +49,14 @@ Here is how your finished code should look:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-フラグがクリックされたとき
-[シーケンス v] の (すべて v) を削除する
-繰り返し(5)
-    ((1) から(4) までの乱数) を[シーケンス v] に追加する
-    ([シーケンス v] の([シーケンス v] の長さ) 番目) のドラムを(0.25) 拍鳴らす
-    ([シーケンス v] の([シーケンス v] の長さ) 番目) のコスチュームに変える
-    (1) 秒待つ
-終了
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
+    switch costume to (item (length of [sequence v]) of [sequence v])
+    wait (1) seconds
+end
 ```
 
 \--- /hint \---
