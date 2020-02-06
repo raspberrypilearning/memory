@@ -1,14 +1,14 @@
 \--- no-print \---
 
-이것은 **스크래치 3** 버전의 프로젝트입니다. 도있다 [프로젝트의 스크래치 2 버전](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## 들어가며
+## Introduction
 
-이 프로젝트에서는 무작위로 연속 나오는 색상 순서를 기억하고 반복하는 메모리 게임을 만듭니다!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### 만들 작품
+### What you will make
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: 배우게 될 것
+## title: What you will learn
 
-+ 스크래치 프로젝트에 사운드를 추가하는 방법
-+ 목록을 작성하고 사용하여 데이터를 저장하는 방법
-+ 반복 코드에 대한 사용자 정의 블록을 작성하고 사용하는 방법
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: 준비물
+## title: What you will need
 
-### 하드웨어
+### Hardware
 
-+ 스크래치 3을 실행할 수 있는 컴퓨터
++ A computer capable of running Scratch 3
 
-### 소프트웨어
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title : 교사를위한 추가 정보
+## title: Additional information for educators
 
 \--- no-print \---
 
