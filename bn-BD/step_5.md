@@ -1,6 +1,6 @@
-## একাধিক মাত্রা
+## Multiple levels
 
-এ পর্যন্ত, প্লেয়ার শুধুমাত্র পাঁচ রং একটি ক্রম মনে আছে। স্কোর যুক্ত করে এবং কোড যোগ করে আপনার গেমটি উন্নত করুন যাতে প্লেয়ার স্কোর পয়েন্ট হিসাবে, খেলাটি পরবর্তী স্তরের দিকে যায় এবং মনে রাখতে রঙ ক্রমটি আরও বেশি হয়ে যায়।
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -16,7 +16,7 @@ Based on the `score`{:class="block3variables"}, the game will decide on the leng
 
 Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
 
-\--- /কাজ \---
+\--- /task \---
 
 Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
 
@@ -27,8 +27,8 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-পুনরাবৃত্তি (স্কোর :: ভেরিয়েবল)
-শেষ
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-পরিবর্তন [স্কোর v] দ্বারা (1)
+change [score v] by (1)
 ```
 
 \--- hints \---
@@ -62,19 +62,19 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-যখন পতাকাটি
-সেট [স্কোর ভ] থেকে [3]টিতে ক্লিক করে
-চিরদিনের জন্য
-    মুছে ফেলুন (সর্বাধিক v) [ক্রমবর্ধমান v]
-    পুনরাবৃত্তি (স্কোর)
-        যোগ করুন (র্যান্ডম (1) থেকে (4)) [ক্রম অনুসারে]
-        সুইচ পরিচ্ছদ আইটেমে ((এর [ক্রম বনাম]) এর [ক্রম V] দৈর্ঘ্য
-        অপেক্ষার (1) সেকেন্ড
-    শেষ
-    পর্যন্ত অপেক্ষা < ([ক্রম V]) = দৈর্ঘ্য [0]>
-    ব্রডকাস্ট (জয়ী v) ও অপেক্ষা করুন
-    পরিবর্তন করুন [ স্কোর V] দ্বারা (1)
-শেষ
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
+end
 ```
 
 \--- /task \---
