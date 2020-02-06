@@ -1,6 +1,6 @@
-## Nivele multiple
+## Multiple levels
 
-Până în prezent, jucătorul trebuie doar să-și amintească o secvență de cinci culori. Îmbunătățiți-vă jocul prin adăugarea unui scor și adăugând un cod, astfel încât, în timp ce jucătorul să înscrie puncte, jocul trece la nivelul următor și secvența de culori pe care trebuie să o memoreze devine mai lungă.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -27,8 +27,8 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-repetare (scor :: variabile)
-sfârșit
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-schimba [scorul v] de către (1)
+change [score v] by (1)
 ```
 
 \--- hints \---
@@ -62,19 +62,19 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-când flag apasat
-set [scor v] până la [3]
-pentru totdeauna
-    șterge (toate v) din [secvență v]
-    repeat (scor)
-        add (alege aleator (1) la (4)) la [secvență v]
-        costum comutator la (elementul (lungimea secvenței v)) a secvenței v
-        așteptați 1 secunde
-    sfârșitul
-    așteptați până la < (lungimea secvenței v) = [0]>
-    difuzați (câștigați v) și așteptați
-    schimbați [ scor v] de (1)
-sfarsit
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
+end
 ```
 
 \--- /task \---
