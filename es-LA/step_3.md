@@ -4,7 +4,7 @@
 
 Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
 
-\--- función \---
+\--- /task \---
 
 Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
 
@@ -14,7 +14,7 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 [[[generic-scratch3-add-music-extension]]]
 
-\--- función \---
+\--- /task \---
 
 \--- task \---
 
