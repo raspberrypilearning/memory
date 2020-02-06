@@ -1,14 +1,14 @@
 \--- no-print \---
 
-Это **Scratch 3** версия проекта. Существует также [Scratch 2 версия проекта](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## Введение
+## Introduction
 
-В этом проекте ты создашь игру для развития памяти, в которой тебе надо будет запомнить и повторить последовательность случайных цветов!
+In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
 
-### Как это работает
+### What you will make
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: Чему ты научишься
+## title: What you will learn
 
-+ Как добавлять звук в проект Scratch
-+ Как создавать и использовать списки для хранения данных
-+ Как создавать и использовать пользовательские блоки повторяющегося кода
++ How to add sound to your Scratch project
++ How to create and use lists to store data
++ How to create and use custom blocks for repeating code
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Что тебе понадобится
+## title: What you will need
 
-### Оборудование
+### Hardware
 
-+ Компьютер, на котором можно запустить Scratch 3
++ A computer capable of running Scratch 3
 
-### Программное обеспечение
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: Дополнительная информация для учеников
+## title: Additional information for educators
 
 \--- no-print \---
 
