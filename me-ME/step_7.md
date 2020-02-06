@@ -1,4 +1,4 @@
-## Izazov: poboljšaj svoju igru
+## Challenge: improve your game
 
 ### Make more blocks
 
