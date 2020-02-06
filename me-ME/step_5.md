@@ -1,6 +1,6 @@
-## Više nivoa
+## Multiple levels
 
-Do sada, igrač treba da zapamti samo niz od pet boja. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-change [rezultat v] by (1)
+change [score v] by (1)
 ```
 
 \--- hints \---
