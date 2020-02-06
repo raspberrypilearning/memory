@@ -1,6 +1,6 @@
-## Crée une séquence de couleurs
+## Create a colour sequence
 
-Premièrement, crée un personnage qui puisse afficher des séquences de couleurs aléatoires.
+First create a character that can display a random sequence of colours.
 
 \--- task \---
 
@@ -22,12 +22,12 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- /task \---
 
-+ Ton jeu doit utiliser différents nombres afin de représenter chaque couleur :
++ Your game should use a different number to represent each colour:
     
-    + 1 = rouge
-    + 2 = bleu
-    + 3 = vert
-    + 4 = jaune
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-quand le drapeau est cliqué
-ajouter (prendre un nombre aléatoire entre (1) et (4)) à [séquence v]
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,12 +95,11 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-quand le drapeau est cliqué
-supprimer tous les éléments de la liste [v]
----répéter 5 fois :
-| ajouter (nombre aléatoire entre (1) et (4)) à [séquence v]
----
-stop tout
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
+end
 ```
 
 \--- /hint \---
@@ -116,7 +115,8 @@ Each time a number gets added to the list, the character should change its costu
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-basculer vers le costume (élément (longueur de la séquence [v] de séquence [v])
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
 ```
 
 \--- /task \---
