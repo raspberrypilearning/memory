@@ -1,6 +1,6 @@
-## 여러 단계
+## Multiple levels
 
-지금까지 플레이어는 5 가지 색상 순서 만 기억하면됩니다. 점수를 추가하고 플레이어가 점수를 매기면서 게임이 다음 단계로 이동하고 기억할 색상 순서가 길어 지도록 코드를 추가하여 게임을 개선하십시오.
+So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
 
 \--- task \---
 
@@ -27,8 +27,8 @@ Change the character's `repeat`{:class="block3control"} loop (for creating the c
 ![sprite](images/ballerina.png)
 
 ```blocks3
-반복 (score :: variables)
-끝
+repeat (score :: variables)
+end
 ```
 
 \--- /task \---
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-[점수 v]를 (1)
+change [score v] by (1)
 ```
 
 \--- hints \---
@@ -62,18 +62,18 @@ Finally, add a `forever`{:class="block3control"} loop around the code that gener
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-플래그가 클릭하면
-으로 세트 [점수 절] [3]
-영원히
-    (모든 V)의 [시퀀스 V] 삭제
-    반복 (점수)
-        추가 (선택 임의 (1) ~ (4))에 [순서 V]
-        스위치 의상을 [서열 V]) 여기서 시퀀스 V]의 항목 (행 (길이
-        의 대기 (1) 초
-    단부
-    대기까지 < ([서열 V) = 길이 [0]>
-    방송 (원 V) 기다려
-    [변경 점수 v] by (1)
+when flag clicked
+set [score v] to [3]
+forever
+    delete (all v) of [sequence v]
+    repeat (score)
+        add (pick random (1) to (4)) to [sequence v]
+        switch costume to (item (length of [sequence v]) of [sequence v]
+        wait (1) seconds
+    end
+    wait until < (length of [sequence v]) = [0]>
+    broadcast (won v) and wait
+    change [score v] by (1)
 end
 ```
 
