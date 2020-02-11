@@ -1,24 +1,68 @@
+--- no-print ---
+
+Esta é a versão **Scratch 3** do projeto. Há também uma versão [Scratch 2 do projeto](https://projects.raspberrypi.org/pt-BR/projects/memory-scratch2).
+
+--- /no-print ---
+
 ## Introdução
 
 Neste projeto, você criará um jogo de memória no qual você terá que memorizar e repetir uma sequência aleatória de cores!
 
 ### O que você vai fazer
 
-Clique na bandeira verde para começar. Observe a sequência de cores mostrada pelo vestido da bailarina e ouça as batidas de tambor que as acompanham e repita-as de volta para ela. Se você errar a ordem, o jogo acaba!
+--- no-print ---
+
+Clique na bandeira verde para começar. Observe a sequência de cores mostradas pelo vestido da bailarina e ouça as batidas de tambor que as acompanham e repita-as de volta para ela. Se você errar a ordem das cores, o jogo acaba!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/239046838/?autostart=false" frameborder="0"></iframe>
-  <img src="images/colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/365833363/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
-### O que você vai aprender
+--- /no-print ---
 
-Este projeto abrange elementos das seguintes vertentes do [Currículo de Criação Digital Raspberry Pi](http://rpf.io/curriculum){:target="_blank"}:
+--- print-only ---
 
-+ [Use construções básicas de programação para solucionar um problema.](https://www.raspberrypi.org/curriculum/programming/builder){:target="_blank"}
+![captura de tela do jogo terminado](images/screenshot.png)
 
-### Informação adicional para educadores
+--- /print-only ---
+
+--- collapse ---
+---
+title: O que você vai aprender
+---
+
++ Como adicionar som ao seu projeto Scratch
++ Como criar e utilizar listas para armazenar dados
++ Como criar e usar blocos personalizados para repetir código
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: O que você vai precisar
+---
+
+### Hardware
+
++ Um computador capaz de executar o Scratch 3
+
+### Software
+
+Scratch 3 ([online](https://rpf.io/scratchon){:target="_blank"} ou [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: informações adicionais para educadores
+--- 
+
+--- no-print ---
 
 Se você precisar imprimir este projeto, por favor, use a [versão para impressão](https://projects.raspberrypi.org/pt-BR/projects/memory/print){:target="_blank"}.
 
-Use o link no rodapé para acessar o projeto no repositório do GitHub. Tal repositório contém todos os recursos (incluindo um exemplo de projeto concluído) na pasta 'pt-BR/resources'.
+--- /no-print ---
+
+Você pode encontrar o projeto [completo aqui](http://rpf.io/p/pt-BR/memory-get).
+
+--- /collapse ---
