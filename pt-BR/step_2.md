@@ -64,8 +64,8 @@ Adiciona este código ao ator para escolher um número aleatório e adicioná-lo
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando clicar em bandeira verde
-insira (número aleatório entre (1) e (4)) a [sequência v]
+quando ⚑ for clicado
+adicione (número aleatório entre (1) e (4)) a [sequência v]
 ```
 
 --- /task ---
@@ -96,11 +96,11 @@ Adicione um `apague todos os itens da sequência`{:class="block3variables"} para
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando clicar em bandeira verde
-apague (todos v) de [sequência v]
-repita (5) vezes
-   insira (número aleatório entre (1) e (4)) a [sequência v]
-fim
+quando ⚑ for clicado
+apague (all v) de [sequência v]
+repita (5) vezes 
+  adicione (número aleatório entre (1) e (4)) a [sequência v]
+end
 ```
 
 --- /hint ---
@@ -111,7 +111,7 @@ fim
 
 --- task ---
 
-Cada vez que um número é adicionado à lista, o personagem deve mudar sua fantasia para que a cor da fantasia corresponda ao número. Coloque estes blocos no seu código imediatamente abaixo onde um número aleatório é adicionado a `sequência`{:class="block3Varible"}:
+Cada vez que um número é adicionado à lista, o personagem deve mudar sua fantasia para que a cor da fantasia corresponda ao número. Coloque estes blocos no seu código imediatamente abaixo onde um número aleatório é adicionado a `sequência`{:class="block3variables"}:
 
 ![bailarina](images/ballerina.png)
 

@@ -7,18 +7,18 @@ Você vê qualquer outro código que seja o mesmo para todos os quatro botões?
 ```blocks3
 quando eu receber [vermelho v]
 se < (item (1 v) de [sequência v]) = [1] > então 
-  toque instrumento ((1) Tarol v) por (0.25) batidas
+  toque instrumento (\(1\) Tarol v) por (0.25) batidas
   apague (1 v) de [sequência v]
 senão 
-  Fim de jogo :: personalizado
+  Fim de jogo :: custom
 fim
 
 quando eu receber [azul v]
 se  < (item (1 v) de [sequência v]) = [1] > então 
-  toque instrumento ((2) Bumbo v) por (0.25) batidas
+  toque instrumento (\(2\) Bumbo v) por (0.25) batidas
   apague (1 v) de [sequência v]
 senão 
-  Fim de jogo :: personalizado
+  Fim de jogo :: custom
 fim
 ```
 

@@ -38,7 +38,7 @@ Você se lembra que a `transmissão`{:class="block3events"} é como uma mensagem
 
 --- task ---
 
-Quando seu ator recebe a mensagem `vermelho`{:class="block3events"}, o código deve verificar se o número `1` está no início da `sequência`{:class="block3variable"} da lista (o que significa que `vermelho`{:class="block3events"} é a próxima cor na sequência).
+Quando seu ator recebe a mensagem `vermelho`{:class="block3events"}, o código deve verificar se o número `1` está no início da `sequência`{:class="block3variables"} da lista (o que significa que `vermelho`{:class="block3events"} é a próxima cor na sequência).
 
 Se `1` está no início da lista, o código deve remover o número da lista, porque o jogador lembrou a cor correta. Caso contrário o jogo acabou e o código precisa `parar todos`{:class="block3control"} para terminar o jogo.
 
@@ -76,7 +76,7 @@ Você consegue usar os números que correspondem a cada cor para tocar a batida 
 
 --- hint ---
 
-Acima do bloco `apaga o 1 da sequência`{:class="block3variables"}, acrescente o bloco `toca o tambor`{:class="block3variables"} para tocar o primeiro som da lista `sequência`{:class="block3variables"}.
+Acima do bloco `apaga o 1 da sequência`{:class="block3variables"}, acrescente o bloco `toca o tambor`{:class="block3sound"} para tocar o primeiro som da lista `sequência`{:class="block3variables"}.
 
 --- /hint ---
 
@@ -87,12 +87,12 @@ Aqui está o código que você precisará adicionar:
 ```blocks3
 quando eu receber [vermelho v]
 se <(item (1 v) de [sequência v]) = [1]> então 
- + toque instrumento ((1) Tarol v) por (0.25) batidas
- apague (1 v) de [sequência v]
+  + toque instrumento ((1) Tarol v) por (0.25) batidas
+  apague (1 v) de [sequência v]
 senão 
- diga [Fim de jogo!] por (1) segundos
- pare [todos v]
-fim
+  diga [Fim de jogo!] por (1) segundos
+  pare [todos v]
+end
 ```
 
 --- /hint ---
@@ -127,7 +127,7 @@ Mantenha esses blocos, mas você precisa alterá-los de alguma forma:
 
 quando eu receber [vermelho v]
 
-toque instrumento ((1) Tarol v) por (0.25) batidas
+toque instrumento (\(1\) Tarol v) por (0.25) batidas
 ```
 
 --- /hint ---
@@ -141,7 +141,7 @@ Aqui está como seu código deve procurar pela transmissão `azul`{:class="block
 ```blocks3
 quando eu receber [azul v]
 se <(item (1 v) de [sequência v]) = [2]> então 
-  toque instrumento ((2) Bumbo v) por (0.25) batidas
+  toque instrumento (\(2\) Bumbo v) por (0.25) batidas
   apague (1 v) de [sequência v]
 senão 
   diga [Fim de jogo!] por (1) segundos
@@ -163,7 +163,7 @@ Duplica o código mais duas vezes (para os botões verde e amarelo) e altere as 
 
 Lembre-se de testar o código! Você consegue memorizar uma sequência de cinco cores? A sequência é diferente a cada vez?
 
-Quando o jogador repete corretamente toda a sequência de cores, a lista da `sequência`{:class="block3variables"} esvazia e o jogador vence. Se você quiser, você também pode exibir algumas luzes piscantes como recompensa uma vez que a lista da `sequência`{:class="block3variáveis"} está vazia.
+Quando o jogador repete corretamente toda a sequência de cores, a lista da `sequência`{:class="block3variables"} esvazia e o jogador vence. Se você quiser, você também pode exibir algumas luzes piscantes como recompensa uma vez que a lista da `sequência`{:class="block3variables"} está vazia.
 
 --- task ---
 

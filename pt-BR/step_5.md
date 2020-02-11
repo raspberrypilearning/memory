@@ -27,8 +27,8 @@ Mude o laço de `repetição`{:class="block3control"} do ator (para criar a sequ
 ![ator](images/ballerina.png)
 
 ```blocks3
-repita (pontuação :: variáveis) vezes
-fim
+repita (pontuação :: variables) vezes
+end
 ```
 
 --- /task ---
@@ -40,7 +40,7 @@ Se o jogador repetir a sequência corretamente, você deve adicionar `1` a `pont
 ![ator](images/ballerina.png)
 
 ```blocks3
-adicione a [placar v] (1)
+adicione (1) a [pontuação v]
 ```
 
 --- hints ---

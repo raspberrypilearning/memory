@@ -69,8 +69,8 @@ se <(item (1 v) de [sequência v]) = [1]> então
   apague (1 v) de [sequência v]
 senão 
   diga [Fim de jogo!] por (1) segundos
-  se <(pontuação :: variáveis) > (pontuação mais alta) > então 
-    mude [pontuação mais alta v] para (pontuação :: variáveis)
+  se <(pontuação :: variables) > (pontuação mais alta) > então 
+    mude [pontuação mais alta v] para (pontuação :: variables)
     pergunte [Maior pontuação! Qual é o seu nome?] e espere
     mude [nome v] para (resposta)
   fim
@@ -92,8 +92,8 @@ Você consegue ver que o código 'Fim de jogo' para cada uma das quatro cores é
 
 ```blocks3
 diga [Fim de jogo!] por (1) segundos
-se < (pontuação :: variáveis) > (pontuação mais alta) > então 
-  mude [pontuação mais alta v] para (pontuação :: variáveis)
+se < (pontuação :: variables) > (pontuação mais alta) > então 
+  mude [pontuação mais alta v] para (pontuação :: variables)
   pergunte [Pontuação mais alta! Qual é o seu nome?] e espere
 mude [nome v] para (resposta)
 fim
@@ -119,8 +119,8 @@ Adicione o código do bloco `senão`{:class="block3control"} ligado à transmiss
 ```blocks3
 defina Fim de jogo
 diga [Fim de jogo!] por (1) segundos
-se < (pontuação :: variáveis) > (pontuação mais alta) > então 
-  mude [pontuação mais alta v] para (pontuação :: variáveis)
+se < (pontuação :: variables) > (pontuação mais alta) > então 
+  mude [pontuação mais alta v] para (pontuação :: variables)
   pergunte [Maior pontuação! Qual é o seu nome?] e espere
     mude [nome v] para (resposta)
   fim
@@ -138,10 +138,10 @@ Agora remova o código que está no bloco `senão`{:class="block3control"} ligad
 ```blocks3
 quando eu receber [vermelho v]
 se < (item (1 v) de [sequência v]) = [1] > então 
-  toque instrumento ((1) Tarol v) por (0.25) batidas
+  toque instrumento (\(1\) Tarol v) por (0.25) batidas
   apague (1 v) de [sequência v]
 senão 
-  Fim de jogo :: personalizado
+  Fim de jogo :: custom
 fim
 ```
 
@@ -164,10 +164,10 @@ Substitua também o código que está no bloco `senão`{:class="block3control"} 
 ```blocks3
 quando eu receber [azul v]
 se < (item (1 v) de [sequência v]) = [1] > então 
-  toque instrumento ((2) Bumbo v) por (0.25) batidas
+  toque instrumento (\(2\) Bumbo v) por (0.25) batidas
   apague (1 v) de [sequência v]
 senão 
-  Fim de jogo :: personalizado
+  Fim de jogo :: custom
 fim
 ```
 
@@ -183,7 +183,7 @@ Agora adicione um som que toque quando o botão errado é pressionado. Você só
 defina Fim de jogo
 toque o som [Cough1 v]
 diga [Fim de jogo!] por (1) segundos
-se < (pontuação :: variáveis) > (pontuação mais alta) > então 
+se < (pontuação :: variables) > (pontuação mais alta) > então 
   toque o som (trumpet1 v)
   mude [pontuação mais alta v] para (pontuação)
   pergunte [Pontuação mais alta! Qual é o seu nome?] e espere
