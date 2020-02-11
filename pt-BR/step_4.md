@@ -87,7 +87,7 @@ Aqui está o código que você precisará adicionar:
 ```blocks3
 quando eu receber [vermelho v]
 se <(item (1 v) de [sequência v]) = [1]> então 
-  + toque instrumento ((1) Tarol v) por (0.25) batidas
++ toque instrumento ((1) Tarol v) por (0.25) batidas
   apague (1 v) de [sequência v]
 senão 
   diga [Fim de jogo!] por (1) segundos
