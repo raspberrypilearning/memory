@@ -12,7 +12,7 @@ En este proyecto, crearás un juego de memoria en el que tendrás que memorizar 
 
 \--- no-print \---
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+Haz clic en la bandera verde para empezar. Observa la secuencia de colores que muestra el vestido de la bailarina y escucha al tambor que lo acompaña, luego repite la secuencia de colores. Si el orden de los colores es incorrecto, ¡el juego termina!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -46,7 +46,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+Scratch 3 (ya sea [online](https://rpf.io/scratchon){:target="_blank"} u [offline](https://rpf.io/scratchoff) {:target="_blank"})
 
 \--- /collapse \---
 
@@ -56,10 +56,10 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Puedes encontrar el [proyecto terminado aquí](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
