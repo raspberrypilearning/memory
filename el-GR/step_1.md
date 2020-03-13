@@ -12,7 +12,7 @@
 
 \--- no-print \---
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+Κάνε κλικ στην πράσινη σημαία για να ξεκινήσεις. Παρακολουθήστε το μοτίβο των χρωμάτων που εμφανίζεται στο φόρεμα του χορευτή και ακούστε τα συνοδευτικά τυμπανικά κτυπήματα και στη συνέχεια επαναλάβετε τα χρώματα πίσω σε αυτήν. Εάν επιλέξεται λανθασμένη σειρά χρωμάτων τοτε το παιχνίδι τελειώνει!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -22,7 +22,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 \--- print-only \---
 
-![screenshot of finished game](images/screenshot.png)
+![screenshot του τελικού παιχνιδιού](images/screenshot.png)
 
 \--- /print-only \---
 
@@ -46,7 +46,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ### Λογισμικό
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+Scratch 3 (είτε [online](https://rpf.io/scratchon){:target="_blank"} είτε [offline](https://rpf.io/scratchoff){:target="_blank"})
 
 \--- /collapse \---
 
@@ -56,10 +56,10 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Αν χρειαστεί να εκτυπώσετε αυτό το έργο, χρησιμοποιήστε την έκδοση [φιλική προς τον εκτυπωτή](https://projects.raspberrypi.org/en/projects/memory/print){: target = "_ blank"}.
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
