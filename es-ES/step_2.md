@@ -4,19 +4,19 @@ Primero crea un personaje que pueda mostrar una secuencia aleatoria de colores.
 
 \--- task \---
 
-Open a new Scratch project.
+Abre un nuevo proyecto en Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**Online:** abre un nuevo proyecto en [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline**: open a new project in the offline editor.
+**Offline:** abre un nuevo proyecto en el editor offline.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+Si necesitas descargar e instalar el editor offline de Scratch, puedes encontrarlo en [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
 \--- task \---
 
-Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+Elige un personaje sprite y un escenario. Puedes usar la bailarina, pero tu personaje no tiene que ser una persona, solo necesita poder mostrar diferentes colores.
 
 ![screenshot](images/colour-sprite.png)
 
@@ -31,35 +31,35 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 \--- task \---
 
-Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+Dale a tu personaje cuatro disfraces de diferentes colores, uno para cada uno de los cuatro colores anteriores. Asegúrate de que tus disfraces de colores estén en el mismo orden que la lista anterior.
 
 ![screenshot](images/colour-costume.png)
 
 \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Puedes usar la herramienta **rellenar** para colorear partes del traje de un color diferente.
 
 ![color-a-shape](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+A continuación, añade una lista para almacenar la secuencia aleatoria de colores que el jugador tiene que recordar.
 
 \--- task \---
 
-Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+Crea una lista llamada `secuencia`{: class = "block3variables"}. Solo el sprite del personaje necesita ver esta lista, por lo que puedes seleccionar **Sólo para este objeto** al crear la lista.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Ahora deberías ver muchos nuevos bloques de código para usar listas. La lista vacía debería ser visible en la esquina superior izquierda del Escenario.
 
 ![screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Cada color tiene un número diferente, por lo que puedes elegir un color al azar al elegir un número aleatoriamente y agregarlo a la lista.
 
 \--- task \---
 
-Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+Añade este código al personaje para elegir un número aleatorio y añadirlo a la lista `secuencia`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
@@ -72,25 +72,25 @@ añadir (número aleatorio entre (1) y (4)) a [secuencia v]
 
 \--- task \---
 
-Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list.
+Prueba tu código. Comprueba que, cada vez que haces clic en la bandera, un número aleatorio entre 1 y 4 se añade a la lista.
 
 \--- /task \---
 
 \--- task \---
 
-Can you add code to your program to generate five random numbers at once?
+¿Puedes añadir código a tu programa para generar cinco números aleatorios a la vez?
 
 \--- hints \---
 
 \--- hint \---
 
-Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
+Añade un bloque `eliminar todos de secuencia`{:class="block3variables"} para eliminar primero todos los elementos de la lista, y luego añade un bloque `repetir`{:class="block3control"} que añade cinco números aleatorios a la lista.
 
 \--- /hint \---
 
 \--- hint \---
 
-This is what your code should look like:
+Así es como debería verse tu código:
 
 ![ballerina](images/ballerina.png)
 
@@ -110,7 +110,7 @@ end
 
 \--- task \---
 
-Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+Cada vez que se añada un número a la lista, el personaje debe cambiar su disfraz de forma que el color del traje coincide con el número. Pon estos bloques en tu código justo debajo del bloque que añade un número aleatorio a la lista `secuencia`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
