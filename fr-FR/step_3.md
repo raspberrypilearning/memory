@@ -1,16 +1,16 @@
-## Add sound
+## Ajouter du son
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Teste ton projet plusieurs fois. As-tu remarqué que des fois, le même nombre est choisi deux fois (ou plus) à la suite, ce qui rend la séquence plus difficile à mémoriser ?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Peux-tu mettre un son de batterie à chaque fois que le sprite personnage change de costume ? Et que dirais-tu d'un son de batterie différent pour chaque couleur ?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Ajoute l'extension Musique à ton projet de sorte à pouvoir utiliser le bloc ` jouer du tambour `{:class="block3extensions"} .
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,45 +18,45 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Le code qui joue de la batterie est ** très ** similaire au code qui change le costume du personnage.
 
 \--- hints \---
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+Tu dois seulement ajouter deux blocs : un bloc `jouer le tambour pour (0.25) temps`{:class="block3sound"} et un bloc `élément (longueur de la séquence) `{:class="block3variables"}.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+Voici les blocs dont tu auras besoin :
 
-![ballerina](images/ballerina.png)
+![ballerine](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+jouer de la batterie (\(1\) caisse claire v) pendant (0.25) temps
 
-(item (length of [sequence v]) of [sequence v])
+(élément (longueur de [séquence v) de [séquence v])
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is how your finished code should look:
+Voici à quoi devrait ressembler ton code fini :
 
-![ballerina](images/ballerina.png)
+![ballerine](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
-end
+quand le drapeau est cliqué
+supprimer tout les éléments de la liste [séquence v]
+répéter (5) fois
+    ajouter (nombre aléatoire entre (1) et (4)) à [séquence v]
+    jouer de la batterie (élément (longueur de la [séquence v]) de la [séquence v]) pendant (0.25) temps
+    basculer sur le costume (élément (longueur de la [séquence v]) de [séquence v])
+    attendre (1) secondes
+fin
 ```
 
 \--- /hint \---
