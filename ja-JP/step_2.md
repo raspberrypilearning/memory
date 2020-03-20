@@ -22,7 +22,7 @@ Scratchオフラインエディタをダウンロードしてインストール�
 
 \--- /task \---
 
-+ ゲームではそれぞれの色を表現するために異なる数字を使います:
++ ゲームではそれぞれの色を表現するために異なる番号を使います:
     
     + 1 = 赤
     + 2 = 青
@@ -37,25 +37,25 @@ Scratchオフラインエディタをダウンロードしてインストール�
 
 \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+**塗りつぶし** ツールを使えば、衣装の各部を違う色で塗りつぶすこともできます。
 
-![color-a-shape](images/color-a-shape.png)
+![塗りつぶす](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+次に、色のばらばらの順番を格納するリストを追加します。プレーヤーはこの順番を覚えなければなりません。
 
 \--- task \---
 
-Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+`シーケンス`{:class = "block3variables"}というリストを作成します。 このリストを見る必要があるのはキャラクタースプライトだけなので、リストを作成するときに **このスプライトのみ**を選びます。
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+リストを使用するための多くの新しいコードブロックが表示されます。ステージの左上隅には空のリストが表示されてます。
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![スクリーンショット](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+各色には異なる番号があるため、番号をばらばらに選択してリストに追加することにより、ばらばらな色を選択できます。
 
 \--- task \---
 
