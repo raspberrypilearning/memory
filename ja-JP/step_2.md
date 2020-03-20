@@ -59,9 +59,9 @@ Scratchオフラインエディタをダウンロードしてインストール�
 
 \--- task \---
 
-Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+このコードをキャラクタースプライトに追加すると、ばらばらの番号を選択し、それを `シーケンス`{:class="block3variables"}:に追加することができます
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
 when flag clicked
@@ -72,27 +72,27 @@ add (pick random (1) to (4)) to [sequence v]
 
 \--- task \---
 
-Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list.
+コードをテストします。フラグをクリックするたびに、1〜4の乱数がリストに追加されることを確認してください。
 
 \--- /task \---
 
 \--- task \---
 
-Can you add code to your program to generate five random numbers at once?
+一度に5つの乱数を生成するコードをプログラムに追加できますか？
 
 \--- hints \---
 
 \--- hint \---
 
-Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
+追加 初めに`シーケンスのすべてを削除`{:class="block3variables"} でリスト上のすべての項目を削除し、5つの乱数をリストに追加する `リピート`{:class = "block3control"}ブロックを追加します
 
 \--- /hint \---
 
 \--- hint \---
 
-This is what your code should look like:
+できあがりはこのようになります。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
 when flag clicked
