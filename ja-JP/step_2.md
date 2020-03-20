@@ -1,39 +1,39 @@
-## Create a colour sequence
+## カラーシーケンス(色の順番)を作成する
 
-First create a character that can display a random sequence of colours.
+まず、色のばらばらの順番を表示できるキャラクタを作成します。
 
 \--- task \---
 
-Open a new Scratch project.
+新しいScratchプロジェクトを開きます。
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**オンライン**: 新しいオンラインScratchプロジェクトを[rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}で開きます。
 
-**Offline**: open a new project in the offline editor.
+**Offline**: 新しいプロジェクトを オフラインエディターで開きます。
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+Scratchオフラインエディタをダウンロードしてインストールする必要がある場合は、 [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}で見つけることができます。
 
 \--- /task \---
 
 \--- task \---
 
-Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+キャラクターのスプライトと背景を選択します。バレリーナを使用することもできますが、キャラクターは人である必要はなく、異なる色を見せることができれば十分です。
 
-![screenshot](images/colour-sprite.png)
+![スクリーンショット](images/colour-sprite.png)
 
 \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ ゲームではそれぞれの色を表現するために異なる数字を使います:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = 赤
+    + 2 = 青
+    + 3 = 緑
+    + 4 = 黄
 
 \--- task \---
 
-Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+キャラクターに異なる色の衣装を4つ、上記の4つの色ごとに1つの衣装を与えます。衣装の色が上記のリストと同じ順序であることを確認してください。
 
-![screenshot](images/colour-costume.png)
+![スクリーンショット](images/colour-costume.png)
 
 \--- /task \---
 
