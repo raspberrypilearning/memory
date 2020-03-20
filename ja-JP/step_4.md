@@ -15,7 +15,7 @@
 
 \--- task \---
 
-Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+赤のスプライトにコードを追加して、スプライトがクリックされたとき、キャラクタースプライトに、「赤」というメッセージ `を送る`{:class="block3events"}ようにします。
 
 ![red-drum](images/red_drum.png)
 
@@ -26,7 +26,7 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+`を送る`{:class="block3events"}は、たとえば学校やスーパーマーケットで聞くことができる、スピーカーで放送されたメッセージのようなものです。 すべてのスプライトは`を送る`{:class = "block3events"}を聞くことができますが、応答するようになっているスプライトのみが何かを行います。
 
 \--- task \---
 
