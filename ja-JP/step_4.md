@@ -4,12 +4,12 @@
 
 \--- task \---
 
-ボタンに使う新しい4つのスプライトをプロジェクトに追加します。
+ボタンとして使う、4つの新しいスプライトをプロジェクトに追加します。
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ 新しいスプライトのコスチュームを編集して、4色それぞれに1つのスプライトがあるようにします。
++ コスチュームと同じ順番でスプライトをステージ上に置きます: 赤、青、緑、黄
 
-![screenshot](images/colour-drums.png)
+![スクリーンショット](images/colour-drums.png)
 
 \--- /task \---
 
