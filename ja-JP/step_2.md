@@ -64,8 +64,8 @@ Scratchオフラインエディタをダウンロードしてインストール�
 ![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+⚑ が押されたとき
+((1) から (4) までの乱数) を [sequence v] に追加する
 ```
 
 \--- /task \---
@@ -95,10 +95,10 @@ add (pick random (1) to (4)) to [sequence v]
 ![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
+⚑ が押されたとき
+[sequence v] の (all v) 番目を削除する
+(5) 回繰り返す 
+  ((1) から (4) までの乱数) を [sequence v] に追加する
 end
 ```
 
@@ -110,13 +110,13 @@ end
 
 \--- task \---
 
-Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+リストに数字が追加されるたびに、コスチュームの色が数字と一致するようにキャラクターはコスチュームを変更します。 乱数が `シーケンス`{:class="block3variables"}:に追加されるコードのすぐ下のにこれらのブロックを配置します。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
-wait (1) seconds
+コスチュームを ([sequence v] の ([sequence v] の長さ) 番目) にする
+(1) 秒待つ
 ```
 
 \--- /task \---
