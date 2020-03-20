@@ -2,25 +2,25 @@
 hero_image: images/memory.png
 listed: true
 copyedit: false
-title: Memory
-description: Create a game in which you memorise and repeat random colour sequences
+title: メモリ(記憶ゲーム)
+description: ばらばらな色の順序を覚えて、その通りに再現するゲームを作りましょう
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
-    title: Introduction
+    title: はじめに
   - 
-    title: Create a colour sequence
+    title: カラーシーケンス(色の順序)を作成します
   - 
-    title: Add sound
+    title: 音を追加します
   - 
-    title: Repeat the sequence
+    title: シーケンス(順序)を再現します
   - 
     title: Multiple levels
   - 
     title: High score
   - 
-    title: "Challenge: improve your game"
+    title: "チャレンジ: ゲームをより良くする"
   - 
     title: What next?
 
