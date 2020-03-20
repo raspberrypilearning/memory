@@ -30,11 +30,11 @@
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+青、緑、黄のスプライトに同様のコードを追加して、それぞれの色のメッセージ `を送る`{: class="block3events"}ようにします。
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+あなたは `を送る`{: class="block3events"}がスピーカーのメッセージのようであることを覚えていますか？ You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
 
 \--- task \---
 
