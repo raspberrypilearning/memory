@@ -1,10 +1,10 @@
-## Repeat the sequence
+## 順番を再現する
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+さて、プレーヤーが色の順番を再現するために押す4つのボタンを追加していきましょう。
 
 \--- task \---
 
-Add four new sprites to your project to represent the four buttons.
+ボタンに使う新しい4つのスプライトをプロジェクトに追加します。
 
 + Edit the new sprites' costumes so that there is one sprite in each of the four colours
 + Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
