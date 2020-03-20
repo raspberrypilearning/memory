@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+これは、このプロジェクトの**Scratch 3**バージョンです。このプロジェクトの[ Scratch 2バージョン](https://projects.raspberrypi.org/en/projects/memory-scratch2)もあります。
 
 \--- /no-print \---
 
-## Introduction
+## はじめに
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+このプロジェクトでは、ばらばらな色の順序を記憶して再現する、記憶ゲームを作成します。
 
-### What you will make
+### あなたが作るもの
 
 \--- no-print \---
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+緑の旗をクリックしてスタートします。 ダンサーのドレスで示される色の順序を覚えて、その時に聞こえるドラムの音を聞き、順番通りに同じ色のドラムをたたいてください。 色の順番を間違えると、ゲームオーバーになります！
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -22,25 +22,25 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 \--- print-only \---
 
-![screenshot of finished game](images/screenshot.png)
+![終了したゲームのスクリーンショット](images/screenshot.png)
 
 \--- /print-only \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: 学習すること
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Scratchプロジェクトに音を追加する方法
++ データを保存するためのリストを作成し使用する方法
++ コードを繰り返すためのカスタムブロックを作成して使用する方法
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: 必要なもの
 
-### Hardware
+### ハードウェア
 
 + A computer capable of running Scratch 3
 
