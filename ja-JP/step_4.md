@@ -38,9 +38,9 @@
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+キャラクタースプライトが`赤`{:class="block3events"}メッセージを受信したときに 、 数字の`1` が`シーケンス`{:class="block3variables"} リストの先頭であるかどうかをコードがチェックします(そうであれば `赤`{:class="block3events"}が次の順番ということになります) 。
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+`1` がリストの先頭にある場合、プレーヤーは正しい色を覚えていたことになるので、コードはリストから数字を削除します。 そうでなければゲームオーバーで、コードはゲームを終了するために `すべてを止める`{:class="block3control"}ようにします。
 
 ![ballerina](images/ballerina.png)
 
