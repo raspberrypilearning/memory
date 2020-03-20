@@ -2,15 +2,15 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+プロジェクトを数回テストしてみてください。時々同じ数が連続して2回 (またはそれ以上) 選ばれことに気付きましたか？これがあるので順番をを覚えることが難しくなるのです。
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+キャラクタースプライトがコスチュームを変えるたびにドラムの音を鳴らすことができますか？そして、それぞれの色ごとにドラムの音を変えることはできますか。
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+プロジェクトに音楽拡張機能を追加し、 `ドラムを鳴らす`{:class="block3extensions"} ブロックを使えるようにします。
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,44 +18,44 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+ドラムを鳴らすコードはキャラクタのコスチュームを変更するコードに **非常に** 似ています。
 
 \--- hints \---
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+2つのブロックを追加するだけです: `ドラムを(0.25) 拍鳴らす`{:class = "block3sound"}ブロックと `アイテム(シーケンスの長さ)` {:class="block3variables"}ブロック。
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+必要なブロックは次のとおりです:
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+((1) Snare Drum v) のドラムを (0.25) 拍鳴らす
 
-(item (length of [sequence v]) of [sequence v])
+([sequence v] の ([sequence v] の長さ) 番目)
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is how your finished code should look:
+完成したコードは次のようになります:
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
+⚑ が押されたとき
+[sequence v] の (all v) 番目を削除する
+(5) 回繰り返す 
+  ((1) から (4) までの乱数) を [sequence v] に追加する
+  ([sequence v] の ([sequence v] の長さ) 番目) のドラムを (0.25) 拍鳴らす
+  コスチュームを ([sequence v] の ([sequence v] の長さ) 番目) にする
+  (1) 秒待つ
 end
 ```
 
