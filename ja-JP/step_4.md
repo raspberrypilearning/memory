@@ -34,7 +34,7 @@
 
 \--- /task \---
 
-あなたは `を送る`{: class="block3events"}がスピーカーのメッセージのようであることを覚えていますか？ You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+あなたは `を送る`{: class="block3events"}がスピーカーのメッセージのようであることを覚えていますか？ キャラクタースプライトが、`を送る`{: class = "block3events"}メッセージに応答するようにコードを追加します。
 
 \--- task \---
 
