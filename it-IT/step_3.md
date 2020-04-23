@@ -1,16 +1,16 @@
-## Sfida: Aggiungi un suono
+## Geluid toevoegen
 
 \--- task \---
 
-Metti alla prova il tuo progetto alcune volte. Hai notato che a volte lo stesso numero viene scelto due o più volte consecutivamente, rendendo più difficile memorizzare la sequenza?
+Test je project een paar keer. Merk je dat soms hetzelfde nummer twee keer (of meer) achter elkaar wordt gekozen, waardoor de volgorde moeilijker te onthouden is?
 
 \--- /task \---
 
-Sei in grado di aggiungere un suono di batteria ogni volta che lo sprite del personaggio cambia costume? E che dire di un suono di batteria diverso per ogni colore?
+Kun je een drumgeluid laten spelen telkens als de personagesprite van kostuum verandert? En wat dacht je van een ander drumgeluid voor elke kleur?
 
 \--- task \---
 
-Aggiungi l'estensione Musica al tuo progetto in modo da poter usare il blocco `suona il tamburo`{:class="block3extensions"}.
+Voeg de Muziek-extensie toe aan je project zodat je het `drum afspelen`{:class="block3extensions"} blok kunt gebruiken.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,44 +18,44 @@ Aggiungi l'estensione Musica al tuo progetto in modo da poter usare il blocco `s
 
 \--- task \---
 
-Il codice che suona il tamburo è **molto** simile al codice che cambia il costume del personaggio.
+De code die de drum speelt is **erg** vergelijkbaar met de code die het kostuum van het personage verandert.
 
 \--- hints \---
 
 \--- hint \---
 
-Hai solo bisogno di aggiungere due blocchi: un blocco `suona tamburo per (0.25) battute`{:class="block3sound"} e un `elemento (lunghezza di sequenza) di sequenza`{:class="block3variables"}.
+Je hoeft slechts twee blokken toe te voegen: een `speel drum voor (0.25) beats`{:class="block3sound"} blok en een `item (lengte van reeks) van reeks`{:class="block3variables"} blok.
 
 \--- /hint \---
 
 \--- hint \---
 
-Ecco i blocchi di codice che ti serviranno:
+Dit zijn de blokken die je nodig hebt:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
-suona il tamburo ((1) Snare Drum v) per (0.25) battute
+speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
 
-(elemento (lunghezza di [sequenza v]) di [sequenza v])
+(item (lengte van [reeks v]) van [reeks v])
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Ecco come dovrebbe essere il codice completo:
+Zo zou het voltooide programma eruit moeten zien:
 
-![ballerina](images/ballerina.png)
+![balletdanseres](images/ballerina.png)
 
 ```blocks3
-quando si clicca sulla bandiera verde
-cancella (all v) da [sequenza v]
-ripeti (5) volte 
-  aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
-  suona il tamburo (elemento (lunghezza di [sequenza v]) di [sequenza v]) per (0.25) battute
-  passa al costume (elemento (lunghezza di [sequenza v]) di [sequenza v])
-  attendi (1) secondi
+wanneer groene vlag wordt aangeklikt
+verwijder (alle v) van [reeks v]
+herhaal  (5) 
+  voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
+  speel drum (item (laatste v) van [reeks v]) gedurende (0.25) maten
+  verander uiterlijk naar (item (laatste v) van [reeks v])
+  wacht (1) sec.
 end
 ```
 
