@@ -1,19 +1,19 @@
-sequence
+シーケンス
 
-red
+赤
 
-Game over!
+ゲームオーバー!
 
-blue
+青
 
-won
+勝ち
 
-score
+スコア
 
-high score
+ハイスコア
 
-name
+名前
 
-What’s your name?
+あなたのお名前は？
 
-High score! What is your name?
+ハイスコアです! あなたのお名前は？
