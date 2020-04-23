@@ -17,40 +17,40 @@
 
 赤のスプライトにコードを追加して、スプライトがクリックされたとき、キャラクタースプライトに、「赤」というメッセージ `を送る`{:class="block3events"}ようにします。
 
-![red-drum](images/red_drum.png)
+![赤いドラム](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    このスプライトが押されたとき
+(赤 v) を送る
 ```
 
 \--- /task \---
 
-`を送る`{:class="block3events"}は、たとえば学校やスーパーマーケットで聞くことができる、スピーカーで放送されたメッセージのようなものです。 すべてのスプライトは`を送る`{:class = "block3events"}を聞くことができますが、応答するようになっているスプライトのみが何かを行います。
+`を送る`{:class="block3events"}は、たとえば学校やスーパーマーケットで聞くことができる、スピーカーで放送されたメッセージのようなものです。 すべてのスプライトは`を送る`{:class = "block3events"} を聞くことができますが、応答するようになっているスプライトのみが何かを行います。
 
 \--- task \---
 
-青、緑、黄のスプライトに同様のコードを追加して、それぞれの色のメッセージ `を送る`{: class="block3events"}ようにします。
+青、緑、黄のスプライトに同様のコードを追加して、それぞれの色のメッセージ `を送る`{: class="block3events"} ようにします。
 
 \--- /task \---
 
-あなたは `を送る`{: class="block3events"}がスピーカーのメッセージのようであることを覚えていますか？ キャラクタースプライトが、`を送る`{: class = "block3events"}メッセージに応答するようにコードを追加します。
+あなたは `を送る`{: class="block3events"} がスピーカーのメッセージのようであることを覚えていますか？ キャラクタースプライトが、`を送る`{: class = "block3events"} メッセージに応答するようにコードを追加します。
 
 \--- task \---
 
-キャラクタースプライトが`赤`{:class="block3events"}メッセージを受信したときに 、 数字の`1` が`シーケンス`{:class="block3variables"} リストの先頭であるかどうかをコードがチェックします(そうであれば `赤`{:class="block3events"}が次の順番ということになります) 。
+キャラクタースプライトが`赤`{:class="block3events"} メッセージを受信したときに 、 数字の`1` が`シーケンス`{:class="block3variables"} リストの先頭であるかどうかをコードがチェックします(そうであれば `赤`{:class="block3events"} が次の順番ということになります) 。
 
-`1` がリストの先頭にある場合、プレーヤーは正しい色を覚えていたことになるので、コードはリストから数字を削除します。 そうでなければゲームオーバーで、コードはゲームを終了するために `すべてを止める`{:class="block3control"}ようにします。
+`1` がリストの先頭にある場合、プレーヤーは正しい色を覚えていたことになるので、コードはリストから数字を削除します。 そうでなければゲームオーバーで、コードはゲームを終了するために `すべてを止める`{:class="block3control"} ようにします。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
+[赤 v] を受け取ったとき
+もし <([シーケンス v] の (1 v) 番目) = [1]> なら 
+  [シーケンス v] の (1 v) 番目を削除する
+でなければ 
+  [ゲームオーバー!] と (1) 秒言う
+  stop [all v]
 end
 ```
 
@@ -58,40 +58,39 @@ end
 
 \--- task \---
 
-Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+キャラクタースプライトが正しい `を送る`{:class="block3events"} を受信したときにドラム音も再生するように、作成したコードに追加します。
 
 \--- hints \---
 
 \--- hint \---
 
-Can you use the numbers that correspond to each colour to play the correct drum beat?
+それぞれの色に対応する数字を使って正しいドラム音を再生できますか？
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow
-
-\--- /hint \---
-
-\--- hint \---
-
-Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 1 = 赤
++ 2 = 青
++ 3 = 緑
++ 4 = 黄
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is the code you will need to add:
+`シーケンスの1番目を削除`{:class="block3variables"} ブロックの上に 、`シーケンス`{:class=" block3variables "} リストの最初の音を再生する`ドラムを鳴らす`{:class="block3sound "} ブロックを追加します。
+
+\--- /hint \---
+
+\--- hint \---
+
+追加する必要があるコードは次のとおりです。
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
-else
-say [Game over!] for (1) seconds
-stop [all v]
+[赤 v] を受け取ったとき
+もし <([シーケンス v] の (1 v) 番目) = [1]> なら 
+  + ((1) スネアドラム v) のドラムを (0.25) 拍鳴らす
+  [シーケンス v] の (1 v) 番目を削除する
+でなければ 
+  [ゲームオーバー!] と (1) 秒言う
+   [すべてを止める v]
 end
 ```
 
@@ -103,48 +102,48 @@ end
 
 \--- task \---
 
-Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
+キャラクタースプライトが`赤`{:class="block3events"} メッセージに応答するようにするために使用したコードを複製します。 複製したコードを変更して、`青`{:class="block3events"} メッセージを送信するようにします。
 
 \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+スプライトが`青`{:class="block3events"} メッセージに応答するとき、コードのどの部分が同じままで、どの部分が変わる必要がありますか？ 各色には対応する番号があることに注意してください。
 
 \--- task \---
 
-Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+キャラクターが `青`{:class="block3events"} メッセージに正しく反応するように、キャラクタースプライトのコードを変更してください。
 
 \--- hints \---
 
 \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+これらのブロックを使いますが、すこし変更する必要があります。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<([シーケンス v] の (1 v) 番目) = [1]>
 
-when I receive [red v]
+[赤 v] を受け取ったとき
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+((1) スネアドラム v) のドラムを (0.25) 拍鳴らす
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+次が `青`{:class="block3events"}を送るのためのコードです。
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    stop [all v]
+[青 v] を受け取ったとき
+もし <([シーケンス v] の (1 v) 番目) = [2]> なら 
+  ((2) バスドラム v) のドラムを (0.25) 拍鳴らす
+  [シーケンス v] の (1 v) 番目を削除する
+でなければ 
+  [ゲームオーバー!] と (1) 秒言う
+   [すべてを止める v]
 end
 ```
 
@@ -156,30 +155,30 @@ end
 
 \--- task \---
 
-Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
+コードをあと2回複製し(緑と黄のボタン用)、必要な部分を変更して、キャラクタが新しい `を送る`{:class="block3events"} に正しく応答するようにします。
 
 \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+コードをテストすることを忘れないでください。5つの色の順番が記憶されますか？順番は毎回異なりますか？
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+プレーヤーが色の順番をすべて正しく再現すると、`シーケンス`{:class="block3variables"} リストが空となり、プレーヤーが勝利します。 必要に応じて、`シーケンス`{:class="block3variables"} リストが空になったら、ごほうびとしてライトを点滅表示することもできます。
 
 \--- task \---
 
-Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+キャラクターの`フラグがクリックされたとき` {:class = "block3events"}のスクリプトに最後にこのコードを追加します：
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
+    <([シーケンス v] の長さ) = [0]> まで待つ
+(勝ち v) を送って待つ
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Switch to the Stage, and import the `drum machine` sound or another sound you like.
+ステージに切り替えて`ドラムマシン`の音、またはあなたが好きな別の音をインポートします。
 
 [[[generic-scratch3-sound-from-library]]]
 
@@ -187,18 +186,18 @@ Switch to the Stage, and import the `drum machine` sound or another sound you li
 
 \--- task \---
 
-Add this code to play a sound and make the backdrop change colour when the player wins.
+このコードを追加して、プレーヤーが勝ったときにサウンドを再生し、背景の色が変わるようにします。
 
-![ballerina](images/stage.png)
+![バレリーナ](images/stage.png)
 
 ```blocks3
-    when I receive [won v]
-    start sound (drum machine v)
-    repeat (50)
-        change [color v] effect by (25)
-        wait (0.1) seconds
-    end
-    clear graphic effects
+    [勝ち v] を受け取ったとき
+(drum machine v) の音を鳴らす
+(50) 回繰り返す 
+  [color v] の効果を (25) ずつ変える
+  (0.1) 秒待つ
+end
+画像効果をなくす
 ```
 
 \--- /task \---
