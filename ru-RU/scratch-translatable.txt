@@ -1,19 +1,19 @@
-sequence
+последовательность
 
-red
+красный
 
-Game over!
+Игра окончена!
 
-blue
+синий
 
-won
+победа
 
-score
+счёт
 
-high score
+рекорд
 
-name
+имя
 
-What’s your name?
+Как тебя зовут?
 
-High score! What is your name?
+Рекорд! Как тебя зовут?
