@@ -8,7 +8,7 @@
 
 **オンライン**: 新しいオンラインScratchプロジェクトを[rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}で開きます。
 
-**Offline**: 新しいプロジェクトを オフラインエディターで開きます。
+**オフライン**:オフラインエディターで新しいプロジェクトを開きます。
 
 Scratchオフラインエディタをダウンロードしてインストールする必要がある場合は、 [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}で見つけることができます。
 
