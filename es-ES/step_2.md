@@ -6,9 +6,9 @@ Primero crea un personaje que pueda mostrar una secuencia aleatoria de colores.
 
 Abre un nuevo proyecto en Scratch.
 
-**Online:** abre un nuevo proyecto en [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**En línea:** abre un nuevo proyecto en [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline:** abre un nuevo proyecto en el editor offline.
+**Sin conexión:** abre un nuevo proyecto en el editor sin conexión.
 
 Si necesitas descargar e instalar el editor offline de Scratch, puedes encontrarlo en [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
