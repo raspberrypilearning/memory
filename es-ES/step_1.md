@@ -46,7 +46,7 @@ Haz clic en la bandera verde para empezar. Observa la secuencia de colores que m
 
 ### Software
 
-Scratch 3 (ya sea [online](https://rpf.io/scratchon){:target="_blank"} u [offline](https://rpf.io/scratchoff) {:target="_blank"})
+Scratch 3 (ya sea [en línea](https://rpf.io/scratchon) {: target = "_ blank"} o [sin conexión](https://rpf.io/scratchoff) {: target = "_ blank"})
 
 \--- /collapse \---
 
