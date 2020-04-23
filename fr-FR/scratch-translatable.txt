@@ -1,19 +1,19 @@
-sequence
+séquence
 
-red
+rouge
 
-Game over!
+Perdu !
 
-blue
+bleu
 
-won
+gagné
 
 score
 
-high score
+meilleur score
 
-name
+nom
 
-What’s your name?
+Quel est ton nom ?
 
-High score! What is your name?
+Meilleur score ! Quel est ton nom ?
