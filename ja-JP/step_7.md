@@ -5,20 +5,20 @@
 4つのボタンすべてに同じコードが他にもありますか
 
 ```blocks3
-[赤 v] を受け取ったとき
-もし ＜(シーケンス v] の (1 v) 番目) = [1]> なら
-    ((1) スネアドラム v) ドラムを (0.25) 拍鳴らす
-    [シーケンス v] の (1 v) 番目 を削除する
-でなければ
-    ゲームオーバー :: custom
+when I receive [赤 v]
+if <(item (1 v) of [シーケンス v])=[1]> then
+	play drum (\(1\) スネアドラム v) for (0.25) beats
+	delete (1 v) of [シーケンス v]
+else
+	ゲームオーバー :: custom
 end
 
-[青 v] を受け取ったとき
-もし <(シーケンス v] の (1 v) 番目) = [1]> なら
-    ((2) バスドラム v) ドラムを (0.25) 拍鳴らす
-    [シーケンス v] の (1 v) 番目を削除
-でなければ
-    ゲームオーバー :: custom
+when I receive [青 v]
+if <(item (1 v) of [シーケンス v])=[1]> then
+	play drum (\(2\) バスドラム v) for (0.25) beats
+	delete (1 v) of [シーケンス v]
+else
+	ゲームオーバー :: custom
 end
 ```
 

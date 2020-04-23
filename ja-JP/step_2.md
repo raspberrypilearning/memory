@@ -1,4 +1,4 @@
-## カラーシーケンス(色の順番)を作成する
+## カラーシーケンス(色の順番)を作成します
 
 まず、色のばらばらの順番を表示できるキャラクタを作成します。
 
@@ -8,7 +8,7 @@
 
 **オンライン**: 新しいオンラインScratchプロジェクトを[rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}で開きます。
 
-**Offline**: 新しいプロジェクトを オフラインエディターで開きます。
+**オフライン**: 新しいプロジェクトを オフラインエディターで開きます。
 
 Scratchオフラインエディタをダウンロードしてインストールする必要がある場合は、 [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}で見つけることができます。
 
@@ -116,8 +116,8 @@ end
 ![バレリーナ](images/ballerina.png)
 
 ```blocks3
-コスチュームを ([シーケンス v] の ([シーケンス v] の長さ) 番目) にする
-(1) 秒待つ
+switch costume to (item (length of [シーケンス v]) of [シーケンス v])
+wait (1) seconds
 ```
 
 --- /task ---

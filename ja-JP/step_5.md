@@ -63,18 +63,18 @@ end
 ![バレリーナ](images/ballerina.png)
 
 ```blocks3
-⚑ が押されたとき
-[スコア v] を [3] にする
-ずっと 
-  [シーケンス v] の (全て v) 番目を削除する
-  (スコア) 回繰り返す 
-    ((1) から (4) までの乱数) を [シーケンス v] に追加する
-    コスチュームを ([シーケンス v] の ([シーケンス v] の長さ) 番目) にする
-    (1) 秒待つ
-  end
-  <([シーケンス v] の長さ) = [0]> まで待つ
-  (勝ち v) を送って待つ
-  [スコア v] を (1) ずつ変える
+when flag clicked
+set [スコア v] to [3]
+forever
+	delete (全て v) of [シーケンス v]
+	repeat (スコア)
+		add (pick random (1) to (4)) to [シーケンス v]
+		switch costume to (item (length of [シーケンス v]) of [シーケンス v]
+		wait (1) seconds
+	end
+	wait until < (length of [シーケンス v]) = [0]>
+	broadcast (勝ち v) and wait
+	change [スコア v] by (1)
 end
 ```
 

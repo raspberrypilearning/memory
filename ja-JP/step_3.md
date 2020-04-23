@@ -1,4 +1,4 @@
-## 音を追加
+## 音を追加します
 
 --- task ---
 
@@ -36,9 +36,9 @@
 ![バレリーナ](images/ballerina.png)
 
 ```blocks3
-((1) スネアドラム v) のドラムを (0.25) 拍鳴らす
+(\(1\) スネアドラム v) のドラムを (0.25) 拍鳴らす
 
-([シーケンス v] の ([シーケンス v] の長さ) 番目)
+(item (length of [シーケンス v]) of [シーケンス v])
 ```
 
 --- /hint ---
@@ -50,13 +50,13 @@
 ![バレリーナ](images/ballerina.png)
 
 ```blocks3
-⚑ が押されたとき
-[シーケンス v] の (全て v) 番目を削除する
-(5) 回繰り返す 
-  ((1) から (4) までの乱数) を [シーケンス v] に追加する
-  ([シーケンス v] の ([シーケンス v] の長さ) 番目) のドラムを (0.25) 拍鳴らす
-  コスチュームを ([シーケンス v] の ([シーケンス v] の長さ) 番目) にする
-  (1) 秒待つ
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+	add (pick random (1) to (4)) to [sequence v]
+    play drum (item (length of [シーケンス v]) of [シーケンス v]) for (0.25) beats
+    switch costume to (item (length of [シーケンス v]) of [シーケンス v])
+    wait (1) seconds
 end
 ```
 
