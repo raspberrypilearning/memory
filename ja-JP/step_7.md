@@ -1,39 +1,39 @@
-## Challenge: improve your game
+## チャレンジ: ゲームをより良くする
 
-### Make more blocks
+### ブロックをもっと作る
 
-Do you see any other code that is the same for all four buttons?
+4つのボタンすべてに同じコードが他にもありますか
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game Over :: custom
+[赤 v] を受け取ったとき
+もし ＜(シーケンス v] の (1 v) 番目) = [1]> なら
+    ((1) スネアドラム v) ドラムを (0.25) 拍鳴らす
+    [シーケンス v] の (1 v) 番目 を削除する
+でなければ
+    ゲームオーバー :: custom
 end
 
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
+[青 v] を受け取ったとき
+もし <(シーケンス v] の (1 v) 番目) = [1]> なら
+    ((2) バスドラム v) ドラムを (0.25) 拍鳴らす
+    [シーケンス v] の (1 v) 番目を削除
+でなければ
+    ゲームオーバー :: custom
 end
 ```
 
-Can you make another custom block that all buttons can use?
+すべてのボタンが使用できる別のカスタムブロックを作ることができますか？
 
-### Another costume
+### もう一つのコスチューム
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+ゲームが始まるとき、キャラクターが4色のいずれかを表示していること、プレイヤーが色の順番を再現している間、キャラクターは常に順番の最後の色を表示していることがわかりますか？
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+別の白いコスチュームをキャラクターに追加し、ゲームの開始時とプレイヤーが色の順番を再現している間にキャラクターがこのコスチュームを表示するようにコードを追加できますか？
 
-![screenshot](images/colour-white.png)
+![スクリーンショット](images/colour-white.png)
 
-### Difficulty level
+### 難易度
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+プレーヤーが「簡単モード」(赤と青の色のみを使用) と「通常モード」(4色すべてを使用) を選んでゲームをプレイするようにできますか？
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+必要に応じて、5番目のドラムを使用する「難関」モードを追加することもできます。
