@@ -1,33 +1,33 @@
-## Multiple levels
+## 複数のレベル
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+これまでのところ、プレーヤーは5つの色の順番を覚えるだけです。 スコアを追加し、プレーヤーがポイントを獲得したときにゲームが次のレベルに移動し、記憶する色の順番が長くなるようにコードを追加して、ゲームを向上させましょう。
 
 \--- task \---
 
-Create a new variable called `score`{:class="block3variables"}.
+`スコア`{:class="block3variables"}という名前の新しい変数を作成します。
 
 [[[generic-scratch3-add-variable]]]
 
 \--- /task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+`スコア`{:class="block3variables"}に基づいて、ゲームは色の順番の長さを決定します。スコア(および色の順番の長さ) `3`から始めます。
 
 \--- task \---
 
-Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+キャラクターの`フラグが押されたとき`{:class="block3events"}のコードの先頭に `スコア`{:class="block3variables"}を `3` にセットするブロックを追加します。
 
 \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+常に5つの色の順番を作成するのではなく、色の順番の長さを決めるのに `スコア`{:class="block3variables"}が必要になります。
 
 \--- task \---
 
-Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+(色の順番を作成するための)キャラクターの `繰り返し`{:class="block3control"}ループを `スコア`{:class="block3variables"}回繰り返すように変更します。
 
-![sprite](images/ballerina.png)
+![スプライト](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables)
+(スコア :: variables) 回繰り返す
 end
 ```
 
@@ -35,19 +35,19 @@ end
 
 \--- task \---
 
-If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+もしプレーヤーが正しい色の順番を再現したら、 `スコア`{:class="block3variables"}に `1` を追加します。これを行うと、次の回の色の順番が長くなります。 キャラクターのコードの **色の順番が正しく再現されたことが確認できるところに** 次のブロックを追加します:
 
-![sprite](images/ballerina.png)
+![スプライト](images/ballerina.png)
 
 ```blocks3
-change [score v] by (1)
+[スコア v] を (1) ずつ変える
 ```
 
 \--- hints \---
 
 \--- hint \---
 
-You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+色の順番が正しいことは、ゲームが'勝ち'メッセージ `を送る`{:class="block3events"}ことから知ることができます。
 
 \--- /hint \---
 
@@ -57,23 +57,23 @@ You know the sequence is correct at the point when the game `broadcasts`{:class=
 
 \--- task \---
 
-Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+最後に、色の順番を生成するコード全体に `ずっと`{:class="block3control"}ループを追加して、ゲームがレベルごとに新しい色の順番を作成するようにします。 キャラクターのコードは次のようになります:
 
-![ballerina](images/ballerina.png)
+![バレリーナ](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of [sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
+⚑ が押されたとき
+[スコア v] を [3] にする
+ずっと 
+  [シーケンス v] の (全て v) 番目を削除する
+  (スコア) 回繰り返す 
+    ((1) から (4) までの乱数) を [シーケンス v] に追加する
+    コスチュームを ([シーケンス v] の ([シーケンス v] の長さ) 番目) にする
+    (1) 秒待つ
+  end
+  <([シーケンス v] の長さ) = [0]> まで待つ
+  (勝ち v) を送って待つ
+  [スコア v] を (1) ずつ変える
 end
 ```
 
@@ -81,6 +81,6 @@ end
 
 \--- task \---
 
-Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+友達にゲームを試してもらいましょう。始める前に、 `シーケンス`{:class="block3variables"}リストを隠すことを忘れないでください。
 
 \--- /task \---
