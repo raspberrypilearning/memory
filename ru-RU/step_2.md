@@ -1,61 +1,61 @@
-## Create a colour sequence
+## Создай последовательность цветов
 
-First create a character that can display a random sequence of colours.
+Сначала создай персонажа, который сможет отображать случайную последовательность цветов.
 
 \--- task \---
 
-Open a new Scratch project.
+Открой новый проект Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**Онлайн**: открой новый онлайн проект Scratch [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline**: open a new project in the offline editor.
+**Оффлайн**: Создай новый проект в оффлайн редакторе.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+Если тебе нужно скачать и установить оффлайн редактор Scratch, ты можешь найти его по адресу [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
 \--- task \---
 
-Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+Выбери спрайт и фон персонажа. Ты можешь использовать балерину, но твой персонаж не обязательно должен быть человеком, а только способный показывать разные цвета.
 
 ![screenshot](images/colour-sprite.png)
 
 \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ Используй в игре разные числа для каждого цвета:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = красный
+    + 2 = синий
+    + 3 = зеленый
+    + 4 = желтый
 
 \--- task \---
 
-Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+Добавь своему персонажу четыре костюма разных цветов, по одному на каждый из четырех цветов, указанных раньше. Убедись, что твои цветные костюмы находятся в том же порядке, что и список.
 
 ![screenshot](images/colour-costume.png)
 
 \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Если хочешь, можешь использовать инструмент **заливка** для заливки частей костюма другим цветом.
 
 ![color-a-shape](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Затем добавь список для хранения случайной последовательности цветов, которую игрок должен запомнить.
 
 \--- task \---
 
-Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+Create a list called `sequence`{:class="block3variables"}. Только спрайту персонажа нужно видеть этот список, поэтому ты можешь выбрать **Только для этого спрайта** при создании списка.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Теперь ты видишь много новых блоков кода для списков. Пустой список должен быть виден в верхнем левом углу Cцены.
 
 ![screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Каждый цвет имеет свой номер, поэтому ты можешь выбрать случайный цвет, случайным образом выбрав номер и добавив его в список.
 
 \--- task \---
 
