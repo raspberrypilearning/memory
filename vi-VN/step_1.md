@@ -1,14 +1,14 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+这个项目是基于**Scratch 3**版本的，另外还有一个基于[Scratch 2的版本](https://projects.raspberrypi.org/en/projects/memory-scratch2)。
 
 \--- /no-print \---
 
-## Introduction
+## 介绍
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+你将在本项目中创建一个记忆游戏，在游戏中，你必须记住并重复随机的颜色序列！
 
-### What you will make
+### 你将制作
 
 \--- no-print \---
 
@@ -28,23 +28,23 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: 你将学到什么
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ 如何为Scratch项目添加声音
++ 如何创建和使用列表来存储数据
++ 如何创建和使用自定义块来重复代码
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: 你需要准备什么
 
-### Hardware
+### 硬件
 
-+ A computer capable of running Scratch 3
++ 一台能够运行Scratch 3的电脑
 
-### Software
+### 软件
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
@@ -52,7 +52,7 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: 教师附加信息
 
 \--- no-print \---
 
