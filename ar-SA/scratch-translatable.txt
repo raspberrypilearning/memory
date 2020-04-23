@@ -1,19 +1,19 @@
-sequence
+متسلسلة
 
-red
+أحمر
 
-Game over!
+انتهت اللعبة!
 
-blue
+أزرق
 
-won
+فوز
 
-score
+النتيجة
 
-high score
+أعلى نتيجة
 
-name
+الاسم
 
-What’s your name?
+ما هو إسمك؟
 
-High score! What is your name?
+أعلى نتيجة! ما أسمك؟
