@@ -64,17 +64,18 @@ Así es como debe verse tu código al presionar el botón rojo:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-al recibir [rojo v]
-si <(elemento (1 v) de [secuencia v])=[1]> entonces 
-toca tambor (elemento (1 v) de [secuencia v]) durante (0.25) tiempos  eliminar (1 v) de [secuencia v]
-si no
-decir [¡Fin del juego!] por (1) segundos
-si < (puntos:: variables) > (mejor resultado) > entonces
-dar a [mejor resultado v] el valor (puntos :: variables)
-preguntar [¡Mejor Resultado! ¿Cuál es tu nombre?] y esperar
-dar a  [nombre v] el valor (respuesta)
-end
-detener [todos v]
+when I receive [rojo v]
+if <(item (1 v) of [secuencia v])=[1]> then
+	play drum (item (1 v) of [secuencia v]) for (0.25) beats
+	delete (1 v) of [secuencia v]
+else
+	say [¡Fin del juego!] for (1) seconds
+	if < (puntos :: variables) > (mejor resultado) > then
+		set [mejor resultado v] to (puntos :: variables)
+		ask [¡Mejor resultado! ¿Cuál es tu nombre?] and wait
+		set [nombre v] to (respuesta)
+	end
+	stop [todos v]
 end
 ```
 
@@ -92,13 +93,12 @@ end
 
 ```blocks3
 decir [¡Fin del juego!] por (1) segundos
-si < (puntos :: variables) > (mayor resultado) > entonces
-dar a [mayor resultado v] el valor (puntos :: variables)
-preguntar [¡Mayor resultado! ¿Cuál es tu nombre?] y esperar
+si < (puntos :: variables) > (mejor resultado) > entonces
+dar a [mejor resultado v] el valor (puntos :: variables)
+preguntar [¡Mejor resultado! ¿Cuál es tu nombre?] y esperar
 dar a [nombre v] el valor  (respuesta)
 end
 detener [todos v]
-end
 ```
 
 Si necesitas cambiar cualquiera de los códigos de 'Fin del juego', por ejemplo para agregar un sonido o cambiar el mensaje '¡Fin del juego!', tienes que cambiarlo cuatro veces. Eso es molesto y lleva mucho tiempo.
@@ -120,9 +120,9 @@ Añade el código del bloque `si no`{:class="block3control"} conectado al enviar
 ```blocks3
 definir Fin del juego
 decir [¡Fin del juego!] durante (1) segundos
-si < (puntos :: variables) >  (mayor resultados) > entonces
-dar a [mayor resultados v] el valor (puntos :: variables)
-preguntar [¡Mayor resultado! ¿Cuál es tu nombre?] y esperar
+si < (puntos :: variables) >  (mejor resultado) > entonces
+dar a [mejor resultado v] el valor (puntos :: variables)
+preguntar [¡Mejor resultado! ¿Cuál es tu nombre?] y esperar
 dar a [nombre v] el valor (respuesta)
 end
 detener [todos v]
@@ -137,12 +137,12 @@ Ahora quita el código del bloque `si no`{:class="block3control"} conectado al e
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-al recibir [rojo v]
-si <(elemento (1 v) de [secuencia v])=[1]> entonces 
-tocar tambor ((1) Caja v) durante (0.25) tiempo
-eliminar (1 v) de [secuencia v]
-si no 
-Fin del juego :: custom
+when I receive [rojo v]
+if <(item (1 v) of [secuencia v])=[1]> then
+	play drum (\(1\) Caja v) for (0.25) beats
+	delete (1 v) of [secuencia v]
+else
+	Fin del juego:: custom
 end
 ```
 
@@ -165,7 +165,7 @@ Reemplaza también el código del bloque `si no`{:class="block3control"} conecta
 ```blocks3
 al recibir [azul v]
 si < (elemento (1 v) de [secuencia v]) = [1] > entonces
-tocar tambor ((2) Bombo v) durante (0.25) tiempos
+tocar tambor (\(2\) Bombo v) durante (0.25) tiempos
 eliminar (1 v) de [secuencia v]
 si no 
 Fin del juego :: custom
@@ -184,14 +184,13 @@ Ahora añade un sonido que suene cuando se presiona el botón equivocado. ¡Sól
 definir Fin del juego
 iniciar sonido [Cough1 v]
 decir [¡Fin del juego!] durante (1) segundos
-si < (puntos :: variables) > (mayor resultado) > entonces 
+si < (puntos :: variables) > (mejor resultado) > entonces 
 iniciar sonido (trumpet1 v)
-dar a [mayor resultado v] el valor (puntos)
+dar a [mejor resultado v] el valor (puntos)
 preguntar [¡Mejor resultado! ¿Cuál es tu nombre?] y esperar
 dar a [nombre v] el valor (respuesta)
 end
 detener [todos v]
-end
 ```
 
 --- /task ---

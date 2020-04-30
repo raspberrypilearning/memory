@@ -64,7 +64,7 @@ Añade este código al personaje para elegir un número aleatorio y añadirlo a 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-al hacer clic en bandera verde
+when green flag clicked
 añadir (número aleatorio entre (1) y (4)) a [secuencia v]
 ```
 
@@ -97,7 +97,7 @@ Así es como debería verse tu código:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-al hacer clic en bandera verde
+when green flag clicked
 eliminar (todos v) de [secuencia v]
 repetir (5) 
 añadir (número aleatorio entre (1) y (4)) a [secuencia v]

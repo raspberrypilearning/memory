@@ -64,7 +64,7 @@ Finalmente, añade un bucle `por siempre`{:class="block3control"} al código que
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-al hacer clic en bandera verde
+when green flag clicked
 dar a [puntos v] el valor [3]
 por siempre
 eliminar (todos v) de [secuencia v]

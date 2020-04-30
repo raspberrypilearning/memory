@@ -51,7 +51,7 @@ Así es como debería verse tu código terminado:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-al hacer clic en bandera
+when green flag clicked
 eliminar (todos v) de [secuencia v]
 repetir (5)
 Añadir (número aleatorio entre (1) y (4)) a [secuencia v]

@@ -7,7 +7,7 @@
 ```blocks3
 al recibir [rojo v]
 si <(elemento (1 v) de [secuencia v]) =[1]> entonces
-    tocar tambor (\ (1 \) Caja v) durante (0.25) tiempos
+    tocar tambor (\(1\) Caja v) durante (0.25) tiempos
     eliminar (1 v) de [secuencia v]
 si no
     Fin del juego :: custom
@@ -15,7 +15,7 @@ end
 
 al recibir [azul v]
 si <(elemento (1 v) de [secuencia v]) =[1]> entonces
-    tocar tambor (\ (2 \) Bombo v) durante (0.25) tiempos
+    tocar tambor (\(2\) Bombo v) durante (0.25) tiempos
     eliminar (1 v) de [secuencia v]
 si no
     Fin del juego :: custom

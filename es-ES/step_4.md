@@ -20,8 +20,8 @@ Añade código al sprite rojo para que, cuando sea pulsado, `envíe`{:class="blo
 ![red-drum](images/red_drum.png)
 
 ```blocks3
-    cuando  haces clic en este objeto
-enviar (rojo v)
+    when this sprite clicked
+    enviar (rojo v)
 ```
 
 --- /task ---
@@ -38,7 +38,7 @@ Añade código similar a los sprites (objetos) azul, verde y amarillo para hacer
 
 --- task ---
 
-Cuando el sprite de tu personaje recibe el mensaje `rojo`{:class="block3events"}, el código debería verificar si el número `1` está al comienzo de la lista `secuencia`{:class="block3variables"} (lo que significa que `rojo` es el siguiente color en la secuencia).
+Cuando el sprite de tu personaje recibe el mensaje `rojo`{:class="block3events"}, el código debería verificar si el número `1` está al comienzo de la lista `secuencia`{:class="block3variables"} (lo que significa que `rojo`{:class="block3events"} es el siguiente color en la secuencia).
 
 Si `1` está al comienzo de la lista, el código debe eliminar el número de la lista, porque el jugador recordó el color correcto. De lo contrario, se acaba el juego, y el código debe `detener todos`{:class="block3control"} para finalizar el juego.
 
@@ -169,7 +169,7 @@ Cuando el jugador repite toda la secuencia de colores correctamente, la lista `s
 
 --- task ---
 
-Agrega este código al final de tu personaje `cuando haga clic en la bandera`{:class="blockevents"} secuencia de comandos:
+Agrega este código al final de tu personaje `cuando haga clic en la bandera`{:class="block3events"} secuencia de comandos:
 
 ![ballerina](images/ballerina.png)
 
