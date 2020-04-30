@@ -1,16 +1,16 @@
-## Add sound
+## Добавление звука
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Проверь свой проект несколько раз. Ты замечал, что иногда одно и то же число попадается два (или больше) раза подряд, из-за чего список сложнее запомнить?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Можешь ли ты сделать так, чтобы звук барабана воспроизводился каждый раз, когда персонаж спрайта меняет костюм? А как насчет разных звуков барабана для каждого цвета?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Добавь расширение "Музыка" в свой проект, чтобы ты мог использовать блок `играть барабан`{:class="block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,45 +18,45 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Код, который воспроизводит барабан **очень** похож на код, который меняет костюм персонажа.
 
 \--- hints \---
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+Вам нужно только добавить два блока: блок `играть барабан (0,25) бита`{:class="block3sound"} и блок `(длина списка) в список`{:class="block3variables"}.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+Вот блоки, которые тебе понадобятся:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
+барабану играть ((1) ведущий барабан v) (0.25) бита
 
-(item (length of [sequence v]) of [sequence v])
+(элемент (длина списка [список v]) в [список v])
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is how your finished code should look:
+Вот как должен выглядеть твой код:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-delete (all v) of [sequence v]
-repeat (5)
-    add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
-    wait (1) seconds
-end
+когда флаг нажат
+удалить (все v) из [список v]
+повторить (5) раз 
+  добавить (выдать случайное от (1) до (4)) к [список v]
+  барабану играть (элемент (длина списка [список v]) в [список v]) (0.25) бита
+  изменить костюм на (элемент (длина списка [список v]) в [список v])
+  ждать (1) секунд
+конец
 ```
 
 \--- /hint \---
