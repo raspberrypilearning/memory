@@ -1,46 +1,86 @@
-## De multiples niveaux
+## Multiples niveaux
 
-Jusqu'à maintenant, le joueur n'a qu'à se souvenir de 5 couleurs. Nous allons donc améliorer notre jeu en rendant la séquence plus longue.
+Jusqu'à présent, le joueur n'a qu'à se souvenir d'une séquence de cinq couleurs. Améliore ton jeu en ajoutant un score, et du code pour que le joueur marque des points. Le jeu passe au niveau suivant et la séquence de couleurs à retenir devient plus longue.
 
-+ Créez une nouvelle variable nommée `pointage`{:class="blockdata"}.
+--- task ---
 
-	![capture d'écran](images/colour-score.png)
+Crée une nouvelle variable appelée `score`{:class="block3variables"}.
 
-+ Ce `pointage`{:class="blockdata"} sera utilisé pour déterminer la longueur de la séquence que le joueur doit mémoriser. Pour commencer, le pointage (et la taille de la séquence) sera de 3. Ajoutez ce bloc de code au début du code `quand ⚑ cliqué`{:class="blockevents"} de votre personnage :
+[[[generic-scratch3-add-variable]]]
 
-	```blocks
-		mettre [pointage v] à [3]
-	```
+--- /task ---
 
-+ Au lieu de toujours créer une séquence de 5 couleurs, vous voulez avoir un `pointage`{:class="blockdata"} qui détermine la longueur de la séquence. Changez la boucle `répéter`{:class="blockcontrol"} de votre personnage (pour créer la séquence) en :
+Basé sur le `score`{:class="block3variables"}, le jeu décidera de la longueur de la séquence de couleurs. Commence par un score (et une longueur de séquence) de `3`.
 
-	```blocks
-    répéter (pointage) fois
-    fin
-	```
+--- task ---
 
-+ Si la séquence a été identifiée correctement, vous devez ajouter 1 au pointage afin d'augmenter la longueur de la séquence.
+Ajoute un bloc au début du code de ton personnage ` quand le drapeau est cliqué`{:class="block3events"} pour définir le `score`{:class="block3variables"} à `3`.
 
-	```blocks
-		ajouter à [pointage v] (1)
-	```
+--- /task ---
 
-+ Enfin, vous aurez besoin d'ajouter une boucle `répéter indéfiniment`{:class="blockcontrol"} autour du code qui génère la séquence afin de créer une nouvelle séquence pour chaque niveau. Le code de votre lutin devrait apparaître comme suit :
+Au lieu de toujours créer une séquence de cinq couleurs, tu veux maintenant que le `score`{:class="block3variables"} détermine la longueur de la séquence.
 
-	```blocks
-    quand le drapeau vert pressé
-    mettre [pointage v] à [3]
-    répéter indéfiniment
-       supprimer l'élément (tout v) de la liste [séquence v]
-       répéter (pointage) fois
-          ajouter (nombre aléatoire entre (1) et (4)) à [séquence v]
-          basculer sur le costume (élément (dernier v) de [séquence v] :: list)
-          attendre (1) secondes
-       fin
-       attendre jusqu’à <(longueur de [séquence v]) = [0]>
-       envoyer à tous [gagné v] et attendre
-       ajouter à [pointage v] (1)
-    fin
-	```
+--- task ---
 
-+ Demandez à vos amis de tester votre jeu. Pensez à cacher la liste `séquence`{:class="blockdata"} avant de lancer le jeu!
+Change la boucle `répéter (5) fois`{:class="block3control"} du personnage (pour créer la séquence de couleur) pour répéter `score`{:class="block3variables"} fois :
+
+![sprites](images/ballerina.png)
+
+```blocks3
+repeat (score :: variables)
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Si le joueur répète la séquence correcte, tu devras ajouter `1` à `score`{:class="block3variables"}, ce qui augmente la longueur de la séquence suivante. Ajoute le bloc suivant au code du personnage **au moment où tu sais que la séquence est correcte**:
+
+![sprites](images/ballerina.png)
+
+```blocks3
+change [score v] by (1)
+```
+
+--- hints ---
+
+--- hint ---
+
+Tu sais que la séquence est correcte au moment où le jeu `envoie`{:class="block3events"} le message « gagné ».
+
+--- /hint ---
+
+--- /hints ---
+
+--- /task ---
+
+--- task ---
+
+Enfin, ajoute une boucle `répéter indéfiniment`{:class="block3control"} autour du code qui génère la séquence, de sorte que le jeu crée une nouvelle séquence de couleurs pour chaque niveau. Voici à quoi le code de ton personnage pourrait ressembler :
+
+![ballerine](images/ballerina.png)
+
+```blocks3
+when flag clicked
+set [score v] to [3]
+forever
+	delete (all v) of [sequence v]
+	repeat (score)
+		add (pick random (1) to (4)) to [sequence v]
+		switch costume to (item (length of [sequence v]) of [sequence v]
+		wait (1) seconds
+	end
+	wait until < (length of [sequence v]) = [0]>
+	broadcast (gagné v) and wait
+	change [score v] by (1)
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Amène tes amis à tester ton jeu. N'oublie pas de cacher la liste `séquence`{:class="block3variables"} avant de jouer !
+
+--- /task ---

@@ -1,42 +1,122 @@
-## Colori a caso
+## Crea una sequenza di colori
 
-Per prima cosa, creiamo un personaggio che può cambiare in una sequenza di colori che il giocatore deve memorizzare.
+Prima crea un personaggio con il quale visualizzare una sequenza casuale di colori.
 
-+ Inizia un nuovo progetto Scratch, e cancella lo sprite del gatto così che il tuo progetto sia vuoto. Puoi trovare l'editore Scratch online a <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a>.
+--- task ---
 
-+ Scegli un personaggio e uno scenario. Il tuo personaggio non deve essere una persona, ma deve essere in grado di mostrare colori diversi.
+Inizia un nuovo progetto Scratch.
 
-	![screenshot](images/colour-sprite.png)
+**Online:** apri un nuovo progetto Scratch online su [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-+ Nel tuo gioco, userai un numero diverso per rappresentare ciascun colore.
+**Offline**: apri un nuovo progetto nell'editor offline.
 
-	+ 1 = rosso;
-	+ 2 = blu;
-	+ 3 = verde;
-	+ 4 = giallo;
+Se hai bisogno di scaricare ed installare l'editor Scratch offline, puoi trovarlo su [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
-	Dai al tuo personaggio 4 costumi colorati diversi, uno per ciascuno dei 4 colori qui sopra. Assicurati che i tuoi costumi colorati siano nell'ordine giusto.
+--- /task ---
 
-	![screenshot](images/colour-costume.png)
+--- task ---
 
-+ Per creare una sequenza a caso, dovrai creare una __lista__. Una lista è solo una variabile che immagazzina tanti dati __in ordine__. Crea una nuova lista chiamata `sequenza`{:class="blockdata"}. Dato che solo il tuo personaggio ha bisogno di vedere la lista, possiamo anche cliccare 'Solo per questo sprite'.
+Scegli uno sprite come personaggio e uno sfondo. Potresti usare la ballerina, ma il tuo personaggio non deve essere necessariamente una persona, deve solo essere in grado di mostrare colori diversi.
 
-	![screenshot](images/colour-list.png)
+![screenshot](images/colour-sprite.png)
 
-	Ora vedrai la tua lista vuota in alto a sinistra del quadro, così come tanti nuovi blocchi per usare le liste.
+--- /task ---
 
-	![screenshot](images/colour-list-blocks.png)
++ Il tuo gioco userà un numero diverso per rappresentare ciascun colore:
+    
+    + 1 = rosso
+    + 2 = blu
+    + 3 = verde
+    + 4 = giallo
 
-+ Aggiungi questo codice al tuo personaggio per aggiungere un numero a caso alla tua lista (e mostrare il costume corretto) 5 volte:
+--- task ---
 
-	```blocks
-		quando si clicca sulla bandiera verde
-		cancella (tutto v) da [sequenza v]
-		ripeti (5) volte
-  			aggiungi (numero a caso tra (1) e (4)) a [sequenza v]
-  			passa al costume (elemento (last v) di [sequenza v] :: list)
-  			attendi (1) secondi
-		end
-	```
+Attribuisci quattro costumi colorati diversi al tuo personaggio, uno per ciascuno dei quattro colori citati prima. Assicurati che i tuoi costumi colorati siano nello stesso ordine della lista definita prima.
 
-	Nota che hai innanzitutto svuotato la lista.
+![schermata](images/colour-costume.png)
+
+--- /task ---
+
+Se lo desideri, puoi utilizzare lo strumento **colora una forma** per riempire parti del costume con un colore diverso.
+
+![colora-una-forma](images/color-a-shape.png)
+
+Quindi, aggiungi un elenco per memorizzare la sequenza casuale di colori che il giocatore deve ricordare.
+
+--- task ---
+
+Crea una lista chiamata `sequenza`{:class="block3variables"}. Solo lo sprite del personaggio deve vedere questa lista, quindi puoi selezionare **Solo per questo sprite** quando crei la lista.
+
+[[[generic-scratch3-make-list]]]
+
+--- /task ---
+
+Ora dovresti vedere molti nuovi blocchi di codice per l'utilizzo delle liste. La lista vuota dovrebbe essere visibile nell'angolo in alto a sinistra dello stage.
+
+![schermata](images/colour-list-blocks-annotated.png)
+
+Ogni colore ha un numero diverso, quindi puoi scegliere un colore casuale scegliendo casualmente un numero e aggiungendolo all'elenco.
+
+--- task ---
+
+Aggiungi questo codice allo sprite del personaggio per scegliere un numero casuale e aggiungerlo alla lista `sequenza`{:class="block3variables"}:
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
+```
+
+--- /task ---
+
+--- task ---
+
+Verifica il tuo codice. Controlla che, ogni volta che fai clic sulla bandiera, un numero casuale compreso tra 1 e 4 venga aggiunto all'elenco.
+
+--- /task ---
+
+--- task ---
+
+Puoi aggiungere codice al tuo programma per generare cinque numeri casuali in una volta sola?
+
+--- hints ---
+
+--- hint ---
+
+Aggiungi `cancella tutto da sequenza`{:class="block3variables"} per eliminare prima tutti gli elementi nella lista, quindi aggiungi un `ripeti`{:class="block3control"} per aggiunge cinque numeri casuali all'elenco.
+
+--- /hint ---
+
+--- hint ---
+
+Ecco cosa dovresti ottenere:
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+	add (pick random (1) to (4)) to [sequence v]
+end
+```
+
+--- /hint ---
+
+--- /hints ---
+
+--- /task ---
+
+--- task ---
+
+Ogni volta che un numero viene aggiunto alla lista, il personaggio dovrebbe cambiare il suo costume in modo che il colore del costume corrisponda al numero estratto. Metti questi blocchi nel tuo codice immediatamente sotto al comando che aggiunge un numero casuale alla lista `sequenza`{:class="block3variables"}:
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+switch costume to (item (length of [sequence v]) of [sequence v])
+wait (1) seconds
+```
+
+--- /task ---

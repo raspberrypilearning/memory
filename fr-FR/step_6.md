@@ -1,44 +1,194 @@
-## Meilleur pointage
+## Meilleur score
 
-Ajoutons la possibilité d'enregistrer le meilleur pointage afin de pouvoir jouer contre vos amis.
+Maintenant sauvegarde le meilleur score pour pouvoir jouer contre tes amis.
 
-+ Ajoutez 2 nouvelles variables à votre projet nommées `meilleur pointage`{:class="blockdata"} et `meilleur joueur`{:class="blockdata"}.
+--- task ---
 
-+ Si jamais le jeu s'arrête (en appuyant sur le mauvais bouton), vous aurez besoin de vérifier si le pointage du joueur est plus grand que le meilleur pointage actuel. Si c'est le cas, vous devez enregistrer le pointage comme le nouveau meilleur pointage et enregistrer le nom du joueur. Voici à quoi devrait correspondre votre bouton rouge :
+Ajoute deux nouvelles variables appelées `meilleur score`{:class="block3variables"} et `nom`{:class="block3variables"} à ton projet.
 
-	```blocks
-    quand je reçois [rouge v]
-    si <(élément (1 v) de [séquence v]) = [1]> alors
-       supprimer l'élément (1 v) de la liste [séquence v]
-    sinon
-       dire [Partie terminée!] pendant (1) secondes
-       si <(pointage) > (meilleur pointage)> alors
-          mettre [meilleur pointage v] à (pointage)
-          demander [Meilleur pointage! Quel est ton nom?] et attendre
-          mettre [meilleur joueur v] à (réponse)
-       fin
-       stop [tout v]
-    fin
-	```
+--- /task ---
 
-+ Vous aurez besoin d'ajouter ce nouveau code aux 3 autres boutons aussi! Avez-vous remarqué que le code 'Partie terminée' est identique pour chacun des 4 boutons?
+Lorsque le jeu se termine parce que le joueur donne une mauvaise séquence, le jeu doit vérifier si le score est supérieur au meilleur score actuel. Si c'est le cas, le jeu devrait enregistrer le score comme le meilleur score, et aussi stocker le nom du joueur.
 
-	![capture d'écran](images/colour-same.png)
+--- task ---
 
-+ Si jamais vous changez une partie du code, comme pour ajouter un son ou changer le message 'Partie terminée!', vous allez devoir le changer 4 fois! Ça devient embêtant et vous perdez beaucoup de temps.
+Ajoute du code à ton sprite personnage pour stocker le `meilleur score`{:class="block3variables"}. Demande également le nom du joueur, et stocke-le dans la variable `nom`{:class="block3variables"}.
 
-	À la place, vous pouvez définir vos propres blocs afin de les réutiliser dans votre projet! Pour faire cela, cliquez `Ajouter blocs`{:class="blockmoreblocks"} et puis sur 'Créer un bloc'. Nommez ce nouveau bloc 'Partie terminée'.
+[[[generic-scratch3-high-score]]]
 
-	![capture d'écran](images/colour-more.png)
+--- hints ---
 
-+ Ajoutez le code du bloc `sinon`{:class="blockcontrol"} du bouton rouge au nouveau bloc que vous voyez :
+--- hint ---
 
-	![capture d'écran](images/colour-make-block.png)
+Ton nouveau code doit suivre ce modèle :
 
-+ Vous avez maintenant créé une nouvelle _fonction_ appelée `Partie terminée`{:class="blockmoreblocks"} que vous pouvez utiliser où vous voulez. Glissez votre nouveau bloc `Partie terminée`{:class="blockmoreblocks"} vers les 4 scripts pour les boutons.
+Après le message ` perdu` {: class = "block3looks"} ` Si ` {:class="block3control"} le ` score ` {:class="block3variables"} est ` supérieur à ` {:class="block3operators"} le ` meilleur score ` {:class="block3variables"} ` Définir ` {:class="block3variables"} le ` meilleur score ` {:class="block3variables"} au ` score` {:class="block3variables"} ` Demander ` {:class="block3sensing"} le nom du joueur ` mettre ` {:class="block3variables"}` la réponse` {:class="block3sensing"} dans le ` nom ` {:class="block3variables"}
 
-	![capture d'écran](images/colour-use-block.png)
+--- /hint ---
 
-+ Ensuite, ajoutez un son lorsque vous cliquez sur le mauvais bouton. Vous avez juste à ajouter ce code _une fois_ dans le bloc `Partie terminée`{:class="blockmoreblocks"} que vous venez de créer, et non à 4 occasions différentes!
+--- hint ---
 
-	![capture d'écran](images/colour-cough.png)
+Tu as besoin des blocs suivants :
+
+![ballerine](images/ballerina.png)
+
+```blocks3
+if < > then
+end
+
+(score)
+
+(score)
+
+[ ] > [ ]
+
+answer
+
+(meilleur score)
+
+ask [Quel est ton nom ?] and wait
+
+set [meilleur score v] to [ ] 
+
+set [nom v] to [ ] 
+```
+
+--- /hint ---
+
+--- hint ---
+
+Voici à quoi devrait ressembler ton code lorsque le bouton rouge est pressé :
+
+![ballerine](images/ballerina.png)
+
+```blocks3
+when I receive [rouge v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (item (1 v) of [sequence v]) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	say [Perdu!] for (1) seconds
+	if < (score :: variables) > (meilleur score) > then
+		set [meilleur score v] to (score :: variables)
+		ask [meilleur score! Quel est ton nom ?] and wait
+		set [nom v] to (answer)
+	end
+	stop [all v]
+end
+```
+
+--- /hint ---
+
+--- /hints ---
+
+--- /task ---
+
+Tu dois ajouter ce nouveau code au sprite personnage pour les trois autres couleurs aussi !
+
+Peux-tu voir que le code « Perdu » pour chacune des quatre couleurs est exactement le même ?
+
+![ballerine](images/ballerina.png)
+
+```blocks3
+say [Perdu!] for (1) seconds
+if < (score :: variables) > (meilleur score) > then
+	set [meilleur score v] to (score :: variables)
+	ask [meilleur score! Quel est ton nom ?] and wait
+	set [nom v] to (answer)
+end
+stop [all v]
+```
+
+Si tu as besoin de changer l'un des codes « Perdu », par exemple pour ajouter un son ou changer le message « Perdu », tu dois le modifier quatre fois. C'est ennuyeux et on perd beaucoup de temps.
+
+Au lieu de cela, tu peux définir ton propre bloc de code et l'utiliser n'importe où dans ton projet.
+
+--- task ---
+
+Clique sur `Mes blocs`{:class="block3myblocks"}, puis sur **Créer un bloc**. Appelle ce nouveau bloc `perdu`{:class="block3myblocks"}.
+
+--- /task ---
+
+--- task ---
+
+Ajoute le code du bloc `sinon`{:class="block3control"} connecté au bloc `rouge`{:class="block3events"} envoyer à tous au bloc `perdu`{:class="block3myblocks"} pour qu'il ressemble à ceci :
+
+![ballerine](images/ballerina.png)
+
+```blocks3
+define perdu
+say [Perdu!] for (1) seconds
+if < (score :: variables) > (meilleur score) > then
+	set [meilleur score v] to (score :: variables)
+	ask [meilleur score! Quel est ton nom ?] and wait
+	set [nom v] to (answer)
+end
+stop [all v]
+```
+
+--- /task ---
+
+--- task ---
+
+Maintenant, supprime le code qui se trouve dans le bloc `sinon`{:class="block3control"} connecté au programme `rouge`{:class="block3events"} et ajoute le bloc `perdu`{:class="block3myblocks"} à la place :
+
+![ballerine](images/ballerina.png)
+
+```blocks3
+when I receive [rouge v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (\(1\) Snare Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	perdu :: custom
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Teste ton nouveau bloc en jouant au jeu et en cliquant sur le bouton rouge au mauvais point de la séquence de couleurs.
+
+--- /task ---
+
+Ton nouveau bloc `perdu`{:class="block3myblocks"} est une **fonction**, un petit script que tu peux utiliser où tu veux dans ton code en ajoutant le bloc `perdu`{:class="block3myblocks"}.
+
+--- task ---
+
+Remplace également le code dans le bloc `sinon`{:class="block3control"} connecté au bloc `message`{:class="block3events"} pour les autres couleurs avec ton nouveau bloc `perdu`{:class="block3myblocks"}. Voici à quoi devrait ressembler le code pour le message `bleu`{:class="block3events"}
+
+![ballerine](images/ballerina.png)
+
+```blocks3
+when I receive [bleu v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (\(2\) Bass Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	perdu :: custom
+end
+```
+
+--- /task ---
+
+--- task ---
+
+Maintenant, ajoute un son qui joue lorsque le mauvais bouton est enfoncé. Tu n'as besoin d'ajouter ce code qu'une seule fois dans le bloc `perdu`{:class="block3myblocks"} que tu as fait, et non pas quatre fois séparés !
+
+![ballerine](images/ballerina.png)
+
+```blocks3
+define perdu
+start sound [Cough1 v]
+say [Perdu!] for (1) seconds
+if < (score :: variables) > (meilleur score) > then
+	play sound (trumpet1 v)
+	set [meilleur score v] to (score)
+	ask [meilleur score! Quel est ton nom ?] and wait
+	set [nom v] to (answer)
+end
+stop [all v]
+```
+
+--- /task ---

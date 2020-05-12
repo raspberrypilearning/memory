@@ -1,52 +1,206 @@
 ## Ripetere la sequenza
 
-Aggiungiamo 4 tasti che il giocatore può usare per ripetere la sequenza che ricorda.
+Ora stai per aggiungere quattro pulsanti che il giocatore deve premere per ripetere la sequenza di colori.
 
-+ Aggiungi 4 sprite al tuo progetto, che diventeranno tasti. Modifica i tuoi 4 sprite in modo che ce ne sia 1 per ognuno dei 4 colori.
+--- task ---
 
-	![screenshot](images/colour-drums.png)
+Aggiungiamo quattro nuovi sprite al tuo progetto per rappresentare i quattro pulsanti.
 
-+ Quando si clicca il tamburo rosso, dovrai trasmettere un messaggio al tuo personaggio, informandolo che il tasto rosso è stato cliccato. Aggiungi questo codice al tuo tamburo rosso:
++ Modifica il colore ai costumi dei nuovi sprite in modo che ci sia uno sprite corrispondente a ciascuno dei quattro colori
++ Metti gli sprite nello stesso ordine sul palco come i costumi: rosso, blu, verde, giallo
 
-	```blocks
-		quando si clicca questo sprite
-		invia a tutti [rosso v]
-	```
+![schermata](images/colour-drums.png)
 
-+ Quando il tuo personaggio riceve questo messaggio, dovrebbe controllare se il numero 1 è all'inizio della lista (il che significa che il rosso è il prossimo colore nella sequenza). Se lo è, puoi rimuovere il numero dalla lista, in qaunto è stato indovinato correttamente. Altrimenti il gioco è finito!
+--- /task ---
 
-	```blocks
-		quando ricevo [rosso v]
-		se <(item (1 v) of [sequenza v] :: list) = [1]> allora
-  			cancella (1 v) da [sequenza v]
-  		altrimenti
-  			dire [Game over!] per (1) secondi
-  			ferma [tutto v]
-		end
-	```
+--- task ---
 
-+ Puoi anche visualizzare delle luci lampeggianti una volta che la lista è vuota, perché significa che l'intera sequenza è stata indovinata correttamente. Aggiungi questo codice alla fine del testo `quando si clicca sulla bandiera verde`{:class="blockevents"}.
+Aggiungi il codice al sprite rosso in modo che, quando lo sprite viene cliccato, un messaggio "rosso" `viene inviato`{:class="block3events"} allo sprite personaggio:
 
-	```blocks
-		attendi fino a quando <(length of [sequenza v] :: list) = [0]>
-		invia a tutti [won v] e attendi
-	```
+![tamburo-rosso](images/red_drum.png)
 
-+ Clicca sul tuo quadro e aggiungi questo codice per riprodurre __qualsiasi__ suono e fare in modo che lo scenario cambi colore una volta che il giocatore ha vinto.
+```blocks3
+when this sprite clicked
+broadcast (rosso v)
+```
 
-	```blocks
-		quando ricevo [won v]
-		produci suono [drum machine v]
-		ripeti (50) volte
-  			cambia effetto [colore v] di (25)
-  			attendi (0.1) secondi
-		end
-		rimuovi effetti grafici
-	```
+--- /task ---
 
-## Sfida: Crea 4 tasti 
-Ripeti gli stessi passi per i tasti blu, verde e giallo. Quale codice rimane lo stesso e quale cambierà per ciascun tasto?
+L'`invia a tutti`{:class="block3events"} è simile a quei messaggi emessi dagli altoparlanti, che si possono sentire per esempio nelle scuole o nei supermercati. Tutti gli sprite possono ascoltare l'`invia a tutti`{:class="block3events"}, ma solo lo sprite incaricato di rispondere farà qualcosa.
 
-Puoi anche aggiungere dei suoni che si attivano quando si premono i tasti.
+--- task ---
 
-Ricordati di provare il codice che hai aggiunto! Puoi memorizzare una sequenza di 5 colori? La sequenza è ogni volta diversa?
+Aggiungi codice simile al precedente anche agli sprite blu, verde e giallo per far `inviare a tutti`{:class="block3events"} il numero del proprio colore.
+
+--- /task ---
+
+Ti ricordi che l'`invia a tutti`{:class="block3events"} è come un messaggio di un altoparlante? Aggiungerai del codice per assicurarti che lo sprite del personaggio reagisca ai messaggi trasmessi tramite l'`invia a tutti`{:class="block3events"}.
+
+--- task ---
+
+Quando il tuo personaggio sprite riceve il messaggio `rosso`{:class="block3events"}, il codice dovrebbe verificare se il numero `1` è all'inizio della lista `sequenza`{:class="block3variables"} (ciò significa che `rosso`{:class="block3events"} è il colore successivo nella sequenza).
+
+Se `1` è all'inizio della lista, il codice rimuoverà il numero dalla lista perché il giocatore ha ricordato il colore corretto. Diversamente sarà game over e un comando `ferma tutto`{:class="block3control"} terminerà il gioco.
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+when I receive [rosso v]
+if <(item (1 v) of [sequence v])=[1]> then
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
+```
+
+--- /task ---
+
+--- task ---
+
+A quanto appena scritto, aggiungi del codice in modo che anche un tamburo suoni, quando lo sprite del personaggio riceve, tramite l'`invia a tutti`{:class="block3events"}, il messaggio corretto.
+
+--- hints ---
+
+--- hint ---
+
+Riesci a usare i numeri che corrispondono ad ogni colore per riprodurre il suono di tamburo corretto?
+
++ 1 = rosso
++ 2 = blu
++ 3 = verde
++ 4 = giallo
+
+--- /hint ---
+
+--- hint ---
+
+Sopra il `cancella 1 da sequenza`{:class="block3variables"}, aggiungi `suona il tamburo`{:class=" block3sound "} per riprodurre il primo suono nell'elenco `sequenza`{:class="block3variables "}.
+
+--- /hint ---
+
+--- hint ---
+
+Ecco il codice che dovrai aggiungere:
+
+```blocks3
+when I receive [rosso v]
+if <(item (1 v) of [sequence v])=[1]> then
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+delete (1 v) of [sequence v]
+else
+say [Game over!] for (1) seconds
+stop [all v]
+end
+```
+
+--- /hint ---
+
+--- /hints ---
+
+--- /task ---
+
+--- task ---
+
+Duplica il codice che hai usato per far rispondere lo sprite personaggio al messaggio `rosso`{:class="block3events"}. Cambia il codice appena copiato in modo che invii il messaggio `blu`{:class="block3events"}.
+
+--- /task ---
+
+Quando lo sprite risponde al messaggio `blu`{:class="block3events"}, quale parte di codice dovresti mantenere e quale cambiare? Ricorda che ad ogni colore corrisponde un numero preciso.
+
+--- task ---
+
+Modifica il codice dello sprite personaggio in modo che il personaggio risponda correttamente al messaggio `blu`{:class="block3events"}.
+
+--- hints ---
+
+--- hint ---
+
+Puoi riciclare questi blocchi, ma devi modificarli in qualche modo:
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+<(item (1 v) of [sequence v]) = [1]>
+
+when I receive [rosso v]
+
+play drum (\(1\) Snare Drum v) for (0.25) beats
+```
+
+--- /hint ---
+
+--- hint ---
+
+Ecco come dovrebbere risultare il codice in risposta all'invio del messaggio`blu`{:class="block3events"}.
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+when I receive [blu v]
+if <(item (1 v) of [sequence v])=[2]> then
+	play drum (\(2\) Bass Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	say [Game over!] for (1) seconds
+	stop [all v]
+end
+```
+
+--- /hint ---
+
+--- /hints ---
+
+--- /task ---
+
+--- task ---
+
+Duplica nuovamente il codice due volte (per i pulsanti verde e giallo) e modifica le parti necessarie in modo che il carattere risponda correttamente ai nuovi messaggi `inviati a tutti`{:class="block3events"}.
+
+--- /task ---
+
+Ricordati di testare il codice! Viene memorizzata una sequenza di cinque colori? La sequenza è diversa ogni volta?
+
+Quando il giocatore ripete correttamente l'intera sequenza di colori, la lista `sequenza`{:class="block3variables"} si svuota e il giocatore vince. Se vuoi, puoi anche mostrare alcune luci lampeggianti come ricompensa una volta che la lista `sequenza`{:class="block3variables"} è vuota.
+
+--- task ---
+
+Aggiungi questo codice alla fine del codice del tuo personaggio che inizia con `quando si clicca sulla bandiera verde`{:class="block3events"}:
+
+![ballerina](images/ballerina.png)
+
+```blocks3
+wait until < (length of [sequence v]) = [0]>
+broadcast (won v) and wait
+
+    attendi fino a quando <(lunghezza di [sequenza v]) = [0]>
+invia a tutti (vinto v) e attendi
+```
+
+--- /task ---
+
+--- task ---
+
+Passa allo Stage e importa il suono `drum machine` o quello che desideri.
+
+[[[generic-scratch3-sound-from-library]]]
+
+--- /task ---
+
+--- task ---
+
+Aggiungi questo codice per riprodurre un suono e fare in modo che lo sfondo cambi colore quando il giocatore vince.
+
+![ballerina](images/stage.png)
+
+```blocks3
+when I receive [vinto v]
+start sound (drum machine v)
+repeat (50)
+	change [color v] effect by (25)
+	wait (0.1) seconds
+end
+clear graphic effects
+```
+
+--- /task ---
