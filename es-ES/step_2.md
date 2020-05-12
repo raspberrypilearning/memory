@@ -16,7 +16,7 @@ Si necesitas descargar e instalar el editor offline de Scratch, puedes encontrar
 
 \--- task \---
 
-Elige un personaje sprite y un escenario. Puedes usar la bailarina, pero tu personaje no tiene que ser una persona, solo necesita poder mostrar diferentes colores.
+Elige un personaje objeto y un escenario. Puedes usar la bailarina, pero tu personaje no tiene que ser una persona, solo necesita poder mostrar diferentes colores.
 
 ![screenshot](images/colour-sprite.png)
 
@@ -31,7 +31,7 @@ Elige un personaje sprite y un escenario. Puedes usar la bailarina, pero tu pers
 
 \--- task \---
 
-Dale a tu personaje cuatro disfraces de diferentes colores, uno para cada uno de los cuatro colores anteriores. Asegúrate de que tus disfraces de colores estén en el mismo orden que la lista anterior.
+Dale a tu personaje cuatro disfraces de diferentes colores, uno para cada uno de los cuatro colores anteriores. Asegúrate que tus disfraces de colores estén en el mismo orden que la lista anterior.
 
 ![screenshot](images/colour-costume.png)
 
@@ -45,7 +45,7 @@ A continuación, añade una lista para almacenar la secuencia aleatoria de color
 
 \--- task \---
 
-Crea una lista llamada `secuencia`{: class = "block3variables"}. Solo el sprite del personaje necesita ver esta lista, por lo que puedes seleccionar **Sólo para este objeto** al crear la lista.
+Crea una lista llamada `secuencia`{: class = "block3variables"}. Solo el objeto del personaje necesita ver esta lista, por lo que puedes seleccionar **Sólo para este objeto** al crear la lista.
 
 [[[generic-scratch3-make-list]]]
 
