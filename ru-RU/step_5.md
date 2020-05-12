@@ -1,53 +1,53 @@
-## Multiple levels
+## Несколько уровней
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+Пока что игрок должен запомнить только последовательность из пяти цветов. Улучши игру, добавив счёт и код, чтобы по мере того, как игрок набирал очки, игра переходила на следующий уровень, а последовательность цветов для запоминания становилась длиннее.
 
 \--- task \---
 
-Create a new variable called `score`{:class="block3variables"}.
+Создай новую переменную с именем `счёт`{:class="block3variables"}.
 
 [[[generic-scratch3-add-variable]]]
 
 \--- /task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+На основе `счёта`{:class="block3variables"}, игра будет определять длину цветовой последовательности. Начни со счёта (и длины последовательности) `3`.
 
 \--- task \---
 
-Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+Добавь блок в начале кода персонажа `когда флаг нажат`{:class="block3events"}, чтобы установить `счёт`{:class="block3variables"} равным `3`.
 
 \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+Вместо того, чтобы всегда создавать последовательность из пяти цветов, теперь переменная `счёт`{:class="block3variables"} определяет длину последовательности.
 
 \--- task \---
 
-Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+Измени цикл персонажа `повторить`{:class="block3control"} (для создания цветовой последовательности) для того, чтобы он повторялся `счёт`{:class="block3variables"} раз:
 
-![sprite](images/ballerina.png)
+![спрайт](images/ballerina.png)
 
 ```blocks3
-repeat (score :: variables)
-end
+повторить (счет :: переменные) раз
+конец
 ```
 
 \--- /task \---
 
 \--- task \---
 
-If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+Если игрок повторяет последовательность правильно, нужно добавить `1` к `cчёт`{:class="block3variables"}, что увеличит длину следующей последовательности. Добавь следующий блок в код персонажа **когда понятно, что последовательность правильная**:
 
-![sprite](images/ballerina.png)
+![спрайт](images/ballerina.png)
 
 ```blocks3
-change [score v] by (1)
+изменить [счёт v] на (1)
 ```
 
 \--- hints \---
 
 \--- hint \---
 
-You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+Ты понимаешь, что последовательность правильная, когда игра начинает `передавать` {:class="block3events"} сообщение "победа".
 
 \--- /hint \---
 
@@ -57,30 +57,30 @@ You know the sequence is correct at the point when the game `broadcasts`{:class=
 
 \--- task \---
 
-Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+Наконец, добавь `бесконечный`{:class="block3control"} цикл для кода, который генерирует последовательность, так чтобы игра создавала новую цветовую последовательность для каждого уровня. Вот как может выглядеть код вашего персонажа:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-set [score v] to [3]
-forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of [sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = [0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
-end
+когда флаг нажат
+задать [счет v] значение [3]
+повторять всегда 
+  удалить (все v) из [последовательность v]
+  повторить (счет) раз 
+    добавить (выдать случайное от (1) до (4)) к [список v]
+    изменить костюм на (элемент (длина списка [последовательность v]) в [последовательность v])
+    ждать (1) секунд
+  конец
+  ждать до <(длина списка [список v]) = [0]>
+  передать (победа v) и ждать до конца
+  изменить [счет v] на (1)
+конец
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+Предложи своим друзьям протестировать твою игру. Не забудь скрыть список `последовательность`{:class="block3variables"}, до того, как они начнут игру!
 
 \--- /task \---
