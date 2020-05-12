@@ -1,10 +1,10 @@
-## What next?
+## Что дальше?
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
+Обрати внимание на проект [Вышибалы](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), где ты сможешь создать игру, в которой нужно будет уворачиваться от мячей, переходя с платформы на платформу.
 
 \--- no-print \---
 
-Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+Нажми на зеленый флажок, чтобы начать, а затем используй клавиши со стрелками для перемещения и <kbd>пробел</kbd>, чтобы прыгать.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -15,6 +15,6 @@ Click the green flag to start, and then use the arrow keys to move and the <kbd>
 
 \--- print-only \---
 
-![dodgeball game being played](images/dodgeball-showcase.png)
+![играть в вышибалы](images/dodgeball-showcase.png)
 
 \--- /print-only \---
