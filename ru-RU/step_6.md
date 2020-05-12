@@ -1,18 +1,18 @@
-## High score
+## Рекорд
 
-Now save the high score so that you can play against your friends.
+Теперь сохраняй рекорд, чтобы ты мог играть против своих друзей.
 
 \--- task \---
 
-Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
+Добавьте две новые переменные `рекорд`{:class="block3variables"} и `имя`{:class="block3variables"} в свой проект.
 
 \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+Когда игра заканчивается из-за того, что игрок выбирает неправильную последовательность, игра должна проверить, является ли счёт выше, чем текущий рекорд. Если это так, игра должна сохранить счёт как рекорд, а также сохранить имя игрока.
 
 \--- task \---
 
-Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+Добавь код к спрайту персонажа, чтобы сохранить `рекорд`{:class="block3variables"}. Также запроси имя игрока и сохрани его в переменной `имя`{:class="block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
@@ -20,61 +20,61 @@ Add code to your character sprite to store the `high score`{:class="block3variab
 
 \--- hint \---
 
-Your new code needs to follow this pattern:
+Для своего нового кода следуй этому шаблону:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+После сообщения `Конец игры`{:class="block3looks"} `если`{:class="block3control"} `счёт`{:class="block3variables"} `больше чем`{:class="block3operators"} `рекорд`{:class="block3variables"} `задать`{:class="block3variables"} `рекорд`{:class="block3variables"} значение `счёт`{:class="block3variables"} `спросить`{:class="block3sensing"} имя игрока `задать`{:class="block3variables"} `имя`{:class="block3variables"} значение `ответ`{:class="block3sensing"}
 
 \--- /hint \---
 
 \--- hint \---
 
-You need the following blocks:
+Тебе нужны следующие блоки:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
-if < > then
-end
+если <> , то
+конец
 
-(score)
+(счёт)
 
-(score)
+(счёт)
 
-[ ] > [ ]
+<[ ] > [ ]>
 
-answer
+(ответ)
 
-(high score)
+(рекорд)
 
-ask [What's your name?] and wait
+спросить [Как тебя зовут?] и ждать
 
-set [high score v] to [ ] 
+задать [рекорд v] значение [ ]
 
-set [name v] to [ ] 
+задать [имя v] значение [ ] 
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Here's how your code for when the red button is pressed should look:
+Твой код для красной кнопки должен выглядеть так:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
-end
+когда я получу [красный v]
+если <(элемент (1 v) в [последовательность v]) = [1]> , то 
+  барабану играть (элемент (1 v) в [список v]) (0.25) бита
+  удалить (1 v) из [последовательность v]
+иначе 
+  говорить [Конец игры!] (1) секунд
+  если <(счёт :: переменные) > (рекорд)> , то 
+    задать [рекорд v] значение (счёт :: переменные)
+    спросить [Рекорд! Как тебя зовут?] и ждать
+    задать [имя v] значение (ответ)
+  конец
+стоп [все v]
+конец
 ```
 
 \--- /hint \---
@@ -83,112 +83,112 @@ end
 
 \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+Добавь этот новый код в спрайт персонажа и для остальных трех цветов!
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+Код «Конец игры» для каждого из четырех цветов одинаков?
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+говорить [Конец игры!] (1) секунд
+если <(счёт :: переменные) > (рекорд)> , то 
+  задать [рекорд v] значение (счёт :: переменные)
+  спросить [Рекорд! Как тебя зовут?] и ждать
+  задать [имя v] значение (ответ)
+конец
+стоп [все v]
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+Если нужно изменить код «Конец игры» - например, добавить звук или изменить сообщение «Конец игры» - тебе нужно будет изменить его четыре раза. Это раздражает и тратиться много времени.
 
-Instead, you can define your own code block, and use it anywhere in your project.
+Вместо этого ты можешь определить свой собственный блок кода и использовать его в любой части своего проекта.
 
 \--- task \---
 
-Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+Нажми на `Мои блоки`{:class="block3myblocks"}, а затем на **Сделать Блок**. Назови этот новый блок `Конец игры`{:class="block3myblocks"}.
 
 \--- /task \---
 
 \--- task \---
 
-Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+Добавь код из блока `иначе`{:class="block3control"}, который связан с передачей `красного`{:class= "block3events"} сообщения в блок `Конец игры`{:class="block3myblocks"}, это должно выглядеть так:
 
-![ballerina](images/ballerina.png)
-
-```blocks3
-define Game over
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
-```
-
-\--- /task \---
-
-\--- task \---
-
-Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
-
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+определить Конец игры
+говорить [Конец игры!] (1) секунд
+если <(счёт :: переменные) > (рекорд)> , то 
+  задать [рекорд v] значение (счёт :: переменные)
+  спросить [Рекорд! Как тебя зовут?] и ждать
+задать [имя v] значение (ответ)
+конец
+стоп [все]
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
+Теперь удали код, который находится в блоке `иначе`{:class="block3control"}, связанным с передачей `красного`{:class="block3events"} сообщения, и добавь вместо этого в блок `Конец игры`{:class="block3myblocks"}:
 
-\--- /task \---
-
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
-
-\--- task \---
-
-Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
-
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
-end
+когда я получу [красный v]
+если <(элемент (1 v) в [последовательность v]) = [1]> , то 
+  барабану играть ((1) Малый барабан v) (0.25) бита
+  удалить (1 v) из [последовательность v]
+иначе 
+  Конец игры :: пользовательский
+конец
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+Проверь свой новый блок, сыграв в игру и нажав на красную кнопку в неправильном месте цветовой последовательности.
 
-![ballerina](images/ballerina.png)
+\--- /task \---
+
+Твой новый блок `Конец игры`{:class="block3myblocks"} является **функцией** - маленький скрипт, который ты можешь использовать в своем коде где угодно, добавив блок `Конец игры`{:class="block3myblocks"}.
+
+\--- task \---
+
+Также замени код блока `иначе`{:class="block3control"}, связанный с `передачей`{:class="block3events"} сообщений другим цветам, блоком `Конец игры`{:class="block3myblocks"}. Вот как должен выглядеть код для `синего`{:class="block3events"} сообщения
+
+![балерина](images/ballerina.png)
 
 ```blocks3
-define Game over
-start sound [Cough1 v]
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
+когда я получу [синий v]
+если <(элемент (1 v) в [последовательность v]) = [1]> то 
+  барабану играть ((2) Большой Барабан v) (0.25) бита
+  удалить (1 v) из [последовательность v]
+иначе 
+   Конец игры :: пользовательский
+конец
+```
+
+\--- /task \---
+
+\--- task \---
+
+Теперь добавь звук, который воспроизводится при нажатии неправильной кнопки. Тебе нужно добавить этот код только один раз в блок `Конец игры`{:class="block3myblocks"}, а не четыре раза!
+
+![балерина](images/ballerina.png)
+
+```blocks3
+определить Конец игры
+включить звук [Кашель1 v]
+говорить [Конец игры!] (1) секунд
+если <(счёт :: переменные) > (рекорд)>  то 
+  включить звук (труба1 v)
+  задать [рекорд v] значение (счёт)
+  ask [Рекорд! Как тебя зовут?] и ждать
+задать [имя v] значение (ответ)
+конец
+стоп [все]
 ```
 
 \--- /task \---
