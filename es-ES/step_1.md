@@ -30,9 +30,9 @@ Haz clic en la bandera verde para empezar. Observa la secuencia de colores que m
 
 ## title: Lo que vas a aprender
 
-+ Cómo añadir sonido a tu projecto Scratch
-+ Cómo crear y usar listas para almacenar datos
-+ Cómo crear y usar bloques personalizados para reutilizar código
++ Como añadir sonido a tu proyecto Scratch
++ Como crear y usar listas para almacenar datos
++ Como crear y usar bloques personalizados para reutilizar código
 
 \--- /collapse \---
 
