@@ -4,10 +4,10 @@ Ahora vas a añadir cuatro botones que el jugador tiene que presionar para repet
 
 \--- task \---
 
-Agrega cuatro nuevos sprites a tu proyecto para representar los cuatro botones.
+Agrega cuatro nuevos objetos a tu proyecto para representar los cuatro botones.
 
-+ Edita los disfraces de los nuevos sprites (objetos) para que haya uno en cada uno de los cuatro colores
-+ Pon los sprites (objetos) en el escenario en el mismo orden que los trajes: rojo, azul, verde, amarillo
++ Edita los disfraces de los nuevos objetos para que haya uno en cada uno de los cuatro colores
++ Pon los objetos en el escenario en el mismo orden que los trajes: rojo, azul, verde, amarillo
 
 ![screenshot](images/colour-drums.png)
 
@@ -15,7 +15,7 @@ Agrega cuatro nuevos sprites a tu proyecto para representar los cuatro botones.
 
 \--- task \---
 
-Añade código al sprite rojo para que, cuando sea pulsado, `envíe`{:class="block3events"} un mensaje 'rojo' al sprite del personaje:
+Añade código al objeto rojo para que, cuando sea pulsado, `envíe`{:class="block3events"} un mensaje 'rojo' al objeto del personaje:
 
 ![red-drum](images/red_drum.png)
 
@@ -26,11 +26,11 @@ enviar (rojo v)
 
 \--- /task \---
 
-Un `enviar` {: class = "block3events"} es como un mensaje anunciado a través de un altavoz, que puedes escuchar, por ejemplo, en escuelas o supermercados. Todos los sprites (objetos) pueden escuchar el mensaje `broadcast`{:class="block3events"}, pero sólo el sprite cuya función es responder va a hacer algo.
+Un `enviar` {: class = "block3events"} es como un mensaje anunciado a través de un altavoz, que puedes escuchar, por ejemplo, en escuelas o supermercados. Todos los objetos pueden escuchar el mensaje `broadcast`{:class="block3events"}, pero sólo el sprite cuya función es responder va a hacer algo.
 
 \--- task \---
 
-Añade código similar a los sprites (objetos) azul, verde y amarillo para hacerlos `enviar`{:class="block3events"} mensajes sobre su propio color.
+Añade código similar a los objetos azul, verde y amarillo para hacerlos `enviar`{:class="block3events"} mensajes sobre su propio color.
 
 \--- /task \---
 
@@ -38,7 +38,7 @@ Añade código similar a los sprites (objetos) azul, verde y amarillo para hacer
 
 \--- task \---
 
-Cuando el sprite de tu personaje recibe el mensaje `rojo`{:class="block3events"}, el código debería verificar si el número `1` está al comienzo de la lista `secuencia`{:class="block3variables"} (lo que significa que `rojo` es el siguiente color en la secuencia).
+Cuando el objeto de tu personaje recibe el mensaje `rojo`{:class="block3events"}, el código debería verificar si el número `1` está al comienzo de la lista `secuencia`{:class="block3variables"} (lo que significa que `rojo` es el siguiente color en la secuencia).
 
 Si `1` está al comienzo de la lista, el código debe eliminar el número de la lista, porque el jugador recordó el color correcto. De lo contrario, se acaba el juego, y el código debe `detener todos` {: class = "block3control"} para finalizar el juego.
 
@@ -58,7 +58,7 @@ end
 
 \--- task \---
 
-Añade al código que acabas de escribir instrucciones para que también suene un tambor cuando el sprite del personaje recibe el código `enviar`{:class="block3events"} correcto.
+Añade al código que acabas de escribir instrucciones para que también suene un tambor cuando el objeto del personaje recibe el código `enviar`{:class="block3events"} correcto.
 
 \--- hints \---
 
@@ -106,7 +106,7 @@ Duplica el código que usaste para hacer que el objeto personaje responda al men
 
 \--- /task \---
 
-Cuando el sprite (objeto) responde al mensaje `azul`{:class="block3events"}, ¿qué parte del código debería permanecer igual y cual cambiar? Recuerda que cada color está asociado a un número.
+Cuando el objeto responde al mensaje `azul`{:class="block3events"}, ¿qué parte del código debería permanecer igual y cuál cambiar? Recuerda que cada color está asociado a un número.
 
 \--- task \---
 
