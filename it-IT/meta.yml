@@ -7,12 +7,12 @@ description: Crea un gioco di memoria, dove devi memorizzare e ripetere una sequ
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
-  - title: Introduzione
-  - title: Crea una sequenza di colori
-  - title: Aggiungi un suono
-  - title: Ripetere la sequenza
-  - title: Livelli multipli
-  - title: Punteggio alto
-  - title: "Sfida: migliora il tuo gioco"
-  - title: 'Sfida: Più matite'
+- title: Introduzione
+- title: Crea una sequenza di colori
+- title: Aggiungi un suono
+- title: Ripetere la sequenza
+- title: Livelli multipli
+- title: Punteggio alto
+- title: "Sfida: migliora il tuo gioco"
+- title: 'Sfida: Più matite'
 
