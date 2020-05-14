@@ -1,10 +1,29 @@
---- challenge ---
-## Défi : Un autre costume 
+## Que faire ensuite ?
 
-Avez-vous remarqué que votre jeu démarre avec votre personnage montrant une des 4 couleurs et qu'il affiche toujours la dernière couleur de la séquence pendant que le joueur répète la séquence?
+Essaie le projet suivant, [La balle au prisonnier](https://projects.raspberrypi.org/fr-FR/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), où tu vas faire une partie dans laquelle tu dois éviter les balles tout en passant de plate-forme en plate-forme.
 
-Pouvez-vous ajouter un costume blanc qui sera affiché sur votre lutin au début de la partie, ainsi que lorsque le joueur tente de copier la séquence?
+--- no-print ---
 
-![capture d'écran](images/colour-white.png)
+Clique sur le drapeau vert pour commencer, puis utilise les touches fléchées pour te déplacer et la touche <kbd>espace</kbd> pour sauter.
 
---- /challenge ---
+<div class="scratch-preview">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
+  <img src="images/dodge-final.png">
+</div>
+
+--- /no-print ---
+
+--- print-only ---
+
+![jeu de la balle au prisonnier](images/dodgeball-final.png)
+
+--- /print-only ---
+
+***
+
+Ce projet a été traduit par des bénévoles:
+
+Michel Arnols
+Jonathan Vannieuwkerke
+
+Grâce aux bénévoles, nous pouvons donner aux gens du monde entier la chance d'apprendre dans leur propre langue. Vous pouvez nous aider à atteindre plus de personnes en vous portant volontaire pour la traduction - plus d'informations sur [rpf.io/translate](https://rpf.io/translate).

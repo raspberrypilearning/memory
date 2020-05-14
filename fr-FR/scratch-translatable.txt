@@ -1,0 +1,19 @@
+séquence
+
+rouge
+
+Perdu !
+
+bleu
+
+gagné
+
+score
+
+meilleur score
+
+nom
+
+Quel est ton nom ?
+
+Meilleur score ! Quel est ton nom ?

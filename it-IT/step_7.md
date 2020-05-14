@@ -1,9 +1,39 @@
---- challenge ---
-## Sfida: Crea altri blocchi
-Hai notato qualche altro codice che è lo stesso per tutti e 4 i tasti?
+## Sfida: migliora il tuo gioco
 
-![screenshot](images/colour-more-blocks.png)
+### Crea più blocchi
 
-Puoi creare un altro blocco personalizzato che viene usato da ogni tasto?
+Vedi qualche altro codice ripetuto in tutti e quattro i pulsanti?
 
---- /challenge ---
+```blocks3
+when I receive [rosso v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (\(1\) Snare Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	Game Over :: custom
+end
+
+when I receive [blu v]
+if <(item (1 v) of [sequence v])=[1]> then
+	play drum (\(2\) Bass Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
+else
+	Game over :: custom
+end
+```
+
+Saresti capace di creare un altro blocco personalizzato che tutti i pulsanti possano usare?
+
+### Un altro costume
+
+Hai notato che il tuo gioco inizia con il personaggio che mostra uno dei quattro colori e che, mentre il giocatore sta ripetendo la sequenza, mostra l'ultimo colore estratto?
+
+Sapresti aggiungere un altro semplice costume bianco al tuo personaggio e aggiungere del codice in modo che venga mostrato questo costume all'inizio del gioco e mentre il giocatore sta ripetendo la sequenza?
+
+![schermata](images/colour-white.png)
+
+### Livello di difficoltà
+
+Puoi dare la possibilità al tuo giocatore di scegliere se giocare in "modalità facile" (usando solo i colori rosso e blu) o "modalità normale" (che usa tutti e quattro i colori)?
+
+Se vuoi, puoi anche aggiungere una "modalità difficile", che fa uso di un quinto tamburo!

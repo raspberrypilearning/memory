@@ -1,30 +1,68 @@
+--- no-print ---
+
+Ceci est la version **Scratch 3** du projet. Il y a aussi une version [Scratch 2 du projet](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+
+--- /no-print ---
+
 ## Introduction
 
-Dans ce projet, vous allez créer un jeu de mémoire où vous devez mémoriser et répéter une séquence aléatoire de couleurs!
+Dans ce projet, tu vas créer un jeu de mémoire dans lequel tu devras mémoriser et répéter une séquence aléatoire de couleurs  !
+
+### Ce que tu vas créer
+
+--- no-print ---
+
+Clique sur le drapeau vert pour démarrer. Observe la séquence de couleurs montrée par la robe de la danseuse et écoute les battements de tambour qui l'accompagnent, puis répète les couleurs à la danseuse. Si tu répètes les couleurs dans le mauvais ordre, tu as perdu !
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/172305882/?autostart=false" frameborder="0"></iframe>
-  <img src="images/colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/394570159/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
-## Ressources
-Pour ce projet, on devrait utiliser Scratch 2. Scratch 2 peut être utilisé soit en ligne via [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ou en téléchargeant à partir de [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) pour une utilisation hors-connexion.
+--- /no-print ---
 
-Vous trouverez une version finalisée du projet <a href="https://scratch.mit.edu/projects/172305882/#editor">en ligne</a>, ou vous pouvez la télécharger en cliquant sur le lien 'Matériaux du Projet' qui contient :
+--- print-only ---
 
-+ Memory.sb2
+![capture d'écran du jeu terminé](images/screenshot.png)
 
-## Objectifs d’apprentissage
-+ Listes;
-+ Des fonctions simples.
+--- /print-only ---
 
-Ce projet couvre des éléments des parcours suivants du cursus de créativité numérique [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+--- collapse ---
+---
+title: Ce que tu vas apprendre
+---
 
-+ [Combiner des structures de programmation afin de résoudre des problèmes.](https://www.raspberrypi.org/curriculum/programming/builder)
++ Comment ajouter du son à ton projet Scratch
++ Comment créer et utiliser des listes pour stocker des données
++ Comment créer et utiliser des blocs personnalisés pour répéter le code
 
-## Défis
-+ "Ajouter du son" - améliorer la simplicité d'utilisation du jeu;
-+ "Créer 4 boutons" - manipuler des listes;
-+ "Créer d'autres blocs" - créer des blocs personnalisés;
-+ "Un autre costume" - améliorer la simplicité d'utilisation du jeu;
-+ "Niveau de difficulté" - modifier les données stockées dans une liste.
+--- /collapse ---
+
+--- collapse ---
+---
+title: Ce dont tu auras besoin
+---
+
+### Matériel
+
++ Un ordinateur capable d’exécuter Scratch 3
+
+### Logiciel
+
+Scratch 3 ([en ligne](https://rpf.io/scratchon){:target="_blank"} ou [hors-ligne](https://rpf.io/scratchoff){:target="_blank"})
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Informations additionnelles pour les éducateurs
+---
+
+--- no-print ---
+
+Si vous avez besoin d'imprimer ce projet, merci d'utiliser la [version imprimable](https://projects.raspberrypi.org/fr-FR/projects/memory/print){:target="_blank"}.
+
+--- /no-print ---
+
+Vous pouvez trouver le [projet terminé ici](http://rpf.io/p/fr-FR/memory-get) .
+
+--- /collapse ---
