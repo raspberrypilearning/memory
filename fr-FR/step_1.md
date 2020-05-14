@@ -30,6 +30,7 @@ Clique sur le drapeau vert pour démarrer. Observe la séquence de couleurs mont
 ---
 title: Ce que tu vas apprendre :
 ---
+
 + Comment ajouter du son à ton projet Scratch
 + Comment créer et utiliser des listes pour stocker des données
 + Comment créer et utiliser des blocs personnalisés pour répéter le code
@@ -40,6 +41,7 @@ title: Ce que tu vas apprendre :
 ---
 title: Ce dont tu auras besoin
 ---
+
 ### Matériel
 
 + Un ordinateur capable d’exécuter Scratch 3
@@ -54,6 +56,7 @@ Scratch 3 ([en ligne](https://rpf.io/scratchon){:target="_blank"} ou [hors-ligne
 ---
 title: Informations additionnelles pour les éducateurs
 ---
+
 --- no-print ---
 
 Si vous avez besoin d'imprimer ce projet, merci d'utiliser la [version imprimable](https://projects.raspberrypi.org/fr-FR/projects/memory/print){:target="_blank"}.
