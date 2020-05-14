@@ -22,7 +22,7 @@
 
 Ο νέος σας κώδικας πρέπει να ακολουθήσει αυτό το μοτίβο:
 
-Μετά τις `Τέλος Παιχνιδιού`{:class="block3looks"} μήνυμα `Αν`{:class="block3control"} οι `βαθμολογία`{:class="block3variables"} είναι `μεγαλύτερη από`{:class="block3operators "} η `υψηλή βαθμολογία`{:class="block3variables"} `Set`{:class="block3variables"} οι `υψηλή βαθμολογία`{: class =" block3variables "} στο `στείλει`{:class="block3variables"} `Ζητήστε από`{:class="block3sensing "} για το όνομα του παίκτη `Σετ`{:class="block3variables"} το `όνομα`{:class="block3variables"} στο `απάντηση`{:class="block3sensing")
+Μετά τις `Τέλος Παιχνιδιού`{:class="block3looks"} μήνυμα `Αν`{:class="block3control"} οι `βαθμολογία`{:class="block3variables"} είναι `μεγαλύτερη από`{:class="block3operators "} η `υψηλή βαθμολογία`{:class="block3variables"} `Set`{:class="block3variables"} οι `υψηλή βαθμολογία`{:class="block3variables"} στο `στείλει`{:class="block3variables"} `Ζητήστε από`{:class="block3sensing"} για το όνομα του παίκτη `Σετ`{:class="block3variables"} το `όνομα`{:class="block3variables"} στο `απάντηση`{:class="block3sensing")
 
 --- /hint ---
 

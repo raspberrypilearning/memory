@@ -38,7 +38,7 @@ Te souviens-tu que le `envoyer à tous`{:class="block3events"} est comme un mess
 
 --- task ---
 
-Quand ton sprite reçoit le message `rouge`{:class="block3events"}, le code doit vérifier si le nombre `1` est au début de la liste `séquence`{:class="block3variables"} (ce qui signifie que ` rouge `{:class="block3events"} est la prochaine couleur de la séquence).
+Quand ton sprite reçoit le message `rouge`{:class="block3events"}, le code doit vérifier si le nombre `1` est au début de la liste `séquence`{:class="block3variables"} (ce qui signifie que `rouge`{:class="block3events"} est la prochaine couleur de la séquence).
 
 Si `1` est au début de la liste, le code devrait supprimer le numéro de la liste, car le joueur s'est souvenu de la bonne couleur. Sinon, le jeu est terminé, et le code doit `stopper tout`{:class="block3control"} pour terminer le jeu.
 
@@ -165,7 +165,7 @@ Quand le joueur répète correctement toute la séquence de couleur, la liste `s
 
 --- task ---
 
-Ajoute ce code à la fin du script de ton personnage ` lorsque le drapeau est cliqué`{:class="block3events"} :
+Ajoute ce code à la fin du script de ton personnage `lorsque le drapeau est cliqué`{:class="block3events"} :
 
 ![ballerine](images/ballerina.png)
 

@@ -171,10 +171,7 @@ Aggiungi questo codice alla fine del codice del tuo personaggio che inizia con `
 
 ```blocks3
 wait until < (length of [sequence v]) = [0]>
-broadcast (won v) and wait
-
-    attendi fino a quando <(lunghezza di [sequenza v]) = [0]>
-invia a tutti (vinto v) e attendi
+broadcast (vinto v) and wait
 ```
 
 --- /task ---

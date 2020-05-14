@@ -15,7 +15,7 @@
 
 --- print-only ---
 
-![играть в вышибалы](images/dodgeball-showcase.png)
+![играть в вышибалы](images/dodgeball-final.png)
 
 --- /print-only ---
 

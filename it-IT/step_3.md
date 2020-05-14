@@ -1,4 +1,4 @@
-## Sfida: Aggiungi un suono
+## Aggiungi un suono
 
 --- task ---
 

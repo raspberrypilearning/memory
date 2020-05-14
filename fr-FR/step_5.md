@@ -14,7 +14,7 @@ Basé sur le `score`{:class="block3variables"}, le jeu décidera de la longueur 
 
 --- task ---
 
-Ajoute un bloc au début du code de ton personnage ` quand le drapeau est cliqué`{:class="block3events"} pour définir le `score`{:class="block3variables"} à `3`.
+Ajoute un bloc au début du code de ton personnage `quand le drapeau est cliqué`{:class="block3events"} pour définir le `score`{:class="block3variables"} à `3`.
 
 --- /task ---
 

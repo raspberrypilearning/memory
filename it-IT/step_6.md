@@ -130,7 +130,7 @@ stop [all v]
 
 --- task ---
 
-Ora rimuovi il codice che si trova nel blocco `else`{:class="block3control"} collegato al messaggio `rosso`{:class="block3events"} e aggiungi il blocco `Hai perso`{class="block3myblocks"} al suo posto:
+Ora rimuovi il codice che si trova nel blocco `else`{:class="block3control"} collegato al messaggio `rosso`{:class="block3events"} e aggiungi il blocco `Hai perso`{:class="block3myblocks"} al suo posto:
 
 ![ballerina](images/ballerina.png)
 

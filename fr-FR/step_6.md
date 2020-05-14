@@ -22,7 +22,7 @@ Ajoute du code à ton sprite personnage pour stocker le `meilleur score`{:class=
 
 Ton nouveau code doit suivre ce modèle :
 
-Après le message ` perdu` {: class = "block3looks"} ` Si ` {:class="block3control"} le ` score ` {:class="block3variables"} est ` supérieur à ` {:class="block3operators"} le ` meilleur score ` {:class="block3variables"} ` Définir ` {:class="block3variables"} le ` meilleur score ` {:class="block3variables"} au ` score` {:class="block3variables"} ` Demander ` {:class="block3sensing"} le nom du joueur ` mettre ` {:class="block3variables"}` la réponse` {:class="block3sensing"} dans le ` nom ` {:class="block3variables"}
+Après le message `perdu`{:class="block3looks"} `Si`{:class="block3control"} le `score`{:class="block3variables"} est `supérieur à`{:class="block3operators"} le `meilleur score`{:class="block3variables"} `Définir`{:class="block3variables"} le `meilleur score`{:class="block3variables"} au `score`{:class="block3variables"} `Demander`{:class="block3sensing"} le nom du joueur `mettre`{:class="block3variables"} `la réponse`{:class="block3sensing"} dans le `nom`{:class="block3variables"}
 
 --- /hint ---
 
@@ -70,7 +70,7 @@ else
 	say [Perdu!] for (1) seconds
 	if < (score :: variables) > (meilleur score) > then
 		set [meilleur score v] to (score :: variables)
-		ask [meilleur score! Quel est ton nom ?] and wait
+		ask [Meilleur score! Quel est ton nom ?] and wait
 		set [nom v] to (answer)
 	end
 	stop [all v]
@@ -93,7 +93,7 @@ Peux-tu voir que le code « Perdu » pour chacune des quatre couleurs est exacte
 say [Perdu!] for (1) seconds
 if < (score :: variables) > (meilleur score) > then
 	set [meilleur score v] to (score :: variables)
-	ask [meilleur score! Quel est ton nom ?] and wait
+	ask [Meilleur score! Quel est ton nom ?] and wait
 	set [nom v] to (answer)
 end
 stop [all v]
@@ -120,7 +120,7 @@ define perdu
 say [Perdu!] for (1) seconds
 if < (score :: variables) > (meilleur score) > then
 	set [meilleur score v] to (score :: variables)
-	ask [meilleur score! Quel est ton nom ?] and wait
+	ask [Meilleur score! Quel est ton nom ?] and wait
 	set [nom v] to (answer)
 end
 stop [all v]
@@ -185,7 +185,7 @@ say [Perdu!] for (1) seconds
 if < (score :: variables) > (meilleur score) > then
 	play sound (trumpet1 v)
 	set [meilleur score v] to (score)
-	ask [meilleur score! Quel est ton nom ?] and wait
+	ask [Meilleur score! Quel est ton nom ?] and wait
 	set [nom v] to (answer)
 end
 stop [all v]

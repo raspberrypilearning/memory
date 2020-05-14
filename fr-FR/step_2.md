@@ -59,7 +59,7 @@ Chaque couleur a un numéro différent, tu peux donc choisir une couleur aléato
 
 --- task ---
 
-Ajoute ce code au sprite personnage pour choisir un nombre aléatoire et l'ajouter à la `séquence` {:class="block3variables"}:
+Ajoute ce code au sprite personnage pour choisir un nombre aléatoire et l'ajouter à la `séquence`{:class="block3variables"}:
 
 ![ballerine](images/ballerina.png)
 

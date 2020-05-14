@@ -15,7 +15,7 @@ Fai clic sulla bandiera verde per iniziare, quindi utilizzare i tasti freccia pe
 
 --- print-only ---
 
-![gioco di dodgeball in esecuzione](images/dodgeball-showcase.png)
+![gioco di dodgeball in esecuzione](images/dodgeball-final.png)
 
 --- /print-only ---
 

@@ -15,7 +15,7 @@ Clique sur le drapeau vert pour commencer, puis utilise les touches fléchées p
 
 --- print-only ---
 
-![jeu de la balle au prisonnier](images/dodgeball-showcase.png)
+![jeu de la balle au prisonnier](images/dodgeball-final.png)
 
 --- /print-only ---
 

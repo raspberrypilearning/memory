@@ -15,7 +15,7 @@
 
 --- print-only ---
 
-![玩躲避球遊戲](images/dodgeball-showcase.png)
+![玩躲避球遊戲](images/dodgeball-final.png)
 
 --- /print-only ---
 
