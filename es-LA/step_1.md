@@ -28,17 +28,17 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: What you will learn
+## título: Lo que aprenderás
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ Cómo agregar sonido a tu proyecto Scratch
++ Cómo crear y usar listas para almacenar datos
++ Cómo crear y usar bloques personalizados para repetir código
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## título: Lo que necesitará
 
 ### Hardware
 
