@@ -14,7 +14,7 @@ Quando il gioco finisce, perché il giocatore esegue una sequenza sbagliata, del
 
 Aggiungi codice al tuo sprite personaggio per memorizzare il `punteggio record`{:class="block3variables"}. Chiedi anche il nome del giocatore e memorizzalo nella variabile `nome`{:class="block3variables"}.
 
-[[[generic-scratch3-high-punteggio]]]
+[[[generic-scratch3-high-score]]]
 
 --- hints ---
 

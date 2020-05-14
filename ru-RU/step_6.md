@@ -14,7 +14,7 @@
 
 Добавь код к спрайту персонажа, чтобы сохранить `рекорд`{:class="block3variables"}. Также запроси имя игрока и сохрани его в переменной `имя`{:class="block3variables"}.
 
-[[[generic-scratch3-high-счёт]]]
+[[[generic-scratch3-high-score]]]
 
 --- hints ---
 

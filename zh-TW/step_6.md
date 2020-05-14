@@ -14,7 +14,7 @@
 
 為角色添加記錄`最高分`{:class="block3variables"}的程式。 還要詢問玩家的姓名，把它儲存在`名稱`{:class="block3variables"}變數裡。
 
-[[[generic-scratch3-high-得分]]]
+[[[generic-scratch3-high-score]]]
 
 --- hints ---
 
