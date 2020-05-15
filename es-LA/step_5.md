@@ -1,10 +1,10 @@
-## Multiple levels
+## Varios niveles
 
-So far, the player only has to remember a sequence of five colours. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+Hasta ahora, el jugador solo tiene que recordar una secuencia de cinco colores. Mejora tu juego añadiendo una puntuación, y agregando código para que a medida que el jugador consiga puntos, el juego avance al siguiente nivel y la secuencia de color para recordar se vuelva más larga.
 
 \--- task \---
 
-Create a new variable called `score`{:class="block3variables"}.
+Crea una nueva variable llamada `puntaje` {: class = "block3variables"}.
 
 [[[generic-scratch3-add-variable]]]
 
