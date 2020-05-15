@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Esta es la versión **Scratch 3** del proyecto. También hay una versión [Scratch 2 del proyecto](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## Introducción
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+¡En este proyecto, crearás un juego de memoria en el que tendrás que memorizar y repetir una secuencia aleatoria de colores!
 
 ### What you will make
 
 \--- no-print \---
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+Haz clic en la bandera verde para empezar. Observa la secuencia de colores que se muestra en el vestido de la bailarina y escucha los sonidos de los tambores, luego repite los colores de la bailarina. Si te equivocas en el orden de los colores, ¡se acabó el juego!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -22,7 +22,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 \--- print-only \---
 
-![screenshot of finished game](images/screenshot.png)
+![captura de pantalla del juego terminado](images/screenshot.png)
 
 \--- /print-only \---
 
