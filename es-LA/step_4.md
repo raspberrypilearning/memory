@@ -166,9 +166,9 @@ When the player repeats the whole colour sequence correctly, the `sequence`{:cla
 
 \--- task \---
 
-Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+Agrega este código al final de tu personaje `cuando haga clic en la bandera` {: class = "blockevents"} secuencia de comandos:
 
-![ballerina](images/ballerina.png)
+![bailarina](images/ballerina.png)
 
 ```blocks3
     wait until < (length of [sequence v]) = [0]>
@@ -179,7 +179,7 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 
 \--- task \---
 
-Switch to the Stage, and import the `drum machine` sound or another sound you like.
+Cambia el escenario e importa el sonido `drum machine` (caja de ritmos) u otro sonido que te guste.
 
 [[[generic-scratch3-sound-from-library]]]
 
@@ -187,9 +187,9 @@ Switch to the Stage, and import the `drum machine` sound or another sound you li
 
 \--- task \---
 
-Add this code to play a sound and make the backdrop change colour when the player wins.
+Añade este código para reproducir un sonido y hacer que el escenario cambie de color cuando el jugador gane.
 
-![ballerina](images/stage.png)
+![bailarina](images/stage.png)
 
 ```blocks3
     when I receive [won v]
