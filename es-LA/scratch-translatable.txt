@@ -1,19 +1,19 @@
-sequence
+secuencia
 
-red
+rojo
 
-Game over!
+¡Fin del juego!
 
-blue
+azul
 
 won
 
-score
+puntaje
 
-high score
+puntaje mayor
 
-name
+nombre
 
-What’s your name?
+¿Cuál es tu nombre?
 
-High score! What is your name?
+¡Puntuación mayor! ¿Cuál es tu nombre?
