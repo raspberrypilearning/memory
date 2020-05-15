@@ -174,9 +174,9 @@ end
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+Ahora añade un sonido que suene cuando se presiona el botón equivocado. ¡Sólo necesitas añadir este código una vez en el bloque `Fin del juego`{:class="block3myblocks"} que has hecho, y no cuatro veces separadas!
 
-![ballerina](images/ballerina.png)
+![bailarina](images/ballerina.png)
 
 ```blocks3
 define Game over
