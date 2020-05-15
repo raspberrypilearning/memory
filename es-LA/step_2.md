@@ -37,7 +37,7 @@ Dale a tu personaje cuatro disfraces de diferentes colores, uno para cada uno de
 
 \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Puedes usar la herramienta **rellenar** para colorear partes del traje de un color diferente.
 
 ![color-a-shape](images/color-a-shape.png)
 
