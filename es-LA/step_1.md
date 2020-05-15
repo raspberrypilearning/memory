@@ -38,28 +38,28 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## título: Lo que necesitará
+## title: What you will need
 
 ### Hardware
 
-+ A computer capable of running Scratch 3
++ Una computadora capaz de ejecutar Scratch 3
 
 ### Software
 
-Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+Scratch 3 (ya sea [ en línea ](https://rpf.io/scratchon) {: target = "_ blank"} o [ sin conexión ](https://rpf.io/scratchoff) {: target = "_ blank"})
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## título: Información adicional para educadores
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+Si necesitas imprimir este proyecto, por favor utiliza la [versión de impresión amigable](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+Puedes [ descargar el proyecto completo aquí ](http://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
