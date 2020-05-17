@@ -38,9 +38,9 @@
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+Коли твій спрайт персонажу отримує повідомлення `червоний`{:class="block3events"}, код має перевіряти, чи число `1` знаходиться на початку списку `послідовність`{:class="block3variables"} (що означає, що `червоний`{:class="block3events"} є наступним кольором послідовності).
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+Якщо `1` йде на початку списку, код має видалити звідти це число, бо гравець назвав правильний колір. Інакше гра завершується, і код має `зупинити все`{:class="block3control"} для закінчення гри.
 
 ![ballerina](images/ballerina.png)
 
@@ -58,18 +58,18 @@ end
 
 \--- task \---
 
-Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+Додай до коду, який ти щойно написав, удар у барабан, коли спрайт персонажу отримує правильне `оповіщення`{:class="block3events"}.
 
 \--- hints \---
 
 \--- hint \---
 
-Can you use the numbers that correspond to each colour to play the correct drum beat?
+Чи можеш ти використати числа, що відповідають кожному з кольорів, щоб зіграти правильний звук барабана?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow
++ 1 = червоний
++ 2 = синій
++ 3 = зелений
++ 4 = жовтий
 
 \--- /hint \---
 
