@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Це — версія проєкту для **Скретч 3**. Також існує [версія проєкту для Скретч 2](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
 \--- /no-print \---
 
 ## Вступ
 
-У цьому проекті ви створите гру, що тренує пам'ять, в якій потрібно запам'ятовувати і повторювати випадкову послідовність кольорів!
+У цьому проєкті ти створиш гру, де треба запам’ятовувати і відтворювати послідовність випадкових кольорів!
 
-### Що ви будете робити
+### Що ти зробиш
 
 \--- no-print \---
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+Натисни на зелений прапор для запуску. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -28,7 +28,7 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: Що ви вивчите
+## title: What you will learn
 
 + How to add sound to your Scratch project
 + How to create and use lists to store data
@@ -38,13 +38,13 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: Що вам знадобиться
+## title: What you will need
 
-### Обладнання
+### Hardware
 
-+ Комп'ютер, що підтримує Scratch 3
++ A computer capable of running Scratch 3
 
-### Програмне забезпечення
+### Software
 
 Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
 
