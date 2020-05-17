@@ -1,18 +1,18 @@
 ## Рекорд
 
-Now save the high score so that you can play against your friends.
+А тепер збережи рекорд, щоб можна було грати з друзями.
 
 \--- task \---
 
-Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
+Додай до свого проєкту дві нові змінні з назвами `рекорд`{:class="block3variables"} та `ім’я`{:class="block3variables"}.
 
 \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+Коли гра завершується через те, що гравець відтворив послідовність неправильно, гра повинна перевірити, чи рахунок більший за поточний рекорд. Якщо це так, то гра повинна зберегти рахунок як рекорд, а також зберегти ім’я гравця.
 
 \--- task \---
 
-Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+Додай код до свого спрайта персонажа, щоб зберігати `рекорд`{:class="block3variables"}. Також запитай ім’я гравця і збережи його в змінній `ім’я`{:class="block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
@@ -20,15 +20,15 @@ Add code to your character sprite to store the `high score`{:class="block3variab
 
 \--- hint \---
 
-Your new code needs to follow this pattern:
+Твій код має відповідати такій схемі:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+Після повідомлення `Кінець гри!`{:class="block3looks"} `Якщо`{:class="block3control"} `рахунок`{:class="block3variables"} `більший за`{:class="block3operators"} `рекорд`{:class="block3variables"} `Надати`{:class="block3variables"} змінній `рекорд`{:class="block3variables"} значення `рахунок`{:class="block3variables"} `Запитати`{:class="block3sensing"} ім’я гравця `Надати`{:class="block3variables"} змінній `ім’я`{:class="block3variables"} значення `відповідь`{:class="block3sensing"}
 
 \--- /hint \---
 
 \--- hint \---
 
-You need the following blocks:
+Тобі знадобляться наступні блоки:
 
 ![ballerina](images/ballerina.png)
 
@@ -57,7 +57,7 @@ set [name v] to [ ]
 
 \--- hint \---
 
-Here's how your code for when the red button is pressed should look:
+Ось як має виглядати твій код для червоної кнопки:
 
 ![ballerina](images/ballerina.png)
 
@@ -83,9 +83,9 @@ end
 
 \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+Тобі треба додати цей новий код до спрайта персонажа також для трьох інших кольорів!
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+Ти бачиш, що код "Кінець гри" такий самий для всіх чотирьох кольорів?
 
 ![ballerina](images/ballerina.png)
 
@@ -99,7 +99,7 @@ end
 stop [all v]
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+Якщо тобі треба буде щось змінити в коді "Кінець гри", наприклад, додати звук або змінити повідомлення, тобі доведеться робити це чотири рази. Це набридає і забирає багато часу.
 
 Instead, you can define your own code block, and use it anywhere in your project.
 
