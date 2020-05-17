@@ -1,19 +1,19 @@
-sequence
+послідовність
 
-red
+червоний
 
-Game over!
+Кінець гри!
 
-blue
+синій
 
-won
+перемога
 
-score
+рахунок
 
-high score
+рекорд
 
-name
+ім’я
 
-What’s your name?
+Як тебе звати?
 
-High score! What is your name?
+Рекорд! Як тебе звати?
