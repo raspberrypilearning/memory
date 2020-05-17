@@ -9,7 +9,7 @@
 + Відредагуй образи нових спрайтів так, щоб кожен спрайт був одного із чотирьох кольорів
 + Розмісти спрайти в тому ж порядку на сцені, як і кольорові образи персонажа: червоний, синій, зелений, жовтий
 
-![screenshot](images/colour-drums.png)
+![знімок екрана](images/colour-drums.png)
 
 \--- /task \---
 
@@ -17,7 +17,7 @@
 
 Додай код до червоного спрайта, щоб коли на нього клацають, він `оповіщував`{:class="block3events"} спрайт персонажа повідомленням "червоний":
 
-![red-drum](images/red_drum.png)
+![червоний барабан](images/red_drum.png)
 
 ```blocks3
     when this sprite clicked
@@ -42,7 +42,7 @@
 
 Якщо `1` йде на початку списку, код має видалити звідти це число, бо гравець назвав правильний колір. Інакше гра завершується, і код має `зупинити все`{:class="block3control"} для закінчення гри.
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -111,15 +111,15 @@ end
 
 \--- task \---
 
-Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+Зміни код спрайта персонажа так, щоб він коректно обробляв повідомлення `синій`{:class="block3events"}.
 
 \--- hints \---
 
 \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+Використовуй такі блоки, але ти маєш їх змінити якимось чином:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 <(item (1 v) of [sequence v]) = [1]>
@@ -133,9 +133,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- hint \---
 
-Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+Ось як має виглядати твій код для оповіщення `синій`{:class="block3events"}.
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
@@ -156,19 +156,19 @@ end
 
 \--- task \---
 
-Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
+Продублюй код двічі (для зеленої та жовтої кнопок) і зміни необхідні частини так, щоб персонаж правильно обробляв нові `оповіщення`{:class="block3events"}.
 
 \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+Не забудь протестувати свій код! Чи можеш ти запам’ятати послідовність із п’яти кольорів? Чи змінюється послідовність кожного разу?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+Коли гравець відтворює всю послідовність кольорів правильно, список `послідовність`{:class="block3variables"} стає порожнім, і гравець перемагає. Якщо бажаєш, можеш також відобразити блимаючі вогники як винагороду, коли список `послідовність`{:class="block3variables"} стає порожнім.
 
 \--- task \---
 
-Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+Додай наступний код в кінець скрипта `коли прапор натиснуто`{:class="block3events"} для персонажа:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
     wait until < (length of [sequence v]) = [0]>
@@ -179,7 +179,7 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 
 \--- task \---
 
-Switch to the Stage, and import the `drum machine` sound or another sound you like.
+Перемкнися на Сцену та імпортуй звук`drum machine` або будь-який інший, який тобі до вподоби.
 
 [[[generic-scratch3-sound-from-library]]]
 
@@ -187,9 +187,9 @@ Switch to the Stage, and import the `drum machine` sound or another sound you li
 
 \--- task \---
 
-Add this code to play a sound and make the backdrop change colour when the player wins.
+Додай цей код, щоб відтворювати звук, і щоб тло змінювало свій колір, коли гравець перемагає.
 
-![ballerina](images/stage.png)
+![балерина](images/stage.png)
 
 ```blocks3
     when I receive [won v]
