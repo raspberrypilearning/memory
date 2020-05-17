@@ -4,11 +4,11 @@
 
 \--- task \---
 
-Open a new Scratch project.
+एक नया Scratch प्रोजेक्ट खोलिये।
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**ऑनलाइन**: [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"} पर एक नया Scratch प्रोजेक्ट खोलें।
 
-**Offline**: open a new project in the offline editor.
+**ऑफ़लाइन**: ऑफ़लाइन संपादक में एक नया प्रोजेक्ट खोलें।
 
 यदि आपको Scratch ऑफ़लाइन संपादक (offline editor) को डाउनलोड और इंस्टॉल (download and install) करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](https://rpf.io/scratchoff) {:target="_blank"} पर पा सकते हैं।
 
@@ -18,84 +18,84 @@ Open a new Scratch project.
 
 एक पात्र स्प्राइट और एक पृष्ठभूमि (backdrop) चुनें। आप बैलेरीना (ballerina) का उपयोग कर सकते हैं लेकिन आपके पात्र को एक व्यक्ति होने की आवश्यकता नहीं है, उन्हें केवल अलग-अलग रंग दिखाने में सक्षम होने की आवश्यकता है।
 
-![screenshot](images/colour-sprite.png)
+![स्क्रीनशॉट](images/colour-sprite.png)
 
 \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ आपके खेल को प्रत्येक रंग का प्रतिनिधित्व करने के लिए एक अलग संख्या का उपयोग करना चाहिए:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = लाल
+    + 2 = नीला
+    + 3 = हरा
+    + 4 = पीला
 
 \--- task \---
 
-Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+अपने चरित्र को चार पोशाकें (costume) दें जिनमें अलग-अलग रंग हों, ऊपर दिखाए गए चार रंगों में से प्रत्येक के लिए एक पोशाक। सुनिश्चित करें कि आपके रंगीन परिधान ऊपर की सूची के समान क्रम में हैं।
 
-![screenshot](images/colour-costume.png)
+![स्क्रीनशॉट](images/colour-costume.png)
 
 \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+यदि आप चाहें, तो आप एक अलग रंग के साथ पोशाक के कुछ हिस्सों को भरने के लिए **color a shape** का उपयोग कर सकते हैं।
 
-![color-a-shape](images/color-a-shape.png)
+![आकृति को रंगे](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+फिर रंगों के यादृच्छिक अनुक्रम को संग्रहीत करने के लिए एक सूची जोड़ें जिसे खिलाड़ियों को याद रखना होगा।
 
 \--- task \---
 
-Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+`sequence`{:class="block3variables"} नामक एक सूची बनाएँ । केवल पात्र स्प्राइट को इस सूची को देखने की आवश्यकता है, इसलिए जब आप सूची बनाते हैं आप **For this sprite only** का चयन कर सकते हैं।
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+अब आपको सूचियों का उपयोग करने के लिए बहुत सारे नए कोड ब्लॉक दिखाई देने चाहिए।स्टेज के ऊपरी बाएं कोने में खाली सूची दिखाई देनी चाहिए।
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![स्क्रीनशॉट](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+प्रत्येक रंग की एक अलग संख्या है, इसलिए आप यादृच्छिक रूप से एक संख्या चुनकर और उसे सूची में जोड़कर एक यादृच्छिक रंग चुन सकते हैं।
 
 \--- task \---
 
-Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+एक यादृच्छिक संख्या चुनने के लिए और इसे `sequence` {:class="block3variables"}: सूची में जोड़ने के लिए इस कोड को पात्र स्प्राइट में जोड़ें।
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+जब ध्वज पर क्लिक किया
+[(pick random (1) to (4)) to [sequence v) को जोड़ें
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list.
+अपने कोड का परीक्षण करें। जांच करें कि हर बार जब आप ध्वज पर क्लिक करते हैं, तो सूची में 1 और 4 के बीच एक यादृच्छिक संख्या जुड़ जाती है।
 
 \--- /task \---
 
 \--- task \---
 
-Can you add code to your program to generate five random numbers at once?
+क्या आप एक बार में पाँच यादृच्छिक संख्याएँ बनाने के लिए अपने प्रोग्राम में कोड जोड़ सकते हैं?
 
 \--- hints \---
 
 \--- hint \---
 
-Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
+पहले सूची के सभी संख्याओं को हटाने के लिए एक `delete all of sequence`{:class="block3variables"} जोड़ें, और फिर एक `repeat` {:class="block3control"} ब्लॉक जोड़ें जो सूची में पाँच यादृच्छिक संख्याएँ जोड़ता है।
 
 \--- /hint \---
 
 \--- hint \---
 
-This is what your code should look like:
+आपका कोड ऐसा दिखना चाहिए:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
-when flag clicked
+जब झंडा क्लिक किया
 delete (all v) of [sequence v]
 repeat (5)
     add (pick random (1) to (4)) to [sequence v]
@@ -110,12 +110,12 @@ end
 
 \--- task \---
 
-Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+प्रत्येक बार जब कोई संख्या सूची में जुड़ जाती है, तो पात्र की पोशाक बदलनी चाहिए ताकि पोशाक का रंग संख्या से मेल खाए। इन ब्लॉकों को तुरंत अपने कोड में डालें जहां एक यादृच्छिक संख्या `sequence`{:class="block3variables"}: में जोड़ी जाती है 
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
+costume को (item (length of [sequence v]) of [sequence v])
 wait (1) seconds
 ```
 
