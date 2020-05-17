@@ -111,13 +111,13 @@ end
 
 \--- task \---
 
-Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+पात्र स्प्राइट के कोड को बदलें ताकि पात्र `blue`{:class="block3events"} संदेश को सही तरीके से प्रतिक्रिया दे।
 
 \--- hints \---
 
 \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+इन ब्लॉकों को रखे लेकिन आपको उन्हें किसी तरह से बदलने की आवश्यकता है:
 
 ![ballerina](images/ballerina.png)
 
@@ -133,7 +133,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- hint \---
 
-Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+आपका कोड `blue`{:class="block3events"} प्रसारण के लिए ऐसा दिखना चाहिए ।
 
 ![ballerina](images/ballerina.png)
 
@@ -156,13 +156,13 @@ end
 
 \--- task \---
 
-Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
+कोड को फिर से दो बार (हरे (green)और पीले (yellow) बटन के लिए) दोहराएँ, और आवश्यक भागों को बदल दें ताकि पात्र नए `broadcasts`{:class="block3events"} के लिए सही ढंग से प्रतिक्रिया दे।
 
 \--- /task \---
 
 Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+जब खिलाड़ी रंगों के पूरे अनुक्रम को सही ढंग से दोहराता है, तो `sequence`{:class="block3variables"} सूची ख़ाली हो जाती है और खिलाड़ी जीत जाता है। If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
 
 \--- task \---
 
