@@ -1,6 +1,6 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+यह प्रोजेक्ट का **स्क्रैच 3** संस्करण है।ईस प्रोजेक्ट का एक [स्क्रैच 2](https://projects.raspberrypi.org/en/projects/memory-scratch2) संस्करण भी है।
 
 \--- /no-print \---
 
