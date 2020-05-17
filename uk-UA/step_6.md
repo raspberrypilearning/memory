@@ -30,7 +30,7 @@
 
 Тобі знадобляться наступні блоки:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 if < > then
@@ -59,7 +59,7 @@ set [name v] to [ ]
 
 Ось як має виглядати твій код для червоної кнопки:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -87,7 +87,7 @@ end
 
 Ти бачиш, що код "Кінець гри" такий самий для всіх чотирьох кольорів?
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 say [Game over!] for (1) seconds
@@ -101,19 +101,19 @@ stop [all v]
 
 Якщо тобі треба буде щось змінити в коді "Кінець гри", наприклад, додати звук або змінити повідомлення, тобі доведеться робити це чотири рази. Це набридає і забирає багато часу.
 
-Instead, you can define your own code block, and use it anywhere in your project.
+Замість цього ти можеш визначити власний блок коду і використовувати його де завгодно в проєкті.
 
 \--- task \---
 
-Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+Клацни на `Мої блоки`{:class="block3myblocks"}, а далі — на **Створити блок**. Назви цей новий блок `Кінець гри`{:class="block3myblocks"}.
 
 \--- /task \---
 
 \--- task \---
 
-Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+Додай код із блоку `інакше`{:class="block3control"}, приєднаного до оповіщення `червоний`{:class="block3events"}, до блоку `Кінець гри`{:class="block3myblocks"}, щоб він виглядав таким чином:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 define Game over
@@ -130,9 +130,9 @@ stop [all v]
 
 \--- task \---
 
-Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+Тепер видали цей код із блоку `інакше`{:class="block3control"}, приєднаного до оповіщення `червоний`{:class="block3events"}, і додай замість нього блок `Кінець гри`{:class="block3myblocks"}:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -148,17 +148,17 @@ end
 
 \--- task \---
 
-Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
+Протестуй новий блок, граючи у гру і клацнувши червону кнопку в неправильній послідовності кольорів.
 
 \--- /task \---
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+Твій новий блок `Кінець гри`{:class="block3myblocks"} є **функцією** — маленьким скриптом, який ти можеш використовувати будь-де в своєму коді.
 
 \--- task \---
 
-Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+Також заміни блоками `Кінець гри`{:class="block3myblocks"} код в блоках `інакше`{:class="block3control"}, які приєднані до `оповіщень`{:class="block3events"} для інших кольорів. Ось як має виглядати код для повідомлення `синій`{:class="block3events"}
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
@@ -174,9 +174,9 @@ end
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+Тепер додай звук, який буде відтворюватися при натисканні неправильної кнопки. Тобі треба додати цей код лише один раз в блок `Кінець гри`{:class="block3myblocks"}, який ти зробив (-ла), а не в чотирьох різних місця!
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 define Game over
