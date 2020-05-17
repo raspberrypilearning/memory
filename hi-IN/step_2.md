@@ -1,6 +1,6 @@
-## Create a colour sequence
+## रंगो का अनुक्रम बनाएँ
 
-First create a character that can display a random sequence of colours.
+पहले एक पात्र बनाएं जो रंगों के यादृच्छिक (random) अनुक्रम को प्रदर्शित कर सके।
 
 \--- task \---
 
@@ -10,13 +10,13 @@ Open a new Scratch project.
 
 **Offline**: open a new project in the offline editor.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+यदि आपको Scratch ऑफ़लाइन संपादक (offline editor) को डाउनलोड और इंस्टॉल (download and install) करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](https://rpf.io/scratchoff) {:target="_blank"} पर पा सकते हैं।
 
 \--- /task \---
 
 \--- task \---
 
-Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+एक पात्र स्प्राइट और एक पृष्ठभूमि (backdrop) चुनें। आप बैलेरीना (ballerina) का उपयोग कर सकते हैं लेकिन आपके पात्र को एक व्यक्ति होने की आवश्यकता नहीं है, उन्हें केवल अलग-अलग रंग दिखाने में सक्षम होने की आवश्यकता है।
 
 ![screenshot](images/colour-sprite.png)
 
