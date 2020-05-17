@@ -4,62 +4,62 @@
 
 \--- task \---
 
-Open a new Scratch project.
+Відкрий новий проєкт Скретч.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**Онлайн**: відкрий новий онлайн проєкт Скретч на [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline**: open a new project in the offline editor.
+**Офлайн**: відкрий новий проєкт в офлайн-редакторі.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+Якщо тобі треба завантажити та встановити офлайн-редактор Скретч, то ти можеш його знайти на [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
 \--- task \---
 
-Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+Вибери спрайт та тло. Ти можеш використовувати балерину, але твій персонаж не обов’язково повинен бути людиною, все, що вимагається, — мати можливість показувати різні кольори.
 
 ![screenshot](images/colour-sprite.png)
 
 \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ Твоя гра повинна використовувати різні числа для кожного із кольорів:
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = червоний
+    + 2 = синій
+    + 3 = зелений
+    + 4 = жовтий
 
 \--- task \---
 
-Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+Створи своєму персонажу чотири різнокольорові образи, по одному для кожного із чотирьох кольорів, вказаних вище. Переконайся, що кольорові образи йдуть в тому ж порядку, що й кольори у вищенаведеному списку.
 
 ![screenshot](images/colour-costume.png)
 
 \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+Ти можеш використовувати інструмент **заповнення**, щоб заливати частини образу певним кольором.
 
 ![color-a-shape](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+Далі додай список для зберігання випадкової послідовності кольорів, яку необхідно запам’ятати гравцеві.
 
 \--- task \---
 
-Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+Створи список із назвою `послідовність`{:class="block3variables"}. Твій список має бути видимим лише для спрайта персонажа, тому при створенні списку ти можеш вибрати **Тільки для цього спрайту**.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+Тепер ти маєш побачити багато нових блоків для списків. А сам порожній список має відображатися в лівому верхньому куті Сцени.
 
 ![screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+Кожен колір має свій номер, тому ти можеш вибирати випадкові кольори, вибираючи випадково числа і додаючи їх до списку.
 
 \--- task \---
 
-Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+Додай наступний код до спрайта персонажа, щоб вибрати випадкове число і додати його до `послідовності`{:class="block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
