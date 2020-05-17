@@ -103,11 +103,11 @@ end
 
 \--- task \---
 
-Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
+अपने पात्र स्प्राइट द्वारा `red`{:class="block3events"} संदेश के प्रति प्रतिक्रिया देने के लिए आपके द्वारा उपयोग किए गए कोड को दोहराएँ। दोहराए गए कोड को बदलें ताकि यह `blue`{:class="block3events"} संदेश भेजे।
 
 \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+जब स्प्राइट `blue`{:class="block3events"} संदेश का जवाब देता है तब कौन सा कोड समान रहना चाहिए, और कौन सा कोड बदलना चाहिए? Remember that each colour has a corresponding number.
 
 \--- task \---
 
