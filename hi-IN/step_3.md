@@ -1,4 +1,4 @@
-## Add sound
+## ध्वनि जोड़ें
 
 \--- task \---
 
@@ -6,7 +6,7 @@ Test your project a few times. Do you notice that sometimes the same number is c
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+क्या आप हर बार जब भी पात्र स्प्राइट कॉस्ट्यूम (costume) बदलती है, एक ड्रम की आवाज़ बजा सकते हैं? और कैसा रहेगा कि प्रत्येक रंग के लिए एक अलग ड्रम की आवाज़ बजाई जाये?
 
 \--- task \---
 
