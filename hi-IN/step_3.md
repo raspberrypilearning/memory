@@ -2,7 +2,7 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+अपनी परियोजना का कुछ समय परीक्षण करें। क्या आपने ध्यान दिया कि कभी-कभी एक ही संख्या को एक लगातार दो (या अधिक) बार चुना जाता है, जिससे अनुक्रम को याद रखना कठिन हो जाता है?
 
 \--- /task \---
 
@@ -10,7 +10,7 @@ Test your project a few times. Do you notice that sometimes the same number is c
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+अपनी परियोजना में संगीत एक्सटेंशन (music extension) जोड़ें ताकि आप `play drum`{:class="block3extensions"} ब्लॉक का प्रयोग कर सकें।
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,21 +18,21 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+ड्रम बजाने वाला कोड पात्र की पोशाक को बदलने वाले कोड के **बहुत** ही समान है।
 
 \--- hints \---
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+आपको केवल दो ब्लॉक जोड़ने की जरूरत है: एक `play drum for (0.25) beats`{:class="block3sound"} ब्लॉक और एक `item (length of sequence) of sequence`{:class="block3variables"} ब्लॉक।
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+इन ब्लॉक्स की आपको आवश्यकता होगी:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
@@ -44,9 +44,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- hint \---
 
-Here is how your finished code should look:
+यहां बताया गया है कि आपका तैयार कोड कैसा दिखना चाहिए:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 when flag clicked
