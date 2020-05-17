@@ -58,7 +58,7 @@ end
 
 \--- task \---
 
-Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+आपके द्वारा लिखे गए कोड में जोड़ें ताकि जब पात्र स्प्राइट को सही `broadcast`{:class="block3events"} प्राप्त हो तो एक ड्रम की आवाज़ भी बजे।
 
 \--- hints \---
 
@@ -66,22 +66,22 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow
++ 1 = लाल (red)
++ 2 = नीला (blue)
++ 3 = हरा (green)
++ 4 = पीला (yellow)
 
 \--- /hint \---
 
 \--- hint \---
 
-Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
+`delete 1 of sequence`{:class="block3variables"} ब्लॉक के ऊपर, `sequence`{:class="block3variables"} सूची में पहली ध्वनि बजाने के लिए `play drum`{:class="block3sound"} ब्लॉक जोड़ें।
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is the code you will need to add:
+यहाँ दिया गया कोड आपको जोड़ना होगा:
 
 ```blocks3
 when I receive [red v]
