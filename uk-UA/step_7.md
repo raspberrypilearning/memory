@@ -1,8 +1,8 @@
-## Завдання: вдоскональте свою гру
+## Завдання: вдоскональ свою гру
 
-### Make more blocks
+### Створи більше блоків
 
-Do you see any other code that is the same for all four buttons?
+Чи бачиш ти ще якийсь код, який є однаковим для усіх чотирьох кнопок?
 
 ```blocks3
 when I receive [red v]
@@ -22,18 +22,18 @@ else
 end
 ```
 
-Can you make another custom block that all buttons can use?
+Чи можеш ти зробити інший власний блок, який могли б використовувати усі кнопки?
 
-### Another costume
+### Ще один образ
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+Ти помітив (-ла), що твоя гра починається з того, що персонаж показує один з кольорів, і що останній колір послідовності все ще відображається, коли гравець її відтворює?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+Чи можеш ти додати ще один білий образ до свого персонажа і додати код, щоб персонаж показував цей образ на початку гри, і коли гравець відтворює послідовність?
 
-![скріншот](images/colour-white.png)
+![знімок екрана](images/colour-white.png)
 
-### Difficulty level
+### Рівень складності
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+Чи можеш ти надати гравцеві можливість вибирати між "легким режимом" (з використанням лише червоного та синього кольорів) та "звичайним режимом" (який використовує всі чотири кольори)?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+Якщо хочеш, можеш навіть додати "складний" режим, який використовує п’ятий барабан!
