@@ -1,15 +1,15 @@
-## Repeat the sequence
+## अनुक्रम दोहराएं
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+अब आप चार बटन जोड़ने जा रहे हैं जिन्हें खिलाड़ी को रंग क्रम दोहराने के लिए दबाना होगा।
 
 \--- task \---
 
 चार बटनों का प्रतिनिधित्व करने के लिए अपनी प्रोजेक्ट में चार नए स्प्राइट जोड़ें।
 
 + नए स्प्राइट की पोशाक (costume) को संपादित (edit) करें ताकि चारों रंगों में से प्रत्येक में एक स्प्राइट हो
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ स्टेज पर स्प्राइट्स को पोशाकों के ही क्रम में डालें: लाल, नीला, हरा, पीला
 
-![screenshot](images/colour-drums.png)
+![स्क्रीनशॉट](images/colour-drums.png)
 
 \--- /task \---
 
@@ -17,7 +17,7 @@ Now you're going to add four buttons the player has to press to repeat the colou
 
 लाल स्प्राइट में कोड जोड़ें ताकि स्प्राइट पर क्लिक करने पर यह पात्र स्प्राइट के लिए एक `broadcasts`{:class="block3events"} 'लाल' संदेश प्रसारित करें:
 
-![red-drum](images/red_drum.png)
+![लाल ड्रम](images/red_drum.png)
 
 ```blocks3
     when this sprite clicked
@@ -42,7 +42,7 @@ Now you're going to add four buttons the player has to press to repeat the colou
 
 यदि `1` सूची की शुरुआत में है, कोड को सूची से संख्या को हटा देना चाहिए, क्योंकि खिलाड़ी को सही रंग याद था। अन्यथा खेल खत्म और खेल को समाप्त करने के लिए कोड में `stop all`{:class="block3control"} जोड़ें।
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -64,7 +64,7 @@ end
 
 \--- hint \---
 
-Can you use the numbers that correspond to each colour to play the correct drum beat?
+क्या आप सही ड्रम की अवाज बजाने के लिए प्रत्येक रंग के अनुरूप संख्याओं का उपयोग कर सकते हैं?
 
 + 1 = लाल (red)
 + 2 = नीला (blue)
@@ -87,7 +87,8 @@ Can you use the numbers that correspond to each colour to play the correct drum 
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
 
-+ play drum (\(1\) Snare Drum v) for (0.25) beats
++ play drum (\(1\) Snare Drum v) for (0.25) 
+beats
 delete (1 v) of [sequence v]
 else
 say [Game over!] for (1) seconds
@@ -107,7 +108,7 @@ end
 
 \--- /task \---
 
-जब स्प्राइट `blue`{:class="block3events"} संदेश का जवाब देता है तब कौन सा कोड समान रहना चाहिए, और कौन सा कोड बदलना चाहिए? Remember that each colour has a corresponding number.
+जब स्प्राइट `blue`{:class="block3events"} संदेश का जवाब देता है तब कौन सा कोड समान रहना चाहिए, और कौन सा कोड बदलना चाहिए? याद रखें कि प्रत्येक रंग के अनुरूप एक संख्या है।
 
 \--- task \---
 
@@ -119,14 +120,15 @@ end
 
 इन ब्लॉकों को रखे लेकिन आपको उन्हें किसी तरह से बदलने की आवश्यकता है:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 <(item (1 v) of [sequence v]) = [1]>
 
 when I receive [red v]
 
-play drum (\(1\) Snare Drum v) for (0.25) beats
+play drum (\(1\) Snare Drum v) for (0.25) 
+beats
 ```
 
 \--- /hint \---
@@ -135,12 +137,13 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 आपका कोड `blue`{:class="block3events"} प्रसारण के लिए ऐसा दिखना चाहिए ।
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[2]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
+    play drum (\(2\) Bass Drum v) for (0.25) 
+beats
     delete (1 v) of [sequence v]
 else
     say [Game over!] for (1) seconds
@@ -160,15 +163,15 @@ end
 
 \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+कोड का परीक्षण करना याद रखें! क्या आप पांच रंगों के अनुक्रम को याद कर सकते हैं? क्या हर बार अनुक्रम अलग है?
 
-जब खिलाड़ी रंगों के पूरे अनुक्रम को सही ढंग से दोहराता है, तो `sequence`{:class="block3variables"} सूची ख़ाली हो जाती है और खिलाड़ी जीत जाता है। If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+जब खिलाड़ी रंगों के पूरे अनुक्रम को सही ढंग से दोहराता है, तो `sequence`{:class="block3variables"} सूची ख़ाली हो जाती है और खिलाड़ी जीत जाता है। यदि आप चाहें, तो जब `sequence`{:class="block3variables"} सूची ख़ाली होती है तब आप इनाम के रूप में कुछ चमकती रोशनी को भी प्रदर्शित कर सकते हैं ।
 
 \--- task \---
 
-Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+अपने पात्र के `when flag clicked`{:class="block3events"} स्क्रिप्ट के अंत में इस कोड को जोड़ें:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
     wait until < (length of [sequence v]) = [0]>
@@ -179,7 +182,7 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 
 \--- task \---
 
-Switch to the Stage, and import the `drum machine` sound or another sound you like.
+स्टेज पर जाएं और `drum machine` ध्वनि या कोई अन्य ध्वनि जो आपको पसंद हो को इम्पोर्ट (import) करें।
 
 [[[generic-scratch3-sound-from-library]]]
 
@@ -187,9 +190,9 @@ Switch to the Stage, and import the `drum machine` sound or another sound you li
 
 \--- task \---
 
-Add this code to play a sound and make the backdrop change colour when the player wins.
+खिलाड़ी के जीतने पर एक आवाज़ निकालने और पृष्ठभूमि (backdrop) का रंग बदलने के लिए इस कोड को जोड़ें ।
 
-![ballerina](images/stage.png)
+![बैलरीना](images/stage.png)
 
 ```blocks3
     when I receive [won v]
