@@ -1,18 +1,18 @@
 ## High score
 
-Now save the high score so that you can play against your friends.
+अब उच्च स्कोर को सहेजें (save) ताकि आप अपने दोस्तों के खिलाफ खेल सकें।
 
 \--- task \---
 
-Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
+अपनी परियोजना में `high score`{:class="block3variables"} और `name`{:class="block3variables"} नामक दो नए वेरिएबल्स (variables) जोड़ें।
 
 \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. यदि ऐसा है तो खेल को स्कोर को उच्च स्कोर के रूप में सहेजना चाहिए, और खिलाड़ी का नाम भी संग्रहित करना चाहिए।
 
 \--- task \---
 
-Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+`high score`{:class="block3variables"} को सहेजने के लिए अपने पात्र स्प्राइट मे कोड जोड़ें । खिलाड़ी का नाम भी पूछें, और उसे `name`{:class="block3variables"} वेरिएबल में संग्रहित करें।
 
 [[[generic-scratch3-high-score]]]
 
