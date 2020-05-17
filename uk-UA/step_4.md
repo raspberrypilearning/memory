@@ -1,12 +1,12 @@
-## Repeat the sequence
+## Відтвори послідовність
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+Тепер ти додаси чотири кнопки, які гравець зможе натискати для відтворення послідовності кольорів.
 
 \--- task \---
 
-Add four new sprites to your project to represent the four buttons.
+Додай чотири нових спрайти до свого проєкту, які й будуть чотирма кнопками.
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ Відредагуй образи нових спрайтів так, щоб кожен спрайт був одного із чотирьох кольорів
 + Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
