@@ -4,9 +4,9 @@ Now you're going to add four buttons the player has to press to repeat the colou
 
 \--- task \---
 
-Add four new sprites to your project to represent the four buttons.
+चार बटनों का प्रतिनिधित्व करने के लिए अपनी प्रोजेक्ट में चार नए स्प्राइट जोड़ें।
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
++ नए स्प्राइट की पोशाक (costume) को संपादित (edit) करें ताकि चारों रंगों में से प्रत्येक में एक स्प्राइट हो
 + Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
 
 ![screenshot](images/colour-drums.png)
@@ -15,7 +15,7 @@ Add four new sprites to your project to represent the four buttons.
 
 \--- task \---
 
-Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+लाल स्प्राइट में कोड जोड़ें ताकि स्प्राइट पर क्लिक करने पर यह पात्र स्प्राइट के लिए एक `broadcasts`{:class="block3events"} 'लाल' संदेश प्रसारित करें:
 
 ![red-drum](images/red_drum.png)
 
@@ -26,21 +26,21 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+`broadcasts`{:class="block3events"} बटन एक लाउडस्पीकर पर घोषित एक संदेश की तरह है, जिसे आप उदाहरण के लिए स्कूलों या सुपरमार्केटों में सुन सकते हैं। सभी स्प्राइट्स `broadcast`{:class="block3events"}को सुन सकते हैं लेकिन केवल वह स्प्राइट ही कुछ करेगा जिसका काम इसका जवाब देना है।
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+नीले, हरे और पीले स्प्राइट में भी ऐसा ही कोड जोड़ें, ताकि वे भी अपने रंग के बारे में `broadcast`{:class="block3events"} संदेश सुन पाएं |
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+क्या आपको याद है कि `broadcast`{:class="block3events"} एक लाउडस्पीकर संदेश की तरह है? आप `broadcast`{:class="block3events"} संदेशों का जवाब देने को पात्र स्प्राइट की ज़िम्मेदारी बनाने के लिए कोड जोडेंगे।
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+जब आपका पात्र स्प्राइट `red`{:class="block3events"} संदेश प्राप्त करता है, तो कोड को जांचना चाहिए कि संख्या `1` `sequence`{:class="block3variables"} सूची के शुरुआत में है या नहीं (जिसका अर्थ है कि `red`{:class="block3events"} अनुक्रम में अगला रंग है)।
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+यदि `1` सूची की शुरुआत में है, कोड को सूची से संख्या को हटा देना चाहिए, क्योंकि खिलाड़ी को सही रंग याद था। अन्यथा खेल खत्म और खेल को समाप्त करने के लिए कोड में `stop all`{:class="block3control"} जोड़ें।
 
 ![ballerina](images/ballerina.png)
 
