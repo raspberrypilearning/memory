@@ -24,7 +24,7 @@
 
 Зміни цикл персонажа `повторити`{:class="block3control"} (для створення послідовності кольорів), щоб він повторювався стільки разів, скільки дорівнює `рахунок`{:class="block3variables"}:
 
-![sprite](images/ballerina.png)
+![спрайт](images/ballerina.png)
 
 ```blocks3
 repeat (score :: variables)
@@ -35,9 +35,9 @@ end
 
 \--- task \---
 
-If the player repeats the correct sequence, you should add `1` to `score`{:class="block3variables"}, and doing so increases the length of the next sequence. Add the following block to the character's code **at the point you know the sequence is correct**:
+Якщо гравець відтворює послідовність правильно, ти маєш додати `1` до `рахунку`{:class="block3variables"}, що збільшить довжину наступної послідовності. Додай наступнй блок до коду персонажа **в момент, коли ти знаєш, що послідовність правильна**:
 
-![sprite](images/ballerina.png)
+![спрайт](images/ballerina.png)
 
 ```blocks3
 change [score v] by (1)
@@ -47,7 +47,7 @@ change [score v] by (1)
 
 \--- hint \---
 
-You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
+Ти знаєш, що послідовність правильна в момент, коли гра `оповіщує`{:class="block3events"} повідомленням "перемога".
 
 \--- /hint \---
 
@@ -57,9 +57,9 @@ You know the sequence is correct at the point when the game `broadcasts`{:class=
 
 \--- task \---
 
-Finally, add a `forever`{:class="block3control"} loop around the code that generates the sequence, so that the game creates a new colour sequence for each level. This is how your character's code might look:
+Нарешті, додай цикл `завжди`{:class="block3control"} навколо коду, який генерує послідовність, щоб гра створювала нову послідовність кольорів для кожного рівня. Ось так може виглядати код твого персонажа:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 when flag clicked
@@ -81,6 +81,6 @@ end
 
 \--- task \---
 
-Get your friends to test out your game. Remember to hide the `sequence`{:class="block3variables"} list before they play it!
+Запроси друзів протестувати твою гру. Не забудь заховати список `послідовність`{:class="block3variables"} перед тим, як вони почнуть грати!
 
 \--- /task \---
