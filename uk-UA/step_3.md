@@ -18,21 +18,21 @@
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+Код для гри на барабані **дуже** схожий на код, що змінює образи спрайта.
 
 \--- hints \---
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+Тобі треба додати лише два блоки: `програти на барабані (0.25) ударів`{:class="block3extensions"} та `елемент (довжина послідовності) з послідовності`{:class="block3variables"}.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+Тобі знадобляться ці блоки:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
@@ -44,9 +44,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- hint \---
 
-Here is how your finished code should look:
+Ось як має виглядати твій завершений код:
 
-![ballerina](images/ballerina.png)
+![балерина](images/ballerina.png)
 
 ```blocks3
 when flag clicked
