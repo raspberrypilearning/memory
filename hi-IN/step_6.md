@@ -1,4 +1,4 @@
-## High score
+## उच्च स्कोर
 
 अब उच्च स्कोर को सहेजें (save) ताकि आप अपने दोस्तों के खिलाफ खेल सकें।
 
@@ -8,7 +8,7 @@
 
 \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. यदि ऐसा है तो खेल को स्कोर को उच्च स्कोर के रूप में सहेजना चाहिए, और खिलाड़ी का नाम भी संग्रहित करना चाहिए।
+खिलाड़ी का अनुक्रम गलत होने पर जब खेल समाप्त हो जाता है, तो खेल को यह जाँचना चाहिए कि स्कोर वर्तमान उच्च स्कोर से अधिक है या नहीं। यदि ऐसा है तो खेल को स्कोर को उच्च स्कोर के रूप में सहेजना चाहिए, और खिलाड़ी का नाम भी संग्रहित करना चाहिए।
 
 \--- task \---
 
@@ -20,7 +20,7 @@ When the game ends because the player gets the sequence wrong, the game should c
 
 \--- hint \---
 
-Your new code needs to follow this pattern:
+इस पैटर्न का पालन करने के लिए आपके नए कोड की आवश्यकता है:
 
 After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
 
@@ -28,9 +28,9 @@ After the `Game over`{:class="block3looks"} message `If`{:class="block3control"}
 
 \--- hint \---
 
-You need the following blocks:
+आपको निम्नलिखित ब्लॉक चाहिए:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 if < > then
@@ -57,9 +57,9 @@ set [name v] to [ ]
 
 \--- hint \---
 
-Here's how your code for when the red button is pressed should look:
+जब लाल बटन दबाया गया के लिए आपका कोड इस प्रकार दिखाई देना चाहिए:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -85,11 +85,11 @@ end
 
 \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+आपको इस नए कोड को अन्य तीन रंगों के लिए भी पात्र स्प्राइट में जोड़ने की आवश्यकता है!
 
 क्या आप देख सकते हैं कि चारों रंगों के लिए 'खेल समाप्त' ('Game over') कोड बिल्कुल समान है?
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 say [Game over!] for (1) seconds
@@ -116,7 +116,7 @@ stop [all v]
 
 `red`{:class="block3events"} प्रसारण से जुड़े `else`{:class="block3control"} ब्लॉक के कोड को `Game over`{:class="block3myblocks"} ब्लॉक में जोड़ें ताकि यह इस तरह दिखे:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 define Game over
@@ -136,7 +136,7 @@ stop [all v]
 
 अब `red`{:class="block3events"} प्रसारण से जुड़े `else`{:class="block3control"} ब्लॉक के कोड को हटाएँ और इसकी जगह `Game over`{:class="block3myblocks"} ब्लॉक को जोड़ें:
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -153,7 +153,7 @@ end
 
 \--- task \---
 
-Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
+खेल खेलते हुए और रंग क्रम में गलत स्थिति में लाल बटन पर क्लिक करके अपने नए ब्लॉक का परीक्षण करें।
 
 \--- /task \---
 
@@ -163,7 +163,7 @@ Test your new block by playing the game and clicking the red button at the wrong
 
 अब अन्य रंगो के लिए `broadcasts`{:class="block3events"} से जुड़े `else`{:class="block3control"} ब्लॉक के कोड को भी `Game over`{:class="block3myblocks"} ब्लॉक से बदलें। यहाँ दिखाया गया है कि `blue`{:class="block3events"} संदेश के लिए कोड कैसा दिखना चाहिए
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
@@ -180,15 +180,16 @@ end
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. आपको `Game over`{:class="block3myblocks"} ब्लाक जो आपने बनाया था में इस कोड को केवल एक बार जोड़ना होगा, और चार अलग-अलग जगहों पर नहीं!
+अब एक आवाज़ जोड़ें जो गलत बटन दबाने पर बजेगी। आपको `Game over`{:class="block3myblocks"} ब्लाक जो आपने बनाया था में इस कोड को केवल एक बार जोड़ना होगा, और चार अलग-अलग जगहों पर नहीं!
 
-![ballerina](images/ballerina.png)
+![बैलरीना](images/ballerina.png)
 
 ```blocks3
 define Game over
 start sound [Cough1 v]
 say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
+if < (score :: variables) > (high score) > 
+then
     play sound (trumpet1 v)
     set [high score v] to (score)
     ask [High score! What is your name?] and wait
