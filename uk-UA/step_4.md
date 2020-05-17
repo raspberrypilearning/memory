@@ -7,7 +7,7 @@
 Додай чотири нових спрайти до свого проєкту, які й будуть чотирма кнопками.
 
 + Відредагуй образи нових спрайтів так, щоб кожен спрайт був одного із чотирьох кольорів
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ Розмісти спрайти в тому ж порядку на сцені, як і кольорові образи персонажа: червоний, синій, зелений, жовтий
 
 ![screenshot](images/colour-drums.png)
 
@@ -15,7 +15,7 @@
 
 \--- task \---
 
-Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+Додай код до червоного спрайта, щоб коли на нього клацають, він `оповіщував`{:class="block3events"} спрайт персонажа повідомленням "червоний":
 
 ![red-drum](images/red_drum.png)
 
@@ -26,15 +26,15 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+`Оповіщення`{:class="block3events"} — це ніби трансляція повідомлення через гучномовець, які бувають в школах або супермаркетах. Усі спрайти можуть чути `оповіщення`{:class="block3events"}, але лише ті, які повинні відповідати, будуть щось виконувати.
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+Додай аналогічний код до синього, зеленого та жовтого спрайтів, щоб вони `оповіщували`{:class="block3events"} повідомленнями з відповідними кольорами.
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+Ти ж пам’ятаєш, що `оповіщення`{:class="block3events"} — це все одно, що повідомлення через гучномовець? Ти додаси код, щоб змусити спрайт персонажа реагувати на повідомлення `оповіщень`{:class="block3events"}.
 
 \--- task \---
 
@@ -66,9 +66,9 @@ Add to the code you just wrote so that a drum beat also plays when the character
 
 Can you use the numbers that correspond to each colour to play the correct drum beat?
 
-+ 1 = червоний
-+ 2 = синій
-+ 3 = зелений
++ 1 = red
++ 2 = blue
++ 3 = green
 + 4 = yellow
 
 \--- /hint \---
