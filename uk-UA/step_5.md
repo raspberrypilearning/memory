@@ -1,28 +1,28 @@
 ## Багаторівнева гра
 
-До цих пір гравець мав лише запам'ятати послідовність з п'яти кольорів. Improve your game by adding a score, and adding code so that as the player scores points, the game moves to the next level and the colour sequence to remember becomes longer.
+Дотепер гравець мав запам’ятовувати послідовність лише з п'яти кольорів. Вдоскональ свою гру, ввівши рахунок і додавши код, щоб при набиранні гравцем очків, гра переходила на наступний рівень, і послідовність кольорів для запам’ятовування ставала довшою.
 
 \--- task \---
 
-Create a new variable called `score`{:class="block3variables"}.
+Створи нову змінну з назвою `рахунок`{:class="block3variables"}.
 
 [[[generic-scratch3-add-variable]]]
 
 \--- /task \---
 
-Based on the `score`{:class="block3variables"}, the game will decide on the length of the colour sequence. Start with a score (and a sequence length) of `3`.
+На основі `рахунку`{:class="block3variables"} гра визначатиме довжину послідовності кольорів. Розпочнімо із рахунку (і довжини послідовності) `3`.
 
 \--- task \---
 
-Add a block at the start of your character's `when flag clicked`{:class="block3events"} code to set the `score`{:class="block3variables"} to `3`.
+Додай блок на початку коду персонажа `коли прапор натиснуто`{:class="block3events"}, щоб встановити значення `рахунку`{:class="block3variables"} рівним `3`.
 
 \--- /task \---
 
-Instead of always creating a sequence of five colours, you now want the `score`{:class="block3variables"} to determine the sequence length.
+Замість того, щоб кожного разу створювати послідовність п’яти кольорів, тепер ти можеш використовувати `рахунок`{:class="block3variables"}, щоб визначати довжину послідовності.
 
 \--- task \---
 
-Change the character's `repeat`{:class="block3control"} loop (for creating the colour sequence) to repeat `score`{:class="block3variables"} times:
+Зміни цикл персонажа `повторити`{:class="block3control"} (для створення послідовності кольорів), щоб він повторювався стільки разів, скільки дорівнює `рахунок`{:class="block3variables"}:
 
 ![sprite](images/ballerina.png)
 
@@ -40,7 +40,7 @@ If the player repeats the correct sequence, you should add `1` to `score`{:class
 ![sprite](images/ballerina.png)
 
 ```blocks3
-змінити [рахунок v] на (1)
+change [score v] by (1)
 ```
 
 \--- hints \---
