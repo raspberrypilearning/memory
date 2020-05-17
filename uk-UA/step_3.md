@@ -1,16 +1,16 @@
-## Add sound
+## Додай звук
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Протестуй свій проєкт декілька разів. Ти помітив (-ла), що інколи одне й те саме число вибирається два (або більше) разів підряд, що робить послідовність складнішою для запам’ятовування?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+Чи можеш ти видавати звук барабана кожного разу, коли спрайт змінює образ? А як щодо різних звуків для кожного з кольорів?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+Додай до свого проєкту розширення Музика, щоб використовувати блок `програти на барабані`{:class="block3extensions"}.
 
 [[[generic-scratch3-add-music-extension]]]
 
