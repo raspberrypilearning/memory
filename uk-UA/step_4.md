@@ -75,13 +75,13 @@ end
 
 \--- hint \---
 
-Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
+Над блоком `вилучити 1 з послідовності`{:class="block3variables"} додай `прогарти на барабані`{:class="block3extensions"}, щоб зіграти перший звук в списку `послідовність`{:class="block3variables"}.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is the code you will need to add:
+Ось код, який тобі треба буде додати:
 
 ```blocks3
 when I receive [red v]
@@ -103,11 +103,11 @@ end
 
 \--- task \---
 
-Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
+Продублюй код, який ти використовував для того, щоб спрайт персонажа зреагував на повідомлення `червоний`{:class="block3events"}. Зміни продубльований код так, що він реагував на повідомлення `синій`{:class="block3events"}.
 
 \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+Коли спрайт обробляє повідомлення `синій`{:class="block3events"}, які частини коду мають залишитися такими ж, а які повинні змінитися? Пам’ятай, що кожен із кольорів має відповідний номер.
 
 \--- task \---
 
