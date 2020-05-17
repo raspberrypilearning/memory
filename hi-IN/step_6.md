@@ -64,11 +64,13 @@ Here's how your code for when the red button is pressed should look:
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
+    play drum (item (1 v) of [sequence v]) for 
+(0.25) beats
     delete (1 v) of [sequence v]
 else
     say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
+    if < (score :: variables) > (high score) 
+> then
         set [high score v] to (score :: variables)
         ask [High score! What is your name?] and wait
         set [name v] to (answer)
@@ -91,7 +93,8 @@ You need to add this new code to the character sprite for the other three colour
 
 ```blocks3
 say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
+if < (score :: variables) > (high score) > 
+then
     set [high score v] to (score :: variables)
     ask [High score! What is your name?] and wait
     set [name v] to (answer)
@@ -118,7 +121,8 @@ stop [all v]
 ```blocks3
 define Game over
 say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
+if < (score :: variables) > (high score) > 
+then
     set [high score v] to (score :: variables)
     ask [High score! What is your name?] and wait
     set [name v] to (answer)
@@ -137,7 +141,8 @@ stop [all v]
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
+    play drum (\(1\) Snare Drum v) for (0.25) 
+beats
     delete (1 v) of [sequence v]
 else
     Game over :: custom
@@ -156,14 +161,15 @@ Test your new block by playing the game and clicking the red button at the wrong
 
 \--- task \---
 
-अब अन्य रंगो के लिए `broadcasts`{:class="block3events"} से जुड़े `else`{:class="block3control"} ब्लॉक के कोड को भी `Game over`{:class="block3myblocks"} ब्लॉक से बदलें। Here is what the code for the `blue`{:class="block3events"} message should look like
+अब अन्य रंगो के लिए `broadcasts`{:class="block3events"} से जुड़े `else`{:class="block3control"} ब्लॉक के कोड को भी `Game over`{:class="block3myblocks"} ब्लॉक से बदलें। यहाँ दिखाया गया है कि `blue`{:class="block3events"} संदेश के लिए कोड कैसा दिखना चाहिए
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
+    play drum (\(2\) Bass Drum v) for (0.25) 
+beats
     delete (1 v) of [sequence v]
 else
     Game over :: custom
@@ -174,7 +180,7 @@ end
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+Now add a sound that plays when the wrong button is pressed. आपको `Game over`{:class="block3myblocks"} ब्लाक जो आपने बनाया था में इस कोड को केवल एक बार जोड़ना होगा, और चार अलग-अलग जगहों पर नहीं!
 
 ![ballerina](images/ballerina.png)
 
