@@ -1,6 +1,6 @@
-## Створіть послідовність кольорів
+## Створи послідовність кольорів
 
-First create a character that can display a random sequence of colours.
+Спочатку створи персонажа, який може відображати випадкову послідовність кольорів.
 
 \--- task \---
 
@@ -24,10 +24,10 @@ Choose a character sprite and a backdrop. You could use the ballerina, but your 
 
 + Your game should use a different number to represent each colour:
     
-    + 1 = червоний
-    + 2 = синій
-    + 3 = зелений
-    + 4 = жовтий
+    + 1 = red
+    + 2 = blue
+    + 3 = green
+    + 4 = yellow
 
 \--- task \---
 
@@ -64,8 +64,8 @@ Add this code to the character sprite to choose a random number and add it to `s
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-коли натиснуто ⚑
-додати (випадкове від (1) до (4)) до [послідовність v]
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -95,10 +95,10 @@ This is what your code should look like:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-коли натиснуто ⚑
-вилучити (все v) з [послідовність v]
-повторити (5) 
-  додати (випадкове від (1) до (4)) до [послідовність v]
+when flag clicked
+delete (all v) of [sequence v]
+repeat (5)
+    add (pick random (1) to (4)) to [sequence v]
 end
 ```
 
