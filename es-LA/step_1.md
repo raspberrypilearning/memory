@@ -1,14 +1,14 @@
-\--- no-print \---
+\--- no imprimir \---
 
 Esta es la versión **Scratch 3** del proyecto. También hay una versión [Scratch 2 del proyecto](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
-\--- /no-print \---
+\--- no imprimir \---
 
 ## Introducción
 
 ¡En este proyecto, crearás un juego de memoria en el que tendrás que memorizar y repetir una secuencia aleatoria de colores!
 
-### What you will make
+### Lo que harás
 
 \--- no-print \---
 
@@ -38,7 +38,7 @@ Haz clic en la bandera verde para empezar. Observa la secuencia de colores que s
 
 ## \--- collapse \---
 
-## title: What you will need
+## título: Lo que necesitarás
 
 ### Hardware
 
