@@ -14,7 +14,7 @@ Cuando el juego termina porque el jugador se equivoca de secuencia, el juego deb
 
 Añade código al objeto del personaje para almacenar el `puntaje mayor`{:class="block3variables"}. Pregunta también por el nombre del jugador y guárdalo en la variable `nombre`{:class="block3variables"}.
 
-[[[generic-scratch3-high-puntaje]]]
+[[[generic-scratch3-high-score]]]
 
 --- hints ---
 
