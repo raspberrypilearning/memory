@@ -2,7 +2,7 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+Prueba tu proyecto varias veces. ¿Notas que a veces el mismo número es elegido dos veces (o más) seguidos, lo que hace que la secuencia sea más difícil de memorizar?
 
 \--- /task \---
 
