@@ -22,7 +22,7 @@
 
 इस पैटर्न का पालन करने के लिए आपके नए कोड की आवश्यकता है:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+`Game over`{:class="block3looks"} संकेत के बाद `If`{:class="block3control"} यदि `score`{:class="block3variables"} इससे `greater than`{:class="block3operators"} `high score`{:class="block3les"} तब `Set`{:class="block3variables"} `high score`{:class="block3variables"} उस `score`{:class="block3variables"} `Ask`{:class="block3sensing"} प्लेयर का नाम `Set`{:class="block3variables"} `name`{:class="block3variables"} करके `answer`{:clasck3sensing"}
 
 \--- /hint \---
 
