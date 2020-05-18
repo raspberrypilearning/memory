@@ -1,0 +1,19 @@
+secuencia
+
+rojo
+
+¡Fin del juego!
+
+azul
+
+¡Tu ganas!
+
+puntaje
+
+puntaje mayor
+
+nombre
+
+¿Cuál es tu nombre?
+
+¡Puntuación mayor! ¿Cuál es tu nombre?

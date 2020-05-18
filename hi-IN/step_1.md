@@ -1,25 +1,65 @@
-## भूमिका
+--- no-print ---
 
-इस प्रोजेक्ट में, आप मेमोरी गेम बनाएँगे जिसमें आप रंगों के बेतरतीब अनुक्रम को याद रखेंगे और दोहराएँगे!
+यह प्रोजेक्ट का **स्क्रैच 3** संस्करण है।ईस प्रोजेक्ट का एक [स्क्रैच 2](https://projects.raspberrypi.org/en/projects/memory-scratch2) संस्करण भी है।
+
+--- /no-print ---
+
+## परिचय
+
+इस प्रोजेक्ट में, आप एक मेमोरी गेम बनाएंगे जिसमें आपको रंगों के एक बेतरतीब क्रम को याद रखना और दोहराना होगा!
 
 ### आप क्या बनाएँगे
 
-शुरू करने के लिए, हरे फ्लैग पर क्लिक करें। नर्तकी की पोशाक द्वारा दिखाए गए रंगों का अनुक्रम देखें और उसके साथ में बजता ड्रम सुनें, फिर उन्हें उसके लिए दोहराएं। यदि आप गलत अनुक्रम देते हैं, तो गेम समाप्त हो जाता है!
+--- no-print ---
+
+प्रारंभ करने के लिए हरे झंडे पर क्लिक करें । नर्तक की पोशाक द्वारा दिखाए गए रंगों के अनुक्रम को देखें और साथ में ड्रम की आवाज़ को सुनें, फिर रंगों को वापस उसके पास दोहराएं। यदि आपके रंगों का अनुक्रम गलत हुआ, तो खेल खत्म!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="images/colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
-### आप क्या सीखेंगे
+--- /no-print ---
 
-यह प्रोजेक्ट [Raspberry Pi डिजिटल निर्माण पाठ्यचर्या](http://rpf.io/curriculum){:target="_blank"} में से निम्नलिखित गुणों के तत्वों को कवर करता है:
+--- print-only ---
 
-+ [समस्या का हल करने के लिए प्रोग्रामिंग निर्माण का संयोजन करें।](https://www.raspberrypi.org/curriculum/programming/builder){:target="_blank"}
+![तैयार खेल का स्क्रीनशॉट](images/screenshot.png)
 
+--- /print-only ---
 
-### शिक्षकों के लिए अतिरिक्त जानकारी
+--- collapse ---
+---
+title: आप क्या सीखेंगे
+---
++ अपने स्क्रैच प्रोजेक्ट में आवाज़ कैसे जोड़ें
++ डेटा को संग्रहीत करने के लिए सूचियों का निर्माण और उपयोग कैसे करें
++ कोड को दोहराने के लिए कस्टम ब्लॉक कैसे बनाएं और उपयोग करें
 
-यदि आपको यह प्रोजेक्ट प्रिंट करना हो, कृपया [प्रिंटर के अनुकूल संस्करण](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"} का उपयोग करें।
+--- /collapse ---
 
-इस प्रोजेक्ट के लिए GitHub रेपो का उपयोग करने के लिए फुटर में दिए लिंक का उपयोग करें, जिसमें 'en/resources' फोल्डर में सभी संसाधन (तैयार प्रोजेक्ट के उदाहरण सहित) शामिल हैं।
+--- collapse ---
+---
+title: आपको क्या आवश्यकता होगी
+---
+### हार्डवेयर
+
++ Scratch 3 चलाने में सक्षम कंप्यूटर
+
+### सॉफ्टवेयर
+
+Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: शिक्षकों के लिए अतिरिक्त जानकारी
+---
+--- no-print ---
+
+अगर आपको इस प्रोजेक्ट को प्रिंट करने की आवश्यकता है, तो कृपया [प्रिंटर-अनुकूल संस्करण](https://projects.raspberrypi.org/hi-IN/projects/memory/print){:target="_blank"} का उपयोग करें।
+
+--- /no-print ---
+
+आप यहां [पूर्ण किया हुआ प्रोजेक्ट](http://rpf.io/p/hi-IN/memory-get){:target="_blank"} पा सकते हैं ।
+
+--- /collapse ---
