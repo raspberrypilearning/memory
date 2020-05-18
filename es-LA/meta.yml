@@ -1,4 +1,3 @@
----
 hero_image: images/memory.png
 listed: true
 copyedit: false
@@ -7,12 +6,12 @@ description: '¡Crea un juego de memoria en el que tengas que memorizar y repeti
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
-  - title: Introducción
-  - title: Crear una secuencia de colores
-  - title: Añadir sonido
-  - title: Repetir la secuencia
-  - title: Múltiples niveles
-  - title: Puntuación mayor
-  - title: "Desafío: mejora tu juego"
-  - title: '¿Qué sigue?'
+- title: Introducción
+- title: Crear una secuencia de colores
+- title: Añadir sonido
+- title: Repetir la secuencia
+- title: Múltiples niveles
+- title: Puntuación mayor
+- title: "Desafío: mejora tu juego"
+- title: '¿Qué sigue?'
 
