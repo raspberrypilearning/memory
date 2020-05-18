@@ -70,7 +70,7 @@ else
     say [¡Fin del juego!] for (1) seconds
     if < (puntaje :: variables) > (puntaje mayor) > then
         set [puntaje mayor v] to (puntaje :: variables)
-        ask [puntaje mayor! ¿Cuál es tu nombre?] and wait
+        ask [Puntaje mayor! ¿Cuál es tu nombre?] and wait
         set [nombre v] to (answer)
     end
     stop [all v]
@@ -93,7 +93,7 @@ end
 say [¡Fin del juego!] for (1) seconds
 if < (puntaje :: variables) > (puntaje mayor) > then
     set [puntaje mayor v] to (puntaje :: variables)
-    ask [puntaje mayor! ¿Cuál es tu nombre?] and wait
+    ask [Puntaje mayor! ¿Cuál es tu nombre?] and wait
     set [nombre v] to (answer)
 end
 stop [all v]
@@ -120,7 +120,7 @@ define ¡Fin del juego!
 say [¡Fin del juego!] for (1) seconds
 if < (puntaje :: variables) > (puntaje mayor) > then
     set [puntaje mayor v] to (puntaje :: variables)
-    ask [puntaje mayor! ¿Cuál es tu nombre?] and wait
+    ask [Puntaje mayor! ¿Cuál es tu nombre?] and wait
     set [nombre v] to (answer)
 end
 stop [all v]
@@ -137,7 +137,7 @@ Ahora quita el código del bloque `si no`{:class="block3control"} conectado al e
 ```blocks3
 when I receive [rojo v]
 if <(item (1 v) of [secuencia v])=[1]> then
-    play drum ((1) Snare Drum v) for (0.25) beats
+    play drum (\(1\) Snare Drum v) for (0.25) beats
     delete (1 v) of [secuencia v]
 else
     ¡Fin del juego! :: custom
@@ -163,7 +163,7 @@ Reemplaza también el código del bloque `si no`{:class="block3control"} conecta
 ```blocks3
 when I receive [azul v]
 if <(item (1 v) of [secuencia v])=[1]> then
-    play drum ((2) Bass Drum v) for (0.25) beats
+    play drum (\(2\) Bass Drum v) for (0.25) beats
     delete (1 v) of [secuencia v]
 else
     ¡Fin del juego! :: custom
@@ -185,7 +185,7 @@ say [¡Fin del juego!] for (1) seconds
 if < (puntaje :: variables) > (puntaje mayor) > then
     play sound (trumpet1 v)
     set [puntaje mayor v] to (puntaje)
-    ask [puntaje mayor! ¿Cuál es tu nombre?] and wait
+    ask [Puntaje mayor! ¿Cuál es tu nombre?] and wait
     set [nombre v] to (answer)
 end
 stop [all v]

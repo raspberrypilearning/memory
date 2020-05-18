@@ -46,7 +46,7 @@ title: Lo que necesitarás
 
 ### Software
 
-Scratch 3 (ya sea [ en línea ](https://rpf.io/scratchon) {:target="_blank"} o [sin conexión](https://rpf.io/scratchoff){:target="_blank"})
+Scratch 3 (ya sea [ en línea ](https://rpf.io/scratchon){:target="_blank"} o [sin conexión](https://rpf.io/scratchoff){:target="_blank"})
 
 --- /collapse ---
 

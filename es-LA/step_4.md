@@ -87,7 +87,7 @@ Aquí está el código que necesitarás añadir:
 when I receive [rojo v]
 if <(item (1 v) of [secuencia v])=[1]> then
 
-+ play drum ((1) Snare Drum v) for (0.25) beats
++ play drum (\(1\) Snare Drum v) for (0.25) beats
 delete (1 v) of [secuencia v]
 else
 say [¡Fin del juego!] for (1) seconds
@@ -126,7 +126,7 @@ Mantén estos bloques, pero necesitas cambiarlos de alguna manera:
 
 when I receive [rojo v]
 
-play drum ((1) Snare Drum v) for (0.25) beats
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 --- /hint ---
@@ -140,7 +140,7 @@ Así es cómo tu código debería verse para el enviar `azul`{:class="block3even
 ```blocks3
 when I receive [azul v]
 if <(item (1 v) of [secuencia v])=[2]> then
-    play drum ((2) Bass Drum v) for (0.25) beats
+    play drum (\(2\) Bass Drum v) for (0.25) beats
     delete (1 v) of [secuencia v]
 else
     say [¡Fin del juego!] for (1) seconds
@@ -162,7 +162,7 @@ Duplica el código dos veces mas (para los botones verde y amarillo), y cambia l
 
 ¡Recuerda probar tu código! ¿Puedes memorizar una secuencia de cinco colores? ¿Es la secuencia diferente cada vez?
 
-Cuando el jugador repite toda la secuencia de colores correctamente, la lista `secuencia`{:class="block3variables"} se queda vacía y el jugador gana. Si quieres, también puedes mostrar algunas luces parpadeantes como recompensa una vez que la lista `secuencia`:class="block3variables"} esté vacía.
+Cuando el jugador repite toda la secuencia de colores correctamente, la lista `secuencia`{:class="block3variables"} se queda vacía y el jugador gana. Si quieres, también puedes mostrar algunas luces parpadeantes como recompensa una vez que la lista `secuencia`{:class="block3variables"} esté vacía.
 
 --- task ---
 

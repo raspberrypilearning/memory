@@ -35,7 +35,7 @@
 ![балерина](images/ballerina.png)
 
 ```blocks3
-play drum ((1) Snare Drum v) for (0.25) beats
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
 (item (length of [послідовність v]) of [послідовність v])
 ```

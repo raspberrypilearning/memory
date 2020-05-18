@@ -70,7 +70,7 @@ else
     say [Кінець гри!] for (1) seconds
     if < (рахунок :: variables) > (рекорд) > then
         set [рекорд v] to (рахунок :: variables)
-        ask [рекорд! Як тебе звати?] and wait
+        ask [Pекорд! Як тебе звати?] and wait
         set [ім’я v] to (answer)
     end
     stop [all v]
@@ -93,7 +93,7 @@ end
 say [Кінець гри!] for (1) seconds
 if < (рахунок :: variables) > (рекорд) > then
     set [рекорд v] to (рахунок :: variables)
-    ask [рекорд! Як тебе звати?] and wait
+    ask [Pекорд! Як тебе звати?] and wait
     set [ім’я v] to (answer)
 end
 stop [all v]
@@ -120,7 +120,7 @@ define Кінець гри
 say [Кінець гри!] for (1) seconds
 if < (рахунок :: variables) > (рекорд) > then
     set [рекорд v] to (рахунок :: variables)
-    ask [рекорд! Як тебе звати?] and wait
+    ask [Pекорд! Як тебе звати?] and wait
     set [ім’я v] to (answer)
 end
 stop [all v]
@@ -137,7 +137,7 @@ stop [all v]
 ```blocks3
 when I receive [червоний v]
 if <(item (1 v) of [послідовність v])=[1]> then
-    play drum ((1) Snare Drum v) for (0.25) beats
+    play drum (\(1\) Snare Drum v) for (0.25) beats
     delete (1 v) of [послідовність v]
 else
     Кінець гри :: custom
@@ -163,7 +163,7 @@ end
 ```blocks3
 when I receive [синій v]
 if <(item (1 v) of [послідовність v])=[1]> then
-    play drum ((2) Bass Drum v) for (0.25) beats
+    play drum (\(2\) Bass Drum v) for (0.25) beats
     delete (1 v) of [послідовність v]
 else
     Кінець гри :: custom
@@ -185,7 +185,7 @@ say [Кінець гри!] for (1) seconds
 if < (рахунок :: variables) > (рекорд) > then
     play sound (trumpet1 v)
     set [рекорд v] to (рахунок)
-    ask [рекорд! Як тебе звати?] and wait
+    ask [Pекорд! Як тебе звати?] and wait
     set [ім’я v] to (answer)
 end
 stop [all v]

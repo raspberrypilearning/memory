@@ -15,7 +15,7 @@
 
 --- print-only ---
 
-![гра у вибивного](images/dodgeball-showcase.png)
+![гра у вибивного](images/dodge-final.png)
 
 --- /print-only ---
 

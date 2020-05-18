@@ -15,7 +15,7 @@
 
 --- print-only ---
 
-![डॉजबॉल खेल खेलते हुए](images/dodgeball-showcase.png)
+![डॉजबॉल खेल खेलते हुए](images/dodge-final.png)
 
 --- /print-only ---
 

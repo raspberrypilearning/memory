@@ -10,7 +10,7 @@
 
 **ऑफ़लाइन**: ऑफ़लाइन संपादक में एक नया प्रोजेक्ट खोलें।
 
-यदि आपको Scratch ऑफ़लाइन संपादक (offline editor) को डाउनलोड और इंस्टॉल (download and install) करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](https://rpf.io/scratchoff) {:target="_blank"} पर पा सकते हैं।
+यदि आपको Scratch ऑफ़लाइन संपादक (offline editor) को डाउनलोड और इंस्टॉल (download and install) करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"} पर पा सकते हैं।
 
 --- /task ---
 
@@ -65,7 +65,7 @@
 
 ```blocks3
 when flag clicked
-[(pick random (1) to (4)) to [sequence v) को जोड़ें
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 --- /task ---
@@ -84,7 +84,7 @@ when flag clicked
 
 --- hint ---
 
-पहले सूची के सभी संख्याओं को हटाने के लिए एक `delete all of sequence`{:class="block3variables"} जोड़ें, और फिर एक `repeat` {:class="block3control"} ब्लॉक जोड़ें जो सूची में पाँच यादृच्छिक संख्याएँ जोड़ता है।
+पहले सूची के सभी संख्याओं को हटाने के लिए एक `delete all of sequence`{:class="block3variables"} जोड़ें, और फिर एक `repeat`{:class="block3control"} ब्लॉक जोड़ें जो सूची में पाँच यादृच्छिक संख्याएँ जोड़ता है।
 
 --- /hint ---
 
@@ -115,7 +115,7 @@ end
 ![बैलरीना](images/ballerina.png)
 
 ```blocks3
-switch costume (item (length of [sequence v]) of [sequence v])
+switch costume to (item (length of [sequence v]) of [sequence v])
 wait (1) seconds
 ```
 

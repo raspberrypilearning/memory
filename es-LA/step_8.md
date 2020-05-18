@@ -15,7 +15,7 @@ Haz clic en la bandera verde para empezar, y luego utiliza las teclas de flecha 
 
 --- print-only ---
 
-![partida de esquiva-pelotas en curso](images/dodgeball-showcase.png)
+![partida de esquiva-pelotas en curso](images/dodge-final.png)
 
 --- /print-only ---
 

@@ -87,7 +87,7 @@ end
 when I receive [червоний v]
 if <(item (1 v) of [послідовність v])=[1]> then
 
-+ play drum ((1) Snare Drum v) for (0.25) beats
++ play drum (\(1\) Snare Drum v) for (0.25) beats
 delete (1 v) of [послідовність v]
 else
 say [Кінець гри!] for (1) seconds
@@ -126,7 +126,7 @@ end
 
 when I receive [червоний v]
 
-play drum ((1) Snare Drum v) for (0.25) beats
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 --- /hint ---
@@ -140,7 +140,7 @@ play drum ((1) Snare Drum v) for (0.25) beats
 ```blocks3
 when I receive [blue v]
 if <(item (1 v) of [послідовність v])=[2]> then
-    play drum ((2) Bass Drum v) for (0.25) beats
+    play drum (\(2\) Bass Drum v) for (0.25) beats
     delete (1 v) of [послідовність v]
 else
     say [Кінець гри!] for (1) seconds

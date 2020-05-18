@@ -65,18 +65,16 @@ set [name v] to [ ]
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for 
-(0.25) beats
-    delete (1 v) of [sequence v]
+	play drum (item (1 v) of [sequence v]) for (0.25) beats
+	delete (1 v) of [sequence v]
 else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) 
-> then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
+	say [Game over!] for (1) seconds
+	if < (score :: variables) > (high score) > then
+		set [high score v] to (score :: variables)
+		ask [High score! What is your name?] and wait
+		set [name v] to (answer)
+	end
+	stop [all v]
 end
 ```
 
@@ -94,11 +92,10 @@ end
 
 ```blocks3
 say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > 
-then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+if < (score :: variables) > (high score) > then
+	set [high score v] to (score :: variables)
+	ask [High score! What is your name?] and wait
+	set [name v] to (answer)
 end
 stop [all v]
 ```
@@ -122,11 +119,10 @@ stop [all v]
 ```blocks3
 define Game over
 say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > 
-then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+if < (score :: variables) > (high score) > then
+	set [high score v] to (score :: variables)
+	ask [High score! What is your name?] and wait
+	set [name v] to (answer)
 end
 stop [all v]
 ```
@@ -142,11 +138,10 @@ stop [all v]
 ```blocks3
 when I receive [red v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum ((1) Snare Drum v) for (0.25) 
-beats
-    delete (1 v) of [sequence v]
+	play drum (\(1\) Snare Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
 else
-    Game over :: custom
+	Game over :: custom
 end
 ```
 
@@ -169,11 +164,10 @@ end
 ```blocks3
 when I receive [blue v]
 if <(item (1 v) of [sequence v])=[1]> then
-    play drum ((2) Bass Drum v) for (0.25) 
-beats
-    delete (1 v) of [sequence v]
+	play drum (\(2\) Bass Drum v) for (0.25) beats
+	delete (1 v) of [sequence v]
 else
-    Game over :: custom
+	Game over :: custom
 end
 ```
 
@@ -189,12 +183,11 @@ end
 define Game over
 start sound [Cough1 v]
 say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > 
-then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+if < (score :: variables) > (high score) > then
+	play sound (trumpet1 v)
+	set [high score v] to (score)
+	ask [High score! What is your name?] and wait
+	set [name v] to (answer)
 end
 stop [all v]
 ```

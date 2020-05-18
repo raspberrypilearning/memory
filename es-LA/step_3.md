@@ -35,7 +35,7 @@ Aquí están los bloques que necesitas:
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-play drum ((1) Snare Drum v) for (0.25) beats
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
 (item (length of [secuencia v]) of [secuencia v])
 ```

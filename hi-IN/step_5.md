@@ -65,17 +65,15 @@ change [score v] by (1)
 when flag clicked
 set [score v] to [3]
 forever
-    delete (all v) of [sequence v]
-    repeat (score)
-        add (pick random (1) to (4)) to [sequence v]
-        switch costume to (item (length of 
-[sequence v]) of [sequence v]
-        wait (1) seconds
-    end
-    wait until < (length of [sequence v]) = 
-[0]>
-    broadcast (won v) and wait
-    change [score v] by (1)
+	delete (all v) of [sequence v]
+	repeat (score)
+		add (pick random (1) to (4)) to [sequence v]
+		switch costume to (item (length of [sequence v]) of [sequence v]
+		wait (1) seconds
+	end
+	wait until < (length of [sequence v]) = [0]>
+	broadcast (won v) and wait
+	change [score v] by (1)
 end
 ```
 
