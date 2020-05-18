@@ -6,7 +6,7 @@ rojo
 
 azul
 
-won
+¡Tu ganas!
 
 puntaje
 
