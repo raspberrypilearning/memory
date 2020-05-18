@@ -1,6 +1,6 @@
-## High score
+## Puntuación mayor
 
-Now save the high score so that you can play against your friends.
+Ahora guarda la puntuación más alta para que puedas jugar contra tus amigos.
 
 \--- task \---
 
