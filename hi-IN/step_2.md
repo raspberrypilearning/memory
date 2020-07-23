@@ -64,8 +64,8 @@
 ![बैलरीना](images/ballerina.png)
 
 ```blocks3
-जब ध्वज पर क्लिक किया
-[(pick random (1) to (4)) to [sequence v) को जोड़ें
+when flag clicked
+add (pick random (1) to (4)) to [sequence v]
 ```
 
 \--- /task \---
@@ -115,7 +115,7 @@ end
 ![बैलरीना](images/ballerina.png)
 
 ```blocks3
-costume को (item (length of [sequence v]) of [sequence v])
+switch costume to (item (length of [sequence v]) of [sequence v])
 wait (1) seconds
 ```
 
