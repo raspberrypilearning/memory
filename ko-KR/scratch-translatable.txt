@@ -1,19 +1,19 @@
-sequence
+순서
 
-red
+빨강
 
-Game over!
+게임 종료!
 
-blue
+파랑
 
-won
+승리
 
-score
+점수
 
-high score
+최고 점수
 
-name
+이름
 
-What’s your name?
+당신의 이름은 무엇입니까?
 
-High score! What is your name?
+최고 점수! 당신의 이름은 무엇입니까?
