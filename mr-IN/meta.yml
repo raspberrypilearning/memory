@@ -1,0 +1,26 @@
+---
+hero_image: images/memory.png
+listed: true
+copyedit: false
+title: स्मरणशक्ती
+description: असा खेळ तयार करा ज्यामध्ये आपण यादृच्छिक रंग क्रम पुन्हा पुन्हा तयार करा
+version: 4.1.0
+last_tested: 2018-10-04
+steps:
+  - 
+    title: परिचय
+  - 
+    title: रंग क्रम तयार करा
+  - 
+    title: आवाज जोडा
+  - 
+    title: क्रम पुन्हा करा
+  - 
+    title: एकाधिक स्तर
+  - 
+    title: उच्च गुण
+  - 
+    title: "आव्हानः आपला खेळामध्ये सुधार करा"
+  - 
+    title: पुढे काय?
+
