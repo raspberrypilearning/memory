@@ -1,18 +1,18 @@
-## High score
+## Najlepszy wynik
 
-Now save the high score so that you can play against your friends.
+Teraz zapisz najlepszy wynik, abyś mogła grać przeciwko swoim znajomym.
 
 \--- task \---
 
-Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
+Dodaj dwie nowe zmienne o nazwie `najlepszy wynik`{:class="block3variables"} i `imię`{:class="block3variables"} do swojego projektu.
 
 \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+Kiedy gra kończy się, ponieważ gracz pomyli sekwencję, gra powinna sprawdzić, czy wynik jest wyższy niż bieżący najlepszy wynik. Jeśli jest, gra powinna zapisać wynik jako najlepszy wynik, a także przechowywać nazwę gracza.
 
 \--- task \---
 
-Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+Dodaj kod do duszka postaci, aby przechowywać `najlepszy wynik`{:class="block3variables"}. Zapytaj również o imię gracza i zapisz ją w zmiennej `imię`{:class="block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
@@ -20,17 +20,18 @@ Add code to your character sprite to store the `high score`{:class="block3variab
 
 \--- hint \---
 
-Your new code needs to follow this pattern:
+Twój nowy kod musi być zgodny z tym wzorem:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+Po wiadomości `Gra skończona`{:class="block3looks"} `Jeżeli`{:class="block3control"} `wynik`{:class="block3variables"} jest `większy niż`{:class="block3operators"} `najlepszy wynik`{:class="block3variables"} `Ustaw`{:class="block3variables"} `najlepszy wynik`{:class="block3variables"} na `wynik<code>{:class="block3variables"}
+<code>Zapytaj`{:class="block3sensing"} o imię gracza `Ustaw`{:class="block3variables"} `imię`{:class="block3variables"} na <0>odpowiedź</code>{:class="block3sensing"}
 
 \--- /hint \---
 
 \--- hint \---
 
-You need the following blocks:
+Potrzebujesz następujących bloków:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 if < > then
@@ -57,9 +58,9 @@ set [name v] to [ ]
 
 \--- hint \---
 
-Here's how your code for when the red button is pressed should look:
+Oto jak twój kod po naciśnięciu czerwonego przycisku powinien wyglądać:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -70,11 +71,11 @@ else
     say [Game over!] for (1) seconds
     if < (score :: variables) > (high score) > then
         set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
-    end
-    stop [all v]
-end
+        ask [High score! Jak masz na imię?] I czekać
+        ustawić [imię v] na (odpowiedź)
+    koniec
+    zatrzymać [wszystkie v]
+koniec
 ```
 
 \--- /hint \---
@@ -83,11 +84,11 @@ end
 
 \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+Musisz dodać ten nowy kod do duszka postaci również dla pozostałych trzech kolorów!
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+Czy widzisz, że kod "Koniec gry" dla każdego z czterech kolorów jest dokładnie taki sam?
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 say [Game over!] for (1) seconds
@@ -99,21 +100,21 @@ end
 stop [all v]
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+Jeśli chcesz zmienić dowolny kod 'Koniec gry', na przykład aby dodać dźwięk lub zmienić wiadomość "Koniec gry", musisz ją zmienić cztery razy. To denerwujące i marnuje dużo czasu.
 
-Instead, you can define your own code block, and use it anywhere in your project.
+Zamiast tego możesz zdefiniować własny blok kodu i używać go w dowolnym miejscu projektu.
 
 \--- task \---
 
-Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+Kliknij `Moje bloki`{:class="block3myblocks"}, a następnie **Utwórz blok**. Nazwij ten nowy blok `Koniec gry`{:class="block3myblocks"}.
 
 \--- /task \---
 
 \--- task \---
 
-Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+Dodaj kod z bloku `w przeciwnym razie`{:class="block3control"} połączonego z blokiem nadawania komunikatu `czerwony`{:class="block3events"} do bloku `Koniec gry`{:class="block3myblocks"}, tak aby wyglądało to tak:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 define Game over
@@ -130,9 +131,9 @@ stop [all v]
 
 \--- task \---
 
-Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
+Teraz usuń kod, który znajduje się w bloku `w przeciwnym razie`{:class="block3control"} podłączonym do bloku nadawania komunikatu `czerwony`{:class="block3events"} i dodaj w to miejsce blok `Koniec gry`{:class="block3myblocks"}:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -148,17 +149,17 @@ end
 
 \--- task \---
 
-Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
+Przetestuj swój nowy blok, grając w grę i klikając czerwony przycisk w niewłaściwym punkcie sekwencji kolorów.
 
 \--- /task \---
 
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
+Twój nowy blok `Koniec gry`{:class="block3myblocks"} to mały skrypt **funkcja**, którą możesz użyć gdziekolwiek chcesz w swoim kodzie dodając blok `Koniec gry`{:class="block3myblocks"}.
 
 \--- task \---
 
-Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
+Zamień również kod w bloku `w przeciwnym razie`{:class="block3control"} połączonym z blokiem `nadawania komunikatu`{:class="block3events"} dla innych kolorów z twoim nowym blokiem `Koniec gry`{:class="block3myblocks"}. Oto jak powinien wyglądać kod `niebieski`{:class="block3events"}
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
@@ -174,9 +175,9 @@ end
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+Teraz dodaj dźwięk, który odtwarza po naciśnięciu nieprawidłowego przycisku. Musisz dodać ten kod tylko raz w bloku `Koniec gry`{:class="block3myblocks"}, który stworzyłeś, a nie cztery oddzielne razy!
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 define Game over
