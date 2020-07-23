@@ -1,84 +1,84 @@
-## Create a colour sequence
+## 색상 순서 만들기
 
 First create a character that can display a random sequence of colours.
 
 \--- task \---
 
-Open a new Scratch project.
+새 스크래치 프로젝트를 엽니다.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**온라인:** [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_ blank"}에서 새로운 온라인 스크래치 프로젝트 열기
 
-**Offline**: open a new project in the offline editor.
+**오프라인**: 오프라인 편집기에서 새 프로젝트를 엽니다.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
+스크래치 오프라인 편집기를 다운로드해야 하는 경우, [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}에서 다운로드할 수 있습니다.
 
 \--- /task \---
 
 \--- task \---
 
-Choose a character sprite and a backdrop. You could use the ballerina, but your character doesn't have to be a person, they only need to be able to show different colours.
+캐릭터 스프라이트와 배경을 선택하세요. 발레리나를 사용할 수는 있지만 캐릭터가 사람일 필요는 없으며 다른 색상을 보여줄 수 있어야합니다.
 
 ![screenshot](images/colour-sprite.png)
 
 \--- /task \---
 
-+ Your game should use a different number to represent each colour:
++ 게임에서 각 색상을 나타내는데 다른 숫자를 사용해야합니다.
     
-    + 1 = red
-    + 2 = blue
-    + 3 = green
-    + 4 = yellow
+    + 1 = 빨간색
+    + 2 = 파란색
+    + 3 = 초록색
+    + 4 = 노란색
 
 \--- task \---
 
-Give your character four costumes that have different colours, one costumes for each of the four colours shown above. Make sure that your coloured costumes are in the same order as the list above.
+위에 언급된 4가지 색상 각각에 대하여 하나씩 캐릭터에 4 가지 색상으로 다른 의상을 지정하세요. 색칠된 의상이 위 리스트와 같은 순서인지 확인하세요.
 
 ![screenshot](images/colour-costume.png)
 
 \--- /task \---
 
-If you want, you can use the **color a shape** tool to fill parts of the costume with a different colour.
+원한다면 의상의 일부분을 다른 색으로 채우기 위해 **색칠하기 ** 도구를 사용할 수 있습니다.
 
 ![color-a-shape](images/color-a-shape.png)
 
-Next, add a list for storing the random sequence of colours that the player has to remember.
+그런 다음, 플레이어가 기억해야 할 임의의 색상 순서를 저장하기 위한 리스트를 추가하세요.
 
 \--- task \---
 
-Create a list called `sequence`{:class="block3variables"}. Only the character sprite needs to see this list, so you can select **For this sprite only** when you create the list.
+`순서`{:class="block3variables"}라는 이름의 리스트를 새로 만들어 보세요. 발레리나 캐릭터 스프라이트만 리스트를 볼 필요가 있으므로 리스트를 만들 때 **이 스프라이트에서만 사용**을 선택할 수 있습니다.
 
 [[[generic-scratch3-make-list]]]
 
 \--- /task \---
 
-You should now see lots of new code blocks for using lists. The empty list should be visible in the top left-hand corner of the Stage.
+이제 리스트를 사용하기 위한 새로운 코드 블록이 많이 나타납니다. 빈 리스트는 스테이지의 왼쪽 상단에 표시되어야합니다.
 
 ![screenshot](images/colour-list-blocks-annotated.png)
 
-Each colour has a different number, so you can choose a random colour by randomly choosing a number and adding it to the list.
+각 색상은 숫자가 다르므로 임의로 숫자를 선택하고 리스트에 이 숫자를 추가하여 임의의 색상을 선택할 수 있습니다.
 
 \--- task \---
 
-Add this code to the character sprite to choose a random number and add it to `sequence`{:class="block3variables"}:
+임의의 숫자를 선택하기 위해 이 코드를 캐릭터 스프라이트에 추가하고 ` 순서 `에 추가하세요. {: class = "block3variables"}:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+깃발을 클릭되면
+랜덤 수 (1) ~ (4) 을 골라서 [순서 v] 에 추가하세요.
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Test your code. Check that, each time you click the flag, a random number between 1 and 4 gets added to the list.
+코드를 테스트 해보세요. 클릭할 때마다 1에서 4까지의 랜덤 수가 리스트에 추가되는지 확인하세요.
 
 \--- /task \---
 
 \--- task \---
 
-Can you add code to your program to generate five random numbers at once?
+한꺼번에 5 개의 임의의 색상을 생성하기 위해 블록을 프로그램에 추가할 수 있습니까?
 
 \--- hints \---
 
