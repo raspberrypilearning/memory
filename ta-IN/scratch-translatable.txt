@@ -1,0 +1,19 @@
+வரிசை
+
+சிவப்பு
+
+விளையாட்டு முடிவு அடைந்தது!
+
+நீலம்
+
+won
+
+score
+
+high score
+
+name
+
+What’s your name?
+
+High score! What is your name?
