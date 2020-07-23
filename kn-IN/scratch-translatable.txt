@@ -1,0 +1,19 @@
+sequence
+
+red
+
+Game over!
+
+blue
+
+won
+
+score
+
+ಹೆಚ್ಚಿನ ಸ್ಕೋರ್
+
+name
+
+What’s your name?
+
+High score! What is your name?
