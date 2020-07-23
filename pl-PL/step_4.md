@@ -1,48 +1,48 @@
-## Repeat the sequence
+## Powtórz sekwencję
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+Teraz dodasz cztery przyciski, które gracz musi nacisnąć, aby powtórzyć sekwencję kolorów.
 
 \--- task \---
 
-Add four new sprites to your project to represent the four buttons.
+Dodaj cztery nowe duszki do swojego projektu, aby reprezentowały cztery przyciski.
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ Edytuj kostiumy nowych duszków tak, aby był duszek był w każdym z czterech kolorów
++ Na scenie umieść duszki na w tej samej kolejności, co kostiumy: czerwony, niebieski, zielony, żółty
 
-![screenshot](images/colour-drums.png)
+![zrzut ekranu](images/colour-drums.png)
 
 \--- /task \---
 
 \--- task \---
 
-Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+Dodaj kod do czerwonego duszka, tak aby po kliknięciu duszka `nadawał`{:class="block3events"} komunikat „czerwony” do duszka postaci:
 
-![red-drum](images/red_drum.png)
+![czerwony bęben](images/red_drum.png)
 
 ```blocks3
-    when this sprite clicked
-    broadcast (red v)
+    kiedy duszek kliknięty
+    nadaj komunikat (czerwony v)
 ```
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+`Nadaj komunikat`{:class="block3events"} przypomina wiadomość ogłaszaną przez głośnik, którą można usłyszeć na przykład w szkołach lub supermarketach. Wszystkie duszki słyszą `nadawany komunikat`{:class="block3events"}, ale tylko duszek, którego zadaniem jest odpowiadać, zrobi coś.
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+Dodaj podobny kod do niebieskiego, zielonego i żółtego duszka, aby wszystkie `nadawały`{:class="block3events"} wiadomości o własnym kolorze.
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+Pamiętasz, że `nadawanie komunikatu`{:class="block3events"} jest jak wiadomość z głośnika? Dodasz kod, aby zadaniem duszka było odpowiadanie na wiadomości z `nadawanych komunikatów`{:class="block3events"}.
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+Gdy duszek twojej postaci otrzyma komunikat `czerwony`{:class="block3events"}, kod powinien sprawdzić, czy liczba `1` znajduje się na początku listy `sekwencji`{:class="block3variables"} (co oznacza, że `czerwony`{:class="block3events"} to kolejny kolor w sekwencji).
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+Jeśli `1` znajduje się na początku listy, kod powinien usunąć numer z listy, ponieważ gracz zapamiętał poprawny kolor. W przeciwnym razie gra skończona, a kod musi `zatrzymać wszystko`{:class="block3control"}, aby zakończyć grę.
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when I receive [red v]
@@ -58,30 +58,30 @@ end
 
 \--- task \---
 
-Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+Dodaj do kodu, który właśnie napisałeś, aby bęben grał również wtedy, gdy duszek postaci otrzyma poprawny `komunikat`{:class="block3events"}.
 
 \--- hints \---
 
 \--- hint \---
 
-Can you use the numbers that correspond to each colour to play the correct drum beat?
+Czy możesz użyć liczb, które odpowiadają każdemu kolorowi, aby zagrać na właściwym bębnie?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow
-
-\--- /hint \---
-
-\--- hint \---
-
-Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 1 = czerwony
++ 2 = niebieski
++ 3 = zielony
++ 4 = żółty
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is the code you will need to add:
+Powyżej bloku `usuń 1 z sekwencji`{:class="block3variables"}, dodaj blok `zagraj na bębnie`{:class="block3sound"}, aby odtworzyć pierwszy dźwięk na liście `sekwencja`{:class="block3variables"}.
+
+\--- /hint \---
+
+\--- hint \---
+
+Oto kod, który musisz dodać:
 
 ```blocks3
 when I receive [red v]
@@ -103,23 +103,23 @@ end
 
 \--- task \---
 
-Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
+Zduplikuj kod, który użyłeś, aby twój duszek postaci odpowiadał na wiadomość `czerwony`{:class="block3events"}. Zmień zduplikowany kod, aby wysyłał wiadomość `niebieski`{:class="block3events"}.
 
 \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+Kiedy duszek odpowiada na wiadomość `niebieski`{:class="block3events"}, który bit kodu powinien pozostać taki sam, a który bit powinien się zmienić? Pamiętaj, że każdy kolor ma odpowiedni numer.
 
 \--- task \---
 
-Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+Zmień kod duszka postaci tak, aby znak odpowiadał poprawnie na komunikat `niebieski`{:class="block3events"}.
 
 \--- hints \---
 
 \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+Zachowaj te bloki, ale musisz je zmienić w jakiś sposób:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 <(item (1 v) of [sequence v]) = [1]>
@@ -133,9 +133,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- hint \---
 
-Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+Oto jak twój kod powinien szukać nadawania komunikatu `niebieski`{:class="block3events"}.
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
 when I receive [blue v]
@@ -156,19 +156,19 @@ end
 
 \--- task \---
 
-Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
+Ponownie skopiuj dwukrotnie kod (dla zielonych i żółtych przycisków), i zmień niezbędne części tak, aby znak odpowiadał poprawnie nowemu `nadawaniu`{:class="block3events"}.
 
 \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+Pamiętaj, aby przetestować kod! Czy możesz zapamiętać sekwencję pięciu kolorów? Czy kolejność jest inna za każdym razem?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+Gdy gracz powtarza poprawnie sekwencję całego koloru, lista `sekwencji`{:class="block3variables"} jest pusta i gracz wygrywa. Jeśli chcesz, możesz również wyświetlić niektóre migające światła jako nagrodę, gdy lista `sekwencji`{:class="block3variables"} jest pusta.
 
 \--- task \---
 
-Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+Dodaj ten kod na koniec skryptu twojej postaci `kiedy kliknięto flagę`{:class="block3events"}:
 
-![ballerina](images/ballerina.png)
+![balerina](images/ballerina.png)
 
 ```blocks3
     wait until < (length of [sequence v]) = [0]>
@@ -179,7 +179,7 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 
 \--- task \---
 
-Switch to the Stage, and import the `drum machine` sound or another sound you like.
+Przełącz na scenę i zaimportuj dźwięk `perkusji` lub inny dźwięk, jaki chcesz.
 
 [[[generic-scratch3-sound-from-library]]]
 
@@ -187,9 +187,9 @@ Switch to the Stage, and import the `drum machine` sound or another sound you li
 
 \--- task \---
 
-Add this code to play a sound and make the backdrop change colour when the player wins.
+Dodaj ten kod, aby odtworzyć dźwięk i zmienić kolor tła, gdy gracz wygra.
 
-![ballerina](images/stage.png)
+![balerina](images/stage.png)
 
 ```blocks3
     when I receive [won v]
