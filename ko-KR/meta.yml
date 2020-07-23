@@ -2,25 +2,25 @@
 hero_image: images/memory.png
 listed: true
 copyedit: false
-title: Memory
-description: Create a game in which you memorise and repeat random colour sequences
+title: 메모리
+description: 임의의 색상 순서를 암기하고 반복하는 게임 만들기
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
-    title: Introduction
+    title: 소개
   - 
-    title: Create a colour sequence
+    title: 색상 순서 만들기
   - 
-    title: Add sound
+    title: 소리 추가
   - 
-    title: Repeat the sequence
+    title: 순서 반복
   - 
-    title: Multiple levels
+    title: 여러 단계
   - 
-    title: High score
+    title: 최고 점수
   - 
-    title: "Challenge: improve your game"
+    title: "도전과제: 더 멋진 게임 만들기"
   - 
-    title: What next?
+    title: 더 나아가기
 
