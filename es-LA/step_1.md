@@ -1,8 +1,8 @@
-\--- no imprimir \---
+\--- no-print \---
 
 Esta es la versión **Scratch 3** del proyecto. También hay una versión [Scratch 2 del proyecto](https://projects.raspberrypi.org/en/projects/memory-scratch2).
 
-\--- no imprimir \---
+\--- /no-print \---
 
 ## Introducción
 
