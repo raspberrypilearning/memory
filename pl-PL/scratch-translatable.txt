@@ -1,19 +1,19 @@
-sequence
+sekwencja
 
-red
+czerwony
 
-Game over!
+Koniec gry!
 
-blue
+niebieski
 
-won
+wygrana
 
-score
+wynik
 
-high score
+najlepszy wynik
 
-name
+imię
 
-What’s your name?
+Jak masz na imię?
 
-High score! What is your name?
+Najlepszy wynik! Jak masz na imię?
