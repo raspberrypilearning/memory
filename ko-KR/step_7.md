@@ -1,8 +1,8 @@
-## Challenge: improve your game
+## 도전과제: 더 멋진 게임 만들기
 
-### Make more blocks
+### 더 많은 블록 만들기
 
-Do you see any other code that is the same for all four buttons?
+4 개의 버튼 모두에 대해 다른 코드가 보이나요?
 
 ```blocks3
 when I receive [red v]
@@ -36,4 +36,4 @@ Can you add another plain white costume to your character, and add code so that 
 
 Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+다섯 번째 드럼을 사용하는 '어려운' 모드를 추가할 수도 있습니다!
