@@ -28,7 +28,7 @@ end
 
 캐릭터가 네 가지 색상 중 하나를 나타내는 것으로 게임이 시작되고 플레이어가 색상 순서를 반복하는 동안 캐릭터가 항상 순서의 마지막 색상을 표시한다는 것을 알 수 있습니까?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+캐릭터에 다른 흰색 의상을 추가하고 게임을 시작할 때와 플레이어가 순서를 반복하는 동안 캐릭터가 이 의상을 보여주도록 코드를 추가 할 수 있습니까?
 
 ![스크린샷](images/colour-white.png)
 
