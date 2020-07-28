@@ -22,18 +22,18 @@ else
 end
 ```
 
-Can you make another custom block that all buttons can use?
+모든 버튼에서 사용할 수 있는 다른 사용자 정의 블록을 만들 수 있습니까?
 
-### Another costume
+### 다른 의상
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+캐릭터가 네 가지 색상 중 하나를 나타내는 것으로 게임이 시작되고 플레이어가 색상 순서를 반복하는 동안 캐릭터가 항상 순서의 마지막 색상을 표시한다는 것을 알 수 있습니까?
 
 Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
 
-![screenshot](images/colour-white.png)
+![스크린샷](images/colour-white.png)
 
-### Difficulty level
+### 난이도
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+플레이어가 게임을 '쉬운 모드'(빨간색과 파란색 만 사용) 와 '일반 모드'(4 가지 색상 모두 사용) 중에서 선택하도록 할 수 있습니까?
 
 다섯 번째 드럼을 사용하는 '어려운' 모드를 추가할 수도 있습니다!
