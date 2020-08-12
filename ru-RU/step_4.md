@@ -20,8 +20,8 @@
 ![красный барабан](images/red_drum.png)
 
 ```blocks3
-when this sprite clicked
-broadcast (красный v)
+    when this sprite clicked
+	  broadcast (красный v)
 ```
 
 --- /task ---
@@ -46,8 +46,8 @@ broadcast (красный v)
 
 ```blocks3
 when I receive [красный v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
+if <(item (1 v) of [последовательность v])=[1]> then
+delete (1 v) of [последовательность v]
 else
 say [Конец игры!] for (1) seconds
 stop [all v]
@@ -61,6 +61,7 @@ end
 Добавь в код, который ты только что написал, возможность барабана играть при получении спрайтом правильной `передачи`{:class="block3events"} сообщения.
 
 --- hints ---
+
 
 --- hint ---
 
@@ -85,9 +86,9 @@ end
 
 ```blocks3
 when I receive [красный v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [последовательность v])=[1]> then
 + play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
+delete (1 v) of [последовательность v]
 else
 say [Конец игры!] for (1) seconds
 stop [all v]
@@ -114,6 +115,7 @@ end
 
 --- hints ---
 
+
 --- hint ---
 
 Используй эти блоки, но тебе нужно их каким-то образом изменить:
@@ -121,7 +123,7 @@ end
 ![балерина](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<(item (1 v) of [последовательность v]) = [1]>
 
 when I receive [красный v]
 
@@ -138,9 +140,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 ```blocks3
 when I receive [синий v]
-if <(item (1 v) of [sequence v])=[2]> then
+if <(item (1 v) of [последовательность v])=[2]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [последовательность v]
 else
 	say [Конец игры!] for (1) seconds
 	stop [all v]
@@ -161,7 +163,7 @@ end
 
 Не забудь протестировать код! Можешь ли ты запомнить последовательность из пяти цветов? Последовательность каждый раз разная?
 
-Когда игрок повторяет всю последовательность цветов правильно, то список `последовательность`{:class= "block3variables"} пуст, и игрок выигрывает. По желанию можешь добавить мигание лампочек как награду, если список `последовательность`{:class="block3variables"} пуст.
+Когда игрок повторяет всю последовательность цветов правильно, то список `последовательность`{:class="block3variables"} пуст, и игрок выигрывает. По желанию можешь добавить мигание лампочек как награду, если список `последовательность`{:class="block3variables"} пуст.
 
 --- task ---
 
@@ -170,7 +172,7 @@ end
 ![балерина](images/ballerina.png)
 
 ```blocks3
-wait until < (length of [sequence v]) = [0]>
+wait until < (length of [последовательность v]) = [0]>
 broadcast (победа v) and wait
 ```
 
@@ -191,13 +193,13 @@ broadcast (победа v) and wait
 ![балерина](images/stage.png)
 
 ```blocks3
-when I receive [победа v]
-start sound (drum machine v)
-repeat (50)
-	change [color v] effect by (25)
-	wait (0.1) seconds
-end
-clear graphic effects
+  when I receive [победа v]
+	start sound (drum machine v)
+	repeat (50)
+		  change [color v] effect by (25)
+		  wait (0.1) seconds
+	end
+	clear graphic effects
 ```
 
 --- /task ---

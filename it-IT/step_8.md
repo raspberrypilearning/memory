@@ -13,18 +13,16 @@ Fai clic sulla bandiera verde per iniziare, quindi utilizzare i tasti freccia pe
 
 --- /no-print ---
 
---- print-only ---
-
-![gioco di dodgeball in esecuzione](images/dodgeball-final.png)
-
---- /print-only ---
 
 ***
-
 Questo progetto è stato tradotto da volontari:
 
-Luca Fantin
-Laura Fuciarelli
+Alessandro Mandelli
+
 Omar Lazzari
+
+Luca Fantin
+
+Laura Fuciarelli
 
 Grazie ai volontari, possiamo offrire alle persone di tutto il mondo la possibilità di imparare nella loro lingua. Puoi aiutarci a raggiungere più persone offrendoti come volontario per la traduzione - puoi trovare maggiori informazioni su [rpf.io/translate](https://rpf.io/translate).

@@ -18,11 +18,12 @@ Ajoute du code à ton sprite personnage pour stocker le `meilleur score`{:class=
 
 --- hints ---
 
+
 --- hint ---
 
 Ton nouveau code doit suivre ce modèle :
 
-Après le message `perdu`{:class="block3looks"} `Si`{:class="block3control"} le `score`{:class="block3variables"} est `supérieur à`{:class="block3operators"} le `meilleur score`{:class="block3variables"} `Définir`{:class="block3variables"} le `meilleur score`{:class="block3variables"} au `score`{:class="block3variables"} `Demander`{:class="block3sensing"} le nom du joueur `mettre`{:class="block3variables"} `la réponse`{:class="block3sensing"} dans le `nom`{:class="block3variables"}
+Après le message `perdu`{:class="block3looks"} `si`{:class="block3control"} le `score`{:class="block3variables"} est `supérieur à`{:class="block3operators"} le `meilleur score`{:class="block3variables"} `Définir`{:class="block3variables"} le `meilleur score`{:class="block3variables"} au `score`{:class="block3variables"} `Demander`{:class="block3sensing"} le nom du joueur `mettre`{:class="block3variables"} `la réponse`{:class="block3sensing"} dans le `nom`{:class="block3variables"}
 
 --- /hint ---
 
@@ -50,7 +51,7 @@ ask [Quel est ton nom ?] and wait
 
 set [meilleur score v] to [ ] 
 
-set [nom v] to [ ] 
+set [nom v] to [ ]
 ```
 
 --- /hint ---
@@ -63,14 +64,14 @@ Voici à quoi devrait ressembler ton code lorsque le bouton rouge est pressé :
 
 ```blocks3
 when I receive [rouge v]
-if <(item (1 v) of [sequence v])=[1]> then
-	play drum (item (1 v) of [sequence v]) for (0.25) beats
-	delete (1 v) of [sequence v]
+if <(item (1 v) of [séquence v])=[1]> then
+	play drum (item (1 v) of [séquence v]) for (0.25) beats
+	delete (1 v) of [séquence v]
 else
-	say [Perdu!] for (1) seconds
+	say [Perdu !] for (1) seconds
 	if < (score :: variables) > (meilleur score) > then
 		set [meilleur score v] to (score :: variables)
-		ask [Meilleur score! Quel est ton nom ?] and wait
+		ask [Meilleur score ! Quel est ton nom ?] and wait
 		set [nom v] to (answer)
 	end
 	stop [all v]
@@ -90,10 +91,10 @@ Peux-tu voir que le code « Perdu » pour chacune des quatre couleurs est exacte
 ![ballerine](images/ballerina.png)
 
 ```blocks3
-say [Perdu!] for (1) seconds
+say [Perdu !] for (1) seconds
 if < (score :: variables) > (meilleur score) > then
 	set [meilleur score v] to (score :: variables)
-	ask [Meilleur score! Quel est ton nom ?] and wait
+	ask [Meilleur score ! Quel est ton nom ?] and wait
 	set [nom v] to (answer)
 end
 stop [all v]
@@ -117,10 +118,10 @@ Ajoute le code du bloc `sinon`{:class="block3control"} connecté au bloc `rouge`
 
 ```blocks3
 define perdu
-say [Perdu!] for (1) seconds
+say [Perdu !] for (1) seconds
 if < (score :: variables) > (meilleur score) > then
 	set [meilleur score v] to (score :: variables)
-	ask [Meilleur score! Quel est ton nom ?] and wait
+	ask [Meilleur score ! Quel est ton nom ?] and wait
 	set [nom v] to (answer)
 end
 stop [all v]
@@ -136,9 +137,9 @@ Maintenant, supprime le code qui se trouve dans le bloc `sinon`{:class="block3co
 
 ```blocks3
 when I receive [rouge v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [séquence v])=[1]> then
 	play drum (\(1\) Snare Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [séquence v]
 else
 	perdu :: custom
 end
@@ -162,9 +163,9 @@ Remplace également le code dans le bloc `sinon`{:class="block3control"} connect
 
 ```blocks3
 when I receive [bleu v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [séquence v])=[1]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [séquence v]
 else
 	perdu :: custom
 end
@@ -181,11 +182,11 @@ Maintenant, ajoute un son qui joue lorsque le mauvais bouton est enfoncé. Tu n'
 ```blocks3
 define perdu
 start sound [Cough1 v]
-say [Perdu!] for (1) seconds
+say [Perdu !] for (1) seconds
 if < (score :: variables) > (meilleur score) > then
 	play sound (trumpet1 v)
 	set [meilleur score v] to (score)
-	ask [Meilleur score! Quel est ton nom ?] and wait
+	ask [Meilleur score ! Quel est ton nom ?] and wait
 	set [nom v] to (answer)
 end
 stop [all v]

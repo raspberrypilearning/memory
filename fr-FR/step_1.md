@@ -1,6 +1,6 @@
 --- no-print ---
 
-Ceci est la version **Scratch 3** du projet. Il y a aussi une version [Scratch 2 du projet](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+Ceci est la version **Scratch 3** du projet. Il y a aussi une version [Scratch 2 du projet](https://projects.raspberrypi.org/fr-FR/projects/memory-scratch2).
 
 --- /no-print ---
 
@@ -15,7 +15,7 @@ Dans ce projet, tu vas créer un jeu de mémoire dans lequel tu devras mémorise
 Clique sur le drapeau vert pour démarrer. Observe la séquence de couleurs montrée par la robe de la danseuse et écoute les battements de tambour qui l'accompagnent, puis répète les couleurs à la danseuse. Si tu répètes les couleurs dans le mauvais ordre, tu as perdu !
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/394570159/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/417329910/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
 --- /no-print ---
@@ -56,7 +56,6 @@ Scratch 3 ([en ligne](https://rpf.io/scratchon){:target="_blank"} ou [hors-ligne
 ---
 title: Informations additionnelles pour les éducateurs
 ---
-
 --- no-print ---
 
 Si vous avez besoin d'imprimer ce projet, merci d'utiliser la [version imprimable](https://projects.raspberrypi.org/fr-FR/projects/memory/print){:target="_blank"}.

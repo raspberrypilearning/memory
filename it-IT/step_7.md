@@ -6,17 +6,17 @@ Vedi qualche altro codice ripetuto in tutti e quattro i pulsanti?
 
 ```blocks3
 when I receive [rosso v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [sequenza v])=[1]> then
 	play drum (\(1\) Snare Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [sequenza v]
 else
-	Game Over :: custom
+	Game over :: custom
 end
 
 when I receive [blu v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [sequenza v])=[1]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [sequenza v]
 else
 	Game over :: custom
 end

@@ -45,6 +45,7 @@ change [счёт v] by (1)
 
 --- hints ---
 
+
 --- hint ---
 
 Ты понимаешь, что последовательность правильная, когда игра начинает `передавать`{:class="block3events"} сообщение "победа".
@@ -65,13 +66,13 @@ change [счёт v] by (1)
 when flag clicked
 set [счёт v] to [3]
 forever
-	delete (all v) of [sequence v]
+	delete (all v) of [последовательность v]
 	repeat (счёт)
-		add (pick random (1) to (4)) to [sequence v]
-		switch costume to (item (length of [sequence v]) of [sequence v]
+		add (pick random (1) to (4)) to [последовательность v]
+		switch costume to (item (length of [последовательность v]) of [последовательность v]
 		wait (1) seconds
 	end
-	wait until < (length of [sequence v]) = [0]>
+	wait until < (length of [последовательность v]) = [0]>
 	broadcast (победа v) and wait
 	change [счёт v] by (1)
 end

@@ -20,7 +20,7 @@ Ajoute du code au sprite rouge pour que, lorsque le sprite est cliqué, il `envo
 ![tambour rouge](images/red_drum.png)
 
 ```blocks3
-  when this sprite clicked
+    when this sprite clicked
 	broadcast (rouge v)
 ```
 
@@ -46,10 +46,10 @@ Si `1` est au début de la liste, le code devrait supprimer le numéro de la lis
 
 ```blocks3
 when I receive [rouge v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
+if <(item (1 v) of [séquence v])=[1]> then
+delete (1 v) of [séquence v]
 else
-say [Perdu!] for (1) seconds
+say [Perdu !] for (1) seconds
 stop [all v]
 end
 ```
@@ -61,6 +61,7 @@ end
 Ajoute au code que tu viens d'écrire pour qu'un battement de tambour joue également quand le sprite de personnage reçoit le bon `message`{:class="block3events"}.
 
 --- hints ---
+
 
 --- hint ---
 
@@ -85,11 +86,11 @@ Voici le code que tu devras ajouter :
 
 ```blocks3
 when I receive [rouge v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [séquence v])=[1]> then
 + play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
+delete (1 v) of [séquence v]
 else
-say [Perdu!] for (1) seconds
+say [Perdu !] for (1) seconds
 stop [all v]
 end
 ```
@@ -114,6 +115,7 @@ Change le code du sprite du personnage de sorte que le caractère réponde corre
 
 --- hints ---
 
+
 --- hint ---
 
 Garde ces blocs, mais tu dois les changer d'une manière ou d'une autre :
@@ -121,7 +123,7 @@ Garde ces blocs, mais tu dois les changer d'une manière ou d'une autre :
 ![ballerine](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<(item (1 v) of [séquence v]) = [1]>
 
 when I receive [rouge v]
 
@@ -138,11 +140,11 @@ Voici à quoi devrait ressembler ton code pour le message `bleu`{:class="block3e
 
 ```blocks3
 when I receive [bleu v]
-if <(item (1 v) of [sequence v])=[2]> then
+if <(item (1 v) of [séquence v])=[2]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [séquence v]
 else
-	say [Perdu!] for (1) seconds
+	say [Perdu !] for (1) seconds
 	stop [all v]
 end
 ```
@@ -161,7 +163,7 @@ Dupliquer à nouveau le code deux fois (pour les boutons vert et jaune), et chan
 
 N'oublie pas de tester le code ! Peux-tu mémoriser une séquence de cinq couleurs ? La séquence est-elle différente à chaque fois ?
 
-Quand le joueur répète correctement toute la séquence de couleur, la liste `séquence`{:class="block3variables"}est vide et le joueur gagne. Si tu veux, tu peux aussi afficher quelques lumières clignotantes en récompense une fois que la liste `séquence`{:class="block3variables"} est vide.
+Quand le joueur répète correctement toute la séquence de couleur, la liste `séquence`{:class="block3variables"} est vide et le joueur gagne. Si tu veux, tu peux aussi afficher quelques lumières clignotantes en récompense une fois que la liste `séquence`{:class="block3variables"} est vide.
 
 --- task ---
 
@@ -170,8 +172,8 @@ Ajoute ce code à la fin du script de ton personnage `lorsque le drapeau est cli
 ![ballerine](images/ballerina.png)
 
 ```blocks3
-wait until < (length of [sequence v]) = [0]>
-broadcast (gagné v) and wait
+    wait until < (length of [séquence v]) = [0]>
+	  broadcast (gagné v) and wait
 ```
 
 --- /task ---
@@ -191,11 +193,11 @@ Ajoute ce code pour jouer un son et faire en sorte que la couleur de fond change
 ![ballerine](images/stage.png)
 
 ```blocks3
-  when I receive [gagné v]
+    when I receive [gagné v]
 	start sound (drum machine v)
 	repeat (50)
-		change [color v] effect by (25)
-		wait (0.1) seconds
+		  change [color v] effect by (25)
+		  wait (0.1) seconds
 	end
 	clear graphic effects
 ```

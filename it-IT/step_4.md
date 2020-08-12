@@ -20,8 +20,8 @@ Aggiungi il codice al sprite rosso in modo che, quando lo sprite viene cliccato,
 ![tamburo-rosso](images/red_drum.png)
 
 ```blocks3
-when this sprite clicked
-broadcast (rosso v)
+    when this sprite clicked
+	  broadcast (rosso v)
 ```
 
 --- /task ---
@@ -46,10 +46,10 @@ Se `1` è all'inizio della lista, il codice rimuoverà il numero dalla lista per
 
 ```blocks3
 when I receive [rosso v]
-if <(item (1 v) of [sequence v])=[1]> then
-delete (1 v) of [sequence v]
+if <(item (1 v) of [sequenza v])=[1]> then
+delete (1 v) of [sequenza v]
 else
-say [Game over!] for (1) seconds
+say [Hai perso!] for (1) seconds
 stop [all v]
 end
 ```
@@ -61,6 +61,7 @@ end
 A quanto appena scritto, aggiungi del codice in modo che anche un tamburo suoni, quando lo sprite del personaggio riceve, tramite l'`invia a tutti`{:class="block3events"}, il messaggio corretto.
 
 --- hints ---
+
 
 --- hint ---
 
@@ -75,7 +76,7 @@ Riesci a usare i numeri che corrispondono ad ogni colore per riprodurre il suono
 
 --- hint ---
 
-Sopra il `cancella 1 da sequenza`{:class="block3variables"}, aggiungi `suona il tamburo`{:class=" block3sound "} per riprodurre il primo suono nell'elenco `sequenza`{:class="block3variables "}.
+Sopra il `cancella 1 da sequenza`{:class="block3variables"}, aggiungi `suona il tamburo`{:class="block3sound"} per riprodurre il primo suono nell'elenco `sequenza`{:class="block3variables "}.
 
 --- /hint ---
 
@@ -85,11 +86,11 @@ Ecco il codice che dovrai aggiungere:
 
 ```blocks3
 when I receive [rosso v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [sequenza v])=[1]> then
 + play drum (\(1\) Snare Drum v) for (0.25) beats
-delete (1 v) of [sequence v]
+delete (1 v) of [sequenza v]
 else
-say [Game over!] for (1) seconds
+say [Hai perso!] for (1) seconds
 stop [all v]
 end
 ```
@@ -114,6 +115,7 @@ Modifica il codice dello sprite personaggio in modo che il personaggio risponda 
 
 --- hints ---
 
+
 --- hint ---
 
 Puoi riciclare questi blocchi, ma devi modificarli in qualche modo:
@@ -121,7 +123,7 @@ Puoi riciclare questi blocchi, ma devi modificarli in qualche modo:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) of [sequence v]) = [1]>
+<(item (1 v) of [sequenza v]) = [1]>
 
 when I receive [rosso v]
 
@@ -138,11 +140,11 @@ Ecco come dovrebbere risultare il codice in risposta all'invio del messaggio`blu
 
 ```blocks3
 when I receive [blu v]
-if <(item (1 v) of [sequence v])=[2]> then
+if <(item (1 v) of [sequenza v])=[2]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [sequenza v]
 else
-	say [Game over!] for (1) seconds
+	say [Hai perso!] for (1) seconds
 	stop [all v]
 end
 ```
@@ -170,7 +172,7 @@ Aggiungi questo codice alla fine del codice del tuo personaggio che inizia con `
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-wait until < (length of [sequence v]) = [0]>
+wait until < (length of [sequenza v]) = [0]>
 broadcast (vinto v) and wait
 ```
 
@@ -191,13 +193,13 @@ Aggiungi questo codice per riprodurre un suono e fare in modo che lo sfondo camb
 ![ballerina](images/stage.png)
 
 ```blocks3
-when I receive [vinto v]
-start sound (drum machine v)
-repeat (50)
-	change [color v] effect by (25)
-	wait (0.1) seconds
-end
-clear graphic effects
+  	when I receive [vinto v]
+	start sound (drum machine v)
+	repeat (50)
+		  change [color v] effect by (25)
+		  wait (0.1) seconds
+	end
+	clear graphic effects
 ```
 
 --- /task ---

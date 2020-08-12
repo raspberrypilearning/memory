@@ -6,17 +6,17 @@ Vois-tu un autre code qui est le même pour les quatre boutons ?
 
 ```blocks3
 when I receive [rouge v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [séquence v])=[1]> then
 	play drum (\(1\) Snare Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [séquence v]
 else
 	perdu :: custom
 end
 
 when I receive [bleu v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [séquence v])=[1]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [séquence v]
 else
 	perdu :: custom
 end
