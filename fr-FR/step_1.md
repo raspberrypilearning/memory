@@ -28,7 +28,7 @@ Clique sur le drapeau vert pour démarrer. Observe la séquence de couleurs mont
 
 --- collapse ---
 ---
-title: Ce que tu vas apprendre :
+title: Ce que tu vas apprendre
 ---
 
 + Comment ajouter du son à ton projet Scratch
