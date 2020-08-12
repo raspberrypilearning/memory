@@ -13,12 +13,6 @@ Clique sur le drapeau vert pour commencer, puis utilise les touches fléchées p
 
 --- /no-print ---
 
---- print-only ---
-
-![jeu de la balle au prisonnier](images/dodgeball-showcase.png)
-
---- /print-only ---
-
 
 ***
 Ce projet a été traduit par des bénévoles:

@@ -58,7 +58,7 @@ title: Informations additionnelles pour les éducateurs
 ---
 --- no-print ---
 
-Si vous avez besoin d'imprimer ce projet, merci d'utiliser la [version imprimable](https://projects.raspberrypi.org/fr-FR/projects/memory/print) {:target="_blank"}.
+Si vous avez besoin d'imprimer ce projet, merci d'utiliser la [version imprimable](https://projects.raspberrypi.org/fr-FR/projects/memory/print){:target="_blank"}.
 
 --- /no-print ---
 

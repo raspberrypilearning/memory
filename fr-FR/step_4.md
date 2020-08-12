@@ -163,7 +163,7 @@ Dupliquer à nouveau le code deux fois (pour les boutons vert et jaune), et chan
 
 N'oublie pas de tester le code ! Peux-tu mémoriser une séquence de cinq couleurs ? La séquence est-elle différente à chaque fois ?
 
-Quand le joueur répète correctement toute la séquence de couleur, la liste `séquence`{:class="block3variables"}est vide et le joueur gagne. Si tu veux, tu peux aussi afficher quelques lumières clignotantes en récompense une fois que la liste `séquence`{:class="block3variables"} est vide.
+Quand le joueur répète correctement toute la séquence de couleur, la liste `séquence`{:class="block3variables"} est vide et le joueur gagne. Si tu veux, tu peux aussi afficher quelques lumières clignotantes en récompense une fois que la liste `séquence`{:class="block3variables"} est vide.
 
 --- task ---
 
