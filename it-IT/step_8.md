@@ -13,12 +13,6 @@ Fai clic sulla bandiera verde per iniziare, quindi utilizzare i tasti freccia pe
 
 --- /no-print ---
 
---- print-only ---
-
-![gioco di dodgeball in esecuzione](images/dodgeball-showcase.png)
-
---- /print-only ---
-
 
 ***
 Questo progetto è stato tradotto da volontari:
