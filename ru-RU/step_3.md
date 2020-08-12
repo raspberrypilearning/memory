@@ -22,6 +22,7 @@
 
 --- hints ---
 
+
 --- hint ---
 
 Тебе нужно только добавить два блока: блок `играть барабан (0,25) бита`{:class="block3sound"} и блок `элемент (длина списка последовательность) в последовательность`{:class="block3variables"}.
@@ -37,7 +38,7 @@
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(item (length of [sequence v]) of [sequence v])
+(item (length of [последовательность v]) of [последовательность v])
 ```
 
 --- /hint ---
@@ -50,11 +51,11 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 ```blocks3
 when flag clicked
-delete (all v) of [sequence v]
+delete (all v) of [последовательность v]
 repeat (5)
-	add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
+	add (pick random (1) to (4)) to [последовательность v]
+    play drum (item (length of [последовательность v]) of [последовательность v]) for (0.25) beats
+    switch costume to (item (length of [последовательность v]) of [последовательность v])
     wait (1) seconds
 end
 ```

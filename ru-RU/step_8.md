@@ -1,6 +1,6 @@
 ## Что дальше?
 
-Обрати внимание на проект [Вышибалы](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), где ты сможешь создать игру, в которой нужно будет уворачиваться от мячей, переходя с платформы на платформу.
+Обрати внимание на проект [Вышибалы](https://projects.raspberrypi.org/ru-RU/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), где ты сможешь создать игру, в которой нужно будет уворачиваться от мячей, переходя с платформы на платформу.
 
 --- no-print ---
 
@@ -15,15 +15,16 @@
 
 --- print-only ---
 
-![играть в вышибалы](images/dodgeball-final.png)
+![играть в вышибалы](images/dodgeball-showcase.png)
 
 --- /print-only ---
 
-***
 
+***
 Этот проект был переведен волонтерами:
 
 Мария Гапоник
+
 Вадим Васильев
 
 Благодаря волонтерам мы можем дать возможность людям во всем мире учиться на их родном языке. Вы можете помочь нам привлечь больше волонтёров-переводчиков - подробнее на [rpf.io/translate](https://rpf.io/translate).

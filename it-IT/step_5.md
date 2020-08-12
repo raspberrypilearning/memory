@@ -35,7 +35,7 @@ end
 
 --- task ---
 
-Se il giocatore ripeterà la sequenza corretta, dovrai aggiungere `1` al `punteggio `{:class="block3variables"}, e così facendo aumenterà anche la lunghezza della sequenza successiva. Aggiungi il seguente blocco al codice del personaggio **nel punto che ritieni sia giusto**:
+Se il giocatore ripeterà la sequenza corretta, dovrai aggiungere `1` al `punteggio`{:class="block3variables"}, e così facendo aumenterà anche la lunghezza della sequenza successiva. Aggiungi il seguente blocco al codice del personaggio **nel punto che ritieni sia giusto**:
 
 ![sprite](images/ballerina.png)
 
@@ -44,6 +44,7 @@ change [punteggio v] by (1)
 ```
 
 --- hints ---
+
 
 --- hint ---
 
@@ -65,13 +66,13 @@ Per conludere, aggiungi un ciclo `per sempre`{:class="block3control"} attorno al
 when flag clicked
 set [punteggio v] to [3]
 forever
-	delete (all v) of [sequence v]
+	delete (all v) of [sequenza v]
 	repeat (punteggio)
-		add (pick random (1) to (4)) to [sequence v]
-		switch costume to (item (length of [sequence v]) of [sequence v]
+		add (pick random (1) to (4)) to [sequenza v]
+		switch costume to (item (length of [sequenza v]) of [sequenza v]
 		wait (1) seconds
 	end
-	wait until < (length of [sequence v]) = [0]>
+	wait until < (length of [sequenza v]) = [0]>
 	broadcast (vinto v) and wait
 	change [punteggio v] by (1)
 end

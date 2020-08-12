@@ -6,7 +6,7 @@ Premièrement, crée un personnage qui puisse afficher des séquences de couleur
 
 Ouvre un nouveau projet Scratch.
 
-**En ligne:** ouvre un nouveau projet Scratch en ligne sur [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
+**En ligne:** ouvre un nouveau projet Scratch en ligne sur [rpf.io/scratch-new](https://rpf.io/scratch-new) {:target="_blank"}.
 
 **Hors-ligne**: ouvre un nouveau projet dans l’éditeur hors-ligne.
 
@@ -65,7 +65,7 @@ Ajoute ce code au sprite personnage pour choisir un nombre aléatoire et l'ajout
 
 ```blocks3
 when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+add (pick random (1) to (4)) to [séquence v]
 ```
 
 --- /task ---
@@ -82,6 +82,7 @@ Peux-tu ajouter du code à ton programme pour générer cinq nombres aléatoires
 
 --- hints ---
 
+
 --- hint ---
 
 Ajoute un `supprime tous les éléments de la liste séquence`{:class="block3variables"} pour d'abord supprimer tous les éléments de la liste, puis ajoute un bloc `répéter`{:class="block3control"} qui ajoute cinq nombres aléatoires à la liste.
@@ -96,9 +97,9 @@ Voici à quoi ton code devrait ressembler :
 
 ```blocks3
 when flag clicked
-delete (all v) of [sequence v]
+delete (all v) of [séquence v]
 repeat (5)
-	add (pick random (1) to (4)) to [sequence v]
+	add (pick random (1) to (4)) to [séquence v]
 end
 ```
 
@@ -115,7 +116,7 @@ Chaque fois qu'un nombre est ajouté à la liste, le personnage doit changer son
 ![ballerine](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
+switch costume to (item (length of [séquence v]) of [séquence v])
 wait (1) seconds
 ```
 

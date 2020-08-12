@@ -6,17 +6,17 @@
 
 ```blocks3
 when I receive [красный v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [последовательность v])=[1]> then
 	play drum (\(1\) Snare Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [последовательность v]
 else
 	Конец игры :: custom
 end
 
 when I receive [синий v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [последовательность v])=[1]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [последовательность v]
 else
 	Конец игры :: custom
 end

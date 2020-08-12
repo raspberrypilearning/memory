@@ -65,7 +65,7 @@ Aggiungi questo codice allo sprite del personaggio per scegliere un numero casua
 
 ```blocks3
 when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+add (pick random (1) to (4)) to [sequenza v]
 ```
 
 --- /task ---
@@ -82,6 +82,7 @@ Puoi aggiungere codice al tuo programma per generare cinque numeri casuali in un
 
 --- hints ---
 
+
 --- hint ---
 
 Aggiungi `cancella tutto da sequenza`{:class="block3variables"} per eliminare prima tutti gli elementi nella lista, quindi aggiungi un `ripeti`{:class="block3control"} per aggiunge cinque numeri casuali all'elenco.
@@ -96,9 +97,9 @@ Ecco cosa dovresti ottenere:
 
 ```blocks3
 when flag clicked
-delete (all v) of [sequence v]
+delete (all v) of [sequenza v]
 repeat (5)
-	add (pick random (1) to (4)) to [sequence v]
+	add (pick random (1) to (4)) to [sequenza v]
 end
 ```
 
@@ -115,7 +116,7 @@ Ogni volta che un numero viene aggiunto alla lista, il personaggio dovrebbe camb
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
+switch costume to (item (length of [sequenza v]) of [sequenza v])
 wait (1) seconds
 ```
 

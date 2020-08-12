@@ -18,6 +18,7 @@
 
 --- hints ---
 
+
 --- hint ---
 
 Для своего нового кода следуй этому шаблону:
@@ -63,9 +64,9 @@ set [имя v] to [ ]
 
 ```blocks3
 when I receive [красный v]
-if <(item (1 v) of [sequence v])=[1]> then
-	play drum (item (1 v) of [sequence v]) for (0.25) beats
-	delete (1 v) of [sequence v]
+if <(item (1 v) of [последовательность v])=[1]> then
+	play drum (item (1 v) of [последовательность v]) for (0.25) beats
+	delete (1 v) of [последовательность v]
 else
 	say [Конец игры!] for (1) seconds
 	if < (счёт :: variables) > (рекорд) > then
@@ -136,9 +137,9 @@ stop [all v]
 
 ```blocks3
 when I receive [красный v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [последовательность v])=[1]> then
 	play drum (\(1\) Snare Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [последовательность v]
 else
 	Конец игры :: custom
 end
@@ -162,9 +163,9 @@ end
 
 ```blocks3
 when I receive [синий v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [последовательность v])=[1]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [последовательность v]
 else
 	Конец игры :: custom
 end

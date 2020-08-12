@@ -65,7 +65,7 @@
 
 ```blocks3
 when flag clicked
-add (pick random (1) to (4)) to [sequence v]
+add (pick random (1) to (4)) to [последовательность v]
 ```
 
 --- /task ---
@@ -82,6 +82,7 @@ add (pick random (1) to (4)) to [sequence v]
 
 --- hints ---
 
+
 --- hint ---
 
 Добавь `удалить все из список`{:class="block3variables"}, чтобы сначала удалить все элементы списка, а затем добавить блок `повторить`{:class="block3control"}, который добавит пять случайных чисел в список.
@@ -96,9 +97,9 @@ add (pick random (1) to (4)) to [sequence v]
 
 ```blocks3
 when flag clicked
-delete (all v) of [sequence v]
+delete (all v) of [последовательность v]
 repeat (5)
-	add (pick random (1) to (4)) to [sequence v]
+	add (pick random (1) to (4)) to [последовательность v]
 end
 ```
 
@@ -115,7 +116,7 @@ end
 ![балерина](images/ballerina.png)
 
 ```blocks3
-switch costume to (item (length of [sequence v]) of [sequence v])
+switch costume to (item (length of [последовательность v]) of [последовательность v])
 wait (1) seconds
 ```
 

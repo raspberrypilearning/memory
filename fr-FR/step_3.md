@@ -22,6 +22,7 @@ Le code qui joue de la batterie est **très** similaire au code qui change le co
 
 --- hints ---
 
+
 --- hint ---
 
 Tu dois seulement ajouter deux blocs : un bloc `jouer le tambour pour (0.25) temps`{:class="block3sound"} et un bloc `élément (longueur de la séquence)`{:class="block3variables"}.
@@ -37,7 +38,7 @@ Voici les blocs dont tu auras besoin :
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(item (length of [sequence v]) of [sequence v])
+(item (length of [séquence v]) of [séquence v])
 ```
 
 --- /hint ---
@@ -50,11 +51,11 @@ Voici à quoi devrait ressembler ton code fini :
 
 ```blocks3
 when flag clicked
-delete (all v) of [sequence v]
+delete (all v) of [séquence v]
 repeat (5)
-	add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
+	add (pick random (1) to (4)) to [séquence v]
+    play drum (item (length of [séquence v]) of [séquence v]) for (0.25) beats
+    switch costume to (item (length of [séquence v]) of [séquence v])
     wait (1) seconds
 end
 ```

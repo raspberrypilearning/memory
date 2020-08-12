@@ -4,7 +4,7 @@ Ora salva il punteggio più alto in modo da poter sfidare i tuoi amici.
 
 --- task ---
 
-Aggiungi due nuove variabili chiamate `Punteggio record`{:class="block3variables"} e `nome`{:class="block3variables"} al tuo progetto.
+Aggiungi due nuove variabili chiamate `record`{:class="block3variables"} e `nome`{:class="block3variables"} al tuo progetto.
 
 --- /task ---
 
@@ -12,11 +12,12 @@ Quando il gioco finisce, perché il giocatore esegue una sequenza sbagliata, del
 
 --- task ---
 
-Aggiungi codice al tuo sprite personaggio per memorizzare il `punteggio record`{:class="block3variables"}. Chiedi anche il nome del giocatore e memorizzalo nella variabile `nome`{:class="block3variables"}.
+Aggiungi codice al tuo sprite personaggio per memorizzare il `record`{:class="block3variables"}. Chiedi anche il nome del giocatore e memorizzalo nella variabile `nome`{:class="block3variables"}.
 
 [[[generic-scratch3-high-score]]]
 
 --- hints ---
+
 
 --- hint ---
 
@@ -63,14 +64,14 @@ Ecco come dovrebbe essere il codice per quando viene premuto il pulsante rosso:
 
 ```blocks3
 when I receive [rosso v]
-if <(item (1 v) of [sequence v])=[1]> then
-	play drum (item (1 v) of [sequence v]) for (0.25) beats
-	delete (1 v) of [sequence v]
+if <(item (1 v) of [sequenza v])=[1]> then
+	play drum (item (1 v) of [sequenza v]) for (0.25) beats
+	delete (1 v) of [sequenza v]
 else
-	say [Game over!] for (1) seconds
+	say [Hai perso!] for (1) seconds
 	if < (punteggio :: variables) > (record) > then
 		set [record v] to (punteggio :: variables)
-		ask [Record! Come ti chiami?] and wait
+		ask [Punteggio record! Come ti chiami?] and wait
 		set [nome v] to (answer)
 	end
 	stop [all v]
@@ -90,10 +91,10 @@ Ti risulta che il codice "Game over" per ciascuno dei quattro colori sia esattam
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-say [Game over!] for (1) seconds
+say [Hai perso!] for (1) seconds
 if < (punteggio :: variables) > (record) > then
 	set [record v] to (punteggio :: variables)
-	ask [Record! Come ti chiami?] and wait
+	ask [Punteggio record! Come ti chiami?] and wait
 	set [nome v] to (answer)
 end
 stop [all v]
@@ -117,10 +118,10 @@ Dal gruppo di comandi riguardanti la ricezione del messaggio `rosso`{:class="blo
 
 ```blocks3
 define Game over
-say [Game over!] for (1) seconds
+say [Hai perso!] for (1) seconds
 if < (punteggio :: variables) > (record) > then
 	set [record v] to (punteggio :: variables)
-	ask [Record! Come ti chiami?] and wait
+	ask [Punteggio record! Come ti chiami?] and wait
 	set [nome v] to (answer)
 end
 stop [all v]
@@ -130,15 +131,15 @@ stop [all v]
 
 --- task ---
 
-Ora rimuovi il codice che si trova nel blocco `else`{:class="block3control"} collegato al messaggio `rosso`{:class="block3events"} e aggiungi il blocco `Hai perso`{:class="block3myblocks"} al suo posto:
+Ora rimuovi il codice che si trova nel blocco `else`{: class = "block3control"} collegato al messaggio `rosso`{:class="block3events"} e aggiungi il blocco `Hai perso`{class="block3myblocks"} al suo posto:
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
 when I receive [rosso v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [sequenza v])=[1]> then
 	play drum (\(1\) Snare Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [sequenza v]
 else
 	Game over :: custom
 end
@@ -148,7 +149,7 @@ end
 
 --- task ---
 
-Testa il tuo nuovo blocco giocando e cliccando il pulsante rosso in un punto sbagliato nella sequenza di colori.
+Testa il tuo nuovo blocco giocando e cliccando il pulsante rosso in un punto sbagliato nella sequenza di colori.--- /task.
 
 --- /task ---
 
@@ -156,15 +157,15 @@ Il tuo nuovo blocco `Game over`{:class="block3myblocks"} è una **funzione**, un
 
 --- task ---
 
-Sostituisci anche il codice sotto `altrimenti`{: class = "block3control"} all'interno del gruppo di codice `quando ricevo`{:class="block3events"}, relativo agli altri colori, con il tuo nuovo blocco personale `Game over`{:class="block3myblocks"}. Ecco come dovrebbe apparire il codice per il messaggio `blu`{:class="block3events"}
+Sostituisci anche il codice sotto `altrimenti`{:class="block3control"} all'interno del gruppo di codice `quando ricevo`{:class="block3events"}, relativo agli altri colori, con il tuo nuovo blocco personale `Game over`{:class="block3myblocks"}. Ecco come dovrebbe apparire il codice per il messaggio `blu`{:class="block3events"}
 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
 when I receive [blu v]
-if <(item (1 v) of [sequence v])=[1]> then
+if <(item (1 v) of [sequenza v])=[1]> then
 	play drum (\(2\) Bass Drum v) for (0.25) beats
-	delete (1 v) of [sequence v]
+	delete (1 v) of [sequenza v]
 else
 	Game over :: custom
 end
@@ -181,11 +182,11 @@ Ora aggiungi un suono che venga riprodotto quando viene premuto il pulsante sbag
 ```blocks3
 define Game over
 start sound [Cough1 v]
-say [Game over!] for (1) seconds
+say [Hai perso!] for (1) seconds
 if < (punteggio :: variables) > (record) > then
 	play sound (trumpet1 v)
 	set [record v] to (punteggio)
-	ask [Record! Come ti chiami?] and wait
+	ask [Punteggio record! Come ti chiami?] and wait
 	set [nome v] to (answer)
 end
 stop [all v]

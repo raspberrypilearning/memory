@@ -22,6 +22,7 @@ Il codice che suona il tamburo è **molto** simile al codice che cambia il costu
 
 --- hints ---
 
+
 --- hint ---
 
 Hai solo bisogno di aggiungere due blocchi: un blocco `suona tamburo per (0.25) battute`{:class="block3sound"} e un `elemento (lunghezza di sequenza) di sequenza`{:class="block3variables"}.
@@ -37,7 +38,7 @@ Ecco i blocchi di codice che ti serviranno:
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(item (length of [sequence v]) of [sequence v])
+(item (length of [sequenza v]) of [sequenza v])
 ```
 
 --- /hint ---
@@ -50,11 +51,11 @@ Ecco come dovrebbe essere il codice completo:
 
 ```blocks3
 when flag clicked
-delete (all v) of [sequence v]
+delete (all v) of [sequenza v]
 repeat (5)
-	add (pick random (1) to (4)) to [sequence v]
-    play drum (item (length of [sequence v]) of [sequence v]) for (0.25) beats
-    switch costume to (item (length of [sequence v]) of [sequence v])
+	add (pick random (1) to (4)) to [sequenza v]
+    play drum (item (length of [sequenza v]) of [sequenza v]) for (0.25) beats
+    switch costume to (item (length of [sequenza v]) of [sequenza v])
     wait (1) seconds
 end
 ```
