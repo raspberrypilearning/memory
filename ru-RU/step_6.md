@@ -112,7 +112,7 @@ stop [all v]
 
 --- task ---
 
-Добавь код из блока `иначе`{:class="block3control"}, который связан с передачей `красного`{:class= "block3events"} сообщения в блок `Конец игры`{:class="block3myblocks"}, это должно выглядеть так:
+Добавь код из блока `иначе`{:class="block3control"}, который связан с передачей `красного`{:class="block3events"} сообщения в блок `Конец игры`{:class="block3myblocks"}, это должно выглядеть так:
 
 ![балерина](images/ballerina.png)
 

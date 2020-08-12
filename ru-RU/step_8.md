@@ -13,12 +13,6 @@
 
 --- /no-print ---
 
---- print-only ---
-
-![играть в вышибалы](images/dodgeball-showcase.png)
-
---- /print-only ---
-
 
 ***
 Этот проект был переведен волонтерами:
