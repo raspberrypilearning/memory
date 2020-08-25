@@ -2,25 +2,25 @@
 hero_image: images/memory.png
 listed: true
 copyedit: false
-title: Memory
-description: Create a game in which you memorise and repeat random colour sequences
+title: স্মৃতি
+description: এমন একটি গেম তৈরি করুন যাতে আপনি মুখস্ত করে এলোমেলো রঙের ক্রম পুনরাবৃত্তি করেন
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - 
-    title: Introduction
+    title: ভূমিকা
   - 
-    title: Create a colour sequence
+    title: একটি রঙের ক্রম তৈরি করুন
   - 
-    title: Add sound
+    title: শব্দ যোগ করুন
   - 
-    title: Repeat the sequence
+    title: ক্রম পুনরাবৃত্তি করুন
   - 
-    title: Multiple levels
+    title: একাধিক স্তর
   - 
-    title: High score
+    title: উচ্চ স্কোর
   - 
-    title: "Challenge: improve your game"
+    title: "Challenge: আপনার গেমটি উন্নত করুন"
   - 
-    title: What next?
+    title: এরপর কি?
 
