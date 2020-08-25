@@ -1,16 +1,16 @@
-## Add sound
+## শব্দ যোগ করুন
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+আপনার প্রকল্পটি কয়েকবার পরীক্ষা করুন। আপনি কি লক্ষ্য করেছেন যে কখনও কখনও একই সংখ্যার পরপর দু'বার (বা তারও বেশি বার) বাছাই করা হয়েছে, যা ক্রমটি মুখস্থ করাকে শক্ত করে তোলে?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+আপনি কি প্রতিবার character sprite এর costume বাদলের জন্য ড্রামের শব্দ চালাতে চান? এবং প্রতিটি রঙের জন্য কী আলাদা ড্রামের শব্দ করতে চান?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+আপনার প্রকল্পে muisc extension যুক্ত করতে আপনি ` play drum ` {:class="block3extensions"} ব্লক যোগ করুন.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,19 +18,19 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+ড্রাম বাজানো code ** very ** করে অনেকটা costume পাল্টানোর code এর মতো.
 
 \--- hints \---
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+আপনাকে দুটো block যোগ করতে হবে: `play drum for (0.25) beats`{:class="block3sound"} block এবং `item (length of sequence) of sequence`{:class="block3variables"} block.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+আপনার যে blocks দরকার তা এখানে রয়েছে:
 
 ![ballerina](images/ballerina.png)
 
@@ -44,7 +44,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- hint \---
 
-Here is how your finished code should look:
+আপনার সমাপ্ত code এখানে দেখতে কেমন হবে:
 
 ![ballerina](images/ballerina.png)
 
