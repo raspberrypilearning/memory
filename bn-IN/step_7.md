@@ -1,8 +1,8 @@
-## Challenge: improve your game
+## Challenge: আপনার গেমটি উন্নত করুন
 
-### Make more blocks
+### আরও ব্লক বানান
 
-Do you see any other code that is the same for all four buttons?
+আপনি কি অন্য কোনও কোড দেখতে পান যা চারটি বোতামের জন্য একই?
 
 ```blocks3
 when I receive [red v]
@@ -22,18 +22,18 @@ else
 end
 ```
 
-Can you make another custom block that all buttons can use?
+আপনি কি অন্য কাস্টম ব্লক তৈরী করতে পারবেন যা সমস্ত বোতাম ব্যবহার করতে পারে?
 
-### Another costume
+### আরেকটি costume
 
-Can you see that your game starts with your character showing one of the four colours, and that the character always displays the last colour in the sequence while the player is repeating the colour sequence?
+আপনি দেখতে পাচ্ছেন যে আপনার গেমটি চারটি বর্ণের একটিতে আপনার character দেখানো দিয়ে শুরু হয়েছিল এবং প্লেয়ারটি বর্ণ ক্রমটি পুনরাবৃত্তি করার সময় character সর্বদা ক্রমের শেষ রঙটি প্রদর্শন করে?
 
-Can you add another plain white costume to your character, and add code so that the character displays this costume at the start of the game and while the player is repeating the sequence?
+আপনি কি আপনার চরিত্রের জন্য অন্য একটি সরল সাদা costume যুক্ত করতে পারেন এবং কোড যুক্ত করতে পারেন যাতে গেমের শুরুতে চরিত্রটি এই costume প্রদর্শন করে যখন প্লেয়ার ক্রমটি পুনরাবৃত্তি করে?
 
 ![screenshot](images/colour-white.png)
 
-### Difficulty level
+### কাঠিন্যের মাত্রা
 
-Can you allow your player to choose between playing the game in 'easy mode' (using just the red and blue colours) and 'normal mode' (which uses all four colours)?
+আপনি কী 'খেলোয়াড়কে' ইজি মোড'/easy mode (কেবল লাল এবং নীল রঙ ব্যবহার করে) এবং 'সাধারণ মোড'/normal mode (যা চারটি রঙ ব্যবহার করে) এর মধ্যে গেম খেলার জন্য বেছে নেওয়ার অনুমতি দিতে পারেন?
 
-If you want, you can even add a 'hard' mode, which makes use of a fifth drum!
+আপনি যদি চান, আপনি এমনকি একটি 'হার্ড' মোড যুক্ত করতে পারেন, যা পঞ্চম ড্রাম ব্যবহার করে!
