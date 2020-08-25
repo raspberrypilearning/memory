@@ -1,10 +1,10 @@
-## What next?
+## এরপর কি?
 
-Try out the next project, [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), where you will make a game in which you have to avoid balls while moving from platform to platform.
+পরের প্রকল্পটি [Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), যেখানে আপনি এমন একটি গেম তৈরি করবেন যাতে প্ল্যাটফর্ম থেকে প্ল্যাটফর্মে যাওয়ার সময় আপনাকে বলগুলি এড়াতে হবে।.
 
 \--- no-print \---
 
-Click the green flag to start, and then use the arrow keys to move and the <kbd>space</kbd> key to jump.
+শুরু করতে সবুজ পতাকা ক্লিক করুন, এবং তারপরে সরানোর জন্য তীর চিহ্নগুলি ব্যবহার করুন এবং <kbd>space</kbd> চিহ্ন দিয়া লাফ দিন.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
