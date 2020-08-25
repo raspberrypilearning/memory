@@ -1,13 +1,13 @@
-## Repeat the sequence
+## ক্রম বা sequence এর পুনরাবৃত্তি
 
-Now you're going to add four buttons the player has to press to repeat the colour sequence.
+এখন আপনি চারটি বোতাম যুক্ত করুন যাতে প্লেয়ারটি বোতাম টিপে রঙের ক্রম পুনরাবৃত্তি করতে পারে.
 
 \--- task \---
 
-Add four new sprites to your project to represent the four buttons.
+চারটি বোতামের প্রতিনিধিত্ব করতে আপনার প্রকল্পে চারটি নতুন sprites যুক্ত করুন।.
 
-+ Edit the new sprites' costumes so that there is one sprite in each of the four colours
-+ Put the sprites in the same order on the stage as the costumes: red, blue, green, yellow
++ নতুন sprite এর costume গুলি edit করুন যাতে চারটি বর্ণের প্রতিটিটিতে একটি করে sprite থাকে
++ Costume এর হিসাবে sprite গুলি একই ক্রমে রাখুন: লাল, নীল, সবুজ, হলুদ
 
 ![screenshot](images/colour-drums.png)
 
@@ -15,7 +15,7 @@ Add four new sprites to your project to represent the four buttons.
 
 \--- task \---
 
-Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{:class="block3events"} a 'red' message to the character sprite:
+'লাল' sprite এ কিছু কোড যুক্ত করুন যাতে এই sprite টি যখন ক্লিক করা হয়, তখন এটি ` broadcast ` ।: class= "block3events"} বার্তাটি "লাল" করে দেবে:
 
 ![red-drum](images/red_drum.png)
 
@@ -26,21 +26,21 @@ Add code to the red sprite so that, when the sprite is clicked, it `broadcasts`{
 
 \--- /task \---
 
-A `broadcast`{:class="block3events"} is like a message announced over a loudspeaker, which you can for example hear in schools or supermarkets. All of the sprites can hear the `broadcast`{:class="block3events"}, but only the sprite whose job it is to respond will do something.
+`broadcast`{:class="block3events"} একটি লাউড স্পিকারের মাধ্যমে ঘোষণা করা বার্তার মতো যা উদাহরণস্বরূপ বলা যায় যেগুলি স্কুল বা সুপারমার্কেটে শুনতে পাওয়া যায়।. Sprite রা সকলেই `broadcast`{:class="block3evnts"},শুনতে পারে, তবে কেবলমাত্র সেই sprites যার কাজ প্রতিক্রিয়া দেওয়া সেই শুধু প্রতিক্রিয়া দেবে.
 
 \--- task \---
 
-Add similar code to the blue, green, and yellow sprites to make them `broadcast`{:class="block3events"} messages about their own colour.
+নীল, সবুজ এবং হলুদ sprite এ একই কোড যুক্ত করুন `broadcast`{:class="block3events"} যাতে তারা নিজস্ব রঙ সম্পর্কে বার্তা দেয়।.
 
 \--- /task \---
 
-Do you remember that the `broadcast`{:class="block3events"} is like a loudspeaker message? You will add code to make it the character sprite's job to respond to the `broadcast`{:class="block3events"} messages.
+আপনার কি মনে আছে যে `broadcast`{:class="block3events"} লাউডস্পিকারের বার্তার মতো? আপনি `broadcast`{:class="block3events"} বার্তাগুলির জবাব দেওয়ার জন্য ও character sprite কাজ করার জন্য code যুক্ত করবেন।.
 
 \--- task \---
 
-When your character sprite receives the message `red`{:class="block3events"}, the code should check whether the number `1` is at the start of the `sequence`{:class="block3variables"} list (which means that `red`{:class="block3events"} is the next colour in the sequence).
+যখন আপনার character sprite `red`{:class="block3events"}বার্তাটি পেয়েছে, কোডটি `sequence`{:class="block3variables"} তালিকার শুরুতে `1` নম্বর কিনা তা যাচাই করা উচিত (which means that `red`{:class="block3events"} is the next colour in the sequence).
 
-If `1` is at the start of the list, the code should remove the number from the list, because the player remembered the correct colour. Otherwise it's game over, and the code needs to `stop all`{:class="block3control"} to end the game.
+যদি `1` তালিকার শুরুতে থাকে তবে কোডটির তালিকা থেকে নম্বর সরিয়ে নেওয়া উচিত, কারণ প্লেয়ারটি সঠিক রঙটি মনে রেখেছিল।. তা না হলে খেলা শেষ এবং কোড টিকে `stop all`{:class="block3control"} করে খেলা শেষ করতে হবে।.
 
 ![ballerina](images/ballerina.png)
 
@@ -58,30 +58,30 @@ end
 
 \--- task \---
 
-Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
+আপনি যে কোডটি লিখেছেন সেটিতে যুক্ত করুন যাতে character sprite `broadcast`{:class="block3events"} প্রাপ্ত হলে ড্রাম বিট বাজায়.
 
 \--- hints \---
 
 \--- hint \---
 
-Can you use the numbers that correspond to each colour to play the correct drum beat?
+সঠিক ড্রাম বিট দিতে আপনি কি প্রতিটি রঙের সাথে মেলে এমন নম্বর ব্যবহার করতে পারেন?
 
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow
-
-\--- /hint \---
-
-\--- hint \---
-
-Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
++ 1 = লাল
++ 2 = নীল
++ 3 = সবুজ
++ 4 = হলুদ
 
 \--- /hint \---
 
 \--- hint \---
 
-Here is the code you will need to add:
+উপরে `delete 1 of sequence`{:class="block3variables"} ব্লক আছে, `play drum`{:class="block3sound"} ব্লক যোগ করুন যাতে প্রথম শব্দটি চলে `sequence`{:class="block3variables"} লিস্টে.
+
+\--- /hint \---
+
+\--- hint \---
+
+আপনার যে কোডটি যুক্ত করতে হবে:
 
 ```blocks3
 when I receive [red v]
@@ -103,21 +103,21 @@ end
 
 \--- task \---
 
-Duplicate the code you used to make your character sprite respond to the message `red`{:class="block3events"}. Change the duplicated code so that it sends the message `blue`{:class="block3events"}.
+আপনি নিজের character sprite `red`{:class="block3events"} বার্তাটিতে সাড়া দেওয়ার জন্য যে কোডটি ব্যবহার করেছেন সেটিকে নকল করুন. নকল কোডটি পরিবর্তন করুন যাতে এটি বার্তা পাঠাতে পারে `blue`{:class="block3events"}.
 
 \--- /task \---
 
-When the sprite responds to the message `blue`{:class="block3events"}, which bit of code should stay the same, and which bit should change? Remember that each colour has a corresponding number.
+Sprite যখন বার্তাটি সাড়া দেয় `blue`{:class="block3events"}, তখন কোন bit কোড একই থাকা উচিত এবং কোন bit পরিবর্তন হওয়া উচিত? মনে রাখবেন যে প্রতিটি রঙের একটি অনুরূপ নম্বর রয়েছে।.
 
 \--- task \---
 
-Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
+Character sprite কোডটি পরিবর্তন করুন যাতে অক্ষরটি বার্তায় `blue`{:class="block3events"}সঠিকভাবে প্রতিক্রিয়া জানায়।.
 
 \--- hints \---
 
 \--- hint \---
 
-Keep these blocks, but you need to change them in some way:
+এই ব্লক রাখুন, তবে আপনাকে এইগুলিতে কিছু উপায়ে পরিবর্তন করতে হবে:
 
 ![ballerina](images/ballerina.png)
 
@@ -133,7 +133,7 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- hint \---
 
-Here is how your code should look for the `blue`{:class="block3events"} broadcast.
+আপনার কোডটি সম্প্রচারে এইরকম দেখতে হবে `blue`{:class="block3events"}.
 
 ![ballerina](images/ballerina.png)
 
@@ -156,17 +156,17 @@ end
 
 \--- task \---
 
-Duplicate the code again twice (for the green and yellow buttons), and change the necessary parts so that the character responds correctly to the new `broadcasts`{:class="block3events"}.
+কোডটি আবার দুবার নকল করুন (সবুজ এবং হলুদ বোতামগুলির জন্য) এবং প্রয়োজনীয় অংশগুলি পরিবর্তন করুন যাতে নতুন character সঠিকভাবে প্রতিক্রিয়া জানায় `broadcasts`{:class="block3events"}.
 
 \--- /task \---
 
-Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
+কোড পরীক্ষা করতে মনে রাখবেন! আপনি কি পাঁচটি রঙের একটি ক্রম মুখস্থ করতে পারবেন? ক্রমটি কি প্রতিবার আলাদা হয়?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+যখন প্লেয়ার পুরো রঙের ক্রমটি সঠিকভাবে পুনরাবৃত্তি করে, `sequence`{:class="block3variables"} তালিকা খালি এবং প্লেয়ার জয়লাভ করে।. আপনি যদি চান, আপনি একবার পুরষ্কার হিসাবে কিছু ঝলকানি আলোও প্রদর্শন করতে পারেন `sequence`{:class="block3variables"} তালিকাটি খালি থাকলে.
 
 \--- task \---
 
-Add this code to the end of your character's `when flag clicked`{:class="block3events"} script:
+আপনার character টির শেষে এই কোডটি যুক্ত করুন `when flag clicked`{:class="block3events"}:
 
 ![ballerina](images/ballerina.png)
 
@@ -179,7 +179,7 @@ Add this code to the end of your character's `when flag clicked`{:class="block3e
 
 \--- task \---
 
-Switch to the Stage, and import the `drum machine` sound or another sound you like.
+Stage স্যুইচ করুন এবং `drum machine` শব্দ বা আপনার পছন্দ মতো অন্য শব্দ আমদানি করুন।.
 
 [[[generic-scratch3-sound-from-library]]]
 
@@ -187,7 +187,7 @@ Switch to the Stage, and import the `drum machine` sound or another sound you li
 
 \--- task \---
 
-Add this code to play a sound and make the backdrop change colour when the player wins.
+একটি শব্দ বাজানোর জন্য এই কোডটি যুক্ত করুন এবং প্লেয়ার জিতলে পটভূমির রং পরিবর্তন করুন।.
 
 ![ballerina](images/stage.png)
 
