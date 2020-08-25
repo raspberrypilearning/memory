@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/memory-scratch2).
+এটি ** Scratch 3 ** প্রকল্পের সংস্করণ। প্রকল্পের একটি [ Scratch 2 সংস্করণও রয়েছে ](https://projects.raspberrypi.org/en/projects/memory-scratch2) ।.
 
 \--- /no-print \---
 
-## Introduction
+## ভূমিকা
 
-In this project, you will create a memory game in which you have to memorise and repeat a random sequence of colours!
+এই প্রকল্পে, আপনি এমন একটি মেমরি গেম তৈরি করবেন যাতে কিছু রং কে পর পর মনে রাখতে হবে এবং পুনরাবৃত্তি করতে হবে!
 
-### What you will make
+### আপনি যা বানাবেন
 
 \--- no-print \---
 
-Click on the green flag to start. Watch the sequence of colours shown by the dancer's dress and listen to the accompanying drum beats, then repeat the colours back to her. If you get the colours' order wrong, it's game over!
+শুরু করতে সবুজ পতাকাটিতে ক্লিক করুন।. নর্তকীর পোশাকে দেখানো রঙের ক্রম দেখুন এবং তার সাথে ড্রাম বিটগুলি শুনুন, তারপরে রঙগুলি তার কাছে আবার করুন।. আপনি যদি রঙগুলির ক্রমটি ভুল করেন তবে খেলা শেষ!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/284452634/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
@@ -28,21 +28,21 @@ Click on the green flag to start. Watch the sequence of colours shown by the dan
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: আপনি যা শিখবেন
 
-+ How to add sound to your Scratch project
-+ How to create and use lists to store data
-+ How to create and use custom blocks for repeating code
++ আপনার Scratch প্রকল্পে কীভাবে শব্দ যুক্ত করা যায়
++ ডেটা সঞ্চয়/store করার জন্য কীভাবে তালিকা তৈরি করতে এবং ব্যবহার করতে হয়
++ Code পুনরাবৃত্তি করার জন্য কীভাবে custom blocks তৈরি করবেন এবং ব্যবহার করবেন
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: আপনার যা প্রয়োজন হবে
 
 ### Hardware
 
-+ A computer capable of running Scratch 3
++ Scratch 3 চালানোর জন্য সক্ষম একটি কম্পিউটার
 
 ### Software
 
@@ -52,14 +52,14 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: শিক্ষাবিদদের জন্য অতিরিক্ত তথ্য
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"}.
+আপনি যদি এই প্রজেক্টটি প্রিন্ট করতে চান তবে [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"} ব্যবহার করুন ।.
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/memory-get).
+[completed project here](http://rpf.io/p/en/memory-get) এখানে খুঁজে পাবেন.
 
 \--- /collapse \---
