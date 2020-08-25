@@ -1,18 +1,18 @@
-## High score
+## Highscore
 
-Now save the high score so that you can play against your friends.
+Lass uns den Highscore speichern, damit du gegen deine Freunde antreten kannst.
 
 \--- task \---
 
-Add two new variables called `high score`{:class="block3variables"} and `name`{:class="block3variables"} to your project.
+Füge Deinem Projekt die 2 neuen Variablen `Highscore`{:class="block3variables"} und `Name`{:class="block3variables"} hinzu.
 
 \--- /task \---
 
-When the game ends because the player gets the sequence wrong, the game should check whether the score is higher than the current high score. If it is, the game should save the score as the high score, and also store the name of the player.
+Wann immer das Spiel beendet wird (durch Drücken des falschen Knopfes), musst Du prüfen, ob das Ergebnis des Spielers höher ist als der aktuelle Highscore. Ist dies der Fall, musst Du sowohl die Punktzahl des neuen Highscores, als auch den Namen des Spielers speichern.
 
 \--- task \---
 
-Add code to your character sprite to store the `high score`{:class="block3variables"}. Also ask for the player's name, and store it in the `name`{:class="block3variables"} variable.
+Füge Code zu deiner Spielfigur hinzu, um den `Highscore`{:class="block3variables"} zu speichern. Frage nach dem Namen des Spielers und speichere ihn in der `Name`{:class="block3variables"} - Variable.
 
 [[[generic-scratch3-high-score]]]
 
@@ -20,60 +20,60 @@ Add code to your character sprite to store the `high score`{:class="block3variab
 
 \--- hint \---
 
-Your new code needs to follow this pattern:
+Dein neuer Code muss diesem Muster folgen:
 
-After the `Game over`{:class="block3looks"} message `If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"} `Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"} `Ask`{:class="block3sensing"} for the player's name `Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
+Nach der `Spiel vorbei!`{:class="block3looks"} - Nachricht `Falls`{:class="block3control"} die `Punktzahl`{:class="block3variables"} `größer als`{:class="block3operators"} der `Highscore`{:class="block3variables"} ist, `setze`{:class="block3variables"} den `Highscore`{:class="block3variables"} auf `Punktzahl`{:class="block3variables"} `Frage`{:class="block3sensing"} nach dem Namen des Spielers `Setze`{:class="block3variables"} den `Namen`{:class="block3variables"} auf die `Antwort`{:class="block3sensing"}
 
 \--- /hint \---
 
 \--- hint \---
 
-You need the following blocks:
+Du benötigst die folgenden Blöcke:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-if < > then
+Falls < >, dann
 end
 
-(score)
+(Punktzahl)
 
-(score)
+(Punktzahl)
 
 [ ] > [ ]
 
-answer
+Antwort
 
-(high score)
+(Highscore)
 
-ask [What's your name?] and wait
+frage [Wie ist dein Name?] und warte
 
-set [high score v] to [ ] 
+setze [Highscore v] auf [ ] 
 
-set [name v] to [ ] 
+setz [Name v] auf [ ] 
 ```
 
 \--- /hint \---
 
 \--- hint \---
 
-Here's how your code for when the red button is pressed should look:
+So sollte dein Code beim Betätigen des roten Knopfes aussehen:
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (item (1 v) of [sequence v]) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    say [Game over!] for (1) seconds
-    if < (score :: variables) > (high score) > then
-        set [high score v] to (score :: variables)
-        ask [High score! What is your name?] and wait
-        set [name v] to (answer)
+Wenn ich [rot v] empfange
+falls <(Element (1 v) von [Sequenz v]) = [1]> , dann 
+    spiele Schlaginstrument (Element (1 v) von [Sequenz v]) für (0.25) Schläge
+    lösche (1 v) aus [Sequenz v]
+sonst 
+    sage [Spiel vorbei!] für (1) Sekunden
+    falls <(Punktzahl :: variables) > (Highscore)> , dann 
+        setze [Highscore v] auf (Punktzahl :: variables)
+        frage [Highscore! Wie ist dein Name?] und warte
+        setze [Name v] auf (Antwort)
     end
-    stop [all v]
+    stoppe [alles v]
 end
 ```
 
@@ -83,90 +83,64 @@ end
 
 \--- /task \---
 
-You need to add this new code to the character sprite for the other three colours too!
+Du musst diesen neuen Code zu den anderen 3 Tasten hinzufügen!
 
-Can you see that the 'Game over' code for each of the four colours is exactly the same?
+Kannst du sehen, dass der "Spiel vorbei" -Code für jede der vier Farben genau gleich ist?
 
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+sage [Spiel vorbei!] für (1) Sekunden
+falls < (Punktzahl :: variables) > (Highscore) > , dann 
+  setze [Highscore v] auf (Punktzahl :: variables)
+  ask [Highscore! Wie ist dein Name?] und warte
+    setze [Name v] auf (Antwort)
 end
-stop [all v]
+stoppe [alles v]
 ```
 
-If you need to change any of the 'Game over' code, for example to add a sound or change the 'Game over' message, you have to change it four times. That's annoying and wastes a lot of time.
+Wenn du jemals einen dieser Codes ändern musst, zum Beispiel um ein Geräusch hinzuzufügen oder die 'Spiel vorbei'-Nachricht zu ändern, müsstest du ganze 4 Mal die gleiche Änderung vornehmen! Das könnte lästig werden und viel Zeit verschwenden.
 
-Instead, you can define your own code block, and use it anywhere in your project.
+Stattdessen kannst du deine eigenen Bausteine definieren, und diese in deinem Projekt wiederverwenden.
 
 \--- task \---
 
-Click on `My blocks`{:class="block3myblocks"}, and then on **Make a Block**. Call this new block `Game over`{:class="block3myblocks"}.
+Um dies zu tun, klicke auf `Meine Blöcke`{:class="block3myblocks"} und dann **‘Neuer Block’**. Benenne diesen neuen Block `‘Spiel vorbei!’`{:class="block3myblocks"}.
 
 \--- /task \---
 
 \--- task \---
 
-Add the code from the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast to the `Game over`{:class="block3myblocks"} block so that it looks like this:
+Füge den Code aus dem `sonst`{:class="block3control"} - Block zu der `roten`{:class="block3events"} Sendung zum `Spiel vorbei` {:class="block3myblocks"} - Block hinzu, sodass es wie folgt aussieht:
 
-![ballerina](images/ballerina.png)
-
-```blocks3
-define Game over
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    set [high score v] to (score :: variables)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
-end
-stop [all v]
-```
-
-\--- /task \---
-
-\--- task \---
-
-Now remove the code that's in the `else`{:class="block3control"} block connected to the `red`{:class="block3events"} broadcast, and add in the `Game over`{:class="block3myblocks"} block instead:
-
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [red v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(1\) Snare Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
+Definiere Spiel vorbei
+sage [Spiel vorbei!] für (1) Sekunden
+falls < (Punktzahl :: variables) > (Highscore) >, dann
+    setze [Highscore v] auf (Punktzahl :: variables)
+    frage [Highscore! Wie ist dein Name?] und warte
+    setze [Name v] auf (Antwort)
 end
+stoppe [alles v]
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Test your new block by playing the game and clicking the red button at the wrong point in the colour sequence.
+Entferne nun den Code, der im `sonst`{:class="block3control"} - Block steht und mit der `rot`{:class="block3events"} - Nachricht verbunden ist. Füge stattdessen den `Spiel vorbei`{:class="block3myblocks"} - Block hinzu:
 
-\--- /task \---
-
-Your new `Game over`{:class="block3myblocks"} block is a **function**, a little script that you can use anywhere you like in your code by adding the `Game over`{:class="block3myblocks"} block in.
-
-\--- task \---
-
-Also replace the code in the `else`{:class="block3control"} block connected to the `broadcasts`{:class="block3events"} for the other colours with your new `Game over`{:class="block3myblocks"} block. Here is what the code for the `blue`{:class="block3events"} message should look like
-
-![ballerina](images/ballerina.png)
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-when I receive [blue v]
-if <(item (1 v) of [sequence v])=[1]> then
-    play drum (\(2\) Bass Drum v) for (0.25) beats
-    delete (1 v) of [sequence v]
-else
-    Game over :: custom
+Wenn ich [rot v] empfange
+falls < (Element (1 v) von [Sequenz v]) = [1] >, dann 
+    spiele Trommel ((1) Snare Drum v) für (0.25) Schläge
+    lösche (1 v) aus [Sequenz v]
+sonst 
+    Spiel vorbei! :: custom
 end
 ```
 
@@ -174,21 +148,47 @@ end
 
 \--- task \---
 
-Now add a sound that plays when the wrong button is pressed. You only need to add this code once in the `Game over`{:class="block3myblocks"} block that you made, and not four separate times!
+Teste deinen neuen Block, indem du das Spiel spielst und auf den roten Knopf an der falschen Stelle in der Farbsequenz klickst.
 
-![ballerina](images/ballerina.png)
+\--- /task \---
+
+Dein neuer `Spiel vorbei`{:class="block3myblocks"} - Block ist eine **Funktion**, ein kleines Skript, das du überall in deinem Code verwenden kannst, indem du den `Spiel vorbei`{:class="block3myblocks"} - Block einfügst.
+
+\--- task \---
+
+Entferne nun den Code, der im `sonst`{:class="block3control"} Block steht und mit der `rot`{:class="block3events"} - Nachricht verbunden ist, und füge stattdessen den `Spiel vorbei!`{:class="block3myblocks"} - Block hinzu. Hier siehst du wie der Code für die `blau` - Nachricht {:class="block3events"} aussehen sollte
+
+![Ballerina](images/ballerina.png)
 
 ```blocks3
-define Game over
-start sound [Cough1 v]
-say [Game over!] for (1) seconds
-if < (score :: variables) > (high score) > then
-    play sound (trumpet1 v)
-    set [high score v] to (score)
-    ask [High score! What is your name?] and wait
-    set [name v] to (answer)
+Wenn ich [blau v] empfange
+falls < (Element (1 v) von [Sequenz v]) = [1]>, dann 
+    spiele Schlaginstrument ((2) Basstrommel v) für (0.25) Schläge
+    lösche (1 v) aus [Sequenz v]
+sonst 
+    Spiel vorbei! :: custom
 end
-stop [all v]
+```
+
+\--- /task \---
+
+\--- task \---
+
+Füge als Nächstes ein Geräusch hinzu, wenn die falsche Taste gedrückt wird. Du musst diesen Code nur einmal im `Spiel vorbei`{:class="block3myblocks"} -Block hinzufügen, anstatt 4 Mal für jede einzelne Farbe!
+
+![Ballerina](images/ballerina.png)
+
+```blocks3
+Definiere Spiel vorbei
+spiele Klang [Husten v]
+sage [Spiel vorbei!] für (1) Sekunden
+falls < (Punktzahl :: variables) > (Highscore) >, dann 
+  spiele Klang (Trompete v)
+  setze [Highscore v] auf (Punktzahl)
+  frage [Highscore! Wie ist dein Name?] und warte
+    setze [Name v] auf (Antwort)
+end
+stoppe [alles v]
 ```
 
 \--- /task \---
