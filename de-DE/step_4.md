@@ -38,7 +38,7 @@ Erinnerst du dich, dass die `Sendung an alle`{:class="block3events"} wie eine La
 
 --- task ---
 
-Wenn deine Figur die Nachricht `rot`{:class="block3events"} empfängt, sollte der Code prüfen, ob die Nummer `1` am Anfang der `Sequenz`{:class="block3variables} steht (was bedeutet, dass `rot`{:class="block3events"} die nächste Farbe in der Sequenz ist).
+Wenn deine Figur die Nachricht `rot`{:class="block3events"} empfängt, sollte der Code prüfen, ob die Nummer `1` am Anfang der `Sequenz`{:class="block3variables"} steht (was bedeutet, dass `rot`{:class="block3events"} die nächste Farbe in der Sequenz ist).
 
 Wenn `1` am Beginn der Liste steht, kann die Nummer aus der Liste entfernt werden, da sie richtig erraten worden ist, weil der Spieler sich an die richtige Farbe erinnert hat. Ansonsten ist das Spiel vorbei und der Code muss `alles anhalten`{:class="block3control"} um das Spiel zu beenden.
 
@@ -167,7 +167,7 @@ Wenn der Spieler die komplette `Sequenz`{:class="block3variables"} korrekt wiede
 
 --- task ---
 
-Fügen diesen Code an das Ende des `wenn Fahne angeklickt wird`{:class="blockevents"}-Skripts deiner Figur hinzu:
+Fügen diesen Code an das Ende des `wenn Fahne angeklickt wird`{:class="block3events"}-Skripts deiner Figur hinzu:
 
 ![Ballerina](images/ballerina.png)
 
