@@ -1,9 +1,25 @@
---- challenge ---
-## Herausforderung: Ein weiteres Kostüm
-Hast Du bemerkt, dass das Spiel damit beginnt, dass Dein Charakter eine der 4 Farben zeigt, und dass das Kostüm immer die letzte Farbe anzeigt, die in der Reihenfolge auftaucht, während der Spieler die Farben wiederholt?
+## Wie geht es weiter?
 
-Kannst Du dem Charakter ein anderes komplett weißes Kostüm geben, welches zu Beginn des Spiels angezeigt wird, und wenn der Spieler versucht, die Sequenz zu wiederholen?
+Probiere das nächste Projekt [Völkerball](https://projects.raspberrypi.org/de-DE/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), bei dem du ein Spiel erstellst, indem du von Plattform zu Plattform springst während du den Bällen ausweichen musst.
 
-![screenshot](images/colour-white.png)
+--- no-print ---
 
---- /challenge ---
+Klicke zum Starten auf die grüne Flagge und verwende dann die Pfeiltasten zum Bewegen und die <kbd>Leertaste</kbd> zum Springen.
+
+<div class="scratch-preview">
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/251809924/?autostart=false" frameborder="0" scrolling="no"></iframe>
+  <img src="images/dodge-final.png">
+</div>
+
+--- /no-print ---
+
+
+
+***
+Dieses Projekt wurde von freiwilligen Helfern übersetzt:
+
+Nicole Rotarius
+
+Lars Reime
+
+Dank freiwilliger Helfer können wir Menschen auf der ganzen Welt die Möglichkeit geben, in ihrer eigenen Sprache zu lernen. Du kannst uns helfen, mehr Menschen zu erreichen, indem Du dich freiwillig zum Übersetzen meldest - weitere Informationen unter [rpf.io/translate](https://rpf.io/translate).

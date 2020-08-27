@@ -1,0 +1,19 @@
+Sequenz
+
+rot
+
+Spiel vorbei!
+
+blau
+
+Gewonnen
+
+Punktzahl
+
+Highscore
+
+Name
+
+Wie ist dein Name?
+
+Highscore! Wie ist dein Name?
