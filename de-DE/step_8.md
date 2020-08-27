@@ -13,11 +13,6 @@ Klicke zum Starten auf die grüne Flagge und verwende dann die Pfeiltasten zum B
 
 --- /no-print ---
 
---- print-only ---
-
-![Völkerball wird gespielt](images/dodgeball-showcase.png)
-
---- /print-only ---
 
 
 ***

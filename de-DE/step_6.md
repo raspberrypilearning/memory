@@ -106,13 +106,13 @@ Stattdessen kannst du deine eigenen Bausteine definieren, und diese in deinem Pr
 
 --- task ---
 
-Um dies zu tun, klicke auf `Meine Blöcke`{:class="block3myblocks"} und dann **‘Neuer Block’**. Benenne diesen neuen Block `‘Spiel vorbei!’`{:class="block3myblocks"}.
+Um dies zu tun, klicke auf `Meine Blöcke`{:class="block3myblocks"} und dann **‘Neuer Block’**. Benenne diesen neuen Block `‘Spiel vorbei’`{:class="block3myblocks"}.
 
 --- /task ---
 
 --- task ---
 
-Füge den Code aus dem `sonst`{:class="block3control"} - Block zu der `roten`{:class="block3events"} Sendung zum `Spiel vorbei` {:class="block3myblocks"} - Block hinzu, sodass es wie folgt aussieht:
+Füge den Code aus dem `sonst`{:class="block3control"} - Block zu der `roten`{:class="block3events"} Sendung zum `Spiel vorbei`{:class="block3myblocks"} - Block hinzu, sodass es wie folgt aussieht:
 
 ![Ballerina](images/ballerina.png)
 
@@ -157,7 +157,7 @@ Dein neuer `Spiel vorbei`{:class="block3myblocks"} - Block ist eine **Funktion**
 
 --- task ---
 
-Entferne nun den Code, der im `sonst`{:class="block3control"} Block steht und mit der `rot`{:class="block3events"} - Nachricht verbunden ist, und füge stattdessen den `Spiel vorbei!`{:class="block3myblocks"} - Block hinzu. Hier siehst du wie der Code für die `blau` - Nachricht {:class="block3events"} aussehen sollte
+Entferne nun den Code, der im `sonst`{:class="block3control"} Block steht und mit der `rot`{:class="block3events"} - Nachricht verbunden ist, und füge stattdessen den `Spiel vorbei!`{:class="block3myblocks"} - Block hinzu. Hier siehst du wie der Code für die `blau`{:class="block3events"} - Nachricht aussehen sollte
 
 ![Ballerina](images/ballerina.png)
 
