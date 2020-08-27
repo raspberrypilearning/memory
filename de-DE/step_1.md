@@ -1,26 +1,68 @@
-## Einführung
+--- no-print ---
 
-In diesem Projekt erstellst Du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
+Dies ist die **Scratch-3**-Version des Projekts. Es gibt auch eine [Scratch-2-Version des Projekts](https://projects.raspberrypi.org/de-DE/projects/memory-scratch2).
+
+--- /no-print ---
+
+## Einleitung
+
+In diesem Projekt erstellst du ein Gedächtnis-Spiel, bei dem man sich eine Folge von zufälligen Farben merken und wiederholen muss!
+
+### Was du machen wirst
+
+--- no-print ---
+
+Klicke zum Starten auf die grüne Flagge. Beobachte die Farbenfolge, die das Kleid des Tänzers/der Tänzerin zeigt und höre den begleitenden Trommelschlägen zu, wiederhole dann die Reihenfolge, um ein Level weiter zu kommen. Wenn du die Reihenfolge der Farben falsch eingegeben hast, ist das Spiel vorbei!
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
-  <img src="images/colour-final.png">
+  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/420634996/?autostart=false" frameborder="0" allowfullscreen scrolling="no" mark="crwd-mark"></iframe> <img src="images/screenshot.png" />
 </div>
 
-## Ressourcen
-Für dieses Projekt sollte Scratch 2 entweder online unter [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) verwendet oder hier [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) heruntergeladen und offline benutzt werden.
+--- /no-print ---
 
-Eine vollständige Version des Projektes kann hier eingesehen <a href="http://scratch.mit.edu/projects/34874510/#editor">online</a> oder unter dem 'Download Project Materials'-Link, der folgendes enthält, heruntergeladen werden:
+--- print-only ---
 
-+ Gedächtnis.sb2
+![Bildschirmfoto des fertigen Spiels](images/screenshot.png)
 
-## Lernziele
-+ Listen
-+ Einfache Funktionen
+--- /print-only ---
 
-## Herausforderungen
-+ "Geräusche hinzufügen" - Benutzerfreundlichkeit des Spieles verbessern;
-+ "4 tasten erstellen" - Listen manipulieren;
-+ "Mehr Blöcke erstellen" - benutzerdefinierte Blöcke erstellen;
-+ "Anderes Kostüm" - Benutzerfreundlichkeit des Spieles verbessern;
-+ "Schwierigkeitsgrad" - in einer Liste gespeicherten Daten modifizieren.
+--- collapse ---
+---
+title: Was du lernen wirst
+---
+
++ Wie ein Klang zu deinem Scratch-Projekt hinzugefügt wird
++ Wie man Listen erstellt und verwendet, um Daten zu speichern
++ Wie man benutzerdefinierte Blöcke erstellt und verwendet, um Code zu wiederholen
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Was du brauchen wirst
+---
+
+### Hardware
+
++ Ein Computer, auf dem Scratch 3 ausgeführt werden kann
+
+### Software
+
+Scratch 3 (entweder [online](https://rpf.io/scratchon){:target="_blank"} oder [offline](https://rpf.io/scratchoff){:target="_blank"})
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Zusätzliche Informationen für Lehrer
+---
+
+--- no-print ---
+
+Wenn du dieses Projekt ausdrucken möchtest, verwende die [druckerfreundliche Version](https://projects.raspberrypi.org/de-DE/projects/memory/print){:target="_blank"}.
+
+--- /no-print ---
+
+Du findest das [fertige Projekt hier](http://rpf.io/p/de-DE/memory-get).
+
+--- /collapse ---
