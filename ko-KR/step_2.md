@@ -1,6 +1,6 @@
 ## 색상 순서 만들기
 
-First create a character that can display a random sequence of colours.
+먼저 임의의 색상 순서를 표시 할 수있는 문자를 만듭니다.
 
 \--- task \---
 
