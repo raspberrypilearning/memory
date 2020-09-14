@@ -46,7 +46,7 @@
 
 ### सॉफ्टवेअर
 
-Scratch 3 (एकतर [online](https://rpf.io/scratchon){:target="_blank"} किंवा [offline](https://rpf.io/scratchoff){:target="_blank"})
+Scratch 3 (एकतर [ऑनलाइन](https://rpf.io/scratchon){:target="_blank"} किंवा [ऑफलाइन](https://rpf.io/scratchoff){:target="_blank"})
 
 \--- /collapse \---
 
@@ -56,7 +56,7 @@ Scratch 3 (एकतर [online](https://rpf.io/scratchon){:target="_blank"} क
 
 \--- no-print \---
 
-आपल्याला जर हा प्रकल्प प्रिंट करायचा असेल तर आपण [printer-friendly version](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"} चा वापर करू शकता.
+आपल्याला जर हा प्रकल्प प्रिंट करायचा असेल तर आपण [प्रिंटर अनुकूल आवृत्ती](https://projects.raspberrypi.org/en/projects/memory/print){:target="_blank"} चा वापर करू शकता.
 
 \--- /no-print \---
 
