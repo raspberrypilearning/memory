@@ -8,7 +8,7 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
   - title: परिचय
-  - title: रंग क्रम तयार करा
+  - title: रंग क्रम (sequence) तयार करा
   - title: आवाज जोडा
   - title: क्रम पुन्हा करा
   - title: एकाधिक स्तर

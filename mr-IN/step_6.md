@@ -153,7 +153,7 @@ end
 
 --- /task ---
 
-आपला नवीन `Game over`{:class="block3myblocks"} ब्लॉक हे **function** (फंक्शन) आहे, एक छोटी स्क्रिप्ट जी आपण आपल्या कोडमध्ये `Game over` जोडून आपल्या आवडीनुसार कोठेही वापरू शकता.
+आपला नवीन `Game over`{:class="block3myblocks"} ब्लॉक हे **function** (फंक्शन) आहे, एक छोटी स्क्रिप्ट जी आपण आपल्या कोडमध्ये `Game over`{:class="block3myblocks"} जोडून आपल्या आवडीनुसार कोठेही वापरू शकता.
 
 --- task ---
 
