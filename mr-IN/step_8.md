@@ -1,6 +1,6 @@
 ## पुढे काय?
 
-[Dodgeball](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects) प्रकल्प वापरुन पहा ज्यामध्ये आपल्याला एक खेळ बनवा ज्यामध्ये एका प्लॅटफॉर्मवरुन दुसऱ्या प्लॅटफॉर्मवर जाताना आपल्याला गोळे टाळले पाहिजेत.
+[डॉजबॉल](https://projects.raspberrypi.org/en/projects/dodgeball?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects) प्रकल्प वापरुन पहा ज्यामध्ये आपल्याला एक खेळ बनवा ज्यामध्ये एका प्लॅटफॉर्मवरुन दुसऱ्या प्लॅटफॉर्मवर जाताना आपल्याला गोळे टाळले पाहिजेत.
 
 \--- no-print \---
 
