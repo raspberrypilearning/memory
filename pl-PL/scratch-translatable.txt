@@ -1,0 +1,19 @@
+sekwencja
+
+czerwony
+
+Koniec gry!
+
+niebieski
+
+wygrana
+
+wynik
+
+najlepszy wynik
+
+imię
+
+Jak masz na imię?
+
+Najlepszy wynik! Jak masz na imię?
