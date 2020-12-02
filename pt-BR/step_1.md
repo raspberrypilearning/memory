@@ -63,6 +63,6 @@ Se você precisar imprimir este projeto, por favor, use a [versão para impress�
 
 --- /no-print ---
 
-Você pode encontrar o projeto [completo aqui](http://rpf.io/p/pt-BR/memory-get).
+Você pode encontrar o projeto [completo aqui](https://rpf.io/p/pt-BR/memory-get).
 
 --- /collapse ---

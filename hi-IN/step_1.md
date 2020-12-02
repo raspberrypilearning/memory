@@ -60,6 +60,6 @@ title: शिक्षकों के लिए अतिरिक्त जा
 
 --- /no-print ---
 
-आप यहां [पूर्ण किया हुआ प्रोजेक्ट](http://rpf.io/p/hi-IN/memory-get){:target="_blank"} पा सकते हैं ।
+आप यहां [पूर्ण किया हुआ प्रोजेक्ट](https://rpf.io/p/hi-IN/memory-get){:target="_blank"} पा सकते हैं ।
 
 --- /collapse ---

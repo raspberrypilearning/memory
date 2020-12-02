@@ -63,6 +63,6 @@ Jeśli chcesz wydrukować ten projekt, użyj [wersji do druku](https://projects.
 
 --- /no-print ---
 
-Tutaj znajdziesz [ukończoną wersję projektu](http://rpf.io/p/pl-PL/memory-get).
+Tutaj znajdziesz [ukończoną wersję projektu](https://rpf.io/p/pl-PL/memory-get).
 
 --- /collapse ---

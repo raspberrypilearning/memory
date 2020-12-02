@@ -60,6 +60,6 @@ title: 給教師的其它資訊
 
 --- /no-print ---
 
-你可以在這裡找到[已經完成的專案](http://rpf.io/p/zh-TW/memory-get)。
+你可以在這裡找到[已經完成的專案](https://rpf.io/p/zh-TW/memory-get)。
 
 --- /collapse ---
