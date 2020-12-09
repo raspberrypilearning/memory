@@ -63,6 +63,6 @@ title: معلومات إضافية للمعلمين
 
 --- /no-print ---
 
-يمكنك ايجاد [المشروع كامل هنا](http://rpf.io/p/ar-SA/memory-get).
+يمكنك ايجاد [المشروع كامل هنا](https://rpf.io/p/ar-SA/memory-get).
 
 --- /collapse ---

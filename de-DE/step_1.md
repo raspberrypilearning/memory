@@ -63,6 +63,6 @@ Wenn du dieses Projekt ausdrucken möchtest, verwende die [druckerfreundliche Ve
 
 --- /no-print ---
 
-Du findest das [fertige Projekt hier](http://rpf.io/p/de-DE/memory-get).
+Du findest das [fertige Projekt hier](https://rpf.io/p/de-DE/memory-get).
 
 --- /collapse ---

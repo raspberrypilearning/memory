@@ -63,6 +63,6 @@ title: 教育者向けの追加情報
 
 --- /no-print ---
 
-[ここで完成したプロジェクト](http://rpf.io/p/ja-JP/memory-get)を見ることができます 。
+[ここで完成したプロジェクト](https://rpf.io/p/ja-JP/memory-get)を見ることができます 。
 
 --- /collapse ---
