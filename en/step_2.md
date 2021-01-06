@@ -84,8 +84,7 @@ Can you add code to your program to generate five random numbers at once?
 
 --- hint ---
 
-Add 
-a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a  `repeat`{:class="block3control"} block that adds five random numbers to the list.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a  `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 --- /hint ---
 
