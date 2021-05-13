@@ -60,6 +60,6 @@
 
 \--- /no-print \---
 
-[여기서 완료된 프로젝트](http://rpf.io/p/en/memory-get)를 확인할 수 있습니다.
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
