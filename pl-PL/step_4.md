@@ -162,7 +162,7 @@ Ponownie skopiuj dwukrotnie kod (dla zielonych i żółtych przycisków), i zmie
 
 Pamiętaj, aby przetestować kod! Czy możesz zapamiętać sekwencję pięciu kolorów? Czy kolejność jest inna za każdym razem?
 
-Gdy gracz powtarza poprawnie sekwencję całego koloru, lista `sekwencji`{:class="block3variables"} jest pusta i gracz wygrywa. Jeśli chcesz, możesz również wyświetlić niektóre migające światła jako nagrodę, gdy lista `sekwencji`{:class="block3variables"} jest pusta.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. Jeśli chcesz, możesz również wyświetlić niektóre migające światła jako nagrodę, gdy lista `sekwencji`{:class="block3variables"} jest pusta.
 
 \--- task \---
 
