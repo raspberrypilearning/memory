@@ -84,7 +84,7 @@
 
 \--- hint \---
 
-在程式一開始先`刪除序列的所有項目`{:class="block3variables"}，這樣每次運行時就可以把序列清空，然後再`重複`{:class="block3control"}隨機取數與加入清單的動作五次。
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
