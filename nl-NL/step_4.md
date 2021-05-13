@@ -162,7 +162,7 @@ Dupliceer de code nogmaals twee keer (voor de groene en gele knoppen) en verande
 
 Vergeet niet om de code te testen! Kun je een reeks van vijf kleuren uit het hoofd leren? Is de volgorde elke keer anders?
 
-Wanneer de speler de hele kleursequentie correct herhaalt, is de `reeks`{:class="block3variables"} lijst leeg en de speler wint. Als je wilt, kun je ook enkele knipperende lampjes als beloning weergeven nadat de `reeks`{:class="block3variables"} lijst leeg is.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. Als je wilt, kun je ook enkele knipperende lampjes als beloning weergeven nadat de `reeks`{:class="block3variables"} lijst leeg is.
 
 \--- task \---
 
