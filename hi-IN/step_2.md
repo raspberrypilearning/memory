@@ -84,7 +84,7 @@ add (pick random (1) to (4)) to [sequence v]
 
 \--- hint \---
 
-पहले सूची के सभी संख्याओं को हटाने के लिए एक `delete all of sequence`{:class="block3variables"} जोड़ें, और फिर एक `repeat` {:class="block3control"} ब्लॉक जोड़ें जो सूची में पाँच यादृच्छिक संख्याएँ जोड़ता है।
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
