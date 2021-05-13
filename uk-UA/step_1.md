@@ -60,6 +60,6 @@
 
 \--- /no-print \---
 
-Ви можете знайти [завершений проєкт тут](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
