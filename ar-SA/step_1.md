@@ -60,6 +60,6 @@
 
 \--- /no-print \---
 
-يمكنك ايجاد [المشروع كامل هنا](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
