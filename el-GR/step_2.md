@@ -84,7 +84,7 @@
 
 \--- hint \---
 
-Προσθέστε α `διαγραφή όλων λίστα`{: class = "block3variables"} για να διαγράψετε πρώτα όλα τα στοιχεία της λίστας και στη συνέχεια να προσθέσετε `επανάλαβε`{block: block3control}} που προσθέτει πέντε τυχαίους αριθμούς στη λίστα.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
