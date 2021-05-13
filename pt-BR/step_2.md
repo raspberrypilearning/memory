@@ -84,7 +84,7 @@ Você consegue adicionar código ao seu programa para gerar cinco números aleat
 
 \--- hint \---
 
-Adicione um `apague todos os itens da sequência`{:class="block3variables"} para primeiro apagar todos os itens na lista, depois adicione um bloco `repetir`{:class="block3control"} que acrescente cinco números aleatórios à lista.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
