@@ -84,7 +84,7 @@ add (pick random (1) to (4)) to [sequence v]
 
 \--- hint \---
 
-ಸೇರಿಸಿ `delete all of sequence`{:class="block3variables"} ಮೊದಲು ಪಟ್ಟಿಯಲ್ಲಿರುವ ಎಲ್ಲಾ ವಸ್ತುಗಳನ್ನು ಡಿಲೀಟ್ ಮಾಡಲು, ತದನಂತರ ಒಂದು`repeat`{:class="block3control"} ಬ್ಲಾಕ್ ಸೇರಿಸಿ ಅದ್ದು ಐದು ರ್ಯಾಂಡಮ್ ಸಂಖ್ಯೆಗಳ ಪಟ್ಟಿಗೆ ಸೇರಿಸುತ್ತದೆ.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
