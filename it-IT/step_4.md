@@ -161,7 +161,7 @@ Duplica nuovamente il codice due volte (per i pulsanti verde e giallo) e modific
 
 Ricordati di testare il codice! Viene memorizzata una sequenza di cinque colori? La sequenza è diversa ogni volta?
 
-Quando il giocatore ripete correttamente l'intera sequenza di colori, la lista `sequenza`{:class="block3variables"} si svuota e il giocatore vince. Se vuoi, puoi anche mostrare alcune luci lampeggianti come ricompensa una volta che la lista `sequenza`{:class="block3variables"} è vuota.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. Se vuoi, puoi anche mostrare alcune luci lampeggianti come ricompensa una volta che la lista `sequenza`{:class="block3variables"} è vuota.
 
 \--- task \---
 
