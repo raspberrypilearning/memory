@@ -60,6 +60,6 @@ Als je dit project wilt afdrukken, gebruik dan de [printvriendelijke versie](htt
 
 \--- /no-print \---
 
-Hier kun je het [voltooide project](http://rpf.io/p/en/memory-get) downloaden.
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
