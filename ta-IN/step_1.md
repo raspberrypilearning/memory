@@ -60,6 +60,6 @@ Scratch 3 ([ஆன்லைன்(நிகழ்நிலையில்)](http
 
 \--- /no-print \---
 
-[ நிறைவு செய்யப்பட்ட திட்டத்தை நீங்கள் இங்கே ](http://rpf.io/p/en/memory-get) காணலாம்.
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
