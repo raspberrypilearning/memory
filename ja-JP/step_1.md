@@ -60,6 +60,6 @@ Scratch3 ([オンライン](https://rpf.io/scratchon){:target="_blank"}または
 
 \--- /no-print \---
 
-[ここで完成したプロジェクト](http://rpf.io/p/en/memory-get)を見ることができます 。
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
