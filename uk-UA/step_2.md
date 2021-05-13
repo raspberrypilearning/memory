@@ -84,7 +84,7 @@ add (pick random (1) to (4)) to [sequence v]
 
 \--- hint \---
 
-Додай блок `вилучити все з послідовності`{:class="block3variables"}, щоб спочатку очистити весь список, а далі додай блок `повторити`{:class="block3control"}, який додасть п’ять випадкових чисел в список.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
