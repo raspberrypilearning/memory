@@ -84,7 +84,7 @@ Czy do swojego programu możesz dodać kod, który jednocześnie wygeneruje pię
 
 \--- hint \---
 
-Dodaj blok `usuń wszystkie z sekwencji`{:class="block3variables"}, aby najpierw usunąć wszystkie elementy z listy, a następnie dodaj blok `powtórz`{:class="block3control"}, który dodaje pięć losowych liczb do listy.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
