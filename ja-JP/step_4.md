@@ -161,7 +161,7 @@ end
 
 コードをテストすることを忘れないでください。5つの色の順番が記憶されますか？順番は毎回異なりますか？
 
-プレーヤーが色の順番をすべて正しく再現すると、`シーケンス`{:class="block3variables"} リストが空となり、プレーヤーが勝利します。 必要に応じて、`シーケンス`{:class="block3variables"} リストが空になったら、ごほうびとしてライトを点滅表示することもできます。
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. 必要に応じて、`シーケンス`{:class="block3variables"} リストが空になったら、ごほうびとしてライトを点滅表示することもできます。
 
 \--- task \---
 
