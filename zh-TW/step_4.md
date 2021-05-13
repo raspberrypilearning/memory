@@ -163,7 +163,7 @@ end
 
 記得要測試程式！你能記得住五個顏色的序列嗎？每次顏色的排列順序是不是不一樣？
 
-當玩家正確回答出顏色的排列順序，就把`序列`{:class="block3variables"}清空，同時慶祝玩家成功。 怎麼慶祝呢？在`序列`{:class="block3variables"}清空後，可以廣播告訴舞台，讓舞台的燈光閃爍。
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. 怎麼慶祝呢？在`序列`{:class="block3variables"}清空後，可以廣播告訴舞台，讓舞台的燈光閃爍。
 
 \--- task \---
 
