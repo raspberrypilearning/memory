@@ -161,7 +161,7 @@ Duplicate the code again twice (for the green and yellow buttons), and change th
 
 Remember to test the code! Can you memorise a sequence of five colours? Is the sequence different each time?
 
-When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list emtpy and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. If you want, you can also display some flashing lights as a reward once the `sequence`{:class="block3variables"} list is empty.
 
 \--- task \---
 
