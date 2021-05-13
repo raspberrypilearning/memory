@@ -60,6 +60,6 @@ Se intendete stampare questo progetto, cliccate su [Versione stampabile](https:/
 
 \--- /no-print \---
 
-Puoi trovare il [progetto completato qui ](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
