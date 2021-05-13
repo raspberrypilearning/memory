@@ -165,7 +165,7 @@ end
 
 कोड का परीक्षण करना याद रखें! क्या आप पांच रंगों के अनुक्रम को याद कर सकते हैं? क्या हर बार अनुक्रम अलग है?
 
-जब खिलाड़ी रंगों के पूरे अनुक्रम को सही ढंग से दोहराता है, तो `sequence`{:class="block3variables"} सूची ख़ाली हो जाती है और खिलाड़ी जीत जाता है। यदि आप चाहें, तो जब `sequence`{:class="block3variables"} सूची ख़ाली होती है तब आप इनाम के रूप में कुछ चमकती रोशनी को भी प्रदर्शित कर सकते हैं ।
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. यदि आप चाहें, तो जब `sequence`{:class="block3variables"} सूची ख़ाली होती है तब आप इनाम के रूप में कुछ चमकती रोशनी को भी प्रदर्शित कर सकते हैं ।
 
 \--- task \---
 
