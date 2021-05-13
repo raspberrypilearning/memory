@@ -84,7 +84,7 @@
 
 \--- hint \---
 
-أضف `احذف القيمة تسلسل `{:class="block3variables"} حتى يتم حذف جميع الأرقام من القائمة, ثم أضف التعليمة البرمجية `كرر 5 مرة`{:class="block3control"} و التي تقوم بإضافة خمس أرقام عشوائية للقائمة.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
