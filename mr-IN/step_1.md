@@ -60,6 +60,6 @@ Scratch 3 (एकतर [ऑनलाइन](https://rpf.io/scratchon){:target="
 
 \--- /no-print \---
 
-आपण येथे [पूर्ण केलेला प्रकल्प शोधू शकता](http://rpf.io/p/en/memory-get).
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
