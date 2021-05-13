@@ -60,6 +60,6 @@ Scratch 3 (either [online](https://rpf.io/scratchon){:target="_blank"} or [offli
 
 \--- /no-print \---
 
-आप यहां [ पूर्ण किया हुआ प्रोजेक्ट ](http://rpf.io/p/en/memory-get) पा सकते हैं {: target = "_ blank"}।
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
