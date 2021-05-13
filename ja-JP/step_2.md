@@ -84,7 +84,7 @@ Scratchオフラインエディタをダウンロードしてインストール�
 
 \--- hint \---
 
-追加 初めに`シーケンスのすべてを削除`{:class="block3variables"} でリスト上のすべての項目を削除し、5つの乱数をリストに追加する `リピート`{:class = "block3control"}ブロックを追加します
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
