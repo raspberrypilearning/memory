@@ -18,7 +18,7 @@
 
 캐릭터 스프라이트와 배경을 선택하세요. 발레리나를 사용할 수는 있지만 캐릭터가 사람일 필요는 없으며 다른 색상을 보여줄 수 있어야합니다.
 
-![screenshot](images/colour-sprite.png)
+![<0>#outside-pic</0> CSS 코드에서 <0>width</0>(너비) 와 <0>height</0>(높이) 값을 수정하여, 바깥 쪽에 있는 이미지를 <0>200px</0>로 수정해보세요. (<0>px</0>는 픽셀을 의미합니다.)](images/colour-sprite.png)
 
 \--- /task \---
 
@@ -33,13 +33,13 @@
 
 위에 언급된 4가지 색상 각각에 대하여 하나씩 캐릭터에 4 가지 색상으로 다른 의상을 지정하세요. 색칠된 의상이 위 리스트와 같은 순서인지 확인하세요.
 
-![screenshot](images/colour-costume.png)
+![스크린샷](images/colour-costume.png)
 
 \--- /task \---
 
 원한다면 의상의 일부분을 다른 색으로 채우기 위해 **색칠하기 ** 도구를 사용할 수 있습니다.
 
-![color-a-shape](images/color-a-shape.png)
+![모양에 색상 입히기](images/color-a-shape.png)
 
 그런 다음, 플레이어가 기억해야 할 임의의 색상 순서를 저장하기 위한 리스트를 추가하세요.
 
@@ -53,7 +53,7 @@
 
 이제 리스트를 사용하기 위한 새로운 코드 블록이 많이 나타납니다. 빈 리스트는 스테이지의 왼쪽 상단에 표시되어야합니다.
 
-![screenshot](images/colour-list-blocks-annotated.png)
+![스크린샷](images/colour-list-blocks-annotated.png)
 
 각 색상은 숫자가 다르므로 임의로 숫자를 선택하고 리스트에 이 숫자를 추가하여 임의의 색상을 선택할 수 있습니다.
 
@@ -61,7 +61,7 @@
 
 임의의 숫자를 선택하기 위해 이 코드를 캐릭터 스프라이트에 추가하고 ` 순서 `에 추가하세요. {: class = "block3variables"}:
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
 깃발을 클릭되면
@@ -90,9 +90,9 @@ Add a `delete all of sequence`{:class="block3variables"} to first delete all the
 
 \--- hint \---
 
-This is what your code should look like:
+다음과 같은 코드를 추가해야 합니다:
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
 when flag clicked
@@ -110,9 +110,9 @@ end
 
 \--- task \---
 
-Each time a number gets added to the list, the character should change its costume so the costume's colour matches the number. Put these blocks into your code immediately below where a random number is added to `sequence`{:class="block3variables"}:
+숫자가 목록에 추가 될 때마다 캐릭터는 코스튬 색상이 숫자와 일치하도록 의상을 변경해야합니다. 랜덤한 숫자가 추가되는 `시퀀스`{:class="block3variables"} 블록 아래에 아래와 같은 코드를 추가합니다.
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
 switch costume to (item (length of [sequence v]) of [sequence v])
