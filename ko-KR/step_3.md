@@ -2,15 +2,15 @@
 
 \--- task \---
 
-Test your project a few times. Do you notice that sometimes the same number is chosen twice (or more) in a row, which makes the sequence harder to memorise?
+프로젝트를 몇 번 테스트하십시오. 때로는 동일한 번호가 두 번 (또는 그 이상) 연속적으로 선택되고, 이것으로 인해 시퀀스를 암기하기가 더 어려워지는 것을 알았나요?
 
 \--- /task \---
 
-Can you make a drum sound play each time the character sprite changes costume? And how about a different drum sound for each colour?
+캐릭터 스프라이트가 의상을 바꿀 때마다 드럼 소리를 재생할 수 있습니까? 그리고 각 색상마다 다른 드럼 소리가 어때요?
 
 \--- task \---
 
-Add the Music extension to your project so you can use the `play drum`{:class="block3extensions"} block.
+뮤직 확장을 프로젝트에 추가하여 `드럼 연주하기`{: class = "block3extensions"} 블록을 사용할 수 있게 하십시오.
 
 [[[generic-scratch3-add-music-extension]]]
 
@@ -18,21 +18,21 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 
 \--- task \---
 
-The code that plays the drum is **very** similar to the code that changes the character's costume.
+드럼을 연주하는 코드는 캐릭터의 의상을 변경하는 코드와 **매우** 유사합니다.
 
 \--- hints \---
 
 \--- hint \---
 
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
+2개의 블록만 추가하면 됩니다: `드럼 타악기를 (0.25) 박자로 연주하기`{:class="block3sound"} 블록과 `(length of sequence) 리스트의 시퀀스 번째 항목`{:class="block3variables"} 블록을 추가합니다.
 
 \--- /hint \---
 
 \--- hint \---
 
-Here are the blocks you need:
+필요한 코드 블록은 다음과 같습니다.
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
 play drum (\(1\) Snare Drum v) for (0.25) beats
@@ -44,9 +44,9 @@ play drum (\(1\) Snare Drum v) for (0.25) beats
 
 \--- hint \---
 
-Here is how your finished code should look:
+코드는 다음과 같아야 합니다:
 
-![ballerina](images/ballerina.png)
+![발레리나](images/ballerina.png)
 
 ```blocks3
 when flag clicked
