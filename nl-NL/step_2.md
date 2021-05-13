@@ -84,7 +84,7 @@ Kun je code aan je programma toevoegen om in één keer vijf willekeurige getall
 
 \--- hint \---
 
-Voeg een `verwijder alle van reeks`{:class="block3variables"} toe om eerst alle items uit de lijst te verwijderen en vervolgens een `herhaal`{:class="block3control"} blok dat vijf willekeurige nummers toevoegt aan de lijst.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
