@@ -84,7 +84,7 @@ Puoi aggiungere codice al tuo programma per generare cinque numeri casuali in un
 
 \--- hint \---
 
-Aggiungi `cancella tutto da sequenza`{:class="block3variables"} per eliminare prima tutti gli elementi nella lista, quindi aggiungi un `ripeti`{:class="block3control"} per aggiunge cinque numeri casuali all'elenco.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
