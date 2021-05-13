@@ -162,7 +162,7 @@ end
 
 कोडची चाचणी करणे लक्षात ठेवा! आपण पाच रंगांचा क्रम लक्षात ठेवू शकता? प्रत्येक वेळी क्रम वेगळा आहे का?
 
-जेव्हा खेळाडू संपूर्ण रंग अनुक्रम योग्यरित्या पुनरावृत्ती करतो तेव्हा `sequence`{:class="block3variables"}यादी रिकामी होईल आणि खेळाडू जिंकेल. आपण इच्छित असल्यास, `sequence`{:class="block3variables"} यादी रिकामी झाल्यानंतर आपण बक्षीस म्हणून काही चमकणारे दिवे देखील प्रदर्शित करू शकता.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. आपण इच्छित असल्यास, `sequence`{:class="block3variables"} यादी रिकामी झाल्यानंतर आपण बक्षीस म्हणून काही चमकणारे दिवे देखील प्रदर्शित करू शकता.
 
 \--- task \---
 
