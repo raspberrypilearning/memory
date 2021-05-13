@@ -60,6 +60,6 @@ Scratch 3（[線上版](https://rpf.io/scratchon){:target="_blank"} 或 [離線�
 
 \--- /no-print \---
 
-你可以在這裡找到[已經完成的專案](http://rpf.io/p/en/memory-get)。
+You can find the [completed project here](https://rpf.io/p/en/memory-get).
 
 \--- /collapse \---
