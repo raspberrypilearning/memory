@@ -84,7 +84,7 @@ Kannst du dem Programm einen Code hinzufügen, um damit fünf zufällige Zahlen 
 
 \--- hint \---
 
-Füge ein `lösche alles aus Sequenz` {:class="block3variables"} hinzu, um zunächst alle Elemente in der Liste zu entfernen und dann über einen `Wiederhole`{:class="block3control"} - Block 5 zufällige Elemente zu der Liste hinzufügen.
+Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a `repeat`{:class="block3control"} block that adds five random numbers to the list.
 
 \--- /hint \---
 
