@@ -162,7 +162,7 @@ end
 
 কোড পরীক্ষা করতে মনে রাখবেন! আপনি কি পাঁচটি রঙের একটি ক্রম মুখস্থ করতে পারবেন? ক্রমটি কি প্রতিবার আলাদা হয়?
 
-যখন প্লেয়ার পুরো রঙের ক্রমটি সঠিকভাবে পুনরাবৃত্তি করে, `sequence`{:class="block3variables"} তালিকা খালি এবং প্লেয়ার জয়লাভ করে।. আপনি যদি চান, আপনি একবার পুরষ্কার হিসাবে কিছু ঝলকানি আলোও প্রদর্শন করতে পারেন `sequence`{:class="block3variables"} তালিকাটি খালি থাকলে.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. আপনি যদি চান, আপনি একবার পুরষ্কার হিসাবে কিছু ঝলকানি আলোও প্রদর্শন করতে পারেন `sequence`{:class="block3variables"} তালিকাটি খালি থাকলে.
 
 \--- task \---
 
