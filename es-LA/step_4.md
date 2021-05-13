@@ -162,7 +162,7 @@ Duplica el código dos veces mas (para los botones verde y amarillo), y cambia l
 
 ¡Recuerda probar tu código! ¿Puedes memorizar una secuencia de cinco colores? ¿Es la secuencia diferente cada vez?
 
-Cuando el jugador repite toda la secuencia de colores correctamente, la lista `secuencia`{:class="block3variables"} se queda vacía y el jugador gana. Si quieres, también puedes mostrar algunas luces parpadeantes como recompensa una vez que la lista `secuencia`:class="block3variables"} esté vacía.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. Si quieres, también puedes mostrar algunas luces parpadeantes como recompensa una vez que la lista `secuencia`:class="block3variables"} esté vacía.
 
 \--- task \---
 
