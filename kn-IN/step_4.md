@@ -162,7 +162,7 @@ end
 
 ಕೋಡ್ ಪರೀಕ್ಷಿಸಲು ಮರೆಯದಿರಿ! ಐದು ಬಣ್ಣಗಳ ಅನುಕ್ರಮವನ್ನು ನೀವು ನೆನಪಿಟ್ಟುಕೊಳ್ಳಬಹುದೇ? ಪ್ರತಿ ಬಾರಿಯೂ ಅನುಕ್ರಮವು ವಿಭಿನ್ನವಾಗಿದೆಯೇ?
 
-ಆಟಗಾರನು ಸಂಪೂರ್ಣ ಬಣ್ಣ ಅನುಕ್ರಮವನ್ನು ಸರಿಯಾಗಿ ಪುನರಾವರ್ತಿಸಿದಾಗ, `sequence`{:class="block3variables"} ಲಿಸ್ಟ್ ಖಾಲಿಯಾಗಿದೆ ಮತ್ತು ಆಟಗಾರನು ಗೆಲ್ಲುತ್ತಾನೆ. ನೀವು ಬಯಸಿದರೆ, ನೀವು ಕೆಲವು ಮಿನುಗುವ ದೀಪಗಳನ್ನು ಬಹುಮಾನವಾಗಿ ಪ್ರದರ್ಶಿಸಬಹುದು ಒಮ್ಮ `sequence`{:class="block3variables"} ಪಟ್ಟಿ ಖಾಲಿಯಾಗಿದಾಗ.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. ನೀವು ಬಯಸಿದರೆ, ನೀವು ಕೆಲವು ಮಿನುಗುವ ದೀಪಗಳನ್ನು ಬಹುಮಾನವಾಗಿ ಪ್ರದರ್ಶಿಸಬಹುದು ಒಮ್ಮ `sequence`{:class="block3variables"} ಪಟ್ಟಿ ಖಾಲಿಯಾಗಿದಾಗ.
 
 \--- task \---
 
