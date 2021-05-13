@@ -162,7 +162,7 @@ Kopiere den Code erneut (für die grünen und gelben Schaltflächen), und änder
 
 Denke daran, den Code, den du hinzugefügt hast, zu testen! Kannst du dir eine Folge von 5 Farben merken? Ist die Reihenfolge jedes Mal anders?
 
-Wenn der Spieler die komplette `Sequenz`{:class="block3variables"} korrekt wiederholt, ist die Liste leer und der Spieler gewinnt. Du kannst auch ein paar blinkende Lichter anzeigen, sobald die `Liste`{:class="block3variables"} leer ist, da es bedeutet, dass die komplette Reihenfolge der Farben richtig erraten worden ist.
+When the player repeats the whole colour sequence correctly, the `sequence`{:class="block3variables"} list is empty and the player wins. Du kannst auch ein paar blinkende Lichter anzeigen, sobald die `Liste`{:class="block3variables"} leer ist, da es bedeutet, dass die komplette Reihenfolge der Farben richtig erraten worden ist.
 
 \--- task \---
 
