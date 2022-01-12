@@ -1,17 +1,20 @@
+---
 hero_image: images/memory.png
 listed: true
 copyedit: false
 title: Memoria
-description: '¡Crea un juego de memoria en el que tengas que memorizar y repetir una secuencia de colores aleatorios!'
+description: "¡Crea un juego de memoria en el que tengas que memorizar y repetir una
+  secuencia de colores aleatorios!"
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: Introducción
+  completion: engaged
 - title: Crear una secuencia de colores
 - title: Añadir sonido
 - title: Repite la secuencia
 - title: Varios niveles
 - title: Puntuación mayor
-- title: "Desafío: mejora tu juego"
-- title: '¿Qué sigue?'
-
+  completion: internal
+- title: 'Desafío: mejora tu juego'
+- title: "¿Qué sigue?"

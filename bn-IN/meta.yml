@@ -3,16 +3,18 @@ hero_image: images/memory.png
 listed: true
 copyedit: false
 title: স্মৃতি
-description: এমন একটি গেম তৈরি করুন যাতে আপনি মুখস্ত করে এলোমেলো রঙের ক্রম পুনরাবৃত্তি করেন
+description: এমন একটি গেম তৈরি করুন যাতে আপনি মুখস্ত করে এলোমেলো রঙের ক্রম পুনরাবৃত্তি
+  করেন
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
-  - title: ভূমিকা
-  - title: একটি রঙের ক্রম তৈরি করুন
-  - title: শব্দ যোগ করুন
-  - title: ক্রম পুনরাবৃত্তি করুন
-  - title: একাধিক স্তর
-  - title: উচ্চ স্কোর
-  - title: "Challenge: আপনার গেমটি উন্নত করুন"
-  - title: এরপর কি?
-
+- title: ভূমিকা
+  completion: engaged
+- title: একটি রঙের ক্রম তৈরি করুন
+- title: শব্দ যোগ করুন
+- title: ক্রম পুনরাবৃত্তি করুন
+- title: একাধিক স্তর
+- title: উচ্চ স্কোর
+  completion: internal
+- title: 'Challenge: আপনার গেমটি উন্নত করুন'
+- title: এরপর কি?

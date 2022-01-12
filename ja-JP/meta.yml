@@ -7,12 +7,13 @@ description: ばらばらな色の順序を覚えて、その通りに再現す�
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
-  - title: はじめに
-  - title: カラーシーケンス(色の順番)を作成します
-  - title: 音を追加します
-  - title: シーケンス(順番)を再現します
-  - title: 複数のレベル
-  - title: ハイスコア
-  - title: "チャレンジ: ゲームをより良くする"
-  - title: 次は何をしますか？
-
+- title: はじめに
+  completion: engaged
+- title: カラーシーケンス(色の順番)を作成します
+- title: 音を追加します
+- title: シーケンス(順番)を再現します
+- title: 複数のレベル
+- title: ハイスコア
+  completion: internal
+- title: 'チャレンジ: ゲームをより良くする'
+- title: 次は何をしますか？

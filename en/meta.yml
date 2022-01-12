@@ -1,3 +1,4 @@
+---
 hero_image: images/memory.png
 listed: true
 copyedit: false
@@ -5,13 +6,14 @@ title: Memory
 description: Create a game in which you memorise and repeat random colour sequences
 version: 4.1.0
 last_tested: 2018-10-04
-steps: 
+steps:
 - title: Introduction
+  completion: engaged
 - title: Create a colour sequence
 - title: Add sound
 - title: Repeat the sequence
 - title: Multiple levels
 - title: High score
-- title: "Challenge: improve your game"
+  completion: internal
+- title: 'Challenge: improve your game'
 - title: What next?
-

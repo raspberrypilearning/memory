@@ -1,3 +1,4 @@
+---
 hero_image: images/memory.png
 theme: violet
 duration: 2
@@ -15,5 +16,6 @@ hardware: ''
 software: scratch
 version: 4.0.1
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Paměť
+  completion: engaged
