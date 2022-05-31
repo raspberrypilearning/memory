@@ -7,12 +7,15 @@ description: Utwórz grę, w której zapamiętujesz i powtarzasz losowe sekwencj
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
-  - title: Wprowadzenie
-  - title: Utwórz sekwencję kolorów
-  - title: Dodaj dźwięk
-  - title: Powtórz sekwencję
-  - title: Kolejne poziomy
-  - title: Najlepszy wynik
-  - title: "Wyzwanie: udoskonal swoją grę"
-  - title: Co dalej?
-
+- title: Wprowadzenie
+- title: Utwórz sekwencję kolorów
+- title: Dodaj dźwięk
+  completion:
+  - engaged
+- title: Powtórz sekwencję
+- title: Kolejne poziomy
+- title: Najlepszy wynik
+  completion:
+  - internal
+- title: 'Wyzwanie: udoskonal swoją grę'
+- title: Co dalej?

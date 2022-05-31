@@ -1,3 +1,4 @@
+---
 hero_image: images/memory.png
 theme: violet
 duration: 2
@@ -6,7 +7,8 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: Memory
-description: În acest proiect vei crea un joc de memorie unde va trebui să memorezi și să repeți o secvență aleatorie de culori!
+description: În acest proiect vei crea un joc de memorie unde va trebui să memorezi
+  și să repeți o secvență aleatorie de culori!
 original_url: https://codeclubprojects.org/en-GB/scratch/memory
 interests: games
 technologies: scratch
@@ -15,5 +17,5 @@ hardware: ''
 software: scratch
 version: 4.0.1
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Memory

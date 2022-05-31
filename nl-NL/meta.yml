@@ -3,16 +3,20 @@ hero_image: images/memory.png
 listed: true
 copyedit: false
 title: Geheugenspel
-description: Maak een geheugenspel waarin je een reeks willekeurige kleuren onthoudt en herhaalt
+description: Maak een geheugenspel waarin je een reeks willekeurige kleuren onthoudt
+  en herhaalt
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
-  - title: Inleiding
-  - title: Maak een kleurenreeks
-  - title: Geluid toevoegen
-  - title: Herhaal de reeks
-  - title: Meerdere levels
-  - title: Topscore
-  - title: "Uitdaging: verbeter je spel"
-  - title: Hoe nu verder?
-
+- title: Inleiding
+- title: Maak een kleurenreeks
+- title: Geluid toevoegen
+  completion:
+  - engaged
+- title: Herhaal de reeks
+- title: Meerdere levels
+- title: Topscore
+  completion:
+  - internal
+- title: 'Uitdaging: verbeter je spel'
+- title: Hoe nu verder?

@@ -3,16 +3,20 @@ hero_image: images/memoire.png
 listed: true
 copyedit: false
 title: Mémoire
-description: Crées un jeu de mémoire où tu devras mémoriser et répéter une séquence aléatoire de couleurs
+description: Crées un jeu de mémoire où tu devras mémoriser et répéter une séquence
+  aléatoire de couleurs
 version: 4.1.0
 last_tested: 2018-10-04
 steps:
-  - title: Introduction
-  - title: Crée une séquence de couleurs
-  - title: Ajouter du son
-  - title: Répéter la séquence
-  - title: Multiples niveaux
-  - title: Meilleur score
-  - title: "Défi : Améliore ton jeu"
-  - title: Que faire ensuite ?
-
+- title: Introduction
+- title: Crée une séquence de couleurs
+- title: Ajouter du son
+  completion:
+  - engaged
+- title: Répéter la séquence
+- title: Multiples niveaux
+- title: Meilleur score
+  completion:
+  - internal
+- title: 'Défi : Améliore ton jeu'
+- title: Que faire ensuite ?
