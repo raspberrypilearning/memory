@@ -8,12 +8,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: Wprowadzenie
-  completion: engaged
 - title: Utwórz sekwencję kolorów
 - title: Dodaj dźwięk
+  completion:
+  - engaged
 - title: Powtórz sekwencję
 - title: Kolejne poziomy
 - title: Najlepszy wynik
-  completion: internal
+  completion:
+  - internal
 - title: 'Wyzwanie: udoskonal swoją grę'
 - title: Co dalej?

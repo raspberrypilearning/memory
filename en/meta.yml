@@ -8,12 +8,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: Introduction
-  completion: engaged
 - title: Create a colour sequence
 - title: Add sound
+  completion:
+  - engaged
 - title: Repeat the sequence
 - title: Multiple levels
 - title: High score
-  completion: internal
+  completion:
+  - internal
 - title: 'Challenge: improve your game'
 - title: What next?

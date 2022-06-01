@@ -9,12 +9,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: परिचय
-  completion: engaged
 - title: रंग क्रम (sequence) तयार करा
 - title: आवाज जोडा
+  completion:
+  - engaged
 - title: क्रम पुन्हा करा
 - title: एकाधिक स्तर
 - title: उच्च गुण
-  completion: internal
+  completion:
+  - internal
 - title: आव्हानः आपला खेळामध्ये सुधार करा
 - title: पुढे काय?

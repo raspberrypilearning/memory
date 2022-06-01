@@ -9,12 +9,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: Inleiding
-  completion: engaged
 - title: Maak een kleurenreeks
 - title: Geluid toevoegen
+  completion:
+  - engaged
 - title: Herhaal de reeks
 - title: Meerdere levels
 - title: Topscore
-  completion: internal
+  completion:
+  - internal
 - title: 'Uitdaging: verbeter je spel'
 - title: Hoe nu verder?

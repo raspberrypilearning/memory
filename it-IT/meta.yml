@@ -9,12 +9,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: Introduzione
-  completion: engaged
 - title: Crea una sequenza di colori
 - title: Aggiungi un suono
+  completion:
+  - engaged
 - title: Ripetere la sequenza
 - title: Livelli multipli
 - title: Record
-  completion: internal
+  completion:
+  - internal
 - title: 'Sfida: migliora il tuo gioco'
 - title: E adesso?

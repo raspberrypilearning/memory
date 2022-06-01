@@ -8,12 +8,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: المقدمة
-  completion: engaged
 - title: إنشاء تسلسل لوني
 - title: إضافة صوت
+  completion:
+  - engaged
 - title: كرر التسلسل
 - title: مستويات متعددة
 - title: درجة عالية
-  completion: internal
+  completion:
+  - internal
 - title: 'التحدي: تحسين لعبتك'
 - title: ما التالي؟

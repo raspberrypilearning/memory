@@ -9,12 +9,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: Вступ
-  completion: engaged
 - title: Створи послідовність кольорів
 - title: Додай звук
+  completion:
+  - engaged
 - title: Відтвори послідовність
 - title: Багаторівнева гра
 - title: Рекорд
-  completion: internal
+  completion:
+  - internal
 - title: 'Завдання: вдоскональ свою гру'
 - title: Що далі?

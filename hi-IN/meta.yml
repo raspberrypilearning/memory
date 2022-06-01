@@ -9,12 +9,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: भूमिका
-  completion: engaged
 - title: रंगों का अनुक्रम बनाएँ
 - title: ध्वनि जोड़ें
+  completion:
+  - engaged
 - title: अनुक्रम दोहराएं
 - title: अनेक स्तर
 - title: उच्च स्कोर
-  completion: internal
+  completion:
+  - internal
 - title: 'चुनौती: अपने गेम में सुधार करें'
 - title: आगे क्या?

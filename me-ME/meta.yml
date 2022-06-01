@@ -19,13 +19,15 @@ version: 4.0.1
 last_tested: 2017-01-01
 steps:
 - title: Uvod
-  completion: engaged
 - title: Šta će ti biti potrebno
 - title: Napravi niz boja
+  completion:
+  - engaged
 - title: 'Izazov: dodavanje zvuka'
 - title: Ponavljanje niza
 - title: Više nivoa
-  completion: internal
+  completion:
+  - internal
 - title: Najbolji rezultat
 - title: 'Izazov: pravljenje više blokova'
 - title: 'Izazov: još jedan kostim'

@@ -14,13 +14,15 @@ technologies: scratch
 site_areas: codeclub, scratch
 steps:
 - title: 介绍
-  completion: engaged
 - title: 你将需要什么
 - title: 创建一个颜色序列
+  completion:
+  - engaged
 - title: 挑战：添加声音
 - title: 重复序列
 - title: 多个等级
-  completion: internal
+  completion:
+  - internal
 - title: 高分
 - title: 挑战：编写更多代码块
 - title: 挑战：另一种造型

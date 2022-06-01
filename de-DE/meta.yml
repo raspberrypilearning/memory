@@ -9,12 +9,14 @@ version: 4.1.0
 last_tested: 2018-10-04
 steps:
 - title: Einleitung
-  completion: engaged
 - title: Erstelle ein zufällige Farbenfolge
 - title: Geräusche hinzufügen
+  completion:
+  - engaged
 - title: Wiederhole die Reihenfolge
 - title: Mehrere Ebenen
 - title: Highscore
-  completion: internal
+  completion:
+  - internal
 - title: 'Herausforderung: Verbessere dein Spiel'
 - title: Wie geht es weiter?
