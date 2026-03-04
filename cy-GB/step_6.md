@@ -112,7 +112,7 @@ stop [y cyfan v]
 ```blocks3
 when I receive [coch v]
 if <(item (1 v) of [dilyniant v]) = [1]> then 
-  play drum ((1) Snare Drum v) for (0.25) beats
+  play drum (\(1\) Snare Drum v) for (0.25) beats
   delete (1 v) of [dilyniant v]
 else 
   Gêm drosodd :: custom
@@ -132,7 +132,7 @@ Mae dy floc `Gêm drosodd`{:class="block3myblocks"} yn **weithred**, sgript y ma
 ```blocks3
 when I receive [glas v]
 if <(item (1 v) of [dilyniant v]) = [1]> then 
-  play drum ((2) Bass Drum v) for (0.25) beats
+  play drum (\(2\) Bass Drum v) for (0.25) beats
   delete (1 v) of [dilyniant v]
 else 
   Gêm drosodd :: custom

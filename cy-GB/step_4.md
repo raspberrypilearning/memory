@@ -67,7 +67,7 @@ end
 ```blocks3
 when I receive [coch v]
 if <(item (1 v) of [dilyniant v]) = [1]> then 
-  + play drum ((1) Snare Drum v) for (0.25) beats
+  + play drum (\(1\) Snare Drum v) for (0.25) beats
   delete (1 v) of [dilyniant v]
 else 
   say [Gêm drosodd!] for (1) seconds
@@ -96,7 +96,7 @@ Cadwa'r blociau yma, ond bydd angen eu newid mewn ryw ffordd:
 
 when I receive [coch v]
 
-play drum ((1) Snare Drum v) for (0.25) beats
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 --- /hint --- --- hint --- Dyma sut ddylai dy gôd edrych ar gyfer y darllediad `glas`{:class="block3events"}.
@@ -106,7 +106,7 @@ play drum ((1) Snare Drum v) for (0.25) beats
 ```blocks3
 when I receive [glas v]
 if <(item (1 v) of [dilyniant v]) = [2]> then 
-  play drum ((2) Bass Drum v) for (0.25) beats
+  play drum (\(2\) Bass Drum v) for (0.25) beats
   delete (1 v) of [dilyniant v]
 else 
   say [Gêm drosodd!] for (1) seconds

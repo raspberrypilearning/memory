@@ -7,7 +7,7 @@ Você vê qualquer outro código que seja o mesmo para todos os quatro botões?
 ```blocks3
 when I receive [vermelho v]
 if <(item (1 v) of [sequência v]) = [1]> then 
-  play drum ((1) Tarol v) for (0.25) beats
+  play drum (\(1\) Tarol v) for (0.25) beats
   delete (1 v) of [sequência v]
 else 
   Fim de jogo :: custom
@@ -15,7 +15,7 @@ end
 
 when I receive [azul v]
 if <(item (1 v) of [sequência v]) = [1]> then 
-  play drum ((2) Bumbo v) for (0.25) beats
+  play drum (\(2\) Bumbo v) for (0.25) beats
   delete (1 v) of [sequência v]
 else 
   Fim de jogo :: custom

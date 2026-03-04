@@ -30,7 +30,7 @@ Dit zijn de blokken die je nodig hebt:
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-play drum ((1) Snarentrom v) for (0.25) beats
+play drum (\(1\) Snarentrom v) for (0.25) beats
 
 (item (length of [reeks v]) of [reeks v])
 ```

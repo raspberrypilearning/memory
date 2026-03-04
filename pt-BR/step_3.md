@@ -36,7 +36,7 @@ Aqui estão os blocos que você precisa:
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-play drum ((1) Tarol v) for (0.25) beats
+play drum (\(1\) Tarol v) for (0.25) beats
 
 (item (length of [sequência v]) of [sequência v])
 ```

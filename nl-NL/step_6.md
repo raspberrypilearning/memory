@@ -111,7 +111,7 @@ stop [alle v]
 ```blocks3
 when I receive [rood v]
 if <(item (1 v) of [reeks v]) = [1]> then 
-  play drum ((1) Snarentrom v) for (0.25) beats
+  play drum (\(1\) Snarentrom v) for (0.25) beats
   delete (1 v) of [reeks v]
 else 
   Game over :: custom
@@ -131,7 +131,7 @@ Je nieuwe `Game over`{:class="block3myblocks"}-blok is een **functie**, een klei
 ```blocks3
 when I receive [blauw v]
 if <(item (1 v) of [reeks v]) = [1]> then 
-  play drum ((2) Basdrum v) for (0.25) beats
+  play drum (\(2\) Basdrum v) for (0.25) beats
   delete (1 v) of [reeks v]
 else 
   Game over :: custom

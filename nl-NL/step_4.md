@@ -67,7 +67,7 @@ end
 ```blocks3
 when I receive [rood v]
 if <(item (1 v) of [reeks v]) = [1]> then 
-  play drum ((1) Snarentrom v) for (0.25) beats
+  play drum (\(1\) Snarentrom v) for (0.25) beats
   delete (1 v) of [reeks v]
 else 
   say [Game over!] for (1) seconds
@@ -96,7 +96,7 @@ Bewaar deze blokken, maar je moet ze op de een of andere manier veranderen:
 
 when I receive [rood v]
 
-play drum ((1) Snarentrom v) for (0.25) beats
+play drum (\(1\) Snarentrom v) for (0.25) beats
 ```
 
 --- /hint --- --- hint --- Hier is hoe je code er uit moet zien voor het signaal `blauw`{:class="block3events"}.

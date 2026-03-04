@@ -138,7 +138,7 @@ Agora remova o código que está no bloco `senão`{:class="block3control"} ligad
 ```blocks3
 when I receive [vermelho v]
 if <(item (1 v) of [sequência v]) = [1]> then 
-  play drum ((1) Tarol v) for (0.25) beats
+  play drum (\(1\) Tarol v) for (0.25) beats
   delete (1 v) of [sequência v]
 else 
   Fim de jogo :: custom
@@ -164,7 +164,7 @@ Substitua também o código que está no bloco `senão`{:class="block3control"} 
 ```blocks3
 when I receive [azul v]
 if <(item (1 v) of [sequência v]) = [1]> then 
-  play drum ((2) Bumbo v) for (0.25) beats
+  play drum (\(2\) Bumbo v) for (0.25) beats
   delete (1 v) of [sequência v]
 else 
   Fim de jogo :: custom

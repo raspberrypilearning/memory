@@ -87,7 +87,7 @@ Aqui está o código que você precisará adicionar:
 ```blocks3
 when I receive [vermelho v]
 if <(item (1 v) of [sequência v]) = [1]> then 
-  + play drum ((1) Tarol v) for (0.25) beats
+  + play drum (\(1\) Tarol v) for (0.25) beats
   delete (1 v) of [sequência v]
 else 
   say [Fim de jogo!] for (1) seconds
@@ -127,7 +127,7 @@ Mantenha esses blocos, mas você precisa alterá-los de alguma forma:
 
 when I receive [vermelho v]
 
-play drum ((1) Tarol v) for (0.25) beats
+play drum (\(1\) Tarol v) for (0.25) beats
 ```
 
 --- /hint ---
@@ -141,7 +141,7 @@ Aqui está como seu código deve procurar pela transmissão `azul`{:class="block
 ```blocks3
 when I receive [azul v]
 if <(item (1 v) of [sequência v]) = [2]> then 
-  play drum ((2) Bumbo v) for (0.25) beats
+  play drum (\(2\) Bumbo v) for (0.25) beats
   delete (1 v) of [sequência v]
 else 
   say [Fim de jogo!] for (1) seconds
