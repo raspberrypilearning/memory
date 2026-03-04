@@ -30,9 +30,9 @@ Dit zijn de blokken die je nodig hebt:
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
+play drum ((1) Snarentrom v) for (0.25) beats
 
-(item (lengte van [reeks v]) van [reeks v])
+(item (length of [reeks v]) of [reeks v])
 ```
 
 --- /hint ---
@@ -42,13 +42,13 @@ speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer groene vlag wordt aangeklikt
-verwijder (alle v) van [reeks v]
-herhaal  (5) 
-  voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
-  speel drum (item (laatste v) van [reeks v]) gedurende (0.25) maten
-  verander uiterlijk naar (item (laatste v) van [reeks v])
-  wacht (1) sec.
+when flag clicked
+delete (alle v) of [reeks v]
+repeat (5) 
+  add (pick random (1) to (4)) to [reeks v]
+  play drum (item (laatste v) of [reeks v]) for (0.25) beats
+  switch costume to (item (laatste v) of [reeks v])
+  wait (1) seconds
 end
 ```
 

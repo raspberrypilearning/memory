@@ -22,7 +22,7 @@ Mae angen y blociau canlynol:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-os <> yna
+if <> then
 end
 
 (sgôr)
@@ -31,15 +31,15 @@ end
 
 <[ ] > [ ]>
 
-(ateb)
+(answer)
 
 (sgôr uchel)
 
-gofyn [Beth yw dy enw?] ac aros
+ask [Beth yw dy enw?] and wait
 
-gosod [sgôr uchel v] i [ ]
+set [sgôr uchel v] to [ ]
 
-gosod [enw v] i [ ] 
+set [enw v] to [ ]
 ```
 
 --- /hint --- --- hint --- Dyma sut y dylai'r côd edrych ar gyfer pan mae'r botwm coch wedi ei wasgu:
@@ -47,18 +47,18 @@ gosod [enw v] i [ ]
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan rwy'n derbyn [coch v]
-os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm (eitem (1 v) o [dilyniant v]) am (0.25) curiad
-  dileu (1 v) o [dilyniant v]
-fel arall 
-  dweud [Gêm drosodd!] am (1) eiliad
-  os <(sgôr :: variables) > (sgôr uchel)> yna 
-    gosod [sgôr uchel v] i (sgôr :: variables)
-    gofyn [Sgôr uchel! Beth yw dy enw?] ac aros
-    gosod [enw v] i (ateb)
+when I receive [coch v]
+if <(item (1 v) of [dilyniant v]) = [1]> then 
+  play drum (item (1 v) of [dilyniant v]) for (0.25) beats
+  delete (1 v) of [dilyniant v]
+else 
+  say [Gêm drosodd!] for (1) seconds
+  if <(sgôr :: variables) > (sgôr uchel)> then 
+    set [sgôr uchel v] to (sgôr :: variables)
+    ask [Sgôr uchel! Beth yw dy enw?] and wait
+    set [enw v] to (answer)
   end
-  aros [y cyfan v]
+  stop [y cyfan v]
 end
 ```
 
@@ -71,13 +71,13 @@ Alli di weld fod y côd ar gyfer 'Gêm drosodd' ar gyfer y pedwar lliw yn union 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-dweud [Gêm drosodd!] am (1) eiliad
-os <(sgôr :: variables) > (sgôr uchel)> yna 
-    gosod [sgôr uchel v] i (sgôr :: variables)
-    gofyn [Sgôr uchel! Beth yw dy enw?] ac aros
-    gosod [enw v] i (ateb)
+say [Gêm drosodd!] for (1) seconds
+if <(sgôr :: variables) > (sgôr uchel)> then 
+  set [sgôr uchel v] to (sgôr :: variables)
+  ask [Sgôr uchel! Beth yw dy enw?] and wait
+  set [enw v] to (answer)
 end
-aros [y cyfan v]
+stop [y cyfan v]
 ```
 
 Os wyt ti byth eisiau newid rhan o’r côd yma, fel ychwanegu sain neu newid y neges ‘Gêm drosodd!’, bydd angen i ti ei newid 4 gwaith! Gall hwnna fod yn boen, ac yn wastraff amser.
@@ -93,14 +93,14 @@ Yn hytrach, mae modd i ti ddiffinio dy flociau dy hunan, a’u ail-defnyddio ar 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-diffinio Gêm drosodd
-dweud [Gêm drosodd!] am (1) eiliad
-os <(sgôr :: variables) > (sgôr uchel)> yna 
-  gosod [sgôr uchel v] i (sgôr :: variables)
-  gofyn [Sgôr uchel! Beth yw dy enw?] ac aros
-  gosod [enw v] i (ateb)
+define Gêm drosodd
+say [Gêm drosodd!] for (1) seconds
+if <(sgôr :: variables) > (sgôr uchel)> then 
+  set [sgôr uchel v] to (sgôr :: variables)
+  ask [Sgôr uchel! Beth yw dy enw?] and wait
+  set [enw v] to (answer)
 end
-aros [y cyfan v]
+stop [y cyfan v]
 ```
 
 --- /task ---
@@ -110,11 +110,11 @@ aros [y cyfan v]
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan rwy'n derbyn [coch v]
-os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
-  dileu (1 v) o [dilyniant v]
-fel arall 
+when I receive [coch v]
+if <(item (1 v) of [dilyniant v]) = [1]> then 
+  play drum ((1) Snare Drum v) for (0.25) beats
+  delete (1 v) of [dilyniant v]
+else 
   Gêm drosodd :: custom
 end
 ```
@@ -130,11 +130,11 @@ Mae dy floc `Gêm drosodd`{:class="block3myblocks"} yn **weithred**, sgript y ma
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan rwy'n derbyn [glas v]
-os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm (\(2\) Bass Drum v) am (0.25) curiad
-  dileu (1 v) o [dilyniant v]
-fel arall 
+when I receive [glas v]
+if <(item (1 v) of [dilyniant v]) = [1]> then 
+  play drum ((2) Bass Drum v) for (0.25) beats
+  delete (1 v) of [dilyniant v]
+else 
   Gêm drosodd :: custom
 end
 ```
@@ -146,16 +146,16 @@ end
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-diffinio Gêm drosodd
-cychwyn sain [Cough1 v]
-dweud [Gêm drosodd!] am (1) eiliad
-os < (sgôr :: variables) > (sgôr uchel)> yna 
-    cychwyn sain (trumpet1 v)
-    gosod [sgôr uchel v] i (sgôr)
-    gofyn [Sgôr uchel! Beth yw dy enw?] ac aros
-    gosod [enw v] i (ateb)
+define Gêm drosodd
+start sound [Cough1 v]
+say [Gêm drosodd!] for (1) seconds
+if <(sgôr :: variables) > (sgôr uchel)> then 
+  start sound (trumpet1 v)
+  set [sgôr uchel v] to (sgôr)
+  ask [Sgôr uchel! Beth yw dy enw?] and wait
+  set [enw v] to (answer)
 end
-aros [y cyfan v]
+stop [y cyfan v]
 ```
 
 --- /task ---

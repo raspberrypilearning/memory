@@ -5,21 +5,21 @@
 Você vê qualquer outro código que seja o mesmo para todos os quatro botões?
 
 ```blocks3
-quando eu receber [vermelho v]
-se < (item (1 v) de [sequência v]) = [1] > então 
-  toque instrumento (\(1\) Tarol v) por (0.25) batidas
-  apague (1 v) de [sequência v]
-senão 
+when I receive [vermelho v]
+if <(item (1 v) of [sequência v]) = [1]> then 
+  play drum ((1) Tarol v) for (0.25) beats
+  delete (1 v) of [sequência v]
+else 
   Fim de jogo :: custom
-fim
+end
 
-quando eu receber [azul v]
-se  < (item (1 v) de [sequência v]) = [1] > então 
-  toque instrumento (\(2\) Bumbo v) por (0.25) batidas
-  apague (1 v) de [sequência v]
-senão 
+when I receive [azul v]
+if <(item (1 v) of [sequência v]) = [1]> then 
+  play drum ((2) Bumbo v) for (0.25) beats
+  delete (1 v) of [sequência v]
+else 
   Fim de jogo :: custom
-fim
+end
 ```
 
 Você pode criar outro bloco personalizado que todos os botões podem usar?

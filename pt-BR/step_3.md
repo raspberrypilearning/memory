@@ -36,9 +36,9 @@ Aqui estão os blocos que você precisa:
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-toque instrumento (\(1\) Tarol v) por (0.25) batidas
+play drum ((1) Tarol v) for (0.25) beats
 
-(item (tamanho de [sequência v]) de [sequência v])
+(item (length of [sequência v]) of [sequência v])
 ```
 
 --- /hint ---
@@ -50,14 +50,14 @@ Aqui está como o seu código deve ficar:
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando ⚑ for clicado
-apague (todos v) de [sequência v]
-repita (5) vezes 
-  adicione (número aleatório entre (1) e (4)) a [sequência v]
-  toque instrumento (item (tamanho de [sequência v]) de [sequência v]) por (0.25) batidas
-  mude para a fantasia (item (tamanho de [sequência v]) de [sequência v])
-  espere (1) seg
-fim
+when flag clicked
+delete (todos v) of [sequência v]
+repeat (5) 
+  change [sequência v] by (pick random (1) to (4))
+  play drum (item (length of [sequência v]) of [sequência v]) for (0.25) beats
+  switch costume to (item (length of [sequência v]) of [sequência v])
+  wait (1) seconds
+end
 ```
 
 --- /hint ---

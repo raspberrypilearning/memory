@@ -64,8 +64,8 @@ Adiciona este código ao ator para escolher um número aleatório e adicioná-lo
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando ⚑ for clicado
-adicione (número aleatório entre (1) e (4)) a [sequência v]
+when flag clicked
+change [sequência v] by (pick random (1) to (4))
 ```
 
 --- /task ---
@@ -96,10 +96,10 @@ Adicione um `apague todos os itens da sequência`{:class="block3variables"} para
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando ⚑ for clicado
-apague (all v) de [sequência v]
-repita (5) vezes 
-  adicione (número aleatório entre (1) e (4)) a [sequência v]
+when flag clicked
+delete (all v) of [sequência v]
+repeat (5) 
+  change [sequência v] by (pick random (1) to (4))
 end
 ```
 
@@ -116,8 +116,8 @@ Cada vez que um número é adicionado à lista, o personagem deve mudar sua fant
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-mude para a fantasia (item (tamanho de [sequência v]) de [sequência v])
-espere (1) seg
+switch costume to (item (length of [sequência v]) of [sequência v])
+wait (1) seconds
 ```
 
 --- /task ---

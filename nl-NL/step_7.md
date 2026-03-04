@@ -5,21 +5,21 @@
 Zie je nog meer code die voor alle knoppen hetzelfde is?
 
 ```blocks3
-wanneer ik signaal [rood v] ontvang
-als <((1 v) van [reeks v]) =[1]> dan
-    speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
-    verwijder (1 v) van [reeks v]
-anders
-    Game Over :: custom
-einde
+when I receive [rood v]
+if <((1 v) of [reeks v]) = [1]> then 
+  play drum ((1) Snarentrom v) for (0.25) beats
+  delete (1 v) of [reeks v]
+else 
+  Game Over :: custom
+end
 
-wanneer ik signaal [blauw v] ontvang
-if <((1 v) van [reeks v]) =[1]> then
-    speel drum (\(2\) Basdrum v) gedurende (0,25) maten
-    verwijder (1 v) van [reeks v]
-anders
-    Game over :: custom
-einde
+when I receive [blauw v]
+if <((1 v) of [reeks v]) = [1]> then 
+  play drum ((2) Basdrum v) for (0,25) beats
+  delete (1 v) of [reeks v]
+else 
+  Game over :: custom
+end
 ```
 
 Kun je een ander aangepast blok maken dat alle knoppen kunnen gebruiken?

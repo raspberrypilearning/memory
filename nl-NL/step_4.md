@@ -14,8 +14,8 @@ Nu ga je vier knoppen toevoegen die de speler moet indrukken om de volgorde van 
 ![rode-drum](images/red_drum.png)
 
 ```blocks3
-    wanneer op deze sprite wordt geklikt
-    zend signaal (rood v)
+when this sprite clicked
+broadcast (rood v)
 ```
 
 --- /task ---
@@ -39,13 +39,13 @@ Als `1` aan het begin van de lijst staat, moet de code het nummer uit de lijst v
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer ik signaal [rood v] ontvang
-als <(item(1 v) van [reeks v]) = [1]> dan 
- verwijder (1 v) van [reeks v]
-anders
- zeg [Game over!] (1) sec.
- stop [alle v]
-einde
+when I receive [rood v]
+if <(item (1 v) of [reeks v]) = [1]> then 
+  delete (1 v) of [reeks v]
+else 
+  say [Game over!] for (1) seconds
+  stop [alle v]
+end
 ```
 
 --- /task ---
@@ -65,15 +65,14 @@ einde
 --- /hint --- --- hint --- Dit is de code die je moet toevoegen:
 
 ```blocks3
-wanneer ik signaal [rood v] ontvang
-als <(item (1 v) van [reeks v]) = [1]> dan
-
-speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
-  verwijder (1 v) van [reeks v]
-anders
-  zeg [Game over!] (1) sec.
+when I receive [rood v]
+if <(item (1 v) of [reeks v]) = [1]> then 
+  play drum ((1) Snarentrom v) for (0.25) beats
+  delete (1 v) of [reeks v]
+else 
+  say [Game over!] for (1) seconds
   stop [alle v]
-einde
+end
 
 ```
 
@@ -93,11 +92,11 @@ Bewaar deze blokken, maar je moet ze op de een of andere manier veranderen:
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) van [reeks v]) = [1]>
+<(item (1 v) of [reeks v]) = [1]>
 
-wanneer ik signaal [rood v] ontvang
+when I receive [rood v]
 
-speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
+play drum ((1) Snarentrom v) for (0.25) beats
 ```
 
 --- /hint --- --- hint --- Hier is hoe je code er uit moet zien voor het signaal `blauw`{:class="block3events"}.
@@ -105,12 +104,12 @@ speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer ik signaal [blauw v] ontvang
-als <(item (1 v) van [reeks v]) = [2]> dan 
-  speel drum (item (1 v) van [reeks v]) gedurende (0.25) maten
-  verwijder (1 v) van [reeks v]
-anders
-  zeg [Game over!] (1) sec.
+when I receive [blauw v]
+if <(item (1 v) of [reeks v]) = [2]> then 
+  play drum (item (1 v) of [reeks v]) for (0.25) beats
+  delete (1 v) of [reeks v]
+else 
+  say [Game over!] for (1) seconds
   stop [alle v]
 end
 ```
@@ -128,8 +127,8 @@ Wanneer de speler de hele kleursequentie correct herhaalt, is de `reeks`{:class=
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-    wacht tot < (lengte van [reeks v]) = [0]>
-    zend signaal (gewonnen v) en wacht
+wait until <(length of [reeks v]) = [0]>
+broadcast (gewonnen v) and wait
 ```
 
 --- /task ---
@@ -145,13 +144,13 @@ Wanneer de speler de hele kleursequentie correct herhaalt, is de `reeks`{:class=
 ![balletdanseres](images/stage.png)
 
 ```blocks3
-    wanneer ik signaal [gewonnen v] ontvang
-start geluid [Drum machine v]
-herhaal (50) keer 
-  verander [kleur v] effect met (25)
-  wacht (0.1) sec.
-einde
-zet alle effecten uit
+when I receive [gewonnen v]
+start sound [Drum machine v]
+repeat (50) 
+  change [kleur v] effect by (25)
+  wait (0.1) seconds
+end
+clear graphic effects
 ```
 
 --- /task ---

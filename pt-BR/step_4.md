@@ -20,8 +20,8 @@ Adicione código ao ator vermelho para que, quando o ator for clicado, ele `tran
 ![tambor-vermelho](images/red_drum.png)
 
 ```blocks3
-    quando este ator for clicado
-transmita (vermelho v)
+when this sprite clicked
+broadcast (vermelho v)
 ```
 
 --- /task ---
@@ -45,13 +45,13 @@ Se `1` está no início da lista, o código deve remover o número da lista, por
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando eu receber [vermelho v]
-se <(item (1 v) de [sequência v]) = [1]> então 
- apague (1 v) de [sequência v]
-senão 
- diga [Fim de jogo!] por (1) segundos
- pare [todos v]
-fim
+when I receive [vermelho v]
+if <(item (1 v) of [sequência v]) = [1]> then 
+  delete (1 v) of [sequência v]
+else 
+  say [Fim de jogo!] for (1) seconds
+  stop [todos v]
+end
 ```
 
 --- /task ---
@@ -85,13 +85,13 @@ Acima do bloco `apaga o 1 da sequência`{:class="block3variables"}, acrescente o
 Aqui está o código que você precisará adicionar:
 
 ```blocks3
-quando eu receber [vermelho v]
-se <(item (1 v) de [sequência v]) = [1]> então 
-+ toque instrumento (\(1\) Tarol v) por (0.25) batidas
-  apague (1 v) de [sequência v]
-senão 
-  diga [Fim de jogo!] por (1) segundos
-  pare [todos v]
+when I receive [vermelho v]
+if <(item (1 v) of [sequência v]) = [1]> then 
+  + play drum ((1) Tarol v) for (0.25) beats
+  delete (1 v) of [sequência v]
+else 
+  say [Fim de jogo!] for (1) seconds
+  stop [todos v]
 end
 ```
 
@@ -123,11 +123,11 @@ Mantenha esses blocos, mas você precisa alterá-los de alguma forma:
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-<(item (1 v) de [sequência v]) = [1]>
+<(item (1 v) of [sequência v]) = [1]>
 
-quando eu receber [vermelho v]
+when I receive [vermelho v]
 
-toque instrumento (\(1\) Tarol v) por (0.25) batidas
+play drum ((1) Tarol v) for (0.25) beats
 ```
 
 --- /hint ---
@@ -139,14 +139,14 @@ Aqui está como seu código deve procurar pela transmissão `azul`{:class="block
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando eu receber [azul v]
-se <(item (1 v) de [sequência v]) = [2]> então 
-  toque instrumento (\(2\) Bumbo v) por (0.25) batidas
-  apague (1 v) de [sequência v]
-senão 
-  diga [Fim de jogo!] por (1) segundos
-  pare [todos v]
-fim
+when I receive [azul v]
+if <(item (1 v) of [sequência v]) = [2]> then 
+  play drum ((2) Bumbo v) for (0.25) beats
+  delete (1 v) of [sequência v]
+else 
+  say [Fim de jogo!] for (1) seconds
+  stop [todos v]
+end
 ```
 
 --- /hint ---
@@ -172,8 +172,8 @@ Adicione este código no final do bloco de código `quando clicar em bandeira ve
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-    espere até que <(tamanho de [sequência v]) = [0]>
-transmita (ganhou v) e espere
+wait until <(length of [sequência v]) = [0]>
+broadcast (ganhou v) and wait
 ```
 
 --- /task ---
@@ -193,13 +193,13 @@ Adicione este código para reproduzir um som e fazer com que o cenário mude de 
 ![bailarina](images/stage.png)
 
 ```blocks3
-    quando eu receber [ganhou v]
-toque o som (bateria eletrônica v)
-repita (50) vezes 
-  mude (25) no efeito [cor v]
-  espere (0.1) seg
-fim
-remova os efeitos gráficos
+when I receive [ganhou v]
+start sound (bateria eletrônica v)
+repeat (50) 
+  change [cor v] effect by (25)
+  wait (0.1) seconds
+end
+clear graphic effects
 ```
 
 --- /task ---
