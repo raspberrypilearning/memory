@@ -87,7 +87,7 @@ Aqui está o código que você precisará adicionar:
 ```blocks3
 when I receive [vermelho v]
 if <(item (1 v) of [sequência v]) = [1]> then 
-  + play drum (\(1\) Tarol v) for (0.25) beats
++ play drum (\(1\) Tarol v) for (0.25) beats
   delete (1 v) of [sequência v]
 else 
   say [Fim de jogo!] for (1) seconds
