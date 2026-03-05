@@ -36,9 +36,9 @@
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-دقّ الطبل (\(1\) طبل جانبي v) لمدة (0.25) وحدة ايقاع
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(عنصر (طول [تسلسل v]) از [تسلسل v])
+(item (length of [تسلسل v]) of [تسلسل v])
 ```
 
 --- /hint ---
@@ -50,13 +50,13 @@
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-عند نقر ⚑ :: events
-احذف (الكل v) من [تسلسل v] :: list
-كرِّر (5) مرة 
-  أضف (اختر عددًا عشوائيًا بين (1) و (4) :: operators) إلى [تسلسل v] :: list
-  دقَّ الطبل (العنصر (طول [تسلسل v] :: list) من [تسلسل v] :: list) لمدة (0.25) وحدة إيقاع :: music
-  غيّر المظهر إلى (العنصر (طول [تسلسل v] :: list) من [تسلسل v] :: list) :: looks
-  انتظر (1) ثانية :: control :: control
+when flag clicked
+delete (all v) of [تسلسل v]
+repeat (5)
+	add (pick random (1) to (4)) to [تسلسل v]
+    play drum (item (length of [تسلسل v]) of [تسلسل v]) for (0.25) beats
+    switch costume to (item (length of [تسلسل v]) of [تسلسل v])
+    wait (1) seconds
 end
 ```
 
