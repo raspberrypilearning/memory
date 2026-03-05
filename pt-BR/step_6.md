@@ -34,24 +34,24 @@ Você precisa dos seguintes blocos:
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-se < > então
-fim
+if <> then
+end
 
 (pontuação)
 
 (pontuação)
 
-[ ] > [ ]
+<[ ] > [ ]>
 
-resposta
+(answer)
 
 (pontuação mais alta)
 
-pergunte [Qual é o seu nome?] e espere
+ask [Qual é o seu nome?] and wait
 
-mude [pontuação mais alta v] para [ ]
+set [pontuação mais alta v] to [ ]
 
-mude [nome v] para [ ] 
+set [nome v] to [ ] 
 ```
 
 --- /hint ---
@@ -63,19 +63,19 @@ Veja como o seu código deve ficar para quando o tambor vermelho for pressionado
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando eu receber [vermelho v]
-se <(item (1 v) de [sequência v]) = [1]> então 
-  toque instrumento (item (1 v) de [sequência v]) por (0.25) batidas
-  apague (1 v) de [sequência v]
-senão 
-  diga [Fim de jogo!] por (1) segundos
-  se <(pontuação :: variables) > (pontuação mais alta) > então 
-    mude [pontuação mais alta v] para (pontuação :: variables)
-    pergunte [Maior pontuação! Qual é o seu nome?] e espere
-    mude [nome v] para (resposta)
-  fim
-  pare [todos v]
-fim
+when I receive [vermelho v]
+if <(item (1 v) of [sequência v]) = [1]> then 
+  play drum (item (1 v) of [sequência v]) for (0.25) beats
+  delete (1 v) of [sequência v]
+else 
+  say [Fim de jogo!] for (1) seconds
+  if <(pontuação :: variables) > (pontuação mais alta)> then 
+    set [pontuação mais alta v] to (pontuação :: variables)
+    ask [Maior pontuação! Qual é o seu nome?] and wait
+    set [nome v] to (answer)
+  end
+  stop [todos v]
+end
 ```
 
 --- /hint ---
@@ -91,13 +91,13 @@ Você consegue ver que o código 'Fim de jogo' para cada uma das quatro cores é
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-diga [Fim de jogo!] por (1) segundos
-se < (pontuação :: variables) > (pontuação mais alta) > então 
-  mude [pontuação mais alta v] para (pontuação :: variables)
-  pergunte [Pontuação mais alta! Qual é o seu nome?] e espere
-mude [nome v] para (resposta)
-fim
-pare [todos v]
+say [Fim de jogo!] for (1) seconds
+if <(pontuação :: variables) > (pontuação mais alta)> then 
+  set [pontuação mais alta v] to (pontuação :: variables)
+  ask [Pontuação mais alta! Qual é o seu nome?] and wait
+  set [nome v] to (answer)
+end
+stop [todos v]
 ```
 
 Se precisar alterar alguma parte do código por exemplo, do 'Fim de jogo' para adicionar um som ou alterar a mensagem 'Fim de jogo', terá que alterá-lo quatro vezes. Isto é chato e desperdiça muito tempo.
@@ -117,14 +117,14 @@ Adicione o código do bloco `senão`{:class="block3control"} ligado à transmiss
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-defina Fim de jogo
-diga [Fim de jogo!] por (1) segundos
-se < (pontuação :: variables) > (pontuação mais alta) > então 
-  mude [pontuação mais alta v] para (pontuação :: variables)
-  pergunte [Maior pontuação! Qual é o seu nome?] e espere
-    mude [nome v] para (resposta)
-  fim
-  pare [todos v]
+define Fim de jogo
+say [Fim de jogo!] for (1) seconds
+if <(pontuação :: variables) > (pontuação mais alta)> then 
+  set [pontuação mais alta v] to (pontuação :: variables)
+  ask [Maior pontuação! Qual é o seu nome?] and wait
+  set [nome v] to (answer)
+end
+stop [todos v]
 ```
 
 --- /task ---
@@ -136,13 +136,13 @@ Agora remova o código que está no bloco `senão`{:class="block3control"} ligad
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando eu receber [vermelho v]
-se < (item (1 v) de [sequência v]) = [1] > então 
-  toque instrumento (\(1\) Tarol v) por (0.25) batidas
-  apague (1 v) de [sequência v]
-senão 
+when I receive [vermelho v]
+if <(item (1 v) of [sequência v]) = [1]> then 
+  play drum (\(1\) Tarol v) for (0.25) beats
+  delete (1 v) of [sequência v]
+else 
   Fim de jogo :: custom
-fim
+end
 ```
 
 --- /task ---
@@ -162,13 +162,13 @@ Substitua também o código que está no bloco `senão`{:class="block3control"} 
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando eu receber [azul v]
-se < (item (1 v) de [sequência v]) = [1] > então 
-  toque instrumento (\(2\) Bumbo v) por (0.25) batidas
-  apague (1 v) de [sequência v]
-senão 
+when I receive [azul v]
+if <(item (1 v) of [sequência v]) = [1]> then 
+  play drum (\(2\) Bumbo v) for (0.25) beats
+  delete (1 v) of [sequência v]
+else 
   Fim de jogo :: custom
-fim
+end
 ```
 
 --- /task ---
@@ -180,16 +180,16 @@ Agora adicione um som que toque quando o botão errado é pressionado. Você só
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-defina Fim de jogo
-toque o som [Cough1 v]
-diga [Fim de jogo!] por (1) segundos
-se < (pontuação :: variables) > (pontuação mais alta) > então 
-  toque o som (trumpet1 v)
-  mude [pontuação mais alta v] para (pontuação)
-  pergunte [Pontuação mais alta! Qual é o seu nome?] e espere
-mude [nome v] para (resposta)
-fim
-pare [todos v]
+define Fim de jogo
+start sound [Cough1 v]
+say [Fim de jogo!] for (1) seconds
+if <(pontuação :: variables) > (pontuação mais alta)> then 
+  start sound (trumpet1 v)
+  set [pontuação mais alta v] to (pontuação)
+  ask [Pontuação mais alta! Qual é o seu nome?] and wait
+  set [nome v] to (answer)
+end
+stop [todos v]
 ```
 
 --- /task ---

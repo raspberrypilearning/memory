@@ -22,24 +22,24 @@ Je hebt de volgende blokken nodig:
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-als < > dan
-einde
+if <> then
+end
 
 (score)
 
 (score)
 
-[] > [ ]
+<[] > [ ]>
 
-antwoord
+(answer)
 
 (topscore)
 
-vraag [Topscore! Wat is je naam?] en wacht
+ask [Topscore! Wat is je naam?] and wait
 
-maak [topscore v] [ ] 
+set [topscore v] to [ ]
 
-maak [naam v] [ ] 
+set [naam v] to [ ]
 ```
 
 --- /hint --- --- hint --- Zo zou de code eruit moeten zien voor als op de rode knop is gedrukt:
@@ -47,18 +47,19 @@ maak [naam v] [ ]
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer ik signaal [rood v] ontvang
-als <(item (1 v) of [reeks v]) = [1]> dan 
-  speel drum (item (1 v) van [reeks v]) gedurende (0.25) maten
-  verwijder (1 v) van [reeks v]
-anders
-  zeg [Game over!] (1) sec.
-  als < (score :: variables) > (topscore) > dan 
-    maak [topscore v] (score :: variables)
-    vraag [Topscore! Wat is je naam?] en wacht vraag [Topscore! Wat is je naam?] en wacht
-        maak [naam v] (antwoord)
+when I receive [rood v]
+if <(item (1 v) of [reeks v]) = [1]> then 
+  play drum (item (1 v) of [reeks v]) for (0.25) beats
+  delete (1 v) of [reeks v]
+else 
+  say [Game over!] for (1) seconds
+  if <(score :: variables) > (topscore)> then 
+    set [topscore v] to (score :: variables)
+    ask [Topscore! Wat is je naam?] and wait
+    set [naam v] to (answer)
     stop [alle v]
-einde
+  end
+end
 ```
 
 --- /hint --- --- /hints --- --- /task ---
@@ -70,13 +71,13 @@ Zie je dat de 'Game over'-code voor elk van de vier kleuren exact hetzelfde is?
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-zeg [Game over!] (1) sec.
-als < (score :: variables) > (topscore) > dan
-    maak [topscore v] (score :: variables)
-    vraag [Topscore! Wat is je naam?] en wacht	 vraag [Topscore! Wat is je naam?] en wacht
-    maak [naam v] (antwoord)
-    einde
-    stop [alle v]
+say [Game over!] for (1) seconds
+if <(score :: variables) > (topscore)> then 
+  set [topscore v] to (score :: variables)
+  ask [Topscore! Wat is je naam?] and wait
+  set [naam v] to (answer)
+end
+stop [alle v]
 ```
 
 Als je een van de 'Game over'-codes moet veranderen, bijvoorbeeld om een geluid toe te voegen of het 'Game over'-bericht te veranderen, moet je het vier keer wijzigen. Dat is vervelend en verspilt veel tijd.
@@ -92,15 +93,13 @@ In plaats daarvan kunt je je eigen codeblokken maken en die steeds opnieuw in he
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-definieer Game over
-zeg [Game over!] (1) sec.
-als < (score :: variables) > (topscore) > dan
-    maak [topscore v] (score :: variables)
-    vraag [Topscore! Wat is je naam?] en wacht vraag [Topscore! Wat is je naam?] en wacht
-        maak [Wat is je naam? v] (antwoord)
-    einde
-    stop [alle v]
-einde
+say [Game over!] for (1) seconds
+if <(score :: variables) > (topscore)> then 
+  set [topscore v] to (score :: variables)
+  ask [Topscore! Wat is je naam?] and wait
+  set [naam v] to (answer)
+end
+stop [alle v]
 ```
 
 --- /task ---
@@ -110,13 +109,13 @@ einde
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer ik signaal [rood v] ontvang
-als <(item (1 v) van [reeks v]) = [1]> dan
-  speel drum (\(1\) Snarentrom v) gedurende (0.25) maten
-  verwijder (1 v) van [reeks v]
-anders
+when I receive [rood v]
+if <(item (1 v) of [reeks v]) = [1]> then 
+  play drum (\(1\) Snarentrom v) for (0.25) beats
+  delete (1 v) of [reeks v]
+else 
   Game over :: custom
-einde
+end
 ```
 
 --- /task ---
@@ -130,13 +129,13 @@ Je nieuwe `Game over`{:class="block3myblocks"}-blok is een **functie**, een klei
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer ik signaal [blauw v] ontvang
-als <(item (1 v) van [reeks v]) = [1]> dan
-  speel drum (\(2\) Basdrum v) gedurende (0.25) maten
-  verwijder (1 v) van [reeks v]
-anders
+when I receive [blauw v]
+if <(item (1 v) of [reeks v]) = [1]> then 
+  play drum (\(2\) Basdrum v) for (0.25) beats
+  delete (1 v) of [reeks v]
+else 
   Game over :: custom
-einde
+end
 ```
 
 --- /task ---
@@ -146,16 +145,16 @@ einde
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-definieer Game over
-start geluid [Cough1 v]
-zeg [Game over!] (1) sec.
-als < (score :: variables) > (topscore) > dan
-    start geluid (trumpet1 v)
-    maak [topscore v] (score)
-    vraag [Topscore! Wat is je naam?] en wacht vraag [Topscore! Wat is je naam?] en wacht
-    maak [naam v] (antwoord)
-    einde
-    stop [alle v]
+define Game over
+start sound [Cough1 v]
+say [Game over!] for (1) seconds
+if <(score :: variables) > (topscore)> then 
+  start sound (trumpet1 v)
+  set [topscore v] to (score)
+  ask [Topscore! Wat is je naam?] and wait
+  set [naam v] to (answer)
+end
+stop [alle v]
 ```
 
 --- /task ---

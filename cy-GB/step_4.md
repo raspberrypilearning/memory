@@ -14,8 +14,8 @@ Rwy ti nawr am ychwanegu pedwar botwm i'r chwareuwr wasgu i ail-adrodd dilyniant
 ![drwm coch](images/red_drum.png)
 
 ```blocks3
-    pan gaiff y ciplun yma ei glicio
-darlledu (coch v)
+when this sprite clicked
+broadcast (coch v)
 ```
 
 --- /task ---
@@ -39,12 +39,12 @@ Os mai `1` sydd ar gychwyn y rhestr, fe ddylai'r côd dynnu'r rhif o'r rhestr, g
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan rwy'n derbyn [coch v]
-os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  dileu (1 v) o [dilyniant v]
-fel arall 
-  dweud [Gêm drosodd!] am (1) eiliad
-  aros [y cyfan v]
+when I receive [coch v]
+if <(item (1 v) of [dilyniant v]) = [1]> then 
+  delete (1 v) of [dilyniant v]
+else 
+  say [Gêm drosodd!] for (1) seconds
+  stop [y cyfan v]
 end
 ```
 
@@ -65,13 +65,13 @@ end
 --- /hint --- --- hint --- Dyma'r blociau côd rwyt ti eu hangen:
 
 ```blocks3
-pan rwy'n derbyn [coch v]
-os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-+ chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
-dileu (1 v) o [dilyniant v]
-fel arall 
-dweud [Gêm drosodd!] am (1) eiliad
-aros [y cyfan v]
+when I receive [coch v]
+if <(item (1 v) of [dilyniant v]) = [1]> then 
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+  delete (1 v) of [dilyniant v]
+else 
+  say [Gêm drosodd!] for (1) seconds
+  stop [y cyfan v]
 end
 
 ```
@@ -92,11 +92,11 @@ Cadwa'r blociau yma, ond bydd angen eu newid mewn ryw ffordd:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-<(eitem (1 v) o [dilyniant v]) = [1]>
+<(item (1 v) of [dilyniant v]) = [1]>
 
-pan rwy'n derbyn [coch v]
+when I receive [coch v]
 
-chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
+play drum (\(1\) Snare Drum v) for (0.25) beats
 ```
 
 --- /hint --- --- hint --- Dyma sut ddylai dy gôd edrych ar gyfer y darllediad `glas`{:class="block3events"}.
@@ -104,13 +104,13 @@ chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan rwy'n derbyn [glas v]
-os <(eitem (1 v) o [dilyniant v]) = [2]> yna 
-  chwarae drwm (\(2\) Bass Drum v) am (0.25) curiad
-  dileu (1 v) o [dilyniant v]
-fel arall 
-  dweud [Gêm drosodd!] am (1) eiliad
-  aros [y cyfan v]
+when I receive [glas v]
+if <(item (1 v) of [dilyniant v]) = [2]> then 
+  play drum (\(2\) Bass Drum v) for (0.25) beats
+  delete (1 v) of [dilyniant v]
+else 
+  say [Gêm drosodd!] for (1) seconds
+  stop [y cyfan v]
 end
 ```
 
@@ -127,8 +127,8 @@ Pan fydd y chwaraewr yn ailadrodd y dilyniant lliw cyfan yn gywir, bydd rhestr y
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-    aros hyd at <(hyd [dilyniant v]) = [0]>
-darlledu (won v) ac aros
+wait until <(length of [dilyniant v]) = [0]>
+broadcast (won v) and wait
 ```
 
 --- /task ---
@@ -144,13 +144,13 @@ darlledu (won v) ac aros
 ![ballerina](images/stage.png)
 
 ```blocks3
-    pan rwy'n derbyn [won v]
-cychwyn sain (drum machine v)
-ailadrodd (50) 
-  newid effaith [color v] gan (25)
-  aros (0.1) eiliad
+when I receive [won v]
+start sound (drum machine v)
+repeat (50) 
+  change [color v] effect by (25)
+  wait (0.1) seconds
 end
-clirio effeithiau graffeg
+clear graphic effects
 ```
 
 --- /task ---

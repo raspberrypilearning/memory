@@ -50,8 +50,8 @@ Mae gan bob lliw rif gwahanol, fel dy fod yn gallu dewis lliw ar hap gan ddewis 
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan fo'r flag werdd yn cael ei glicio
-ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
+when flag clicked
+add (pick random (1) to (4)) to [dilyniant v]
 ```
 
 --- /task ---
@@ -70,10 +70,10 @@ Dyma sut dylai dy gôd edrych:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan fo'r flag werdd yn cael ei glicio
-dileu (all v) o [dilyniant v]
-ailadrodd (5) 
-  ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
+when flag clicked
+delete (all v) of [dilyniant v]
+repeat (5) 
+  add (pick random (1) to (4)) to [dilyniant v]
 end
 ```
 
@@ -84,8 +84,8 @@ end
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-newid gwisg i (eitem (hyd [dilyniant v]) o [dilyniant v])
-aros (1) eiliad
+switch costume to (item (length of [dilyniant v]) of [dilyniant v])
+wait (1) seconds
 ```
 
 --- /task ---

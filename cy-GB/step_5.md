@@ -17,7 +17,7 @@ Yn hytrach na chreu dilyniant o bum lliw bob amser, rwyt ti eisiau i'r `sgôr`{:
 <p><img src="images/ballerina.png" alt="corlun" /></p>
 
 ```blocks3
-ailadrodd (sgôr)
+repeat (sgôr)
 end
 ```
 
@@ -28,7 +28,7 @@ end
 ![corlun](images/ballerina.png)
 
 ```blocks3
-newid [sgôr v] gan (1)
+change [sgôr v] by (1)
 ```
 
 --- hints ---
@@ -43,18 +43,18 @@ newid [sgôr v] gan (1)
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan fo'r flag werdd yn cael ei glicio
-gosod [sgôr v] i [3]
-am byth 
-  dileu (all v) o [dilyniant v]
-  ailadrodd (sgôr) 
-    ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
-    newid gwisg i (eitem (hyd [dilyniant v]) o [dilyniant v])
-    aros (1) eiliad
+when flag clicked
+set [sgôr v] to [3]
+forever 
+  delete (all v) of [dilyniant v]
+  repeat (sgôr) 
+    add (pick random (1) to (4)) to [dilyniant v]
+    switch costume to (item (length of [dilyniant v]) of [dilyniant v])
+    wait (1) seconds
   end
-  aros hyd at <(hyd [dilyniant v]) = [0]>
-  darlledu (won v) ac aros
-  newid [sgôr v] gan (1)
+  wait until <(length of [dilyniant v]) = [0]>
+  broadcast (won v) and wait
+  change [sgôr v] by (1)
 end
 ```
 

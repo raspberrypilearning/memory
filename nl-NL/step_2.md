@@ -50,8 +50,8 @@ Elke kleur heeft een ander nummer, dus je kunt een willekeurige kleur kiezen doo
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer groene vlag wordt aangeklikt
-voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
+when flag clicked
+add (pick random (1) to (4)) to [reeks v]
 ```
 
 --- /task ---
@@ -70,10 +70,10 @@ Dit is hoe je code eruit zou moeten zien:
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer groene vlag wordt aangeklikt
-verwijder (alle v) van [reeks v]
-herhaal (5) 
-  voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
+when flag clicked
+delete (alle v) of [reeks v]
+repeat (5) 
+  add (pick random (1) to (4)) to [reeks v]
 end
 ```
 
@@ -84,8 +84,8 @@ end
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-verander uiterlijk naar (item (lengte van [reeks v]) van [reeks v])
-wacht (1) sec.
+switch costume to (item (length of [reeks v]) of [reeks v])
+wait (1) seconds
 ```
 
 --- /task ---

@@ -17,8 +17,8 @@ In plaats van altijd een reeks van vijf kleuren te maken, gebruik je nu de `scor
 ![sprite](images/ballerina.png)
 
 ```blocks3
-herhaal (score)
-einde
+repeat (score)
+end
 ```
 
 --- /task ---
@@ -28,7 +28,7 @@ einde
 ![sprite](images/ballerina.png)
 
 ```blocks3
-verander [score v] met (1)
+change [score v] by (1)
 ```
 
 --- hints ---
@@ -41,19 +41,19 @@ verander [score v] met (1)
 ![balletdanseres](images/ballerina.png)
 
 ```blocks3
-wanneer groene vlag wordt aangeklikt
-maak [score v] [3]
-herhaal 
-  verwijder (alle v) van [reeks v]
-  herhaal (score)
-    voeg (willekeurig getal tussen (1) en (4)) toe aan [reeks v]
-    verander uiterlijk naar (item (lengte van [reeks v]) van [reeks v]
-    wacht (1) sec.
-  einde
-  wacht tot <(lengte van [reeks v]) = [0]>
-  zend signaal (gewonnen v) en wacht
-  verander [score v] met (1)
-einde
+when flag clicked
+set [score v] to [3]
+forever 
+  delete (alle v) of [reeks v]
+  repeat (score) 
+    add (pick random (1) to (4)) to [reeks v]
+    switch costume to (item (length of [reeks v]) of [reeks v])
+    wait (1) seconds
+  end
+  wait until <(length of [reeks v]) = [0]>
+  broadcast (gewonnen v) and wait
+  change [score v] by (1)
+end
 ```
 
 --- /task ---

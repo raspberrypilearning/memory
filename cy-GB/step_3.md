@@ -30,9 +30,9 @@ Dyma'r blociau côd rwyt ti eu hangen:
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
+play drum (\(1\) Snare Drum v) for (0.25) beats
 
-(eitem (hyd [dilyniant v]) o [dilyniant v])
+(item (length of [dilyniant v]) of [dilyniant v])
 ```
 
 --- /hint ---
@@ -42,13 +42,13 @@ chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
 ![ballerina](images/ballerina.png)
 
 ```blocks3
-pan fo'r flag werdd yn cael ei glicio
-dileu (all v) o [dilyniant v]
-ailadrodd (5) 
-    ychwanegu (dewis ar hap (1) i (4)) i [dilyniant v]
-    chwarae drwm (eitem (hyd [dilyniant v]) o [dilyniant v]) am (0.25) curiad
-    newid gwisg i (eitem (hyd [dilyniant v]) o [dilyniant v])
-    aros (1) eiliad
+when flag clicked
+delete (all v) of [dilyniant v]
+repeat (5) 
+  add (pick random (1) to (4)) to [dilyniant v]
+  play drum (item (length of [dilyniant v]) of [dilyniant v]) for (0.25) beats
+  switch costume to (item (length of [dilyniant v]) of [dilyniant v])
+  wait (1) seconds
 end
 ```
 

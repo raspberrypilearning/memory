@@ -27,7 +27,7 @@ Mude o laço de `repetição`{:class="block3control"} do ator (para criar a sequ
 ![ator](images/ballerina.png)
 
 ```blocks3
-repita (pontuação :: variables) vezes
+repeat (pontuação :: variables)
 end
 ```
 
@@ -40,7 +40,7 @@ Se o jogador repetir a sequência corretamente, você deve adicionar `1` a `pont
 ![ator](images/ballerina.png)
 
 ```blocks3
-adicione (1) a [pontuação v]
+change [pontuação v] by (1)
 ```
 
 --- hints ---
@@ -63,19 +63,19 @@ Finalmente, adicione um `para sempre`{:class="block3control"} em volta do códig
 ![bailarina](images/ballerina.png)
 
 ```blocks3
-quando ⚑ for clicado
-mude [pontuação v] para [3]
-sempre 
-  apague (todos v) de [sequência v]
-  repita (pontuação) vezes 
-    adicione (número aleatório entre (1) e (4)) a [sequência v]
-    mude para a fantasia (item (tamanho de [sequência v]) de [sequência v])
-    espere (1) seg
-  fim
-  espere até que <(tamanho de [sequência v]) = [0]>
-  transmita (ganhou v) e espere
-  adicione (1) a [pontuação v]
-fim
+when flag clicked
+set [pontuação v] to [3]
+forever 
+  delete (todos v) of [sequência v]
+  repeat (pontuação) 
+    change [sequência v] by (pick random (1) to (4))
+    switch costume to (item (length of [sequência v]) of [sequência v])
+    wait (1) seconds
+  end
+  wait until <(length of [sequência v]) = [0]>
+  broadcast (ganhou v) and wait
+  change [pontuação v] by (1)
+end
 ```
 
 --- /task ---

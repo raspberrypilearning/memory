@@ -5,19 +5,19 @@
 Wyt ti’n sylwi ar unrhyw gôd arall sydd yr un peth ar gyfer y 4 botwm?
 
 ```blocks3
-pan rwy'n derbyn [coch v]
-os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm (\(1\) Snare Drum v) am (0.25) curiad
-  dileu (1 v) o [dilyniant v]
-fel arall 
+when I receive [coch v]
+if <(item (1 v) of [dilyniant v]) = [1]> then 
+  play drum (\(1\) Snare Drum v) for (0.25) beats
+  delete (1 v) of [dilyniant v]
+else 
   Gêm drosodd :: custom
 end
 
-pan rwy'n derbyn [glas v]
-os <(eitem (1 v) o [dilyniant v]) = [1]> yna 
-  chwarae drwm (\(2\) Bass Drum v) am (0.25) curiad
-  dileu (1 v) o [dilyniant v]
-fel arall 
+when I receive [glas v]
+if <(item (1 v) of [dilyniant v]) = [1]> then 
+  play drum (\(2\) Bass Drum v) for (0.25) beats
+  delete (1 v) of [dilyniant v]
+else 
   Gêm drosodd :: custom
 end
 ```
