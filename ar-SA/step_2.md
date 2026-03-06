@@ -64,8 +64,8 @@
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-وقتی که پرچم کلیک شد
-(انتخاب تصادفی از (1) تا (4)) را به [تسلسل v] اضافه کن
+when flag clicked
+add (pick random (1) to (4)) to [تسلسل v]
 ```
 
 --- /task ---
@@ -96,10 +96,10 @@
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-عند نقر ⚑
-احذف (الكل v) من [تسلسل v]
-(5) بار تکرار کن 
-  (انتخاب تصادفی از (1) تا (4)) را به [تسلسل v] اضافه کن
+when flag clicked
+delete (all v) of [تسلسل v]
+repeat (5)
+	add (pick random (1) to (4)) to [تسلسل v]
 end
 ```
 
@@ -116,8 +116,8 @@ end
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-تعویض حالت به (عنصر (طول [تسلسل v]) از [تسلسل v])
-(1) ثانیه صبر کن
+switch costume to (item (length of [تسلسل v]) of [تسلسل v])
+wait (1) seconds
 ```
 
 --- /task ---

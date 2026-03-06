@@ -20,8 +20,8 @@
 ![طبل أحمر](images/red_drum.png)
 
 ```blocks3
-    عند نقر هذا الكائن :: events
-بث (أحمر v) :: events
+	when this sprite clicked
+	broadcast (أحمر v)
 ```
 
 --- /task ---
@@ -45,12 +45,12 @@
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-وقتی که [أحمر v] را دریافت کردم
-اگر <(عنصر (1 v) از [تسلسل v]) = [1]> آن گاه 
-  (1 v) را از [تسلسل v] حذف کن
-وگر نه 
-  [انتهت اللعبة!] را به مدت (1) ثانیه بگو
-  توقف [الكل v]
+when I receive [أحمر v]
+if <(item (1 v) of [تسلسل v])=[1]> then
+delete (1 v) of [تسلسل v]
+else
+say [انتهت اللعبة!] for (1) seconds
+stop [الكل v]
 end
 ```
 
@@ -85,13 +85,13 @@ end
 إليك التعليمات البرمجية التي ستحتاج إلى إضافتها:
 
 ```blocks3
-وقتی که [أحمر v] را دریافت کردم
-اگر <(عنصر (1 v) از [تسلسل v]) = [1]> آن گاه 
-+ دقّ الطبل (\(1\) طبل جانبي v) لمدة (0.25) وحدة ايقاع
-  (1 v) را از [تسلسل v] حذف کن
-وگر نه 
-  [انتهت اللعبة!] را به مدت (1) ثانیه بگو
-  توقف [الكل v]
+when I receive [أحمر v]
+if <(item (1 v) of [تسلسل v])=[1]> then
++ play drum (\(1\) Snare Drum v) for (0.25) beats
+delete (1 v) of [تسلسل v]
+else
+say [انتهت اللعبة!] for (1) seconds
+stop [الكل v]
 end
 ```
 
@@ -139,13 +139,13 @@ end
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-وقتی که [أزرق v] را دریافت کردم
-اگر <(عنصر (1 v) از [تسلسل v]) = [2]> آن گاه 
-  به مدت (0.25) ضرب صدای (\(2\) طبل كبیر v) را در ساز درامز پخش کن
-  (1 v) را از [تسلسل v] حذف کن
-وگر نه 
-  [انتهت اللعبة!] را به مدت (1) ثانیه بگو
-  توقف [الكل v]
+when I receive [أزرق v]
+if <(item (1 v) of [تسلسل v])=[2]> then
+	play drum (\(2\) طبل كبیر v) for (0.25) beats
+	delete (1 v) of [تسلسل v]
+else
+	say [انتهت اللعبة!] for (1) seconds
+	stop [الكل v]
 end
 ```
 
@@ -172,8 +172,8 @@ end
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-    انتظر حتى <(طول [تسلسل v] :: list) = [0] :: operators> :: control
-بث (فزت! v) وانتظر :: events
+	wait until < (length of [تسلسل v]) = [0]>
+	broadcast (فزت! v) and wait
 ```
 
 --- /task ---
@@ -193,13 +193,13 @@ end
 ![راقصة البالية](images/stage.png)
 
 ```blocks3
-    عندما تستقبل [فزت! v] :: events
-شغل الصوت (Drum Machine v) :: sound
-كرِّر (50) مرة 
-  غيِّر تأثير [اللون v] بمقدار (25) :: looks
-  انتظر (0.1) ثانية :: control :: control
-end
-أزل التأثيرات الرسومية :: looks
+	when I receive [فزت! v]
+	start sound (drum machine v)
+	repeat (50)
+		change [اللون v] effect by (25)
+		wait (0.1) seconds
+	end
+	clear graphic effects
 ```
 
 --- /task ---

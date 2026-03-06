@@ -27,7 +27,7 @@ task ---غير التكرار الخاص بكائن الشخصية الرئيس�
 ![كائن](images/ballerina.png)
 
 ```blocks3
-(الدرجة :: variables) بار تکرار کن
+repeat (الدرجة :: variables)
 end
 ```
 
@@ -40,7 +40,7 @@ end
 ![كائن](images/ballerina.png)
 
 ```blocks3
-مقدار [الدرجة v] را (1) تا تغییر بده
+change [الدرجة v] by (1)
 ```
 
 --- hints ---
@@ -63,19 +63,18 @@ end
 ![راقصة البالية](images/ballerina.png)
 
 ```blocks3
-وقتی که پرچم کلیک شد
-[الدرجة v] را به [3] تنظیم کن
-برای همیشه 
-  (الكل v) را از [تسلسل v] حذف کن
-  (الدرجة) بار تکرار کن 
-    (انتخاب تصادفی از (1) تا (4)) را به [تسلسل v] اضافه کن
-    تعویض حالت به (عنصر (طول [تسلسل v]) از [تسلسل v])
-    (1) ثانیه صبر کن
-  end
-  تا <(طول [تسلسل v]) = [0]> صبر کن
-  (فزت! v) را منتشر کن و صبر کن
-  مقدار [الدرجة v] را (1) تا تغییر بده
-end
+when flag clicked
+set [الدرجة v] to [3]
+forever
+	delete (all v) of [تسلسل v]
+	repeat (الدرجة)
+		add (pick random (1) to (4)) to [تسلسل v]
+		switch costume to (item (length of [تسلسل v]) of [تسلسل v])
+		wait (1) seconds
+	end
+	wait until < (length of [تسلسل v]) = [0]>
+	broadcast (فزت! v) and wait
+	change [الدرجة v] by (1)
 ```
 
 --- /task ---
