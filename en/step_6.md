@@ -17,48 +17,6 @@ Add code to your character sprite to store the `high score`{:class="block3variab
 [[[generic-scratch3-high-score]]]
 
 --- hints ---
-
---- hint ---
-
-Your new code needs to follow this pattern:
-
-After the `Game over`{:class="block3looks"} message
-`If`{:class="block3control"} the `score`{:class="block3variables"} is `greater than`{:class="block3operators"} the `high score`{:class="block3variables"}
-`Set`{:class="block3variables"} the `high score`{:class="block3variables"} to the `score`{:class="block3variables"}
-`Ask`{:class="block3sensing"} for the player's name
-`Set`{:class="block3variables"} the `name`{:class="block3variables"} to the `answer`{:class="block3sensing"}
-
---- /hint ---
-
---- hint ---
-
-You need the following blocks:
-
-![ballerina](images/ballerina.png)
-
-```blocks3
-if < > then
-end
-
-(score)
-
-(score)
-
-[ ] > [ ]
-
-answer
-
-(high score)
-
-ask [What's your name?] and wait
-
-set [high score v] to [ ] 
-
-set [name v] to [ ] 
-```
-
---- /hint ---
-
 --- hint ---
 
 Here's how your code for when the red button is pressed should look:
@@ -82,8 +40,8 @@ end
 ```
 
 --- /hint ---
-
 --- /hints ---
+
 
 --- /task ---
 

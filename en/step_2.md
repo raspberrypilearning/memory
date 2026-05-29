@@ -81,13 +81,6 @@ Test your code. Check that, each time you click the flag, a random number betwee
 Can you add code to your program to generate five random numbers at once?
 
 --- hints ---
-
---- hint ---
-
-Add a `delete all of sequence`{:class="block3variables"} to first delete all the items on the list, and then add a  `repeat`{:class="block3control"} block that adds five random numbers to the list.
-
---- /hint ---
-
 --- hint ---
 
 This is what your code should look like:
@@ -102,9 +95,9 @@ repeat (5)
 end
 ```
 
---- /hint --- 
-
+--- /hint ---
 --- /hints ---
+
 
 --- /task ---
 
