@@ -44,14 +44,13 @@ change [score v] by (1)
 ```
 
 --- hints ---
-
 --- hint ---
 
 You know the sequence is correct at the point when the game `broadcasts`{:class="block3events"} the 'win' message.
 
 --- /hint ---
-
 --- /hints ---
+
 
 --- /task ---
 

@@ -21,27 +21,6 @@ Add the Music extension to your project so you can use the `play drum`{:class="b
 The code that plays the drum is __very__ similar to the code that changes the character's costume.
 
 --- hints ---
-
---- hint ---
-
-You only need to add two blocks: a `play drum for (0.25) beats`{:class="block3sound"} block and a `item (length of sequence) of sequence`{:class="block3variables"} block.
-
---- /hint ---
-
---- hint ---
-
-Here are the blocks you need:
-
-![ballerina](images/ballerina.png)
-
-```blocks3
-play drum (\(1\) Snare Drum v) for (0.25) beats
-
-(item (length of [sequence v]) of [sequence v])
-```
-
---- /hint ---
-
 --- hint ---
 
 Here is how your finished code should look:
@@ -60,7 +39,7 @@ end
 ```
 
 --- /hint ---
-
 --- /hints ---
+
 
 --- /task ---

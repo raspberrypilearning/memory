@@ -60,23 +60,6 @@ end
 Add to the code you just wrote so that a drum beat also plays when the character sprite receives the correct `broadcast`{:class="block3events"}.
 
 --- hints ---
-
---- hint ---
-
-Can you use the numbers that correspond to each colour to play the correct drum beat?
-+ 1 = red
-+ 2 = blue
-+ 3 = green
-+ 4 = yellow
-
---- /hint ---
-
---- hint ---
-
-Above the `delete 1 of sequence`{:class="block3variables"} block, add the `play drum`{:class="block3sound"} block to play the first sound in the `sequence`{:class="block3variables"} list.
-
---- /hint ---
-
 --- hint ---
 
 Here is the code you will need to add:
@@ -93,8 +76,8 @@ end
 ```
 
 --- /hint ---
-
 --- /hints ---
+
 
 --- /task ---
 
@@ -111,23 +94,6 @@ When the sprite responds to the message `blue`{:class="block3events"}, which bit
 Change the character sprite's code so that the character responds correctly to the `blue`{:class="block3events"} message.
 
 --- hints ---
-
---- hint ---
-
-Keep these blocks, but you need to change them in some way:
-
-![ballerina](images/ballerina.png)
-
-```blocks3
-<(item (1 v) of [sequence v]) = [1]>
-
-when I receive [red v]
-
-play drum (\(1\) Snare Drum v) for (0.25) beats
-```
-
---- /hint ---
-
 --- hint ---
 
 Here is how your code should look for the `blue`{:class="block3events"} broadcast.
@@ -146,8 +112,8 @@ end
 ```
 
 --- /hint ---
-
 --- /hints ---
+
 
 --- /task ---
 
